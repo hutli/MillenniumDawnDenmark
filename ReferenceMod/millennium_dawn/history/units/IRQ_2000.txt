@@ -1,0 +1,514 @@
+﻿division_template = {
+	name = "Militia Regiment"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	support = {
+	}
+	
+	priority = 0
+}
+division_template = {
+	name = "Infantry Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+	priority = 0
+}
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armor Brigade"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Paratrooper Brigade"
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+	priority = 2
+}
+
+division_template = {
+	name = "Marine Brigade"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "Baghdad Special Forces"
+		location = 2097
+		division_template = "Marine Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Basrah Special Forces"
+		location = 2089
+		division_template = "Paratrooper Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Mechanized Brigade"
+		location = 10793
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Mechanized Brigade"
+		location = 10793
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Mechanized Brigade"
+		location = 10793
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Mechanized Brigade"
+		location = 10793
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "11th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "38th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "39th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "40th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "41st Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Armor Brigade"
+		location = 6826
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Armor Brigade"
+		location = 6826
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Armor Brigade"
+		location = 6826
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "15th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "16th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "17th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "18th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "15th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "34th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "35th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "36th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "51st Mechanized Brigade"
+		location = 12726
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "52nd Mechanized Brigade"
+		location = 12726
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "53rd Mechanized Brigade"
+		location = 12726
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "54th Mechanized Brigade"
+		location = 12726
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Armor Brigade"
+		location = 12726
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Armor Brigade"
+		location = 12726
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "49th Infantry Brigade"
+		location = 12726
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9th Armor Brigade"
+		location = 7977
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10th Armor Brigade"
+		location = 7977
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "11th Armor Brigade"
+		location = 7977
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "21st Infantry Brigade"
+		location = 7977
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "22nd Infantry Brigade"
+		location = 7977
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "23rd Infantry Brigade"
+		location = 7977
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "24th Infantry Brigade"
+		location = 7977
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "25th Infantry Brigade"
+		location = 7977
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "26th Infantry Brigade"
+		location = 7977
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "27th Infantry Brigade"
+		location = 7977
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Mechanized Brigade"
+		location = 10106
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Mechanized Brigade"
+		location = 10106
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Mechanized Brigade"
+		location = 10106
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Mechanized Brigade"
+		location = 10106
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "28th Infantry Brigade"
+		location = 10106
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "29th Infantry Brigade"
+		location = 10106
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "30th Infantry Brigade"
+		location = 10106
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "31st Infantry Brigade"
+		location = 10106
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "32nd Infantry Brigade"
+		location = 10106
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "33rd Infantry Brigade"
+		location = 10106
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Western Desert Force"
+		location = 1631
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Western Desert Force"
+		location = 12413
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Western Desert Force"
+		location = 12372
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+}
+
+### Air OOB ###
+
+air_wings = {
+	291 = {
+		#MiG-29A
+		jet_multirole_equipment_3 = {
+			owner = "IRQ" 
+			amount = 13
+		}
+
+	}
+	291 = {
+		#MiG-23
+		jet_multirole_equipment_2 = {
+			owner = "IRQ" 
+			amount = 51
+		}
+
+	}
+	291 = {
+		#Su-25
+		jet_attack_equipment_2 = {
+			owner = "IRQ" 
+			amount = 26
+		}
+
+	}
+	815 = {
+		#Su-22/Su-20
+		jet_attack_equipment_2 = {
+			owner = "IRQ" 
+			amount = 25
+		}
+
+	}
+	815 = {
+		#MiG-21
+		jet_multirole_equipment_1 = {
+			owner = "IRQ" 
+			amount = 115
+		}
+
+	}
+	675 = {
+		#Mirage F1
+		jet_multirole_equipment_2 = {
+			owner = "IRQ" 
+			amount = 39
+		}
+
+	}
+	675 = {
+		#Su-24
+		jet_attack_equipment_2 = {
+			owner = "IRQ" 
+			amount = 1
+		}
+
+	}
+}

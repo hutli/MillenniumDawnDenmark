@@ -1,0 +1,20 @@
+
+state={
+	id=854
+	name="STATE_854"
+	manpower = 31448
+	
+	state_category = enclave
+
+	history={
+		owner = SAM
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SAM
+		
+		victory_points = { 13207 1 }
+	}
+
+	provinces={ 13207 }
+}

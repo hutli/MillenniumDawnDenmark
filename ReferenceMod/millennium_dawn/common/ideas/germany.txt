@@ -1,0 +1,306 @@
+ideas = {
+
+	country = {
+	
+		GER_bundeswehr_shortcomings = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = bundeswehr
+			
+			modifier = {
+				army_morale_factor = -0.25
+				army_org_Factor = -0.25
+			}
+			
+		}
+		
+		GER_coastal_protection = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_wall_line
+			
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.5
+			}
+		
+		}
+		
+		GER_committee_for_global_socialism = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				justify_war_goal_time = -0.1
+				unity_factor = 0.05
+				communist_drift = 0.01
+			}
+		
+		}
+		
+		GER_european_logistics = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = idea_eu_member2
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.25
+			}
+		
+		}
+		
+		idea_GER_german_legacy = {
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				unity_factor = 0.05
+				fascist_drift = -0.04
+				communist_drift = -0.04
+			}
+			
+		}
+		
+		GER_gott_ist_mit_uns = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = neutrality_idea
+			
+			modifier = {
+				justify_war_goal_time = -0.1
+				army_morale_factor = 0.1
+				political_power_factor = 0.1
+			}
+			
+		}
+		
+		GER_fuehrerstaat = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascist_drift = 0.03
+				nationalist_drift = 0.03
+				justify_war_goal_time = -0.1
+			}
+			
+		}
+		
+		GER_glorious_republic = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_monarchy_drift_bonus
+			
+			modifier = {
+				political_power_factor = 0.25
+				justify_war_goal_time = -0.25
+			}
+			
+		}
+		
+		GER_holy_roman_tradition = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = holy_roman_empire
+			
+			modifier = {
+				monarchist_drift = 0.02
+				reactionary_drift = 0.03
+				conservative_drift = 0.02
+				political_power_factor = 0.1
+			}
+			
+		}
+		
+		GER_industrial_program_for_sovereignity = {
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+			}
+			
+		}
+		
+		GER_kaiserstaat = {
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				monarchist_drift = 0.04
+				political_power_factor = 0.1
+			}
+			
+		}
+		
+		GER_national_economic_reform = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = industrial_concern_1
+			
+			modifier = {
+				consumer_goods_factor = -0.04
+			}
+			
+		}
+		
+		GER_national_bureaucratic_reform = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = industrial_concern_1
+			
+			modifier = {
+				political_power_factor = 0.15
+				research_time_factor = -0.01
+			}
+			
+		}
+		
+		GER_polish_workforce = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = poland
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.01
+				industrial_capacity_factory = 0.1
+			}
+			
+		}
+		
+		GER_research_program_for_sovereignity = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = industrial_concern_1
+			
+			modifier = {
+				research_time_factor = -0.03
+			}
+			
+		}
+		
+		GER_restored_the_NVA = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = nationale_volksarmee
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				army_org_Factor = 0.1
+				army_morale_factor = 0.1
+			}
+			
+		}
+		
+		GER_secured_the_revolution = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = DDR
+			
+			modifier = {
+				communist_drift = 0.02
+				drift_defence_factor = 0.5
+			}
+			
+		}
+		
+		GER_socialistic_propaganda = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = DDR
+			
+			modifier = {
+				communist_drift = 0.03
+				democratic_socialist_drift = 0.01
+			}
+			
+		}
+		
+		GER_stasi_restoration = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = stasi
+			
+			modifier = {
+				decryption = 1
+				communist_drift = 0.01
+			}
+			
+		}
+	}
+	
+	political_advisor = {
+		
+		GER_lutz_bachmann = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			#available = {
+			#	has_country_flag = pegida
+			#}
+			
+			traits = { nationalist_politician }
+			
+		}
+		
+	}
+	
+}

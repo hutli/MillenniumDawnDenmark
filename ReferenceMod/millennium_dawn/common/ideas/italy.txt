@@ -1,0 +1,391 @@
+ideas = {
+
+	country = {
+			
+		ITA_buona_scuola_research = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_time_factor = -0.02
+			}
+		}
+		
+		ITA_bureaucratic_reforms_research = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_research_bonus
+			
+			modifier = {
+				political_power_factor = 0.1
+				research_time_factor = -0.01
+			}
+		}
+		
+		ITA_economic_reforms_research = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_time_factor = -0.01
+			}
+		}
+		
+		ITA_education_reforms_research = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_research_bonus
+			
+			modifier = {
+				unity_factor = 0.05
+				research_time_factor = -0.03
+			}
+		}
+		
+		ITA_european_logistics_goods = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = idea_eu_member2
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		ITA_north_miracle_industry = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		
+		ITA_mafia = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			picture = generic_spy_intel
+			
+			modifier = {
+				unity_factor = -0.05
+				research_time_factor = 0.02
+				consumer_goods_factor = 0.04
+				production_speed_industrial_complex_factor = -0.1
+                political_power_gain = -0.15
+			}
+		}
+		
+		ITA_corruption = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			modifier = {
+				unity_factor = -0.05
+                political_power_gain = -0.15
+			}
+		}
+		
+		ITA_going_fascist1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+			    fascist_drift = 0.03
+				nationalist_drift = 0.03
+				monarchist_drift = 0.03
+			}
+		}
+		
+		ITA_going_fascist2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+			    fascist_drift = 0.10
+			}
+		}
+		
+		ITA_going_monarchist = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_monarchy_drift_bonus
+			
+			modifier = {
+			    monarchist_drift = 0.10
+			}
+		}
+		
+		ITA_going_democratic = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+			    social_liberal_drift = 0.03
+				conservative_drift = 0.03
+				social_democrat_drift = 0.03
+			}
+		}
+		
+		ITA_parliament_dismantled = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+			    unity_factor = -0.1
+				political_power_factor = 0.4
+				army_morale_factor = -0.05
+			}
+		}
+		
+		ITA_kingdom_restored = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = italy_monarchist
+			
+			modifier = {
+				army_morale_factor = 0.05
+				monarchist_drift = 0.05
+				justify_war_goal_time = -0.1
+			}
+		}
+		
+		ITA_fascist_influencing = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascist_drift = 0.12
+			}
+		}
+		
+		ITA_divide_et_impera = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = roman_empire_idea
+			
+			modifier = {
+				justify_war_goal_time = -0.2
+				political_power_factor = 0.25
+				army_org_Factor = 0.05
+			}
+		}
+		
+		ITA_new_march_on_rome = {
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				justify_war_goal_time = -0.2
+				army_org_Factor = 0.05
+				unity_factor = 0.05
+			}
+		}
+		
+		ITA_southern_question = {
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				unity_factor = -0.1
+			}
+		}
+		
+		ITA_european_logistics_ideology_focus = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = idea_eu_member2
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.20
+			}
+		
+		}
+		
+		ITA_migrants_from_africa = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.03
+				consumer_goods_factor = 0.02
+				unity_factor = -0.02
+			}
+		
+		}
+		
+		ITA_migrants_from_africa_encouraged = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+				consumer_goods_factor = 0.03
+				unity_factor = -0.03
+			}
+		
+		}
+		
+		ITA_migrants_from_africa_limited = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.01
+				consumer_goods_factor = 0.01
+				unity_factor = -0.01
+			}
+		}
+		
+		ITA_restore_the_currency_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		
+		ITA_italy_first_development = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = industrial_concern_1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+			}
+		}
+		
+		ITA_quality_army = {
+		
+			picture = generic_infantry_bonus
+			
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_leader_start_level = 1
+				experience_gain_army_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+		ITA_quantity_army = {
+		
+			picture = generic_morale_bonus
+			
+			allowed = {
+				always = no
+			}
+			modifier = {
+				conscription = 0.05
+			}
+		}
+		
+		ITA_reactionary_influence = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = neutrality_idea
+			
+			modifier = {
+			    reactionary_drift = 0.1
+			}
+		}
+		
+		ITA_national_research_bonus = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_time_factor = -0.05
+			}
+		}
+	}
+}

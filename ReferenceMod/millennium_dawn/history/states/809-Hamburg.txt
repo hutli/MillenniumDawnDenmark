@@ -1,0 +1,25 @@
+state={
+	id=809
+	name="STATE_809"
+
+	history={
+		owner = GER
+		add_core_of = GER
+		victory_points = {
+			9347 20
+		}
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
+		}
+	}
+
+	provinces={
+		9347 
+	}
+	manpower=1435000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

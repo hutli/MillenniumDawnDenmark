@@ -1,0 +1,1203 @@
+@1940 = 0
+@1955 = 2
+@1970 = 4
+@1990 = 6
+@2000 = 8
+@2002 = 10
+@2004 = 12
+@2006 = 14
+@2008 = 16
+@2010 = 18
+@2012 = 20
+@2014 = 22
+@2016 = 24
+@2018 = 26
+@2020 = 28
+@2025 = 30
+@2030 = 32
+
+@software_line = -6
+@machine_tools_line = -4
+@robotics_line = -2
+@manufacturing_line = 0
+@oil_line = 2
+@construction_line = 4
+@excavation_line = 6
+
+technologies = {
+	
+	assembly_line = {
+		
+		production_factory_max_efficiency_factor = 0.05
+
+		
+		path = {
+			leads_to_tech = software1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = machine_tools1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = manufacturing1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = robotics1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = construction1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = excavation1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = oil1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = industry_folder
+			position = { x = @manufacturing_line y = @1940 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+		
+	}
+	
+	software1 = {
+		
+		line_change_production_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+
+		
+		path = {
+			leads_to_tech = software2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1955
+		folder = {
+			name = industry_folder
+			position = { x = @software_line y = @1955 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+		
+	}
+	
+	software2 = {
+		
+		line_change_production_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+
+		
+		path = {
+			leads_to_tech = software3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1970
+		folder = {
+			name = industry_folder
+			position = { x = @software_line y = @1970 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+		
+	}
+	
+	software3= {
+		
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.05
+
+		
+		path = {
+			leads_to_tech = software4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1990
+		folder = {
+			name = industry_folder
+			position = { x = @software_line y = @1990 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+		
+	}
+	
+	software4 = {
+		
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+
+		
+		path = {
+			leads_to_tech = software5
+			research_cost_coeff = 1.5
+		}
+		
+		research_cost = 2
+		start_year = 2000
+		folder = {
+			name = industry_folder
+			position = { x = @software_line y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+		
+	}
+	
+	software5 = {
+		
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+
+		
+		path = {
+			leads_to_tech = software6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2006
+		folder = {
+			name = industry_folder
+			position = { x = @software_line y = @2006 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+		
+	}
+	
+	software6 = {
+		
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+
+		
+		path = {
+			leads_to_tech = software7
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2012
+		folder = {
+			name = industry_folder
+			position = { x = @software_line y = @2012 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+		
+	}
+	
+	software7 = {
+		
+		line_change_production_efficiency_factor = 0.15
+		production_factory_efficiency_gain_factor = 0.015
+		
+		research_cost = 2
+		start_year = 2020
+		folder = {
+			name = industry_folder
+			position = { x = @software_line y = @2020 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+		
+	}
+	
+	machine_tools1 = {
+	
+		production_factory_max_efficiency_factor = 0.05
+
+		
+		path = {
+			leads_to_tech = machine_tools2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1955
+		folder = {
+			name = industry_folder
+			position = { x = @machine_tools_line y = @1955 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	machine_tools2 = {
+	
+		production_factory_max_efficiency_factor = 0.05
+
+		
+		path = {
+			leads_to_tech = machine_tools3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1970
+		folder = {
+			name = industry_folder
+			position = { x = @machine_tools_line y = @1970 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	machine_tools3 = {
+	
+		production_factory_max_efficiency_factor = 0.05
+
+		
+		path = {
+			leads_to_tech = machine_tools4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1990
+		folder = {
+			name = industry_folder
+			position = { x = @machine_tools_line y = @1990 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	machine_tools4 = {
+	
+		production_factory_max_efficiency_factor = 0.05
+
+		
+		path = {
+			leads_to_tech = machine_tools5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2008
+		folder = {
+			name = industry_folder
+			position = { x = @machine_tools_line y = @2008 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	machine_tools5 = {
+	
+		production_factory_max_efficiency_factor = 0.05
+		
+		research_cost = 1.5
+		start_year = 2020
+		folder = {
+			name = industry_folder
+			position = { x = @machine_tools_line y = @2020 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	manufacturing1 = {
+	
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.05
+		
+		path = {
+			leads_to_tech = manufacturing2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1990
+		folder = {
+			name = industry_folder
+			position = { x = @manufacturing_line y = @1990 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	manufacturing2 = {
+	
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.1
+		
+		path = {
+			leads_to_tech = manufacturing3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2006
+		folder = {
+			name = industry_folder
+			position = { x = @manufacturing_line y = @2006 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	manufacturing3 = {
+	
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.15
+		
+		path = {
+			leads_to_tech = manufacturing4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2012
+		folder = {
+			name = industry_folder
+			position = { x = @manufacturing_line y = @2012 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	manufacturing4 = {
+	
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.2
+		
+		path = {
+			leads_to_tech = manufacturing5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2018
+		folder = {
+			name = industry_folder
+			position = { x = @manufacturing_line y = @2018 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	manufacturing5 = {
+	
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.25
+		
+		path = {
+			leads_to_tech = manufacturing6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = industry_folder
+			position = { x = @manufacturing_line y = @2025 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	manufacturing6 = {
+	
+		industry_air_damage_factor = -0.5
+		industrial_capacity_factory = 0.1
+		
+		research_cost = 3
+		start_year = 2030
+		folder = {
+			name = industry_folder
+			position = { x = @manufacturing_line y = @2030 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	robotics1 = {
+	
+		industrial_capacity_factory = 0.2
+		global_building_slots_factor = 0.05
+		
+		path = {
+			leads_to_tech = robotics2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1970
+		folder = {
+			name = industry_folder
+			position = { x = @robotics_line y = @1970 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	robotics2 = {
+	
+		industrial_capacity_factory = 0.2
+		global_building_slots_factor = 0.05
+		
+		path = {
+			leads_to_tech = robotics3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2002
+		folder = {
+			name = industry_folder
+			position = { x = @robotics_line y = @2002 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	robotics3 = {
+	
+		industrial_capacity_factory = 0.2
+		global_building_slots_factor = 0.1
+		
+		path = {
+			leads_to_tech = robotics4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2008
+		folder = {
+			name = industry_folder
+			position = { x = @robotics_line y = @2008 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	robotics4 = {
+	
+		industrial_capacity_factory = 0.2
+		global_building_slots_factor = 0.1
+		
+		path = {
+			leads_to_tech = robotics5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2016
+		folder = {
+			name = industry_folder
+			position = { x = @robotics_line y = @2016 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	robotics5 = {
+	
+		industrial_capacity_factory = 0.2
+		global_building_slots_factor = 0.15
+		
+		research_cost = 2
+		start_year = 2030
+		folder = {
+			name = industry_folder
+			position = { x = @robotics_line y = @2030 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	construction1 = {
+
+		enable_building = {
+			building = steel_factory
+			level = 1
+		}
+		enable_building = {
+			building = aluminium_factory
+			level = 1
+		}
+
+		production_speed_buildings_factor = 0.10
+		
+		path = {
+			leads_to_tech = construction2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1955
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = @construction_line y = @1955 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	construction2 = {
+
+		enable_building = {
+			building = steel_factory
+			level = 2
+		}
+		enable_building = {
+			building = aluminium_factory
+			level = 2
+		}
+
+		production_speed_buildings_factor = 0.10
+		
+		path = {
+			leads_to_tech = construction3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2000
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = @construction_line y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	construction3 = {
+
+		enable_building = {
+			building = steel_factory
+			level = 3
+		}
+		enable_building = {
+			building = aluminium_factory
+			level = 3
+		}
+
+		production_speed_buildings_factor = 0.10
+		
+		path = {
+			leads_to_tech = construction4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2006
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = @construction_line y = @2006 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	construction4 = {
+
+		enable_building = {
+			building = steel_factory
+			level = 4
+		}
+		enable_building = {
+			building = aluminium_factory
+			level = 4
+		}
+
+		production_speed_buildings_factor = 0.10
+		
+		path = {
+			leads_to_tech = construction5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2016
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = @construction_line y = @2016 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	construction5 = {
+
+		production_speed_buildings_factor = 0.10
+		
+		research_cost = 2
+		start_year = 2025
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = @construction_line y = @2025 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	excavation1 = {
+	
+		enable_building = {
+			building = tungsten_factory
+			level = 1
+		}
+		enable_building = {
+			building = chromium_factory
+			level = 1
+		}
+
+		local_resources_factor = 0.10
+		
+		path = {
+			leads_to_tech = excavation2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1955
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = @excavation_line y = @1955 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	excavation2 = {
+	
+		enable_building = {
+			building = tungsten_factory
+			level = 2
+		}
+		enable_building = {
+			building = chromium_factory
+			level = 2
+		}
+
+		local_resources_factor = 0.10
+		
+		path = {
+			leads_to_tech = excavation3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2002
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = @excavation_line y = @2002 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	excavation3 = {
+	
+		enable_building = {
+			building = tungsten_factory
+			level = 3
+		}
+		enable_building = {
+			building = chromium_factory
+			level = 3
+		}
+
+		local_resources_factor = 0.10
+		
+		path = {
+			leads_to_tech = excavation4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2010
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = @excavation_line y = @2010 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	excavation4 = {
+	
+		enable_building = {
+			building = tungsten_factory
+			level = 4
+		}
+		enable_building = {
+			building = chromium_factory
+			level = 4
+		}
+
+		local_resources_factor = 0.10
+		
+		path = {
+			leads_to_tech = excavation5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2018
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = @excavation_line y = @2018 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	excavation5 = {
+
+		local_resources_factor = 0.10
+		
+		research_cost = 2
+		start_year = 2025
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = @excavation_line y = @2025 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	oil1 = {
+
+		enable_building = {
+			building = synthetic_refinery
+			level = 1
+		}
+		enable_building = {
+			building = rubber_factory
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = oil2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1955
+		
+		folder = {
+			name = industry_folder
+			position = { x = @oil_line y = @1955 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				oil > 10
+			}
+			modifier = {
+				factor = 0.5
+				oil > 20
+			}	
+			modifier = {
+				factor = 0.5
+				oil > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+	}
+	
+	oil2 = {
+
+		enable_building = {
+			building = synthetic_refinery
+			level = 2
+		}
+		enable_building = {
+			building = rubber_factory
+			level = 2
+		}
+		
+		path = {
+			leads_to_tech = oil3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1970
+		
+		folder = {
+			name = industry_folder
+			position = { x = @oil_line y = @1970 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				oil > 10
+			}
+			modifier = {
+				factor = 0.5
+				oil > 20
+			}	
+			modifier = {
+				factor = 0.5
+				oil > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+	}
+	
+	oil3 = {
+
+		enable_building = {
+			building = synthetic_refinery
+			level = 3
+		}
+		enable_building = {
+			building = rubber_factory
+			level = 3
+		}
+		
+		path = {
+			leads_to_tech = oil4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2004
+		
+		folder = {
+			name = industry_folder
+			position = { x = @oil_line y = @2004 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				oil > 10
+			}
+			modifier = {
+				factor = 0.5
+				oil > 20
+			}	
+			modifier = {
+				factor = 0.5
+				oil > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+	}
+	
+	oil4 = {
+
+		enable_building = {
+			building = synthetic_refinery
+			level = 4
+		}
+		enable_building = {
+			building = rubber_factory
+			level = 4
+		}
+
+		research_cost = 1.5
+		start_year = 2014
+		
+		folder = {
+			name = industry_folder
+			position = { x = @oil_line y = @2014 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				oil > 10
+			}
+			modifier = {
+				factor = 0.5
+				oil > 20
+			}	
+			modifier = {
+				factor = 0.5
+				oil > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+	}
+	
+}

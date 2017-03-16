@@ -1,0 +1,29 @@
+
+state={
+	id=538
+	name="STATE_538" # Central Congo
+	manpower = 7500300
+	
+	state_category = rural
+	
+	resources = {
+		steel=14
+		chromium=47
+		tungsten=9
+		aluminium=15
+		rubber=9
+		oil=2
+	}	
+
+	history={
+		owner = DRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		988 7219 7931 8016 8048 10071 10883 10951 12741 12775 12824 
+	}
+}

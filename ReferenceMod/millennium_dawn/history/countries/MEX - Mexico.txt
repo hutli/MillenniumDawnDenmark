@@ -1,0 +1,448 @@
+﻿capital = 277
+
+oob = "MEX_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = country_language_spanish
+
+set_country_flag = starting_stability_low
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_rapid
+	limited_conscription
+}
+
+set_politics = {
+
+	parties = {
+		market_liberal = {
+			popularity = 36
+		}
+		social_democrat = {
+			popularity = 30
+		}
+		conservative = {
+			popularity = 30
+		}
+		progressive = {
+			popularity = 2
+		}
+		monarchist = { 
+			popularity = 1
+		}
+		nationalist = { 
+			popularity = 1
+		}
+	}
+	
+	ruling_party = market_liberal
+	last_election = "1994.8.21"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+add_opinion_modifier = {
+	target = CAN
+	modifier = NAFTA
+}
+
+add_opinion_modifier = {
+	target = USA
+	modifier = NAFTA
+}
+
+create_country_leader = {
+	name = "Maximilian von Götzen-Iturbide"
+	ideology = absolute_monarchist
+	picture = "Portrait_MEX_Maximilian.dds"
+	expire = "2050.7.2"
+	
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Ernesto Zedillo"
+	ideology = libertarian
+	picture = "Portrait_MEX_Ernesto_Zedillo.dds"
+	expire = "2010.7.2"
+	
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Diego Fernandez de Cevallos"
+	ideology = right_wing_conservative
+	picture = "Portrait_MEX_Diego_Fernandez_de_Cevallos.dds"
+	expire = "2010.7.2"
+	
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Cuauhtemoc Cardenas Solorzano"
+	ideology = social_democrat_ideology
+	picture = "Portrait_MEX_Cuauhtemoc_Cardenas_Solorzano.dds"
+	expire = "2010.7.2"
+	
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Cecilia Soto Gonzalez"
+	ideology = progressive_ideology
+	picture = "Portrait_MEX_Cecilia_Soto_Gonzalez.dds"
+	expire = "2050.7.2"
+	
+	traits = {}
+}
+
+create_corps_commander = {
+	name = "Carlos Antonio Rodriguez"
+	picture = "Portrait_MEX_general_Carlos_Antonio_Rodriguez_Munguia.dds"
+	skill = 1
+	}
+
+create_corps_commander = {
+	name = "Daniel Velasco Ramirez"
+	picture = "Portrait_MEX_general_Daniel_Velasco_Ramirez.dds"
+	skill = 1
+	}
+
+create_corps_commander = {
+	name = "Enrique Cervantes Aguirre"
+	picture = "Portrait_MEX_general_Enrique_Cervantes_Aguirre.dds"
+	skill = 1
+	}
+
+create_corps_commander = {
+	name = "Gerardo Clemente Vega Garcia"
+	picture = "Portrait_MEX_general_Gerardo_Clemente_Vega_Garcia.dds"
+	skill = 1
+	}
+
+create_corps_commander = {
+	name = "Gilberto Hernandez Andreu"
+	picture = "Portrait_MEX_general_Gilberto_Hernandez_Andreu.dds"
+	skill = 1
+	}
+create_corps_commander = {
+	name = "Guillermo Galvan Galvan"
+	picture = "Portrait_MEX_general_Guillermo_Galvan.dds"
+	skill = 1
+	}
+create_corps_commander = {
+	name = "Juan Rios Cantu"
+	picture = "Portrait_MEX_general_Juan_Rios_Cantu.dds"
+	skill = 1
+	}
+create_corps_commander = {
+	name = "Roble Arturo Granados Gallardo"
+	picture = "Portrait_MEX_general_Roble_Arturo_Granados_Gallardo.dds"
+	skill = 1
+	}
+create_corps_commander = {
+	name = "Salvador Cienfuegos Zepeda"
+	picture = "Portrait_MEX_general_Salvador_Cienfuegos_Zepeda.dds"
+        traits = { desert_fox }
+	skill = 2
+	}
+
+create_corps_commander = {
+	name = "Tomas Angeles Dauahare"
+	picture = "Portrait_MEX_general_Tomas_Angeles_Dauahare.dds"
+	skill = 1
+	}
+
+create_navy_leader = {
+	name = "Jose Ramon Lorenzo"
+	picture = "Portrait_MEX_admiral_Jose_Ramon_Lorenzo_Franco.dds"
+	skill = 1
+	}
+
+create_navy_leader = {
+	name = "Marco Antonio Peyrot Gonzalez"
+	picture = "Portrait_MEX_admiral_Marco_Antonio_Peyrot_Gonzalez.dds"
+	skill = 1
+	}
+create_navy_leader = {
+	name = "Mariano Francisco Saynez Mendoza"
+	picture = "Portrait_MEX_admiral_Mariano_Francisco_Saynez_Mendoza.dds"
+	skill = 1
+	}
+create_navy_leader = {
+	name = "Vidal Francisco Soberon Sanz"
+	picture = "Portrait_MEX_admiral_Vidal_Francisco_Soberon_Sanz.dds"
+	skill = 1
+	}
+
+2000.7.2 = {
+set_politics = {
+             ruling_party = conservative
+	last_election = "2000.6.2"
+	election_frequency = 72
+	elections_allowed = yes
+		
+	}
+
+    create_country_leader = {
+	name = "Vicente Fox"
+	picture = "Portrait_MEX_Vicente_Fox.dds"
+	expire = "2050.1.1"
+	ideology = gaullist
+		
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Cuauhtemoc Cardenas Solorzano"
+	ideology = social_democrat_ideology
+	picture = "Portrait_MEX_Cuauhtemoc_Cardenas_Solorzano.dds"
+	expire = "2050.7.2"
+	
+	traits = {}
+ }
+
+create_country_leader = {
+	name = "Francisco Labastida Ochoa"
+	picture = "Portrait_MEX_Francisco_Labastida_Ochoa.dds"
+	expire = "2050.1.1"
+	ideology = libertarian
+		
+	traits = {}
+    }
+}
+
+2006.7.2 = { 
+set_politics = {
+             ruling_party = conservative
+	last_election = "2006.6.2"
+	election_frequency = 72
+	elections_allowed = yes
+		
+	}
+    create_country_leader = {
+	name = "Felipe Calderón"
+	picture = "Portrait_MEX_Felipe_Calderon.dds"
+	expire = "2050.1.1"
+	ideology = gaullist
+		
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Roberto Madrazo"
+	ideology = social_democrat_ideology
+	picture = "Portrait_MEX_Roberto_Madrazo.dds"
+	expire = "2050.7.2"
+	
+	traits = {}
+ }
+
+create_country_leader = {
+	name = "Andres Manuel Lopez Obrador"
+	picture = "Portrait_MEX_Andres_Manuel_Lopez_Obrador.dds"
+	expire = "2050.1.1"
+	ideology = liberalist
+		
+	traits = {}
+    }
+}
+
+2012.7.2 = { 
+set_party_name = {
+		ideology = democratic_socialist
+		long_name = MEX_democratic_socialist_party_NA_long
+		name = MEX_democratic_socialist_party_NA
+	}
+set_politics = {
+             ruling_party = market_liberal
+	last_election = "2012.6.2"
+	election_frequency = 72
+	elections_allowed = yes
+		
+	}
+
+    create_country_leader = {
+	name = "Enrique Peña Nieto"
+	picture = "Portrait_MEX_Enrique_Pena_Nieto.dds"
+	expire = "2050.1.1"
+	ideology = libertarian
+		
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Josefina Vasquez Mota"
+	ideology = right_wing_conservative
+	picture = "Portrait_MEX_Josefina_Vasquez_Mota.dds"
+	expire = "2050.7.2"
+	
+	traits = {}
+ }
+
+create_country_leader = {
+	name = "Andres Manuel Lopez Obrador"
+	picture = "Portrait_MEX_Andres_Manuel_Lopez_Obrador.dds"
+	expire = "2050.1.1"
+	ideology = liberalist
+		
+	traits = {}
+    }
+}
+
+2016.1.1 = {
+
+  
+	set_politics = {
+
+		parties = {
+			market_liberal = {
+				popularity = 32
+			}
+			social_liberal = {
+				popularity = 31
+			}
+			conservative = {
+				popularity = 29
+			}
+			reactionary = {
+				popularity = 3
+			}
+			nationalist = { 
+				popularity = 4
+			}
+			monarchist = { 
+				popularity = 1
+			}   
+		}
+		
+		ruling_party = market_liberal
+		last_election = "2012.2.1"
+		election_frequency = 72
+		elections_allowed = yes
+	}
+	
+	create_country_leader = {
+		name = "Enrique Peña Nieto"
+		ideology = libertarian
+		picture = "Portrait_MEX_Enrique_Pena_Nieto.dds"
+		expire = "2050.1.1"
+		
+		traits = {}
+	}
+
+	create_country_leader = {
+	name = "Josefina Vasquez Mota"
+	ideology = right_wing_conservative
+	picture = "Portrait_MEX_Josefina_Vasquez_Mota.dds"
+	expire = "2050.7.2"
+	
+	traits = {}
+ }
+
+create_country_leader = {
+	name = "Andres Manuel Lopez Obrador"
+	picture = "Portrait_MEX_Andres_Manuel_Lopez_Obrador.dds"
+	expire = "2050.1.1"
+	ideology = liberalist
+		
+	traits = {}
+    }
+create_country_leader = {
+	name = "Gabriel Quadri de la Torre"
+	picture = "Portrait_MEX_Gabriel_Quadri_de_la_Torre.dds"
+	expire = "2050.1.1"
+	ideology = social_democrat_ideology
+		
+	traits = {}
+    }
+}

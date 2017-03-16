@@ -1,0 +1,21 @@
+
+state={
+	id=556
+	name="STATE_556"
+
+	history={
+		owner = IVO
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		5013 5070 8065 
+	}
+	manpower=4222000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

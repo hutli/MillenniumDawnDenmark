@@ -1,0 +1,329 @@
+﻿capital = 547
+
+oob = "KEN_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = country_language_english
+set_country_flag = country_language_swahili
+
+set_country_flag = starting_stability_low
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_rapid
+	african_union_member
+	commonwealth_of_nations_member
+}
+
+set_politics = {
+
+	parties = {
+	islamist = {
+	popularity = 0
+	}
+	fascist = {
+	popularity = 0
+	}
+	nationalist = {
+	popularity = 16
+	}
+	reactionary = {
+	popularity = 2
+	}
+	conservative = {
+	popularity = 50
+	}
+	market_liberal = {
+	popularity = 2
+	}
+	social_liberal = {
+	popularity = 21
+	}
+	social_democrat = {
+	popularity = 1
+	}
+	progressive = {
+	popularity = 1
+	}
+	democratic_socialist = {
+	popularity = 1
+	}
+	communist = {
+	popularity = 6
+	}
+	}
+	
+	ruling_party = conservative
+	last_election = "1997.12.29"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+2000.1.1 = {
+	
+	create_country_leader = {
+	name = "Daniel Arap Moi"
+	desc = "POLITICIAN_KEN_DANIEL_ARAP_MOI_DESC"
+	picture = "Portrait_KEN_Daniel_Arap_Moi.dds"
+	expire = "2020.1.1"
+	ideology = right_wing_conservative
+	
+	traits = {
+	
+	}
+	}
+
+#	create_country_leader = {
+#	name = "Mwai Kibaki"
+#	desc = "POLITICIAN_KEN_MWAI_KIBAKI_DESC"
+#	picture = "Portrait_KEN_Mwai_Kibaki.dds"
+#	expire = "2020.1.1"
+#	ideology = right_wing_conservative
+#	
+#	traits = {
+#	
+#	}
+#	}
+
+	create_country_leader = {
+	name = "Michael Wamalwa"
+	desc = "POLITICIAN_KEN_MICHAEL_WAMALWA_DESC"
+	picture = "Portrait_KEN_Michael_Wamalwa.dds"
+	expire = "2020.1.1"
+	ideology = moderate
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Mwandawiro Mghanga"
+	desc = "POLITICIAN_KEN_MWANDAWIRO_MGHANGA_DESC"
+	picture = "Portrait_KEN_Mwandawiro_Mghanga.dds"
+	expire = "2020.1.1"
+	ideology = marxist
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Katama Mkangi"
+	desc = "POLITICIAN_KEN_MWANDAWIRO_MGHANGA_DESC"
+	expire = "2020.1.1"
+	ideology = libertarian
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Moses Wetangula"
+	desc = "POLITICIAN_KEN_MOSES_WETANGULA_DESC"
+	picture = "Portrait_KEN_Moses_Wetangula.dds"
+	expire = "2020.1.1"
+	ideology = liberalist
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Raila Odinga"
+	desc = "POLITICIAN_KEN_RAILA_ODINGA_DESC"
+	picture = "Portrait_KEN_Raila_Odinga.dds"
+	expire = "2020.1.1"
+	ideology = social_democrat_ideology
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Uhuru Kenyatta"
+	desc = "POLITICIAN_KEN_UHURU_KENYATTA_DESC"
+	picture = "Portrait_KEN_Uhuru_Kenyatta.dds"
+	expire = "2020.1.1"
+	ideology = counter_progressive_democrat
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Musalia Mudavadi"
+	desc = "POLITICIAN_KEN_MUSALIA_MUDAVADI_DESC"
+	picture = "Portrait_KEN_Musalia_Mudavadi.dds"
+	expire = "2020.1.1"
+	ideology = progressive_ideology
+	
+	traits = {
+	
+	}
+	}
+
+	create_corps_commander = {
+	name = "Samson Mwathethe"
+	picture = "Portrait_KEN_general_Samson_Mwathethe.dds"
+	skill = 1
+	}
+
+	create_corps_commander = {
+	name = "Leonard Ngondi"
+	picture = "Portrait_KEN_general_Leonard_Ngondi.dds"
+	skill = 1
+	}
+
+	create_navy_leader = {
+	name = "Levi Mghalu"
+		picture = "Portrait_KEN_admiral_Levi_Mghalu.dds"
+	traits = { }
+	skill = 1
+	}
+
+
+}
+
+
+
+2013.3.4 = {
+	
+	set_politics = {
+
+	parties = {
+	islamist = {
+	popularity = 0
+	}
+	fascist = {
+	popularity = 0
+	}
+	nationalist = {
+	popularity = 5
+	}
+	reactionary = {
+	popularity = 40
+	}
+	conservative = {
+	popularity = 5
+	}
+	market_liberal = {
+	popularity = 0
+	}
+	social_liberal = {
+	popularity = 20
+	}
+	social_democrat = {
+	popularity = 25
+	}
+	progressive = {
+	popularity = 5
+	}
+	democratic_socialist = {
+	popularity = 0
+	}
+	communist = {
+	popularity = 0
+	}
+	}
+	
+	ruling_party = reactionary
+	last_election = "2013.3.4"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+}

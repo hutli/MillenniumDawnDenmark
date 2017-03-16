@@ -1,0 +1,25 @@
+
+state={
+	id=184
+	name="STATE_184"
+	manpower = 382500
+	
+	state_category = town
+	
+	resources={
+		chromium=16
+	}
+
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+		add_core_of = GRE
+	}
+
+	provinces={
+		6990 9791 9930 11774 11905 
+	}
+}

@@ -1,0 +1,140 @@
+bookmarks = {
+	bookmark = {	#Modern Day
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 2016.6.1.12
+		picture = "GFX_select_date_1939"
+		default_country = "USA"
+	
+		"USA"={
+			history = "USA_BLITZKRIEG_DESC"
+			ideology = social_liberal
+			ideas = {
+				idea_USA_political_establishment
+				american_militarism
+				idea_united_nations_security_council_member
+			}
+		}
+		"PRC"={
+			history = "PRC_BLITZKRIEG_DESC"
+			ideology = communist
+			ideas={
+				idea_PRC_chinese_socialism
+				idea_united_nations_security_council_member
+			}			
+		}
+		"SOV"={
+			history = "SOV_BLITZKRIEG_DESC"
+			ideology = reactionary
+			ideas = {
+				idea_united_nations_security_council_member
+				idea_eu_sanctions
+			}
+		}
+		"GER"={
+			history = "GER_BLITZKRIEG_DESC"
+			ideology = social_democrat
+			ideas = {
+				idea_GER_german_legacy
+				idea_eu_member
+				GER_bundeswehr_shortcomings
+			}
+		}
+		"ENG"={
+			history = "ENG_BLITZKRIEG_DESC"
+			ideology = social_democrat
+			ideas = {
+				ENG_queen_elizabeth_2
+				idea_eu_member
+				idea_united_nations_security_council_member
+			}
+		}
+		"JAP"={
+			history = "JAP_BLITZKRIEG_DESC"
+			ideology = social_liberal
+			ideas = {
+				idea_JAP_emperor_akihito
+				japanese_article_9
+			}
+		}
+		"FRA"={
+			history = "FRA_BLITZKRIEG_DESC"
+			ideology = conservative
+			ideas = {
+				idea_eu_member
+				idea_united_nations_security_council_member
+			}
+		}
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_BLITZKRIEG_DESC"
+			ideology = social_democrat
+			ideas={
+				idea_RAJ_south_asian_tiger
+			}			
+		}
+		"ITA"={
+			minor = yes
+			history = "ITA_BLITZKRIEG_DESC"
+			ideology = social_democrat
+			ideas = {
+				idea_eu_member
+			}
+		}
+		"CAN" = {
+			minor = yes
+			history = "CAN_BLITZKRIEG_DESC"
+			ideology = social_liberal
+			ideas = {
+				quebec_separatism
+			}
+			focuses = {}
+		}
+		"BRA"={
+			minor = yes
+			history = "BRA_BLITZKRIEG_DESC"
+			ideology = conservative
+			ideas={}			
+		}
+		"ISR" = {
+			minor = yes
+			history = "ISR_BLITZKRIEG_DESC"
+			ideology = conservative
+			ideas = {
+				idea_ISR_vanguard_of_judaism
+			}
+			focuses = {}
+		}
+		"SPR" = {
+			minor = yes
+			history = "SPR_BLITZKRIEG_DESC"
+			ideology = conservative
+			ideas = {
+				catalonia_separatism
+				idea_eu_member
+			}
+			focuses = {}
+		}
+		"KOR" = {
+			minor = yes
+			history = "KOR_BLITZKRIEG_DESC"
+			ideology = conservative
+			ideas = {}
+			focuses = {}
+		}
+		"TUR" = {
+			minor = yes
+			history = "TUR_BLITZKRIEG_DESC"
+			ideology = conservative
+			ideas = {}
+			focuses = {}
+		}
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

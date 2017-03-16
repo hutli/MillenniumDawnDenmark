@@ -1,0 +1,24 @@
+state={
+	id=744
+	name="STATE_744"
+	
+	resources = {
+		oil=12
+	}
+	
+	history = {
+		owner = MAL
+		
+		buildings = {
+			infrastructure = 0
+		}
+	}
+	
+	provinces={
+		1115 10725 10868 
+	}
+	manpower=66000
+	buildings_max_level_factor=1.000
+	
+	state_category = wasteland
+}

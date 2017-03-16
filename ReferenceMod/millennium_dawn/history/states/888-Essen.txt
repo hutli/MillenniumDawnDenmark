@@ -1,0 +1,26 @@
+state={
+	id=888
+	name="STATE_888"
+	resources = {
+		steel=22
+		chromium=5
+		tungsten=5
+		aluminium=10
+	}
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 5
+			air_base = 2
+		}
+	}	
+	provinces={
+		529 3512 6469 6570 9482 
+	}
+	manpower=4284000
+	buildings_max_level_factor=1.000
+	
+	state_category = city
+}

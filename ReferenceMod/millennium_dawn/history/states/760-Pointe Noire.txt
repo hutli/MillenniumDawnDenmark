@@ -1,0 +1,25 @@
+state={
+	id=760
+	name="STATE_760"
+	
+	resources = {
+		rubber = 15
+		oil = 1
+	}
+	
+	history = {
+		owner = COG
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+	
+	provinces={
+		2192 12975 
+	}
+	manpower=321300
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

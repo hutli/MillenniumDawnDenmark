@@ -1,0 +1,39 @@
+
+state={
+	id=428
+	name="STATE_428"
+	manpower = 74590200
+	
+	
+	state_category = city
+	resources={
+		oil=11
+		steel=3
+		tungsten=1
+		aluminium=1
+	}
+
+	history={
+		owner = RAJ
+		victory_points = {
+			9975 1 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			dockyard = 1
+			9975 = {
+				naval_base = 2
+			}
+		}
+		2016.1.1 = {
+			buildings = {
+				arms_factory = 3
+			}
+		}
+	}
+
+	provinces={
+		1061 1103 1144 1190 4064 4090 4132 4187 7020 7150 7165 7207 9975 10118 11952 12037 12092 
+	}
+}

@@ -1,0 +1,72 @@
+ideas = {
+	
+	country = {
+		
+		population_growth_explosion = {
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = 1.15
+				consumer_goods_factor = 0.1
+			}
+			
+		}
+		
+		population_growth_rapid = {
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = 0.6
+				consumer_goods_factor = 0.06
+			}
+			
+		}
+		
+		population_growth_steady = {
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+			
+		}
+		
+		population_growth_stagnation = {
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = -0.6
+				research_time_factor = -0.03
+			}
+			
+		}
+		
+		population_growth_decline = {
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = -1.15
+				research_time_factor = -0.06
+				consumer_goods_factor = -0.03
+			}
+			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=587
+	name="STATE_587"
+
+	history={
+		owner = UZB
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = UZB
+
+	}
+
+	provinces={
+		7541 7641 12233 12383 12454 12474 
+	}
+	manpower=2230300
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

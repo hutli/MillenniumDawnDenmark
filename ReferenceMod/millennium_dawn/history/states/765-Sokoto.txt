@@ -1,0 +1,18 @@
+state={
+	id=765
+	name="STATE_765"
+	history = {
+		owner = NGR
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+	}
+	provinces={
+		1891 1969 
+	}
+	state_category = town
+	manpower=3500250
+	buildings_max_level_factor=1.000
+}

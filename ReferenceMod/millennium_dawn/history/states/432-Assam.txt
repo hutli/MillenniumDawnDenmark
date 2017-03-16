@@ -1,0 +1,29 @@
+
+state={
+	id=432
+	name="STATE_432"
+	resources={
+		oil=11
+		steel=2
+		rubber=17
+	}
+
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 5
+		}
+		2016.1.1 = {
+			buildings = {
+				industrial_complex = 1
+			}
+		}
+	}
+
+	provinces={
+		997 1497 1525 1553 1581 7179 7455 10090 10349 10514 12366 12395 12423 
+	}
+	manpower=38125250
+	buildings_max_level_factor=1.000
+	state_category=town
+}

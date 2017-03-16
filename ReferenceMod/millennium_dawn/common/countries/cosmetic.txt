@@ -1,0 +1,9 @@
+EUU = {
+    color = rgb { 61 35 166 }
+    color_ui = rgb { 255 73 121 }
+}
+
+AUU = {
+    color = rgb { 5 164 5 }
+    color_ui = rgb { 255 179 96 }
+}

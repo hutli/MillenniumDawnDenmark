@@ -1,0 +1,407 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Armoured Regiment"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		mechanized = { x = 1 y = 0 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}
+}
+
+
+division_template = {
+	name = "Infantry Reserve Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	
+	priority = 0
+}
+
+division_template = {
+	name = "Cavalry Reserve Brigade"
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+	}
+	
+	priority = 0
+}
+
+division_template = {
+	name = "Special Operations Brigade"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	}
+	
+	priority = 2
+}
+
+units = {
+
+	division = {
+		name = "Special Operations Command"
+		location = 12406 #Sydney
+		division_template = "Special Operations Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "1st Armoured Regiment"
+		location = 7669	#Darwin
+		division_template = "Armoured Regiment"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "1st Brigade"
+		location = 7669	#Darwin
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "3rd Brigade"
+		location = 7566 #Townsville
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "7th Brigade"
+		location = 7564	#Enoggera (Brisbane)
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "4th Reserve Brigade"
+		location = 7798	#Melbourne
+		division_template = "Infantry Reserve Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "5th Reserve Brigade"
+		location = 12406 #Sydney
+		division_template = "Infantry Reserve Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "8th Reserve Brigade"
+		location = 12406 #Sydney
+		division_template = "Infantry Reserve Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "9th Reserve Brigade"
+		location = 12910 #Keswick (Adelaide)
+		division_template = "Infantry Reserve Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "11th Reserve Brigade"
+		location = 7566 #Townsville
+		division_template = "Infantry Reserve Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "13th Reserve Brigade"
+		location = 1652	#Perth
+		division_template = "Infantry Reserve Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "Combat Training Centre"
+		location = 7522 #Tully
+		division_template = "Infantry Reserve Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "North-West Mobile Force"
+		location = 7669	#Larrakeyah (Darwin)
+		division_template = "Cavalry Reserve Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	navy = {
+		name = "Australian Navy"
+		base = 12406
+		location = 12406
+		ship = {
+			name = "Collins"
+			definition = submarine
+			equipment = { submarine_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Farncomb"
+			definition = submarine
+			equipment = { submarine_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Waller"
+			definition = submarine
+			equipment = { submarine_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Dechaineux"
+			definition = submarine
+			equipment = { submarine_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Sheean"
+			definition = submarine
+			equipment = { submarine_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Rankin"
+			definition = submarine
+			equipment = { submarine_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Anzac"
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Arunta"
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Warramunga"
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Stuart"
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Parramatta"
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Ballarat"
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Towoomba"
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Perth"
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Darwin"
+			definition = frigate
+			equipment = { frigate_3 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Melbourne"
+			definition = frigate
+			equipment = { frigate_3 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Newcastle"
+			definition = frigate
+			equipment = { frigate_3 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Armidale"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Larrakia"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Bathurst"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Albany"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Pirie"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Maitland"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Ararat"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Broome"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Wollongong"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Childers"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Launceston"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Maryborough"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Glenelg"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Huon"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Hawkesbury"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Norman"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Diamantina"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Gascoyne"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = AST } }
+		}
+		ship = {
+			name = "Yarra"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = AST } }
+		}
+	}
+	
+}
+
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+		amount = 100000
+	}
+	
+}
+
+### Air OOB ###
+
+air_wings = {
+	285 = {
+		#F/A-18A
+		jet_multirole_equipment_3 = {
+			owner = "AST" 
+			amount = 54
+		}
+
+	}
+	521 = {
+		#F-111C
+		jet_bomber_equipment_2 = {
+			owner = "AST" 
+			amount = 20
+		}
+
+	}
+	521 = {
+		#F-111G
+		jet_bomber_equipment_2 = {
+			owner = "AST" 
+			amount = 15
+		}
+
+	}
+	519 = {
+		#P-3C
+		jet_MPA_equipment_3 = {
+			owner = "AST" 
+			amount = 10
+		}
+
+	}
+	520 = {
+		#P-3C
+		jet_MPA_equipment_3 = {
+			owner = "AST" 
+			amount = 9
+		}
+
+	}
+}

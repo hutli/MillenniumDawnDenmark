@@ -1,0 +1,104 @@
+﻿l_german:
+ cold_war_ship_design:0 "Kriegsschiffsdesign des Kalten Krieges"
+ cold_war_ship_design_desc:0 "Durch das Lernen aus unseren Fehlern der Weltkriege in Punkto Schiffbau, könnten wir in Zukunft neue Schiffstypen entwerfen."
+ carrier_nuclear_reactor:0 "Flugzeugträger Atomreaktoren"
+ carrier_nuclear_reactor_desc:0 "Die Reichweite der FlugzeugFlugzeugträger ist limitiert. Wenn wir Atomereaktoren als Antrieb benutzen würden, dann sollte es uns ermöglichen die Hohe See noch effizienter zu dominieren."
+ carrier_advanced_ramp_system:0 "Erweitertes Flugzeugträger-Rampen-System"
+ carrier_advanced_ramp_system_desc:0 "The runway on Aircraft Carriers is a problem. By applying a more ergonomic ramp at the end of the runway, we should be able to store more planes on top of the Flugzeugträger deck."
+ carrier_catapult:0 "Flugzeugträger Katapult"
+ carrier_catapult_desc:0 "Während Rampen uns in der Vergangenheit geholfen haben, haben unsere Wissenschaftler nun die Theorie, dass Systeme um Flugzeuge direkt in die Luft zu katapultieren die Kapazität der Flugzeugtränger noch mehr erhöhen könnte."
+ submarine_nuclear_reactor:0 "U-Boot Atomreaktoren"
+ submarine_nuclear_reactor_desc:0 "Wenn wir Atomreaktoren in U-Boote einbauen würden, würden wir ihre Reichweite massiv erhöhen."
+ submarine_cold_war_torpedo:0 "Torpedo aus dem Kalten Krieg"
+ submarine_modern_torpedo:0 "Moderner Torpedo"
+ submarine_future_torpedo:0 "Zukunftstorpedo"
+ destroyer_1:0 "Zerstörer I" #1960
+ destroyer_2:0 "Zerstörer II" #1980
+ destroyer_3:0 "Zerstörer III" #2000
+ destroyer_4:0 "Zerstörer IV" #2008
+ destroyer_5:0 "Zerstörer V" #2020
+ destroyer_6:0 "Zerstörer VI" #2030
+ frigate_1:0 "Fregatte I" #1960
+ frigate_2:0 "Fregatte II" #1980
+ frigate_3:0 "Fregatte III" #2002
+ frigate_4:0 "Fregatte IV" #2012
+ frigate_5:0 "Fregatte V" #2025
+ frigate_6:0 "Fregatte VI" #2030
+ missile_cruiser_1:0 "Raketenkreuzer I" #1960
+ missile_cruiser_2:0 "Raketenkreuzer II" #2000
+ missile_cruiser_3:0 "Raketenkreuzer III" #2006
+ missile_cruiser_4:0 "Raketenkreuzer IV" #2010
+ missile_cruiser_5:0 "Raketenkreuzer V" #2020
+ missile_cruiser_6:0 "Raketenkreuzer VI" #2030
+ carrier_1:0 "Flugzeugträger I" #1960
+ carrier_2:0 "Flugzeugträger II" #1980
+ carrier_3:0 "Flugzeugträger III" #2004
+ carrier_4:0 "Flugzeugträger IV" #2012
+ carrier_5:0 "Flugzeugträger V" #2018
+ carrier_6:0 "Flugzeugträger VI" #2030
+ submarine_1:0 "U-Boot I" #1960
+ submarine_2:0 "U-Boot II" #1980
+ submarine_3:0 "U-Boot III" #2006
+ submarine_4:0 "U-Boot IV" #2014
+ submarine_5:0 "U-Boot V" #2025
+ submarine_6:0 "U-Boot VI" #2030
+ GER_destroyer_1:0 "Hamburg-Klasse"
+ GER_destroyer_2:0 "Brandenburg-Klasse"
+ GER_destroyer_3:0 "Sachsen-Klasse"
+ GER_destroyer_4:0 "Baden-Württemberg-Klasse"
+ GER_destroyer_5:0 "Bayern-Klasse"
+ GER_destroyer_6:0 "Westfalen-Klasse"
+ GER_frigate_1:0 "Jaguar-Klasse"
+ GER_frigate_2:0 "Tiger-Klasse"
+ GER_frigate_3:0 "Puma-Klasse"
+ GER_frigate_4:0 "Panther-Klasse"
+ GER_frigate_5:0 "Löwe-Klasse"
+ GER_frigate_6:0 "Jagulep-Klasse"
+ GER_missile_cruiser_1:0 "Berlin-Klasse"
+ GER_missile_cruiser_2:0 "Stuttgart-Klasse"
+ GER_missile_cruiser_3:0 "Barbarossa-Klasse"
+ GER_missile_cruiser_4:0 "Wilhelm-Klasse"
+ GER_missile_cruiser_5:0 "Luther-Klasse"
+ GER_missile_cruiser_6:0 "Guttenberg-Klasse"
+ GER_carrier_1:0 "Stresemann-Klasse"
+ GER_carrier_2:0 "Adenauer-Klasse"
+ GER_carrier_3:0 "Vaterland-Klasse"
+ GER_carrier_4:0 "Kaiser-Klasse"
+ GER_carrier_5:0 "Europa-Klasse"
+ GER_carrier_6:0 "Deutschland-Klasse"
+ GER_submarine_1:0 "U9-Klasse"
+ GER_submarine_2:0 "U13-Klasse"
+ GER_submarine_3:0 "U31-Klasse"
+ GER_submarine_4:0 "Tiefenjäger-Klasse"
+ GER_submarine_5:0 "Todesbringer-Klasse"
+ GER_submarine_6:0 "Eisenherz-Klasse"
+ USA_destroyer_1:0 "Charles F. Adams Klasse"
+ USA_destroyer_2:0 "Spruance Klasse"
+ USA_destroyer_3:0 "Arleigh Burke Klasse"
+ USA_destroyer_4:0 "Zumwalt Klasse"
+ USA_destroyer_5:0 "Washington Klasse"
+ USA_destroyer_6:0 "California Klasse"
+ USA_frigate_1:0 "Pegasus Klasse"
+ USA_frigate_2:0 "Cyclone Klasse"
+ USA_frigate_3:0 "Tornado Klasse"
+ USA_frigate_4:0 "Hurricane Klasse"
+ USA_frigate_5:0 "Thunderstorm Klasse"
+ USA_frigate_6:0 "Tsunami Klasse"
+ USA_missile_cruiser_1:0 "Leahy Klasse"
+ USA_missile_cruiser_2:0 "Ticonderoga Klasse"
+ USA_missile_cruiser_3:0 "CG(X) Klasse"
+ USA_missile_cruiser_4:0 "Miami Klasse"
+ USA_missile_cruiser_5:0 "Houston Klasse"
+ USA_missile_cruiser_6:0 "Ulysses Klasse"
+ USA_carrier_1:0 "Kitty Hawk Klasse"
+ USA_carrier_2:0 "Nimitz Klasse"
+ USA_carrier_3:0 "Gerald R. Ford Klasse"
+ USA_carrier_4:0 "Enterprise Klasse"
+ USA_carrier_5:0 "Roosevelt Klasse"
+ USA_carrier_6:0 "Puerto Rico Klasse"
+ USA_submarine_1:0 "James Madison Klasse"
+ USA_submarine_2:0 "Los Angeles Klasse"
+ USA_submarine_3:0 "Virginia Klasse"
+ USA_submarine_4:0 "Texas Klasse"
+ USA_submarine_5:0 "Dakota Klasse"
+ USA_submarine_6:0 "Hearts of Iron Klasse"

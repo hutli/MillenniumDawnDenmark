@@ -1,0 +1,349 @@
+﻿division_template = {
+	name = "Militia Regiment"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+	}
+	
+	priority = 0
+}
+
+division_template = {
+	name = "Infantry Brigade"
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 0 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Infantry Division"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+		light_mechanized = { x = 1 y = 3 }
+		motorized = { x = 2 y = 4 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Brigade"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+		light_mechanized = { x = 1 y = 3 }
+		light_mechanized = { x = 1 y = 4 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		light_mechanized = { x = 2 y = 2 }
+		light_mechanized = { x = 2 y = 3 }
+		light_mechanized = { x = 2 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+	
+	priority = 2
+}
+
+division_template = {
+	name = "Paratrooper Brigade"
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+	priority = 2
+}
+
+division_template = {
+	name = "Mountain Brigade"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	
+	###
+	#1st Corps: Operates in the Golan Heights
+	division = {
+		name = "5th Armored Division"
+		location = 1074
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "6th Armored Division"
+		location = 1074
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "7th Mechanized Division"
+		location = 1074
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "8th Armored Division"
+		location = 1074
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "9th Armored Division"
+		location = 1074
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	
+	###
+	#2nd Corps: Operates around Northern Lebanon
+	division = {
+		name = "1st Armored Division"
+		location = 10087
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "3rd Armored Division"
+		location = 4550
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "11th Armored Division"
+		location = 4550
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "4th Mechanized Division"
+		location = 4111
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "10th Mechanized Division"
+		location = 4550
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	###
+	#3rd Corps: Operates on the Northern Border
+
+	division = {
+		name = "2nd (Reserve) Armored Division"
+		location = 12473
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "19th Mechanized Brigade"
+		location = 1578
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	###
+	#Independent Forces
+	
+	division = {
+		name = "1st Independent Infantry Brigade"
+		location = 3942
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Independent Infantry Brigade"
+		location = 7671
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Independent Infantry Brigade"
+		location = 12316
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Independent Infantry Brigade"
+		location = 1549
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+}
+
+### Air OOB ###
+
+air_wings = {
+
+	677 = {
+		#MiG-23
+		jet_multirole_equipment_2 = {
+			owner = "SYR" 
+			amount = 18
+		}
+
+	}
+
+	677 = {
+		#MiG-21
+		jet_multirole_equipment_1 = {
+			owner = "SYR" 
+			amount = 72
+		}
+
+	}
+
+	554 = {
+		#MiG-29
+		jet_multirole_equipment_3 = {
+			owner = "SYR" 
+			amount = 68
+		}
+
+	}
+
+	554 = {
+		#MiG-23
+		jet_multirole_equipment_2 = {
+			owner = "SYR" 
+			amount = 128
+		}
+
+	}
+	554 = {
+		#MiG-21
+		jet_multirole_equipment_1 = {
+			owner = "SYR" 
+			amount = 108
+		}
+
+	}
+	554 = {
+		#Su-22
+		jet_attack_equipment_2 = {
+			owner = "SYR" 
+			amount = 48
+		}
+
+	}
+	554 = {
+		#Su-24 - Tactical Bomber
+		jet_attack_equipment_2 = {
+			owner = "SYR" 
+			amount = 10
+		}
+
+	}
+	680 = {
+		#MiG-25 - Interceptor
+		jet_multirole_equipment_2 = {
+			owner = "SYR" 
+			amount = 40
+		}
+
+	}
+	680 = {
+		#MiG-21
+		jet_multirole_equipment_1 = {
+			owner = "SYR" 
+			amount = 36
+		}
+
+	}
+	680 = {
+		#Su-22
+		jet_attack_equipment_2 = {
+			owner = "SYR" 
+			amount = 16
+		}
+
+	}
+	680 = {
+		#Su-24 - Tactical Bomber
+		jet_attack_equipment_2 = {
+			owner = "SYR" 
+			amount = 10
+		}
+
+	}
+}

@@ -1,0 +1,409 @@
+leader_traits = {
+	
+	stout_defender = { # This particular trait will make the AI heavily prioritize defensive warfare, rarely, if ever, attacking out of fortified locations
+		random = no
+		ai_focus_defense_factor = 0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	spirit_of_genghis = {
+		random = no
+		cavalry_attack_factor = 0.05
+		equipment_bonus = {
+			nav_bomber_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+#ai_focus_defense_factor
+#ai_focus_aggressive_factor
+#ai_focus_production_factor
+#ai_focus_military_advancements_factor
+#ai_focus_peaceful_factor
+#ai_focus_naval_factor
+#ai_focus_naval_air_factor
+#ai_focus_aviation_factor 
+	
+	tenacious_defender = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	exiled = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	political_prisoner = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assassination_survivor = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	stalins_puppet = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	union_man = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	political_dancer = {
+		random = no
+		political_power_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	cornered_fox = {
+		random = no
+		army_defence_factor = 0.15
+		army_morale_Factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	permanent_revolutionary = {
+		random = no
+		political_power_factor = -0.15
+		justify_war_goal_time = 0.15
+		subversive_activites_upkeep = -0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### IDEA TRAITS ###
+	
+	# drift is a percent applied weekly
+	communist_revolutionary = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	democratic_reformer = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	fascist_demagogue = {
+		random = no
+		# Boosts Fascism
+		sprite = 13
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	prince_of_terror = {
+		sprite = 13
+		enemy_partisan_effect = -0.25
+		foreign_subversive_activites = -0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	compassionate_gentleman = {
+		random = yes
+		sprite = 13
+		opinion_gain_monthly_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	backroom_backstabber = {
+		sprite = 13
+		political_power_factor = 0.05
+		drift_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	smooth_talking_charmer = {
+		random = yes
+		sprite = 13
+		trade_opinion_factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ideological_crusader = {
+		random = yes
+		sprite = 13
+		opinion_gain_monthly_same_ideology_factor = 1.0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rocket_scientist = {
+		random = no
+		sprite = 14
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nuclear_scientist = {
+		random = no
+		sprite = 14
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	military_theorist = {
+		sprite = 14
+		experience_gain_army = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	mobile_warfare_expert = { 
+		sprite = 14
+		experience_gain_army = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	superior_firepower_expert = {
+		sprite = 14
+		experience_gain_army = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	grand_battle_plan_expert = {
+		sprite = 14
+		experience_gain_army = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	mass_assault_expert = {
+		sprite = 14
+		experience_gain_army = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	air_warfare_theorist = {
+		sprite = 14
+		experience_gain_air = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	dive_bomber = {
+		sprite = 14
+		equipment_bonus = {
+			CAS_equipment = {
+					instant = yes
+					air_ground_attack = 0.1 
+			}
+		}
+		experience_gain_air = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	victory_through_airpower = {
+		sprite = 14
+		experience_gain_air = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	close_air_support_proponent = {
+		sprite = 14
+		experience_gain_air = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	assault_avaition = {
+		sprite = 14
+		experience_gain_air = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	naval_theorist = {
+		sprite = 14
+		experience_gain_navy = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	naval_aviation_pioneer = {
+		sprite = 14
+		experience_gain_navy = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	grand_fleet_proponent = {
+		sprite = 14
+		experience_gain_navy = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	submarine_specialist = {
+		sprite = 14
+		experience_gain_navy = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	blitzkrieg_theorist = {
+		sprite = 14
+		
+		equipment_bonus = {
+			armor = {
+				instant = yes
+				maximum_speed = 0.10
+			}
+		}
+		experience_gain_army = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	artillery_manufacturer = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	infantry_equipment_manufacturer = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	motorized_equipment_manufacturer = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	industrial_concern = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	refinery_concern = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	electronics_concern = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

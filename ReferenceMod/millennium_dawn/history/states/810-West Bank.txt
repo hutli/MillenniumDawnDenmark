@@ -1,0 +1,24 @@
+state={
+	id=810
+	name="STATE_810"
+	history = {
+		owner = PAL
+		
+		add_core_of = PAL
+		add_claim_by = ISR
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		
+		victory_points = { 7107 2 }
+	}
+	provinces={
+		7107 
+	}
+	manpower=2200000
+	buildings_max_level_factor=1.000
+	
+	state_category = enclave
+}

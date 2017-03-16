@@ -1,0 +1,322 @@
+﻿capital = 767
+
+oob = "NGR_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = country_language_english
+set_country_flag = country_language_hausa
+set_country_flag = country_language_yoruba
+set_country_flag = country_language_igbo
+
+set_country_flag = starting_stability_very_low
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_explosion
+	african_union_member
+	commonwealth_of_nations_member
+}
+
+set_politics = {
+
+	parties = {
+		islamist = {
+		popularity = 2
+		}
+		fascist = {
+		popularity = 0
+		}
+		nationalist = {
+		popularity = 2
+		}
+		reactionary = {
+		popularity = 20
+		}
+		conservative = {
+		popularity = 49
+		}
+		market_liberal = {
+		popularity = 0
+		}
+		social_liberal = {
+		popularity = 3
+		}
+		social_democrat = {
+		popularity = 3
+		}
+		progressive = {
+		popularity = 15
+		}
+		democratic_socialist = {
+		popularity = 0
+		}
+		communist = {
+		popularity = 6
+		}
+	}
+	
+	ruling_party = conservative
+	last_election = "1999.2.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+name = "Goodluck Jonathan"
+desc = "POLITICIAN_NGR_GOODLUCK_JONATHAN_DESC"
+picture = "Portrait_NGR_Goodluck_Jonathan.dds"
+expire = "2020.1.1"
+ideology = constitutionalist
+
+traits = {
+
+}
+}
+
+create_country_leader = {
+name = "Muhammadu Buhari"
+desc = "POLITICIAN_NGR_MUHAMMADU_BUHARI_DESC"
+picture = "Portrait_NGR_Muhammadu_Buhari.dds"
+expire = "2020.1.1"
+ideology = moderate
+
+traits = {
+
+}
+}
+
+create_country_leader = {
+name = "Okey Nwosu"
+desc = "POLITICIAN_NGR_OKEY_NWOSU_DESC"
+picture = "Portrait_NGR_Okey_Nwosu.dds"
+expire = "2020.1.1"
+ideology = oligarchist
+
+traits = {
+
+}
+}
+
+create_country_leader = {
+name = "Adebisi Akande"
+desc = "POLITICIAN_NGR_ADEBISIS_ANKANDE_DESC"
+picture = "Portrait_NGR_Adebisi_Akande.dds"
+expire = "2020.1.1"
+ideology = libertarian
+
+traits = {
+
+}
+}
+
+create_country_leader = {
+name = "Joseph Avazi"
+ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Segun Sango"
+	picture = "Portrait_NGR_Segun_Sango.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Alhaji Abdulkadir Abdulsalam"
+	picture = "Portrait_NGR_Alhaji_Abdulkadir_Abdulsalam.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Tanko Yinusa"
+	picture = "Portrait_NGR_Tanko_Yinusa.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Abubakar Shekau"
+	picture = "Portrait_NGR_Abubakar_Shekau.dds"
+	ideology = islamic_authoritarian
+}
+
+create_corps_commander = {
+	name = "Abayomi Olonisakin"
+	picture = "Portrait_NGR_general_Abayomi_Olonisakin.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Abdulrahman Bello Dambazau"
+	picture = "Portrait_NGR_general_Abdulrahman_Bello_Dambazau.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Alexander Ogomudia"
+	picture = "Portrait_NGR_general_Alexander_Ogomudia.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Andrew Azazi"
+	picture = "Portrait_NGR_general_Andrew_Azazi.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Kenneth Minimah"
+	picture = "Portrait_NGR_general_Kenneth_Minimah.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Martin Luther Agwai"
+	picture = "Portrait_NGR_general_Martin_Luther_Agwai.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Turker Yusuf Buratai"
+	picture = "Portrait_NGR_general_Turker_Yusuf_Buratai.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "D.J. Ezeoba"
+	picture = "Portrait_NGR_admiral_D.J._Ezeoba.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Ibok-Ete Ekwe Ibas"
+	picture = "Portrait_NGR_admiral_Ibok-Ete_Ekwe_Ibas.dds"
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Ishaya Ibrahim"
+	picture = "Portrait_NGR_admiral_Ishaya_Ibrahim.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "U.O. Jibrin"
+	picture = "Portrait_NGR_admiral_U.O._Jibrin.dds"
+	skill = 1
+}
+
+2014.1.1 = {
+	set_country_flag = starting_stability_low
+}
+
+2015.3.28 = {
+	
+	set_politics = {
+	
+		parties = {
+			islamist = { popularity = 18 }
+			fascist = { popularity = 4 }
+			nationalist = { popularity = 0 }
+			reactionary = { popularity = 2 }
+			conservative = { popularity = 30 }
+			market_liberal = { popularity = 2 }
+			social_liberal = { popularity = 40 }
+			social_democrat = { popularity = 4 }
+			progressive = { popularity = 0 }
+			democratic_socialist = { popularity = 0 }
+			communist = { popularity = 0 }
+		}
+		
+		ruling_party = social_liberal
+		last_election = "2015.3.28"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}

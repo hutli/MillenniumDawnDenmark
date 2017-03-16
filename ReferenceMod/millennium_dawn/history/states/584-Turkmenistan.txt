@@ -1,0 +1,24 @@
+
+state={
+	id=584
+	name="STATE_584"
+
+	history={
+		owner = TRM
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 4
+
+		}
+		add_core_of = TRM
+
+	}
+
+	provinces={
+		1593 4563 4599 7477 7563 7635 10348 10359 10406 10510 12359 
+	}
+	manpower=1064523
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

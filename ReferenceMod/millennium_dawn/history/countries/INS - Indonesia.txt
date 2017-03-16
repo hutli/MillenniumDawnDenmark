@@ -1,0 +1,333 @@
+﻿capital = 335
+
+oob = "IDO_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = country_language_indonesian
+
+set_country_flag = starting_stability_average
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+	
+}
+
+add_ideas = {
+	population_growth_rapid
+}
+
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
+set_politics = {
+
+	parties = {
+		islamist = { popularity = 21 } 
+		nationalist = { popularity = 12 }
+		reactionary = { popularity = 2 } 
+		conservative = { popularity = 22 } 
+		market_liberal = { popularity = 1 } 
+		social_liberal = { popularity = 4 }
+		social_democrat = { popularity = 3 } 
+		progressive = { popularity = 30	} 
+		democratic_socialist = { popularity = 1	} 
+		communist = { popularity = 4 }
+	}
+	
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Abdurrahman Wahid"
+	desc = "POLITICIAN_IDO_ABDURRAHMAN_WAHID_DESC"
+	picture = "Portrait_IDO_Abdurrahman_Wahid.dds"
+	expire = "2020.1.1"
+	ideology = national_democrat
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Megawati Sukarnoputri"
+	desc = "POLITICIAN_IDO_MEGAWATI_SUKARNOPUTRI_DESC"
+	picture = "Portrait_IDO_Megawati_Sukarnoputri.dds"
+	expire = "2015.1.1"
+	ideology = progressive_ideology
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Prabowo Subianto Djojohadikusumo"
+	desc = "POLITICIAN_IDO_PRABOWO_SUBIANTO_DESC"
+	picture = "Portrait_IDO_Prabowo_Subianto.dds"
+	expire = "2020.1.1"
+	ideology = libertarian
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Wiranto"
+	desc = "POLITICIAN_IDO_WIRANTO_DESC"
+	picture = "Portrait_IDO_Wiranto.dds"
+	expire = "2020.1.1"
+	ideology = social_democrat_ideology
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Akbar Tandjung"
+	desc = "POLITICIAN_IDO_AKBAR_TANDJUNG_DESC"
+	picture = "Portrait_IDO_Akbar_Tandjung.dds"
+	expire = "2015.1.1"
+	ideology = fiscal_conservative
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Susilo Bambang Yudhoyono"
+	desc = "POLITICIAN_IDO_SUSILO_BAMBANG_YUDHOYONO_DESC"
+	picture = "Portrait_IDO_Susilo_Bambang_Yudhoyono.dds"
+	expire = "2020.1.1"
+	ideology = liberalist
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Nur Mahmudi Ismail"
+	desc = "POLITICIAN_IDO_NUR_MAHMUDI_ISMAIL_DESC"
+	picture = "Portrait_IDO_Nur_Mahmudi_Ismail.dds"
+	expire = "2020.1.1"
+	ideology = oligarchist
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Malem Sambat Kaban"
+	desc = "POLITICIAN_IDO_MALEM_SAMBAT_KABAN_DESC"
+	picture = "Portrait_IDO_Malem_Sambat_Kaban.dds"
+	expire = "2020.1.1"
+	ideology = islamic_republican
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "HR Hartono"
+	desc = "POLITICIAN_IDO_HR_HARTONO_DESC"
+	picture = "Portrait_IDO_HR_Hartono.dds"
+	expire = "2020.1.1"
+	ideology = rexist
+	
+	traits = {
+	
+	}
+}
+
+create_corps_commander = {
+	name = "Bambang Darmono"
+	picture = "Portrait_IDO_general_Bambang_Darmono.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Gatot Numantyo"
+	picture = "Portrait_IDO_general_Gatot_Nurmantyo.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Jenderal Mulyono"
+	picture = "Portrait_IDO_general_Jenderal_Mulyono.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Moeldoko"
+	picture = "Portrait_IDO_general_Moeldoko.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Muhammad Munir"
+	picture = "Portrait_IDO_general_Muhammad_Munir.dds"
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Ade Supandi"
+	picture = "Portrait_IDO_admiral_Ade_Supandi.dds"
+	traits = { }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Marsetio"
+	picture = "Portrait_IDO_admiral_Marsetio.dds"
+	traits = { }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Soeparno"
+	picture = "Portrait_IDO_admiral_Soeparno.dds"
+	traits = { }
+	skill = 1
+}
+
+2015.1.1 = {
+	set_politics = {
+
+		parties = {
+			islamist = { popularity = 6	}
+			nationalist = { popularity = 10	}
+			reactionary = { popularity = 7 }
+			conservative = { popularity = 15 }
+			market_liberal = { popularity = 11 }
+			social_liberal = { popularity = 8 }
+			social_democrat = { popularity = 9 }
+			progressive = { popularity = 25	}
+			democratic_socialist = { popularity = 5 }
+			communist = { popularity = 4 }
+	}
+		ruling_party = progressive
+		last_election = "2014.4.9"
+		election_frequency = 48
+		elections_allowed = yes
+	}	
+}
+
+2015.1.1 = {
+create_country_leader = {
+	name = "Joko Widodo"
+	desc = "POLITICIAN_IDO_JOKO_WIDODO_DESC"
+	picture = "Portrait_IDO_Joko_Widodo.dds"
+	expire = "2020.1.1"
+	ideology = progressive_ideology
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Aburizal Bakrie"
+	desc = "POLITICIAN_IDO_ABURIZAL_BAKRIE_DESC"
+	picture = "Portrait_IDO_Aburizal_Bakrie.dds"
+	expire = "2020.1.1"
+	ideology = fiscal_conservative
+	
+	traits = {
+	
+	}
+}
+
+}

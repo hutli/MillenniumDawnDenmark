@@ -1,0 +1,17 @@
+common_ai_behaviour_SOV = {
+	
+	enable = {
+		tag = SOV
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = NOV
+		value = 75
+	}
+	
+}

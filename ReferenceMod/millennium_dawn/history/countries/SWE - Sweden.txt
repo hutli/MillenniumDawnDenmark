@@ -1,0 +1,474 @@
+﻿capital = 141	
+
+oob = "SWE_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = starting_stability_high
+
+set_country_flag = country_language_swedish
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_stagnation
+	idea_eu_member
+	neutrality_idea
+}
+
+#Date is inaccurate, the country flag is the most important part
+1998.1.1 = {
+	set_country_flag = european_union_member_state
+}
+
+set_politics = {
+
+	parties = {
+		reactionary = {
+			popularity = 2
+		}
+		conservative = {
+			popularity = 12
+		}
+		market_liberal = {
+			popularity = 23
+		}
+		social_liberal = {
+			popularity = 9
+		}
+		social_democrat = {
+			popularity = 37
+		}
+		progressive = {
+			popularity = 4
+		}
+		democratic_socialist = {
+			popularity = 12
+		}
+		communist = {
+			popularity = 1
+		}
+	}
+	
+	ruling_party = social_democrat
+	last_election = "1998.9.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Göran Persson"
+	desc = "POLITICIAN_SWE_GORAN_PERSSON_DESC"
+	picture = "Portrait_SWE_Goran_Persson.dds"
+	expire = "2050.1.1"
+	ideology = social_democrat_ideology
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Carl XVI"
+	picture = "Portrait_SWE_Charles_XVI.dds"
+	ideology = absolute_monarchist
+	
+	traits = {
+		enemy_of_russia
+	}
+}
+
+create_country_leader = {
+	name = "Daniel Höglund"
+	desc = "POLITICIAN_SWE_DANIEL_HOGLUND_DESC"
+	picture = "Portrait_SWE_Daniel_Hoglund.dds"
+	expire = "2007.3.17"
+	ideology = national_socialist
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Mikael Jansson"
+	desc = "POLITICIAN_SWE_MIKAEL_JANSSON_DESC"
+	picture = "Portrait_SWE_Mikael_Jansson.dds"
+	expire = "2007.3.17"
+	ideology = counter_progressive_democrat
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Anders Steen"
+	desc = "POLITICIAN_SWE_ANDERS_STEEN_DESC"
+	picture = "Portrait_SWE_Anders_Steen.dds"
+	expire = "2007.3.17"
+	ideology = national_democrat
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Alf Svensson"
+	desc = "POLITICIAN_SWE_ALF_SVENSSON_DESC"
+	picture = "Portrait_SWE_Alf_Svensson.dds"
+	expire = "2007.3.17"
+	ideology = christian_democrat
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Bo Lundgren"
+	desc = "POLITICIAN_SWE_BO_LUNDGREN_DESC"
+	picture = "Portrait_SWE_Bo_Lundgren.dds"
+	expire = "2007.3.17"
+	ideology = libertarian
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Lars Leijonborg"
+	desc = "POLITICIAN_SWE_LARS_LEIJONBORG_DESC"
+	picture = "Portrait_SWE_Lars_Leijonborg.dds"
+	expire = "2007.3.17"
+	ideology = liberalist
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Lotta Hedström"
+	desc = "POLITICIAN_SWE_LOTTA_HEDSTROM_DESC"
+	picture = "Portrait_SWE_Lotta_Hedstrom.dds"
+	expire = "2007.3.17"
+	ideology = green
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Gudrun Schyman"
+	desc = "POLITICIAN_SWE_GUDRUN_SCHYMAN_DESC"
+	picture = "Portrait_SWE_Gudrun_Schyman.dds"
+	expire = "2007.3.17"
+	ideology = democratic_socialist_ideology
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Rolf Hagel"
+	desc = "POLITICIAN_SWE_ROLF_HAGEL_DESC"
+	picture = "Portrait_SWE_Rolf_Hagel.dds"
+	expire = "2007.3.17"
+	ideology = marxist
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Abdirizak Waberi"
+	desc = "POLITICIAN_SWE_ABDIRIZAK_WABERI_DESC"
+	picture = "Portrait_SWE_Abdirizak_Waberi.dds"
+	expire = "2007.3.17"
+	ideology = islamic_republican
+	
+	traits = {
+	
+	}
+}
+
+2002.1.1 = {
+	create_country_leader = {
+		name = "Maria Wetterstrand and Peter Eriksson"
+		desc = "POLITICIAN_SWE_MARIA_OCH_PETER_DESC"
+		picture = "Portrait_SWE_Maria_och_Peter.dds"
+		ideology = green
+		expire = "2050.1.1"
+	}
+}
+
+
+2003.1.1 = {
+	create_country_leader = {
+		name = "Ulla Hoffmann"
+		desc = "POLITICIAN_SWE_ULLA_HOFFMAN_DESC"
+		picture = "Portrait_SWE_Ulla_Hoffman.dds"
+		ideology = democratic_socialist_ideology
+		expire = "2050.1.1"
+	}
+	
+	create_country_leader = {
+		name = "Fredrik Reinfeldt"
+		desc = "POLITICIAN_SWE_FREDRIK_REINFELDT_DESC"
+		picture = "Portrait_SWE_Fredrik_Reinfeldt.dds"
+		ideology = libertarian
+		expire = "2050.1.1"
+	}
+}
+
+2004.1.1 = {
+	create_country_leader = {
+		name = "Lars Ohly"
+		desc = "POLITICIAN_SWE_LARS_OHLY_DESC"
+		picture = "Portrait_SWE_Lars_Ohly.dds"
+		ideology = democratic_socialist_ideology
+		expire = "2050.1.1"
+	}
+	
+	create_country_leader = {
+		name = "Göran Hägglund"
+		desc = "POLITICIAN_SWE_GORAN_HAGGLUND_DESC"
+		picture = "Portrait_SWE_Goran_Hagglund.dds"
+		ideology = christian_democrat
+		expire = "2050.1.1"
+	}
+}
+
+2005.1.1 = {
+	create_country_leader = {
+		name = "Jimmie Åkesson"
+		desc = "POLITICIAN_SWE_JIMMIE_AKESSON_DESC"
+		picture = "Portrait_SWE_Jimmie_Akesson.dds"
+		ideology = counter_progressive_democrat
+		expire = "2050.1.1"
+	}
+}
+
+2007.1.11 = {
+	set_party_name = {
+		ideology = fascist
+		long_name = SWE_fascist_party_SvP_long
+		name = SWE_fascist_party_SvP
+	}
+	
+	create_country_leader = {
+		name = "Jan Björklund"
+		desc = "POLITICIAN_SWE_JAN_BJORKLUND_DESC"
+		picture = "Portrait_SWE_Jan_Bjorklund.dds"
+		ideology = liberalist
+		expire = "2050.1.1"
+	}	
+	
+	create_country_leader = {
+		name = "Mona Sahlin"
+		desc = "POLITICIAN_SWE_MONA_SAHLIN_DESC"
+		picture = "Portrait_SWE_Mona_Sahlin.dds"
+		ideology = social_democrat_ideology
+		expire = "2050.1.1"
+	}	
+}
+
+2011.1.1 = {
+	create_country_leader = {
+		name = "Annie Lööf"
+		desc = "POLITICIAN_SWE_ANNIE_LOOF_DESC"
+		picture = "Portrait_SWE_Annie_Loof.dds"
+		ideology = centrist
+		expire = "2050.1.1"
+	}
+	
+	create_country_leader = {
+		name = "Åsa Romson and Gustav Fridolin"
+		desc = "POLITICIAN_SWE_ASA_AND_GUSTAV_DESC"
+		picture = "Portrait_SWE_Asa_and_Gustav.dds"
+		ideology = green
+		expire = "2050.1.1"
+	}
+	
+	create_country_leader = {
+		name = "Håkan Juholt"
+		desc = "POLITICIAN_SWE_HAKAN_JUHOLT_DESC"
+		picture = "Portrait_SWE_Hakan_Juholt.dds"
+		ideology = social_democrat_ideology
+		expire = "2050.1.1"
+	}	
+}
+	
+2012.1.1 = {
+	create_country_leader = {
+		name = "Jonas Sjöstedt"
+		desc = "POLITICIAN_SWE_JONAS_SJOSTEDT_DESC"
+		picture = "Portrait_SWE_Jonas_Sjostedt.dds"
+		ideology = democratic_socialist_ideology
+		expire = "2050.1.1"
+	}
+	
+	create_country_leader = {
+		name = "Stefan Löfven"
+		desc = "POLITICIAN_SWE_STEFAN_LOFVEN_DESC"
+		picture = "Portrait_SWE_Stefan_Lofven.dds"
+		ideology = social_democrat_ideology
+		expire = "2050.1.1"
+	}
+}
+	
+2015.1.1 = {
+	create_country_leader = {
+		name = "Ebba Busch Thor"
+		desc = "POLITICIAN_SWE_EBBA_BUSH_THOR_DESC"
+		picture = "Portrait_SWE_Ebba_Busch_Thor.dds"
+		ideology = christian_democrat
+		expire = "2050.1.1"
+	}
+	
+	create_country_leader = {
+		name = "Anna Kinberg Batra"
+		desc = "POLITICIAN_SWE_ANNA_KINBERG_BATRA_DESC"
+		picture = "Portrait_SWE_Anna_Kinberg_Batra.dds"
+		ideology = libertarian
+		expire = "2050.1.1"
+	}
+}
+
+2016.1.1 = {
+	create_country_leader = {
+		name = "Lövin and Fridolin"
+		picture = "Portrait_SWE_Isabella_and_Gustav.dds"
+		ideology = green
+	}
+	set_politics = {
+
+		parties = {
+			nationalist = {
+				popularity = 1
+			}
+			reactionary = {
+				popularity = 14
+			}
+			conservative = {
+				popularity = 6
+			}
+			market_liberal = {
+				popularity = 24
+			}
+			social_liberal = {
+				popularity = 6
+			}
+			social_democrat = {
+				popularity = 32
+			}
+			progressive = {
+				popularity = 8
+			}
+			democratic_socialist = {
+				popularity = 7
+			}
+			communist = {
+				popularity = 2
+			}
+		}
+	
+		ruling_party = social_democrat
+		last_election = "2014.9.14"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}

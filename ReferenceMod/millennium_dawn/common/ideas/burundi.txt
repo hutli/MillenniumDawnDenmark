@@ -1,0 +1,19 @@
+ideas = {
+
+	country = {
+	
+		hutu_tutsi_tensions = {
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				unity_factor = -0.2
+			}
+			
+		}
+		
+	}
+	
+}

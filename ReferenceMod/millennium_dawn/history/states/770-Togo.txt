@@ -1,0 +1,24 @@
+state={
+	id=770
+	name="STATE_770"
+	
+	history = {
+		owner = TOG
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+		}
+		
+		victory_points = { 1951 2 }
+	}
+	
+	provinces={
+		1951 12843 
+	}
+	manpower=6400250
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

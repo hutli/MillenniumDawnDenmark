@@ -1,0 +1,3080 @@
+focus_tree = {
+	
+	id = united_states_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			original_tag = USA
+		}
+	}
+	
+	@industry_tree_super_far_left = 0
+	@industry_tree_far_left = 1
+	@industry_tree_left = 2
+	@industry_tree_center = 3
+	@industry_tree_right = 4
+	@industry_tree_far_right = 5
+	@industry_tree_super_far_right = 6
+	
+	@diplomacy_tree_incredibly_far_left = 7
+	@diplomacy_tree_super_far_left = 8
+	@diplomacy_tree_far_left = 9
+	@diplomacy_tree_left = 10
+	@diplomacy_tree_center = 11
+	@diplomacy_tree_right = 12
+	@diplomacy_tree_far_right = 13
+	@diplomacy_tree_super_far_right = 14
+	@diplomacy_center = 15
+	@diplomacy_tree2_super_far_left = 16
+	@diplomacy_tree2_far_left = 17
+	@diplomacy_tree2_left = 18
+	@diplomacy_tree2_center = 19
+	@diplomacy_tree2_right = 20
+	@diplomacy_tree2_far_right = 21
+	@diplomacy_tree2_super_far_right = 22
+	
+	@global_war_on_terror_far_left = 24
+	@global_war_on_terror_left = 25
+	@global_war_on_terror_center = 26
+	@global_war_on_terror_right = 27
+	@global_war_on_terror_far_right = 28
+	
+	@middle_eastern_diplomacy_left = 23
+	@middle_eastern_diplomacy_center = 24
+	@middle_eastern_diplomacy_right = 25
+	@middle_eastern_diplomacy_far_right = 26
+	@middle_eastern_diplomacy_super_far_right = 27
+	
+	@politics_tree_far_left = 30
+	@politics_tree_left = 31
+	@politics_tree_center = 32
+	@politics_tree_right = 33
+	@politics_tree_far_right = 34
+	
+	@ideology_tree_far_left = 36
+	@ideology_tree_left = 37
+	@ideology_tree_center = 38
+	@ideology_tree_right = 39
+	@ideology_tree_far_right = 40
+	
+	@army_tree_far_left = 42
+	@army_tree_left = 43
+	@army_tree_center = 44
+	@army_tree_right = 45
+	@army_tree_far_right = 46
+	@inbetween_army_navy = 47
+	@navy_tree_far_left = 48
+	@navy_tree_left = 49
+	@navy_tree_center = 50
+	@navy_tree_right = 51
+	@navy_tree_far_right = 52
+	@inbetween_navy_air_force = 53
+	@air_tree_far_left = 54
+	@air_tree_left = 55
+	@air_tree_center = 56
+	@air_tree_right = 57
+	@air_tree_far_right = 58
+	
+	focus = {
+		id = USA_american_industry
+		icon = production
+		x = @industry_tree_center
+		y = 0
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_diplomatic_focus
+		icon = demand_territory
+		x = @politics_tree_center
+		y = 0
+		cost = 10
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	
+	focus = {
+		id = USA_ideology_focus
+		icon = propaganda
+		x = @ideology_tree_center
+		y = 0
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = USA_support_the_troops
+		icon = infantry_allies
+		x = @navy_tree_center
+		y = 0
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			army_experience = 5
+			navy_experience = 5
+			air_experience = 5
+		}
+	}
+	
+	
+	focus = {
+		id = USA_revive_detroit
+		icon = production2
+		x = @industry_tree_super_far_left
+		y = 1
+		cost = 15
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_american_industry }
+		
+		completion_reward = {
+			393 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}		
+		}
+	}
+	
+	focus = {
+		id = USA_develop_rural_america
+		icon = production
+		x = @industry_tree_left
+		y = 1
+		cost = 15
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_american_industry }
+		
+		completion_reward = {
+			366 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			359 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			
+			361 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_west_coast_industry
+		icon = production
+		x = @industry_tree_right
+		y = 1
+		cost = 15
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_american_industry }
+		
+		completion_reward = {
+			378 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			385 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			386 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+	
+	focus = {
+		id = USA_education_reform_1
+		icon = research
+		x = @industry_tree_super_far_right
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_american_industry
+		}
+		
+		completion_reward = {
+			add_ideas = idea_USA_new_education_program
+		}
+	}
+	
+	focus = {
+		id = USA_international_diplomacy
+		icon = national_unity
+		x = @diplomacy_center
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = USA_diplomatic_focus }
+		
+		completion_reward = {
+			add_political_power = 25
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = USA_global_war_on_terror
+		icon = demand_sudetenland
+		x = @global_war_on_terror_center
+		y = 1
+		cost = 3
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_major_terrorist_attack_tooltip
+				has_country_flag = major_terrorist_attack
+			}
+		}
+		
+		prerequisite = { focus = USA_diplomatic_focus }
+		
+		completion_reward = { 
+			add_national_unity = 0.2 
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	focus = {
+		id = USA_internal_politics
+		icon = intelligence_exchange
+		x = @politics_tree_center
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = USA_diplomatic_focus }
+		
+		completion_reward = {
+			add_political_power = 75
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = USA_democratic_dominance
+		icon = democracy
+		x = @ideology_tree_far_left
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_ideology_focus }
+		
+		mutually_exclusive = {
+			focus = USA_conservative_dominance
+			focus = USA_centrist_balance
+		}
+		
+		completion_reward = {
+			add_ideas = {
+				idea_focus_generic_liberal_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_centrist_balance 
+		icon = national_unity
+		x = @ideology_tree_center
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		prerequisite = { focus = USA_ideology_focus }
+		
+		mutually_exclusive = {
+			focus = USA_conservative_dominance
+			focus = USA_democratic_dominance
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = USA_conservative_dominance
+		icon = neutrality
+		x = @ideology_tree_far_right
+		y = 1
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = USA_centrist_balance
+			focus = USA_democratic_dominance
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_ideology_focus }
+		
+		completion_reward = {
+			add_ideas = {
+				idea_focus_generic_conservative_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = USA_united_states_army
+		icon = infantry_allies
+		x = @army_tree_center
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_support_the_troops
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = USA_united_states_navy
+		icon = amphibious_assault
+		x = @navy_tree_center
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_support_the_troops
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			navy_experience = 5
+		}
+	}
+	
+	focus = {
+		id = USA_united_states_air_force
+		icon = airforce
+		x = @air_tree_center
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_support_the_troops
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			air_experience = 5
+		}
+	}
+	
+	focus = {
+		id = USA_northern_project
+		icon = production2
+		x = @industry_tree_super_far_left
+		y = 2
+		cost = 20
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		prerequisite = { focus = USA_develop_rural_america }
+		
+		completion_reward = {
+			388 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			386 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			389 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+	
+	focus = {
+		id = USA_southern_project
+		icon = production2
+		x = @industry_tree_left
+		y = 2
+		cost = 20
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_develop_rural_america }
+		
+		completion_reward = {
+			377 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			376 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			375 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+	
+	focus = {
+		id = USA_rocky_mountains_project
+		icon = production2
+		x = @industry_tree_right
+		y = 2
+		cost = 20
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_develop_rural_america }
+		
+		completion_reward = {
+			381 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			380 = {
+				if = {	
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			387 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}				
+		}
+	}
+	
+	focus = {
+		id = USA_education_reform_2
+		icon = research
+		x = @industry_tree_super_far_right
+		y = 2
+		cost = 15
+		
+		prerequisite = {
+			focus = USA_education_reform_1
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = USA_asian_diplomacy
+		icon = major_alliance
+		x = @diplomacy_tree_left
+		y = 2
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_international_diplomacy }
+		
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = USA_american_diplomacy
+		icon = major_alliance
+		x = @diplomacy_center
+		y = 2
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_international_diplomacy }
+		
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = USA_european_diplomacy
+		icon = major_alliance
+		x = @diplomacy_tree2_super_far_right
+		y = 2
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_international_diplomacy }
+		
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = USA_patriot_act
+		icon = align_to_america
+		x = @global_war_on_terror_center
+		y = 2
+		cost = 3
+		
+		prerequisite = {
+			focus = USA_global_war_on_terror
+		}
+		
+		completion_reward = {
+			add_named_threat = { 
+				threat = 1.25
+				name = threat_USA_patriot_act
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_path_of_the_founding_fathers
+		icon = anschluss
+		x = @politics_tree_far_right
+		y = 2
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = USA_path_of_reform
+		}	
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		prerequisite = { focus = USA_internal_politics }
+		
+		completion_reward = {
+			add_political_power = 100
+			add_national_unity = 0.1
+			army_experience = 20
+			navy_experience = 20
+			air_experience = 20
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_path_of_reform
+		icon = improve_relations
+		x = @ideology_tree_far_left
+		y = 2
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = USA_path_of_the_founding_fathers
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		prerequisite = { focus = USA_internal_politics }
+		prerequisite = { focus = USA_centrist_balance }
+		
+		completion_reward = {
+			add_national_unity = -0.15
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = progressive
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_army_draft
+		icon = infantry_axis
+		x = @army_tree_left
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = USA_united_states_army }
+		
+		bypass = {
+			OR = {
+				has_idea = limited_conscription
+				has_idea = extensive_conscription
+				has_idea = all_adults_serve
+				has_idea = service_by_requirement
+				has_idea = scraping_the_barrel
+			}
+		}
+		
+		available = {
+			OR = {
+				threat > 0.6
+				has_war = yes
+			}
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = volunteer_only
+						has_idea = disarmed_nation
+					}
+				}
+				add_ideas = limited_conscription
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = volunteer_only }
+					NOT = { has_idea = disarmed_nation }
+				}
+				army_experience = 20
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_army_maneuvre_1
+		icon = infantry_allies
+		x = @army_tree_right
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = USA_united_states_army }
+		
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+	
+	focus = {
+		id = USA_destroyer_program
+		icon = cruisers
+		x = @navy_tree_far_left
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = USA_united_states_navy }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = destroyer_bonus
+				bonus = 0.35
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_carrier_program
+		icon = carriers
+		x = @navy_tree_far_right
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = USA_united_states_navy }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = carrier_bonus
+				bonus = 0.35
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_air_development
+		icon = airforce
+		x = @air_tree_far_left
+		y = 2
+		cost = 20
+		
+		prerequisite = { focus = USA_united_states_air_force }
+		
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	
+	focus = {
+		id = USA_develop_ramstein
+		icon = fighter2
+		x = @air_tree_center
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = USA_united_states_air_force }
+		
+		completion_reward = {
+			GER = { country_event = { id = usa.12 } }
+		}
+	}
+	
+	focus = {
+		id = USA_drone_program
+		icon = fighter
+		x = @air_tree_far_right
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = USA_united_states_air_force }
+		
+		completion_reward = {
+			add_ideas = idea_USA_drone_program
+		}
+	}
+	
+	focus = {
+		id = USA_oil_drilling_in_north_dakota
+		icon = oil_production
+		x = @industry_tree_super_far_left
+		y = 3
+		cost = 25
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		prerequisite = { 
+			focus = USA_northern_project 
+		}
+		
+		completion_reward = {
+			add_resource = { 
+				type = oil 
+				amount = 60
+				state = 389 
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_education_reform_3
+		icon = research
+		x = @industry_tree_super_far_right
+		y = 3
+		cost = 20
+		
+		prerequisite = {
+			focus = USA_education_reform_2
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = USA_chinese_diplomacy
+		icon = align_to_china
+		x = @diplomacy_tree_super_far_left
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_asian_diplomacy
+		}
+		
+		mutually_exclusive = {
+			focus = USA_japanese_diplomacy
+		}
+		
+		completion_reward = {
+			add_national_unity = -0.1
+			PRC = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = has_expressed_loyalty
+				}
+			}
+			JAP = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = loyal_to_our_enemy
+				}
+			}
+			hidden_effect = {
+				PRC = { country_event = { id = usa.13 } }
+				JAP = { country_event = { id = usa.14 } }
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_japanese_diplomacy
+		icon = align_to_japan
+		x = @diplomacy_tree_left
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_asian_diplomacy
+		}
+		
+		mutually_exclusive = {
+			focus = USA_chinese_diplomacy
+		}
+		
+		completion_reward = {
+			JAP = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = has_expressed_loyalty
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = loyal_to_our_enemy
+				}
+			}
+			hidden_effect = {
+				JAP = { country_event = { id = usa.13 } }
+				PRC = { country_event = { id = usa.14 } }
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_mexican_diplomacy
+		icon = military_sphere
+		x = @diplomacy_tree_super_far_right
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_american_diplomacy
+		}
+		
+		completion_reward = {
+			add_political_power = 15
+			every_country = {
+				limit = {
+					OR = {
+						tag = MEX
+						tag = BLZ
+						tag = GUA
+						tag = HON
+						tag = ELS
+						tag = NIC
+						tag = COS
+						tag = PAN
+						tag = CUB
+						tag = BHM
+						tag = JAM
+						tag = HAI
+						tag = DOM
+						tag = COL
+					}
+					NOT = { has_government = communist }
+					NOT = { has_government = fascist }
+				}
+				
+				add_opinion_modifier = {
+					target = USA
+					modifier = trade_influence_1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_befriend_canada
+		icon = align_to_canada
+		x = @diplomacy_tree2_super_far_left
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_american_diplomacy
+		}
+		
+		completion_reward = {
+			CAN = {
+				add_opinion_modifier = {
+					modifier = has_expressed_loyalty
+					target = USA
+				}
+			}
+			hidden_effect = {
+				CAN = { country_event = { id = usa.13 } }
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_path_of_europe
+		icon = align_to_europe
+		x = @diplomacy_tree2_center
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_european_diplomacy
+		}
+		
+		mutually_exclusive = {
+			focus = USA_path_of_russia
+		}
+		
+		completion_reward = {
+			add_national_unity = 0.05
+			
+			GER = { add_opinion_modifier = { modifier = has_expressed_loyalty target = USA } }
+			FRA = { add_opinion_modifier = { modifier = has_expressed_loyalty target = USA } }
+			ENG = { add_opinion_modifier = { modifier = has_expressed_loyalty target = USA } }
+			
+			every_country = {
+				limit = {
+					NOT = { tag = GER }
+					NOT = { tag = FRA }
+					NOT = { tag = ENG }
+					OR = {
+						has_idea = idea_eu_member
+					}
+				}
+				add_opinion_modifier = {
+					modifier = has_expressed_loyalty
+					target = USA
+				}
+			}
+			
+			hidden_effect = {
+				GER = { country_event = { id = usa.13 } }
+				FRA = { country_event = { id = usa.13 } }
+				ENG = { country_event = { id = usa.13 } }
+				every_country = {
+					limit = {
+						NOT = { tag = GER }
+						NOT = { tag = FRA }
+						NOT = { tag = ENG }
+						OR = {
+							has_idea = idea_eu_member
+						}
+					}
+					country_event = { id = usa.13 }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_path_of_russia
+		icon = align_to_russia
+		x = @diplomacy_tree2_far_right
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_european_diplomacy
+		}
+		
+		mutually_exclusive = {
+			focus = USA_path_of_europe
+		}
+		
+		completion_reward = {
+			add_national_unity = -0.05
+			
+			SOV = { add_opinion_modifier = { target = USA modifier = has_expressed_loyalty } }
+			
+			hidden_effect = {
+				SOV = { country_event = { id = usa.13 } }
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_invade_afghanistan
+		icon = skull
+		x = @global_war_on_terror_left
+		y = 3
+		cost = 10
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		bypass = {
+			AFG = { has_democratic_form_of_government = yes }
+		}
+		
+		prerequisite = { focus = USA_patriot_act }
+		
+		mutually_exclusive = { focus = USA_support_afghani_rebels }
+		
+		completion_reward = {
+			declare_war_on = {
+				target = AFG
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_support_afghani_rebels
+		icon = skull2
+		x = @global_war_on_terror_right
+		y = 3
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		mutually_exclusive = { focus = USA_invade_afghanistan }
+		
+		prerequisite = { focus = USA_patriot_act }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_global_flag = the_afghan_civil_war }
+				}
+				custom_effect_tooltip = USA_support_afghani_rebels_tooltip
+				hidden_effect = {
+					AFG = {
+						add_popularity = {
+							ideology = conservative
+							popularity = 0.4
+						}
+						start_civil_war = {
+							ruling_party = islamist
+							ideology = conservative
+							size = 0.6
+							states = { 837 824 }
+							capital = 837
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = the_afghan_civil_war
+				}
+				random_country = {
+					limit = {
+						original_tag = AFG
+						NOT = { has_government = islamist }
+					}
+					load_oob = AFG_american_support
+					set_country_flag = afghan_faction_with_american_support
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_states_rights
+		icon = molotov_ribbentrop_pact
+		x = @politics_tree_right
+		y = 3
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_path_of_the_founding_fathers }
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_revoke_the_tenth_amendment
+		icon = political_pressure
+		x = @ideology_tree_far_right
+		y = 3
+		cost = 10
+		
+		available = {
+			NOT = { has_government = reactionary }
+			NOT = { has_government = market_liberal }
+			NOT = { has_government = conservative }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_path_of_reform }
+		
+		completion_reward = {
+			add_national_unity = -0.35
+			
+			add_popularity = {
+				ideology = reactionary
+				popularity = 0.4
+			}
+			
+			custom_effect_tooltip = tooltip_civil_war_warning
+			if = {
+				limit = { has_government = communist }
+				hidden_effect = {
+					start_civil_war = {
+						ruling_party = communist
+						ideology = reactionary
+						size = 0.45
+						capital = 375
+						states = { 375 374 372 371 370 368 367 366 365 364 363 362 383 384 390 389 381 388 387 382 380 369 396 463 }
+					}
+					set_politics = {
+						ruling_party = communist
+						elections_allowed = yes
+					}
+				}
+			}
+			if = {
+				limit = { has_government = democratic_socialist }
+				hidden_effect = {
+					start_civil_war = {
+						ruling_party = democratic_socialist
+						ideology = reactionary
+						size = 0.45
+						capital = 375
+						states = { 375 374 372 371 370 368 367 366 365 364 363 362 383 384 390 389 381 388 387 382 380 369 396 463 }
+					}
+					set_politics = {
+						ruling_party = democratic_socialist
+						elections_allowed = yes
+					}
+				}
+			}
+			if = {
+				limit = { has_government = progressive }
+				hidden_effect = {
+					start_civil_war = {
+						ruling_party = progressive
+						ideology = reactionary
+						size = 0.45
+						capital = 375
+						states = { 375 374 372 371 370 368 367 366 365 364 363 362 383 384 390 389 381 388 387 382 380 369 396 463 }
+					}
+					set_politics = {
+						ruling_party = progressive
+						elections_allowed = yes
+					}
+				}
+			}
+			if = {
+				limit = { has_government = social_liberal }
+				hidden_effect = {
+					start_civil_war = {
+						ruling_party = social_liberal
+						ideology = reactionary
+						size = 0.45
+						capital = 375
+						states = { 375 374 372 371 370 368 367 366 365 364 363 362 383 384 390 389 381 388 387 382 380 369 396 463 }
+					}
+					set_politics = {
+						ruling_party = social_liberal
+						elections_allowed = yes
+					}
+				}
+			}
+			if = {
+				limit = { has_government = social_democrat }
+				hidden_effect = {
+					start_civil_war = {
+						ruling_party = social_democrat
+						ideology = reactionary
+						size = 0.45
+						capital = 375
+						states = { 375 374 372 371 370 368 367 366 365 364 363 362 383 384 390 389 381 388 387 382 380 369 396 463 }
+					}
+					set_politics = {
+						ruling_party = social_democrat
+						elections_allowed = yes
+					}
+				}
+			}
+			if = {
+				limit = { has_government = nationalist }
+				hidden_effect = {
+					start_civil_war = {
+						ruling_party = nationalist
+						ideology = reactionary
+						size = 0.45
+						capital = 375
+						states = { 375 374 372 371 370 368 367 366 365 364 363 362 383 384 390 389 381 388 387 382 380 369 396 463 }
+					}
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = yes
+					}
+				}
+			}
+			if = {
+				limit = { has_government = islamist }
+				hidden_effect = {
+					start_civil_war = {
+						ruling_party = islamist
+						ideology = reactionary
+						size = 0.45
+						capital = 375
+						states = { 375 374 372 371 370 368 367 366 365 364 363 362 383 384 390 389 381 388 387 382 380 369 396 463 }
+					}
+					set_politics = {
+						ruling_party = islamist
+						elections_allowed = yes
+					}
+				}
+			}
+			if = {
+				limit = { has_government = fascist }
+				hidden_effect = {
+					start_civil_war = {
+						ruling_party = fascist
+						ideology = reactionary
+						size = 0.45
+						capital = 375
+						states = { 375 374 372 371 370 368 367 366 365 364 363 362 383 384 390 389 381 388 387 382 380 369 396 463 }
+					}
+					set_politics = {
+						ruling_party = fascist
+						elections_allowed = yes
+					}
+				}
+			}
+			if = {
+				limit = { has_government = monarchist }
+				hidden_effect = {
+					start_civil_war = {
+						ruling_party = monarchist
+						ideology = reactionary
+						size = 0.45
+						capital = 375
+						states = { 375 374 372 371 370 368 367 366 365 364 363 362 383 384 390 389 381 388 387 382 380 369 396 463 }
+					}
+					set_politics = {
+						ruling_party = monarchist
+						elections_allowed = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_reform_the_voting_system
+		icon = democracy
+		x = @ideology_tree_center
+		y = 3
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_path_of_reform }
+		
+		completion_reward = {
+			add_national_unity = 0.03
+			
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = progressive
+				popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_army_doctrine_school
+		icon = army_doctrines
+		x = @army_tree_left
+		y = 3
+		cost = 10
+		
+		prerequisite = { focus = USA_army_maneuvre_1 }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.3
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_army_maneuvre_2
+		icon = infantry_allies
+		x = @army_tree_right
+		y = 3
+		cost = 10
+		
+		prerequisite = { focus = USA_army_maneuvre_1 }
+		
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+	
+	focus = {
+		id = USA_naval_doctrine_school
+		icon = naval_doctrine
+		x = @navy_tree_left
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_destroyer_program
+			focus = USA_increase_naval_efficiency
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 0.3
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_increase_naval_efficiency
+		icon = navy
+		x = @navy_tree_center
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = USA_united_states_navy }
+		
+		completion_reward = {
+			navy_experience = 20
+		}
+	}
+	
+	focus = {
+		id = USA_fighter_focus
+		icon = fighter2
+		x = @air_tree_left
+		y = 3
+		cost = 10
+		
+		mutually_exclusive = { focus = USA_bomber_focus }
+		
+		prerequisite = { focus = USA_united_states_air_force }
+		
+		completion_reward = {
+			add_ideas = idea_focus_generic_fighter_focus
+		}
+	}
+	
+	focus = {
+		id = USA_bomber_focus
+		icon = bomber
+		x = @air_tree_right
+		y = 3
+		cost = 10
+		
+		mutually_exclusive = { focus = USA_fighter_focus }
+		
+		prerequisite = { focus = USA_united_states_air_force }
+		
+		completion_reward = {
+			add_ideas = idea_focus_generic_bomber_focus
+		}
+	}
+	
+	focus = {
+		id = USA_army_maneuvre_3
+		icon = infantry_allies
+		x = @army_tree_right
+		y = 4
+		cost = 10
+		
+		prerequisite = { focus = USA_army_maneuvre_2 }
+		
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+	
+	focus = {
+		id = USA_army_maneuvre_4
+		icon = infantry_allies
+		x = @army_tree_right
+		y = 5
+		cost = 10
+		
+		prerequisite = { focus = USA_army_maneuvre_3 }
+		
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+	
+	focus = {
+		id = USA_air_doctrine_school
+		icon = air_doctrine
+		x = @air_tree_center
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_fighter_focus
+			focus = USA_bomber_focus
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.3
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	#focus = {
+	#	id = USA_USS_ronald_reagan
+	#	icon = carriers
+	#	x = @navy_tree_far_right
+	#	y = 3
+	#	cost = 10
+	#	
+	#	prerequisite = { focus = USA_carrier_program }
+	#	
+	#	completion_reward = {
+	#		custom_effect_tooltip = USA_USS_ronald_reagan_tooltip
+	#		hidden_effect = {
+	#			load_oob = "USA_ronald_reagan"
+	#		}
+	#	}
+	#}
+	
+	focus = {
+		id = USA_befriend_taiwan
+		icon = align_to_taiwan
+		x = @diplomacy_tree_center
+		y = 4
+		cost = 10
+		
+		prerequisite = { focus = USA_japanese_diplomacy }
+		
+		completion_reward = {
+			CHI = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = has_expressed_loyalty
+				}
+			}
+			hidden_effect = {
+				CHI = { country_event = { id = usa.13 } }
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_befriend_mexico
+		icon = align_to_mexico
+		x = @diplomacy_tree_far_right
+		y = 4
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_mexican_diplomacy }
+		
+		mutually_exclusive = { focus = USA_oppose_mexico }
+		
+		completion_reward = {
+			MEX = {
+				add_opinion_modifier = {
+					modifier = has_expressed_loyalty
+					target = USA
+				}
+			}
+			hidden_effect = {
+				MEX = { country_event = { id = usa.13 } }
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_oppose_mexico
+		icon = anti_comintern_pact
+		x = @diplomacy_center
+		y = 4
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_mexican_diplomacy }
+		
+		mutually_exclusive = { focus = USA_befriend_mexico }
+		
+		completion_reward = {
+			add_national_unity = 0.02
+		}
+	}
+	
+	focus = {
+		id = USA_strengthen_NATO
+		icon = align_to_nato
+		x = @diplomacy_tree2_center
+		y = 4
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_befriend_canada }
+		prerequisite = { focus = USA_path_of_europe }
+		
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+		}
+	}
+	
+	focus = {
+		id = USA_compromise_CSTO
+		icon = align_to_russia
+		x = @diplomacy_tree2_far_right
+		y = 4
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_path_of_russia }
+		
+		completion_reward = {
+			add_national_unity = -0.05
+			army_experience = 5
+			air_experience = 5
+			navy_experience = 5
+		}
+	}
+	
+	focus = {
+		id = USA_fabricate_evidence_against_hussein
+		icon = propaganda
+		x = @global_war_on_terror_right
+		y = 4
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { 
+			focus = USA_invade_afghanistan
+			focus = USA_support_afghani_rebels
+		}
+		
+		bypass = {
+			IRQ = {
+				not = { has_government = nationalist }
+			}
+		}
+		
+		completion_reward = {
+			add_named_threat = { 
+				threat = 5
+				name = threat_USA_evidence_against_hussein
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_centralize_the_country
+		icon = small_arms
+		x = @ideology_tree_far_right
+		y = 4
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_revoke_the_tenth_amendment }
+		
+		completion_reward = {
+			add_ideas = idea_USA_united_republic
+		}
+	}
+	
+	focus = {
+		id = USA_proportional_voting
+		icon = national_unity
+		x = @ideology_tree_center
+		y = 4
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_reform_the_voting_system }
+		
+		completion_reward = {
+			remove_ideas = idea_USA_political_establishment
+		}
+	}
+	
+	focus = {
+		id = USA_befriend_north_korea
+		icon = align_to_north_korea
+		x = @diplomacy_tree_super_far_left
+		y = 5
+		cost = 10
+		
+		prerequisite = { focus = USA_chinese_diplomacy }
+		
+		completion_reward = {
+			PRK = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = has_expressed_loyalty
+				}
+			}
+			KOR = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = loyal_to_our_enemy
+				}
+			}
+			hidden_effect = { PRK = { country_event = { id = usa.13 } } }
+			hidden_effect = { KOR = { country_event = { id = usa.14 } } }
+		}
+	}
+	
+	focus = {
+		id = USA_befriend_south_korea
+		icon = align_to_south_korea
+		x = @diplomacy_tree_left
+		y = 5
+		cost = 10
+		
+		prerequisite = { focus = USA_japanese_diplomacy }
+		
+		completion_reward = {
+			KOR = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = has_expressed_loyalty
+				}
+			}
+			PRK = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = loyal_to_our_enemy
+				}
+			}
+			hidden_effect = { KOR = { country_event = { id = usa.13 } } }
+			hidden_effect = { PRK = { country_event = { id = usa.14 } } }
+		}
+	}
+	
+	focus = {
+		id = USA_mexican_south_border_act
+		icon = construction2
+		x = @diplomacy_tree_far_right
+		y = 5
+		cost = 15
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_befriend_mexico }
+		
+		completion_reward = {
+			MEX = { country_event = { id = usa.9 } }
+			custom_effect_tooltip = USA_mexican_south_border_act_tooltip
+		}
+	}
+	
+	focus = {
+		id = USA_secure_fence_act
+		icon = construction2
+		x = @diplomacy_center
+		y = 5
+		cost = 20
+		
+		available = {
+			NOT = { has_government = democratic_socialist }
+			NOT = { has_government = progressive }
+			NOT = { has_government = social_democrat }
+			NOT = { has_government = social_liberal }
+			NOT = { has_government = market_liberal }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_oppose_mexico }
+		
+		completion_reward = {
+			
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.02
+			}
+		
+			hidden_effect = {
+				375 = {	#Texas
+					add_building_construction = {
+						type = bunker
+						province = 10740
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 10894
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 1954
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 5038
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 12728
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 2019
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 5061
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 12369
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			
+			custom_effect_tooltip = USA_secure_fence_act_tooltip
+		}
+	}
+	
+	#focus = {
+	#	id = USA_USS_george_h_w_bush
+	#	icon = carriers
+	#	x = @navy_tree_far_right
+	#	y = 4
+	#	cost = 10
+	#	
+	#	prerequisite = { focus = USA_USS_ronald_reagan }
+	#	
+	#	completion_reward = {
+	#		custom_effect_tooltip = USA_USS_george_h_w_bush_tooltip
+	#		hidden_effect = {
+	#			load_oob = "USA_george_h_w_bush"
+	#		}
+	#	}
+	#}
+	
+	focus = {
+		id = USA_second_NATO_expansion
+		icon = align_to_nato
+		x = @diplomacy_tree2_center
+		y = 5
+		cost = 15
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = {
+			focus = USA_strengthen_NATO
+		}
+		
+		completion_reward = {
+			add_national_unity = 0.02
+			every_country = {
+				limit = {
+					OR = {
+						tag = EST
+						tag = LAT
+						tag = LIT
+						tag = SLO
+						tag = SLV
+						tag = BUL
+						tag = ROM
+					}
+				}
+				country_event = { id = nato.1 }
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_the_two_alliances
+		icon = align_to_russia
+		x = @diplomacy_tree2_far_right
+		y = 5
+		cost = 25
+		
+		available = {
+			is_faction_leader = yes
+			SOV = { is_faction_leader = yes }
+		}
+		
+		bypass = {
+			SOV = { is_in_faction_with = USA }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_compromise_CSTO }
+		
+		completion_reward = {
+			SOV = {
+				country_event = { id = usa.10 }
+			}
+			add_national_unity = -0.15
+		}
+	}
+	
+	focus = {
+		id = USA_invade_iraq
+		icon = skull
+		x = @global_war_on_terror_center
+		y = 5
+		cost = 10
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		bypass = {
+			IRQ = { has_democratic_form_of_government = yes }
+		}
+		
+		prerequisite = { focus = USA_fabricate_evidence_against_hussein }
+		
+		mutually_exclusive = { focus =  USA_support_iraqi_rebels }
+		
+		completion_reward = {
+			declare_war_on = {
+				target = IRQ
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_support_iraqi_rebels
+		icon = skull2
+		x = @global_war_on_terror_far_right
+		y = 5
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		prerequisite = { focus = USA_fabricate_evidence_against_hussein }
+		
+		mutually_exclusive = { focus = USA_invade_iraq }
+		
+		completion_reward = {
+			custom_effect_tooltip = USA_support_iraqi_rebels_tooltip
+			hidden_effect = {
+				IRQ = {
+					add_popularity = {
+						ideology = conservative
+						popularity = 0.4
+					}
+					start_civil_war = {
+						ruling_party = nationalist
+						ideology = conservative
+						size = 0.5
+						states = { 675 676 815 }
+						capital = 676
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_nationalist_thought
+		icon = fascism
+		x = @ideology_tree_far_right
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_proportional_voting }
+		
+		mutually_exclusive = {
+			focus = USA_communist_thought
+		}
+		mutually_exclusive = {
+			focus = USA_centrist_thought
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_centrist_thought
+		icon = democracy
+		x = @ideology_tree_center
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		mutually_exclusive = {
+			focus = USA_communist_thought
+		}
+		mutually_exclusive = {
+			focus = USA_nationalist_thought
+		}
+		
+		prerequisite = { focus = USA_proportional_voting }
+		
+		completion_reward = {
+			add_political_power = 10
+			
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = progressive
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_communist_thought
+		icon = communism
+		x = @ideology_tree_far_left
+		y = 5
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_proportional_voting }
+		
+		mutually_exclusive = {
+			focus = USA_centrist_thought
+		}
+		mutually_exclusive = {
+			focus = USA_nationalist_thought
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = democratic_socialist
+				popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_support_india
+		icon = align_to_india
+		x = @diplomacy_tree_super_far_left
+		y = 6
+		cost = 10
+		
+		mutually_exclusive = { focus = USA_support_pakistan }
+		
+		prerequisite = {
+			focus = USA_befriend_north_korea
+			focus = USA_befriend_south_korea
+		}
+		
+		completion_reward = {
+			RAJ = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = has_expressed_loyalty
+				}
+			}
+			PAK = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = loyal_to_our_enemy
+				}
+			}
+			hidden_effect = { RAJ = { country_event = { id = usa.13 } } }
+			hidden_effect = { PAK = { country_event = { id = usa.14 } } }
+		}
+	}
+	
+	focus = {
+		id = USA_support_pakistan
+		icon = align_to_pakistan
+		x = @diplomacy_tree_left
+		y = 6
+		cost = 10
+		
+		mutually_exclusive = { focus = USA_support_india }
+		
+		prerequisite = {
+			focus = USA_befriend_north_korea
+			focus = USA_befriend_south_korea
+		}
+		
+		completion_reward = {
+			PAK = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = has_expressed_loyalty
+				}
+			}
+			RAJ = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = loyal_to_our_enemy
+				}
+			}
+			hidden_effect = { PAK = { country_event = { id = usa.13 } } }
+			hidden_effect = { RAJ = { country_event = { id = usa.14 } } }
+		}
+	}
+	
+	focus = {
+		id = USA_invite_mexico_to_nato
+		icon = align_to_nato
+		y = 6
+		x = @diplomacy_tree_far_right
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_mexican_south_border_act }
+		
+		completion_reward = {
+			MEX = { country_event = { id = nato.1 } }
+		}
+	}
+	
+	focus = {
+		id = USA_build_the_wall
+		icon = city_fort
+		y = 6
+		x = @diplomacy_center
+		cost = 50
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+			NOT = { has_government = democratic_socialist }
+			NOT = { has_government = progressive }
+			NOT = { has_government = social_democrat }
+			NOT = { has_government = social_liberal }
+			NOT = { has_government = market_liberal }
+		}
+		
+		prerequisite = { focus = USA_secure_fence_act }
+		
+		completion_reward = {
+			add_national_unity = 0.03
+			
+			custom_effect_tooltip = USA_build_the_wall_tooltip
+			
+			hidden_effect = {
+			
+				378 = {	#California
+					add_building_construction = {
+						type = bunker
+						province = 1562
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 12374
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 7986
+						level = 4
+						instant_build = yes
+					}
+				}
+				
+				377 = { #Arizona
+					add_building_construction = {
+						type = bunker
+						province = 10783
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 3834
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 7920
+						level = 4
+						instant_build = yes
+					}
+				}
+				
+				376 = {	#New Mexico
+					add_building_construction = {
+						type = bunker
+						province = 5044
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 12791
+						level = 4
+						instant_build = yes
+					}
+				}
+				
+				375 = {	#Texas
+					add_building_construction = {
+						type = bunker
+						province = 10740
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 10894
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 1954
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 5038
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 12728
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 2019
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 5061
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 12369
+						level = 3
+						instant_build = yes
+					}
+				}
+			
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_support_the_new_afghan_government
+		icon = molotov_ribbentrop_pact
+		x = @global_war_on_terror_left
+		y = 6
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { 
+			focus = USA_invade_afghanistan 
+			focus = USA_support_afghani_rebels
+		}
+		
+		available = {
+			OR = {
+				AFG = { is_puppet_of = USA }
+				AFG = { has_democratic_form_of_government = yes }
+			}
+		}
+		
+		completion_reward = {
+			AFG = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = trade_influence_3
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = 0.075
+				}
+				add_popularity = {
+					ideology = social_liberal
+					popularity = 0.075
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_support_the_new_iraqi_government
+		icon = molotov_ribbentrop_pact
+		x = @global_war_on_terror_right
+		y = 6
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { 
+			focus = USA_invade_iraq 
+			focus = USA_support_iraqi_rebels
+		}
+		
+		available = {
+			OR = {
+				IRQ = { is_puppet_of = USA }
+				IRQ = { has_democratic_form_of_government = yes }
+			}
+		}
+		
+		completion_reward = {
+			IRQ = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = trade_influence_3
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = 0.075
+				}
+				add_popularity = {
+					ideology = social_liberal
+					popularity = 0.075
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_libertarian_idealism
+		icon = neutrality
+		x = @ideology_tree_right
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_centrist_thought }
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_green_idealism
+		icon = leftism
+		x = @ideology_tree_left
+		y = 6
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_centrist_thought }
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = progressive
+				popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_east_asian_military_support_program
+		icon = align_to_japan
+		x = @diplomacy_tree_center
+		y = 7
+		cost = 10
+		
+		ai_will_do = { factor = 10 }
+		
+		prerequisite = { focus = USA_befriend_taiwan }
+		prerequisite = { focus = USA_befriend_south_korea }
+		
+		completion_reward = {
+			army_experience = 20
+			
+			every_country = {
+				limit = {
+					OR = {
+						tag = KOR
+						tag = JAP
+						tag = CHI
+					}
+				}
+				country_event = { id = usa.16 }
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_third_NATO_expansion
+		icon = align_to_nato
+		x = @diplomacy_tree2_center
+		y = 7
+		cost = 15
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = {
+			focus = USA_second_NATO_expansion
+		}
+		
+		completion_reward = {
+			add_national_unity = 0.02
+			every_country = {
+				limit = {
+					OR = {
+						tag = ALB
+						tag = CRO
+					}
+				}
+				country_event = { id = nato.1 }
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_middle_eastern_diplomacy
+		icon = tripartite_pact
+		x = @middle_eastern_diplomacy_center
+		y = 7
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { 
+			focus = USA_support_the_new_afghan_government		
+			focus = USA_support_the_new_iraqi_government
+		}
+		prerequisite = {
+			focus = USA_european_diplomacy
+		}
+		
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = USA_go_with_the_saudis
+		icon = major_alliance
+		x = @middle_eastern_diplomacy_left
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 30
+		}
+		mutually_exclusive = {
+			focus = USA_go_with_iran
+		}
+		prerequisite = { focus = USA_middle_eastern_diplomacy }
+		completion_reward = {
+			SAU = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_received_american_support
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_received_american_support_trade
+				}
+			}
+			PER = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_didnt_receive_american_support
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_didnt_receive_american_support_trade
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_fourth_NATO_expansion
+		icon = align_to_nato
+		x = @diplomacy_tree_super_far_right
+		y = 8
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = {
+			focus = USA_east_asian_military_support_program
+		}
+		
+		prerequisite = {
+			focus = USA_third_NATO_expansion
+		}
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = JAP
+						tag = CHI
+						tag = KOR
+					}
+				}
+				country_event = { id = nato.1 }
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_go_with_iran
+		icon = major_alliance
+		x = @middle_eastern_diplomacy_right
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		mutually_exclusive = {
+			focus = USA_go_with_the_saudis
+		}
+		prerequisite = { focus = USA_middle_eastern_diplomacy }
+		mutually_exclusive = { focus =  USA_go_with_the_saudis }
+		completion_reward = {
+			PER = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_received_american_support
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_received_american_support_trade
+				}
+			}
+			SAU = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_didnt_receive_american_support
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_didnt_receive_american_support_trade
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_NATO_versus_ISIS
+		icon = align_to_nato
+		x = @middle_eastern_diplomacy_super_far_right
+		y = 8
+		cost = 20
+		
+		available = {
+			is_faction_leader = yes
+			country_exists = ISS
+			ISS = { has_war_with = IRQ }
+			OR = {
+				IRQ = { is_in_faction = no }
+				IRQ = { is_in_faction_with = USA }
+			}
+		}
+		
+		prerequisite = { focus = USA_middle_eastern_diplomacy }
+		prerequisite = { focus = USA_support_the_new_iraqi_government }
+		
+		completion_reward = {
+			add_to_faction = IRQ
+			declare_war_on = {
+				target = ISS
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_support_the_sunni_states
+		icon = GFX_goal_generic_dangerous_deal
+		x = @middle_eastern_diplomacy_left
+		y = 9
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_go_with_the_saudis }
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = { tag = SAU }
+					has_country_flag = sunni_islam
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_received_american_support
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_received_american_support_trade
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = { tag = PER }
+					has_country_flag = shia_islam
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_didnt_receive_american_support
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_didnt_receive_american_support_trade
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_support_the_shiite_states
+		icon = GFX_goal_generic_dangerous_deal
+		x = @middle_eastern_diplomacy_right
+		y = 9
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = USA_go_with_iran }
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = { tag = PER }
+					has_country_flag = shia_islam
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_received_american_support
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_received_american_support_trade
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = { tag = SAU }
+					has_country_flag = sunni_islam
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_didnt_receive_american_support
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = religion_didnt_receive_american_support_trade
+				}
+			}
+		}
+	}
+	
+	
+}

@@ -1,0 +1,28 @@
+state={
+	id=862
+	name="STATE_862"
+	resources={
+		steel=43.000
+		chromium=30.000
+		tungsten=20.000
+	}
+
+	history={
+		owner = DRC
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			1181 1 
+		}
+
+	}
+
+	provinces={
+		1181 4201 
+	}
+	manpower=5600000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,20 @@
+state={
+	id=757
+	name="STATE_757"
+	
+	resources = {
+		rubber = 2
+		oil = 3
+	}
+	
+	history = {
+		owner = COG
+	}
+	
+	provinces={
+		6008 
+	}
+	manpower=91100
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+}

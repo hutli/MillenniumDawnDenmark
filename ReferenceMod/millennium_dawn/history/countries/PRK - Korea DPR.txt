@@ -1,0 +1,185 @@
+﻿capital = 527
+
+oob = "PRK_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.5
+
+set_country_flag = country_language_korean
+
+set_country_flag = starting_stability_low
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	machine_tools1 = 1
+	robotics1 = 1
+	oil1 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_steady
+	war_economy
+	service_by_requirement
+	closed_economy
+}
+
+add_opinion_modifier = {
+	target = JAP
+	modifier = past_japanese_war_crimes
+}
+
+add_opinion_modifier = {
+	target = KOR
+	modifier = rival
+}
+
+add_opinion_modifier = {
+	target = KOR
+	modifier = rival_trade
+}
+
+set_politics = {
+
+	parties = {
+		
+		conservative = {
+			popularity = 5
+		}
+		social_liberal = {
+			popularity = 6
+		}
+		social_democrat = {
+			popularity = 7
+		}
+		progressive = {
+			popularity = 8
+		}
+		democratic_socialist = {
+			popularity = 19
+		}
+		communist = {
+			popularity = 55
+		}
+	}
+	
+	ruling_party = communist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Kim Jong-Il"
+	desc = "POLITICIAN_PRK_KIM_JONG_IL_DESC"
+	picture = "Portrait_PRK_Kim_Jong_Il.dds"
+	expire = "2010.12.31"
+	ideology = juche
+	
+	traits = {
+	
+	}
+}
+2011.12.1 = {
+	set_country_flag = prk_death_of_kim_jong_il
+	create_country_leader = {
+		name = "Kim Jong-Un"
+		desc = "POLITICIAN_PRK_KIM_JONG_UN_DESC"
+		picture = "Portrait_PRK_Kim_Jong_Un.dds"
+		expire = "2011.1.1"
+		ideology = juche
+		
+		traits = {
+		
+		}
+	}
+}
+
+2014.1.1 = {
+	add_ideas = {
+		nuclear_power_idea
+	}
+	set_technology = {
+		atomic_research = 1
+		nuclear_reactor = 1
+		nukes = 1
+	}
+	add_named_threat = {
+		threat = 3
+		name = threat_PRK_nuclear_program
+	}
+}

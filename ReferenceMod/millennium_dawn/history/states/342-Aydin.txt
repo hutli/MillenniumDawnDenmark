@@ -1,0 +1,30 @@
+
+state={
+	id=342
+	name="STATE_342" # Antalya
+	manpower = 4262689
+	resources={
+		chromium=18
+		oil=6
+	}
+	state_category = town
+
+	history={
+		owner = TUR
+		victory_points = {
+			1005 1 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			1005 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		1005 1119 9941 10122 11917 12013 12016 12096 
+	}
+}

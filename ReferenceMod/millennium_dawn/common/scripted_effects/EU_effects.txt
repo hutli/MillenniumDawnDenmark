@@ -1,0 +1,10 @@
+EU_membership_application = {
+	hidden_effect = { add_ideas = idea_eu_member }
+	every_country = {
+		limit = {
+			NOT = { tag = ROOT }
+			has_idea = idea_eu_member
+		}
+		country_event = { id = european_union.1 }
+	}
+}

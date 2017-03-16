@@ -1,0 +1,22 @@
+state={
+	id=844
+	name="STATE_844"
+	resources = {
+		oil=7
+		rubber=4
+	}
+	history = {
+		owner = ANG
+		
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		4735 
+	}
+	manpower=416000
+	buildings_max_level_factor=1.000
+	
+	state_category = pastoral
+}

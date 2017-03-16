@@ -1,0 +1,3268 @@
+﻿add_namespace = news
+
+#Coup in [Country]
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_coup
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1.o1
+	}
+}
+
+#[Country] declares Jihad
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news_event_jihad
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.o1
+	}
+}
+
+#[Country] dissolves their faction
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_political_assembly
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.3.o1
+	}
+}
+
+#[Country] leaves the EU!
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_news_event_european_union
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.4.o1
+	}
+}
+
+#9/11 News Event
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.d
+	picture = GFX_news_event_USA_nine_eleven
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.5.o1
+		trigger = { original_tag = USA }
+	}
+	
+	option = {
+		name = news.5.o2
+		trigger = {
+			is_in_faction_with = USA
+			NOT = { original_tag = USA }
+		}
+	}
+	
+	option = {
+		name = news.5.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { original_tag = USA }
+			NOT = { has_government = islamist }
+		}
+	}
+	
+	option = {
+		name = news.5.o4
+		trigger = {
+			NOT = { original_tag = USA }
+			has_government = islamist
+		}
+	}
+}
+
+#Al Gore wins the presidency
+news_event = {
+	id = news.6
+	title = news_USA.newPresident.t
+	desc = news.6.d
+	picture = GFX_news_event_USA_al_gore
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_USA.newPresident.o1
+		trigger = {
+			original_tag = USA
+		}
+	}
+	
+	option = {
+		name = news_USA.newPresident.o2
+		trigger = {
+			NOT = { original_tag = USA }
+		}
+	}
+}
+
+#George W Bush wins the presidency
+news_event = {
+	id = news.7
+	title = news_USA.newPresident.t
+	desc = news.7.d
+	picture = GFX_news_event_USA_george_w_bush
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_USA.newPresident.o1
+		trigger = {
+			original_tag = USA
+		}
+	}
+	
+	option = {
+		name = news_USA.newPresident.o2
+		trigger = {
+			NOT = { original_tag = USA }
+		}
+	}
+}
+
+#Barack Obama wins the presidency
+news_event = {
+	id = news.8
+	title = news_USA.newPresident.t
+	desc = news.8.d
+	picture = GFX_news_event_USA_barack_obama
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_USA.newPresident.o1
+		trigger = {
+			original_tag = USA
+		}
+	}
+	
+	option = {
+		name = news_USA.newPresident.o2
+		trigger = {
+			NOT = { original_tag = USA }
+		}
+	}
+}
+
+#Donald Trump wins the presidency
+news_event = {
+	id = news.9
+	title = news_USA.newPresident.t
+	desc = news.9.d
+	picture = GFX_news_event_USA_donald_trump
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_USA.newPresident.o1
+		trigger = {
+			original_tag = USA
+		}
+	}
+	
+	option = {
+		name = news_USA.newPresident.o2
+		trigger = {
+			NOT = { original_tag = USA }
+		}
+	}
+}
+
+#Hillary Clinton wins the presidency
+news_event = {
+	id = news.10
+	title = news_USA.newPresident.t
+	desc = news.10.d
+	picture = GFX_news_event_USA_hillary_clinton
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_USA.newPresident.o1
+		trigger = {
+			original_tag = USA
+		}
+	}
+	
+	option = {
+		name = news_USA.newPresident.o2
+		trigger = {
+			NOT = { original_tag = USA }
+		}
+	}
+}
+
+#USS Cole News Event
+news_event = {
+	id = news.11
+	title = news.11.t
+	desc = news.11.d
+	picture = GFX_news_event_USA_cole_attack
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.11.o1
+		trigger = {
+			original_tag = USA
+		}
+	}
+	
+	option = {
+		name = news.11.o2
+		trigger = {
+			NOT = { original_tag = USA }
+			NOT = { original_tag = PRK }
+			NOT = { original_tag = SUD }
+			NOT = { has_war_with = USA }
+		}
+	}
+	
+	option = {
+		name = news.11.o3
+		trigger = {
+			OR = {
+				original_tag = PRK
+				has_war_with = USA
+			}
+		}
+	}
+	
+	option = {
+		name = news.11.o4
+		trigger = {
+			original_tag = SUD
+		}
+		effect_tooltip = {
+			USA = {
+				add_opinion_modifier = {
+					target = SUD
+					modifier = recent_actions_negative
+				}
+			}
+		}
+	}
+}
+
+#Presidential Assassination 2016
+news_event = {
+	id = news.12
+	title = {
+		text = news.12.t1
+		trigger = { has_country_flag = usa_trump_victory_2016 }
+	}
+	title = {
+		text = news.12.t2
+		trigger = { has_country_flag = usa_clinton_victory_2016 }
+	}
+	desc = {
+		text = news.12.d1
+		trigger = { has_country_flag = usa_trump_victory_2016 }
+	}
+	desc = {
+		text = news.12.d2
+		trigger = { has_country_flag = usa_clinton_victory_2016 }
+	}
+	picture = GFX_news_event_assassination
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.12.o1
+	}
+}
+
+#Global News Event: Mexico fortifies Southern Border
+news_event = {
+	id = news.13
+	title = news.13.t
+	desc = news.13.d
+	picture = GFX_news_event_USA_flag
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = option.interesting
+	}
+}
+
+#America News Event: Mexico refuses to fortify Southern Border
+news_event = {
+	id = news.14
+	title = news.14.t
+	desc = news.14.d
+	picture = GFX_news_event_USA_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = option.badChoice
+		effect_tooltip = {
+			add_opinion_modifier = { target = MEX modifier = recent_actions_negative }
+		}
+	}
+}
+
+#Germany pursues European Policy
+news_event = {
+	id = news.15
+	title = news.15.t
+	desc = news.15.d
+	picture = GFX_news_event_germany_europe
+	
+	is_triggered_only = yes
+	
+	option = {	#Let's hope they won't kill us this time.
+		name = news.15.o1
+		add_political_power = 10
+	}
+}
+
+#Germany pursues Ausrichtungsprogramm
+news_event = {
+	id = news.16
+	title = news.16.t
+	desc = news.16.d
+	picture = GFX_news_event_germany_europe
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	#We have to watch the Germans.
+		name = news.16.o1
+		trigger = {
+			has_idea = idea_eu_member
+		}
+	}
+	
+	option = {	#Whatever.
+		name = news.16.o2
+		trigger = {
+			NOT = { has_idea = idea_eu_member }
+		}
+	}
+}
+
+#Montenegro is independent
+news_event = {
+	id = news.17
+	title = news.17.t
+	desc = news.17.d
+	picture = GFX_news_event_montenegro
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = option.newCountry
+	}
+}
+
+#Kosovo is independent
+news_event = {
+	id = news.18
+	title = news.18.t
+	desc = news.18.d
+	picture = GFX_news_event_kosovo
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = option.newCountry
+	}
+}
+
+#Taiwan Puppet
+news_event = { 
+	id = news.19
+	title = news.19.t
+	desc = news.19.d
+	picture = GFX_news_event_taiwan_puppet
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Where does this end?
+		name = news.19.o1
+		trigger = { 
+			OR = {
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #One China on the horizon!
+		name = news.19.o2
+		trigger = {
+			is_in_faction_with = PRC
+			original_tag = PRC 
+		}
+	}
+	
+	option = { #Incredible!
+		name = news.19.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+	
+}
+
+#Taiwan Refused
+news_event = { 
+	id = news.20
+	title = news.20.t
+	desc = news.20.d
+	picture = GFX_news_event_taiwan
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Democracy Endures.
+		name = news.20.o1
+		trigger = { 
+			OR = {
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #Treasonous Fools.
+		name = news.20.o2
+		trigger = {
+			is_in_faction_with = PRC
+			original_tag = PRC }
+		
+	}
+	
+	option = { #Interesting.
+		name = news.20.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+	
+}
+
+#Dalai Lama Surrendered
+news_event = { 
+	id = news.21
+	title = news.21.t
+	desc = news.21.d
+	picture = GFX_news_event_dalai_lama
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Shameful
+		name = news.21.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #Another foreign puppet
+		name = news.21.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+	
+	option = { #Poor old man
+		name = news.21.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#India Refused
+news_event = { 
+	id = news.22
+	title = news.22.t
+	desc = news.22.d
+	picture = GFX_news_event_dalai_lama
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Honorable
+		name = news.22.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #We won't forget this
+		name = news.22.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+		
+	}
+	
+	option = { #Good for them
+		name = news.22.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#Senkakus Surrendered
+news_event = { 
+	id = news.23
+	title = news.23.t
+	desc = news.23.d
+	picture = GFX_news_event_senkakus
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #More Chinese Agression
+		name = news.23.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #As it should be
+		name = news.23.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+		
+	}
+	
+	option = { #War is averted
+		name = news.23.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#Japan Refused
+news_event = { 
+	id = news.24
+	title = news.24.t
+	desc = news.24.d
+	picture = GFX_news_event_senkakus
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully so
+		name = news.24.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				original_tag = USA
+			}
+		}
+	}
+	
+	option = { #Outrageous
+		name = news.24.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+		
+	}
+	
+	option = { #Let us hope for peace
+		name = news.24.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#War over Senkakus
+news_event = { 
+	id = news.25
+	title = news.25.t
+	desc = news.25.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Prepare for the worst
+		name = news.25.o1
+		trigger = { 
+			OR = {
+				original_tag = JAP
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #There is no other course
+		name = news.25.o2
+		trigger = {
+			OR ={
+				is_in_faction_with = PRC
+				original_tag = PRC 
+			}
+		}
+	}
+	
+	option = { #Millions will die for worthless rocks
+		name = news.25.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#Paracels Ceded
+news_event = { 
+	id = news.26
+	title = news.26.t
+	desc = news.26.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #More Chinese Agression
+		name = news.26.o1
+		trigger = { 
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #As it should be
+		name = news.26.o2
+		trigger = { 
+			OR = {
+				original_tag = PRC
+				is_in_faction_with = PRC
+			}
+		}
+		
+	}
+	
+	option = { #War is averted
+		name = news.26.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#Vietnam Refused
+news_event = { 
+	id = news.27
+	title = news.27.t
+	desc = news.27.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully so
+		name = news.27.o1
+		trigger = { original_tag = USA 
+		is_in_faction_with = USA }
+	}
+	
+	option = { #Outrageous
+		name = news.27.o2
+		trigger = {
+			is_in_faction_with = PRC
+			original_tag = PRC }
+		
+	}
+	
+	option = { #Let us hope for peace
+		name = news.27.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#Taiwan Annexed
+news_event = { 
+	id = news.28
+	title = news.28.t
+	desc = news.28.d
+	picture = GFX_news_event_taiwan_puppet
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Unfortunate
+		name = news.28.o1
+		trigger = { 
+			OR = {
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #Finally
+		name = news.28.o2
+		trigger = {
+			is_in_faction_with = PRC
+			original_tag = PRC }
+		
+	}
+	
+	option = { #War is Averted
+		name = news.28.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#Taiwan Resists
+news_event = { 
+	id = news.29
+	title = news.29.t
+	desc = news.29.d
+	picture = GFX_news_event_taiwan_resist
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Rightfully So
+		name = news.29.o1
+		trigger = { 
+			OR = {
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #Outrageous
+		name = news.29.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC 
+			}
+		}
+		
+	}
+	
+	option = { #Let us hope for the best
+		name = news.29.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#Fourth Taiwan Strait Crisis
+news_event = { 
+	id = news.30
+	title = news.30.t
+	desc = news.30.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Dangerous Moves
+		name = news.30.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				original_tag = USA
+			}
+		}
+	}
+	
+	option = { #They'd better
+		name = news.30.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+		
+	}
+	
+	option = { #Hope for Peace
+		name = news.30.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#China Backs off Taiwan
+news_event = { 
+	id = news.31
+	title = news.31.t
+	desc = news.31.d
+	picture = GFX_news_event_USA_navy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Crisis Averted
+		name = news.31.o1
+		trigger = { 
+			OR = {
+				original_tag = USA 
+				is_in_faction_with = USA 
+			}
+		}
+	}
+	
+	option = { #We can afford patience
+		name = news.31.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+		
+	}
+	
+	option = { #We're all lucky
+		name = news.31.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#Invasion of Taiwan
+news_event = { 
+	id = news.32
+	title = news.32.t
+	desc = news.32.d
+	picture = GFX_news_event_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Prepare for the worst
+		name = news.32.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				original_tag = USA
+			}
+		}
+	}
+	
+	option = { #There is no other course
+		name = news.32.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+		
+	}
+	
+	option = { #Prepare for the Worst
+		name = news.32.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#US Backs Taiwan
+news_event = { 
+	id = news.33
+	title = news.33.t
+	desc = news.33.d
+	picture = GFX_news_event_USA_navy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #We Stand by our Allies
+		name = news.33.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				original_tag = USA
+			}
+		}
+	}
+	
+	option = { #Filthy Imperialists
+		name = news.33.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+		
+	}
+	
+	option = { #The Stage is Set
+		name = news.33.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#US Abandons Taiwan
+news_event = { 
+	id = news.34
+	title = news.34.t
+	desc = news.34.d
+	picture = GFX_news_event_USA_navy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #A necessary Sacrifice
+		name = news.34.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				original_tag = USA
+			}
+		}
+	}
+	
+	option = { #Perfect
+		name = news.34.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+		
+	}
+	
+	option = { #The Stage is Set
+		name = news.34.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#China Civil War
+news_event = { 
+	id = news.35
+	title = news.35.t
+	desc = news.35.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #A battle of ideas
+		name = news.35.o1
+	}
+}
+
+#Move To Democracy
+news_event = { 
+	id = news.36
+	title = news.36.t
+	desc = news.36.d
+	picture = GFX_news_event_chinese_protestors
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Good luck!
+		name = news.36.o1
+		trigger = { 
+			has_democratic_form_of_government = yes
+		}
+	}
+	
+	option = { #Worrisome
+		name = news.36.o2
+		trigger = {
+			has_democratic_form_of_government = no
+		}
+	}
+}
+
+#Restored Republic
+news_event = { 
+	id = news.37
+	title = news.37.t
+	desc = news.37.d
+	picture = GFX_news_event_chinese_protestors
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Good luck!
+		name = news.36.o1
+		trigger = { 
+			has_democratic_form_of_government = yes
+		}
+	}
+	
+	option = { #Worrisome
+		name = news.36.o2
+		trigger = {
+			has_democratic_form_of_government = no
+		}
+	}
+	
+}
+
+#New Republic
+news_event = { 
+	id = news.38
+	title = news.38.t
+	desc = news.38.d
+	picture = GFX_news_event_chinese_protestors
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Good luck!
+		name = news.36.o1
+		trigger = { 
+			OR = {
+				has_government = conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = progressive
+				has_government = democratic_socialist
+				has_government = reactionary
+			}
+		}
+	}
+	
+	option = { #Worrisome
+		name = news.36.o2
+		trigger = {
+			has_government = communist
+			has_government = nationalist
+			has_government = fascist
+			has_government = monarchist
+			has_government = islamist
+		}
+	}
+	
+}
+
+#Accept Chinese Protection
+news_event = { 
+	id = news.39
+	title = news.39.t
+	desc = news.39.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { #Worrisome
+		name = news.39.o1
+		trigger = {
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #Very Well
+		name = news.39.o2
+		trigger = {
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+		
+	}
+	
+	option = { #Interesting
+		name = news.39.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#Refuse Chinese Protection
+news_event = { 
+	id = news.40
+	title = news.40.t
+	desc = news.40.d
+	picture = GFX_news_event_chinese_soldiers
+
+	
+	is_triggered_only = yes
+	
+	option = { #Good
+		name = news.40.o1
+		trigger = {
+			OR = {
+				original_tag = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = { #Ufortunate
+		name = news.40.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+				is_in_faction_with = PRC
+			}
+		}
+	}
+	
+	option = { #Interesting
+		name = news.40.o3
+		trigger = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = PRC }
+		}
+	}
+}
+
+#Vietnam gives up Paracels
+news_event = { 
+	id = news.41
+	title = news.41.t
+	desc = news.41.d
+	picture = GFX_news_event_taiwan_resist
+	
+	is_triggered_only = yes
+
+	option = { #Interesting
+		name = news.41.o1
+	}
+}
+
+#China gives up Paracels
+news_event = { 
+	id = news.42
+	title = news.42.t
+	desc = news.42.d
+	picture = GFX_news_event_taiwan_resist
+	
+	is_triggered_only = yes
+
+	option = { #Interesting
+		name = news.42.o1
+	}
+}
+
+#Paracel Negotiations Fail
+news_event = { 
+	id = news.43
+	title = news.43.t
+	desc = news.43.d
+	picture = GFX_news_event_chinese_soldiers
+	
+	is_triggered_only = yes
+
+	option = { #Interesting
+		name = news.43.o1
+	}
+}
+
+#Halaib News Event
+news_event = {
+	id = news.44
+	
+	title = {
+		text = news.44.t1
+		trigger = {
+			EGY = { has_country_flag = egy_diplomatic_victory_in_halaib }
+		}
+	}
+	title = {
+		text = news.44.t2
+		trigger = {
+			EGY = { has_country_flag = egy_backed_down_from_halaib }
+		}
+	}
+	title = {
+		text = news.44.t3
+		trigger = {
+			EGY = { has_country_flag = egy_went_to_war_over_halaib }
+		}
+	}
+	title = {
+		text = news.44.t4
+		trigger = {
+			EGY = { has_country_flag = egy_dodged_war_over_halaib }
+		}
+	}
+	
+	desc = {
+		text = news.44.d1
+		trigger = {
+			EGY = { has_country_flag = egy_diplomatic_victory_in_halaib }
+		}
+	}
+	desc = {
+		text = news.44.d2
+		trigger = {
+			EGY = { has_country_flag = egy_backed_down_from_halaib }
+		}
+	}
+	desc = {
+		text = news.44.d3
+		trigger = {
+			EGY = { has_country_flag = egy_went_to_war_over_halaib }
+		}
+	}
+	desc = {
+		text = news.44.d4
+		trigger = {
+			EGY = { has_country_flag = egy_dodged_war_over_halaib }
+		}
+	}
+	
+	picture = GFX_news_event_halaib
+	
+	major = yes
+	is_triggered_only = yes
+	
+	#Egypt on Diplomatic Victory
+	option = {
+		name = news.44.o1
+		trigger = {
+			EGY = { has_country_flag = egy_diplomatic_victory_in_halaib }
+			original_tag = EGY
+		}
+	}
+	#Egypt on Diplomatic Retreat
+	option = {
+		name = news.44.o2
+		trigger = {
+			EGY = { has_country_flag = egy_backed_down_from_halaib }
+			original_tag = EGY
+		}
+	}
+	#Egypt on War
+	option = {
+		name = news.44.o3
+		trigger = {
+			EGY = { has_country_flag = egy_went_to_war_over_halaib }
+			original_tag = EGY
+		}
+	}
+	#Egypt on Cowardice
+	option = {
+		name = news.44.o4
+		trigger = {
+			EGY = { has_country_flag = egy_dodged_war_over_halaib }
+			original_tag = EGY
+		}
+	}
+	
+	#Sudan on Egyptian Diplomatic Victory
+	option = {
+		name = news.44.o5
+		trigger = {
+			EGY = { has_country_flag = egy_diplomatic_victory_in_halaib }
+			original_tag = SUD
+		}
+	}
+	#Sudan on Diplomatic Retreat
+	option = {
+		name = news.44.o6
+		trigger = {
+			EGY = { has_country_flag = egy_backed_down_from_halaib }
+			original_tag = SUD
+		}
+		effect_tooltip = {
+			SUD = {
+				add_opinion_modifier = {
+					target = EGY
+					modifier = recent_actions_very_positive
+				}
+			}
+		}
+	}
+	#Sudan on War
+	option = {
+		name = news.44.o7
+		trigger = {
+			EGY = { has_country_flag = egy_went_to_war_over_halaib }
+			original_tag = SUD
+		}
+	}
+	#Sudan on Cowardice
+	option = {
+		name = news.44.o8
+		trigger = {
+			EGY = { has_country_flag = egy_dodged_war_over_halaib }
+			original_tag = SUD
+		}
+	}
+	
+	#Generic on Victory
+	option = {
+		name = news.44.o9
+		trigger = {
+			EGY = { has_country_flag = egy_diplomatic_victory_in_halaib }
+			NOT = {
+				original_tag = EGY
+				original_tag = SUD
+			}
+		}
+	}
+	#Generic on Diplomatic Retreat
+	option = {
+		name = news.44.o10
+		trigger = {
+			EGY = { has_country_flag = egy_backed_down_from_halaib }
+			NOT = {
+				original_tag = EGY
+				original_tag = SUD
+			}
+		}
+	}
+	#Generic on War
+	option = {
+		name = news.44.o11
+		trigger = {
+			EGY = { has_country_flag = egy_went_to_war_over_halaib }
+			NOT = {
+				original_tag = EGY
+				original_tag = SUD
+			}
+		}
+	}
+	#Generic on Cowardice
+	option = {
+		name = news.44.o12
+		trigger = {
+			EGY = { has_country_flag = egy_dodged_war_over_halaib }
+			NOT = {
+				original_tag = EGY
+				original_tag = SUD
+			}
+		}
+	}
+}
+
+#Israel refuses Golan negotiations
+news_event = {
+	id = news.45
+	title = news.45.t
+	desc = news.45.d
+	picture = GFX_news_event_golan
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = option.OK
+	}
+}
+
+#Golan negotiations fail
+news_event = {
+	id = news.46
+	title = news.46.t
+	desc = news.46.d
+	picture = GFX_news_event_golan
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = option.OK
+	}
+}
+
+#Golan negotiations succeed
+news_event = {
+	id = news.47
+	title = news.47.t
+	desc = {
+		text = news.47.d1
+		trigger = { SYR = { has_country_flag = syr_faction_with_israel } }
+	}
+	desc = {
+		text = news.47.d2
+		trigger = { SYR = { has_country_flag = syr_military_cooperation_with_israel } }
+	}
+	picture = GFX_news_event_golan
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = option.OK
+	}
+}
+
+#Israeli retreat from Lebanon
+news_event = {
+	id = news.48
+	title = news.48.t
+	desc = news.48.d
+	picture = GFX_news_event_retreat_from_lebanon
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.48.o1
+		trigger = {
+			original_tag = ISR
+		}
+	}
+	
+	option = {
+		name = news.48.o2
+		trigger = {
+			OR = {
+				original_tag = LEB
+				original_tag = SYR
+			}
+		}
+	}
+	
+	option = {
+		name = option.interesting
+		trigger = {
+			NOT = { original_tag = ISR }
+			NOT = { original_tag = SYR }
+			NOT = { original_tag = LEB }
+		}
+	}
+}
+
+#Al Qaeda Summit
+news_event = {
+	id = news.49
+	title = news.49.t
+	desc = news.49.d
+	picture = GFX_news_event_al_qaeda
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.49.o1
+		trigger = {
+			NOT = { has_government = islamist }
+		}
+	}
+	
+	option = {
+		name = news.49.o2
+		trigger = {
+			has_government = islamist
+		}
+	}
+}
+
+#Kursk Submarine Disaster
+news_event = {
+	id = news.50
+	title = news.50.t
+	desc = news.50.d
+	picture = GFX_news_event_kursk_sinking
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.50.o1
+		trigger = { original_tag = SOV }
+	}
+	
+	option = {
+		name = news.50.o2
+		trigger = { 
+			is_in_faction_with = SOV 
+			NOT = { original_tag = SOV }
+		}
+	}
+	
+	option = {
+		name = news.50.o3
+		trigger = { 
+			NOT = { is_in_faction_with = SOV }
+			NOT = { original_tag = SOV }
+			NOT = { has_war_with = SOV }
+		}
+	}
+	
+	option = {
+		name = news.50.o4
+		trigger = { 
+			has_war_with = SOV
+		}
+	}
+}
+
+#We have been assigned a UNSC seat!
+news_event = {
+	id = news.51
+	title = news.51.t
+	desc = news.51.d
+	picture = GFX_news_event_united_nations
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		add_timed_idea = {
+			idea = idea_united_nations_NP_security_council_member
+			days = 730
+		}
+	}
+	
+	option = {
+		name = news.51.o1
+		effect_tooltip = {
+			add_timed_idea = {
+				idea = idea_united_nations_NP_security_council_member
+				days = 730
+			}
+		}
+	}
+}
+
+#We have a year of UNSC left
+news_event = {
+	id = news.52
+	title = news.52.t
+	desc = news.52.d
+	picture = GFX_news_event_united_nations
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		add_timed_idea = {
+			idea = idea_united_nations_NP_security_council_member
+			days = 365
+		}
+	}
+	
+	option = {
+		name = news.52.o1
+		effect_tooltip = {
+			add_timed_idea = {
+				idea = idea_united_nations_NP_security_council_member
+				days = 365
+			}
+		}
+	}
+}
+
+#New UNSC members
+news_event = {
+	id = news.53
+	title = news.53.t
+	desc = news.53.d
+	picture = GFX_news_event_united_nations
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.53.o1
+		trigger = {
+			has_idea = idea_united_nations_security_council_member
+		}
+	}
+	option = {
+		name = news.53.o2
+		trigger = {
+			NOT = { has_idea = idea_united_nations_security_council_member }
+			has_idea = idea_united_nations_NP_security_council_member
+		}
+	}
+	option = {
+		name = news.53.o3
+		trigger = {
+			NOT = { has_idea = idea_united_nations_security_council_member }
+			NOT = { has_idea = idea_united_nations_NP_security_council_member }
+			NOT = { has_idea = partially_recognized_state }
+			NOT = { has_idea = idea_focus_generic_jihad }
+		}
+	}
+	option = {
+		name = news.53.o4
+		trigger = {
+			NOT = { has_idea = idea_united_nations_security_council_member }
+			NOT = { has_idea = idea_united_nations_NP_security_council_member }
+			OR = {
+				has_idea = partially_recognized_state
+				has_idea = idea_focus_generic_jihad
+			}
+		}
+	}
+}
+
+#The dissolution of the European Union
+news_event = {
+	id = news.54
+	title = european_union.15.t
+	desc = european_union.15.d
+	picture = GFX_news_event_european_union
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = european_union.15.o1
+		effect_tooltip = {
+			every_country = {
+				limit = {
+					has_idea = idea_eu_member
+				}
+				remove_ideas = idea_eu_member
+			}
+		}
+	}
+}
+
+#Britain goes with Europe
+news_event = {
+	id = news.55
+	title = news.55.t
+	desc = news.55.d
+	picture = GFX_news_event_european_union
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.55.o1
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	
+	option = {
+		name = news.55.o2
+		trigger = {
+			NOT = { original_tag = ENG }
+			OR = {
+				is_in_faction_with = ENG
+				has_idea = idea_eu_member
+			}
+			NOT = { has_war_with = ENG }
+		}
+	}
+	
+	option = {
+		name = news.55.o3
+		trigger = {
+			NOT = { original_tag = ENG }
+			NOT = { is_in_faction_with = ENG }
+			NOT = { has_idea = idea_eu_member }
+			NOT = { has_war_with = ENG }
+			has_idea = commonwealth_of_nations_member
+		}
+	}
+	
+	option = {
+		name = news.55.o4
+		trigger = {
+			NOT = { original_tag = ENG }
+			NOT = { is_in_faction_with = ENG }
+			NOT = { has_idea = idea_eu_member }
+			NOT = { has_war_with = ENG }
+			NOT = { has_idea = commonwealth_of_nations_member }
+		}
+	}
+	
+	option = {
+		name = news.55.o5
+		trigger = {
+			has_war_with = ENG
+		}
+	}
+}
+#Britain goes with the Commonwealth
+news_event = {
+	id = news.56
+	title = news.56.t
+	desc = news.56.d
+	picture = GFX_news_event_european_union
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.56.o1
+		trigger = {
+			OR = {
+				original_tag = ENG
+				has_idea = commonwealth_of_nations_member
+			}
+		}
+	}
+	
+	option = {
+		name = news.56.o2
+		trigger = {
+			NOT = { original_tag = ENG }
+			NOT = { has_idea = commonwealth_of_nations_member }
+			has_idea = idea_eu_member
+		}
+	}
+	
+	option = {
+		name = news.56.o3
+		trigger = {
+			NOT = { original_tag = ENG }
+			NOT = { has_idea = commonwealth_of_nations_member }
+			NOT = { has_idea = idea_eu_member }
+		}
+	}
+}
+#Britain on its own
+news_event = {
+	id = news.57
+	title = news.57.t
+	desc = news.57.d
+	picture = GFX_news_event_european_union
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.57.o1
+		trigger = { original_tag = ENG }
+	}
+	
+	option = {
+		name = news.57.o2
+		trigger = { NOT = { original_tag = ENG } }
+	}
+}
+
+#[Country] leaves NATO
+news_event = {
+	id = news.58
+	title = news.58.t
+	desc = news.58.d
+	picture = GFX_news_event_nato
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.58.o1
+		trigger = { original_tag = FROM }
+	}
+	option = {
+		name = news.58.o2
+		trigger = { NOT = { original_tag = FROM } }
+	}
+}
+
+#Britain moves left
+news_event = {
+	id = news.59
+	title = news.59.t
+	desc = news.59.d
+	picture = GFX_news_event_jeremy_corbyn
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.59.o1
+	}
+}
+
+#Britain moves right
+news_event = {
+	id = news.60
+	title = news.60.t
+	desc = news.60.d
+	picture = GFX_news_event_nigel_farage
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.60.o1
+	}
+}
+
+#Britain defies Remain
+news_event = {
+	id = news.61
+	title = news.61.t
+	desc = news.61.d
+	picture = GFX_news_event_british_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.61.o1
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = {
+		name = news.61.o2
+		trigger = {
+			NOT = { original_tag = ENG }
+			has_idea = idea_eu_member
+		}
+	}
+	option = {
+		name = news.61.o3
+		trigger = {
+			NOT = { original_tag = ENG }
+			NOT = { has_idea = idea_eu_member }
+		}
+	}
+}
+
+#Britain reaches for South Africa (news.62)
+news_event = {
+	id = news.62
+	title = news.62.t
+	desc = news.62.d
+	picture = GFX_news_event_british_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.62.o1
+		trigger = {
+			OR = {
+				original_tag = ENG
+				is_in_faction_with = ENG
+			}
+		}
+	}
+	option = {
+		name = news.62.o2
+		trigger = {
+			NOT = { is_in_faction_with = ENG }
+			OR = {
+				original_tag = SAF
+				is_in_faction_with = SAF
+			}
+		}
+	}
+	option = {
+		name = news.62.o3
+		trigger = {
+			NOT = { original_tag = ENG }
+			NOT = { original_tag = SAF }
+			NOT = { is_in_faction_with = ENG }
+			NOT = { is_in_faction_with = SAF }
+		}
+	}
+}
+
+#Britain strikes the Raj (news.63)
+news_event = {
+	id = news.63
+	title = news.63.t
+	desc = news.63.d
+	picture = GFX_news_event_british_flag
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.63.o1
+		trigger = {
+			OR = {
+				original_tag = ENG
+				is_in_faction_with = ENG
+			}
+		}
+	}
+	option = {
+		name = news.63.o2
+		trigger = {
+			NOT = { is_in_faction_with = ENG }
+			OR = {
+				original_tag = RAJ
+				is_in_faction_with = RAJ
+			}
+		}
+	}
+	option = {
+		name = news.63.o3
+		trigger = {
+			NOT = { original_tag = ENG }
+			NOT = { original_tag = RAJ }
+			NOT = { is_in_faction_with = ENG }
+			NOT = { is_in_faction_with = RAJ }
+		}
+	}
+}
+
+#Britain prepares unification treaties
+news_event = {
+	id = news.64
+	title = news.64.t
+	desc = news.64.d
+	picture = GFX_news_event_nigel_farage
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.64.o1
+	}
+}
+
+#Hearts of Iron IV released
+news_event = {
+	id = news.65
+	title = news.65.t
+	desc = news.65.d
+	picture = GFX_news_event_hearts_of_iron_4
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.65.o1
+		trigger = { original_tag = SWE }
+	}
+	
+	option = {
+		name = news.65.o2
+		trigger = { 
+			NOT = { original_tag = SWE } 
+			NOT = { has_government = islamist }
+		}
+	}
+	
+	option = {
+		name = news.65.o3
+		trigger = {
+			NOT = { original_tag = SWE }
+			has_government = islamist
+		}
+	}
+}
+
+#Helmut Kohl makes comeback as chancellor
+news_event = {
+	id = news.66
+	title = news.66.t
+	desc = news.66.d
+	picture = GFX_news_event_helmut_kohl
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		original_tag = GER
+		has_government = conservative
+		has_country_flag = helmut_kohl_returns_to_politics
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = news.66.o1
+		trigger = { original_tag = GER }
+	}
+	
+	option = {
+		name = news.66.o2
+		trigger = { 
+			NOT = { original_tag = GER } 
+			NOT = { has_war_with = GER }
+		}
+	}
+	
+	option = {
+		name = news.66.o3
+		trigger = { 
+			NOT = { original_tag = GER } 
+			has_war_with = GER
+		}
+	}
+}
+
+#Minsk Agreement goes into action
+news_event = {
+	id = news.67
+	title = news.67.t
+	desc = news.67.d
+	picture = GFX_news_event_minsk_agreement
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	#Peace at last!
+		name = news.67.o1
+		trigger = {
+			OR = {
+				original_tag = UKR
+				original_tag = NOV
+			}
+		}
+	}
+	
+	option = {	#Maybe the region will now settle down.
+		name = news.67.o2
+		trigger = {
+			OR = {
+				original_tag = SOV
+				original_tag = BLR
+				has_idea = idea_eu_member
+			}
+			NOT = { original_tag = UKR }
+			NOT = { original_tag = NOV }
+		}
+	}
+	
+	option = {	#Okay then.
+		name = news.67.o3
+		trigger = {
+			NOT = { original_tag = UKR }
+			NOT = { original_tag = BLR }
+			NOT = { original_tag = SOV }
+			NOT = { original_tag = NOV }
+			NOT = { has_idea = idea_eu_member }
+		}
+	}
+}
+
+#Ukraine refuses to uphold Minsk Agreement
+news_event = {
+	id = news.68
+	title = news.68.t
+	desc = news.68.d
+	picture = GFX_news_event_ukrainian_civil_war
+	
+	fire_only_once = yes
+	major = yes
+	
+	option = {
+		name = news.68.o1
+		trigger = { original_tag = UKR }
+	}
+	
+	option = {
+		name = news.68.o2
+		trigger = { has_war_with = UKR }
+	}
+	
+	option = {
+		name = news.68.o3
+		trigger = {
+			OR = {
+				original_tag = SOV
+				original_tag = BLR
+			}
+			NOT = { has_war_with = UKR }	
+		}
+	}
+	
+	option = {
+		name = news.68.o4
+		trigger = {
+			NOT = { original_tag = UKR }
+			NOT = { original_tag = SOV }
+			NOT = { original_tag = BLR }
+			NOT = { has_war_with = UKR }
+		}
+	}
+}
+
+#Novorossiya refuses to uphold Minsk Agreement
+news_event = {
+	id = news.69
+	title = news.69.t
+	desc = news.69.d
+	picture = GFX_news_event_ukrainian_civil_war
+	
+	fire_only_once = yes
+	major = yes
+	
+	option = {
+		name = news.69.o1
+		trigger = {
+			OR = {
+				original_tag = NOV
+				has_war_with = UKR
+			}
+		}
+	}
+	
+	option = {
+		name = news.69.o2
+		trigger = {
+			OR = {
+				original_tag = UKR
+				has_war_with = NOV
+			}
+			NOT = { has_war_with = UKR }
+		}
+	}
+	
+	option = {
+		name = news.69.o3
+		trigger = {
+			OR = {
+				original_tag = SOV
+				is_in_faction_with = SOV
+			}
+			NOT = { has_war_with = UKR }
+			NOT = { has_war_with = NOV }
+		}
+	}
+	
+	option = {
+		name = news.69.o4
+		trigger = {
+			NOT = { original_tag = UKR }
+			NOT = { original_tag = NOV }
+			NOT = { original_tag = SOV }
+			NOT = { is_in_faction_with = SOV }
+			NOT = { has_war_with = UKR }
+			NOT = { has_war_with = NOV }
+		}
+	}
+}
+
+#Japan seeks Chinese Alliance
+news_event = {
+	id = news.70
+	title = news.70.t
+	desc = news.70.d
+	picture = GFX_news_event_japanese_chinese_agreement
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.70.o1
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	
+	option = {
+		name = news.70.o2
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = PRC }
+			OR = {
+				is_in_faction_with = JAP
+				is_puppet_of = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = news.70.o3
+		trigger = {
+			original_tag = PRC
+		}
+	}
+	
+	option = {
+		name = news.70.o4
+		trigger = {
+			NOT = { original_tag = PRC }
+			NOT = { original_tag = JAP }
+			OR = {
+				is_in_faction_with = PRC
+				NOT = { is_in_faction_with = JAP }
+				is_puppet_of = PRC
+			}
+		}
+	}
+	
+	option = {
+		name = news.70.o5
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = PRC }
+			NOT = { is_in_faction_with = JAP }
+			NOT = { is_in_faction_with = PRC }
+			NOT = { is_puppet_of = JAP }
+			NOT = { is_puppet_of = PRC }
+			NOT = { has_war_with = JAP }
+			NOT = { has_war_with = PRC }
+		}
+	}
+	
+	option = {
+		name = news.70.o6
+		trigger = {
+			OR = {
+				has_war_with = JAP
+				has_war_with = PRC
+			}
+		}
+	}
+}
+
+#Japan: The Path of War
+news_event = {
+	id = news.71
+	title = news.71.t
+	desc = news.71.d
+	picture = GFX_news_event_japanese_nationalism2
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.71.o1
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	
+	option = {
+		name = news.71.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = JAP
+				is_puppet_of = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = news.71.o3
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = USA }
+			NOT = { is_in_faction_with = JAP }
+			NOT = { is_puppet_of = JAP }
+			NOT = { has_war_with = JAP }
+		}
+	}
+	
+	option = {
+		name = news.71.o4
+		trigger = {
+			has_war_with = JAP
+		}
+	}
+	
+	option = {
+		name = news.71.o5
+		trigger = {
+			original_tag = USA
+			NOT = { is_in_faction_with = JAP }
+			NOT = { is_puppet_of = JAP }
+			NOT = { has_war_with = JAP }
+		}
+	}
+}
+
+#Japan seeks closer trade relationships with China
+news_event = {
+	id = news.72
+	title = news.72.t
+	desc = news.72.d
+	picture = GFX_news_event_japanese_chinese_agreement
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.72.o1
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	
+	option = {
+		name = news.72.o2
+		trigger = {
+			original_tag = PRC
+		}
+	}
+	
+	option = {
+		name = news.72.o3
+		trigger = {
+			OR = {
+				original_tag = USA
+				original_tag = CHI
+				is_in_faction_with = USA
+			}
+		}
+	}
+	
+	option = {
+		name = news.72.o4
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = PRC }
+			NOT = { original_tag = USA }
+			NOT = { original_tag = CHI }
+			NOT = { is_in_faction_with = USA }
+		}
+	}
+}
+
+#Japan adapts Article 9
+news_event = {
+	id = news.73
+	title = news.73.t
+	desc = news.73.d
+	picture = GFX_news_event_japanese_nationalism
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.73.o1
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	
+	option = {
+		name = news.73.o2
+		trigger = {
+			NOT = { original_tag = JAP }
+		}
+	}
+}
+
+#Japan abandons defensive principles
+news_event = {
+	id = news.74
+	title = news.74.t
+	desc = news.74.d
+	picture = GFX_news_event_japanese_nationalism2
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.74.o1
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	
+	option = {
+		name = news.74.o2
+		trigger = {
+			NOT = { original_tag = JAP }
+			OR = {
+				is_in_faction_with = JAP
+				is_puppet_of = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = news.74.o3
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { is_in_faction_with = JAP }
+			NOT = { is_puppet_of = JAP }
+			NOT = { has_war_with = JAP }
+		}
+	}
+	
+	option = {
+		name = news.74.o4
+		trigger = {
+			has_war_with = JAP
+		}
+	}
+}
+
+#Japanese Interventionism
+news_event = {
+	id = news.75
+	title = news.75.t
+	desc = news.75.d
+	picture = GFX_news_event_japanese_sailors
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.75.o1
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	
+	option = {
+		name = news.75.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = JAP
+				is_puppet_of = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = news.75.o3
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { is_in_faction_with = JAP }
+			NOT = { is_puppet_of = JAP }
+			NOT = { has_war_with = JAP }
+			has_democratic_form_of_government = yes
+		}
+	}
+	
+	option = {
+		name = news.75.o4
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { is_in_faction_with = JAP }
+			NOT = { is_puppet_of = JAP }
+			NOT = { has_war_with = JAP }
+			has_democratic_form_of_government = yes
+		}
+	}
+	
+	option = {
+		name = news.75.o5
+		trigger = {
+			has_war_with = JAP
+		}
+	}
+}
+
+#Japan abolishes the Monarchy
+news_event = {
+	id = news.76
+	title = news.76.t
+	desc = news.76.d
+	picture = GFX_news_event_japanese_communism
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.76.o1
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	
+	option = {
+		name = news.76.o2
+		trigger = {
+			NOT = { original_tag = JAP }
+		}
+	}
+}
+
+#Japan empowers the Emperor
+news_event = {
+	id = news.77
+	title = news.77.t
+	desc = news.77.d
+	picture = GFX_news_event_japanese_nationalism3
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.77.o1
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	
+	option = {
+		name = news.77.o2
+		trigger = {
+			NOT = { original_tag = JAP }
+			OR = {
+				has_government = monarchist
+				has_government = fascist
+			}
+		}
+	}
+	
+	option = {
+		name = news.77.o3
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { has_government = monarchist }
+			NOT = { has_government = fascist }
+		}
+	}
+}
+
+#Japan seeks to spread the Revolution to Korea
+news_event = {
+	id = news.78
+	title = news.78.t
+	desc = news.78.d
+	picture = GFX_news_event_japanese_communism
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.78.o1
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	
+	option = {
+		name = news.78.o2
+		trigger = {
+			OR = {
+				original_tag = KOR
+				original_tag = PRK
+				original_tag = PRC
+				original_tag = CHI
+				original_tag = PHI
+				original_tag = VIN
+			}
+		}
+	}
+	
+	option = {
+		name = news.78.o3
+		trigger = {
+			has_government = communist
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = KOR }
+			NOT = { original_tag = PRK }
+			NOT = { original_tag = PRC }
+			NOT = { original_tag = CHI }
+			NOT = { original_tag = VIN }
+			NOT = { original_tag = PHI }
+		}
+	}
+	
+	option = {
+		name = news.78.o4
+		trigger = {
+			has_democratic_form_of_government = no
+			NOT = { has_government = communist }
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = KOR }
+			NOT = { original_tag = PRK }
+			NOT = { original_tag = PRC }
+			NOT = { original_tag = CHI }
+			NOT = { original_tag = VIN }
+			NOT = { original_tag = PHI }
+		}
+	}
+	
+	option = {
+		name = news.78.o5
+		trigger = {
+			has_democratic_form_of_government = yes
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = KOR }
+			NOT = { original_tag = PRK }
+			NOT = { original_tag = PRC }
+			NOT = { original_tag = CHI }
+			NOT = { original_tag = VIN }
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Japan proclaims Japanese Supremacy
+news_event = {
+	id = news.79
+	title = news.79.t
+	desc = news.79.d
+	picture = GFX_news_event_japanese_nationalism2
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.79.o1
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	
+	option = {
+		name = news.79.o2
+		trigger = {
+			NOT = { original_tag = JAP }
+		}
+	}
+}
+
+#[Country] enacts Mass Mobilization
+news_event = {
+	id = news.80
+	title = news.80.t
+	desc = news.80.d
+	picture = GFX_news_event_recruits
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.80.o1
+		trigger = { tag = ROOT }
+	}
+	
+	option = {
+		name = news.80.o2
+		trigger = {
+			NOT = { tag = ROOT }
+			is_in_faction_with = ROOT
+		}
+	}
+	
+	option = {
+		name = news.80.o3
+		trigger = {
+			NOT = { tag = ROOT }
+			NOT = { is_in_faction_with = ROOT }
+			NOT = { has_war_with = ROOT }
+			has_similar_form_of_government = yes
+		}
+	}
+	
+	option = {
+		name = news.80.o4
+		trigger = {
+			NOT = { tag = ROOT }
+			NOT = { is_in_faction_with = ROOT }
+			NOT = { has_war_with = ROOT }
+			has_similar_form_of_government = no
+		}
+	}
+	
+	option = {
+		name = news.80.o5
+		trigger = {
+			has_war_with = ROOT
+		}
+	}
+}
+
+#Japan and South Korea push for Unification
+news_event = {
+	id = news.81
+	title = news.81.t
+	desc = news.81.d
+	picture = GFX_news_event_japanese_nationalism2
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.81.o1
+		trigger = {
+			OR = {
+				original_tag = JAP
+				original_tag = KOR
+			}
+		}
+	}
+	
+	option = {
+		name = news.81.o2
+		trigger = {
+			OR = {
+				original_tag = PRK
+				original_tag = PRC
+			}
+		}
+	}
+	
+	option = {
+		name = news.81.o3
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = KOR }
+			NOT = { original_tag = PRK }
+			NOT = { original_tag = PRC }
+			OR = {
+				is_in_faction_with = JAP
+				is_in_faction_with = KOR
+			}
+		}
+	}
+	
+	option = {
+		name = news.81.o4
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = KOR }
+			NOT = { original_tag = PRK }
+			NOT = { original_tag = PRC }
+			NOT = { is_in_faction_with = JAP }
+			NOT = { is_in_faction_with = KOR }
+			OR = {
+				is_in_faction_with = PRC
+				is_in_faction_with = PRK
+			}
+		}
+	}
+	
+	option = {
+		name = news.81.o4
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = KOR }
+			NOT = { original_tag = PRK }
+			NOT = { original_tag = PRC }
+			NOT = { is_in_faction_with = JAP }
+			NOT = { is_in_faction_with = KOR }
+			NOT = { is_in_faction_with = PRC }
+			NOT = { is_in_faction_with = PRK }
+		}
+	}
+}
+
+#Japan falls back
+news_event = {
+	id = news.82
+	title = news.82.t
+	desc = news.82.d
+	picture = GFX_news_event_chinese_flag
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.82.o1
+		trigger = {
+			OR = {
+				original_tag = JAP
+				original_tag = KOR
+			}
+		}
+	}
+	
+	option = {
+		name = news.82.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+				original_tag = PRK
+			}
+		}
+	}
+	
+	option = {
+		name = news.82.o3
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = KOR }
+			NOT = { original_tag = PRC }
+			NOT = { original_tag = PRK }
+		}
+	}
+}
+
+#China refuses to aid North Korea
+news_event = {
+	id = news.83
+	title = news.83.t
+	desc = news.83.d
+	picture = GFX_news_event_chinese_flag
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.83.o1
+		trigger = {
+			OR = {
+				original_tag = JAP
+				original_tag = KOR
+			}
+		}
+	}
+	
+	option = {
+		name = news.83.o2
+		trigger = {
+			original_tag = PRC
+		}
+	}
+	
+	option = {
+		name = news.83.o3
+		trigger = {
+			original_tag = PRK
+		}
+	}
+	
+	option = {
+		name = news.83.o4
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = KOR }
+			NOT = { original_tag = PRC }
+			NOT = { original_tag = PRK }
+		}
+	}
+}
+
+#North Korean officials flee the country
+news_event = {
+	id = news.84
+	title = news.84.t
+	desc = news.84.d
+	picture = GFX_news_event_north_korean_officials
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.84.o1
+		trigger = {
+			OR = {
+				original_tag = JAP
+				original_tag = KOR
+			}
+		}
+	}
+	
+	option = {
+		name = news.84.o2
+		trigger = {
+			OR = {
+				original_tag = SOV
+				original_tag = PRC
+			}
+		}
+	}
+	
+	option = {
+		name = news.84.o3
+		trigger = {
+			original_tag = PRK
+		}
+	}
+	
+	option = {
+		name = news.84.o4
+		trigger = {
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = KOR }
+			NOT = { original_tag = SOV }
+			NOT = { original_tag = PRC }
+			NOT = { original_tag = PRK }
+		}
+	}
+}
+
+#Korea reunited under North Korea
+news_event = {
+	id = news.85
+	title = news.85.t
+	desc = news.85.d
+	picture = GFX_news_event_north_korea
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.85.o1
+		trigger = { original_tag = PRK }
+	}
+	
+	option = {
+		name = news.85.o2
+		trigger = { NOT = { original_tag = PRK } }
+	}
+}
+
+#Korea reunited under South Korea
+news_event = {
+	id = news.86
+	title = news.86.t
+	desc = news.86.d
+	picture = GFX_news_event_south_korea
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.86.o1
+		trigger = { original_tag = KOR }
+	}
+	
+	option = {
+		name = news.86.o2
+		trigger = { NOT = { original_tag = KOR } }
+	}
+}
+
+#China reunited under China
+news_event = {
+	id = news.87
+	title = news.87.t
+	desc = news.87.d
+	picture = GFX_news_event_chinese_flag
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.87.o1
+		trigger = { original_tag = PRC }
+	}
+	
+	option = {
+		name = news.87.o2
+		trigger = { NOT = { original_tag = PRC } }
+	}
+}
+
+#China reunited under Taiwan
+news_event = {
+	id = news.88
+	title = news.88.t
+	desc = news.88.d
+	picture = GFX_news_event_taiwan
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.88.o1
+		trigger = { original_tag = CHI }
+	}
+	
+	option = {
+		name = news.88.o2
+		trigger = { NOT = { original_tag = CHI } }
+	}
+}
+
+#Fukushima disaster
+news_event = {
+	id = news.89
+	title = news.89.t
+	desc = news.89.d
+	picture = GFX_news_event_fukushima
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.89.o1
+		trigger = { 
+			NOT = { has_war_with = JAP } 
+			NOT = { has_idea = idea_focus_generic_jihad }
+		}
+	}
+	
+	option = {
+		name = news.89.o2
+		trigger = {
+			OR = {
+				has_war_with = JAP 
+				has_idea = idea_focus_generic_jihad
+			}
+		}
+	}
+}
+
+#Italy turns Fascist again
+news_event = {
+	id = news.90
+	title = news.90.t
+	desc = news.90.d
+	picture = GFX_news_event_italy_fascist
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.90.o1
+		trigger = {
+			tag = ITA
+		}
+	}
+	option = {
+		name = news.90.o2
+		trigger = {
+			NOT = { tag = ITA }
+			has_idea = idea_eu_member
+		}
+	}
+	option = {
+		name = news.90.o3
+		trigger = {
+			NOT = { tag = ITA }
+			NOT = { has_idea = idea_eu_member }
+		}
+	}
+}
+#Italy Kingdom Restored
+news_event = {
+	id = news.91
+	title = news.91.t
+	desc = news.91.d
+	picture = GFX_news_event_italy_monarchy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.91.o1
+		trigger = {
+			tag = ITA
+		}
+	}
+	option = {
+		name = news.91.o2
+		trigger = {
+			NOT = { tag = ITA }
+		}
+	}
+}
+#Roman Empire comes back to life
+news_event = {
+	id = news.92
+	title = news.92.t
+	desc = news.92.d
+	picture = GFX_news_event_roman_empire
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.92.o1
+		trigger = {
+			tag = ITA
+			NOT = { tag = FRA }
+			NOT = { tag = GER }
+		}
+	}
+	option = {
+		name = news.92.o2
+		trigger = {
+			NOT = { tag = ITA }
+			tag = FRA
+			NOT = { tag = GER }
+		}
+	}
+	option = {
+		name = news.92.o3
+		trigger = {
+			NOT = { tag = ITA }
+			NOT = { tag = FRA }
+			tag = GER
+		}
+	}
+	option = {
+		name = news.92.o4
+		trigger = {
+			NOT = { tag = ITA }
+			NOT = { tag = FRA }
+			NOT = { tag = GER }
+		}
+	}
+}
+#Italy pursues European Policy
+news_event = {
+	id = news.93
+	title = news.93.t
+	desc = news.93.d
+	picture = GFX_news_event_european_union
+	
+	is_triggered_only = yes
+	
+	option = {	#Ok
+		name = news.93.o1
+		add_political_power = 5
+	}
+}
+#The European Speech
+news_event = {
+	id = news.94
+	title = news.94.t
+	desc = news.94.d
+	picture = GFX_news_event_european_union
+	
+	is_triggered_only = yes
+	
+	option = {	#Good-a-job Italy
+		name = news.94.o1
+		trigger = {
+			has_idea = idea_eu_member
+			NOT = { original_tag = ITA }
+		}
+	}
+	
+	option = {	#Whatever
+		name = news.94.o2
+		trigger = {
+			NOT = { has_idea = idea_eu_member }
+			NOT = { original_tag = ITA}
+		}
+	}
+	
+	option = {	#Italy
+		name = news.94.o3
+		trigger = {
+			original_tag = ITA
+		}
+	}
+}
+
+#Italy prepares Unification Treaties
+news_event = {
+	id = news.95
+	title = news.95.t
+	desc = news.95.d
+	picture = GFX_news_event_euro
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	#Ok
+		name = news.95.o1
+	}
+}
+
+#The Euro
+news_event = {
+	id = news.96
+	title = news.96.t
+	desc = news.96.d
+	picture = GFX_news_event_euro
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	#A new era for Europe
+		name = news.96.o1
+		trigger = { has_idea = idea_eu_member }
+	}
+	
+	option = {	#A new economic power rises
+		name = news.96.o1
+		trigger = { NOT = { has_idea = idea_eu_member } }
+	}
+}

@@ -1,0 +1,2 @@
+WGR = "countries/unused/West Germany.txt"
+DDR = "countries/unused/East Germany.txt"

@@ -1,0 +1,27 @@
+
+state={
+	id=410
+	name="STATE_410"
+	manpower = 2341053
+	resources = {
+		oil=5
+		steel=3
+	}
+	
+	state_category = rural
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 2
+		}
+		add_core_of = PER
+	}
+
+	provinces={
+		1889 2039 2070 4891 10782 13082 
+	}
+}

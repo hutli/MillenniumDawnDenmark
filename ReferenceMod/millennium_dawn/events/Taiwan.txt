@@ -1,0 +1,17 @@
+﻿add_namespace = taiwan
+
+country_event = {	#Remove the Chinese cores upon union
+	id = taiwan.1
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		every_state = {
+			limit = {
+				is_core_of = PRC
+				is_owned_by = CHI
+			}
+			remove_core_of = PRC
+		}
+	}
+}

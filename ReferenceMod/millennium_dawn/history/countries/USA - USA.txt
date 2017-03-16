@@ -1,0 +1,609 @@
+﻿capital = 361
+
+oob = "USA_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.4
+
+set_country_flag = starting_stability_high
+
+set_country_flag = country_language_english
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	cold_war_ship_design = 1
+	destroyer1 = 1
+	destroyer2 = 1
+	destroyer3 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	carrier3 = 1
+	submarine1 = 1
+	submarine2 = 1
+	submarine3 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	modern_destroyer_armament = 1
+	carrier_nuclear_reactor = 1
+	carrier_advanced_ramp_system = 1
+	carrier_catapult = 1
+	submarine_nuclear_reactor = 1
+	submarine_cold_war_torpedo = 1
+	submarine_modern_torpedo = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+	
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+}
+
+set_politics = {
+
+	parties = {
+		nationalist = {
+			popularity = 0.25
+		}
+		reactionary = {
+			popularity = 0.75
+		}
+		conservative = {
+			popularity = 44.5
+		}
+		market_liberal = {
+			popularity = 4
+		}
+		social_liberal = {
+			popularity = 45.5
+		}
+		social_democrat = {
+			popularity = 0.5
+		}
+		progressive = {
+			popularity = 1.5
+		}
+		democratic_socialist = {
+			popularity = 0.5
+		}
+		communist = {
+			popularity = 0.5
+		}
+	}
+	
+	ruling_party = social_liberal
+	last_election = "1996.11.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+add_opinion_modifier = {
+	target = AST
+	modifier = ANZUS
+}
+
+add_opinion_modifier = {
+	target = AST
+	modifier = ANZUS_trade
+}
+
+add_opinion_modifier = {
+	target = AST
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = CAN
+	modifier = american_canadian_friendship
+}
+
+add_opinion_modifier = {
+	target = CAN
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = CAN
+	modifier = NAFTA
+}
+
+add_opinion_modifier = {
+	target = ENG
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = NZL
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = MEX
+	modifier = NAFTA
+}
+
+add_opinion_modifier = {
+	target = NZL
+	modifier = ANZUS
+}
+
+add_opinion_modifier = {
+	target = NZL
+	modifier = ANZUS_trade
+}
+
+set_country_flag = has_unique_political_advisors
+
+add_ideas = {
+	free_trade
+	population_growth_steady
+	idea_USA_political_establishment
+	american_militarism
+	idea_united_nations_security_council_member
+	nuclear_power_idea
+}
+
+create_faction = NATO
+
+add_to_faction = USA
+add_to_faction = BEL
+add_to_faction = CAN
+add_to_faction = CZE
+add_to_faction = DEN
+add_to_faction = FRA
+add_to_faction = GER
+add_to_faction = GRE
+add_to_faction = HUN
+add_to_faction = ICE
+add_to_faction = ITA
+add_to_faction = LUX
+add_to_faction = HOL
+add_to_faction = NOR
+add_to_faction = POL
+add_to_faction = POR
+add_to_faction = SPR
+add_to_faction = TUR
+add_to_faction = ENG
+
+give_guarantee = AST
+give_guarantee = ISR
+give_guarantee = JAP
+give_guarantee = KOR
+give_guarantee = KIR
+give_guarantee = MAR
+give_guarantee = MIC
+give_guarantee = NZL
+give_guarantee = PLU
+give_guarantee = CHI
+
+create_country_leader = {
+	name = "Bill Clinton"
+	picture = "Portrait_USA_Bill_Clinton.dds"
+	ideology = liberalist
+}
+
+create_country_leader = {
+	name = "George W. Bush"
+	picture = "Portrait_USA_George_W_Bush.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Harry Browne"
+	picture = "Portrait_USA_Harry_Browne.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Ralph Nader"
+	picture = "Portrait_USA_Ralph_Nader.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "John Bachtell"
+	picture = "Portrait_USA_John_Bachtell.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "The Grand Council"
+	picture = "Portrait_USA_The_Grand_Council.dds"
+	ideology = absolute_monarchist
+}
+
+#create_country_leader = {
+#	name = "Patrick Buchanan"
+#	picture = "Portrait_USA_Patrick_Buchanan.dds"
+#	ideology = social_democrat_ideology
+#}
+
+create_country_leader = {
+	name = "Howard Phillips"
+	picture = "Portrait_USA_Howard_Phillips.dds"
+	ideology = oligarchist
+}
+
+create_country_leader = {
+	name = "David McReynolds"
+	picture = "Portrait_USA_David_McReynolds.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Richard Spencer"
+	picture = "Portrait_USA_Richard_Spencer.dds"
+	ideology = proto_fascist
+}
+
+create_country_leader = {
+	name = "Matthias Koehl"
+	picture = "Portrait_USA_Matt_Koehl.dds"
+	ideology = national_socialist
+}
+
+create_field_marshal = {
+	name = "Colin Powell"
+	picture = "Portrait_USA_general_Colin_Powell.dds"
+	traits = { thorough_planner defensive_doctrine }
+	skill = 4
+}
+
+create_field_marshal = {
+	name = "James N. Mattis"
+	picture = "Portrait_USA_general_James_Mattis.dds"
+	traits = { mad_dog }
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "Eric K. Shinseki"
+	picture = "Portrait_USA_general_Eric_K_Shinseki.dds"
+	skill = 1
+}
+
+create_field_marshal = {
+	name = "Dennis Reimer"
+	picture = "Portrait_USA_general_Dennis_Reimer.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "John M. Keane"
+	picture = "Portrait_USA_general_Jack_Keane.dds"
+	traits = { urban_assault_specialist }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "John G. Coburn"
+	picture = "Portrait_USA_general_John_G_Coburn.dds"
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Thomas A. Schwartz"
+	picture = "Portrait_USA_general_Thomas_A_Schwartz.dds"
+	traits = { desert_fox }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "John N. Abrams"
+	picture = "Portrait_USA_general_John_N_Abrams.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Thomas D. Waldhauser"
+	picture = "Portrait_USA_general_Thomas_D_Waldhauser.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "John W. Hendrix"
+	picture = "Portrait_USA_general_John_W_Hendrix.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Kurt W. Tidd"
+	picture = "Portrait_USA_general_Kurt_W_Tidd.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "James O. Ellis"
+	picture = "Portrait_USA_admiral_James_O_Ellis.dds"
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Dennis C. Blair"
+	picture = "Portrait_USA_admiral_Dennis_C_Blair.dds"
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Vernon E. Clark"
+	picture = "Portrait_USA_admiral_Vernon_E_Clark.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Thomas B. Fargo"
+	picture = "Portrait_USA_admiral_Thomas_B_Fargo.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Charles S. Abbot"
+	picture = "Portrait_USA_admiral_Charles_S_Abbot.dds"
+	skill = 1
+}
+
+2000.7.1 = {
+	create_corps_commander = {
+		name = "William F. Kernan"
+		picture = "Portrait_USA_general_William_F_Kernan.dds"
+		skill = 1
+	}
+}
+
+2000.12.1 = {
+	set_country_flag = usa_bush_victory_2000
+}
+
+2002.1.1 = {
+	complete_national_focus = USA_american_industry
+	complete_national_focus = USA_northern_project
+	complete_national_focus = USA_oil_drilling_in_north_dakota
+	complete_national_focus = USA_develop_rural_america
+	
+	complete_national_focus = USA_diplomatic_focus
+	complete_national_focus = USA_international_diplomacy
+	complete_national_focus = USA_asian_diplomacy
+	complete_national_focus = USA_japanese_diplomacy
+	complete_national_focus = USA_path_of_europe
+	complete_national_focus = USA_american_diplomacy
+	complete_national_focus = USA_european_diplomacy
+	complete_national_focus = USA_internal_politics
+	complete_national_focus = USA_ideology_focus
+	complete_national_focus = USA_centrist_balance
+	
+	complete_national_focus = USA_support_the_troops
+	complete_national_focus = USA_united_states_army
+	complete_national_focus = USA_united_states_navy
+	complete_national_focus = USA_united_states_air_force
+	
+	complete_national_focus = USA_global_war_on_terror
+	complete_national_focus = USA_patriot_act
+	
+	complete_national_focus = USA_mexican_diplomacy
+	complete_national_focus = USA_befriend_canada
+	
+	complete_national_focus = USA_oppose_mexico
+	complete_national_focus = USA_secure_fence_act
+	
+	complete_national_focus = USA_support_the_new_iraqi_government
+	complete_national_focus = USA_support_the_new_afghan_government
+	complete_national_focus = USA_middle_eastern_diplomacy
+	
+	complete_national_focus = USA_strengthen_NATO
+}
+
+2004.3.29 = {
+	complete_national_focus = USA_second_NATO_expansion
+	add_to_faction = BUL
+	add_to_faction = EST
+	add_to_faction = LAT
+	add_to_faction = LIT
+	add_to_faction = ROM
+	add_to_faction = SLO
+	add_to_faction = SLV
+}
+
+2004.12.1 = {
+	set_country_flag = usa_bush_victory_2004
+}
+
+2008.1.1 = {
+	create_corps_commander = {
+		name = "Lori J. Robinson"
+		picture = "Portrait_USA_general_Lori_J_Robinson.dds"
+		skill = 2
+	}
+}
+
+2008.11.6 = {
+	set_country_flag = usa_obama_victory_2008
+}
+
+2009.1.1 = {
+	create_country_leader = {
+		name = "Mitt Romney"
+		picture = "Portrait_USA_Mitt_Romney.dds"
+		ideology = constitutionalist
+	}
+	create_country_leader = {
+		name = "Barack Obama"
+		picture = "Portrait_USA_Barack_Obama.dds"
+		ideology = liberalist
+	}
+	set_politics = {
+		ruling_party = social_liberal
+		elections_allowed = yes
+	}
+}
+
+2009.4.1 = {
+	complete_national_focus = USA_third_NATO_expansion
+	add_to_faction = ALB
+	add_to_faction = CRO
+}	
+
+2012.12.1 = {
+	set_country_flag = usa_obama_victory_2012
+	set_politics = {
+		last_election = "2012.11.6"
+		elections_allowed = yes
+		
+		parties = {
+			social_liberal = {
+				popularity = 46
+			}
+			conservative = {
+				popularity = 44
+			}
+			market_liberal = {
+				popularity = 7
+			}
+			progressive = {
+				popularity = 3
+			}
+			reactionary = {
+				popularity = 1
+			}
+		}
+	}
+	create_country_leader = {
+		name = "Gary Johnson"
+		picture = "Portrait_USA_Gary_Johnson.dds"
+		ideology = libertarian
+	}
+	create_country_leader = {
+		name = "Jill Stein"
+		picture = "Portrait_USA_Jill_Stein.dds"
+		ideology = green
+	}
+}
+
+2015.1.1 = {
+	create_corps_commander = {
+		name = "Robert B. Abrams"
+		picture = "Portrait_USA_general_Robert_B_Abrams.dds"
+		skill = 2
+	}
+	create_corps_commander = {
+		name = "Joseph L. Votel"
+		picture = "Portrait_USA_general_Joseph_L_Votel.dds"
+		skill = 1
+	}
+}
+
+2015.12.1 = {
+	create_country_leader = {
+		name = "Donald Trump"
+		picture = "Portrait_USA_Donald_Trump.dds"
+		ideology = right_wing_conservative
+		
+		traits = {
+			enemy_of_china
+			friend_of_russia
+		}
+	}
+}
+
+2016.11.9 = {
+	set_country_flag = usa_trump_victory_2016
+	set_politics = {
+		last_election = "2016.11.8"
+		elections_allowed = yes
+		ruling_party = conservative
+		parties = {
+			social_liberal = {
+				popularity = 48.12
+			}
+			conservative = {
+				popularity = 46.47
+			}
+			market_liberal = {
+				popularity = 3.28
+			}
+			progressive = {
+				popularity = 1.06
+			}
+			reactionary = {
+				popularity = 0.15
+			}
+			communist = {
+				popularity = 0.05
+			}
+		}
+	}
+	create_country_leader = {
+		name = "Bernie Sanders"
+		picture = "Portrait_USA_Bernie_Sanders.dds"
+		ideology = liberalist
+	}
+}

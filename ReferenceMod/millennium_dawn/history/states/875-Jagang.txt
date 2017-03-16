@@ -1,0 +1,22 @@
+state={
+	id=875
+	name="STATE_875"
+	provinces={
+		906 6963 11775 11828 
+	}
+	manpower=1588300
+	buildings_max_level_factor=1.000
+	
+	history = {
+		owner = PRK
+		add_core_of = PRK
+		add_core_of = KOR
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	
+	state_category = rural
+}

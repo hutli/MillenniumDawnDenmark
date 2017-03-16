@@ -1,0 +1,24 @@
+state={
+	id=839
+	name="STATE_839"
+
+	history={
+		owner = BEL
+		add_core_of = BEL
+		add_core_of = WLN
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = { 3488 1 }
+	}
+	
+	provinces={
+		3488 
+	}
+	
+	manpower=83000
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

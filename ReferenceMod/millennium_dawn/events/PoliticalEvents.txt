@@ -1,0 +1,1085 @@
+﻿add_namespace = political
+
+#Fascist Coup
+country_event = {
+	id = political.1
+	title = political.1.t
+	desc = political.1.d
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		fascist > 0.45
+		NOT = {
+			has_government = nationalist
+			has_government = fascist
+		}
+		is_puppet = no
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+		modifier = { factor = 0.5 fascist > 0.48 }
+		modifier = { factor = 0.5 fascist > 0.52 }
+		modifier = { factor = 0.5 fascist > 0.56 }
+		modifier = {
+			factor = 0.75
+			has_government = communist
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.1.o1
+		set_politics = {
+			ruling_party = fascist
+			elections_allowed = no
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+	}
+}
+
+
+#Nationalist Coup
+country_event = {
+	id = political.2
+	title = political.2.t
+	desc = political.2.d
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		nationalist > 0.45
+		NOT = {
+			has_government = nationalist
+			has_government = fascist
+		}
+		is_puppet = no
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+		modifier = {
+			factor = 0.5
+			nationalist > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			nationalist > 0.55
+		}
+		modifier = {
+			factor = 0.75
+			has_government = communist
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.2.o1
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = no
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+	}
+	
+	option = {
+		name = political.2.o2
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = yes
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+	}
+}
+
+#Communist Coup
+country_event = {
+	id = political.3
+	title = political.3.t
+	desc = political.3.d
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		communist > 0.45
+		NOT = {
+			has_government = communist
+		}
+		is_puppet = no
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			communist > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			communist > 0.55
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				has_government = communist
+				has_government = nationalist
+			}
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.3.o1
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+	}
+	
+	option = {
+		name = political.3.o2
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = yes
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+	}
+}
+
+#Islamist Coup
+country_event = {
+	id = political.4
+	title = political.4.t
+	desc = political.4.d
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		islamist > 0.45
+		NOT = {
+			has_government = islamist
+		}
+		
+		is_puppet = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			islamist > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			islamist > 0.55
+		}
+		modifier = {
+			factor = 1.5
+			communist > 0.3
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.4.o1
+		set_politics = {
+			ruling_party = islamist
+			elections_allowed = no
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+	}
+}
+
+#Reactionary Coup
+country_event = {
+	id = political.5
+	title = political.5.t
+	desc = political.5.d
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		reactionary > 0.45
+		NOT = {
+			has_government = reactionary
+		}
+		
+		is_puppet = no
+		OR = {
+			has_government = communist
+			has_government = fascist
+			has_government = communist
+			has_government = nationalist
+			has_government = monarchist
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			reactionary > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			reactionary > 0.55
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.5.o1
+		set_politics = {
+			ruling_party = reactionary
+			elections_allowed = yes
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+	}
+}
+
+#Conservative Coup
+country_event = {
+	id = political.6
+	title = political.6.t
+	desc = political.6.d
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		conservative > 0.45
+		NOT = {
+			has_government = conservative
+		}
+		
+		is_puppet = no
+		OR = {
+			has_government = communist
+			has_government = fascist
+			has_government = communist
+			has_government = nationalist
+			has_government = monarchist
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			conservative > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			conservative > 0.55
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.6.o1
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+	}
+}
+
+#Market Liberal Coup
+country_event = {
+	id = political.7
+	title = political.7.t
+	desc = political.7.d
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		market_liberal >0.4
+		NOT = {
+			has_government = market_liberal
+		}
+		
+		is_puppet = no
+		OR = {
+			has_government = communist
+			has_government = fascist
+			has_government = communist
+			has_government = nationalist
+			has_government = monarchist
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			market_liberal > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			market_liberal > 0.55
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.7.o1
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+	}
+}
+
+#Social Liberal Coup
+country_event = {
+	id = political.8
+	title = political.8.t
+	desc = political.8.d
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		social_liberal >0.4
+		NOT = {
+			has_government = social_liberal
+		}
+		
+		is_puppet = no
+		OR = {
+			has_government = communist
+			has_government = fascist
+			has_government = communist
+			has_government = nationalist
+			has_government = monarchist
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			social_liberal > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			social_liberal > 0.55
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.8.o1
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+	}
+}
+
+#Social Democrat Coup
+country_event = {
+	id = political.9
+	title = political.9.t
+	desc = political.9.d
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		social_democrat > 0.45
+		NOT = {
+			has_government = social_democrat
+		}
+		
+		is_puppet = no
+		OR = {
+			has_government = communist
+			has_government = fascist
+			has_government = communist
+			has_government = nationalist
+			has_government = monarchist
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			social_democrat > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			social_democrat > 0.55
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.9.o1
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+	}
+}
+
+#Progressive Coup
+country_event = {
+	id = political.10
+	title = political.10.t1
+	desc = political.10.d1
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		progressive > 0.45
+		NOT = {
+			has_government = progressive
+		}
+		
+		is_puppet = no
+		OR = {
+			has_government = communist
+			has_government = fascist
+			has_government = communist
+			has_government = nationalist
+			has_government = monarchist
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			progressive > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			progressive > 0.55
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.10.o1
+		set_politics = {
+			ruling_party = progressive
+			elections_allowed = yes
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+	}
+}
+
+#Democratic Socialist Coup
+country_event = {
+	id = political.11
+	title = political.11.t
+	desc = political.11.d
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		democratic_socialist > 0.45
+		NOT = {
+			has_government = democratic_socialist
+		}
+		OR = {
+			has_government = communist
+			has_government = fascist
+			has_government = communist
+			has_government = nationalist
+			has_government = monarchist
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			democratic_socialist > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			democratic_socialist > 0.55
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.11.o1
+		set_politics = {
+			ruling_party = democratic_socialist
+			elections_allowed = yes
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+	}
+}
+
+#Monarchist Coup
+country_event = {
+	id = political.12
+	title = political.12.t
+	desc = political.12.d
+	picture = GFX_report_event_coup
+	
+	trigger = {
+		monarchist > 0.45
+		NOT = {
+			has_government = monarchist
+		}
+		is_puppet = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			monarchist > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			monarchist > 0.55
+		}
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 50 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 55 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 60 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 65 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 70 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 75 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 80 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 85 } }
+		modifier = { factor = 1.3 has_country_flag = { flag = national_stability value > 90 } }
+	}
+	
+	option = {
+		name = political.12.o1
+		set_politics = {
+			ruling_party = monarchist
+			elections_allowed = no
+		}
+		if = {
+			limit = {
+				has_idea = idea_USA_political_establishment
+			}
+			remove_ideas = idea_USA_political_establishment
+		}
+		news_event = {
+			hours = 3
+			id = news.1
+		}
+	}
+}
+
+#Islamist Gathering
+country_event = {
+	id = political.13
+	title = political.13.t
+	desc = political.13.d
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		islamist > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+		
+		modifier = {
+			factor = 3
+			AND = {
+				NOT = { has_country_flag = sunni_islam }
+				NOT = { has_country_flag = shia_islam }
+			}
+		}
+		
+		modifier = {
+			factor = 3
+			OR = {
+				has_government = fascist
+				has_government = nationalist
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			has_government = communist
+		}
+		
+		modifier = {
+			factor = 0.92
+			threat > 0.1
+		}
+	}
+	
+	option = {
+		name = political.13.o1
+		add_popularity = {
+			ideology = islamist
+			popularity = 0.02
+		}
+	}
+}
+
+#Fascist Gathering
+country_event = {
+	id = political.14
+	title = political.14.t
+	desc = political.14.d
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		fascist > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+	}
+	
+	option = {
+		name = political.14.o1
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.02
+		}
+	}
+}
+
+#Nationalist Gathering
+country_event = {
+	id = political.15
+	title = political.15.t
+	desc = political.15.d
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		nationalist > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+	}
+	
+	option = {
+		name = political.15.o1
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.02
+		}
+	}
+}
+
+#Monarchist Gathering
+country_event = {
+	id = political.16
+	title = political.16.t
+	desc = political.16.d
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		monarchist > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+	}
+	
+	option = {
+		name = political.16.o1
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.02
+		}
+	}
+}
+
+#Reactionary Gathering
+country_event = {
+	id = political.17
+	title = political.17.t
+	desc = political.17.d
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		reactionary > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+	}
+	
+	option = {
+		name = political.17.o1
+		add_popularity = {
+			ideology = reactionary
+			popularity = 0.02
+		}
+	}
+}
+
+#Conservative Gathering
+country_event = {
+	id = political.18
+	title = political.18.t1
+	desc = political.18.d1
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		conservative > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+	}
+	
+	option = {
+		name = political.18.o1
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.02
+		}
+	}
+}
+
+#Market Liberal Gathering
+country_event = {
+	id = political.19
+	title = political.19.t
+	desc = political.19.d
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		market_liberal > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+	}
+	
+	option = {
+		name = political.14.o1
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.02
+		}
+	}
+}
+
+#Social Liberal Gathering
+country_event = {
+	id = political.20
+	title = political.20.t
+	desc = political.20.d
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		social_liberal > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+	}
+	
+	option = {
+		name = political.20.o1
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.02
+		}
+	}
+}
+
+#Social Democratic Gathering
+country_event = {
+	id = political.21
+	title = political.21.t
+	desc = political.21.d
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		social_democrat > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+	}
+	
+	option = {
+		name = political.21.o1
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+	}
+}
+
+#Progressive Gathering
+country_event = {
+	id = political.22
+	title = political.22.t
+	desc = political.22.d
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		progressive > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+	}
+	
+	option = {
+		name = political.22.o1
+		add_popularity = {
+			ideology = progressive
+			popularity = 0.02
+		}
+	}
+}
+
+#Democratic Socialist Gathering
+country_event = {
+	id = political.23
+	title = political.23.t
+	desc = political.23.d
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		democratic_socialist > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+	}
+	
+	option = {
+		name = political.23.o1
+		add_popularity = {
+			ideology = democratic_socialist
+			popularity = 0.02
+		}
+	}
+}
+
+#Communist Gathering
+country_event = {
+	id = political.24
+	title = political.24.t
+	desc = political.24.d
+	picture = GFX_report_event_political_gathering
+	
+	trigger = {
+		communist > 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+	}
+	
+	option = {
+		name = political.24.o1
+		add_popularity = {
+			ideology = communist
+			popularity = 0.02
+		}
+	}
+}

@@ -1,0 +1,202 @@
+﻿division_template = {
+	name = "Motorized Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Special Forces Regiment"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+	}
+	
+	priority = 2
+}
+
+division_template = {
+	name = "Artillery Brigade"
+	
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armoured Regiment"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	
+	priority = 2
+}
+
+units = {
+
+	division = {
+		name = "Albanian Regiment"
+		location = 9914
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Albanian Special Forces"
+		location = 9914
+		division_template = "Special Forces Regiment"
+		start_experience_factor = 0.3
+	}
+	
+	navy = {
+		name = "Albanian Navy"
+		base = 9914
+		location = 9914
+		ship = {
+			name = "P131" 
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "P132" 
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "P133" 
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "P134" 
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "M111" 
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "P207" 
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R215" 
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R216" 
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R117" 
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R217" 
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R122" 
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R123" 
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R124" 
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R225" 
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R226" 
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R125" 
+			definition = corvette
+			equipment = { corvette_3 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R126" 
+			definition = corvette
+			equipment = { corvette_3 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R127" 
+			definition = corvette
+			equipment = { corvette_3 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R128" 
+			definition = corvette
+			equipment = { corvette_3 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R224" 
+			definition = corvette
+			equipment = { corvette_3 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R227" 
+			definition = corvette
+			equipment = { corvette_3 = { amount = 1 owner = ALB } }
+		}
+		ship = {
+			name = "R228" 
+			definition = corvette
+			equipment = { corvette_3 = { amount = 1 owner = ALB } }
+		}
+	}
+	
+}
+
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ALB"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+		amount = 100000
+	}
+	
+}

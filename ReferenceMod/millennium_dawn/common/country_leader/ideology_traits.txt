@@ -1,0 +1,111 @@
+leader_traits = {
+
+	islamist_politician = {
+		random = no
+		islamist_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	fascist_politician = {
+		random = no
+		fascist_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	nationalist_politician = {
+		random = no
+		nationalist_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	monarchist_politician = {
+		random = no
+		monarchist_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	reactionary_politician = {
+		random = no
+		reactionary_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	conservative_politician = {
+		random = no
+		conservative_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	market_liberal_politician = {
+		random = no
+		market_liberal_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	social_liberal_politician = {
+		random = no
+		social_liberal_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	social_democrat_politician = {
+		random = no
+		social_democrat_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	progressive_politician = {
+		random = no
+		progressive_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	democratic_socialist_politician = {
+		random = no
+		democratic_socialist_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	communist_politician = {
+		random = no
+		communist_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

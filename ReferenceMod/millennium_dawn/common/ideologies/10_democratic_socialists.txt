@@ -1,0 +1,40 @@
+ideologies = {
+
+	democratic_socialist = {
+		
+		types = {
+		
+			democratic_socialist_ideology = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_SOCIALIST_1"
+			"FACTION_NAME_DEMOCRATIC_SOCIALIST_2"
+			"FACTION_NAME_DEMOCRATIC_SOCIALIST_3"
+			"FACTION_NAME_DEMOCRATIC_SOCIALIST_4"
+			"FACTION_NAME_DEMOCRATIC_SOCIALIST_5"
+			"FACTION_NAME_DEMOCRATIC_SOCIALIST_6"
+		}
+		
+		color = { 250 160 200 }
+		
+		war_impact_on_world_tension = 2
+		faction_impact_on_world_tension = 2
+		
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+		}
+		
+		modifiers = {
+			join_faction_tension = 0.5
+		}
+		
+	}
+
+}

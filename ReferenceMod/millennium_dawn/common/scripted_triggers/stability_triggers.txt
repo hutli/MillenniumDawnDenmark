@@ -1,0 +1,26 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+has_any_stability = {
+	OR = {
+		has_idea = stability_1
+		has_idea = stability_2
+		has_idea = stability_3
+		has_idea = stability_4
+		has_idea = stability_5
+		has_idea = stability_6
+		has_idea = stability_7
+	}
+}

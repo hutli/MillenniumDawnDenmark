@@ -1,0 +1,419 @@
+﻿capital = 11
+
+oob = "LIT_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.6
+
+set_country_flag = starting_stability_high
+
+set_country_flag = country_language_lithuanian
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_decline
+	limited_conscription
+}
+
+set_politics = {
+
+	parties = {
+		nationalist = {
+			popularity = 5
+		}
+		conservative = {
+			popularity = 12
+		}
+		market_liberal = {
+			popularity = 2
+		}
+		social_liberal = {
+			popularity = 19
+		}
+		social_democrat = {
+			popularity = 23
+		}
+		progressive = {
+			popularity = 5
+		}
+		democratic_socialist = {
+			popularity = 27
+		}
+		communist = {
+			popularity = 7
+		}
+	}
+	
+	ruling_party = conservative
+	last_election = "1996.10.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Rolandas Paksas"
+	picture = "Portrait_LIT_Rolandas_Paksas.dds"
+	expire = "2050.1.1"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Artūras Paulauskas"
+	picture = "Portrait_LIT_Arturas_Paulauskas.dds"
+	expire = "2050.1.1"
+	ideology = liberalist
+}
+
+create_country_leader = {
+	name = "Algirdas Brazauskas"
+	picture = "Portrait_LIT_Algirdas_Brazauskas.dds"
+	expire = "2050.1.1"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Andrius Kubilius"
+	picture = "Portrait_LIT_Andrius_Kubilius.dds"
+	expire = "2050.1.1"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Rapolas Gediminas Sakalnikas"
+	picture = "Portrait_LIT_Rapolas_Gediminas_Sakalnikas.dds"
+	expire = "2050.1.1"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Mindaugas Gervaldas"
+	picture = "Portrait_LIT_Mindaugas_Gervaldas.dds"
+	expire = "2050.1.1"
+	ideology = national_socialist
+}
+
+create_country_leader = {
+	name = "Romualdas Ozolas"
+	picture = "Portrait_LIT_Romualdas_Ozolas.dds"
+	expire = "2050.1.1"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "Naglis Puteikis"
+	picture = "Portrait_LIT_Naglis_Puteikis.dds"
+	expire = "2050.1.1"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Ramunas Karbauskis"
+	picture = "Portrait_LIT_Ramunas_Karbauskis.dds"
+	expire = "2050.1.1"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Giedrius Petružis"
+	picture = "Portrait_LIT_Giedrius_Petruzis.dds"
+	expire = "2050.1.1"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Paulius Gediminaitis"
+	picture = "Portrait_Europe_Generic_land_5.dds"
+	expire = "2050.1.1"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Mykolas Rimša"
+	picture = "Portrait_Europe_Generic_3.dds"
+	expire = "2050.1.1"
+	ideology = islamic_authoritarian
+}
+
+2001.5.1 = {
+	create_country_leader = {
+		name = "Eugenijus Gentvilas"
+		picture = "Portrait_LIT_Eugenijus_Gentvilas.dds"
+		expire = "2050.1.1"
+		ideology = democratic_socialist_ideology
+	}
+}
+
+2002.1.1 = {
+	add_ideas = the_euro
+}
+
+2003.1.1 = {
+	create_country_leader = {
+		name = "Viktoras Uspaskich"
+		picture = "Portrait_LIT_Viktoras_Uspaskich.dds"
+		expire = "2050.1.1"
+		ideology = liberalist
+	}
+	create_country_leader = {
+		name = "Rolandas Paksas"
+		picture = "Portrait_LIT_Rolandas_Paksas.dds"
+		expire = "2050.1.1"
+		ideology = counter_progressive_democrat
+	}
+}
+
+2003.12.6 = {
+	create_country_leader = {
+		name = "Klemas Inta"
+		picture = "Portrait_LIT_Klemas_Inta.dds"
+		expire = "2050.1.1"
+		ideology = national_democrat
+	}
+}
+
+2004.1.1 = {
+	add_ideas = {
+		idea_eu_member
+	}
+}
+
+2005.3.19 = {
+	create_country_leader = {
+		name = "Gintaras Songaila"
+		picture = "Portrait_LIT_Gintaras_Songaila.dds"
+		expire = "2050.1.1"
+		ideology = national_democrat
+	}
+}
+
+2006.2.25 = {
+	create_country_leader = {
+		name = "Petras Austrevičius"
+		picture = "Portrait_LIT_Petras_Austrevicius.dds"
+		expire = "2050.1.1"
+		ideology = democratic_socialist_ideology
+	}
+}
+
+2007.1.1 = {
+	create_country_leader = {
+		name = "Gediminas Kirkilas"
+		picture = "Portrait_LIT_Gediminas_Kirkilas.dds"
+		expire = "2050.1.1"
+		ideology = social_democrat_ideology
+	}
+}
+
+2008.2.1 = {
+	create_country_leader = {
+		name = "Eligijus Masiulis"
+		picture = "Portrait_LIT_Eligijus_Masiulis.dds"
+		expire = "2050.1.1"
+		ideology = democratic_socialist_ideology
+	}
+}
+
+2009.1.1 = {
+	create_country_leader = {
+		name = "Edikas Jagelavičius"
+		picture = "Portrait_LIT_Edikas_Jagelavicius.dds"
+		expire = "2050.1.1"
+		ideology = leninist
+	}
+}
+
+2009.1.1 = {
+	create_country_leader = {
+		name = "Algirdas Butkevičius"
+		picture = "Portrait_LIT_Algirdas_Butkevicius.dds"
+		expire = "2050.1.1"
+		ideology = social_democrat_ideology
+	}
+}
+
+2012.12.1 = {
+	set_politics = {
+		ruling_party = social_democrat
+		last_election = "2012.11.6"
+		election_frequency = 48
+		elections_allowed = yes
+		
+		parties = {
+			nationalist = {
+				popularity = 3
+			}
+			conservative = {
+				popularity = 23
+			}
+			market_liberal = {
+				popularity = 6
+			}
+			social_liberal = {
+				popularity = 21
+			}
+			social_democrat = {
+				popularity = 27
+			}
+			progressive = {
+				popularity = 5
+			}
+			democratic_socialist = {
+				popularity = 10
+			}
+			communist = {
+				popularity = 5
+			}
+		}
+	}
+}
+
+2013.1.1 = {
+	create_country_leader = {
+		name = "Loreta Graužinienė"
+		picture = "Portrait_LIT_Loreta_Grauziniene.dds"
+		expire = "2050.1.1"
+		ideology = liberalist
+	}
+}
+
+2005.12.14 = {
+	create_country_leader = {
+		name = "Julius Panka"
+		picture = "Portrait_LIT_Julius_Panka.dds"
+		expire = "2050.1.1"
+		ideology = national_democrat
+	}
+}
+
+2015.1.1 = {
+	create_corps_commander = {
+	name = "Jonas Vytautas Žukas"
+	picture = "Portrait_LIT_Jonas_Vytautas_Zukas.dds"
+	skill = 2
+	}
+}
+
+2015.4.17 = {
+	create_country_leader = {
+		name = "Gabrielius Landsbergis"
+		picture = "Portrait_LIT_Gabrielius_Landsbergis.dds"
+		expire = "2050.1.1"
+		ideology = christian_democrat
+	}
+}
+
+2015.5.30 = {
+	create_country_leader = {
+		name = "Valentinas Mazuronis"
+		picture = "Portrait_LIT_Valentinas_Mazuronis.dds"
+		expire = "2050.1.1"
+		ideology = liberalist
+	}
+	add_ideas = {
+		extensive_conscription
+	}
+}
+
+2015.12.19 = {
+	create_country_leader = {
+		name = "Audrius Rudys"
+		picture = "Portrait_LIT_Audrius_Rudys.dds"
+		expire = "2050.1.1"
+		ideology = national_democrat
+	}
+}
+
+2016.1.1 = {
+	create_country_leader = {
+		name = "Remigijus Šimašius"
+		picture = "Portrait_LIT_Remigijus_Simasius.dds"
+		expire = "2050.1.1"
+		ideology = democratic_socialist_ideology
+	}
+}

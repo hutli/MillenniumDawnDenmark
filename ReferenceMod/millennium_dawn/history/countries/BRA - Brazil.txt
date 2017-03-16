@@ -1,0 +1,394 @@
+﻿capital = 505
+
+oob = "BRA_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = country_language_portuguese
+
+set_country_flag = starting_stability_average
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_steady
+}
+
+set_politics = {
+
+	parties = {
+		islamist = {
+			popularity = 0
+		}
+		fascist = {
+			popularity = 1
+		}
+		nationalist = {
+			popularity = 0
+		}
+		reactionary = {
+			popularity = 1
+		}
+		conservative = {
+			popularity = 20
+		}
+		market_liberal = {
+			popularity = 11
+		}
+		social_liberal = {
+			popularity = 16
+		}
+		social_democrat = {
+			popularity = 30
+		}
+		progressive = {
+			popularity = 1
+		}
+		democratic_socialist = {
+			popularity = 18
+		}
+		communist = {
+			popularity = 2
+		}
+	}
+	
+	ruling_party = social_democrat
+	last_election = "1998.10.4"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+2000.1.1 = {
+	
+	create_country_leader = {
+	name = "Fernando Henrique Cardoso"
+	desc = "POLITICIAN_BRA_FERNANDO_CARDOSO_DESC"
+	picture = "Portrait_BRA_Fernando_Henrique_Cardoso.dds"
+	expire = "2010.1.1"
+	ideology = social_democrat_ideology
+	}
+
+	create_country_leader = {
+	name = "Luiz Inacio Lula da Silva"
+	desc = "POLITICIAN_BRA_LUIZ_DA_SILVA_DESC"
+	picture = "Portrait_BRA_Luiz_Inacio_Lula_da_Silva.dds"
+	expire = "2010.1.1"
+	ideology = democratic_socialist_ideology
+	}
+
+	create_country_leader = {
+	name = "Eneas Carneiro"
+	desc = "POLITICIAN_BRA_ENEAS_CARNEIRO_DESC"
+	picture = "Portrait_BRA_Eneas_Carneiro.dds"
+	expire = "2010.1.1"
+	ideology = national_socialist
+	}
+
+	create_country_leader = {
+	name = "Alfredo Syrkis"
+	desc = "POLITICIAN_BRA_ALFREDO_SYRKIS_DESC"
+	picture = "Portrait_BRA_Alfredo_Syrkis.dds"
+	expire = "2010.1.1"
+	ideology = green
+	}
+
+	create_country_leader = {
+	name = "Marco Maciel"
+	desc = "POLITICIAN_BRA_MARCO_MACIEL_DESC"
+	picture = "Portrait_BRA_Marco_Maciel.dds"
+	expire = "2010.1.1"
+	ideology = fiscal_conservative
+	}
+
+	create_country_leader = {
+	name = "Jader Barbalho"
+	desc = "POLITICIAN_BRA_JADER_BARBALHO_DESC"
+	picture = "Portrait_BRA_Jader_Barbalho.dds"
+	expire = "2010.1.1"
+	ideology = moderate
+	}
+
+	create_country_leader = {
+	name = "Levy Fidelix"
+	desc = "POLITICIAN_BRA_LEVY_FIDELIX_DESC"
+	picture = "Portrait_BRA_Levy_Fidelix.dds"
+	expire = "2010.1.1"
+	ideology = counter_progressive_democrat
+	}
+
+	create_country_leader = {
+	name = "Renato Rabelo"
+	desc = "POLITICIAN_BRA_RENATO_RABELO_DESC"
+	picture = "Portrait_BRA_Renato_Rabelo.dds"
+	expire = "2010.1.1"
+	ideology = leninist
+	}
+
+	create_country_leader = {
+	name = "Valdemar Costa Neto"
+	desc = "POLITICIAN_BRA_VALDEMAR_COSTA_NETO_DESC"
+	picture = "Portrait_BRA_Valdemar_Costa_Neto.dds"
+	expire = "2010.1.1"
+	ideology = proto_fascist
+	}
+
+	create_country_leader = {
+	name = "Ciro Nogueira"
+	desc = "POLITICIAN_BRA_CIRO_NOGUEIRA_DESC"
+	picture = "Portrait_BRA_Ciro_Nogueira.dds"
+	expire = "2010.1.1"
+	ideology = libertarian
+	}
+
+	create_corps_commander = {
+	name = "Jose Carlos de Nardi"
+	picture = "Portrait_BRA_general_Jose_Carlos_de_Nardi.dds"
+	skill = 1
+	}
+
+	create_corps_commander = {
+	name = "Fernando Antonio de Siqueira Ribeiro"
+	picture = "Portrait_BRA_general_Fernando_Antonio_de_Siqueira_Ribeiro.dds"
+	skill = 1
+	}
+
+	create_corps_commander = {
+	name = "Eduardo Villas Boas"
+	picture = "Portrait_BRA_general_Eduardo_Villas_Boas.dds"
+	skill = 1
+	}
+
+	create_corps_commander = {
+	name = "Francisco Carlos Modesto"
+	picture = "Portrait_BRA_general_Francisco_Carlos_Modesto.dds"
+	skill = 2
+	}
+
+	create_corps_commander = {
+	name = "Mauro Sinott Lopes"
+	picture = "Portrait_BRA_general_Mauro_Sinott_Lopes.dds"
+	skill = 1
+	}
+
+	create_corps_commander = {
+	name = "Carlos Alberto dos Santos Cruz"
+	picture = "Portrait_BRA_general_Carlos_Alberto_dos_Santos_Cruz.dds"
+	skill = 2
+	}
+
+	create_corps_commander = {
+	name = "Floriano Peixoto Vieira Neto"
+	picture = "Portrait_BRA_general_Floriano_Peixoto_Vieira_Neto.dds"
+	skill = 2
+	}
+
+	create_corps_commander = {
+	name = "Enzo Martins Peri"
+	picture = "Portrait_BRA_general_Enzo_Martins_Peri.dds"
+	skill = 1
+	}
+
+	create_corps_commander = {
+	name = "Edison Leal Pujol"
+	picture = "Portrait_BRA_general_Edison_Leal_Pujol.dds"
+	skill = 2
+	}
+
+	create_navy_leader = {
+	name = "Eduardo Leal Ferreira"
+	picture = "Portrait_BRA_admiral_Eduardo_Leal_Ferreira.dds"
+	skill = 1
+	}
+
+	create_navy_leader = {
+	name = "Ademir Sobrinho"
+	picture = "Portrait_BRA_admiral_Ademir_Sobrinho.dds"
+	skill = 1
+	}
+}
+
+2007.1.1 = {
+	
+	set_party_name = {
+		ideology = conservative
+		long_name = BRA_conservative_party_DEM_long
+		name = BRA_conservative_party_DEM
+	}
+
+}
+
+2014.10.26 = {
+	
+	set_politics = {
+
+	parties = {
+		islamist = {
+			popularity = 0
+		}
+		fascist = {
+			popularity = 0
+		}
+		nationalist = {
+			popularity = 6
+		}
+		reactionary = {
+			popularity = 1
+		}
+		conservative = {
+			popularity = 10
+		}
+		market_liberal = {
+			popularity = 6
+		}
+		social_liberal = {
+			popularity = 16
+		}
+		social_democrat = {
+			popularity = 28
+		}
+		progressive = {
+			popularity = 3
+		}
+		democratic_socialist = {
+			popularity = 25
+		}
+		communist = {
+			popularity = 5
+		}
+	}
+	
+	ruling_party = democratic_socialist
+	last_election = "2014.10.26"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+	create_country_leader = {
+	name = "Dilma Rousseff"
+	desc = "POLITICIAN_BRA_DILMA_ROUSSEFF_DESC"
+	picture = "Portrait_BRA_Dilma_Rousseff.dds"
+	expire = "2020.1.1"
+	ideology = democratic_socialist_ideology
+	}
+
+	create_country_leader = {
+	name = "Aecio Neves"
+	desc = "POLITICIAN_BRA_AECIO_NEVES_DESC"
+	picture = "Portrait_BRA_Aecio_Neves.dds"
+	expire = "2020.1.1"
+	ideology = social_democrat_ideology
+	}
+
+	create_country_leader = {
+	name = "Eduardo Jorge"
+	desc = "POLITICIAN_BRA_EDUARDO_JORGE_DESC"
+	picture = "Portrait_BRA_Eduardo_Jorge.dds"
+	expire = "2020.1.1"
+	ideology = green
+	}
+
+	create_country_leader = {
+	name = "Mauro Lasi"
+	desc = "POLITICIAN_BRA_MAURO_LASI_DESC"
+	picture = "Portrait_BRA_Mauro_Lasi.dds"
+	expire = "2020.1.1"
+	ideology = leninist
+	}
+
+	create_country_leader = {
+	name = "Romero Juca"
+	desc = "POLITICIAN_BRA_ROMERO_JUCA_DESC"
+	picture = "Portrait_BRA_Romero_Juca.dds"
+	expire = "2020.1.1"
+	ideology = moderate
+	}
+
+
+
+}

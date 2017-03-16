@@ -1,0 +1,19 @@
+ideas = {
+
+	country = {
+	
+		idea_SWE_king_charles_xvi = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			modifier = {
+				unity_factor = 0.05
+			}
+			
+		}
+		
+	}
+	
+}

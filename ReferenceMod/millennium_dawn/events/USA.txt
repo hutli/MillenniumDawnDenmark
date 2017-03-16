@@ -1,0 +1,1844 @@
+﻿add_namespace = usa
+add_namespace = election_USA
+
+#September 11 Attacks
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	picture = GFX_report_event_nine_eleven
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = usa_9_11
+		set_country_flag = major_terrorist_attack
+	}
+	
+	option = {
+		name = usa.1.o1
+		news_event = {
+			hours = 6
+			id = news.5
+		}
+		add_national_unity = 0.1
+	}
+}
+
+#USS Cole Attacks
+country_event = {
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = GFX_report_event_cole_attack
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = USA
+		NOT = { has_country_flag = usa_uss_cole_attack }
+		date > 2000.10.10
+		date < 2001.1.1
+	}
+	
+	immediate = {
+		set_country_flag = usa_uss_cole_attack
+	}
+	
+	option = {
+		name = usa.2.o1
+		news_event = {
+			hours = 6
+			id = news.11
+		}
+		navy_experience = 2
+		add_political_power = -10
+		add_opinion_modifier = {
+			target = SUD
+			modifier = recent_actions_negative
+		}
+	}
+}
+
+#Trump post-election hidden trigger
+country_event = {
+	id = usa.3
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = USA
+		has_country_flag = usa_trump_victory_2016
+		is_historical_focus_on = no
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	immediate = {
+		random_list = {
+			20 = { country_event = usa.5 }
+			80 = {}
+		}
+	}
+	
+	option = {
+		name = hidden_option
+	}
+}
+
+#Clinton post-election hidden trigger
+country_event = {
+	id = usa.4
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = USA
+		has_country_flag = usa_clinton_victory_2016
+		is_historical_focus_on = no
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	immediate = {
+		random_list = {
+			20 = { country_event = usa.6 }
+			80 = {}
+		}
+	}
+	
+	option = {
+		name = hidden_option
+	}
+}
+
+#The Assassination of Donald Trump
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_report_event_assassination
+	
+	is_triggered_only = yes
+	
+	immediate = { set_country_flag = usa_trump_assassinated }
+	
+	option = {
+		name = usa.5.o1
+		add_national_unity = -0.05
+		create_country_leader = {
+			name = "Mike Pence"
+			picture = "Portrait_USA_Mike_Pence.dds"
+			expire = "2050.1.1"
+			ideology = right_wing_conservative
+		}
+		hidden_effect = {
+			news_event = {
+				id = news.12
+				hours = 6
+			}
+		}
+	}
+}
+
+#The Assassination of Hillary Clinton
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_report_event_assassination
+	
+	is_triggered_only = yes
+	
+	immediate = { set_country_flag = usa_clinton_assassinated }
+	
+	option = {
+		name = usa.6.o1
+		add_national_unity = -0.05
+		create_country_leader = {
+			name = "Tim Kaine"
+			picture = "Portrait_USA_Tim_Kaine.dds"
+			expire = "2050.1.1"
+			ideology = liberalist
+		}
+		hidden_effect = {
+			news_event = {
+				id = news.12
+				hours = 6
+			}
+		}
+	}
+}
+
+#Elian Gonzalez Affair
+country_event = {
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	picture = GFX_report_event_elian_gonzalez
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = USA
+		date > 2000.1.10
+		date < 2000.3.1
+	}
+	
+	option = {	#Send the boy back
+		name = usa.7.o1
+		
+		add_political_power = 25
+		
+		add_popularity = {
+			ideology = social_liberal
+			popularity = -0.01
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+		
+		set_country_flag = usa_elian_gonzalez_sent_to_cuba
+	}
+	
+	option = {	#Keep him here
+		name = usa.7.o2
+		
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = -0.02
+		}
+		add_national_unity = 0.01
+		CUB = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = recent_actions_negative
+			}
+		}
+		add_named_threat = { 
+			threat = 0.3
+			name = usa.7.t 
+		}
+		
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		set_country_flag = usa_elian_gonzalez_kept_in_the_states
+	}
+}
+
+#Greeneville sinks Ehime-Maru
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = GFX_report_event_submarine
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = USA
+		date > 2001.2.1
+		date < 2001.3.1
+	}
+	
+	option = {	#Apologize
+		name = usa.8.o1
+		
+		add_national_unity = -0.01
+	}
+	
+	option = {	#It's their fault
+		name = usa.8.o2
+		
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.03
+		}
+		add_national_unity = 0.01
+		add_named_threat = { 
+			threat = 0.3
+			name = usa.8.t 
+		}
+		JAP = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = recent_actions_negative
+			}
+		}
+	}
+}
+
+#Mexico: NATIONAL FOCUS: USA offers to fortify our Southern Border
+country_event = {
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	picture = GFX_report_event_american_flag
+	
+	is_triggered_only = yes
+	
+	option = {	#Free Protection? Sure!
+		name = usa.9.o1
+		
+		add_political_power = 15
+		
+		hidden_effect = {
+			474 = {	#Yucatan
+				add_building_construction = {
+					type = bunker
+					province = 4965
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4904
+					level = 3
+					instant_build = yes
+				}
+			}
+			475 = {	#Chiapas
+				add_building_construction = {
+					type = bunker
+					province = 12867
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 1900
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 12753
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+			USA = {
+				news_event = {
+					id = news.13
+				}
+			}
+		}
+		custom_effect_tooltip = tooltip_event_usa.9.o1
+	}
+	
+	option = {	#A foreign power intervention? No!
+		name = usa.9.o2
+		add_national_unity = 0.05
+		
+		USA = {
+			add_opinion_modifier = {
+				target = MEX
+				modifier = recent_actions_negative
+			}
+		}
+		hidden_effect = {
+			USA = {
+				news_event = {
+					id = news.14
+				}
+			}
+		}
+	}
+}
+
+#Russia: USA offers to merge the factions
+country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = GFX_report_event_american_flag
+	
+	is_triggered_only = yes
+	
+	option = {	#An excellent initiative
+		name = usa.10.o1
+		every_country = {
+			limit = {
+				is_in_faction_with = SOV
+				not = { tag = SOV }
+			}
+			country_event = { id = usa.11 }
+		}
+		USA = { add_to_faction = SOV }
+		set_country_flag = has_joined_NATO_by_event
+	}
+	
+	option = {	#You got to be kidding.
+		name = usa.10.o2
+		USA = {
+			add_opinion_modifier = {
+				modifier = recent_actions_negative
+				target = SOV
+			}
+		}
+	}
+}
+
+#All the other CSTO states: Let's join NATO.
+country_event = {
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+	picture = GFX_report_event_american_flag
+	
+	is_triggered_only = yes
+	
+	option = {	#Okay then
+		name = usa.11.o1
+		USA = { add_to_faction = ROOT }
+		set_country_flag = has_joined_NATO_by_event
+	}
+	
+	option = {	#Uhh, no
+		name = usa.11.o2
+		USA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = recent_actions_negative
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = recent_actions_negative
+			}
+		}
+	}
+}
+
+#Germany: USA would like to extend Ramstein
+country_event = {
+	id = usa.12
+	title = usa.12.t
+	desc = usa.12.d
+	picture = GFX_report_event_american_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.12.o1
+		air_experience = 5
+		42 = {
+			add_building_construction = {
+				type = air_base
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
+	
+	option = {
+		name = usa.12.o2
+		USA = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = recent_actions_negative
+			}
+		}
+	}
+}
+
+#All befriended countries: USA stands with us!
+country_event = {
+	id = usa.13
+	title = usa.13.t
+	desc = usa.13.d
+	picture = GFX_report_event_american_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.13.o1
+		effect_tooltip = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = has_expressed_loyalty
+			}
+		}
+	}
+}
+
+#All opposed countries: USA stands against us!
+country_event = {
+	id = usa.14
+	title = usa.14.t
+	desc = usa.14.d
+	picture = GFX_report_event_american_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.14.o1
+		effect_tooltip = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = loyal_to_our_enemy
+			}
+		}
+	}
+}
+
+#As in vanilla, don't use usa.15
+
+#Japan/SK/Taiwan: East Asian Military Support Program
+country_event = {
+	id = usa.16
+	title = usa.16.t
+	desc = usa.16.d
+	picture = GFX_report_event_american_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.16.o1
+		army_experience = 10
+		navy_experience = 10
+		air_experience = 10
+	}
+}
+
+#The Sanders Craze
+country_event = {
+	id = usa.17
+	title = usa.17.t
+	desc = usa.17.d
+	picture = GFX_report_event_bernie_sanders
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2016.1.1
+		has_idea = idea_USA_political_establishment
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {	#A new era for leftism in America?
+		name = usa.17.o1
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = progressive
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = democratic_socialist
+			popularity = 0.02
+		}
+	}
+}
+
+#Third Party Gains
+country_event = {
+	id = usa.18
+	title = usa.18.t
+	desc = usa.18.d
+	picture = GFX_report_event_gary_johnson
+	
+	trigger = {
+		tag = USA
+		has_idea = idea_USA_political_establishment
+		OR = {
+			has_government = conservative
+			has_government = social_liberal
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 500
+	}
+	
+	option = {	#A new alternative?
+		name = usa.18.o1
+		add_popularity = {
+			ideology = social_liberal
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.02
+		}
+	}
+}
+
+#Republican Nomination 2016
+country_event = {
+	id = usa.19
+	title = usa.19.t
+	desc = usa.19.d
+	
+	is_triggered_only = yes
+	
+	option = {	#I dont care
+		name = usa.19.o1
+		random_list = {
+			80 = { 
+				set_country_flag = republican_nomination_2016_trump
+				if = {
+					limit = { NOT = { has_government = conservative } }
+					create_country_leader = {
+						name = "Donald Trump"
+						picture = "Portrait_USA_Donald_Trump.dds"
+						ideology = right_wing_conservative
+					}
+				}
+			}
+			15 = { 
+				set_country_flag = republican_nomination_2016_cruz
+				if = {
+					limit = { NOT = { has_government = conservative } }
+					create_country_leader = {
+						name = "Ted Cruz"
+						picture = "Portrait_USA_Ted_Cruz.dds"
+						ideology = right_wing_conservative
+					}
+				}
+			}
+			4 = { 
+				set_country_flag = republican_nomination_2016_rubio 
+				if = {
+					limit = { NOT = { has_government = conservative } }
+					create_country_leader = {
+						name = "Marco Rubio"
+						picture = "Portrait_USA_Marco_Rubio.dds"
+						ideology = fiscal_conservative
+					}
+				}
+			}
+			1 = { 
+				set_country_flag = republican_nomination_2016_kasich
+				if = {
+					limit = { NOT = { has_government = conservative } }
+					create_country_leader = {
+						name = "John Kasich"
+						picture = "Portrait_USA_John_Kasich.dds"
+						ideology = christian_democrat
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	option = {	#Trump
+		name = usa.19.o2
+		set_country_flag = republican_nomination_2016_trump
+		if = {
+			limit = { NOT = { has_government = conservative } }
+			create_country_leader = {
+				name = "Donald Trump"
+				picture = "Portrait_USA_Donald_Trump.dds"
+				ideology = right_wing_conservative
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_historical_focus_on = no
+				factor = 0
+			}
+		}
+	}
+	
+	option = {	#Cruz
+		name = usa.19.o3
+		set_country_flag = republican_nomination_2016_cruz
+		if = {
+			limit = { NOT = { has_government = conservative } }
+			create_country_leader = {
+				name = "Ted Cruz"
+				picture = "Portrait_USA_Ted_Cruz.dds"
+				ideology = right_wing_conservative
+			}
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+	
+	option = {	#Rubio
+		name = usa.19.o4
+		set_country_flag = republican_nomination_2016_rubio
+		if = {
+			limit = { NOT = { has_government = conservative } }
+			create_country_leader = {
+				name = "Marco Rubio"
+				picture = "Portrait_USA_Marco_Rubio.dds"
+				ideology = fiscal_conservative
+			}
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+	
+	option = {	#Kasich
+		name = usa.19.o5
+		set_country_flag = republican_nomination_2016_kasich
+		if = {
+			limit = { NOT = { has_government = conservative } }
+			create_country_leader = {
+				name = "John Kasich"
+				picture = "Portrait_USA_John_Kasich.dds"
+				ideology = christian_democrat
+			}
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Democratic Nomination 2016
+country_event = {
+	id = usa.20
+	title = usa.20.t
+	desc = usa.20.d
+	
+	is_triggered_only = yes
+	
+	option = {	#I dont care
+		name = usa.20.o1
+		random_list = {
+			70 = { 
+				set_country_flag = democratic_nomination_2016_clinton
+				if = {
+					limit = { NOT = { has_government = social_liberal } }
+					create_country_leader = {
+						name = "Hillary Clinton"
+						picture = "Portrait_USA_Hillary_Clinton.dds"
+						ideology = liberalist
+					}
+				}
+			}
+			30 = { 
+				set_country_flag = democratic_nomination_2016_sanders 
+				if = {
+					limit = { NOT = { has_government = social_liberal } }
+					create_country_leader = {
+						name = "Bernie Sanders"
+						picture = "Portrait_USA_Bernie_Sanders.dds"
+						ideology = liberalist
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	option = {	#Clinton
+		name = usa.20.o2
+		set_country_flag = democratic_nomination_2016_clinton
+		if = {
+			limit = { NOT = { has_government = social_liberal } }
+			create_country_leader = {
+				name = "Hillary Clinton"
+				picture = "Portrait_USA_Hillary_Clinton.dds"
+				ideology = centrist
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_historical_focus_on = no
+				factor = 0
+			}
+		}
+	}
+	
+	option = {	#Sanders
+		name = usa.20.o3
+		set_country_flag = democratic_nomination_2016_sanders
+		if = {
+			limit = { NOT = { has_government = social_liberal } }
+			create_country_leader = {
+				name = "Bernie Sanders"
+				picture = "Portrait_USA_Bernie_Sanders.dds"
+				ideology = liberalist
+			}
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Totalitarians in our ranks trigger (other countries)
+country_event = {
+	id = usa.21
+	hidden = yes
+	
+	trigger = {
+		is_in_faction_with = USA
+		has_democratic_form_of_government = no
+		NOT = { original_tag = USA }
+		USA = { is_faction_leader = yes }
+		USA = { has_democratic_form_of_government = yes }
+		USA = { NOT = { has_country_flag = tolerates_totalitarians_in_NATO } }
+	}
+	
+	mean_time_to_happen = {
+		days = 45
+	}
+	
+	option = {
+		USA = { country_event = usa.22 }
+	}
+}
+
+#Totalitarians in our ranks
+country_event = {
+	id = usa.22
+	title = usa.22.t
+	desc = usa.22.d
+	picture = GFX_report_event_nato
+	
+	is_triggered_only = yes
+	
+	option = {	#They have to leave
+		name = usa.22.o1
+		remove_from_faction = FROM
+		FROM = {
+			country_event = diplomatic_message.2
+		}
+		FROM = {
+			add_opinion_modifier = {
+				modifier = kicked_from_faction
+				target = ROOT
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {	#Uhhh, let's just look past that
+		name = usa.22.o2
+		add_national_unity = -0.05
+		set_country_flag = tolerates_totalitarians_in_NATO
+		news_event = usa.23
+		FROM = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = recent_actions_very_positive
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = { original_tag = USA }
+				is_in_faction_with = USA
+				has_democratic_form_of_government = yes
+			}
+			add_opinion_modifier = {
+				target = USA
+				modifier = tolerates_totalitarians_in_faction_faction_member
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = { original_tag = USA }
+				NOT = { is_in_faction_with = USA }
+				has_democratic_form_of_government = yes
+			}
+			add_opinion_modifier = {
+				target = USA
+				modifier = tolerates_totalitarians_in_faction
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+			
+			modifier = {
+				add = 5
+				is_historical_focus_on = no
+			}
+		}
+	}
+}
+
+news_event = {
+	id = usa.23
+	title = usa.23.t
+	desc = usa.23.d
+	picture = GFX_news_event_nato
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.23.o1
+		trigger = { original_tag = USA }
+	}
+	
+	option = {
+		name = usa.23.o2
+		trigger = {
+			NOT = { original_tag = USA }
+			is_in_faction_with = USA
+			has_democratic_form_of_government = yes
+		}
+	}
+	
+	option = {
+		name = usa.23.o3
+		trigger = {
+			NOT = { original_tag = USA }
+			is_in_faction_with = USA
+			has_democratic_form_of_government = no
+		}
+	}
+	
+	option = {
+		name = usa.23.o4
+		trigger = {
+			NOT = { original_tag = USA }
+			NOT = { original_tag = SOV }
+			NOT = { is_in_faction_with = USA }
+			has_democratic_form_of_government = yes
+			NOT = { has_idea = neutrality_idea }
+		}
+	}
+	
+	option = {
+		name = usa.23.o5
+		trigger = {
+			NOT = { original_tag = USA }
+			NOT = { original_tag = SOV }
+			NOT = { is_in_faction_with = USA }
+			has_democratic_form_of_government = yes
+			has_idea = neutrality_idea
+		}
+	}
+	
+	option = {
+		name = usa.23.o6
+		trigger = {
+			NOT = { original_tag = USA }
+			original_tag = SOV
+			NOT = { is_in_faction_with = USA }
+			has_democratic_form_of_government = yes
+		}
+	}
+	
+	option = {
+		name = usa.23.o7
+		trigger = {
+			NOT = { original_tag = USA }
+			NOT = { is_in_faction_with = USA }
+			has_democratic_form_of_government = no
+		}
+	}
+}
+
+news_event = {
+	id = usa.24
+	title = usa.24.t
+	desc = usa.24.d
+	picture = GFX_news_event_american_monarchy
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		has_government = monarchist
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = usa.24.o1
+		trigger = { 
+			original_tag = USA
+		}
+	}
+	
+	option = {
+		name = usa.24.o2
+		trigger = {
+			NOT = { original_tag = USA }
+			is_in_faction_with = USA 
+		}
+	}
+	
+	option = {
+		name = usa.24.o3
+		trigger = {
+			NOT = { original_tag = USA }
+			NOT = { is_in_faction_with = USA }
+		}
+	}
+}
+
+country_event = {	#The New President lost the Popular Vote
+	id = usa.25
+	title = usa.25.t
+	desc = usa.25.d
+	picture = GFX_report_event_protests
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.25.o1
+		decrease_stability_by_2 = yes
+	}
+}
+
+################### ELECTIONS #########################
+
+
+#2000
+country_event = {
+	id = election_USA.1
+	title = election_USA.1.t
+	desc = election_USA.1.d
+	picture = GFX_report_event_USA_election_2000_bush_gore
+
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = USA
+		date > 2000.6.1
+		date < 2001.1.1
+		not = { has_country_flag = usa_election_2000 }
+		has_idea = idea_USA_political_establishment
+	}
+	
+	immediate = {
+		set_country_flag = usa_election_2000
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "Michael Badnarik"
+				desc = "POLITICIAN_USA_MICHAEL_BADNARIK_DESC"
+				picture = "Portrait_USA_Michael_Badnarik.dds"
+				expire = "2050.1.1"
+				ideology = libertarian
+				
+				traits = {
+				
+				}
+			}
+		}
+	}
+	
+	option = {	#Bush
+		name = election_USA.1.o1
+		ai_chance = {
+			factor = 60
+		}
+		hidden_effect = { country_event = usa.25 }
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.03
+		}
+		hidden_effect = {
+			create_country_leader = {
+				name = "John Kerry"
+				desc = "POLITICIAN_USA_JOHN_KERRY_DESC"
+				picture = "Portrait_USA_John_Kerry.dds"
+				expire = "2050.1.1"
+				ideology = liberalist
+				
+				traits = {
+				
+				}
+			}
+		}
+		add_political_power = 15
+		set_country_flag = usa_bush_victory_2000
+		
+		news_event = {
+			id = news.7
+			hours = 6
+		}
+	}
+	
+	option = {	#Gore
+		name = election_USA.1.o2
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Al Gore"
+			desc = "POLITICIAN_USA_AL_GORE_DESC"
+			picture = "Portrait_USA_Al_Gore.dds"
+			expire = "2050.1.1"
+			ideology = liberalist
+			
+			traits = {
+			
+			}
+		}
+		hidden_effect = {
+			create_country_leader = {
+				name = "Newt Gingrich"
+				desc = "POLITICIAN_USA_NEWT_GINGRICH_DESC"
+				picture = "Portrait_USA_Newt_Gingrich.dds"
+				expire = "2050.1.1"
+				ideology = constitutionalist
+			
+				traits = {
+				
+				}
+			}
+		}
+		add_political_power = -15
+		set_country_flag = usa_gore_victory_2000
+		
+		news_event = {
+			id = news.6
+			hours = 6
+		}
+	}
+}
+
+#2004
+country_event = {
+	id = election_USA.2
+	title = election_USA.2.t
+	desc = {
+		text = election_USA.2.d1
+		trigger = {
+			has_country_flag = usa_bush_victory_2000
+		}
+	}
+	desc = {
+		text = election_USA.2.d2
+		trigger = {
+			has_country_flag = usa_gore_victory_2000
+		}
+	}
+	picture = GFX_report_event_USA_election_2004_bush_kerry
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = USA
+		date > 2004.6.1
+		date < 2005.1.1
+		not = {
+			has_country_flag = usa_election_2004
+		}
+		has_idea = idea_USA_political_establishment
+	}
+	
+	immediate = {
+		set_country_flag = usa_election_2004
+		hidden_effect = {
+			create_country_leader = {
+				name = "Bob Barr"
+				desc = "POLITICIAN_USA_BOB_BARR_DESC"
+				picture = "Portrait_USA_Bob_Barr.dds"
+				expire = "2050.1.1"
+				ideology = libertarian
+				
+				traits = {
+				
+				}
+			}
+		}
+	}
+	
+	option = {	#Bush
+		name = election_USA.2.o1
+		trigger = {
+			has_country_flag = usa_bush_victory_2000
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.03
+		}
+		add_political_power = 20
+		hidden_effect = {
+			create_country_leader = {
+				name = "Barack Obama"
+				desc = "POLITICIAN_USA_BARACK_OBAMA_DESC"
+				picture = "Portrait_USA_Barack_Obama.dds"
+				expire = "2050.1.1"
+				ideology = liberalist
+			
+				traits = {
+				
+				}
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+		set_country_flag = usa_bush_victory_2004
+		
+		news_event = {
+			id = news.7
+			hours = 6
+		}
+	}
+	
+	option = { #Kerry
+		name = election_USA.2.o2
+		hidden_effect = { country_event = usa.25 }
+		trigger = {
+			has_country_flag = usa_bush_victory_2000
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+		hidden_effect = {
+			create_country_leader = {
+				name = "Newt Gingrich"
+				desc = "POLITICIAN_USA_NEWT_GINGRICH_DESC"
+				picture = "Portrait_USA_Newt_Gingrich.dds"
+				expire = "2050.1.1"
+				ideology = constitutionalist
+			
+				traits = {
+				
+				}
+			}
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		set_country_flag = usa_kerry_victory_2004
+	}
+	
+	option = { #Gore
+		name = election_USA.2.o3
+		trigger = {
+			has_country_flag = usa_gore_victory_2000
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_political_power = 20
+		hidden_effect = {
+			create_country_leader = {
+				name = "John McCain"
+				desc = "POLITICIAN_USA_JOHN_MCCAIN_DESC"
+				picture = "Portrait_USA_John_McCain.dds"
+				expire = "2050.1.1"
+				ideology = fiscal_conservative
+			
+				traits = {
+				
+				}
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+		set_country_flag = usa_gore_victory_2004
+	}
+	
+	option = {	#Gingrich
+		name = election_USA.2.o4
+		trigger = {
+			has_country_flag = usa_gore_victory_2000
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Newt Gingrich"
+			desc = "POLITICIAN_USA_NEWT_GINGRICH_DESC"
+			picture = "Portrait_USA_Newt_Gingrich.dds"
+			expire = "2050.1.1"
+			ideology = constitutionalist
+		
+			traits = {
+			
+			}
+		}
+		hidden_effect = {
+			create_country_leader = {
+				name = "Barack Obama"
+				desc = "POLITICIAN_USA_BARACK_OBAMA_DESC"
+				picture = "Portrait_USA_Barack_Obama.dds"
+				expire = "2050.1.1"
+				ideology = liberalist
+				
+				traits = {
+				
+				}
+			}
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		set_country_flag = usa_gingrich_victory_2004
+	}
+}
+
+#2008
+country_event = {
+	id = election_USA.3
+	title = election_USA.3.t
+	desc = election_USA.3.d
+	picture = GFX_report_event_USA_election_2008_mccain_obama
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = USA
+		date > 2008.6.1
+		date < 2009.1.1
+		not = {
+			has_country_flag = usa_election_2008
+		}
+		has_idea = idea_USA_political_establishment
+	}
+	
+	immediate = {
+		set_country_flag = usa_election_2008
+	}
+	
+	option = {	#Obama
+		name = election_USA.3.o1
+		
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+		
+		create_country_leader = {
+			name = "Barack Obama"
+			picture = "Portrait_USA_Barack_Obama.dds"
+			expire = "2050.1.1"
+			ideology = liberalist
+			
+			traits = {
+			
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+		}
+		
+		set_country_flag = usa_obama_victory_2008
+	}
+	
+	option = {	#McCain
+		name = election_USA.3.o2
+		
+		hidden_effect = { country_event = usa.25 }
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.03
+		}
+		
+		create_country_leader = {
+			name = "John McCain"
+			picture = "Portrait_USA_John_McCain.dds"
+			expire = "2050.1.1"
+			ideology = fiscal_conservative
+			
+			traits = {
+			
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		set_country_flag = usa_mccain_victory_2008
+	}
+}
+
+#2012
+country_event = {
+	id = election_USA.4
+	title = election_USA.4.t
+	desc = election_USA.4.d
+	picture = GFX_report_event_USA_election_2012_romney_obama
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = USA
+		date > 2012.6.1
+		date < 2013.1.1
+		not = {
+			has_country_flag = usa_election_2012
+		}
+		has_idea = idea_USA_political_establishment
+	}
+	
+	immediate = {
+		set_country_flag = usa_election_2012
+	}
+	
+	option = {	#Obama
+		name = election_USA.4.o1
+		
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+		
+		create_country_leader = {
+			name = "Barack Obama"
+			picture = "Portrait_USA_Barack_Obama.dds"
+			expire = "2050.1.1"
+			ideology = liberalist
+			
+			traits = {
+			
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+		}
+		
+		set_country_flag = usa_obama_victory_2012
+	}
+	
+	option = {	#Romney
+		name = election_USA.4.o2
+		
+		hidden_effect = { country_event = usa.25 }
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.03
+		}
+		
+		create_country_leader = {
+			name = "Mitt Romney"
+			picture = "Portrait_USA_Mitt_Romney.dds"
+			expire = "2050.1.1"
+			ideology = constitutionalist
+		}
+		
+		ai_chance = {
+			factor = 25
+		}
+		
+		set_country_flag = usa_romney_victory_2012
+	}
+}
+
+#2016
+country_event = {
+	id = election_USA.5
+	title = election_USA.5.t
+	desc = {
+		#Trump versus Clinton
+		text = election_USA.5.d1
+		trigger = {
+			OR = {
+				AND = { #If everything goes right
+					has_country_flag = republican_nomination_2016_trump
+					has_country_flag = democratic_nomination_2016_clinton
+				}
+				AND = { #If no Democratic Nomination has been set
+					has_country_flag = republican_nomination_2016_trump
+					NOT = { has_country_flag = democratic_nomination_2016_clinton }
+					NOT = { has_country_flag = democratic_nomination_2016_sanders }
+				}
+				AND = { #If no Republican Nomination has been set
+					NOT = { has_country_flag = republican_nomination_2016_trump }
+					NOT = { has_country_flag = republican_nomination_2016_kasich }
+					NOT = { has_country_flag = republican_nomination_2016_cruz }
+					NOT = { has_country_flag = republican_nomination_2016_rubio }
+					has_country_flag = democratic_nomination_2016_clinton
+				}
+				AND = { #If everything goes wrong
+					NOT = { has_country_flag = republican_nomination_2016_trump }
+					NOT = { has_country_flag = republican_nomination_2016_kasich }
+					NOT = { has_country_flag = republican_nomination_2016_cruz }
+					NOT = { has_country_flag = republican_nomination_2016_rubio }
+					NOT = { has_country_flag = democratic_nomination_2016_clinton }
+					NOT = { has_country_flag = democratic_nomination_2016_sanders }
+				}
+			}
+		}
+	}
+	desc = {
+		#Trump versus Sanders
+		text = election_USA.5.d2
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = republican_nomination_2016_trump
+					has_country_flag = democratic_nomination_2016_sanders
+				}
+				AND = {
+					NOT = { has_country_flag = republican_nomination_2016_trump }
+					NOT = { has_country_flag = republican_nomination_2016_kasich }
+					NOT = { has_country_flag = republican_nomination_2016_cruz }
+					NOT = { has_country_flag = republican_nomination_2016_rubio }
+					has_country_flag = democratic_nomination_2016_sanders
+				}
+			}
+		}
+	}
+	desc = {
+		#Cruz versus Clinton
+		text = election_USA.5.d3
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = republican_nomination_2016_cruz
+					has_country_flag = democratic_nomination_2016_clinton
+				}
+				AND = {
+					has_country_flag = republican_nomination_2016_cruz
+					NOT = { has_country_flag = democratic_nomination_2016_clinton }
+					NOT = { has_country_flag = democratic_nomination_2016_sanders }
+				}
+			}
+		}
+	}
+	desc = {
+		#Cruz versus Sanders
+		text = election_USA.5.d4
+		trigger = {
+			AND = {
+				has_country_flag = republican_nomination_2016_cruz
+				has_country_flag = democratic_nomination_2016_sanders
+			}
+		}
+	}
+	desc = {
+		#Rubio versus Clinton
+		text = election_USA.5.d5
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = republican_nomination_2016_rubio
+					has_country_flag = democratic_nomination_2016_clinton
+				}
+				AND = {
+					has_country_flag = republican_nomination_2016_rubio
+					NOT = { has_country_flag = democratic_nomination_2016_clinton }
+					NOT = { has_country_flag = democratic_nomination_2016_sanders }
+				}
+			}
+		}
+	}
+	desc = {
+		#Rubio versus Sanders
+		text = election_USA.5.d6
+		trigger = {
+			AND = {
+				has_country_flag = republican_nomination_2016_rubio
+				has_country_flag = democratic_nomination_2016_sanders
+			}
+		}
+	}
+	desc = {
+		#Kasich versus Clinton
+		text = election_USA.5.d7
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = republican_nomination_2016_kasich
+					has_country_flag = democratic_nomination_2016_clinton
+				}
+				AND = {
+					has_country_flag = republican_nomination_2016_kasich
+					NOT = { has_country_flag = democratic_nomination_2016_clinton }
+					NOT = { has_country_flag = democratic_nomination_2016_sanders }
+				}
+			}
+		}
+	}
+	desc = {
+		#Kasich versus Sanders
+		text = election_USA.5.d8
+		trigger = {
+			AND = {
+				has_country_flag = republican_nomination_2016_kasich
+				has_country_flag = democratic_nomination_2016_sanders
+			}
+		}
+	}
+	
+	picture = GFX_report_event_USA_election_2016_trump_clinton
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = USA
+		date > 2016.6.1
+		date < 2017.1.1
+		not = {
+			has_country_flag = usa_election_2016
+		}
+		has_idea = idea_USA_political_establishment
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				AND = {
+					has_country_flag = republican_nomination_2016_cruz
+					has_country_flag = democratic_nomination_2016_sanders
+				}
+			}
+			hidden_effect = {
+				add_popularity = {
+					ideology = social_liberal
+					popularity = 0.08
+				}
+			}
+		}
+		set_country_flag = usa_election_2016
+	}
+	
+	option = {	#Donald Trump
+		name = election_USA.5.o1
+		
+		hidden_effect = { country_event = usa.25 }
+		trigger = {
+			OR = {	#Should be the standard option should something go wrong.
+				has_country_flag = republican_nomination_2016_trump
+				AND = {
+					NOT = { has_country_flag = republican_nomination_2016_trump }
+					NOT = { has_country_flag = republican_nomination_2016_kasich }
+					NOT = { has_country_flag = republican_nomination_2016_cruz }
+					NOT = { has_country_flag = republican_nomination_2016_rubio }
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Donald Trump"
+			picture = "Portrait_USA_Donald_Trump.dds"
+			ideology = right_wing_conservative
+			traits = {
+				friend_of_russia
+				enemy_of_china
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
+		set_country_flag = usa_trump_victory_2016
+	}
+	
+	option = {	#Ted Cruz
+		name = election_USA.5.o2
+		trigger = { has_country_flag = republican_nomination_2016_cruz }
+		set_politics = { ruling_party = conservative elections_allowed = yes }
+		add_popularity = { ideology = conservative popularity = 0.03 }
+		create_country_leader = {
+			name = "Ted Cruz"
+			picture = "Portrait_USA_Ted_Cruz.dds"
+			ideology = right_wing_conservative
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+		set_country_flag = usa_cruz_victory_2016
+	}
+	
+	option = {	#Marco Rubio
+		name = election_USA.5.o3
+		trigger = { has_country_flag = republican_nomination_2016_rubio }
+		set_politics = { ruling_party = conservative elections_allowed = yes }
+		add_popularity = { ideology = conservative popularity = 0.03 }
+		create_country_leader = {
+			name = "Marco Rubio"
+			picture = "Portrait_USA_Marco_Rubio.dds"
+			ideology = fiscal_conservative
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+		set_country_flag = usa_rubio_victory_2016
+	}
+	
+	option = {	#John Kasich
+		name = election_USA.5.o4
+		trigger = { has_country_flag = republican_nomination_2016_kasich }
+		set_politics = { ruling_party = conservative elections_allowed = yes }
+		add_popularity = { ideology = conservative popularity = 0.03 }
+		create_country_leader = {
+			name = "John Kasich"
+			picture = "Portrait_USA_John_Kasich.dds"
+			ideology = christian_democrat
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+		set_country_flag = usa_kasich_victory_2016
+	}
+	
+	option = {	#Hillary Clinton
+		name = election_USA.5.o5
+		
+		trigger = {
+			OR = {	#Should be the standard option should something go wrong.
+				has_country_flag = democratic_nomination_2016_clinton
+				AND = {
+					NOT = { has_country_flag = democratic_nomination_2016_clinton }
+					NOT = { has_country_flag = democratic_nomination_2016_sanders }
+				}
+			}
+		}
+		
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+		
+		create_country_leader = {
+			name = "Hillary Clinton"
+			picture = "Portrait_USA_Hillary_Clinton.dds"
+			ideology = centrist
+			
+			traits = {
+				friend_of_germany
+				friend_of_britain
+				friend_of_france
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+		
+		set_country_flag = usa_clinton_victory_2016
+	}
+	
+	option = {	#Bernie Sanders
+		name = election_USA.5.o6
+		trigger = { has_country_flag = democratic_nomination_2016_sanders }
+		set_politics = { ruling_party = social_liberal elections_allowed = yes }
+		add_popularity = { ideology = social_liberal popularity = 0.03 }
+		add_popularity = { ideology = progressive popularity = 0.03 }
+		add_popularity = { ideology = democratic_socialist popularity = 0.03 }
+		
+		create_country_leader = {
+			name = "Bernie Sanders"
+			picture = "Portrait_USA_Bernie_Sanders.dds"
+			ideology = liberalist
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+		
+		set_country_flag = usa_sanders_victory_2016
+	}
+}

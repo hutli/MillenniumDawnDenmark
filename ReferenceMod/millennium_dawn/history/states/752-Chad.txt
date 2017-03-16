@@ -1,0 +1,22 @@
+state={
+	id=752
+	name="STATE_752"
+	history = {
+		owner = CHD
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 1
+		}
+		
+		victory_points = { 2081 2 }
+	}
+	provinces={
+		2081 3123 4897 4978 5136 9152 
+	}
+	manpower=6125040
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

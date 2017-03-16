@@ -1,0 +1,35 @@
+
+state={
+	id=339
+	name="STATE_339"
+	manpower = 7411755
+	resources={
+		chromium=34
+		steel=8
+	}
+	
+	state_category = city
+
+	history={
+		owner = TUR
+		
+		victory_points = {
+			4112 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 4
+			arms_factory = 2
+			dockyard = 1
+			air_base = 2
+			4112 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		928 3927 4112 6992 7130 9921 9929 10038 11848 11898 
+	}
+}

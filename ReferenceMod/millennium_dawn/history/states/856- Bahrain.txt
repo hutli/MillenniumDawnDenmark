@@ -1,0 +1,28 @@
+
+state={
+	id=856
+	name="STATE_856"
+	manpower = 807131
+	
+	state_category = city
+
+	history={
+		owner = BAH
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+			arms_factory = 1
+			air_base = 2
+			13204 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 13204 3 }
+		add_core_of = BAH
+	}
+
+	provinces={
+		13204 
+	}
+	
+}

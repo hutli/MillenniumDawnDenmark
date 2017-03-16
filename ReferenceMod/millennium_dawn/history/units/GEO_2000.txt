@@ -1,0 +1,110 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		light_mechanized = { x = 0 y = 4 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Armored Brigade"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Artillery Brigade"
+	
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	
+	division = {
+		name = "1st Infantry Brigade"
+		location = 1599
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 6671
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Infantry Brigade"
+		location = 12309
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Mechanized Brigade"
+		location = 654
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5th Infantry Brigade"
+		location = 3653
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Artillery Brigade"
+		location = 9702
+		division_template = "Artillery Brigade"
+		start_experience_factor = 0.3
+	}
+	
+}
+
+### Air OOB ###
+
+air_wings = {
+	231 = {
+		#Su-25
+		jet_attack_equipment_2 = {
+			owner = "GEO" 
+			amount = 11
+		}
+
+	}
+}

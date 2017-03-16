@@ -1,0 +1,418 @@
+﻿capital = 126
+
+oob = "ENG_2000"
+
+set_research_slots = 4
+set_convoys = 1000
+set_national_unity = 0.75
+
+set_country_flag = country_language_english
+
+set_country_flag = starting_stability_average
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	cold_war_ship_design = 1
+	destroyer1 = 1
+	destroyer2 = 1
+	destroyer3 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	carrier3 = 1
+	submarine1 = 1
+	submarine2 = 1
+	submarine3 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	modern_destroyer_armament = 1
+	carrier_nuclear_reactor = 1
+	carrier_advanced_ramp_system = 1
+	carrier_catapult = 1
+	submarine_nuclear_reactor = 1
+	submarine_cold_war_torpedo = 1
+	submarine_modern_torpedo = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+	
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+}
+
+add_ideas = {
+	population_growth_stagnation
+	ENG_queen_elizabeth_2
+	idea_eu_member
+	idea_united_nations_security_council_member
+	nuclear_power_idea
+	commonwealth_of_nations_member
+}
+
+give_guarantee = BRU
+give_guarantee = MLT
+give_guarantee = CYP
+
+set_politics = {
+
+	parties = {
+		social_democrat = {			#Labour + SNP + SDLP + Natural Law
+			popularity = 45.7
+		}
+		conservative = {			#Tories + Liberal Party + ProLife + UK Unionists
+			popularity = 31.0
+		}
+		social_liberal = {			#LibDems
+			popularity = 16.2
+		}
+		reactionary = {				#Referendum Party + DUP + UKIP
+			popularity = 3.2
+		}
+		democratic_socialist = {	#Sinn Fein + SLP + PUP + SSP
+			popularity = 0.7
+		}
+		progressive = {				#Plaid Cymru + Green
+			popularity = 0.8
+		}
+		market_liberal = {			#APNI
+			popularity = 0.2
+		}
+		fascist = {					#BNP
+			popularity = 0.1
+		}
+		nationalist = {				#National Democrats
+			popularity = 0.1
+		}
+		communist = {				#Socialist Alternative + CPGB
+			popularity = 0.1
+		}
+	}
+	
+	ruling_party = social_democrat
+	last_election = "1997.5.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+add_opinion_modifier = {
+	target = AST
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = CAN
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = FRA
+	modifier = entente_cordiale
+}
+
+add_opinion_modifier = {
+	target = NZL
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = USA
+	modifier = five_eyes_agreement
+}
+
+create_country_leader = {
+	name = "Nick Griffin"
+	picture = "Portrait_ENG_Nick_Griffin.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Tom Holmes"
+	picture = "Portrait_ENG_Tom_Holmes.dds"
+	ideology = autocrat
+}
+
+create_country_leader = {
+	name = "Elizabeth II"
+	picture = "Portrait_ENG_Elizabeth_II.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Michael Holmes"
+	picture = "Portrait_ENG_Michael_Holmes.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "William Hague"
+	picture = "Portrait_ENG_William_Hague.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Tony Blair"
+	picture = "Portrait_ENG_Tony_Blair.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Anjem Choudary"
+	picture = "Portrait_ENG_Anjem_Choudary.dds"
+	ideology = islamic_authoritarian
+}
+	
+create_country_leader = {
+	name = "Charles Kennedy"
+	picture = "Portrait_ENG_Charles_Kennedy.dds"
+	ideology = centrist
+}
+	
+create_country_leader = {
+	name = "Natalie Bennett"
+	picture = "Portrait_ENG_Natalie_Bennett.dds"
+	ideology = green
+}
+	
+create_country_leader = {
+	name = "Peter Taaffe"
+	picture = "Portrait_ENG_Peter_Taaffey.dds"
+	ideology = democratic_socialist_ideology
+}
+	
+create_country_leader = {
+	name = "Robert Griffiths"
+	picture = "Portrait_ENG_Robert_Griffiths.dds"
+	ideology = leninist
+}
+
+	
+create_corps_commander = {
+	name = "Patrick Cordingley"
+	picture = "Portrait_ENG_general_Patrick_Cordingley.dds"
+	skill = 1
+}
+	
+create_corps_commander = {
+	name = "Michael Rose"
+	picture = "Portrait_ENG_general_Michael_Rose.dds"
+	skill = 1
+}
+	
+create_corps_commander = {
+	name = "Peter Wall"
+	picture = "Portrait_ENG_general_Peter_Wall.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Richard Dannatt"
+	picture = "Portrait_ENG_general_Richard_Dannatt.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Rupert Smith"
+	picture = "Portrait_ENG_general_Rupert_Smith.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Jock Slater"
+	picture = "Portrait_ENG_admiral_Jock_Slater.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mark Stanhope"
+	picture = "Portrait_ENG_admiral_Mark_Stanhope.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Michael Boyce"
+	picture = "Portrait_ENG_admiral_Michael_Boyce.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Philip Jones"
+	picture = "Portrait_ENG_admiral_Philip_Jones.dds"
+	skill = 1
+}
+
+2001.1.1 = {
+	complete_national_focus = ENG_vitalize_westminster
+	complete_national_focus = ENG_the_future_of_britain
+	complete_national_focus = ENG_british_armed_forces
+	complete_national_focus = ENG_economic_stimulus
+	complete_national_focus = ENG_political_reform
+	complete_national_focus = ENG_democratic_tradition
+	complete_national_focus = ENG_security_first
+	complete_national_focus = ENG_public_CCTV_systems
+	complete_national_focus = ENG_internet_surveillance
+	complete_national_focus = ENG_english_industry
+	complete_national_focus = ENG_scottish_industry
+	complete_national_focus = ENG_expand_the_home_ministry
+	complete_national_focus = ENG_expand_the_foreign_ministry
+	complete_national_focus = ENG_go_with_europe
+	complete_national_focus = ENG_careful_cooperation
+	complete_national_focus = ENG_special_treatment
+	complete_national_focus = ENG_investments_abroad_1
+	complete_national_focus = ENG_investments_at_home
+	complete_national_focus = ENG_investments_abroad_2
+	complete_national_focus = ENG_develop_infrastructure
+}
+	
+2016.6.1 = {
+	set_politics = {
+		ruling_party = conservative
+		elections_allowed = yes
+		last_election = "2015.5.7"
+		
+		parties = {
+			conservative = {			#Tories + UUP + TUV
+				popularity = 37.3
+			}
+			social_democrat = {			#Labour + SNP + SDLP + NHA
+				popularity = 35.7
+			}
+			reactionary = {				#UKIP + DUP; buffed by like 2% so that Brexit is possible
+				popularity = 15.1
+			}
+			social_liberal = {			#LibDems
+				popularity = 7.9
+			}
+			progressive = {				#Green Party + Plaid Cymru
+				popularity = 4.4
+			}
+			democratic_socialist = {	#Sinn Fein + TUSC + Respect + S(GB) + SSP
+				popularity = 0.9
+			}
+			market_liberal = {			#APNI
+				popularity = 0.2
+			}
+			nationalist = {				#English Democrat + Christian + NLP
+				popularity = 0.2
+			}
+			communist = {				#Workers Party
+				popularity = 0.1
+			}
+			fascist = {					#BNP
+				popularity = 0.1 
+			}
+		}
+	}
+	
+	create_country_leader = {
+		name = "David MacDonald"
+		picture = "Portrait_ENG_david_macdonald.dds"
+		ideology = national_socialist
+	}
+	
+	create_country_leader = {
+		name = "Adam Walker"
+		picture = "Portrait_ENG_adam_walker.dds"
+		ideology = proto_fascist
+	}
+	
+	create_country_leader = {
+		name = "Nigel Farage"
+		picture = "Portrait_ENG_Nigel_Farage.dds"
+		ideology = counter_progressive_democrat
+	}
+	
+	create_country_leader = {
+		name = "David Cameron"
+		picture = "Portrait_ENG_David_Cameron.dds"
+		ideology = fiscal_conservative
+	}
+	
+	create_country_leader = {
+		name = "Adam Brown"
+		picture = "Portrait_ENG_Adam_Brown.dds"
+		ideology = libertarian
+	}
+	
+	create_country_leader = {
+		name = "Tim Farron"
+		picture = "Portrait_ENG_Tim_Farron.dds"
+		ideology = centrist
+	}
+	
+	create_country_leader = {
+		name = "Jeremy Corbyn"
+		picture = "Portrait_ENG_Jeremy_Corbyn.dds"
+		ideology = social_democrat_ideology
+	}
+}
+	
+	
+

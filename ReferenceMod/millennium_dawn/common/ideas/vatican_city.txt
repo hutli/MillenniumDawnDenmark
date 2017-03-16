@@ -1,0 +1,21 @@
+ideas = {
+	
+	country = {
+		
+		idea_HLS_holy_see = {
+			allowed = { always = no }
+			
+			allowed_civil_war = {
+				original_tag = HLS
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				monarchist_drift = 100
+			}
+		}
+		
+	}
+	
+}

@@ -1,0 +1,20 @@
+state={
+	id=802
+	name="STATE_802"
+	history = {
+		owner = TRM
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 4
+		}
+	}
+	provinces={
+		1649 4549 7924 10414 10742 
+	}
+	manpower=1200000
+	buildings_max_level_factor=1.000
+	
+	state_category = rural
+}

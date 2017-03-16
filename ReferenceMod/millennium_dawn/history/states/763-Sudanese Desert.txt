@@ -1,0 +1,19 @@
+state={
+	id=763
+	name="STATE_763"
+	resources={
+		oil=3.000
+	}
+
+	history={
+		owner = SUD
+
+	}
+
+	provinces={
+		4138 7987 10900 
+	}
+	manpower=533300
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

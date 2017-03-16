@@ -1,0 +1,31 @@
+
+state={
+	id=63
+	name="STATE_63"
+	manpower = 624417
+	resources={
+		steel=36
+		aluminium=12
+	}
+	
+	state_category = town
+
+	history={
+		owner = POL
+		
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 2
+			11372 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = POL
+	}
+
+	provinces={
+		9252 9277 9306 9361 11260 11288 11316 11343 11372 
+	}
+}

@@ -1,0 +1,22 @@
+state={
+	id=860
+	name="STATE_860"
+	resources = {
+		steel = 8
+		oil = 3
+	}
+	history = {
+		owner = CHL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	provinces={
+		5131 
+	}
+	manpower=210200
+	buildings_max_level_factor=1.000
+	
+	state_category = rural
+}

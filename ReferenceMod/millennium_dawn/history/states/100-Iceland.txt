@@ -1,0 +1,27 @@
+state=
+{
+	id=100
+	name="STATE_100"
+	manpower = 330000
+	
+	state_category = town
+	
+	resources = {
+		oil = 1
+		steel = 2
+	}
+	
+	history=
+	{
+		owner = ICE
+		victory_points = { 12674 5 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			12674 ={ naval_base = 2 }
+		}
+		add_core_of = ICE
+	}
+	provinces= { 4861 12674 12689 }
+}

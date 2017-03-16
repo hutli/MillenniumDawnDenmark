@@ -1,0 +1,22 @@
+state={
+	id=755
+	name="STATE_755"
+	
+	history = {
+		owner = CAM
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+	
+	provinces={
+		6039 9137 
+	}
+	manpower=8150250
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

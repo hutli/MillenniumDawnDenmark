@@ -1,0 +1,37 @@
+
+state={
+	id=461
+	name="STATE_461"
+	manpower = 15197719
+	
+	resources = {
+		oil = 6
+		steel = 21
+		chromium = 1
+		tungsten = 1
+	}
+	
+	state_category = city
+	
+	history={
+		owner = MOR
+
+		victory_points = {
+			7069 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 2
+			dockyard = 2
+			air_base = 4
+			7069 = {
+				naval_base = 4
+			}
+		}
+	}
+
+	provinces={
+		989 1079 1111 1194 4084 4097 4139 7069 7100 7116 7173 10013 10023 10070 11943 11987 12042 
+	}
+}

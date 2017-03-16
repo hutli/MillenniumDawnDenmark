@@ -1,0 +1,179 @@
+bookmarks = {
+	bookmark = {	#Millennium Dawn
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 2000.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "USA"
+		default = yes
+		
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			ideas = {
+				idea_USA_political_establishment
+				american_militarism
+				idea_united_nations_security_council_member
+			}
+			focuses = {
+				USA_patriot_act
+				USA_invade_iraq
+				USA_second_NATO_expansion
+			}
+		}
+		"PRC"={
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = communist
+			ideas={
+				idea_PRC_chinese_socialism
+				idea_united_nations_security_council_member
+			}
+			focuses = {
+				socialism_with_chinese_characteristics
+				PRC_move_towards_democracy
+				PRC_economic_revitalization
+			}
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = reactionary
+			ideas = {
+				SOV_corrupt_oligarchy
+				idea_united_nations_security_council_member
+			}
+			focuses = {
+				SOV_focus_on_ukraine
+				SOV_restore_the_union
+				SOV_EU_membership
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = social_democrat
+			ideas = {
+				idea_GER_german_legacy
+				idea_eu_member
+				GER_bundeswehr_shortcomings
+			}
+			focuses = {
+				GER_polish_workforce_for_germany
+				GER_unite_the_union
+				GER_colonial_restoration_league
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				ENG_queen_elizabeth_2
+				idea_eu_member
+				idea_united_nations_security_council_member
+			}
+			focuses = {
+				ENG_brexit_referendum
+				ENG_britannia_rules_the_waves
+				ENG_abolish_the_monarchy
+			}
+		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				idea_JAP_emperor_akihito
+				japanese_article_9
+			}
+			focuses = {
+				JAP_bushido
+				JAP_befriend_south_korea
+				JAP_japanese_supremacy
+			}
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				idea_eu_member
+				idea_united_nations_security_council_member
+			}
+		}
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = social_democrat
+			ideas={
+				idea_RAJ_south_asian_tiger
+			}			
+		}
+		"ITA"={
+			minor = yes
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = democratic_socialist
+			ideas = {
+				idea_eu_member
+				ITA_mafia
+				ITA_corruption
+			}
+			focuses = {
+				ITA_reestablish_rome
+				ITA_italeave
+				ITA_anti_mafia_measures
+			}
+		}
+		"CAN" = {
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			ideas = {
+				quebec_separatism
+			}
+			focuses = {}
+		}
+		"BRA" = {
+			minor = yes
+			history = "BRA_GATHERING_STORM_DESC"
+			ideology = social_democrat
+			ideas = {}
+			focuses = {}
+		}
+		"ISR" = {
+			minor = yes
+			history = "ISR_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				idea_ISR_vanguard_of_judaism
+			}
+			focuses = {}
+		}
+		"SPR" = {
+			minor = yes
+			history = "SPR_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				catalonia_separatism
+				idea_eu_member
+			}
+			focuses = {}
+		}
+		"KOR" = {
+			minor = yes
+			history = "KOR_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			ideas = {}
+			focuses = {}
+		}
+		"TUR" = {
+			minor = yes
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			ideas = {}
+			focuses = {}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

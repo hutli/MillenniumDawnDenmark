@@ -1,0 +1,34 @@
+state={
+	id=871
+	name="STATE_871"
+
+	history={
+		owner = KOR
+		add_core_of = KOR
+		add_core_of = PRK
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 4
+			arms_factory = 1
+			dockyard = 2
+			anti_air_building = 4
+			4004 = {
+				bunker = 5
+
+			}
+			11958 = {
+				bunker = 5
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1148 4004 7021 9936 11958 12011 
+	}
+	manpower=8493000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

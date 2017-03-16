@@ -1,0 +1,532 @@
+﻿capital = 868
+
+oob = "AST_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = starting_stability_high
+
+set_country_flag = country_language_english
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	corvette1 = 1
+	corvette2 = 1
+	destroyer1 = 1
+	destroyer2 = 1
+	frigate1 = 1
+	frigate2 = 1
+	frigate3 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+give_guarantee = ETI
+give_guarantee = FIJ
+give_guarantee = NZL
+
+add_ideas = {
+	population_growth_steady
+	commonwealth_of_nations_member
+	free_trade
+}
+
+set_politics = {
+	parties = {
+		reactionary = {
+			popularity = 9
+		}
+		conservative = {
+			popularity = 6
+		}
+		market_liberal = {
+			popularity = 38
+		}
+		social_liberal = {
+			popularity = 2
+		}
+		social_democrat = {
+			popularity = 41
+		}
+		progressive = {
+			popularity = 3
+		}
+		communist = {
+			popularity = 1
+		}
+	}
+	
+	ruling_party = market_liberal
+	last_election = "1998.10.3"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+add_opinion_modifier = {
+	target = CAN
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = ENG
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = NZL
+	modifier = ANZUS
+}
+
+add_opinion_modifier = {
+	target = NZL
+	modifier = ANZUS_trade
+}
+
+add_opinion_modifier = {
+	target = NZL
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = USA
+	modifier = ANZUS
+}
+
+add_opinion_modifier = {
+	target = USA
+	modifier = ANZUS_trade
+}
+
+add_opinion_modifier = {
+	target = USA
+	modifier = five_eyes_agreement
+}
+
+create_country_leader = {
+	name = "Diaa Mohamed"
+	picture = "Portrait_AST_Diaa_Mohamed.dds"
+	ideology = islamic_republican
+}
+
+create_country_leader = {
+	name = "Jim Saleam"
+	picture = "Portrait_AST_Jim_Saleam.dds"
+	ideology = national_socialist
+}
+
+create_country_leader = {
+	name = "Pauline Hanson"
+	picture = "Portrait_AST_Pauline_Hanson.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Henry I of Windsor"
+	picture = "Portrait_AST_Harry.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Bob Katter"
+	picture = "Portrait_AST_Bob_Katter.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "John Anderson"
+	picture = "Portrait_AST_John_Anderson.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "John Howard"
+	picture = "Portrait_AST_John_Howard.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Meg Lees"
+	picture = "Portrait_AST_Meg_Lees.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Kim Beazley"
+	picture = "Portrait_AST_Kim_Beazley.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Bob Brown"
+	picture = "Portrait_AST_Bob_Brown.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	picture = "Portrait_AST_Collective_Leadership.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Peter Symon"
+	picture = "Portrait_AST_Peter_Symon.dds"
+	ideology = marxist
+}
+
+2001.11.22 = {
+    create_country_leader = {
+	name = "Simon Crean"
+    desc = "POLITICIAN_AST_SIMON_CREAN_DESC"
+	picture = "Portrait_AST_Simon_Crean.dds"
+	expire = "2050.1.1"
+	ideology = social_democrat_ideology
+		
+	traits = {
+		
+		}
+	}
+}
+2003.12.2 = {
+    create_country_leader = {
+	name = "Mark Latham"
+    desc = "POLITICIAN_AST_MARK_LATHAM_DESC"
+	picture = "Portrait_AST_Mark_Latham.dds"
+	expire = "2050.1.1"
+	ideology = social_democrat_ideology
+		
+	traits = {
+		
+		}
+	}
+}
+2005.1.28 = {
+    create_country_leader = {
+	name = "Kim Beazley"
+    desc = "POLITICIAN_AST_KIM_BEAZLEY_DESC"
+	picture = "Portrait_AST_Kim_Beazley.dds"
+	expire = "2050.1.1"
+	ideology = social_democrat_ideology
+		
+	traits = {
+		
+		}
+	}
+}
+2006.12.4 = {
+    create_country_leader = {
+	name = "Kevin Rudd"
+    desc = "POLITICIAN_AST_KEVIN_RUDD_DESC"
+	picture = "Portrait_AST_Kevin_Rudd.dds"
+	expire = "2050.1.1"
+	ideology = social_democrat_ideology
+		
+	traits = {
+		
+		}
+	}
+}
+2007.10.29 = {
+    create_country_leader = {
+	name = "Brendon Nelson"
+    desc = "POLITICIAN_AST_BRENDON_NELSON_DESC"
+	picture = "Portrait_AST_Brendon_Nelson.dds"
+	expire = "2050.1.1"
+	ideology = libertarian
+		
+	traits = {
+		
+		}
+	}
+}
+2008.9.16 = {
+    create_country_leader = {
+    name = "Malcom Turnbull"
+    desc = "POLITICIAN_AST_MALCOM_TURNBULL_DESC"
+    picture = "Portrait_AST_Malcom_Turnbull.dds"
+	expire = "2050.1.1"
+	ideology = libertarian
+		
+	traits = {
+		
+		}
+	}
+}
+2009.12.1 = {
+    create_country_leader = {
+	name = "Tony Abbott"
+    desc = "POLITICIAN_AST_TONY_ABBOTT_DESC"
+	picture = "Portrait_AST_Tony_Abbott.dds"
+	expire = "2050.1.1"
+	ideology = libertarian
+		
+	traits = {
+		
+		}
+	}
+}
+2010.6.24 = {
+    create_country_leader = {
+	name = "Julia Gillard"
+    desc = "POLITICIAN_AST_JULIA_GILLARD_DESC"
+	picture = "Portrait_AST_Julia_Gillard.dds"
+	expire = "2050.1.1"
+	ideology = social_democrat_ideology
+		
+	traits = {
+		
+		}
+	}
+}
+2013.1.1 = {
+    create_country_leader = {
+	name = "Warren Truss"
+    desc = "POLITICIAN_AST_WARREN_TRUSS_DESC"
+    picture = "Portrait_AST_WARREN_TRUSS.dds"
+	expire = "2050.1.1"
+	ideology = fiscal_conservative
+		
+	traits = {
+		
+		}
+	}
+    create_country_leader = {
+	name = "Christine Milne"
+    desc = "POLITICIAN_AST_CHRISTINE_MILNE_DESC"
+	picture = "Portrait_AST_Christine_Milne.dds"
+	expire = "2050.1.1"
+	ideology = green
+		
+	traits = {
+		
+		}
+	}
+}
+2013.6.26 = {
+    create_country_leader = {
+	name = "Kevin Rudd"
+    desc = "POLITICIAN_AST_KEVIN_RUDD_DESC"
+	picture = "Portrait_AST_Kevin_Rudd.dds"
+	expire = "2050.1.1"
+	ideology = social_democrat_ideology
+		
+	traits = {
+		
+		}
+	}
+}
+2013.9.13 = {
+    create_country_leader = {
+    name = "Bill Shorten"
+    desc = "POLITICIAN_AST_BILL_SHORTEN_DESC"
+    picture = "Portrait_AST_Bill_Shorten.dds"
+	expire = "2050.1.1"
+	ideology = social_democrat_ideology
+		
+	traits = {
+		
+		}
+	}
+}
+2015.4.16 = {
+	set_party_name = {
+		ideology = social_liberal
+		long_name = AST_social_liberal_Liberal_Democrats_long
+		name = AST_social_liberal_Liberal_Democrats
+        }
+	create_country_leader = {
+		name = "David Leyonhjelm"
+		desc = "POLITICIAN_GER_DAVID_LEYONHJELM_DESC"
+		picture = "Portrait_GER_David_Leyonhjelm.dds"
+		ideology = centrist
+		expire = "2050.1.1"
+	}
+}
+2015.9.14 = {
+    create_country_leader = {
+		name = "Malcolm Turnbull"
+		picture = "Portrait_AST_Malcom_Turnbull.dds"
+		ideology = libertarian
+	}
+}
+2016.6.1 = {
+	set_politics = {
+        last_election = "2013.9.7"
+		ruling_party = market_liberal
+		elections_allowed = yes
+		
+		parties = {
+			social_liberal = {
+				popularity = 0.5
+			}
+			conservative = {
+				popularity = 4.6
+			}
+			market_liberal = {
+				popularity = 42.85
+			}
+			progressive = {
+				popularity = 10.2
+			}
+			reactionary = {
+				popularity = 0.5
+            }
+            social_democrat = {
+				popularity = 40.35
+			}
+			nationalist = {
+				popularity = 1
+			}
+	    }
+	}
+	
+	create_country_leader = {
+		name = "Richard Di Natale"
+                desc = "POLITICIAN_AST_RICHARD_DI_NATALE_DESC"
+		picture = "Portrait_AST_Richard_Di_Natale.dds"
+		expire = "2050.1.1"
+		ideology = green
+		
+		traits = {
+		
+		}
+	}
+        create_country_leader = {
+		name = "Barnaby Joyce"
+                desc = "POLITICIAN_AST_BARNABY_JOYCE_DESC"
+		picture = "Portrait_AST_Barnaby_Joyce.dds"
+		expire = "2050.1.1"
+		ideology = fiscal_conservative
+		
+		traits = {
+		
+		}
+	}
+
+        create_country_leader = {
+		name = "Bob Briton"
+                desc = "POLITICIAN_AST_BOB_BRITON_DESC"
+		picture = "Portrait_AST_Bob_Briton.dds"
+		expire = "2050.1.1"
+		ideology = marxist
+		
+		traits = {
+		
+		}
+	}
+}
+2000.1.1 = {
+	create_corps_commander = {
+		name = "Angus Campbell"
+		picture = "Portrait_AST_general_Angus_Campbell.dds"
+		skill = 1
+	}
+	create_corps_commander = {
+		name = "David Morrison"
+		picture = "Portrait_AST_general_David_Morrison.dds"
+		skill = 1
+        }
+        create_corps_commander = {
+		name = "Sir Peter Cosgrove"
+		picture = "Portrait_AST_general_Peter_Cosgrove.dds"
+		skill = 2
+	}
+        create_navy_leader = {
+		name = "Tim Barrett"
+		picture = "Portrait_AST_admiral_Tim_Barrett.dds"
+		traits = {}
+		skill = 1
+	}
+        create_navy_leader = {
+		name = "Mark Bonser"
+		picture = "Portrait_AST_admiral_Mark_Bonser.dds"
+		traits = {}
+		skill = 1
+	}
+        create_navy_leader = {
+		name = "Mark Campbell"
+		picture = "Portrait_AST_admiral_Mark_Campbell.dds"
+		traits = {}
+		skill = 1
+	}
+}

@@ -1,0 +1,53 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	american_canadian_friendship = {
+		value = 75
+	}
+	
+	ANZUS = {
+		value = 55
+	}
+	
+	ANZUS_trade = {
+		value = 40
+		trade = yes
+	}
+	
+	five_eyes_agreement = {
+		value = 20
+	}
+
+	NAFTA = {
+		value = 80
+		trade = yes
+	}
+	
+	religion_received_american_support = {
+		value = 25
+	}
+	
+	religion_received_american_support_trade = {
+		value = 50
+		trade = yes
+	}
+	
+	religion_didnt_receive_american_support = {
+		value = -25
+	}
+	
+	religion_didnt_receive_american_support_trade = {
+		value = -50
+		trade = yes
+	}
+	
+}

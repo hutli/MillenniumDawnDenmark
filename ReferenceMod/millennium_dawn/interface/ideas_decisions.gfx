@@ -1,0 +1,13 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_decision_dissolve_our_faction"
+		texturefile = "gfx/interface/ideas/NATO/end_of_nato.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_decision_form_scandinavia"
+		texturefile = "gfx/interface/ideas/SWE/scandinavia.dds"
+	}
+	
+}

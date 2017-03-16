@@ -1,0 +1,1108 @@
+﻿division_template = {
+	name = "Motorized Infantry Division"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Railway Engineer Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Armoured Division"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+	priority = 2
+}
+
+division_template = {
+	name = "Artillery Division"
+	
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+	}
+}
+
+
+
+units = {
+	
+	division = {
+		name = "1st Amphibious Mechanized Infantry Division"
+		location = 10004
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Division"
+		location = 10004
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Division"
+		location = 4656
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5th Division"
+		location = 4656
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "6th Division"
+		location = 1172
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "7th Division"
+		location = 1196
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "9th Division"
+		location = 800
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "12th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "13th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "18th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "20th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "21st Division"
+		location = 1196
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "22nd Division"
+		location = 10000
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "23rd Division"
+		location = 6999
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "24th Division"
+		location = 1114
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "27th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "28th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "33rd Division"
+		location = 861
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "34th Division"
+		location = 11781
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "36th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "38th Division"
+		location = 3929
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "39th Division"
+		location = 9803
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "40th Division"
+		location = 3949
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "41st Division"
+		location = 1522
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "45th Division"
+		location = 810
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "51st Division"
+		location = 9798
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "52nd Division"
+		location = 7976
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "54th Division"
+		location = 944
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "56th Division"
+		location = 10521
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "59th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "60th Division"
+		location = 10776
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "61st Division"
+		location = 4900
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "62nd Division"
+		location = 10413
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "63rd Division"
+		location = 5009
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "64th Division"
+		location = 3944
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "65th Division"
+		location = 3944
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "67th Division"
+		location = 9897
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "68th Division"
+		location = 1991
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "70th Division"
+		location = 12807
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "71st Division"
+		location = 10863
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "73rd Division"
+		location = 2014
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "74th Division"
+		location = 9848
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "79th Division"
+		location = 6860
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "80th Division"
+		location = 6981
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "81st Division"
+		location = 8029
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "86th Division"
+		location = 2098
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "87th Division"
+		location = 2014
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "89th Division"
+		location = 2098
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "90th Division"
+		location = 1961
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "91st Division"
+		location = 10521
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "92nd Division"
+		location = 12898
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "108th Division"
+		location = 10368
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "110th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "111th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "112th Division"
+		location = 3944
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "113th Division"
+		location = 12789
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "114th Division"
+		location = 10000
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "115th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "116th Division"
+		location = 5102
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "117th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "119th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "120th Division"
+		location = 10802
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "121st Division"
+		location = 10000
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "122nd Division"
+		location = 7014
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "125th Division"
+		location = 8041
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "131st Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "133rd Division"
+		location = 10612
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "134th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "140th Division"
+		location = 5018
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "141st Division"
+		location = 5018
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "142nd Division"
+		location = 5042
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "143rd Division"
+		location = 5042
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "144th Division"
+		location = 5042
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "145th Division"
+		location = 5042
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "148th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "191st Division"
+		location = 7014
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "192nd Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "193rd Division"
+		location = 2098
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "194th Division"
+		location = 10675
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "195th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "196th Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "197th Division"
+		location = 1970
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "198th Division"
+		location = 7848
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "199th Division"
+		location = 1766
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "200th Division"
+		location = 10541
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "201st Division"
+		location = 12119
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "204th Division"
+		location = 4828
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Armoured Division"
+		location = 4121
+		division_template = "Armoured Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Armoured Division"
+		location = 1469
+		division_template = "Armoured Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Armoured Division"
+		location = 3944
+		division_template = "Armoured Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Artillery Division"
+		location = 9843
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Artillery Division"
+		location = 9843
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Artillery Division"
+		location = 9843
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "7th Artillery Division"
+		location = 7014
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "8th Artillery Division"
+		location = 1703
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "9th Artillery Division"
+		location = 9843
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "21st Artillery Division"
+		location = 12119
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "22nd Artillery Division"
+		location = 10612
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "31st Artillery Division"
+		location = 3944
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "33rd Artillery Division"
+		location = 5042
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "61st Artillery Division"
+		location = 6999
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "62nd Artillery Division"
+		location = 5042
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "63rd Artillery Division"
+		location = 9843
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "64th Artillery Division"
+		location = 9843
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "65th Artillery Division"
+		location = 6981
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "70th Artillery Division"
+		location = 2014
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "102nd Artillery Division"
+		location = 9843
+		division_template = "Artillery Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Railway Engineer Division"
+		location = 10004
+		division_template = "Railway Engineer Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Railway Engineer Division"
+		location = 6999
+		division_template = "Railway Engineer Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Railway Engineer Division"
+		location = 9843
+		division_template = "Railway Engineer Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Railway Engineer Division"
+		location = 7832
+		division_template = "Railway Engineer Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5th Railway Engineer Division"
+		location = 9843
+		division_template = "Railway Engineer Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "6th Railway Engineer Division"
+		location = 9843
+		division_template = "Railway Engineer Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "7th Railway Engineer Division"
+		location = 9843
+		division_template = "Railway Engineer Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "9th Railway Engineer Division"
+		location = 800
+		division_template = "Railway Engineer Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "10th Railway Engineer Division"
+		location = 7697
+		division_template = "Railway Engineer Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "11th Railway Engineer Division"
+		location = 12880
+		division_template = "Railway Engineer Division"
+		start_experience_factor = 0.3
+	}
+}
+
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "PRC"
+		}
+		requested_factories = 5
+		progress = 0.1
+		efficiency = 100
+		amount = 250000
+	}
+	
+}
+
+### Air OOB ###
+air_wings = {
+	### Beijing ###
+	608 = {
+		#J-8II
+		jet_multirole_equipment_3 = {
+			owner = "PRC" 
+			amount = 30
+		}
+	}
+
+	608 = {
+		#Q-5
+		jet_attack_equipment_1 = {
+			owner = "PRC" 
+			amount = 20
+		}
+	}
+
+	608 = {
+		#H-6
+		jet_bomber_equipment_1 = {
+			owner = "PRC" 
+			amount = 15
+		}
+	}
+
+	### Liaotung ###
+	716 = {
+		#J-8II
+		jet_multirole_equipment_3 = {
+			owner = "PRC" 
+			amount = 65
+		}
+	}
+
+	716 = {
+		#JH-7
+		jet_attack_equipment_2 = {
+			owner = "PRC" 
+			amount = 50
+		}
+	}
+    
+    613 = {
+		#Q-5
+		jet_attack_equipment_1={
+			owner = "PRC" 
+			amount = 25
+		}
+	}
+	
+	716 = {
+		#H-6
+		jet_bomber_equipment_1 = {
+			owner = "PRC" 
+			amount = 25
+		}
+	}
+
+	### Shanghai ###
+	613 = {
+		#J-8II
+		jet_multirole_equipment_3 = {
+			owner = "PRC" 
+			amount = 23
+		}
+	}
+
+	613 = {
+		#J-8II
+		jet_multirole_equipment_2 = {
+			owner = "PRC" 
+			amount = 30
+		}
+	}
+
+	613 = {
+		#JH-7
+		jet_attack_equipment_2= {
+			owner = "PRC" 
+			amount = 21
+		}
+	}
+
+	613 = {
+		#Q-5
+		jet_attack_equipment_1={
+			owner = "PRC" 
+			amount = 25
+		}
+	}
+
+	613 = {
+		#H-6
+		jet_bomber_equipment_1 = {
+			owner = "PRC" 
+			amount = 10
+		}
+	}
+
+	### G1 ###
+	592 = {
+		#J-8II
+		jet_multirole_equipment_3 = {
+			owner = "PRC" 
+			amount = 35
+		}
+	}
+
+	613 = {
+		#H-6
+		jet_bomber_equipment_1 = {
+			owner = "PRC" 
+			amount = 10
+		}
+	}
+
+	613 = {
+		#JH-7
+		jet_attack_equipment_2= {
+			owner = "PRC" 
+			amount = 21
+		}
+	}
+
+	### G2 ###
+	599 = {
+		#J-8II
+		jet_multirole_equipment_3 = {
+			owner = "PRC" 
+			amount = 45
+		}
+	}
+
+	599 = {
+		#H-6
+		jet_bomber_equipment_1 = {
+			owner = "PRC" 
+			amount = 30
+		}
+	}
+
+	599 = {
+		#JH-7
+		jet_attack_equipment_2= {
+			owner = "PRC" 
+			amount = 45
+		}
+	}
+
+    599 = {
+		#JH-7
+		jet_attack_equipment_1= {
+			owner = "PRC" 
+			amount = 45
+		}
+	}
+
+    599 = {
+		#J-8
+		jet_multirole_equipment_2 = {
+			owner = "PRC" 
+			amount = 65
+		}
+	}
+
+	### Inland ###
+	605 = {
+		#J-8
+		jet_multirole_equipment_2 = {
+			owner = "PRC" 
+			amount = 20
+		}
+	}
+
+	605 = {
+		#J-5
+		jet_multirole_equipment_1 = {
+			owner = "PRC" 
+			amount = 15
+		}
+	}

@@ -1,0 +1,19 @@
+state={
+	id=878
+	name="STATE_878"
+	provinces={
+		4473 12434 
+	}
+	history = {
+		owner = AZR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 4473 1 }
+	}
+	manpower=190000
+	buildings_max_level_factor=1.000
+	
+	state_category = rural
+}

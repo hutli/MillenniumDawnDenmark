@@ -1,0 +1,24 @@
+state={
+	id=837
+	name="STATE_837"
+	resources={
+		steel=13
+		oil=4
+		chromium=6
+		aluminium=2
+	}
+	history = {
+		owner = AFG
+		add_core_of = AFG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+	}
+	provinces={
+		7448 7584 10476 10896 12248 12314 12877 
+	}
+	manpower=3670125
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

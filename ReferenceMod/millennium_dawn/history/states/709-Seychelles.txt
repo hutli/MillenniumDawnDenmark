@@ -1,0 +1,26 @@
+state={
+	id=709
+	name="STATE_709"
+	manpower = 91000
+	
+	state_category = small_island
+	
+	history=
+	{
+		owner = SEY
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			
+			2188 = {
+				naval_base = 1
+			}
+		}
+		
+		victory_points = { 2188 1 }
+	}
+	
+	provinces={
+		2188 
+	}
+}

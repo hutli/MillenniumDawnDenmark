@@ -1,0 +1,25 @@
+state={
+	id=781
+	name="STATE_781"
+	
+	history = {
+		owner = RWA
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+		}
+		add_core_of = RWA
+		
+		victory_points = { 9962 1 }
+	}
+	
+	provinces={
+		9962 
+	}
+	manpower=11350250
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

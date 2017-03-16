@@ -1,0 +1,206 @@
+﻿add_namespace = germany
+
+#The NATO Split
+country_event = {
+	id = germany.1
+	title = germany.1.t
+	desc = germany.1.d
+	picture = GFX_report_event_german_flag
+	
+	is_triggered_only = yes
+	
+	option = {	#Lets do it.
+		name = germany.1.o1
+		
+		random_country = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = GER
+			}
+			remove_from_faction = GER
+		}
+		create_faction = german_alliance
+		every_country = {
+			limit = {
+				is_in_faction_with = USA
+				any_owned_state = { is_on_continent = europe }
+				NOT = { tag = ENG }
+				NOT = { tag = SCO }
+				NOT = { tag = USA }
+			}
+			country_event = germany.2
+		}
+	}
+}
+
+#Invitation to the Berlin Alliance
+country_event = {
+	id = germany.2
+	title = germany.2.t
+	desc = germany.2.d
+	picture = GFX_report_event_german_flag
+	
+	is_triggered_only = yes
+	
+	option = {	#Sure.
+		name = germany.2.o1
+		
+		GER = { add_to_faction = ROOT }
+		set_country_flag = seeks_german_alliance
+		GER = { country_event = diplomatic_response.1 }
+		
+		ai_chance = {
+			factor = 65
+		}
+	}
+	
+	option = {	#No way.
+		name = germany.2.o2
+		
+		GER = { country_event = diplomatic_response.2 }
+		
+		ai_chance = {
+			factor = 35
+		}
+	}
+}
+
+#Germany demands subjugation!
+country_event = {
+	id = germany.3
+	title = germany.3.t
+	desc = germany.3.d
+	picture = GFX_report_event_german_flag
+	
+	is_triggered_only = yes
+	
+	option = { #We submit.
+		name = germany.3.o1
+		GER = { puppet = ROOT }
+		GER = {
+			add_named_threat = {
+				threat = 1
+				name = threat_puppeteer
+			}
+		}
+		GER = {
+			country_event = diplomatic_response.1
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = { #Never!
+		add_political_power = 5
+		GER = { country_event = diplomatic_response.2 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#CDU Donation Crisis
+country_event = {
+	id = germany.4
+	title = germany.4.t
+	desc = germany.4.d
+	picture = GFX_report_event_helmut_kohl
+	
+	is_triggered_only = yes
+	
+	option = {	#This will hurt the CDU.
+		name = germany.4.o1
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.02
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+	
+	option = {	#Kohl totally should run again
+		name = germany.4.o2
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.06
+		}
+		set_country_flag = helmut_kohl_returns_to_politics
+		create_country_leader = {
+			name = "Helmut Kohl"
+			picture = "Portrait_GER_Helmut_Kohl.dds"
+			ideology = fiscal_conservative
+		}
+		hidden_effect = { 
+			random_list = {
+				65 = {
+					news_event = germany.5
+				}
+				35 = {}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Kohl Event Chain: Angela Merkel resigns from politics.
+news_event = {
+	id = germany.5
+	title = germany.5.t
+	desc = germany.5.d
+	picture = GFX_news_event_angela_merkel
+	
+	is_triggered_only = yes
+	
+	option = {	#She was so promising.
+		name = germany.5.o1
+	}
+}
+
+#The CDU on its own
+news_event = {
+	id = germany.6
+	title = germany.6.t
+	desc = germany.6.d
+	picture = GFX_news_event_CDU
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = GER
+		NOT = { has_country_flag = CDU_on_its_own }
+		has_war = no
+		OR = {
+			AND = {		#Bavaria exists and not a puppet or a puppet of Germany.
+				country_exists = BAV
+				OR = {
+					BAV = { is_puppet = no }
+					BAV = { is_puppet_of = GER }
+				}
+			}
+			AND = {		#Germany does not own any of Bavaria's states.
+				NOT = { 52 = { is_owned_by = GER } }	#Upper Bavaria
+				NOT = { 53 = { is_owned_by = GER } }	#Lower Bavaria
+				NOT = { 54 = { is_owned_by = GER } }	#Franconia
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = germany.6.o1
+		set_country_flag = CDU_on_its_own
+		set_party_name = {
+			ideology = conservative
+			long_name = GER_conservative_party_CDU_long
+			name = GER_conservative_party_CDU
+		}
+	}
+}
+

@@ -1,0 +1,23 @@
+state={
+	id=788
+	name="STATE_788"
+	resources = {
+		steel = 8
+	}
+	history = {
+		owner = PRC
+		add_core_of = PRC
+		add_core_of = RAJ
+		
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		5042 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	
+	state_category = pastoral
+}

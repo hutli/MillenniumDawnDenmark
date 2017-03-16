@@ -1,0 +1,530 @@
+﻿capital = 2
+
+oob = "ITA_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = country_language_italian
+
+set_country_flag = starting_stability_high
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+give_guarantee = HLS
+give_guarantee = SAM
+give_guarantee = MLT
+
+add_ideas = {
+	population_growth_stagnation
+	idea_eu_member
+	ITA_mafia
+	ITA_corruption
+}
+
+set_politics = {
+
+	parties = {
+	islamist = {
+	popularity = 0
+	}
+	fascist = {
+	popularity = 1
+	}
+	nationalist = {
+	popularity = 0
+	}
+	reactionary = {
+	popularity = 10
+	}
+	conservative = {
+	popularity = 42
+	}
+	market_liberal = {
+	popularity = 0
+	}
+	social_liberal = {
+	popularity = 10
+	}
+	social_democrat = {
+	popularity = 43
+	}
+	progressive = {
+	popularity = 0
+	}
+	democratic_socialist = {
+	popularity = 0
+	}
+	communist = {
+	popularity = 0
+	}
+	}
+	
+	ruling_party = social_democrat
+	last_election = "1996.4.21"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Silvio Berlusconi"
+	desc = "POLITICIAN_ITA_SILVIO_BERLUSCONI_DESC"
+	picture = "Portrait_ITA_Silvio_Berlusconi.dds"
+	expire = "2020.1.1"
+	ideology = christian_democrat
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Massimo D'Alema"
+	picture = "Portrait_ITA_Massimo_dAlema.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Gianfranco Fini"
+	picture = "Portrait_ITA_Gianfranco_Fini.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Fausto Bertinotti"
+	picture = "Portrait_ITA_Fausto_Bertinotti.dds"
+	ideology = marxist
+}
+
+#create_country_leader = {                            #This guy was replaced by the other guy below in October 1999
+#	name = "Franco Marini"
+#	desc = "POLITICIAN_ITA_FRANCO_MARINI_DESC"
+#	picture = "Portrait_ITA_Franco_Marini.dds"
+#	expire = "2010.1.1"
+#	ideology = moderate
+#	
+#	traits = {
+#	
+#	}
+#}
+
+create_country_leader = {
+	name = "Pierluigi Castagnetti"
+	picture = "Portrait_ITA_Pierluigi_Castagnetti.dds"
+	ideology = moderate
+}
+
+create_country_leader = {
+	name = "Franco Corleone"
+	picture = "Portrait_ITA_Franco_Corleone.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Pino Rauti"
+	picture = "Portrait_ITA_Pino_Rauti.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Marco Panella"
+	picture = "Portrait_ITA_Marco_Panella.dds"
+	ideology = libertarian
+}
+
+#create_country_leader = {                               #He was just a Minister
+#	name = "Pier Luigi Bersani"
+#	desc = "POLITICIAN_ITA_PIER_LUIGI_BERSANI_DESC"
+#	picture = "Portrait_ITA_Pier_Luigi_Bersani.dds"
+#	expire = "2010.1.1"
+#	ideology = social_democrat_ideology
+#	
+#	traits = {
+#	
+#	}
+#}
+
+create_country_leader = {
+	name = "Vittorio Emanuele IV"
+	picture = "Portrait_ITA_Vittorio_Emanuele.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Umberto Bossi"
+	picture = "Portrait_ITA_Umberto_Bossi.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "Francesco Rutelli"
+	picture = "Portrait_ITA_Francesco_Rutelli.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_corps_commander = {
+	name = "Claudio Graziano"
+	picture = "Portrait_ITA_general_Claudio_Graziano.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Danilo Errico"
+	picture = "Portrait_ITA_general_Danilo_Errico.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Luigi Francavilla"
+	picture = "Portrait_ITA_general_Luigi_Francavilla.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Giuseppe Volatto"
+	picture = "Portrait_ITA_general_Giuseppe_Volatto.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Fabrizio Castagnetti"
+	picture = "Portrait_ITA_general_Fabrizio_Castagnetti.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Filiberto Cecchi"
+	picture = "Portrait_ITA_general_Filiberto_Cecchi.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Fabrizio Castagnetti"
+	picture = "Portrait_ITA_general_Fabrizio_Castagnetti.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Biagio Abrate"
+	picture = "Portrait_ITA_general_Biagio_Abrate.dds"
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Giuseppe de Giorgi"
+	picture = "Portrait_ITA_admiral_Giuseppe_de_Giorgi.dds"
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Valter Girardelli"
+	picture = "Portrait_ITA_admiral_Valter_Girardelli.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Felicio Angrisano"
+	picture = "Portrait_ITA_admiral_Felicio_Angrisano.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Luigi Binelli Mantelli"
+	picture = "Portrait_ITA_admiral_Luigi_Binelli_Mantelli.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Giampaolo Di Paola"
+	picture = "Portrait_ITA_admiral_Giampaolo_Di_Paola.dds"
+	skill = 1
+}
+
+2001.1.1 = {
+	complete_national_focus = ITA_diplomatic_focus
+	complete_national_focus = ITA_strenghten_ties_with_west
+	complete_national_focus = ITA_befriend_america
+	complete_national_focus = ITA_befriend_europeans
+	
+	complete_national_focus = ITA_industrial_focus
+	complete_national_focus = ITA_north_italian_dev
+	complete_national_focus = ITA_south_italian_dev
+	complete_national_focus = ITA_islands_dev
+	complete_national_focus = ITA_north_infrastructure
+	
+	complete_national_focus = ITA_ideology_focus
+	complete_national_focus = ITA_what_we_are
+	
+	complete_national_focus = ITA_military_focus
+	complete_national_focus = ITA_army_focus
+	complete_national_focus = ITA_navy_focus
+	complete_national_focus = ITA_air_focus
+}
+
+2002.1.1 = {
+	add_ideas = the_euro
+}
+
+2012.1.1 = {
+	set_party_name = {
+		ideology = democratic_socialist
+		long_name = ITA_democratic_socialist_party_SEL_long
+		name = ITA_democratic_socialist_party_SEL
+	}
+	set_party_name = {
+		ideology = social_liberal
+		long_name = ITA_social_liberal_party_NCD_long
+		name = ITA_social_liberal_party_NCD
+	}
+	set_party_name = {
+		ideology = reactionary
+		long_name = ITA_reactionary_party_M5S_long
+		name = ITA_reactionary_party_M5S
+	}
+	set_party_name = {
+		ideology = social_democrat
+		long_name = ITA_social_democrat_party_PD_long
+		name = ITA_social_democrat_party_PD
+	}
+	set_party_name = {
+		ideology = communist
+		long_name = ITA_communist_party_PCI_long
+		name = ITA_communist_party_PCI
+	}
+	set_party_name = {
+		ideology = nationalist
+		long_name = ITA_nationalist_party_FDI_long
+		name = ITA_nationalist_party_FDI
+	}
+}
+
+2013.2.24 = {
+	
+	set_politics = {
+
+		parties = {
+			islamist = {
+				popularity = 0
+			}
+			fascist = {
+				popularity = 0
+			}
+			nationalist = {
+				popularity = 1
+			}
+			reactionary = {
+				popularity = 27
+			}
+			conservative = {
+				popularity = 30
+			}
+			monarchist = {
+				popularity = 1
+			}
+			social_liberal = {
+				popularity = 10
+			}
+			social_democrat = {
+				popularity = 32
+			}
+			progressive = {
+				popularity = 0
+			}
+			democratic_socialist = {
+				popularity = 0
+			}
+			communist = {
+				popularity = 1
+			}
+		}
+		
+		ruling_party = social_democrat
+		last_election = "2013.2.24"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+
+	#create_country_leader = {                   #Social Liberal party replaced with NCD
+	#	name = "Mario Monti"
+	#	desc = "POLITICIAN_ITA_MARIO_MONTI_DESC"
+	#	picture = "Portrait_ITA_Mario_Monti.dds"
+	#	expire = "2020.1.1"
+	#	ideology = liberalist
+	#	
+	#	traits = {
+	#	
+	#	}
+	#}
+	
+	create_country_leader = {                    #Leader of NCD
+		name = "Angelino Alfano"
+		desc = "POLITICIAN_ITA_ANGELINO_ALFANO_DESC"
+		picture = "Portrait_ITA_Angelino_Aldano.dds"
+		expire = "2020.1.1"
+		ideology = liberalist
+		
+		traits = {
+		
+		}
+	}
+
+	create_country_leader = {
+		name = "Beppe Grillo"
+		desc = "POLITICIAN_ITA_BEPPE_GRILLO_DESC"
+		picture = "Portrait_ITA_Beppe_Grillo.dds"
+		expire = "2020.1.1"
+		ideology = counter_progressive_democrat
+		
+		traits = {
+		
+		}
+	}
+	
+	create_country_leader = {
+		name = "Nichi Vendola"
+		desc = "POLITICIAN_ITA_NICHI_VENDOLA_DESC"
+		picture = "Portrait_ITA_Nichi_Vendola.dds"
+		expire = "2020.1.1"
+		ideology = democratic_socialist_ideology
+		
+		traits = {
+		
+		}
+	}
+	    
+	create_country_leader = {
+	    name = "Giorgia Meloni"
+	    desc = "POLITICIAN_ITA_GIORGIA_MELONI_DESC"
+	    picture = "Portrait_ITA_Giorgia_Meloni.dds"
+	    expire = "2020.1.1"
+	    ideology = proto_fascist
+	
+	    traits = {
+	
+	    }
+    }
+
+	create_country_leader = {
+		name = "Angelo Bonelli"
+		desc = "POLITICIAN_ITA_ANGELO_BONELLI_DESC"
+		picture = "Portrait_ITA_Angelo_Bonelli.dds"
+		expire = "2020.1.1"
+		ideology = green
+		
+		traits = {
+		
+		}
+	}
+	
+	create_country_leader = {
+		name = "Simone di Stefano"
+		desc = "POLITICIAN_ITA_SIMONE_DI_STEFANO_DESC"
+		picture = "Portrait_ITA_Simone_di_Stefano.dds"
+		expire = "2020.1.1"
+		ideology = fascist_ideology
+		
+		traits = {
+		
+		}
+	}
+	
+}
+
+2014.1.1 = {
+	
+	create_country_leader = {
+	name = "Matteo Renzi"
+	desc = "POLITICIAN_ITA_MATTEO_RENZI_DESC"
+	picture = "Portrait_ITA_Matteo_Renzi.dds"
+	expire = "2020.1.1"
+	ideology = social_democrat_ideology
+	
+	traits = {
+	
+	}
+
+}

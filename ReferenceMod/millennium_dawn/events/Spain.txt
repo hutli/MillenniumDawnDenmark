@@ -1,0 +1,20 @@
+﻿add_namespace = spain
+
+#Remove "Catalonian Separatism" trigger
+country_event = {
+	id = spain.1
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		SPR = { has_idea = catalonia_separatism }
+		OR = {
+			SPR = { has_country_flag = catalonia_appeased }
+			165 = { NOT = { is_owned_by = SPR } }
+		}
+	}
+	
+	option = {
+		SPR = { remove_ideas = catalonia_separatism }
+	}
+}

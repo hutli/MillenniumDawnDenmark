@@ -1,0 +1,376 @@
+﻿capital = 64
+
+oob = "GER_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = starting_stability_high
+
+set_country_flag = country_language_german
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	
+	
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_decline
+	limited_conscription
+	free_trade
+	GER_bundeswehr_shortcomings
+	idea_GER_german_legacy
+	idea_eu_member
+}
+
+set_politics = {
+
+	parties = {
+		reactionary = {
+			popularity = 3
+		}
+		conservative = {
+			popularity = 36
+		}
+		market_liberal = {
+			popularity = 6
+		}
+		social_democrat = {
+			popularity = 42
+		}
+		progressive = {
+			popularity = 8
+		}
+		democratic_socialist = {
+			popularity = 5
+		}
+	}
+	
+	ruling_party = social_democrat
+	last_election = "1998.9.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+add_opinion_modifier = {
+	target = FRA
+	modifier = franco_german_friendship
+}
+
+add_opinion_modifier = {
+	target = HOL
+	modifier = german_dutch_military_cooperation
+}
+
+create_country_leader = {
+	name = "Pierre Vogel"
+	picture = "Portrait_GER_Pierre_Vogel.dds"
+	ideology = islamic_authoritarian
+}
+
+create_country_leader = {
+	name = "Klaus Armstroff"
+	picture = "Portrait_GER_Klaus_Armstroff.dds"
+	ideology = national_socialist
+}
+
+create_country_leader = {
+	name = "Udo Pastörs"
+	picture = "Portrait_GER_Udo_Pastors.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Georg Friedrich I"
+	picture = "Portrait_GER_Georg_Friedrich.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Ronald Schill"
+	picture = "Portrait_GER_Ronald_Schill.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "Angela Merkel"
+	picture = "Portrait_GER_Angela_Merkel.dds"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Wolfgang Gerhardt"
+	picture = "Portrait_GER_Wolfgang_Gerhardt.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Patrick Schiffer"
+	picture = "Portrait_GER_Patrick_Schiffer.dds"
+	ideology = liberalist
+}
+
+create_country_leader = {
+	name = "Gerhard Schröder"
+	picture = "Portrait_GER_Gerhard_Schroeder.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Joschka Fischer"
+	picture = "Portrait_GER_Joschka_Fischer.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Gregor Gysi"
+	picture = "Portrait_GER_Gregor_Gysi.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Patrik Köbele"
+	picture = "Portrait_GER_Patrik_Koebele.dds"
+	ideology = marxist
+}
+
+create_corps_commander = {
+	name = "Klaus Reinhardt"
+	picture = "Portrait_GER_general_Klaus_Reinhardt.dds"
+	traits = {}
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Dieter Stöckmann"
+	picture = "Portrait_GER_general_Dieter_Stockmann.dds"
+	traits = {}
+	skill = 1
+}
+
+#create_import = {
+#	resource = oil
+#	factories = 3
+#	exporter = NOR
+#}
+
+2001.1.1 = {
+	complete_national_focus = GER_economic_focus
+	complete_national_focus = GER_ideology_focus
+	complete_national_focus = GER_restructure_the_foreign_ministry
+	complete_national_focus = GER_military_reform
+	
+	complete_national_focus = GER_osthilfe
+	
+	complete_national_focus = GER_emphasize_freedom
+	complete_national_focus = GER_restore_trust_in_the_system
+	complete_national_focus = GER_political_expertise
+	
+	complete_national_focus = GER_army_focus
+	complete_national_focus = GER_navy_focus
+	complete_national_focus = GER_air_force_focus
+	
+	complete_national_focus = GER_revive_the_ruhr_area
+	complete_national_focus = GER_military_buildup_1
+	complete_national_focus = GER_civilian_buildup_1
+	
+	complete_national_focus = GER_fund_eastern_infrastructure
+	complete_national_focus = GER_new_eastern_ports
+	complete_national_focus = GER_fund_eastern_industry
+	
+	complete_national_focus = GER_european_freedom
+	complete_national_focus = GER_european_cooperation_1
+	complete_national_focus = GER_european_logistics
+	
+	complete_national_focus = GER_european_cooperation_2
+	
+	complete_national_focus = GER_european_politics
+	complete_national_focus = GER_intercontinental_politics
+	complete_national_focus = GER_befriend_france
+	complete_national_focus = GER_befriend_poland
+	complete_national_focus = GER_with_britain
+	complete_national_focus = GER_befriend_italy
+	complete_national_focus = GER_befriend_scandinavia
+	
+	#complete_national_focus = GER_EU_expansion_of_2004
+	#complete_national_focus = GER_EU_expansion_of_2007
+	#complete_national_focus = GER_EU_expansion_of_2013
+}
+
+2002.1.1 = {
+	add_ideas = the_euro
+}
+
+2005.9.18 = {
+	set_politics = {
+		ruling_party = conservative
+		elections_allowed = yes
+	}
+}
+
+2009.1.1 = {
+	set_party_name = {
+		ideology = reactionary
+		long_name = GER_reactionary_party_AfD_long
+		name = GER_reactionary_party_AfD
+	}
+	set_party_name = {
+		ideology = democratic_socialist
+		long_name = GER_democratic_socialist_party_DieLinke_long
+		name = GER_democratic_socialist_party_DieLinke
+	}
+	create_country_leader = {
+		name = "Bernd Lucke"
+		picture = "Portrait_GER_Bernd_Lucke.dds"
+		ideology = oligarchist
+	}
+}
+
+2010.11.22 = {
+	add_ideas = {
+		volunteer_only
+	}
+}
+
+2013.1.1 = {
+	create_corps_commander = {
+		name = "Volker Wieker"
+		picture = "Portrait_GER_general_Volker_Wieker.dds"
+		traits = {}
+		skill = 2
+	}
+	create_corps_commander = {
+		name = "Hans-Lothar Domröse"
+		picture = "Portrait_GER_general_Hans_Lothar_Domrose.dds"
+		traits = {}
+		skill = 1
+	}
+	create_navy_leader = {
+		name = "Manfred Nielson"
+		picture = "Portrait_GER_admiral_Manfred_Nielson.dds"
+		traits = {}
+		skill = 2
+	}
+}
+
+2014.1.1 = {
+	create_country_leader = {
+		name = "Frauke Petry"
+		picture = "Portrait_GER_Frauke_Petry.dds"
+		ideology = counter_progressive_democrat
+	}
+	set_politics = {
+		last_election = "2013.9.22"
+		elections_allowed = yes
+		parties = {
+			conservative = {
+				popularity = 42
+			}
+			social_democrat = {
+				popularity = 25
+			}
+			reactionary = {
+				popularity = 11
+			}
+			progressive = {
+				popularity = 8
+			}
+			democratic_socialist = {
+				popularity = 8
+			}
+			market_liberal = {
+				popularity = 4
+			}
+			nationalist = {
+				popularity = 3
+			}
+			social_liberal = {
+				popularity = 1
+			}
+		}
+	}
+}

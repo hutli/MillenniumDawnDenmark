@@ -1,0 +1,27 @@
+
+state={
+	id=721
+	name="STATE_721"
+	manpower = 1160000
+	
+	state_category = rural
+
+	history={
+		owner = ETI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			12190 ={
+				naval_base = 1
+			}
+		}
+		add_core_of = ETI
+		victory_points = { 12190 2 }
+		victory_points = { 12206 1 }
+	}
+
+	provinces={
+		1326 12178 12190 12206 13001 
+	}
+}

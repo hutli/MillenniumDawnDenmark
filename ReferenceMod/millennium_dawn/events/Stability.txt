@@ -1,0 +1,129 @@
+﻿add_namespace = stability_event
+
+#Stability Setup
+country_event = {
+	id = stability_event.1
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		country_event = stability_event.2
+	}
+}
+
+#Introduction to Stability
+country_event = {
+	id = stability_event.2
+	title = stability.2.t
+	desc = stability.2.d
+	picture = GFX_report_event_stability
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = stability.2.o1
+		set_starting_stability = yes	#This has tooltips, so it needs to be in a context the player can view.
+	}
+}
+
+#Update Stability
+country_event = {
+	id = stability_event.3
+	title = stability.3.t
+	desc = stability.3.d
+	picture = GFX_report_event_stability
+	
+	trigger = {
+		OR = {
+			AND = {
+				has_idea = stability_1
+				has_country_flag = {
+					flag = national_stability
+					value > 10
+				}
+			}
+			AND = {
+				has_idea = stability_2
+				OR = {
+					has_country_flag = {
+						flag = national_stability
+						value < 11
+					}
+					has_country_flag = {
+						flag = national_stability
+						value > 25
+					}
+				}
+			}
+			AND = {
+				has_idea = stability_3
+				OR = {
+					has_country_flag = {
+						flag = national_stability
+						value < 26
+					}
+					has_country_flag = {
+						flag = national_stability
+						value > 40
+					}
+				}
+			}
+			AND = {
+				has_idea = stability_4
+				OR = {
+					has_country_flag = {
+						flag = national_stability
+						value < 41
+					}
+					has_country_flag = {
+						flag = national_stability
+						value > 60
+					}
+				}
+			}
+			AND = {
+				has_idea = stability_5
+				OR = {
+					has_country_flag = {
+						flag = national_stability
+						value < 61
+					}
+					has_country_flag = {
+						flag = national_stability
+						value > 75
+					}
+				}
+			}
+			AND = {
+				has_idea = stability_6
+				OR = {
+					has_country_flag = {
+						flag = national_stability
+						value < 76
+					}
+					has_country_flag = {
+						flag = national_stability
+						value > 90
+					}
+				}
+			}
+			AND = {
+				has_idea = stability_7
+				has_country_flag = {
+					flag = national_stability
+					value < 91
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = stability.3.o1
+		update_stability = yes
+	}
+}

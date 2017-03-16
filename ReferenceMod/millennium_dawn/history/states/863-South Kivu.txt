@@ -1,0 +1,22 @@
+state={
+	id=863
+	name="STATE_863"
+	provinces={
+		4941 
+	}
+	resources = {
+		chromium = 9
+		steel = 23
+	}
+	history = {
+		owner = DRC
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 4941 1 }
+	}
+	manpower=4470300
+	buildings_max_level_factor=1.000
+	
+	state_category = pastoral
+}

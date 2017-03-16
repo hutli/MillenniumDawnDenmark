@@ -1,0 +1,35 @@
+
+state={
+	id=558
+	name="STATE_558"
+	resources={
+		oil=50.000
+		steel=20.000
+		rubber=3.000
+		tungsten=2.000
+	}
+
+	history={
+		owner = NGR
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 10
+			2050 = {
+				naval_base = 6
+			}
+
+		}
+		victory_points = {
+			2050 20 
+		}
+
+	}
+
+	provinces={
+		2050 4952 12731 12900 
+	}
+	manpower=79757000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

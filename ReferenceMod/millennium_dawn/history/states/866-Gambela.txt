@@ -1,0 +1,27 @@
+state={
+	id=866
+	name="STATE_866"
+	resources={
+		aluminium=3
+		chromium=5
+		rubber = 1
+	}
+
+	history = {
+		owner = ETH
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	
+	provinces={
+		7912 8019 8062 10734 
+	}
+	manpower=9201100
+	buildings_max_level_factor=1.000
+	
+	state_category = rural
+}

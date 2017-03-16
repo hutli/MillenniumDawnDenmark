@@ -1,0 +1,182 @@
+ideas = {
+
+	country = {
+	
+		american_militarism = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				unity_factor = 0.1
+				conscription_factor = 0.25
+				army_leader_start_level = 1
+				experience_gain_army = 0.02
+				experience_gain_navy = 0.02
+				experience_gain_air = 0.02
+				consumer_goods_factor = 0.12
+			}
+		}
+		
+		idea_USA_political_establishment = {
+			allowed = { always = no }
+			
+			allowed_civil_war = {
+				original_tag = USA
+				OR = {
+					has_government = conservative
+					has_government = social_liberal
+				}
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				conservative_drift = 0.12
+				social_liberal_drift = 0.12
+				political_power_gain = -0.5
+			}
+		}
+		
+		idea_USA_drone_program = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			picture = generic_air_bonus
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				tactical_bomber = { 
+					build_cost_ic = -0.25 
+				}
+			}
+		}
+		
+		idea_USA_united_republic = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				conscription_factor = 0.25
+				drift_defence_factor = 0.5
+				army_org_Factor = 0.15
+				army_morale_factor = 0.15
+				justify_war_goal_time = -0.35
+			}
+		}
+		
+		idea_USA_new_education_program = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = { 
+				consumer_goods_factor = 0.03
+				research_time_factor = -0.1
+			}
+		}
+		
+	}
+	
+	political_advisor = {
+		
+		USA_john_bachtell = {
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				has_completed_focus = USA_communist_thought
+			}
+			
+			traits = { communist_politician }
+		}
+		
+		USA_bill_maher = {
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				has_completed_focus = USA_proportional_voting
+			}
+			
+			traits = { democratic_socialist_politician }
+		}
+		
+		USA_ralph_nader = {
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				has_completed_focus = USA_proportional_voting
+			}
+			
+			traits = { progressive_politician }
+		}
+		
+		USA_joe_biden = {
+			allowed = {
+				original_tag = USA
+			}
+			
+			traits = { social_liberal_politician }
+		}
+		
+		USA_nicholas_sarwark = {
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				has_completed_focus = USA_proportional_voting
+			}
+			
+			traits = { market_liberal_politician }
+		}
+		
+		USA_bill_o_reilly = {
+			allowed = {
+				original_tag = USA
+			}
+			
+			traits = { conservative_politician }
+		}
+		
+		USA_ann_coulter = {
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				has_completed_focus = USA_proportional_voting
+			}
+			
+			traits = { reactionary_politician }
+		}
+		
+		USA_david_duke = {
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				has_completed_focus = USA_nationalist_thought
+			}
+			
+			traits = { fascist_politician }
+		}
+		
+	}
+}

@@ -1,0 +1,34 @@
+
+state={
+	id=44
+	name="STATE_44"
+	manpower = 2200138
+	resources={
+		aluminium=3
+		chromium=3
+		steel=5
+	}
+	
+	state_category = town
+	
+	history={
+		owner = ALB
+		victory_points = {
+			9914 5 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 3
+			9914 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = ALB
+	}
+
+	provinces={
+		3884 3896 9780 9875 9914 11762 
+	}
+}

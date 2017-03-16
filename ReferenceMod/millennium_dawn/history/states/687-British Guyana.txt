@@ -1,0 +1,28 @@
+state={
+	id=687
+	name="STATE_687"
+	manpower = 9150300
+	
+	state_category = large_town
+	
+	resources={
+		aluminium=112
+	}
+
+	history={
+		owner = GUY
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 4
+			arms_factory = 2
+			4982 = {
+				naval_base = 1
+			}
+		}
+		victory_points = { 4982 2 }
+	}
+	
+	provinces={
+		4982 8107 12716 
+	}
+}

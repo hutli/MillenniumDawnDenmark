@@ -1,0 +1,25 @@
+state={
+	id=865
+	name="STATE_865"
+	provinces={
+		191 1516 1817 1968 4515 12907 
+	}
+	resources = {
+		chromium = 26
+		tungsten = 12
+		steel = 35
+		oil = 13
+	}
+	history={
+		owner = DRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	manpower=4120000
+	buildings_max_level_factor=1.000
+	
+	state_category = rural
+}

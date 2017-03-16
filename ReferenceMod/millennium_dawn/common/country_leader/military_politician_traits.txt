@@ -1,0 +1,24 @@
+leader_traits = {
+	
+	offensive_strategist = {
+		army_attack_factor = 0.3
+		army_defence_factor = -0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_strategist = {
+		max_dig_in = 5
+		army_attack_factor = -0.3
+		army_defence_factor = 0.25
+		
+		ai_focus_defense_factor = 0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

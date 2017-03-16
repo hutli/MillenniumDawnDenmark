@@ -1,0 +1,243 @@
+equipments = {
+
+	missile_cruiser = {
+		is_archetype = yes
+		is_buildable = no
+		type = capital_ship
+		group_by = archetype
+		
+		interface_category = interface_category_capital_ships
+		
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
+		ap_attack = 20
+		attack = 16
+		fire_range = 32
+		torpedo_attack = 0
+		shore_bombardment = 8
+
+		anti_air_attack = 5
+		
+		armor_value = 13
+		evasion = 15
+		
+		surface_detection = 12
+		sub_detection = 5
+		surface_visibility = 25
+		naval_speed = 28
+		reliability = 0.80
+
+		naval_range = 3000
+		
+		max_strength = 350
+		
+		port_capacity_usage = 1.5
+		
+		build_cost_ic = 7500
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 1
+		}
+		
+		manpower = 3500
+	}
+	
+	missile_cruiser_1 = {
+		archetype = missile_cruiser
+		priority = 50
+	}
+	
+	missile_cruiser_2 = {
+		archetype = missile_cruiser
+		parent = missile_cruiser_1
+		priority = 50
+	
+		ap_attack = 27
+		attack = 21
+		fire_range = 33
+		torpedo_attack = 0
+		shore_bombardment = 10
+
+		anti_air_attack = 10
+		
+		armor_value = 20
+		evasion = 20
+		
+		surface_detection = 25
+		sub_detection = 5
+		surface_visibility = 25
+		naval_speed = 32
+		reliability = 0.90
+
+		naval_range = 5000
+		
+		max_strength = 400
+		
+		port_capacity_usage = 1.5
+
+		build_cost_ic = 8000
+		resources = {
+			oil = 1
+			steel = 4
+			chromium = 1
+		}
+		manpower = 4000
+	}
+	
+	missile_cruiser_3 = {
+		archetype = missile_cruiser
+		parent = missile_cruiser_2
+		priority = 50
+	
+		ap_attack = 32
+		attack = 26
+		fire_range = 40
+		torpedo_attack = 0
+		shore_bombardment = 10
+
+		anti_air_attack = 10
+		
+		armor_value = 23
+		evasion = 20
+		
+		surface_detection = 25
+		sub_detection = 5
+		surface_visibility = 25
+		naval_speed = 32
+		reliability = 0.90
+
+		naval_range = 5000
+		
+		max_strength = 400
+		
+		port_capacity_usage = 1.5
+
+		build_cost_ic = 8000
+		resources = {
+			oil = 1
+			steel = 4
+			chromium = 1
+		}
+		manpower = 4000
+	}
+	
+	missile_cruiser_4 = {
+		archetype = missile_cruiser
+		parent = missile_cruiser_3
+		priority = 50
+	
+		ap_attack = 37
+		attack = 30
+		fire_range = 42
+		torpedo_attack = 0
+		shore_bombardment = 10
+
+		anti_air_attack = 10
+		
+		armor_value = 20
+		evasion = 20
+		
+		surface_detection = 25
+		sub_detection = 5
+		surface_visibility = 25
+		naval_speed = 32
+		reliability = 0.90
+
+		naval_range = 5000
+		
+		max_strength = 400
+		
+		port_capacity_usage = 1.5
+
+		build_cost_ic = 8000
+		resources = {
+			oil = 2
+			steel = 4
+			chromium = 1
+		}
+		manpower = 4000
+	}
+	
+	missile_cruiser_5 = {
+		archetype = missile_cruiser
+		parent = missile_cruiser_4
+		priority = 50
+	
+		ap_attack = 40
+		attack = 35
+		fire_range = 50
+		torpedo_attack = 0
+		shore_bombardment = 15
+
+		anti_air_attack = 10
+		
+		armor_value = 20
+		evasion = 20
+		
+		surface_detection = 25
+		sub_detection = 5
+		surface_visibility = 25
+		naval_speed = 32
+		reliability = 0.90
+
+		naval_range = 5000
+		
+		max_strength = 400
+		
+		port_capacity_usage = 1.5
+
+		build_cost_ic = 8000
+		resources = {
+			oil = 2
+			steel = 4
+			chromium = 2
+		}
+		manpower = 4000
+	}
+	
+	missile_cruiser_6 = {
+		archetype = missile_cruiser
+		parent = missile_cruiser_5
+		priority = 50
+	
+		ap_attack = 43
+		attack = 37
+		fire_range = 55
+		torpedo_attack = 0
+		shore_bombardment = 17
+
+		anti_air_attack = 10
+		
+		armor_value = 27
+		evasion = 20
+		
+		surface_detection = 25
+		sub_detection = 5
+		surface_visibility = 25
+		naval_speed = 32
+		reliability = 0.90
+
+		naval_range = 5000
+		
+		max_strength = 400
+		
+		port_capacity_usage = 1.5
+
+		build_cost_ic = 8000
+		resources = {
+			oil = 2
+			steel = 4
+			chromium = 2
+		}
+		manpower = 4000
+	}
+	
+
+	
+}

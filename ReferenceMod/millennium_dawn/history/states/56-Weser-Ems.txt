@@ -1,0 +1,35 @@
+state={
+	id=56
+	name="STATE_56"
+	manpower = 3158467
+	
+	resources = {
+		oil=2
+	}
+	
+	state_category = large_town
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			241 = {
+				naval_base = 8
+
+			}
+			air_base = 3
+
+		}
+		add_core_of = GER
+		victory_points = { 241 1 } #Wilhelmshaven
+		victory_points = { 309 2 } #Oldenburg
+		victory_points = { 11233 1 } #Lingen
+	}
+
+	provinces={
+		241 247 309 336 3234 9281 11233 11264 11360 11388 
+	}
+}

@@ -1,0 +1,119 @@
+ideas = {
+	
+	decisions = {
+	
+		decision_apply_to_join_the_EU = {
+		
+			picture = idea_eu_member
+			
+			allowed = {
+			#	NOT = { has_idea = idea_eu_member }
+				NOT = { original_tag = SOV }
+			}
+			
+			cost = 200
+			
+			available = {
+				is_ai = no
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = TT_is_in_europe
+						capital_scope = { is_on_continent = europe }
+					}
+					original_tag = MOR
+					original_tag = TUR
+					original_tag = ISR
+				}
+				custom_trigger_tooltip = {
+					tooltip = TT_did_not_activate_this_decision_before
+					NOT = { has_country_flag = has_applied_to_join_the_EU }
+				}
+				has_democratic_form_of_government = yes
+				custom_trigger_tooltip = {
+					tooltip = TT_is_not_a_EU_member
+					is_EU_member = no
+				}
+			}
+			
+			on_add = {
+				set_country_flag = has_applied_to_join_the_EU
+				EU_membership_application = yes
+			}
+			
+		}
+		
+		decision_dissolve_our_faction = {
+			
+			allowed = { always = yes }
+			
+			available = { 
+				is_faction_leader = yes 
+				is_ai = no
+			}
+			
+			cost = 500
+			
+			on_add = {
+				dismantle_faction = yes
+				news_event = news.3
+				#TBA: Remove the Decision afterwards.
+			}
+			
+		}
+		
+		decision_form_scandinavia = {
+			
+			allowed = {
+				OR = {
+					original_tag = NOR
+					original_tag = SWE
+					original_tag = DEN
+				}
+			}
+			
+			available = {
+				is_ai = no
+				OR = {
+					original_tag = NOR
+					original_tag = SWE
+					original_tag = DEN
+				}
+				OR = {	#Check Dominance over Denmark
+					original_tag = DEN
+					DEN = { is_puppet_of = ROOT }
+					DEN = { exists = no }
+				}
+				OR = {	#Check Dominance over Norway
+					original_tag = NOR
+					NOR = { is_puppet_of = ROOT }
+					NOR = { exists = no }
+				}
+				OR = {	#Check Dominance over Sweden
+					original_tag = SWE
+					SWE = { is_puppet_of = ROOT }
+					SWE = { exists = no }
+				}
+				custom_trigger_tooltip = {
+					tooltip = TT_did_not_activate_this_decision_before
+					DEN = { NOT = { has_country_flag = has_formed_scandinavia } }
+					NOR = { NOT = { has_country_flag = has_formed_scandinavia } }
+					SWE = { NOT = { has_country_flag = has_formed_scandinavia } }
+				}
+			}
+			
+			cost = 300
+			
+			on_add = {
+				set_country_flag = has_formed_scandinavia
+				set_cosmetic_tag = Scandinavia
+				add_named_threat = {
+					name = threat_formation_of_scandinavia
+					threat = -2
+				}
+			}
+			
+		}
+		
+	}
+	
+}

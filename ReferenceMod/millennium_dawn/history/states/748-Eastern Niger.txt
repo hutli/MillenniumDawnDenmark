@@ -1,0 +1,25 @@
+state={
+	id=748
+	name="STATE_748"
+	
+	resources = {
+		oil=3
+	}
+	
+	history = {
+		owner = NIG
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	
+	provinces={
+		1956 10780 10805 10917 
+	}
+	manpower=6750260
+	buildings_max_level_factor=1.000
+	
+	state_category = pastoral
+}

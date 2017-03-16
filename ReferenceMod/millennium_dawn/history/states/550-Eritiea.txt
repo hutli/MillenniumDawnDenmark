@@ -1,0 +1,34 @@
+state=
+{
+	id=550
+	name="STATE_550"
+	manpower = 6306800
+	
+	resources = {
+		steel=15
+		aluminium=9
+		chromium=4
+	}
+	
+	state_category = town
+	
+	history=
+	{
+		owner = ERI
+		victory_points = {
+			12766 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 3
+			12766 = {
+				naval_base = 3
+			}
+		}
+	}
+	provinces={
+		5017 5047 5091 8043 12723 12766
+	}
+}

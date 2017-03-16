@@ -1,0 +1,101 @@
+ideas = {
+	country = {
+		###		United Nations		###
+		idea_united_nations_security_council_member = {
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.15
+			}
+			
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		idea_united_nations_NP_security_council_member = {
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		###		African Union		###
+		african_union_member = {
+			picture = AU_member
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				political_power_gain = -0.1
+				justify_war_goal_time = 0.1
+			}
+		}
+		###		European Union		###
+		idea_eu_member = {
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.3
+				political_power_gain = -0.5
+				justify_war_goal_time = 0.25
+			}
+		}
+		the_euro = {
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				political_power_gain = -0.1
+			}
+		}
+		idea_eu_sanctions = {
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.05
+			}
+		}
+		visegrad_group_member = {
+			picture = visegrad
+		
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.05
+				justify_war_goal_time = 0.05
+			}
+		}
+		###		Commonwealth		###
+		commonwealth_of_nations_member = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = 0.05
+				justify_war_goal_time = 0.15
+			}
+		}
+		###		Arab League			###
+		arab_league_member = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = 0.05
+				justify_war_goal_time = 0.15
+			}
+		}
+	}
+}

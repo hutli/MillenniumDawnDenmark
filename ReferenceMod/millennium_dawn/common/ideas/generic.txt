@@ -1,0 +1,1174 @@
+ideas = {
+
+	country = {
+	
+		neutrality_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			cancel = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				#generate_wargoal_tension = 1.00
+				join_faction_tension = 1.00
+				#lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+				ai_get_ally_desire_factor = -150
+			}
+		}
+		
+		parliamentary_crisis = {
+			picture = strikes
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.5
+			}
+		}
+		
+		worker_strikes_1 = {
+			picture = strikes
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.25
+				political_power_factor = -0.1
+			}
+		}
+		
+		worker_strikes_2 = {
+			picture = strikes
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.5
+				political_power_factor = -0.2
+			}
+		}
+		
+		worker_strikes_3 = {
+			picture = strikes
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.75
+				political_power_factor = -0.3
+			}
+		}
+		
+		worker_strikes_4 = {
+			picture = strikes
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -1
+				political_power_factor = -0.4
+			}
+		}
+		
+		generic_mass_mobilization = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription_factor = 0.3
+				industrial_capacity_factory = 0.15
+				political_power_factor = -0.25
+				unity_factor = -0.1
+			}
+		}
+	
+		partially_recognized_state = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = -0.25
+			}
+			
+		}
+	
+		nuclear_power_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				nuclear_production = 1
+			}
+			
+		}
+	
+		path_to_war = {
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				justify_war_goal_time = -0.25
+			}
+			
+		}
+		
+		idea_focus_equal_workforce = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				monthly_population = -0.05
+				industrial_capacity_factory = 0.35
+			}
+		}
+		
+		idea_focus_male_workforce = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				monthly_population = 0.2
+				industrial_capacity_factory = -0.35
+			}
+		}
+		
+		idea_focus_new_recruitment_strategies = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				conscription_factor = 0.2
+			}
+		}
+		
+		idea_focus_redistribution_of_wealth = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_democracy_drift_bonus
+			
+			modifier = {
+				democratic_socialist_drift = 0.1
+				conscription_factor = 0.05
+				unity_factor = 0.15
+				consumer_goods_factor = -0.04
+			}
+		}
+		
+		idea_focus_environmental_policy = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_democracy_drift_bonus
+			
+			modifier = {
+				progressive_drift = 0.1
+				conscription_factor = 0.15
+				unity_factor = 0.1
+				political_power_gain = 0.4
+				consumer_goods_factor = -0.02
+			}
+		}
+		
+		idea_focus_strong_unions = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_democracy_drift_bonus
+			
+			modifier = {
+				social_democrat_drift = 0.1
+				unity_factor = 0.1
+				conscription_factor = 0.05
+				industrial_capacity_factory = 0.25
+			}
+		}
+		
+		idea_focus_personal_freedoms = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_democracy_drift_bonus
+			
+			modifier = {
+				social_liberal_drift = 0.1
+				unity_weekly = 0.003
+			}
+		}
+		
+		idea_focus_economic_freedoms = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_democracy_drift_bonus
+			
+			modifier = {
+				market_liberal_drift = 0.1
+				industrial_capacity_factory = 0.2
+			}
+		}
+		
+		idea_focus_family_values = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_democracy_drift_bonus
+			
+			modifier = {
+				monthly_population = 0.1
+			}
+		}
+		
+		idea_focus_national_security = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_democracy_drift_bonus
+			
+			modifier = {
+				army_leader_start_level = 1
+				decryption = 1
+			}
+		}
+		
+		idea_focus_volunteer_corps = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			
+			modifier = {
+				experience_gain_army = 0.02
+				send_volunteer_divisions_required = -0.75
+			}
+		}
+		
+		idea_focus_destroyed_foreign_influence = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			
+			modifier = {
+				unity_factor = 0.05
+				drift_defence_factor = 0.5
+			}
+		}
+		
+		idea_focus_expanded_secret_services = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			
+			modifier = {
+				decryption = 1
+			}
+		}
+		
+		idea_focus_army_officer_school = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			
+			modifier = {
+				army_leader_start_level = 1
+			}
+		}
+		
+		idea_focus_air_force_military_school = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_air_bonus
+			
+			modifier = {
+				experience_gain_air_factor = 0.2
+			}
+		}
+		
+		idea_focus_industrial_development_program = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+	
+		idea_focus_generic_fighter_focus = {
+			picture = generic_air_bonus
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				cas = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+		
+		idea_focus_generic_bomber_focus = {
+			picture = generic_air_bonus
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				strategic_bomber = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				naval_bomber = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+	
+		idea_focus_generic_motorized_focus = {
+			allowed = { always = no }
+
+			picture = generic_infantry_bonus
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+			}
+		}
+	
+		idea_focus_generic_education_reform = {
+			allowed = { always = no }
+			
+			picture = generic_research_bonus
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = -0.01
+			}
+		}
+		
+		idea_focus_generic_census_reform = {
+			allowed = { always = no }
+			
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.002
+			}
+		}
+		
+		idea_focus_generic_public_service_investment = {
+			allowed = { always = no }
+			
+			picture = generic_intel_bonus
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		idea_focus_generic_encouraged_private_research = {
+			allowed = { always = no }
+			
+			picture = generic_research_bonus
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = -0.02
+			}
+		}
+		
+		idea_focus_generic_individual_freedom = {
+			allowed = { always = no }
+			
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				fascist_drift = -0.01
+				nationalist_drift = -0.01
+				communist_drift = -0.01
+				monarchist_drift = -0.01
+				islamist_drift = -0.01
+			}
+		}
+		
+		idea_focus_generic_national_strength = {
+			allowed = { always = no }
+			
+			picture = generic_fascism_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				conservative_drift = -0.01
+				market_liberal_drift = -0.01
+				social_liberal_drift = -0.01
+				social_democrat_drift = -0.01
+				progressive_drift = -0.01
+				democratic_socialist_drift = -0.01
+				reactionary_drift = -0.01
+			}
+		}
+		
+		idea_focus_generic_path_of_equality = {
+			allowed = { always = no }
+			
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				communist_drift = 0.04
+				democratic_socialist_drift = 0.02
+			}
+		}
+		
+		idea_focus_generic_path_of_order = {
+			allowed = { always = no }
+			
+			picture = generic_fascism_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				fascist_drift = 0.04
+				nationalist_drift = 0.04
+				monarchist_drift = 0.04
+				reactionary_drift = 0.02
+			}
+		}
+		
+		idea_focus_generic_path_of_liberty = {
+			allowed = { always = no }
+			
+			picture = generic_democracy_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				conservative_drift = 0.04
+				market_liberal_drift = 0.04
+				social_democrat_drift = 0.04
+				social_liberal_drift = 0.04
+				progressive_drift = 0.04
+				reactionary_drift = 0.04
+				democratic_socialist_drift = 0.04
+			}
+		}
+		
+		idea_focus_generic_conservative_doctrine = {
+			allowed = { always = no }
+			
+			picture = generic_democracy_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				conservative_drift = 0.1
+			}	
+		}
+		
+		idea_focus_generic_reactionary_doctrine = {
+			allowed = { always = no }
+			
+			picture = generic_democracy_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				reactionary_drift = 0.1
+			}	
+		}
+		
+		idea_focus_generic_liberal_doctrine = {
+			allowed = { always = no }
+			
+			picture = generic_democracy_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				social_liberal_drift = 0.1
+			}
+		}
+		
+		idea_focus_generic_capitalist_doctrine = {
+			allowed = { always = no }
+			
+			picture = generic_democracy_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				market_liberal_drift = 0.1
+			}
+		}
+		
+		idea_focus_generic_leftist_doctrine = {
+			allowed = { always = no }
+			
+			picture = generic_democracy_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				democratic_socialist_drift = 0.1
+			}
+		}
+		
+		idea_focus_generic_progressive_doctrine = {
+			allowed = { always = no }
+			
+			picture = generic_democracy_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				progressive_drift = 0.1
+			}
+		}
+		
+		idea_focus_generic_social_democrat_doctrine = {
+			allowed = { always = no }
+			
+			picture = generic_democracy_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				social_democrat_drift = 0.1
+			}
+		}
+		
+		idea_focus_generic_marxist_doctrine = {
+			allowed = { always = no }
+			
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				communist_drift = 0.1
+			}
+		}
+		
+		idea_focus_generic_royal_doctrine = {
+			allowed = { always = no }
+			
+			picture = generic_fascism_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				monarchist_drift = 0.1
+			}
+		}
+		
+		idea_focus_generic_neo_fascist_doctrine = {
+			allowed = { always = no }
+			
+			picture = generic_fascism_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				fascist_drift = 0.1
+			}
+		}
+		
+		idea_focus_generic_nationalist_doctrine = {
+			allowed = { always = no }
+			
+			picture = generic_fascism_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				nationalist_drift = 0.1
+			}
+		}
+		
+		idea_focus_generic_path_of_allah = {
+			allowed = { always = no }
+			
+			picture = generic_fascism_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				islamist_drift = 0.1
+			}
+		}
+		
+		idea_focus_generic_realpolitik = {
+			allowed = { always = no }
+			
+			picture = generic_wall_line
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.8
+				justify_war_goal_time = -0.4
+			}
+		}
+		
+		idea_focus_generic_commerce_efficiency = {
+			allowed = { always = no }
+			
+			picture = generic_goods_red_bonus
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.5
+			}
+		}
+		
+		idea_focus_generic_reckless_progress = {
+			allowed = { always = no }
+			
+			picture = generic_research_bonus
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = -0.1
+			}
+		}
+		
+		idea_focus_generic_will_of_the_people = {
+			allowed = { always = no }
+			
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				army_morale_factor = 0.05
+				political_power_gain = 0.25
+				justify_war_goal_time = -0.1
+			}
+		}
+		
+		idea_focus_generic_national_heritage = {
+			allowed = { always = no }
+			
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			
+			modifier = {
+				unity_weekly = 0.002
+				justify_war_goal_time = -0.25
+			}
+		}
+		
+		idea_focus_generic_army_of_purity = {
+			allowed = { always = no }
+			
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			
+			modifier = {
+				conscription = -0.01
+				army_org_Factor = 0.15
+				army_morale_factor = 0.15
+				justify_war_goal_time = -0.1
+			}
+		}
+		
+		idea_focus_generic_fatherland_unity = {
+			allowed = { always = no }
+			
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.15
+				conscription = 0.01
+				army_morale_factor = 0.025
+				planning_speed = 0.025
+			}
+		}
+		
+		idea_focus_generic_jihad = {
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.1
+				drift_defence_factor = 0.25
+				army_morale_factor = 0.05
+				justify_war_goal_time = -0.8
+				research_time_factor = 0.5
+				industrial_capacity_factory = -0.5
+				political_power_gain = -0.5
+			}
+		}
+	
+	}
+	
+	hidden_ideas = {
+
+	   idea_continuous_naval_production = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+		   removal_cost = -1
+
+		   equipment_bonus = {
+			   carrier = {
+					instant = yes
+					build_cost_ic = -0.20
+			   }
+			   capital_ship = {
+					instant = yes
+					build_cost_ic = -0.20
+			   }
+			   screen_ship = {
+					instant = yes
+					build_cost_ic = -0.20
+			   }
+			   submarine = {
+					instant = yes
+					build_cost_ic = -0.20
+			   }
+			   convoy = {
+					instant = yes
+					build_cost_ic = -0.20
+			   }
+		   }
+	   }
+
+	   idea_continuous_air_production = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				jet_multirole_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				jet_attack_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				jet_mpa_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				rocket_interceptor_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				ucav_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				jet_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				guided_missile_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+		   }                 
+	   }
+   }
+
+	political_advisor = {
+	}
+		
+	
+
+	# TECHNOLOGY
+	tank_manufacturer = {}
+	
+	naval_manufacturer = {}
+
+	aircraft_manufacturer = {}
+
+	industrial_concern = {
+	
+		generic_industrial_concern = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		generic_electronics_concern = {
+			
+			picture = generic_electronics_concern_1
+
+			allowed = {
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+		}
+	}
+
+	materiel_manufacturer = {
+	
+		designer = yes
+	
+		generic_motorized_equipment_manufacturer = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		generic_infantry_equipment_manufacturer = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		generic_artillery_manufacturer = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+
+	political_advisor = {
+
+		generic_captain_of_industry = {
+
+			allowed = {
+			}
+			
+			traits = { captain_of_industry }
+		}
+		
+		generic_fortification_engineer = {
+
+			allowed = {
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		generic_war_industrialist = {
+
+			allowed = {
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+	}
+
+	army_chief = {
+		
+		generic_army_chief_off = {
+			
+			allowed = {
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+
+		generic_army_chief_def = {
+			
+			allowed = {
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+
+		generic_army_chief_manuever = {
+			
+			allowed = {
+			}
+			
+			traits = { army_chief_maneuver_1 }			
+		}
+
+		generic_army_chief_drill = {
+			
+			allowed = {
+			}
+			
+			traits = { army_chief_drill_1 }			
+		}
+
+		generic_army_chief_reform = {
+			
+			allowed = {
+			}
+			
+			traits = { army_chief_reform_1 }			
+		}
+
+		generic_army_chief_org = {
+			
+			allowed = {
+			}
+			
+			traits = { army_chief_organizational_1 }			
+		}
+		
+	}
+
+	navy_chief = {		
+
+		generic_navy_chief_decisive_bat = {
+			
+			allowed = {
+			}
+			
+			traits = { navy_chief_decisive_battle_1 }
+		}
+
+		generic_navy_anti_submarine = {
+			
+			allowed = {
+			}
+			
+			traits = { navy_anti_submarine_1 }
+		}
+	}
+
+	air_chief = {
+
+		generic_air_close_air_sup = {
+			
+			allowed = {
+			}
+			
+			traits = { air_close_air_support_1 }
+		}
+	
+		generic_air_chief_all_weather = {
+			
+			allowed = {
+			}
+			
+			traits = { air_chief_all_weather_1 }			
+		}
+	}
+
+	high_command = {
+
+		generic_army_art = {
+			
+			allowed = {
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+
+		generic_army_armor = {
+			
+			allowed = {
+			}
+			
+			traits = { army_armored_1 }			
+		}
+
+		generic_army_regroup = {
+			
+			allowed = {
+			}
+			
+			traits = { army_regrouping_1 }			
+		}
+
+		generic_army_conceal = {
+			
+			allowed = {
+			}
+			
+			traits = { army_concealment_1 }			
+		}
+
+		generic_army_trench_warfare = {
+			
+			allowed = {
+			}
+			
+			traits = { army_entrenchment_1 }			
+		}
+		
+		generic_army_log = {
+
+			allowed = {
+			}
+			
+			traits = { army_logistics_1 }			
+		}
+
+		generic_navy_fleet_log = {
+
+			allowed = {
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		generic_air_air_combat_trainer = {
+
+			allowed = {
+			}
+			
+			traits = { air_air_combat_training_1 }			
+		}
+	}
+
+	theorist = {
+
+		generic_military_theorist = {
+			
+			allowed = {
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+	
+		generic_naval_theorist = {
+			
+			allowed = {
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		generic_air_warfare_theorist = {
+			
+			allowed = {
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+
+}

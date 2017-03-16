@@ -1,0 +1,205 @@
+﻿capital = 49
+
+oob = "TUR_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = country_language_turkish
+
+set_country_flag = starting_stability_low
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+give_guarantee = NCY
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
+add_ideas = {
+	population_growth_steady
+	limited_conscription
+}
+
+set_politics = {
+
+	parties = {
+		islamist = {
+			popularity = 15
+		}
+		nationalist = {
+			popularity = 18
+		}
+		conservative = {
+			popularity = 17
+		}
+		market_liberal = {
+			popularity = 13
+		}
+		social_democrat = {
+			popularity = 25
+		}
+		communist = {
+			popularity = 3
+		}
+	}
+	
+	ruling_party = social_democrat
+	last_election = "1999.4.18"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Bulent Ecevit"
+	picture = "Portrait_TUR_Bulent_Ecevit_Davos.dds"
+	ideology = social_democrat_ideology
+	expire = "2006.1.1"
+}
+
+create_country_leader = {
+	name = "Recep Erdogan"
+	picture = "Portrait_TUR_Recep_Tayyip_Erdogan.dds"
+	ideology = right_wing_conservative
+	expire = "2020.1.1"
+}
+
+2003.1.1 = {
+
+	set_party_name = {
+		ideology = conservative
+		long_name = TUR_conservative_party_AKP_long
+		name = TUR_conservative_party_AKP
+	}
+	set_party_name = {
+		ideology = social_democrat
+		long_name = TUR_social_democrat_party_CHP_long
+		name = TUR_social_democrat_party_CHP
+	}
+
+	set_politics = {
+		ruling_party = conservative
+		elections_allowed = yes
+	}
+	
+	create_country_leader = {
+		name = "Kemal Kilicdaroglu"
+		picture = "Portrait_TUR_Kemal_Kilicdaroglu.dds"
+		ideology = social_democrat_ideology
+		expire = "2003.1.1"
+	}
+}
+
+2016.1.1 = {
+	set_politics = {
+		
+		parties = {
+			islamist = {
+				popularity = 13
+			}
+			nationalist = {
+				popularity = 16
+			}
+			conservative = {
+				popularity = 35
+			}
+			market_liberal = {
+				popularity = 10
+			}
+			social_democrat = {
+				popularity = 20
+			}
+			communist = {
+				popularity = 1
+			}
+		}
+	
+		last_election = "2015.11.1"
+		elections_allowed = yes
+	}
+}	
+

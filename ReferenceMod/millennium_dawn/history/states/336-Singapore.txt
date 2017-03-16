@@ -1,0 +1,35 @@
+
+state={
+	id=336
+	name="STATE_336"
+	manpower = 5400000
+	
+	state_category = metropolis
+	
+	resources={
+		steel=5
+		tungsten=3
+	}
+
+	history={
+		owner = SIG
+		victory_points = {
+			12299 20
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 8
+			arms_factory = 3
+			air_base = 6
+			12299 = {
+				naval_base = 8
+				coastal_bunker = 3
+			}
+		}
+
+	}
+
+	provinces={
+		12299 12113
+	}
+}

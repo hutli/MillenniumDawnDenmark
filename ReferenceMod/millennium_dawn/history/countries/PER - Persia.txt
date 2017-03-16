@@ -1,0 +1,262 @@
+﻿capital = 266
+
+oob = "PER_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = country_language_persian
+
+set_country_flag = starting_stability_low
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+set_country_flag = dominant_religion_islam
+set_country_flag = shia_islam
+
+add_ideas = {
+	population_growth_explosion
+	limited_conscription
+}
+
+set_politics = {
+
+	parties = {
+	    islamist = {
+	        popularity = 77
+	    }
+		
+	    fascist = {
+	        popularity = 0
+	    }
+		
+	    nationalist = {
+	        popularity = 0
+	    }
+		
+		monarchist = {
+	        popularity = 0
+	    }
+		
+	    reactionary = {
+	        popularity = 0
+	    }
+		
+	    conservative = {
+	        popularity = 15
+	    }
+		
+	    market_liberal = {
+	        popularity = 2
+	    }
+		
+	    social_liberal = {
+	        popularity = 1
+	    }
+		
+	    social_democrat = {
+	        popularity = 0
+	    }
+		
+	    progressive = {
+	        popularity = 0
+	    }
+		
+	    democratic_socialist = {
+	        popularity = 5
+	    }
+		
+	    communist = {
+	        popularity = 0
+	    }
+	}
+	
+	ruling_party = islamist
+	last_election = "1997.5.23"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Ali Khoumeini"
+	ideology = islamic_authoritarian
+	picture = "Portrait_PER_Ali_Khoumeni.dds"
+	expire = "2020.1.1"
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Mohsen Pezeshkpour"
+	ideology = proto_fascist
+	picture = "Portrait_PER_Mohsen_Pezeshkpour.dds"
+	expire = "2020.1.1"
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Reza Pahlavi"
+	ideology = absolute_monarchist
+	picture = "Portrait_PER_Reza_Pahlavi.dds"
+	expire = "2020.1.1"
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Roozbeh Farahanipour"
+	ideology = counter_progressive_democrat
+	picture = "Portrait_PER_Roozbeh_Farahanipour.dds"
+	expire = "2020.1.1"
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Ebrahim Yazdi"
+	ideology = constitutionalist
+	picture = "Portrait_PER_Ebrahim_Yazdi.dds"
+	expire = "2020.1.1"
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Habibollah Asgaroladi"
+	ideology = libertarian
+	picture = "Portrait_PER_Habibollah_Asgaroladi.dds"
+	expire = "2020.1.1"
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Hadi Khamenei"
+	ideology = moderate
+	picture = "Portrait_PER_Hadi_Khamenei.dds"
+	expire = "2020.1.1"
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Hossein Kamali"
+	ideology = social_democrat_ideology
+	picture = "Portrait_PER_Hossein_Kamali.dds"
+	expire = "2020.1.1"
+	
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Mansoor Hekmat"
+	ideology = marxist
+	picture = "Portrait_PER_Mansoor_Hekmat.dds"
+	expire = "2020.1.1"
+	
+	traits = {
+	
+	}
+}

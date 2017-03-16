@@ -1,0 +1,100 @@
+﻿add_namespace = nato
+
+country_event = {	#We receive an invitation to NATO
+	id = nato.1
+	title = nato.1.t
+	desc = nato.1.d
+	picture = GFX_report_event_nato
+	
+	is_triggered_only = yes
+	
+	option = {	#We accept!
+		name = nato.1.o1
+		
+		set_country_flag = has_joined_NATO_by_event
+		
+		USA = {
+			add_to_faction = FROM
+			
+			country_event = {
+				id = nato.2
+			}
+		}
+		
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {	#We refuse
+		name = nato.1.o2
+		add_political_power = 50
+		USA = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = recent_actions_negative
+			}
+			
+			country_event = {
+				id = nato.3
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					OR = {
+						tag = EST
+						tag = LAT
+						tag = LIT
+						tag = SLO
+						tag = SLV
+						tag = ROM
+						tag = BUL
+						tag = ALB
+						tag = CRO
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {	#They accept!
+	id = nato.2
+	title = nato.2.t
+	desc = nato.2.d
+	picture = GFX_report_event_nato
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nato.2.o1
+		add_to_faction = FROM
+	}
+}
+
+country_event = {	#They refuse!
+	id = nato.3
+	title = nato.3.t
+	desc = nato.3.d
+	picture = GFX_report_event_nato
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nato.3.o1
+		
+		effect_tooltip = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = recent_actions_negative
+			}
+		}
+	}
+}
+

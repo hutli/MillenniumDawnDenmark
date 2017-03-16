@@ -1,0 +1,26 @@
+
+state={
+	id=68
+	name="STATE_68"
+	resources={
+		aluminium=2.000
+	}
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = GER
+
+	}
+
+	provinces={
+		3522 6487 6582 9456 9560 11359 11545 
+	}
+	manpower=250840
+	buildings_max_level_factor=1.000
+	state_category=town
+}

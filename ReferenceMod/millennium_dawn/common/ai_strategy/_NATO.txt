@@ -1,0 +1,99 @@
+seek_NATO_membership = {
+	
+	enable = {
+	
+		NOT = { tag = USA }
+		USA = { is_in_faction = yes }
+		
+		OR = {		#These countries should always desire membership
+			tag = BEL
+			tag = CAN
+			tag = DEN
+			tag = FRA
+			tag = ICE
+			tag = ITA
+			tag = LUX
+			tag = HOL
+			tag = NOR
+			tag = POR
+			tag = ENG
+			tag = GRE
+			tag = TUR
+			tag = GER
+			tag = SPR
+			tag = CZE
+			tag = HUN
+			tag = POL
+			tag = BUL
+			tag = EST
+			tag = LAT
+			tag = LIT
+			tag = ROM
+			tag = SLO
+			tag = SLV
+			tag = CRO
+			tag = ALB
+			
+			has_country_flag = has_joined_NATO_by_event
+		}
+		
+		NOT = { has_country_flag = left_NATO }
+		
+		#Also consider: Kosovo and Georgia
+		
+		OR = {
+			has_government = reactionary
+			has_government = conservative
+			has_government = market_liberal
+			has_government = social_liberal
+			has_government = social_democrat
+			has_government = progressive
+			has_government = democratic_socialist
+		}
+		
+		OR = {
+			USA = { has_government = reactionary }
+			USA = { has_government = conservative }
+			USA = { has_government = market_liberal }
+			USA = { has_government = social_liberal }
+			USA = { has_government = social_democrat }
+			USA = { has_government = progressive }
+			USA = { has_government = democratic_socialist }
+		}
+		
+	}
+	
+	abort = {
+		OR = {
+			has_war_with = USA
+			USA = { is_in_faction = no }
+			has_country_flag = left_NATO
+			OR = {
+				has_government = islamist
+				has_government = nationalist
+				has_government = communist
+				has_government = fascist
+				has_government = monarchist
+			}
+			OR = {
+				USA = { has_government = islamist }
+				USA = { has_government = nationalist }
+				USA = { has_government = communist }
+				USA = { has_government = fascist }
+				USA = { has_government = monarchist }
+			}
+			USA = { exists = no }
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "USA"
+		value = 50
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA"
+		value = 125
+	}
+}

@@ -1,0 +1,433 @@
+﻿capital = 284
+
+oob = "NZL_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = starting_stability_very_high
+
+set_country_flag = country_language_english
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_steady
+	commonwealth_of_nations_member
+}
+
+set_politics = {
+
+	parties = {
+		reactionary = {
+			popularity = 4
+		}
+		conservative = {
+			popularity = 37.11
+		}
+		market_liberal = {
+			popularity = 7
+		}
+		social_liberal = {
+			popularity = 0.5
+		}
+		social_democrat = {
+			popularity = 45.14
+		}
+		progressive = {
+			popularity = 5
+        }
+		democratic_socialist = {
+			popularity = 0.25
+        }
+		nationalist = {
+			popularity = 1
+		}
+	}
+	
+	ruling_party = conservative
+	last_election = "1999.11.27"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+add_opinion_modifier = {
+	target = AST
+	modifier = ANZUS
+}
+
+add_opinion_modifier = {
+	target = AST
+	modifier = ANZUS_trade
+}
+
+add_opinion_modifier = {
+	target = AST
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = CAN
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = ENG
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = USA
+	modifier = ANZUS
+}
+
+add_opinion_modifier = {
+	target = USA
+	modifier = ANZUS_trade
+}
+
+add_opinion_modifier = {
+	target = USA
+	modifier = five_eyes_agreement
+}
+
+create_country_leader = {
+	name = "Anwar-ul Ghani"
+	picture = "Portrait_NZL_ANWAR-UL_GHANI.dds"
+	ideology = islamic_republican
+}
+
+create_country_leader = {
+	name = "Kyle Chapman"
+	picture = "Portrait_NZL_Kyle_Chapman.dds"
+	ideology = national_socialist
+}
+
+create_country_leader = {
+	name = "Anton Foljambe"
+	picture = "Portrait_NZL_Anton_Foljambe.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Anne I of Windsor"
+	picture = "Portrait_NZL_Anne_I.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Winston Peters"
+	picture = "Portrait_NZL_Winston_Peters.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "Jennifer Shipley"
+	picture = "Portrait_NZL_Jennifer_Shipley.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Richard Prebble"
+	picture = "Portrait_NZL_Richard_Prebble.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Rod Donald"
+	picture = "Portrait_NZL_Rod_Donald.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Peter Dunne"
+	picture = "Portrait_NZL_Peter_Dunne.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Helen Clark"
+	picture = "Portrait_NZL_Helen_Clark.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Angeline Greensill"
+	picture = "Portrait_NZL_Angeline_Greensill.dds"
+	ideology = democratic_socialist_ideology
+}
+create_country_leader = {
+	name = "Annalucia Vermunt"
+	picture = "Portrait_NZL_Annalucia_Vermunt.dds"
+	ideology = leninist
+}
+
+create_corps_commander = {
+	name = "Richard Rhys Jones"
+	picture = "Portrait_NZL_general_Richard_Rhys_Jones.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "John Martin"
+	picture = "Portrait_NZL_admiral_John_Martin.dds"
+	skill = 1
+}
+
+2001.10.8 = {
+	create_country_leader = {
+		name = "Bill English"
+		desc = "POLITICIAN_NZL_BILL_ENGLISH_DESC"
+		picture = "Portrait_NZL_Bill_English.dds"
+		expire = "2020.1.1"
+		ideology = libertarian
+		
+		traits = {
+		
+		}
+	}
+}
+2003.10.28 = {
+	create_country_leader = {
+		name = "Don Brash"
+		desc = "POLITICIAN_NZL_DON_BRASH_DESC"
+		picture = "Portrait_NZL_Don_Brash.dds"
+		expire = "2020.1.1"
+		ideology = libertarian
+		
+		traits = {
+		
+		}
+	}
+}
+2008.11.19 = {
+	create_country_leader = {
+		name = "Phil Goff"
+		desc = "POLITICIAN_NZL_PHIL_GOFF_DESC"
+		picture = "Portrait_NZL_Phil_Goff.dds"
+		expire = "2020.1.1"
+		ideology = social_democrat_ideology
+		
+		traits = {
+		
+		}
+	}
+}
+2011.4.30 = { 
+    set_party_name = {
+		ideology = democratic_socialist
+		long_name = NZL_democratic_socialist_ideology_party_Mana_Party_long
+		name = NZL_democratic_socialist_ideology_party_Mana_Movement
+    }
+	create_country_leader = {
+		name = "Hone Harawira"
+		desc = "POLITICIAN_NZL_HONE_HARAWIRA_DESC"
+		picture = "Portrait_NZL_Hone_Harawira.dds"
+		ideology = democratic_socialist_ideology
+		expire = "2050.1.1"
+	}
+}
+2011.12.13 = {
+    create_country_leader = {
+		name = "David Shearer"
+		desc = "POLITICIAN_NZL_DAVID_SHEARER_DESC"
+		picture = "Portrait_NZL_David_Shearer.dds"
+		expire = "2020.1.1"
+		ideology = social_democrat_ideology
+		
+		traits = {
+		
+		}
+	}
+}
+2013.9.15 = {
+    create_country_leader = {
+		name = "David Cunliffe"
+		desc = "POLITICIAN_NZL_DAVID_CUNLIFFE_DESC"
+		picture = "Portrait_NZL_David_Cunliffe.dds"
+		expire = "2020.1.1"
+		ideology = social_democrat_ideology
+		
+		traits = {
+		
+		}
+	}
+}
+2014.2.1 = {
+    create_corps_commander = {
+		name = "Tim Keating"
+		picture = "Portrait_NZL_general_Tim_Keating.dds"
+		skill = 2
+
+	}
+}
+2016.6.1 = {
+	set_politics = {
+        last_election = "2014.9.20"
+		ruling_party = conservative
+		elections_allowed = yes
+		parties = {
+			social_liberal = {
+				popularity = 1
+			}
+			conservative = {
+				popularity = 52
+			}
+			market_liberal = {
+				popularity = 1
+			}
+			progressive = {
+				popularity = 11
+			}
+			reactionary = {
+				popularity = 6
+            }
+            social_democrat = {
+				popularity = 28
+			}
+			democratic_socialist = {
+				popularity = 1
+			}
+		}
+	}
+	create_country_leader = {
+		name = "John Key"
+		desc = "POLITICIAN_NZL_JOHN_KEY_DESC"
+		picture = "Portrait_NZL_John_Key.dds"
+		expire = "2050.1.1"
+		ideology = fiscal_conservative
+		
+		traits = {
+		
+		}
+	}
+	create_country_leader = {
+		name = "Andrew Little"
+		desc = "POLITICIAN_NZL_ANDREW_LITTLE_DESC"
+		picture = "Portrait_NZL_Andrew_Little.dds"
+		expire = "2050.1.1"
+		ideology = social_democrat_ideology
+		
+		traits = {
+		
+		}
+	}
+	create_country_leader = {
+		name = "Metiria Turei"
+		desc = "POLITICIAN_NZL_METIRIA_TUREI_DESC"
+		picture = "Portrait_NZL_Metiria_Turei.dds"
+		expire = "2050.1.1"
+		ideology = green
+		
+		traits = {
+		
+		}
+	}
+	create_country_leader = {
+		name = "David Seymour"
+		desc = "POLITICIAN_NZL_DAVID_SEYMOUR_DESC"
+		picture = "Portrait_NZL_David_Seymour.dds"
+		expire = "2050.1.1"
+		ideology = libertarian
+		
+		traits = {
+		
+		}
+	}
+	create_country_leader = {
+		name = "Hazim Arafeh"
+		desc = "POLITICIAN_NZL_HAZIM_ARAFEH_DESC"
+		picture = "Portrait_NZL_Hazim_Arafeh.dds"
+		expire = "2050.1.1"
+		ideology = islamic_republican
+		
+		traits = {
+		
+		}
+	}
+}

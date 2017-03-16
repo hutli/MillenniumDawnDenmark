@@ -1,0 +1,585 @@
+update_stability = {
+	#NEEDS STABILITY 1
+	if = {
+		limit = { has_country_flag = { flag = national_stability value < 11 } }
+		if = {
+			limit = { has_any_stability = no }
+			add_ideas = stability_1
+		}
+		if = {
+			limit = { has_idea = stability_2 }
+			swap_ideas = { remove_idea = stability_2 add_idea = stability_1 }
+		}
+		if = {
+			limit = { has_idea = stability_3 }
+			swap_ideas = { remove_idea = stability_3 add_idea = stability_1 }
+		}
+		if = {
+			limit = { has_idea = stability_4 }
+			swap_ideas = { remove_idea = stability_4 add_idea = stability_1 }
+		}
+		if = {
+			limit = { has_idea = stability_5 }
+			swap_ideas = { remove_idea = stability_5 add_idea = stability_1 }
+		}
+		if = {
+			limit = { has_idea = stability_6 }
+			swap_ideas = { remove_idea = stability_6 add_idea = stability_1 }
+		}
+		if = {
+			limit = { has_idea = stability_7 }
+			swap_ideas = { remove_idea = stability_7 add_idea = stability_1 }
+		}
+	}
+	#NEEDS STABILITY 2
+	if = {
+		limit = { 
+			has_country_flag = {
+				flag = national_stability value > 10
+			}
+			has_country_flag = {
+				flag = national_stability value < 26
+			}
+		}
+		if = {
+			limit = {
+				has_any_stability = no
+			}
+			add_ideas = stability_2
+		}
+		if = {
+			limit = { has_idea = stability_1 }
+			swap_ideas = {
+				remove_idea = stability_1
+				add_idea = stability_2
+			}
+		}
+		if = {
+			limit = { has_idea = stability_3 }
+			swap_ideas = {
+				remove_idea = stability_3
+				add_idea = stability_2
+			}
+		}
+		if = {
+			limit = { has_idea = stability_4 }
+			swap_ideas = {
+				remove_idea = stability_4
+				add_idea = stability_2
+			}
+		}
+		if = {
+			limit = { has_idea = stability_5 }
+			swap_ideas = {
+				remove_idea = stability_5
+				add_idea = stability_2
+			}
+		}
+		if = {
+			limit = { has_idea = stability_6 }
+			swap_ideas = {
+				remove_idea = stability_6
+				add_idea = stability_2
+			}
+		}
+		if = {
+			limit = { has_idea = stability_7 }
+			swap_ideas = {
+				remove_idea = stability_7
+				add_idea = stability_2
+			}
+		}
+	}
+	#NEEDS STABILITY 3
+	if = {
+		limit = { 
+			has_country_flag = {
+				flag = national_stability value > 25
+			}
+			has_country_flag = {
+				flag = national_stability value < 41
+			}
+		}
+		if = {
+			limit = {
+				has_any_stability = no
+			}
+			add_ideas = stability_3
+		}
+		if = {
+			limit = { has_idea = stability_1 }
+			swap_ideas = {
+				remove_idea = stability_1
+				add_idea = stability_3
+			}
+		}
+		if = {
+			limit = { has_idea = stability_2 }
+			swap_ideas = {
+				remove_idea = stability_2
+				add_idea = stability_3
+			}
+		}
+		if = {
+			limit = { has_idea = stability_4 }
+			swap_ideas = {
+				remove_idea = stability_4
+				add_idea = stability_3
+			}
+		}
+		if = {
+			limit = { has_idea = stability_5 }
+			swap_ideas = {
+				remove_idea = stability_5
+				add_idea = stability_3
+			}
+		}
+		if = {
+			limit = { has_idea = stability_6 }
+			swap_ideas = {
+				remove_idea = stability_6
+				add_idea = stability_3
+			}
+		}
+		if = {
+			limit = { has_idea = stability_7 }
+			swap_ideas = {
+				remove_idea = stability_7
+				add_idea = stability_3
+			}
+		}
+	}
+	#NEEDS STABILITY 4
+	if = {
+		limit = { 
+			has_country_flag = {
+				flag = national_stability value > 40
+			}
+			has_country_flag = {
+				flag = national_stability value < 61
+			}
+		}
+		if = {
+			limit = {
+				has_any_stability = no
+			}
+			add_ideas = stability_4
+		}
+		if = {
+			limit = { has_idea = stability_1 }
+			swap_ideas = {
+				remove_idea = stability_1
+				add_idea = stability_4
+			}
+		}
+		if = {
+			limit = { has_idea = stability_2 }
+			swap_ideas = {
+				remove_idea = stability_2
+				add_idea = stability_4
+			}
+		}
+		if = {
+			limit = { has_idea = stability_3 }
+			swap_ideas = {
+				remove_idea = stability_3
+				add_idea = stability_4
+			}
+		}
+		if = {
+			limit = { has_idea = stability_5 }
+			swap_ideas = {
+				remove_idea = stability_5
+				add_idea = stability_4
+			}
+		}
+		if = {
+			limit = { has_idea = stability_6 }
+			swap_ideas = {
+				remove_idea = stability_6
+				add_idea = stability_4
+			}
+		}
+		if = {
+			limit = { has_idea = stability_7 }
+			swap_ideas = {
+				remove_idea = stability_7
+				add_idea = stability_4
+			}
+		}
+	}
+	#NEEDS STABILITY 5
+	if = {
+		limit = { 
+			has_country_flag = {
+				flag = national_stability value > 60
+			}
+			has_country_flag = {
+				flag = national_stability value < 76
+			}
+		}
+		if = {
+			limit = {
+				has_any_stability = no
+			}
+			add_ideas = stability_5
+		}
+		if = {
+			limit = { has_idea = stability_1 }
+			swap_ideas = {
+				remove_idea = stability_1
+				add_idea = stability_5
+			}
+		}
+		if = {
+			limit = { has_idea = stability_2 }
+			swap_ideas = {
+				remove_idea = stability_2
+				add_idea = stability_5
+			}
+		}
+		if = {
+			limit = { has_idea = stability_3 }
+			swap_ideas = {
+				remove_idea = stability_3
+				add_idea = stability_5
+			}
+		}
+		if = {
+			limit = { has_idea = stability_4 }
+			swap_ideas = {
+				remove_idea = stability_4
+				add_idea = stability_5
+			}
+		}
+		if = {
+			limit = { has_idea = stability_6 }
+			swap_ideas = {
+				remove_idea = stability_6
+				add_idea = stability_5
+			}
+		}
+		if = {
+			limit = { has_idea = stability_7 }
+			swap_ideas = {
+				remove_idea = stability_7
+				add_idea = stability_5
+			}
+		}
+	}
+	#NEEDS STABILITY 6
+	if = {
+		limit = { 
+			has_country_flag = {
+				flag = national_stability value > 75
+			}
+			has_country_flag = {
+				flag = national_stability value < 91
+			}
+		}
+		if = {
+			limit = {
+				has_any_stability = no
+			}
+			add_ideas = stability_6
+		}
+		if = {
+			limit = { has_idea = stability_1 }
+			swap_ideas = {
+				remove_idea = stability_1
+				add_idea = stability_6
+			}
+		}
+		if = {
+			limit = { has_idea = stability_2 }
+			swap_ideas = {
+				remove_idea = stability_2
+				add_idea = stability_6
+			}
+		}
+		if = {
+			limit = { has_idea = stability_3 }
+			swap_ideas = {
+				remove_idea = stability_3
+				add_idea = stability_6
+			}
+		}
+		if = {
+			limit = { has_idea = stability_4 }
+			swap_ideas = {
+				remove_idea = stability_4
+				add_idea = stability_6
+			}
+		}
+		if = {
+			limit = { has_idea = stability_5 }
+			swap_ideas = {
+				remove_idea = stability_5
+				add_idea = stability_6
+			}
+		}
+		if = {
+			limit = { has_idea = stability_7 }
+			swap_ideas = {
+				remove_idea = stability_7
+				add_idea = stability_6
+			}
+		}
+	}
+	#NEEDS STABILITY 7
+	if = {
+		limit = { 
+			has_country_flag = {
+				flag = national_stability value > 90
+			}
+		}
+		if = {
+			limit = {
+				has_any_stability = no
+			}
+			add_ideas = stability_7
+		}
+		if = {
+			limit = { has_idea = stability_1 }
+			swap_ideas = {
+				remove_idea = stability_1
+				add_idea = stability_7
+			}
+		}
+		if = {
+			limit = { has_idea = stability_2 }
+			swap_ideas = {
+				remove_idea = stability_2
+				add_idea = stability_7
+			}
+		}
+		if = {
+			limit = { has_idea = stability_3 }
+			swap_ideas = {
+				remove_idea = stability_3
+				add_idea = stability_7
+			}
+		}
+		if = {
+			limit = { has_idea = stability_4 }
+			swap_ideas = {
+				remove_idea = stability_4
+				add_idea = stability_7
+			}
+		}
+		if = {
+			limit = { has_idea = stability_5 }
+			swap_ideas = {
+				remove_idea = stability_5
+				add_idea = stability_7
+			}
+		}
+		if = {
+			limit = { has_idea = stability_6 }
+			swap_ideas = {
+				remove_idea = stability_6
+				add_idea = stability_7
+			}
+		}
+	}
+}
+
+set_starting_stability = {
+	if = {
+		limit = { has_country_flag = starting_stability_very_high }
+		set_country_flag = {
+			flag = national_stability
+			value = 80
+		}
+		custom_effect_tooltip = TT_starting_stability_VH
+	}
+	if = {
+		limit = { has_country_flag = starting_stability_high }
+		set_country_flag = {
+			flag = national_stability
+			value = 65
+		}
+		custom_effect_tooltip = TT_starting_stability_H
+	}
+	if = {
+		limit = { 
+			OR = {
+				has_country_flag = starting_stability_average 
+				AND = {
+					NOT = { has_country_flag = starting_stability_average }
+					NOT = { has_country_flag = starting_stability_high }
+					NOT = { has_country_flag = starting_stability_very_high }
+					NOT = { has_country_flag = starting_stability_low }
+					NOT = { has_country_flag = starting_stability_very_low }
+				}
+			}
+		}
+		set_country_flag = {
+			flag = national_stability
+			value = 50
+		}
+		custom_effect_tooltip = TT_starting_stability_M
+	}
+	if = {
+		limit = { has_country_flag = starting_stability_low }
+		set_country_flag = {
+			flag = national_stability
+			value = 35
+		}
+		custom_effect_tooltip = TT_starting_stability_L
+	}
+	if = {
+		limit = { has_country_flag = starting_stability_very_low }
+		set_country_flag = {
+			flag = national_stability
+			value = 20
+		}
+		custom_effect_tooltip = TT_starting_stability_VL
+	}
+	
+	update_stability = yes
+}
+
+increase_stability_by_1 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = 1
+	}
+	custom_effect_tooltip = TT_stability_will_increase_by_1
+}
+
+increase_stability_by_2 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = 2
+	}
+	custom_effect_tooltip = TT_stability_will_increase_by_2
+}
+
+increase_stability_by_3 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = 3
+	}
+	custom_effect_tooltip = TT_stability_will_increase_by_3
+}
+
+increase_stability_by_4 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = 4
+	}
+	custom_effect_tooltip = TT_stability_will_increase_by_4
+}
+
+increase_stability_by_5 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = 5
+	}
+	custom_effect_tooltip = TT_stability_will_increase_by_5
+}
+
+increase_stability_by_10 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = 10
+	}
+	custom_effect_tooltip = TT_stability_will_increase_by_10
+}
+
+increase_stability_by_15 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = 15
+	}
+	custom_effect_tooltip = TT_stability_will_increase_by_15
+}
+
+increase_stability_by_20 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = 20
+	}
+	custom_effect_tooltip = TT_stability_will_increase_by_20
+}
+
+increase_stability_by_25 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = 25
+	}
+	custom_effect_tooltip = TT_stability_will_increase_by_25
+}
+
+decrease_stability_by_1 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = -1
+	}
+	custom_effect_tooltip = TT_stability_will_decrease_by_1
+}
+
+decrease_stability_by_2 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = -2
+	}
+	custom_effect_tooltip = TT_stability_will_decrease_by_2
+}
+
+decrease_stability_by_3 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = -3
+	}
+	custom_effect_tooltip = TT_stability_will_decrease_by_3
+}
+
+decrease_stability_by_4 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = -4
+	}
+	custom_effect_tooltip = TT_stability_will_decrease_by_4
+}
+
+decrease_stability_by_5 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = -5
+	}
+	custom_effect_tooltip = TT_stability_will_decrease_by_5
+}
+
+decrease_stability_by_10 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = -10
+	}
+	custom_effect_tooltip = TT_stability_will_decrease_by_10
+}
+
+decrease_stability_by_15 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = -15
+	}
+	custom_effect_tooltip = TT_stability_will_decrease_by_15
+}
+
+decrease_stability_by_20 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = -20
+	}
+	custom_effect_tooltip = TT_stability_will_decrease_by_20
+}
+
+decrease_stability_by_25 = {
+	modify_country_flag = {
+		flag = national_stability
+		value = -25
+	}
+	custom_effect_tooltip = TT_stability_will_decrease_by_25
+}

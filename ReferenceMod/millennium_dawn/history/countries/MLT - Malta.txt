@@ -1,0 +1,220 @@
+﻿capital = 116
+
+oob = "MLT_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = starting_stability_high
+
+set_country_flag = country_language_english
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_steady
+	commonwealth_of_nations_member
+}
+
+set_politics = {
+	parties = {
+		conservative = {
+			popularity = 51.8
+		}
+		social_democrat = {
+			popularity = 47.4
+		}
+		progressive = {
+			popularity = 0.7	
+		}
+		social_liberal = {
+			popularity = 0.1
+		}
+	}
+	
+	ruling_party = conservative
+	last_election = "1998.9.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Edward Fenech Adami"
+	picture = "Portrait_MLT_Edward_Fenech_Adami.dds"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Alfred Sant"
+	picture = "Portrait_MLT_Alfred_Sant.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Henry Vassallo"
+	picture = "Portrait_MLT_Henry_Vassallo.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Marlene Farrugia"
+	picture = "Portrait_MLT_Marlene_Farrugia.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Josie Muscat"
+	picture = "Portrait_MLT_Josie_Muscat.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Norman Lowell"
+	picture = "Portrait_MLT_Norman_Lowell.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Victor Degiovanni"
+	picture = "Portrait_MLT_Victor_Degiovanni.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Mohammed Elsadi"
+	picture = "Portrait_MLT_Mohammed_Elsadi.dds"
+	ideology = islamic_republican
+}
+
+2016.6.1 = {
+
+	set_politics = {
+        last_election = "2013.3.9"
+		ruling_party = social_democrat
+		elections_allowed = yes
+		parties = {
+			social_liberal = {
+				popularity = 0.8
+			}
+			conservative = {
+				popularity = 28
+			}
+			progressive = {
+				popularity = 2
+			}
+            social_democrat = {
+				popularity = 40
+			}
+		}
+	}
+	
+	create_country_leader = {
+		name = "Simon Busuttil"
+		picture = "Portrait_MLT_Simon_Busuttil.dds"
+		ideology = christian_democrat
+	}
+
+	create_country_leader = {
+		name = "Joseph Muscat"
+		picture = "Portrait_MLT_Joseph_Muscat.dds"
+		ideology = social_democrat_ideology
+	}
+
+	create_country_leader = {
+		name = "Arnold Cassola"
+		picture = "Portrait_MLT_Arnold_Cassola.dds"
+		ideology = green
+	}
+
+}
+
+2004.1.1 = {
+	add_ideas = {
+		idea_eu_member
+	}
+}

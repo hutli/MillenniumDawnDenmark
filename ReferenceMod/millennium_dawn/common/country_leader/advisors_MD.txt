@@ -1,0 +1,99 @@
+leader_traits = {
+	
+	islamist_party_membership = {
+		islamist_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	fascist_party_membership = {
+		fascist_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nationalist_party_membership = {
+		nationalist_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	monarchist_party_membership = {
+		monarchist_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reactionary_party_membership = {
+		reactionary_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	conservative_party_membership = {
+		conservative_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	market_liberal_party_membership = {
+		market_liberal_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	social_liberal_party_membership = {
+		social_liberal_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	social_democrat_party_membership = {
+		social_democrat_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	progressive_party_membership = {
+		progressive_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	democratic_socialist_party_membership = {
+		democratic_socialist_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	communist_party_membership = {
+		communist_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

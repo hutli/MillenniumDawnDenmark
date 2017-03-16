@@ -1,0 +1,2849 @@
+focus_tree = {
+	
+	id = japan_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
+	
+	@development_tree_left = 0
+	@development_tree_center = 1
+	@development_tree_right = 2
+	
+	@national_renewal_tree_left = 3
+	@national_renewal_tree_center = 4
+	@national_renewal_tree_right = 5
+	
+	@bushido_start = 10
+	@army_tree_left = 7
+	@army_tree_center = 8
+	@army_tree_right = 9
+	@navy_tree_left = 11
+	@navy_tree_center = 12
+	@navy_tree_right = 13
+	@air_tree_center = 15
+	@air_tree_right = 16
+	
+	@infrastructure_tree_left = 17
+	@infrastructure_tree_center = 18
+	@infrastructure_tree_right = 19
+	@infrastructure_tree_far_right = 20
+	@infrastructure_tree_very_far_right = 21
+	
+	@future_of_japan_start = 8
+	@aggressive_strategies_start = 17
+	
+	@defensive_strategies_tree_very_far_left = 6
+	@defensive_strategies_tree_far_left = 7
+	@defensive_strategies_tree_left = 8
+	@defensive_strategies_tree_center = 9
+	@defensive_strategies_tree_right = 10
+	
+	@democratic_state_tree_left = 12
+	@democratic_state_tree_center = 13
+	@democratic_state_tree_right = 14
+	
+	@popular_state_tree_far_left = 15
+	@popular_state_tree_left = 16
+	@popular_state_tree_center = 17
+	@popular_state_tree_right = 18
+	@popular_state_tree_far_right = 19
+	
+	@warrior_state_tree_left = 20
+	@warrior_state_tree_center = 21
+	@warrior_state_tree_right = 22
+	@warrior_state_tree_far_right = 23
+	@warrior_state_tree_very_far_right = 24
+	
+	focus = {
+		id = JAP_develop_honshu
+		icon = industry_civilian
+		x = @development_tree_center
+		y = 0
+		cost = 15
+		
+		completion_reward = {
+			282 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			532 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_national_renewal
+		icon = national_unity
+		x = @national_renewal_tree_center
+		y = 0
+		cost = 10
+		
+		completion_reward = {
+			add_national_unity = 0.05
+			add_political_power = 50
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_bushido
+		icon = samurai
+		x = @bushido_start
+		y = 0
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.15
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 0.15
+				uses = 1
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.15
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_finish_nishiseto
+		icon = infrastructure
+		x = @infrastructure_tree_center
+		y = 0
+		cost = 5
+		
+		completion_reward = {
+			529 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			530 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_honshu_steel
+		icon = production2
+		x = @development_tree_left
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_develop_honshu
+		}
+		
+		completion_reward = {
+			529 = { add_resource = { type = steel amount = 5 } }
+			531 = { add_resource = { type = steel amount = 8 } }
+			532 = { add_resource = { type = steel amount = 4 } }
+			535 = { add_resource = { type = steel amount = 5 } }
+			282 = { add_resource = { type = steel amount = 14 } }
+			534 = { add_resource = { type = steel amount = 3 } }
+			533 = { add_resource = { type = steel amount = 5 } }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_path_of_peace
+		icon = demand_territory2
+		x = @national_renewal_tree_left
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_national_renewal
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_path_of_war
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+	}
+	
+	focus = {
+		id = JAP_path_of_war
+		icon = infantry_japan
+		x = @national_renewal_tree_right
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_national_renewal
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_path_of_peace
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			news_event = news.71
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	focus = {
+		id = JAP_continental_campaigns
+		icon = infantry_axis
+		x = @army_tree_center
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_bushido
+		}
+		
+		completion_reward = {
+			army_experience = 10
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_ocean_campaigns
+		icon = navy2
+		x = @navy_tree_center
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_bushido
+		}
+		
+		completion_reward = {
+			navy_experience = 10
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_air_force_focus
+		icon = airforce
+		x = @air_tree_center
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_bushido
+		}
+		
+		completion_reward = {
+			air_experience = 10
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_southern_expressways
+		icon = infrastructure
+		x = @infrastructure_tree_left
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_finish_nishiseto
+		}
+		
+		completion_reward = {
+			528 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			530 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			529 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_new_trade_policy
+		icon = trade_deal
+		x = @infrastructure_tree_far_right
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_finish_nishiseto
+		}
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = { original_tag = USA }
+					NOT = { original_tag = PRC }
+					NOT = { original_tag = PRK }
+					NOT = { original_tag = KOR }
+				}
+				add_opinion_modifier = {
+					target = JAP
+					modifier = trade_influence_1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_develop_kyushu
+		icon = industry_civilian
+		x = @development_tree_center
+		y = 2
+		cost = 15
+		
+		prerequisite = {
+			focus = JAP_develop_honshu
+		}
+		
+		completion_reward = {
+			528 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_national_industrial_project
+		icon = industry_military
+		x = @national_renewal_tree_left
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_path_of_peace
+		}
+		
+		completion_reward = {
+			add_ideas = idea_focus_industrial_development_program
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_recruitment_programs
+		icon = propaganda
+		x = @national_renewal_tree_right
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_path_of_war
+		}
+		
+		completion_reward = {
+			add_ideas = idea_focus_new_recruitment_strategies
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_artillery_training
+		icon = artillery2
+		x = @army_tree_left
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_continental_campaigns
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_officer_school
+		icon = army_officers
+		x = @army_tree_right
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_continental_campaigns
+		}
+		
+		completion_reward = {
+			army_experience = 50
+			add_ideas = idea_focus_army_officer_school
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_destroyer_program
+		icon = anti_submarine
+		x = @navy_tree_left
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_ocean_campaigns
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = destroyer_bonus
+				bonus = 0.25
+				uses = 2
+				category = dd_tech
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_cruiser_program
+		icon = cruisers
+		x = @navy_tree_right
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_ocean_campaigns
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = cruiser_bonus
+				bonus = 0.3
+				uses = 2
+				category = ca_tech
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_light_planes
+		icon = fighter
+		x = @air_tree_center
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_air_force_focus
+		}
+		
+		completion_reward = {
+			add_ideas = idea_focus_generic_fighter_focus
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.3
+				uses = 2
+				category = light_fighter
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_northern_expressways
+		icon = infrastructure
+		x = @infrastructure_tree_left
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_southern_expressways
+		}
+		
+		completion_reward = {
+			536 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			533 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			282 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			534 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_trade_with_america
+		icon = align_to_america
+		x = @infrastructure_tree_right
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_new_trade_policy
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_trade_with_china
+		}
+		
+		completion_reward = {
+			USA = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = trade_influence_3
+				}
+			}
+			JAP = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = trade_influence_2
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	
+	focus = {
+		id = JAP_trade_with_china
+		icon = align_to_china
+		x = @infrastructure_tree_very_far_right
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_new_trade_policy
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_trade_with_america
+		}
+		
+		completion_reward = {
+			news_event = news.72
+			PRC = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = trade_influence_3
+				}
+			}
+			JAP = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = trade_influence_2
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	focus = {
+		id = JAP_develop_shikoku
+		icon = industry_civilian
+		x = @development_tree_left
+		y = 3
+		cost = 15
+		
+		prerequisite = {
+			focus = JAP_develop_kyushu
+		}
+		
+		completion_reward = {
+			530 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_oil_production
+		icon = oil_production
+		x = @development_tree_right
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_develop_kyushu
+		}
+		
+		completion_reward = {
+			876 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 13215
+					level = 3
+					instant_build = yes
+				}
+			}
+			every_country = {
+				limit = {
+					exists = yes
+					NOT = { tag = ROOT }
+					OR = {
+						876 = { is_core_of = PREV }
+						876 = { is_claimed_by = PREV }
+					}
+				}
+				add_opinion_modifier = {
+					target = JAP
+					modifier = senkaku_oil_production
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_political_renewal
+		icon = demand_territory
+		x = @national_renewal_tree_center
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_national_industrial_project
+			focus = JAP_recruitment_programs
+		}
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_infantry_training
+		icon = infantry_axis
+		x = @army_tree_center
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_artillery_training
+		}
+		prerequisite = {
+			focus = JAP_officer_school
+		}
+		
+		completion_reward = {
+			army_experience = 20
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_submarine_program
+		icon = submarines
+		x = @navy_tree_left
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_destroyer_program
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = submarine_bonus
+				bonus = 0.25
+				uses = 3
+				category = ss_tech
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_carrier_program
+		icon = carriers
+		x = @navy_tree_right
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_cruiser_program
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = carrier_bonus
+				bonus = 0.4
+				uses = 2
+				category = cv_tech
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_heavy_planes
+		icon = bomber
+		x = @air_tree_center
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_light_planes
+		}
+		
+		completion_reward = {
+			add_ideas = idea_focus_generic_bomber_focus
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.15
+				uses = 2
+				category = tactical_bomber
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.15
+				uses = 1
+				category = naval_bomber
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_trade_with_south_korea
+		icon = align_to_south_korea
+		x = @infrastructure_tree_right
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_trade_with_america
+		}
+		
+		completion_reward = {
+			KOR = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = trade_influence_3
+				}
+			}
+			JAP = {
+				add_opinion_modifier = {
+					target = KOR
+					modifier = trade_influence_2
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_trade_with_north_korea
+		icon = align_to_north_korea
+		x = @infrastructure_tree_very_far_right
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_trade_with_china
+		}
+		
+		available = {
+			NOT = { has_completed_focus = JAP_befriend_south_korea }
+		}
+		
+		completion_reward = {
+			PRK = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = trade_influence_3
+				}
+			}
+			JAP = {
+				add_opinion_modifier = {
+					target = PRK
+					modifier = trade_influence_2
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_develop_hokkaido
+		icon = industry_civilian
+		x = @development_tree_left
+		y = 4
+		cost = 15
+		
+		prerequisite = {
+			focus = JAP_develop_shikoku
+		}
+		
+		completion_reward = {
+			536 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_rare_metal_production
+		icon = construction2
+		x = @development_tree_right
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_oil_production
+		}
+		
+		completion_reward = {
+			random_owned_state = { add_resource = { type = chromium amount = 3 } }
+			random_owned_state = { add_resource = { type = chromium amount = 4 } }
+			random_owned_state = { add_resource = { type = tungsten amount = 3 } }
+			random_owned_state = { add_resource = { type = tungsten amount = 4 } }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_adapt_article_9
+		icon = destroy_establishment
+		x = @national_renewal_tree_right
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_political_renewal
+			focus = JAP_recruitment_programs
+		}
+		
+		available = {
+			OR = {
+				has_completed_focus = JAP_recruitment_programs
+				threat > 0.2
+			}
+		}
+		
+		bypass = {
+			NOT = { has_idea = japanese_article_9 }
+		}
+		
+		completion_reward = {
+			news_event = news.73
+			add_named_threat = {
+				threat = 1
+				name = threat_JAP_revoked_article_9
+			}
+			add_national_unity = -0.05
+			swap_ideas = {
+				remove_idea = japanese_article_9
+				add_idea = japanese_article_9_adapted
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_tank_program
+		icon = tank
+		x = @army_tree_left
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_infantry_training
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.2
+				uses = 2
+				category = armor
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_army_exercises
+		icon = infantry_axis
+		x = @army_tree_right
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_infantry_training
+		}
+		
+		completion_reward = {
+			army_experience = 25
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_naval_production
+		icon = navy
+		x = @navy_tree_left
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_submarine_program
+			focus = JAP_carrier_program
+		}
+		
+		completion_reward = {
+			navy_experience = 50
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_naval_invasion_protocols
+		icon = amphibious_assault
+		x = @navy_tree_right
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_submarine_program
+			focus = JAP_carrier_program
+		}
+		
+		completion_reward = {
+			navy_experience = 50
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_air_base_project
+		icon = air_production
+		x = @air_tree_right
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_light_planes
+		}
+		prerequisite = {
+			focus = JAP_northern_expressways
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_extra_research_slot
+		icon = research
+		x = @development_tree_center
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_develop_hokkaido
+		}
+		prerequisite = {
+			focus = JAP_rare_metal_production
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_ideological_debate
+		icon = national_unity
+		x = @national_renewal_tree_center
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_political_renewal
+		}
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_army_doctrine_school
+		icon = army_doctrine
+		x = @army_tree_right
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_army_exercises
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_navy_doctrine_school
+		icon = naval_doctrine
+		x = @navy_tree_left
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_naval_production
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_the_future_of_japan
+		icon = demand_territory
+		x = @future_of_japan_start
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_ideological_debate
+		}
+		prerequisite = {
+			focus = JAP_army_doctrine_school
+			focus = JAP_navy_doctrine_school
+		}
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_defensive_strategies
+		icon = city_fort
+		x = @defensive_strategies_tree_center
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_the_future_of_japan
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_aggressive_strategies
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	
+	focus = {
+		id = JAP_aggressive_strategies
+		icon = army_logistics
+		x = @aggressive_strategies_start
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_the_future_of_japan
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_defensive_strategies
+		}
+		
+		completion_reward = {
+			news_event = news.74
+			add_political_power = -50
+			add_national_unity = -0.05
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	focus = {
+		id = JAP_fortification_focus
+		icon = military_fort
+		x = @defensive_strategies_tree_left
+		y = 8
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_defensive_strategies
+		}
+		
+		completion_reward = {
+			add_ideas = ENG_defensive_constructions_idea
+			add_national_unity = 0.05
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_defense_through_friendship
+		icon = improve_relations
+		x = @defensive_strategies_tree_right
+		y = 8
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_defensive_strategies
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			every_country = {
+				limit = {
+					has_democratic_form_of_government = yes
+					OR = {
+						original_tag = CHI
+						original_tag = PHI
+						original_tag = PRC
+						original_tag = PRK
+						original_tag = KOR
+						original_tag = VIN
+						original_tag = LAO
+						original_tag = CMB
+						original_tag = MAY
+						original_tag = INS
+					}
+				}
+				add_opinion_modifier = {
+					target = JAP
+					modifier = recent_actions_positive
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_democratic_state
+		icon = democracy
+		x = @democratic_state_tree_center
+		y = 8
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_aggressive_strategies
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_popular_state
+		}
+		mutually_exclusive = {
+			focus = JAP_warrior_state
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.07
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = reactionary
+				popularity = 0.01
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	
+	focus = {
+		id = JAP_popular_state
+		icon = communism
+		x = @popular_state_tree_center
+		y = 8
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_aggressive_strategies
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_democratic_state
+		}
+		mutually_exclusive = {
+			focus = JAP_warrior_state
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_warrior_state
+		icon = samurai
+		x = @warrior_state_tree_center
+		y = 8
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_aggressive_strategies
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_democratic_state
+		}
+		mutually_exclusive = {
+			focus = JAP_popular_state
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = monarchist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_befriend_vietnam
+		icon = align_to_vietnam
+		x = @defensive_strategies_tree_left
+		y = 9
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_defense_through_friendship
+		}
+		
+		completion_reward = {
+			VIN = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = declaration_of_friendship
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = JAP_befriend_taiwan
+		icon = align_to_taiwan
+		x = @defensive_strategies_tree_right
+		y = 9
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_defense_through_friendship
+		}
+		
+		completion_reward = {
+			CHI = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = declaration_of_friendship
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = JAP_interventionism
+		icon = cavalry
+		x = @democratic_state_tree_center
+		y = 9
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_democratic_state
+		}
+		
+		completion_reward = {
+			news_event = news.75
+			if = {
+				limit = { has_idea = japanese_article_9 }
+				swap_ideas = {
+					add_idea = JAP_democratic_interventionism
+					remove_idea = japanese_article_9
+				}
+			}
+			if = {
+				limit = { has_idea = japanese_article_9_adapted }
+				swap_ideas = {
+					add_idea = JAP_democratic_interventionism
+					remove_idea = japanese_article_9_adapted
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = japanese_article_9 }
+					NOT = { has_idea = japanese_article_9_adapted }
+				}
+				add_political_power = 25
+				add_national_unity = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_the_red_sun
+		icon = communism4
+		x = @popular_state_tree_left
+		y = 9
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_popular_state
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = {
+				ideology = communist
+				popularity = 0.1
+			}
+			add_ideas = idea_focus_generic_marxist_doctrine
+			if = {
+				limit = { has_idea = japanese_article_9 }
+				remove_ideas = japanese_article_9
+			}
+			if = {
+				limit = { has_idea = japanese_article_9_adapted }
+				remove_ideas = japanese_article_9_adapted
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_abolish_the_monarchy
+		icon = communism2
+		x = @popular_state_tree_right
+		y = 9
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_popular_state
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			add_national_unity = -0.05
+			news_event = news.76
+			if = {
+				limit = { has_idea = idea_JAP_emperor_akihito }
+				remove_ideas = idea_JAP_emperor_akihito
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_allegiance_to_the_emperor
+		icon = monarchy
+		x = @warrior_state_tree_left
+		y = 9
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_warrior_state
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_government_authority
+		}
+		
+		completion_reward = {
+			news_event = news.77
+			add_ideas = JAP_imperial_allegiance
+			add_popularity = {
+				ideology = monarchist
+				popularity = 0.1
+			}
+			add_political_power = -25
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	
+	focus = {
+		id = JAP_government_authority
+		icon = fascism
+		x = @warrior_state_tree_right
+		y = 9
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_warrior_state
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_allegiance_to_the_emperor
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.05
+			}
+			if = {
+				limit = { has_idea = japanese_article_9 }
+				remove_ideas = japanese_article_9
+			}
+			if = {
+				limit = { has_idea = japanese_article_9_adapted }
+				remove_ideas = japanese_article_9_adapted
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_mobilize_the_population
+		icon = entente
+		x = @warrior_state_tree_very_far_right
+		y = 9
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_warrior_state
+		}
+		
+		available = {
+			OR = {
+				has_government = nationalist
+				has_government = fascist
+				threat > 0.35
+			}
+		}
+		
+		completion_reward = {
+			add_political_power = -25
+			declare_mass_mobilization = yes
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_befriend_south_korea
+		icon = align_to_south_korea
+		x = @defensive_strategies_tree_center
+		y = 10
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_defense_through_friendship
+		}
+		
+		available = {
+			NOT = { has_completed_focus = JAP_trade_with_north_korea }
+		}
+		
+		completion_reward = {
+			KOR = {
+				remove_opinion_modifier = {
+					target = JAP
+					modifier = past_japanese_war_crimes
+				}
+				add_opinion_modifier = {
+					target = JAP
+					modifier = declaration_of_friendship
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_korean_unification_ultimatum
+		icon = political_pressure
+		x = @democratic_state_tree_left
+		y = 10
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_interventionism
+		}
+		
+		available = {
+			KOR = { has_democratic_form_of_government = yes }
+			PRK = { has_democratic_form_of_government = no }
+			NOT = { has_war_with = KOR }
+		}
+		
+		bypass = {
+			OR = {
+				KOR = { exists = no }
+				PRK = { exists = no }
+				KOR = { has_democratic_form_of_government = no }
+				PRK = { has_democratic_form_of_government = yes }
+			}
+		}
+		
+		completion_reward = {
+			country_event = japan.2
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_protect_our_nation
+		icon = defence
+		x = @democratic_state_tree_right
+		y = 10
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_interventionism
+		}
+		
+		completion_reward = {
+			add_ideas = JAP_protect_our_ideology
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_revolution_in_korea
+		icon = communism
+		x = @popular_state_tree_center
+		y = 10
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_the_red_sun
+		}
+		prerequisite = {
+			focus = JAP_abolish_the_monarchy
+		}
+		
+		available = {
+			has_government = communist
+		}
+		
+		completion_reward = {
+			news_event = news.78
+			if = {
+				limit = {
+					country_exists = PRK
+					NOT = { PRK = { has_government = communist } }
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PRK
+				}
+			}
+			if = {
+				limit = {
+					country_exists = KOR
+					NOT = { KOR = { has_government = communist } }
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = KOR
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_new_imperial_society
+		icon = samurai
+		x = @warrior_state_tree_left
+		y = 10
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_allegiance_to_the_emperor
+		}
+		
+		completion_reward = {
+			add_national_unity = 0.05
+			add_popularity = {
+				ideology = monarchist
+				popularity = 0.1
+			}
+			add_political_power = 30
+			if = {
+				limit = { has_idea = japanese_article_9 }
+				remove_ideas = japanese_article_9
+			}
+			if = {
+				limit = { has_idea = japanese_article_9_adapted }
+				remove_ideas = japanese_article_9_adapted
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_japanese_supremacy
+		icon = fascism2
+		x = @warrior_state_tree_far_right
+		y = 10
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_government_authority
+		}
+		
+		available = {
+			has_government = fascist
+		}
+		
+		completion_reward = {
+			news_event = news.79
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.05
+			}
+			add_ideas = japanese_supremacy
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = JAP_fortress_japan
+		icon = military_fort
+		x = @defensive_strategies_tree_very_far_left
+		y = 11
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_befriend_south_korea
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_east_asian_alliance
+		}
+		mutually_exclusive = {
+			focus = JAP_ally_the_united_states
+		}
+		
+		completion_reward = {
+			add_ideas = JAP_fortress_japan_idea
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	
+	focus = {
+		id = JAP_east_asian_alliance
+		icon = alliance
+		x = @defensive_strategies_tree_left
+		y = 11
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_befriend_south_korea
+		}
+		
+		available = {
+			is_in_faction = no
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_fortress_japan
+		}
+		mutually_exclusive = {
+			focus = JAP_ally_the_united_states
+		}
+		
+		completion_reward = {
+			create_faction = japanese_alliance_democratic
+			add_national_unity = 0.05
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	focus = {
+		id = JAP_ally_the_united_states
+		icon = align_to_america
+		x = @defensive_strategies_tree_right
+		y = 11
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = JAP_fortress_japan
+		}
+		prerequisite = {
+			focus = JAP_befriend_south_korea
+		}
+		
+		available = {
+			USA = {
+				has_democratic_form_of_government = yes
+				is_in_faction = yes
+				is_faction_leader = yes
+			}
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_east_asian_alliance
+		}
+		
+		completion_reward = {
+			USA = { add_to_faction = JAP }
+		}
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+#	focus = {
+#		id = JAP_korean_alliance_initiative
+#		icon = align_to_south_korea
+#		x = @defensive_strategies_tree_right
+#		y = 20
+#		cost = 10
+#		
+#		completion_reward = {
+#		
+#		}
+#		
+#		ai_will_do = {
+#			factor = 10
+#		}
+#	}
+	
+	focus = {
+		id = JAP_chinese_unification_ultimatum
+		icon = attack_china
+		x = @democratic_state_tree_left
+		y = 11
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_korean_unification_ultimatum
+		}
+		
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = TT_korea_united_under_democracy
+					OR = {
+						AND = {
+							NOT = { country_exists = PRK }
+							KOR = { has_democratic_form_of_government = yes }
+						}
+						AND = {
+							NOT = { country_exists = KOR }
+							PRK = { has_democratic_form_of_government = yes }
+						}
+					}
+				}
+				has_war_with = PRC
+			}
+			NOT = { has_war_with = CHI }
+		}
+		
+		bypass = {
+			OR = {
+				AND = {
+					PRC = { has_democratic_form_of_government = no }
+					CHI = { has_democratic_form_of_government = no }
+				}
+				PRC = { has_democratic_form_of_government = yes }
+				PRC = { exists = no }
+				CHI = { exists = no }
+			}
+		}
+		
+		completion_reward = {
+			country_event = japan.10
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_vanguard_of_democracy
+		icon = attack_fascism
+		x = @democratic_state_tree_right
+		y = 11
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_protect_our_nation
+		}
+		
+		completion_reward = {
+			add_ideas = JAP_vanguards_of_democracy
+			set_rule = { can_create_factions = yes }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_revolution_in_taiwan
+		icon = attack_democracy
+		x = @popular_state_tree_center
+		y = 11
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_revolution_in_korea
+		}
+		
+		available = {
+			has_government = communist
+		}
+		
+		bypass = {
+			OR = {
+				CHI = { has_government = communist }
+				CHI = { is_in_faction_with = JAP }
+				CHI = { exists = no }
+			}
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				target = CHI
+				type = puppet_wargoal_focus
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_colonize_korea
+		icon = war2
+		x = @warrior_state_tree_left
+		y = 11
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_new_imperial_society
+		}
+		
+		completion_reward = {
+			add_state_claim = 525
+			add_state_claim = 527
+			add_state_claim = 869
+			add_state_claim = 870
+			add_state_claim = 871
+			add_state_claim = 872
+			add_state_claim = 873
+			add_state_claim = 874
+			add_state_claim = 875
+			
+			every_country = {
+				create_wargoal = {
+					target = KOR
+					type = take_claimed_state
+				}
+				create_wargoal = {
+					target = PRK
+					type = take_claimed_state
+				}
+				limit = {
+					NOT = { tag = KOR }
+					NOT = { tag = PRK }
+					OR = {
+						owns_state = 525
+						owns_state = 527
+						owns_state = 869
+						owns_state = 870
+						owns_state = 871
+						owns_state = 872
+						owns_state = 873
+						owns_state = 874
+						owns_state = 875
+					}
+				}
+				JAP = {
+					create_wargoal = {
+						target = PREV
+						type = take_claimed_state
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_subjugate_korea
+		icon = war
+		x = @warrior_state_tree_right
+		y = 11
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_government_authority
+		}
+		
+		available = {
+			NOT = { is_in_faction_with = KOR }
+			NOT = { is_in_faction_with = PRK }
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				target = PRK
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = KOR
+				type = puppet_wargoal_focus
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_allies_in_indochina
+		icon = align_to_vietnam
+		x = @defensive_strategies_tree_left
+		y = 12
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_east_asian_alliance
+		}
+		
+		available = {
+			is_in_faction = yes
+		}
+		
+		completion_reward = {
+			VIN = { country_event = japan.1 }
+			LAO = { country_event = japan.1 }
+			CMB = { country_event = japan.1 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_approach_NATO
+		icon = align_to_nato
+		x = @defensive_strategies_tree_right
+		y = 12
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_ally_the_united_states
+		}
+		
+		available = {
+			is_in_faction_with = USA
+			any_country = {
+				NOT = { tag = USA }
+				NOT = { tag = JAP }
+				is_in_faction_with = USA
+			}
+		}
+		
+		completion_reward = {
+			every_country = {
+				limit = { is_in_faction_with = USA }
+				add_opinion_modifier = {
+					target = JAP
+					modifier = declaration_of_friendship
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_east_asian_pact
+		icon = major_alliance
+		x = @democratic_state_tree_left
+		y = 12
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_chinese_unification_ultimatum
+		}
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TT_korea_united_under_democracy
+				OR = {
+					AND = {
+						NOT = { country_exists = PRK }
+						KOR = { has_democratic_form_of_government = yes }
+					}
+					AND = {
+						NOT = { country_exists = KOR }
+						PRK = { has_democratic_form_of_government = yes }
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = TT_china_united_under_democracy
+				OR = {
+					AND = {
+						NOT = { country_exists = CHI }
+						PRC = { has_democratic_form_of_government = yes }
+					}
+					AND = {
+						NOT = { country_exists = PRC }
+						CHI = { has_democratic_form_of_government = yes }
+					}
+				}
+			}
+		}
+		
+		bypass = {
+			is_faction_leader = yes
+		}
+		
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = japanese_alliance_democratic
+			}
+			if = {
+				limit = { CHI = { NOT = { has_war_with = JAP } } }
+				CHI = { country_event = japan.1 }
+			}
+			if = {
+				limit = { KOR = { NOT = { has_war_with = JAP } } }
+				KOR = { country_event = japan.1 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_democratic_militias
+		icon = entente
+		x = @democratic_state_tree_right
+		y = 12
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_vanguard_of_democracy
+		}
+		
+		completion_reward = {
+			add_ideas = JAP_democratic_militia
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_beijing_and_tokyo
+		icon = align_to_china
+		x = @popular_state_tree_left
+		y = 12
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_revolution_in_taiwan
+		}
+		
+		available = {
+			JAP = { has_government = communist }
+			PRC = { has_government = communist }
+			is_puppet = no
+			OR = {
+				PRC = { is_puppet = no }
+				PRC = { is_puppet_of = JAP }
+			}
+		}
+		
+		bypass = {
+			has_government = communist
+			NOT = { PRC = { has_government = communist } }
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_red_prosperity_sphere
+		}
+		
+		completion_reward = {
+			news_event = news.70
+			add_political_power = 50
+			if = {
+				limit = { 
+					PRC = { is_in_faction = yes }
+				}
+				PRC = { add_to_faction = JAP }
+			}
+			if = {
+				limit = { 
+					JAP = { is_in_faction = no }
+					PRC = { is_in_faction = no }
+				}
+				create_faction = japanese_alliance_communist
+				PRC = { country_event = japan.1 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_red_prosperity_sphere
+		icon = alliance
+		x = @popular_state_tree_right
+		y = 12
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_revolution_in_taiwan
+		}
+		
+		available = {
+			has_government = communist
+			is_in_faction = no
+		}
+		
+		mutually_exclusive = {
+			focus = JAP_beijing_and_tokyo
+		}
+		
+		completion_reward = {
+			create_faction = japanese_alliance_communist
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_colonize_china
+		icon = attack_china
+		x = @warrior_state_tree_left
+		y = 12
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_colonize_korea
+		}
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_coastal = yes
+					OR = {
+						is_owned_by = PRC
+						owner = { is_puppet_of = PRC }
+					}
+				}
+				JAP = {
+					add_state_claim = PREV
+					create_wargoal = {
+						target = PRC
+						type = take_claimed_state
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_subjugate_china
+		icon = attack_china
+		x = @warrior_state_tree_right
+		y = 12
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_subjugate_korea
+		}
+		
+		available = {
+			NOT = { is_in_faction_with = PRC }
+		}
+		
+		bypass = {
+			is_in_faction_with = PRC
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				target = PRC
+				type = puppet_wargoal_focus
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_ally_taiwan
+		icon = align_to_taiwan
+		x = @defensive_strategies_tree_left
+		y = 13
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_allies_in_indochina
+		}
+		
+		available = {
+			is_in_faction = yes
+			CHI = { is_in_faction = no }
+			CHI = { is_puppet = no }
+			CHI = { has_democratic_form_of_government = yes }
+		}
+		
+		bypass = {
+			OR = {
+				CHI = { is_in_faction = yes }
+				CHI = { is_puppet = yes }
+				CHI = { has_democratic_form_of_government = no }
+			}
+		}
+		
+		completion_reward = {
+			CHI = { country_event = japan.1 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_NATO_exercises
+		icon = align_to_nato
+		x = @defensive_strategies_tree_right
+		y = 13
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_approach_NATO
+		}
+		
+		completion_reward = {
+			army_experience = 50
+			air_experience = 50
+			navy_experience = 50
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_allies_across_asia
+		icon = alliance
+		x = @democratic_state_tree_left
+		y = 13
+		cost = 25
+		
+		prerequisite = {
+			focus = JAP_east_asian_pact
+		}
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_asia = yes
+					has_democratic_form_of_government = yes
+					is_in_faction = no
+				}
+				country_event = japan.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_revolution_across_asia
+		icon = war3
+		x = @popular_state_tree_far_right
+		y = 13
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_red_prosperity_sphere
+		}
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_asia = yes
+					NOT = { has_government = communist }
+				}
+				JAP = {
+					create_wargoal = {
+						target = PREV
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_colonize_south_east_asia
+		icon = war
+		x = @warrior_state_tree_center
+		y = 13
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_colonize_china
+			focus = JAP_subjugate_china
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				target = VIN
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = PHI
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = MAY
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = INS
+				type = puppet_wargoal_focus
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_ally_indonesia
+		icon = tripartite_pact
+		x = @defensive_strategies_tree_very_far_left
+		y = 14
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_ally_taiwan
+		}
+		
+		available = {
+			INS = { is_in_faction = no }
+			INS = { is_puppet = no }
+			INS = { has_democratic_form_of_government = yes }
+		}
+		
+		completion_reward = {
+			INS = { country_event = japan.1 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_ally_mongolia
+		icon = improve_relations
+		x = @defensive_strategies_tree_left
+		y = 14
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_ally_taiwan
+		}
+		
+		available = {
+			is_in_faction = yes
+			MON = { is_in_faction = no }
+			MON = { is_puppet = no }
+			MON = { has_democratic_form_of_government = yes }
+		}
+		
+		completion_reward = {
+			MON = { country_event = japan.1 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_asian_research_compact
+		icon = research
+		x = @defensive_strategies_tree_right
+		y = 14
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_ally_taiwan
+			focus = JAP_NATO_exercises
+			focus = JAP_allies_across_asia
+		}
+		
+		available = {
+			is_in_faction = yes
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_red_association_of_science
+		icon = communist_research
+		x = @popular_state_tree_left
+		y = 14
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_beijing_and_tokyo
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = JAP_mobilize_the_people
+		icon = entente
+		x = @popular_state_tree_right
+		y = 14
+		cost = 10
+		
+		prerequisite = {
+			focus = JAP_red_prosperity_sphere
+		}
+		
+		available = {
+			has_government = communist
+			OR = {
+				threat > 0.8
+				has_war = yes
+			}
+		}
+		
+		completion_reward = {
+			add_political_power = -25
+			declare_mass_mobilization = yes
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+}

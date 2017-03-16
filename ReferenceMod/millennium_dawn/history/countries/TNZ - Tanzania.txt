@@ -1,0 +1,329 @@
+﻿capital = 546
+
+oob = "TNZ_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_country_flag = country_language_swahili
+set_country_flag = country_language_english
+
+set_country_flag = starting_stability_low
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank1 = 1
+	interwar_antiair = 1
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	light_cruiser1 = 1
+	light_cruiser2 = 1
+	missile_cruiser1 = 1
+	missile_cruiser2 = 1
+	carrier1 = 1
+	carrier2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	carrier_nuclear_reactor = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_rapid
+	african_union_member
+	commonwealth_of_nations_member
+}
+
+set_politics = {
+
+	parties = {
+	islamist = {
+	popularity = 0
+	}
+	fascist = {
+	popularity = 0
+	}
+	nationalist = {
+	popularity = 0
+	}
+	reactionary = {
+	popularity = 0
+	}
+	conservative = {
+	popularity = 10
+	}
+	market_liberal = {
+	popularity = 0
+	}
+	social_liberal = {
+	popularity = 5
+	}
+	social_democrat = {
+	popularity = 25
+	}
+	progressive = {
+	popularity = 60
+	}
+	democratic_socialist = {
+	popularity = 0
+	}
+	communist = {
+	popularity = 0
+	}
+	}
+	
+	ruling_party = progressive
+	last_election = "1995.11.29"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+
+2000.1.1 = {
+	
+	create_country_leader = {
+	name = "Benjamin Mkapa"
+	desc = "POLITICIAN_TNZ_BENJAMIN_MKAPA_DESC"
+	picture = "Portrait_TNZ_Benjamin_Mkapa.dds"
+	expire = "2020.1.1"
+	ideology = progressive_ideology
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Augustine Mrema"
+	desc = "POLITICIAN_TNZ_AUGUSTINE_MREMA_DESC"
+	picture = "Portrait_TNZ_Augustine_Mrema.dds"
+	expire = "2020.1.1"
+	ideology = social_democrat_ideology
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Ibrahim Lipumba"
+	desc = "POLITICIAN_TNZ_IBRAHIM_LIPUMBA_DESC"
+	picture = "Portrait_TNZ_Ibrahim_Lipumba.dds"
+	expire = "2020.1.1"
+	ideology = moderate
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Freeman Mbowe"
+	desc = "POLITICIAN_TNZ_FREEMAN_MBOWE_DESC"
+	picture = "Portrait_TNZ_Freeman_Mbowe.dds"
+	expire = "2020.1.1"
+	ideology = fiscal_conservative
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Zitto Kabwe"
+	desc = "POLITICIAN_TNZ_ZITTO_KABWE_DESC"
+	picture = "Portrait_TNZ_Zitto_Kabwe.dds"
+	expire = "2020.1.1"
+	ideology = democratic_socialist_ideology
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Christopher Mtikila"
+	desc = "POLITICIAN_TNZ_CHRISTOPHER_MTIKILA_DESC"
+	picture = "Portrait_TNZ_Christopher_Mtikila.dds"
+	expire = "2020.1.1"
+	ideology = counter_progressive_democrat
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Augusto Mrema"
+	desc = "POLITICIAN_TNZ_AUGUSTO_MREMA_DESC"
+	picture = "Portrait_TNZ_Augusto_Mrema.dds"
+	expire = "2020.1.1"
+	ideology = marxist
+	
+	traits = {
+	
+	}
+	}
+	
+	create_corps_commander = {
+	name = "Davis Mwamunyange"
+	picture = "Portrait_TNZ_general_Davis_Mwamunyange.dds"
+	skill = 1
+	}
+
+	create_corps_commander = {
+	name = "James Mwakibolwa"
+	picture = "Portrait_TNZ_general_James_Mwakibolwa.dds"
+	skill = 1
+	}
+
+	create_navy_leader = {
+	name = "Shabani Laswai"
+		picture = "Portrait_TNZ_admiral_Shabani_Laswai.dds"
+	traits = { }
+	skill = 1
+	}
+
+}
+
+
+2015.10.25 = {
+	
+	set_politics = {
+
+	parties = {
+	islamist = {
+	popularity = 0
+	}
+	fascist = {
+	popularity = 0
+	}
+	nationalist = {
+	popularity = 0
+	}
+	reactionary = {
+	popularity = 0
+	}
+	conservative = {
+	popularity = 30
+	}
+	market_liberal = {
+	popularity = 0
+	}
+	social_liberal = {
+	popularity = 10
+	}
+	social_democrat = {
+	popularity = 5
+	}
+	progressive = {
+	popularity = 55
+	}
+	democratic_socialist = {
+	popularity = 0
+	}
+	communist = {
+	popularity = 0
+	}
+	}
+	
+	ruling_party = progressive
+	last_election = "2015.10.25"
+	election_frequency = 60
+	elections_allowed = yes
+	}
+
+	create_country_leader = {
+	name = "John Magufuli"
+	desc = "POLITICIAN_TNZ_JOHN_MAGUFULI_DESC"
+	picture = "Portrait_TNZ_John_Magufuli.dds"
+	expire = "2020.1.1"
+	ideology = progressive_ideology
+	
+	traits = {
+	
+	}
+	}
+
+	create_country_leader = {
+	name = "Edward Lowassa"
+	desc = "POLITICIAN_TNZ_EDWARD_LOWASSA_DESC"
+	picture = "Portrait_TNZ_Edward_Lowassa.dds"
+	expire = "2020.1.1"
+	ideology = fiscal_conservative
+	
+	traits = {
+	
+	}
+	}
+
+}

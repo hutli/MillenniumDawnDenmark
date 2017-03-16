@@ -1,0 +1,51 @@
+﻿add_namespace = afghanistan
+
+#The Afghan Civil War
+country_event = {
+	id = afghanistan.1
+	title = afghanistan.1.t
+	desc = afghanistan.1.d
+	picture = GFX_report_event_afghani_civil_war
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = the_afghan_civil_war
+	}
+	
+	option = {	#Side with the Taliban
+		name = afghanistan.1.o1
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.4
+		}
+		start_civil_war = {
+			ideology = conservative
+			size = 0.6
+			states = { 837 824 }
+			capital = 837
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {	#Side with the Northern Alliance
+		name = afghanistan.1.o2
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		start_civil_war = {
+			ideology = islamist
+			size = 0.4
+			states = { 267 415 }
+			capital = 267
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

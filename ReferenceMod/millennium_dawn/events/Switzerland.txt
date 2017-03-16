@@ -1,0 +1,62 @@
+﻿add_namespace = switzerland
+
+#Hidden Trigger for Swiss Political System
+country_event = {
+	id = switzerland.1
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = SWI
+		has_idea = swiss_political_system
+		OR = {
+			has_democratic_form_of_government = no
+			has_country_flag = end_of_the_swiss_political_system
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 20
+	}
+	
+	option = {
+		remove_ideas = swiss_political_system
+		news_event = switzerland.2
+	}
+}
+
+#End of the Swiss Political System
+news_event = {
+	id = switzerland.2
+	title = switzerland.2.t
+	desc = switzerland.2.d
+	picture = GFX_news_event_switzerland
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = switzerland.2.o1
+		effect_tooltip = {
+			remove_ideas = swiss_political_system
+		}
+		trigger = {
+			original_tag = SWI
+		}
+	}
+	
+	option = {
+		name = switzerland.2.o2
+		trigger = {
+			NOT = { original_tag = SWI }
+			has_democratic_form_of_government = yes
+		}
+	}
+	
+	option = {
+		name = switzerland.2.o3
+		trigger = {
+			NOT = { original_tag = SWI }
+			has_democratic_form_of_government = no
+		}
+	}
+}
