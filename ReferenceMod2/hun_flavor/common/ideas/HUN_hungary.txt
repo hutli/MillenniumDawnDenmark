@@ -1,0 +1,2157 @@
+ideas = {
+	country = {
+		#MODIFIERS
+		revisionist_spirit = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+
+			removal_cost = -1
+
+			#picture = generic_morale_bonus
+			
+			modifier = {
+				unity_factor = 0.10
+				drift_defence_factor = 0.25
+			}
+		}
+		revisionist_spirit_fascism = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = revisionist_spirit
+			
+			modifier = {
+				unity_factor = 0.10
+			}
+		}
+		revisionist_spirit_neutrality = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = revisionist_spirit
+			
+			modifier = {
+				unity_factor = 0.10
+				drift_defence_factor = 0.50
+			}
+		}
+		
+		successful_revision = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+
+			removal_cost = -1
+
+			picture = successful_revision
+			
+			modifier = {
+				unity_factor = 0.10
+				political_power_gain = 0.5
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		united_hungarian_lands = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = revisionist_spirit
+			
+			modifier = {
+				unity_factor = 0.10
+				political_power_gain = 0.5
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				conscription_factor = 0.1
+			}
+		}
+		
+		fascism_losing_popularity = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture = neutrality_idea
+			
+			modifier = {
+				fascism_drift = -0.1
+				neutrality_drift = -0.15
+				drift_defence_factor = -0.25
+			}
+		}
+		
+		reformed_conscription = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		
+		spread_of_liberalism = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+
+		scientific_spirit = {
+			removal_cost = -1
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_time_factor = -0.05
+			}
+		}
+		
+		spread_of_communism = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		
+		rakosi_administration = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communist
+			}
+
+			removal_cost = -1
+
+			#picture = generic_intel_bonus
+			
+			modifier = {
+				political_power_gain = 0.2
+				unity_factor = -0.10
+			}
+		}
+		
+		avo = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communist
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				foreign_subversive_activites = -0.50
+				subversive_activites_upkeep = -0.1
+			}
+		}
+		
+		hungarian_five_year_plan = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communist
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		kadar_administration = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communist
+			}
+
+			removal_cost = -1
+
+			#picture = generic_intel_bonus
+			
+			modifier = {
+				political_power_gain = 0.2
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		goulash_communism = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communist
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		single_party_system = {
+				
+			allowed = {
+				original_tag = HUN
+				has_government = communist
+			}
+
+			allowed_civil_war = {
+				has_government = communist
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				drift_defence_factor = 1
+			}
+		}
+		
+		worker_spirit = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communist
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+		
+		underground_communism = {
+				
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.05
+			}
+		}
+		
+		spreading_the_revolution = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communist
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				subversive_activites_upkeep = -0.5
+			}
+		}
+		
+		war_preparation = {
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				lend_lease_tension = -0.20
+				send_volunteers_tension = -0.20
+				send_volunteer_divisions_required = -0.25
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.10
+			}
+		}
+		
+		spread_of_nationalism = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+		
+		szalasi_social_reforms = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				political_power_gain = 0.2
+			}
+		}
+		
+		domestic_focus = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				trade_opinion_factor = -0.25
+				foreign_subversive_activites = -0.50
+			}
+		}
+		
+		industrial_agrarian_state = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+			
+			modifier = {
+				conscription_factor = -0.10
+				industrial_capacity_factory = 0.10
+				fascism_drift = 0.05
+			}
+		}
+		
+		levente_movement = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.01
+				training_time_army_factor = -0.10
+			}
+		}
+		
+		arrow_cross_party_banned = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = fascism_losing_popularity
+			
+			modifier = {
+				fascism_drift = -0.2
+			}
+		}
+		
+		revisionist_education = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_time_factor = -0.02
+				conscription_factor = 0.1
+			}
+		}
+		
+		supporting_italy = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				political_power_gain = -0.1
+			}
+		}
+		
+		fortification_effort = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_wall_line
+			
+			modifier = {
+				production_speed_bunker_factor = 0.3
+				production_speed_coastal_bunker_factor = 0.3
+				production_speed_anti_air_building_factor = 0.3
+			}
+		}
+		
+		fortification_effort_realism = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_wall_line
+			
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				production_speed_anti_air_building_factor = 0.15
+			}
+		}
+		
+		industrial_effort = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+				production_speed_naval_base_factor = 0.2
+			}
+		}
+		
+		industrial_effort_realism = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+		
+		fighter_production_innovations = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		bomber_production_innovations = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			equipment_bonus = {
+				strat_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				nav_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		naval_rearmament = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.2
+				production_speed_naval_base_factor = 0.2
+			}
+		}
+		
+		naval_defense = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.5
+			}
+		}
+		
+		funding_the_gyori_program = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				political_power_gain = -0.5
+			}
+		}
+		
+		gyori_program_research = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_time_factor = -0.05
+			}
+		}
+		
+		gyori_program_industry = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+		
+		gyori_program_army_research = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			research_bonus = {
+				land_doctrine = 0.10
+				infantry_weapons = 0.10
+				motorized_equipment = 0.10
+				artillery = 0.10
+				armor = 0.10
+			}
+		}
+		
+		gyori_program_defense = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_wall_line
+			
+			modifier = {
+				production_speed_bunker_factor = 0.5
+			}
+		}
+		
+		gyori_program_air_research = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			research_bonus = {
+				light_air = 0.10
+				medium_air = 0.10
+				heavy_air = 0.10
+				air_doctrine = 0.10
+			}
+		}
+		
+		gyori_program_air_production = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = the_long_lance
+			
+			equipment_bonus = {
+				strat_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				nav_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		gyori_program_navy_research = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			
+			research_bonus = {
+				naval_equipment = 0.10
+				naval_doctrine = 0.10
+			}
+		}
+		
+		gyori_program_navy_production = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = escort_effort_focus
+			
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				battle_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				battleship = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				carrier = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				convoy = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				heavy_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				light_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		assistance_from_german_general_staff = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = german_advisors		
+			
+			modifier = {
+				planning_speed = 0.10
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.04
+			}
+		}
+		
+		trianon_restrictions = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = trianon_restrictions		
+			
+			modifier = {
+				join_faction_tension = 0.20
+				conscription_factor = -0.1				
+			}
+			
+			research_bonus = {
+				artillery = -0.05
+				armor = -0.05
+				light_air = -0.05
+				medium_air = -0.05
+				heavy_air = -0.05
+			}
+		}
+		
+		visegrad_military_council = {
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = partial_economic_mobilisation
+			
+			modifier = {
+				political_power_gain = -0.05
+				planning_speed = 0.20
+				army_org_Factor = 0.05
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+		}
+		
+		king_horthy = {
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture = king_horthy
+			
+			modifier = {
+				unity_factor = 0.05
+			}
+		}
+		
+		democracy_gaining_ground = {
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				democratic_drift = 0.05
+			}
+		}
+		
+		german_subsidized_armor_production = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = war_economy
+			
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					build_cost_ic = -0.30 instant = yes
+				}
+			}
+		}
+		
+		conservative_ideas = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = neutrality_idea
+			
+			modifier = {
+				neutrality_drift = 0.10
+			}
+		}
+
+		hungarian_expansionism = {
+		
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {		
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.4
+			}
+		}
+		
+		#Austro-Hungarian multinationality
+		
+		multinational_state = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = multinational_state
+			
+			modifier = { 
+				unity_factor = -0.2 
+				army_morale_factor = -0.10
+			}
+		}
+		
+		#Territorial conscription modifiers
+		
+		conscription_resistance_05 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = -0.05
+				political_power_gain = -0.01
+				army_org_Factor = -0.01
+			}
+		}
+		
+		conscription_resistance_10 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.1
+				political_power_gain = -0.02
+				army_org_Factor = -0.01
+			}
+		}
+		
+		conscription_resistance_15 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.15
+				political_power_gain = -0.03
+				army_org_Factor = -0.01
+			}
+		}
+		
+		conscription_resistance_20 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.2
+				political_power_gain = -0.04
+				army_org_Factor = -0.01
+			}
+		}
+		
+		conscription_resistance_25 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.25
+				political_power_gain = -0.05
+				army_org_Factor = -0.02
+			}
+		}
+		
+		conscription_resistance_30 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.3
+				political_power_gain = -0.06
+				army_org_Factor = -0.02
+			}
+		}
+		
+		conscription_resistance_35 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.35
+				political_power_gain = -0.07
+				army_org_Factor = -0.02
+			}
+		}
+		
+		conscription_resistance_40 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.4
+				political_power_gain = -0.08
+				army_org_Factor = -0.02
+			}
+		}
+		
+		conscription_resistance_45 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.45
+				political_power_gain = -0.09
+				army_org_Factor = -0.03
+			}
+		}
+		
+		conscription_resistance_50 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.5
+				political_power_gain = -0.10
+				army_org_Factor = -0.03
+			}
+		}
+		
+		conscription_resistance_55 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.55
+				political_power_gain = -0.11
+				army_org_Factor = -0.03
+			}
+		}
+		
+		conscription_resistance_60 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.6
+				political_power_gain = -0.12
+				army_org_Factor = -0.03
+			}
+		}
+		
+		conscription_resistance_65 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.65
+				political_power_gain = -0.13
+				army_org_Factor = -0.04
+			}
+		}
+		
+		conscription_resistance_70 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.7
+				political_power_gain = -0.14
+				army_org_Factor = -0.04
+			}
+		}
+		
+		conscription_resistance_75 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.75
+				political_power_gain = -0.15
+				army_org_Factor = -0.04
+			}
+		}
+		
+		conscription_resistance_80 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.8
+				political_power_gain = -0.16
+				army_org_Factor = -0.04
+			}
+		}
+		
+		conscription_resistance_85 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.85
+				political_power_gain = -0.17
+				army_org_Factor = -0.05
+			}
+		}
+		
+		conscription_resistance_90 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.9
+				political_power_gain = -0.18
+				army_org_Factor = -0.05
+			}
+		}
+		
+		conscription_resistance_95 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.95
+				political_power_gain = -0.19
+				army_org_Factor = -0.05
+			}
+		}
+		
+		conscription_resistance_100 = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -1
+				political_power_gain = -0.20
+				army_org_Factor = -0.05
+			}
+		}
+		
+		HUN_suppressed_resistance_in_transylvania = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription_factor = 0.1
+				unity_factor = 0.05
+			}
+		}
+		
+		HUN_resistance_to_integration_in_transylvania = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+		
+		HUN_cracking_down_on_transylvanian_rebels = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		
+		HUN_suppressed_resistance_in_slovakia = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription_factor = 0.1
+				unity_factor = 0.05
+			}
+		}
+		
+		HUN_resistance_to_integration_in_slovakia = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+		
+		HUN_cracking_down_on_slovakian_rebels = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		
+		HUN_suppressed_resistance_in_croatia = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription_factor = 0.1
+				unity_factor = 0.05
+			}
+		}
+		
+		HUN_resistance_to_integration_in_croatia = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+		
+		HUN_cracking_down_on_croatian_rebels = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		
+		HUN_suppressed_resistance_in_vojvodina = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription_factor = 0.1
+				unity_factor = 0.05
+			}
+		}
+		
+		HUN_resistance_to_integration_in_vojvodina = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+		
+		HUN_cracking_down_on_vojvodina_rebels = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		
+		HUN_suppressed_resistance_in_burgenland = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription_factor = 0.1
+				unity_factor = 0.05
+			}
+		}
+		
+		HUN_resistance_to_integration_in_burgenland = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+		
+		HUN_cracking_down_on_burgenland_rebels = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		
+		HUN_suppressed_resistance_in_bohemia = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription_factor = 0.1
+				unity_factor = 0.05
+			}
+		}
+		
+		HUN_resistance_to_integration_in_bohemia = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+		
+		HUN_cracking_down_on_bohemian_rebels = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		
+		HUN_suppressed_resistance_in_galicia_lodomeria = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription_factor = 0.1
+				unity_factor = 0.05
+			}
+		}
+		
+		HUN_resistance_to_integration_in_galicia_lodomeria = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+		
+		HUN_cracking_down_on_galicia_lodomeria_rebels = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		
+		HUN_suppressed_resistance_in_slovenia = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription_factor = 0.1
+				unity_factor = 0.05
+			}
+		}
+		
+		HUN_resistance_to_integration_in_slovenia = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+		
+		HUN_cracking_down_on_slovenian_rebels = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		
+		HUN_suppressed_resistance_in_istria_south_tirol = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription_factor = 0.1
+				unity_factor = 0.05
+			}
+		}
+		
+		HUN_resistance_to_integration_in_istria_south_tirol = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+		
+		HUN_cracking_down_on_istria_south_tirol_rebels = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		
+		HUN_suppressed_resistance_in_bosnia = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription_factor = 0.1
+				unity_factor = 0.05
+			}
+		}
+		
+		HUN_resistance_to_integration_in_bosnia = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+		
+		HUN_cracking_down_on_bosnian_rebels = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		
+	}
+}

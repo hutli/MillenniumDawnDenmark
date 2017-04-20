@@ -1,0 +1,130 @@
+
+is_ahu = {
+	OR = {
+		has_cosmetic_tag = HUN_AHU
+		has_cosmetic_tag = HUN_DNF
+	}
+}
+
+is_powerful_or_has_strong_friends_in_europe = {
+	OR = {
+		AND = {	#central european friends
+			OR = {
+				GER = { has_opinion = { target = ROOT value > 49 } }
+				GER = { is_in_faction_with = ROOT }
+			}
+			OR = {
+				ITA = { has_opinion = { target = ROOT value > 9 } }
+				ITA = { is_in_faction_with = ROOT }
+			}
+		}
+		AND = {	#western friends
+			OR = {
+				ENG = { has_opinion = { target = ROOT value > 49 } }
+				ENG = { is_in_faction_with = ROOT }
+			}
+			OR = {
+				FRA = { has_opinion = { target = ROOT value > 49 } }
+				FRA = { is_in_faction_with = ROOT }
+			}
+		}
+		AND = {	#communist friends
+			has_government = communism
+			SOV = { has_government = communism }
+			OR = {
+				SOV = { has_opinion = { target = ROOT value > 49 } }
+				SOV = { is_in_faction_with = ROOT }
+			}
+			any_country = {
+				AND = {
+					has_government = communism
+					OR = {
+						is_in_faction_with = ROOT
+						has_opinion = { target = ROOT value > 49 }
+					}
+				}
+			}
+		}
+		AND = {	#eastern european allies (The New Central Powers)
+			NOT = { tag = POL }
+			NOT = { tag = BUL }
+			NOT = { tag = AUS }
+			OR = {
+				POL = { is_in_faction_with = ROOT }
+				POL = { exists = no }
+			}
+			OR = {
+				BUL = { is_in_faction_with = ROOT }
+				BUL = { exists = no }
+			}
+			OR = {
+				AUS = { is_in_faction_with = ROOT }
+				AUS = { exists = no }
+			}
+		}
+		AND = {	#eastern european allies + neutral central EU powers (I)
+			NOT = { tag = ROM }
+			NOT = { tag = CZE }
+			NOT = { tag = YUG }
+			OR = {
+				ROM = { is_in_faction_with = ROOT }
+				ROM = { exists = no }
+			}
+			OR = {
+				CZE = { is_in_faction_with = ROOT }
+				CZE = { exists = no }
+			}
+			OR = {
+				YUG = { is_in_faction_with = ROOT }
+				YUG = { exists = no }
+			}
+			GER = { has_opinion = { target = ROOT value > -1 } }
+			ITA = { has_opinion = { target = ROOT value > -1 } }
+		}
+		AND = {	#eastern european allies + neutral central EU powers (II)
+			NOT = { tag = GRE }
+			NOT = { tag = TUR }
+			NOT = { tag = YUG }
+			OR = {
+				GRE = { is_in_faction_with = ROOT }
+				GRE = { exists = no }
+			}
+			OR = {
+				TUR = { is_in_faction_with = ROOT }
+				TUR = { exists = no }
+			}
+			OR = {
+				YUG = { is_in_faction_with = ROOT }
+				YUG = { exists = no }
+			}
+			GER = { has_opinion = { target = ROOT value > -1 } }
+			ITA = { has_opinion = { target = ROOT value > -1 } }
+		} 
+		AND = {	#baltic allies + neutral central EU powers
+			NOT = { tag = LIT }
+			NOT = { tag = LAT }
+			NOT = { tag = EST }
+			NOT = { tag = FIN }
+			OR = {
+				LIT = { is_in_faction_with = ROOT }
+				LIT = { exists = no }
+			}
+			OR = {
+				LAT = { is_in_faction_with = ROOT }
+				LAT = { exists = no }
+			}
+			OR = {
+				EST = { is_in_faction_with = ROOT }
+				EST = { exists = no }
+			}
+			OR = {
+				FIN = { is_in_faction_with = ROOT }
+				FIN = { exists = no }
+			}
+			GER = { has_opinion = { target = ROOT value > -1 } }
+			ITA = { has_opinion = { target = ROOT value > -1 } }
+		}
+		has_army_manpower = { size > 399999 }	#has a strong military
+		num_of_factories > 60					#has a big industry
+	}
+}

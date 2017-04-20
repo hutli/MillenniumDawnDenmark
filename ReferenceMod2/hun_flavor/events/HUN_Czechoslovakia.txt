@@ -1,0 +1,496 @@
+﻿
+add_namespace = hungary_flavor_cze
+
+
+################
+#CZECHOSLOVAKIA#
+################
+
+# Hungary demands Slovakia (event for CZE)
+country_event = {
+	id = hungary_flavor_cze.1
+	title = hungary_flavor_cze.1.t
+	desc = hungary_flavor_cze.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#Cede Slovakia
+	option = {
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 1.5
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					ic_ratio = { 
+						tag = ROOT 
+						ratio > 1.5
+					}
+				}
+			}		
+			modifier = {
+				factor = 10
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}	
+			modifier = {
+				factor = 0
+				FROM = {
+					has_country_flag = HUN_realism
+					NOT = { has_army_manpower = { size > 399999 } }
+				}
+			}
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 499999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 599999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 699999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 799999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 899999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 999999 } } }
+		}
+		name = hungary_flavor_cze.1.a
+		FROM = { country_event = { hours = 4 id = hungary_flavor.12 } }
+	}
+	
+	#Refuse
+	option = {
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 5
+				has_government = fascism
+			}
+		}
+		name = hungary_flavor_cze.1.b
+		FROM = { country_event = { hours = 4 id = hungary_flavor.13 } }
+	}
+}
+
+# Imperialist coup
+country_event = {
+	id = hungary_flavor_cze.2
+	title = hungary_flavor_cze.2.t
+	desc = hungary_flavor_cze.2.d
+	picture = GFX_report_event_crowd_in_prague
+	
+	is_triggered_only = yes
+	
+	#Long live the Habsburgs... I guess.
+	option = {
+		name = hungary_flavor_cze.2.a
+		if = {
+			limit = { FROM = { has_government = neutrality } }
+			set_politics = {
+				parties = {
+					democratic = { 
+						popularity = 0
+					}
+
+					fascism = {
+						popularity = 0
+					}
+					
+					communism = {
+						popularity = 0
+					}
+					
+					neutrality = { 
+						popularity = 100
+					}
+				}
+				
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+		if = {
+			limit = { FROM = { has_government = democratic } }
+			set_politics = {
+				parties = {
+					democratic = { 
+						popularity = 100
+					}
+
+					fascism = {
+						popularity = 0
+					}
+					
+					communism = {
+						popularity = 0
+					}
+					
+					neutrality = { 
+						popularity = 0
+					}
+				}
+				
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		}
+		if = {
+			limit = { FROM = { has_government = fascism } }
+			set_politics = {
+				parties = {
+					democratic = { 
+						popularity = 0
+					}
+
+					fascism = {
+						popularity = 100
+					}
+					
+					communism = {
+						popularity = 0
+					}
+					
+					neutrality = { 
+						popularity = 0
+					}
+				}
+				
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+		if = {
+			limit = { FROM = { has_government = communism } }
+			set_politics = {
+				parties = {
+					democratic = { 
+						popularity = 0
+					}
+
+					fascism = {
+						popularity = 0
+					}
+					
+					communism = {
+						popularity = 100
+					}
+					
+					neutrality = { 
+						popularity = 0
+					}
+				}
+				
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+		hidden_effect = { 
+			set_cosmetic_tag = CZE_IMP
+			every_country = {
+				limit = {
+					OR = {
+						is_neighbor_of = CZE
+						is_major = yes
+					}
+				}
+				country_event = { hours = 6 id = hungary_flavor_gen.3 }
+			}
+			FROM = { country_event = { days = 1 id = hungary_flavor.43 } } 
+			add_opinion_modifier = { target = FROM modifier = HUN_imperialist_government }
+			reverse_add_opinion_modifier = { target = FROM modifier = HUN_imperialist_government }
+		}
+	}
+}
+
+
+# Merge with Austria-Hungary
+country_event = {
+	id = hungary_flavor_cze.3
+	title = hungary_flavor_cze.3.t
+	desc = hungary_flavor_cze.3.d
+	picture = report_event_HUN_czechoslovakia
+	
+	is_triggered_only = yes
+	
+	#We need their protection.
+	option = {
+		ai_chance = {
+			factor = 100						
+		}
+		name = hungary_flavor_cze.3.a
+		FROM = { country_event = { hours = 4 id = hungary_flavor.37 } }
+	}
+	
+	#What an absurd proposition.
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = hungary_flavor_cze.3.b
+		FROM = { country_event = { hours = 4 id = hungary_flavor.38 } }
+	}
+}
+
+# Alliance with Austria-Hungary
+country_event = {
+	id = hungary_flavor_cze.4
+	title = hungary_flavor_cze.4.t
+	desc = hungary_flavor_cze.4.d
+	picture = report_event_HUN_czechoslovakia
+	
+	is_triggered_only = yes
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_cze.4.a
+	}
+}
+
+# Reawakening the Little Entente
+country_event = {
+	id = hungary_flavor_cze.5
+	title = hungary_flavor_cze.5.t	
+	desc = {
+		text = hungary_flavor_cze.5.d
+		trigger = { 
+			HUN = {  has_cosmetic_tag = HUN_AHU }
+		}
+	}
+	desc = {
+		text = hungary_flavor_cze.5.d_2
+		trigger = { 
+			NOT = { HUN = { has_cosmetic_tag = HUN_AHU } }
+		}
+	}
+	picture = GFX_report_event_little_entente
+	
+	is_triggered_only = yes
+	
+	#Send the requests to Romania and Yugoslavia
+	option = {
+		name = hungary_flavor_cze.5.a
+		ai_chance = {
+			factor = 80
+		}
+		ROM = { country_event = { hours = 4 id = hungary_flavor_rom.5 } }
+		YUG = { country_event = { hours = 4 id = hungary_flavor_yug.4 } }
+		custom_effect_tooltip = hungary_flavor_cze.5.tt
+	}
+	
+	#The Little Entente is but a long forgotten dream. We can do nothing.
+	option = {
+		name = hungary_flavor_cze.5.b
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+
+# Fate of the Little Entente
+country_event = {
+	id = hungary_flavor_cze.6
+	title = hungary_flavor_cze.6.t	
+	desc = {
+		text = hungary_flavor_cze.6.d_both
+		trigger = { 
+			has_country_flag = little_entente_YUG_plus
+			has_country_flag = little_entente_ROM_plus
+		}
+	}
+	desc = {
+		text = hungary_flavor_cze.6.d_rom
+		trigger = { 
+			has_country_flag = little_entente_YUG_minus
+			has_country_flag = little_entente_ROM_plus
+		}
+	}
+	desc = {
+		text = hungary_flavor_cze.6.d_yug
+		trigger = { 
+			has_country_flag = little_entente_YUG_plus
+			has_country_flag = little_entente_ROM_minus
+		}
+	}
+	desc = {
+		text = hungary_flavor_cze.6.d_neither
+		trigger = { 
+			has_country_flag = little_entente_YUG_minus
+			has_country_flag = little_entente_ROM_minus
+		}
+	}
+	picture = GFX_report_event_little_entente
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	#We will stop this menace together!
+	option = {
+		name = hungary_flavor_cze.6.a
+		trigger = { 
+			has_country_flag = little_entente_YUG_plus
+			has_country_flag = little_entente_ROM_plus
+		}
+		set_rule = { can_create_factions = yes }
+		create_faction = little_entente_faction
+		add_to_faction = ROM
+		add_to_faction = YUG
+		news_event = { hours = 4 id = hun_news.2 }
+	}
+	
+	#At least Romania stands with us.
+	option = {
+		name = hungary_flavor_cze.6.b
+		trigger = { 
+			has_country_flag = little_entente_YUG_minus
+			has_country_flag = little_entente_ROM_plus
+		}
+		set_rule = { can_create_factions = yes }
+		create_faction = little_entente_faction
+		add_to_faction = ROM
+		news_event = { hours = 4 id = hun_news.2 }
+	}
+	
+	#At least our southern brothers stand with us.
+	option = {
+		name = hungary_flavor_cze.6.c
+		trigger = { 
+			has_country_flag = little_entente_YUG_plus
+			has_country_flag = little_entente_ROM_minus
+		}
+		set_rule = { can_create_factions = yes }
+		create_faction = little_entente_faction
+		add_to_faction = YUG
+		news_event = { hours = 4 id = hun_news.2 }
+	}
+	
+	#This is a big disappointment for our nation
+	option = {
+		name = hungary_flavor_cze.6.d
+		trigger = { 
+			has_country_flag = little_entente_YUG_minus
+			has_country_flag = little_entente_ROM_minus
+		}
+		news_event = { hours = 4 id = hun_news.3 }
+	}
+}
+
+# Slovakian-Hungarian Small War
+country_event = {
+	id = hungary_flavor_cze.7
+	title = hungary_flavor_cze.7.t
+	desc = hungary_flavor_cze.7.d
+	picture = GFX_hun_slo_small_war
+	
+	is_triggered_only = yes
+	
+	#We have successfully stopped Hungarian aggression.
+	option = {
+		name = hungary_flavor_cze.7.a
+		add_manpower = -40
+	}
+}
+
+# Hungary asks for a referendum in Southern Slovakia
+country_event = {
+	id = hungary_flavor_cze.8
+	title = hungary_flavor_cze.8.t
+	desc = hungary_flavor_cze.8.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	is_triggered_only = yes
+	
+	#Allow the referendum.
+	option = {
+		name = hungary_flavor_cze.8.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				OR = {
+					has_country_flag = HUN_danubian_coalition_member
+					has_country_flag = HUN_visegrad_group_member
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_opinion = { target = HUN value > 49 }
+			}						
+		}
+		HUN = {
+			country_event = { hours = 6 id = hungary_flavor.107 }
+			effect_tooltip = {			
+				random_list = { 
+					85 = { 
+						transfer_state = 664 #Southern Slovakia 
+						add_state_core = 664 #Southern Slovakia 
+						if = {
+							limit = { CZE = { owns_state = 748 } }	#Beregszasz
+							transfer_state = 748 #Beregszasz
+							add_state_core = 748 #Beregszasz
+						}
+					} 
+					15 = { } 
+				}
+			}
+		}
+	}
+	
+	#Southern Slovakia is ours, and always will be.
+	option = {
+		name = hungary_flavor_cze.8.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 4
+				has_government = fascism
+			}			
+			modifier = {
+				factor = 2
+				FROM = {  has_country_flag = HUN_realism }
+			}						
+		}
+		HUN = { country_event = { hours = 6 id = hungary_flavor.108 } }
+	}
+}
+
+# Hungary forces through Southern Slovakian referendum
+country_event = {
+	id = hungary_flavor_cze.9
+	title = hungary_flavor_cze.9.t
+	desc = {
+		text = hungary_flavor_cze.9.d_danub
+		trigger = { has_country_flag = HUN_danubian_coalition_member }
+	}
+	desc = {
+		text = hungary_flavor_cze.9.d_viseg
+		trigger = { has_country_flag = HUN_visegrad_group_member }
+	}
+	desc = {
+		text = hungary_flavor_cze.9.d_faction	#This option should not trigger ever, this is only a fail-safe
+		trigger = { 
+			NOT = { has_country_flag = HUN_danubian_coalition_member }
+			NOT = { has_country_flag = HUN_visegrad_group_member }
+		}
+	}
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	#We will remember this.
+	option = {
+		name = hungary_flavor_cze.9.a
+		HUN = {
+			random_list = {
+				85 = { 
+					transfer_state = 664 #Southern Slovakia 
+					add_state_core = 664 #Southern Slovakia 
+					if = {
+						limit = { CZE = { owns_state = 748 } }	#Beregszasz
+						transfer_state = 748 #Beregszasz
+						add_state_core = 748 #Beregszasz
+					}
+				} 
+				15 = { } 
+			}
+		}
+	}
+}
+

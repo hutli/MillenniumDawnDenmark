@@ -1,0 +1,36 @@
+﻿l_hungarian:
+ HUN_destroyer_1:0 "Tátra Osztály"
+ HUN_destroyer_2:0 "Kajmán Osztály"
+ HUN_destroyer_3:0 "Csikós Osztály"
+ HUN_destroyer_4:0 "Huszár Osztály"
+ 
+ HUN_light_cruiser_1:0 "Novara Osztály"
+ HUN_light_cruiser_2:0 "Zenta Osztály"
+ HUN_light_cruiser_3:0 "Báthori Osztály"
+ HUN_light_cruiser_4:0 "Zombor Osztály"
+ 
+ HUN_heavy_cruiser_1:0 "Sankt Georg Osztály"
+ HUN_heavy_cruiser_2:0 "Rákóczi Osztály"
+ HUN_heavy_cruiser_3:0 "Budapest Osztály"
+ HUN_heavy_cruiser_4:0 "Hadik Osztály"
+ 
+ HUN_battle_cruiser_1:0 "Projekt VI Schlachtkreuzer"
+ HUN_battle_cruiser_2:0 "Radetzky Osztály"
+ 
+ HUN_battleship_1:0 "Tegetthoff Osztály"
+ HUN_battleship_2:0 "Ersatz Monarch Osztály"
+ HUN_battleship_3:0 "Hunyadi Osztály"
+ HUN_battleship_4:0 "Kinizsi Osztály"
+ 
+ HUN_SH_battleship_1:0 "Szent István Osztály"
+ HUN_SH_battleship_2:0 "Szent László Osztály"
+ 
+ HUN_carrier_1:0 "Carpathia Osztály"
+ HUN_carrier_2:0 "Pannónia Osztály"
+ HUN_carrier_3:0 "Tomori Osztály"
+ HUN_carrier_4:0 "Esterházy Osztály"
+ 
+ HUN_submarine_1:0 "Balin Osztály"
+ HUN_submarine_2:0 "Csuka Osztály"
+ HUN_submarine_3:0 "Süllö Osztály"
+ HUN_submarine_4:0 "Harcsa Osztály"

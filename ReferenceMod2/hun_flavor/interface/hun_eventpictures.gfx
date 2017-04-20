@@ -1,0 +1,131 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_horthy"
+		texturefile = "gfx/event_pictures/report_event_horthy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_wilsons_10th"
+		texturefile = "gfx/event_pictures/wilsons_10th.dds"
+	}
+
+	spriteType = {
+		name = "GFX_hun_slo_small_war"
+		texturefile = "gfx/event_pictures/hun_slo_small_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_ahu"
+		texturefile = "gfx/event_pictures/report_event_HUN_ahu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_banat"
+		texturefile = "gfx/event_pictures/report_event_HUN_banat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_HUN_little_entente"
+		texturefile = "gfx/event_pictures/news_event_HUN_little_entente.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_ahu_old"
+		texturefile = "gfx/event_pictures/report_event_HUN_ahu_old.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_albania"
+		texturefile = "gfx/event_pictures/report_event_HUN_albania.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_alfold_to_romania"
+		texturefile = "gfx/event_pictures/report_event_HUN_alfold_to_romania.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_arrow_cross_coup"
+		texturefile = "gfx/event_pictures/report_event_HUN_arrow_cross_coup.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_burgas"
+		texturefile = "gfx/event_pictures/report_event_HUN_burgas.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_burgenland"
+		texturefile = "gfx/event_pictures/report_event_HUN_burgenland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_capitulation"
+		texturefile = "gfx/event_pictures/report_event_HUN_capitulation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_carpathian_ruthenia"
+		texturefile = "gfx/event_pictures/report_event_HUN_carpathian_ruthenia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_czechoslovakia"
+		texturefile = "gfx/event_pictures/report_event_HUN_czechoslovakia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_danube"
+		texturefile = "gfx/event_pictures/report_event_HUN_danube.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_gyori_program"
+		texturefile = "gfx/event_pictures/report_event_HUN_gyori_program.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_southern_slovakia"
+		texturefile = "gfx/event_pictures/report_event_HUN_southern_slovakia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_transylvania"
+		texturefile = "gfx/event_pictures/report_event_HUN_transylvania.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_trianon"
+		texturefile = "gfx/event_pictures/report_event_HUN_trianon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_troop_exchange"
+		texturefile = "gfx/event_pictures/report_event_HUN_troop_exchange.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_visegrad_group"
+		texturefile = "gfx/event_pictures/report_event_HUN_visegrad_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_yugoslavian_partition"
+		texturefile = "gfx/event_pictures/report_event_yugoslavian_partition.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_little_entente"
+		texturefile = "gfx/event_pictures/report_event_little_entente.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_HUN_hitler_horthy_meeting"
+		texturefile = "gfx/event_pictures/report_event_HUN_hitler_horthy_meeting.dds"
+	}
+	
+}
+
+
+

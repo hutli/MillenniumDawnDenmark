@@ -1,0 +1,227 @@
+spriteTypes = {	
+
+	#National spirits
+	
+	SpriteType = {
+		name = "GFX_idea_revisionist_spirit"
+		texturefile = "gfx/interface/national_spirit/revisionist_spirit.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_rakosi_administration"
+		texturefile = "gfx/interface/national_spirit/rakosi_administration.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_kadar_administration"
+		texturefile = "gfx/interface/national_spirit/kadar_administration.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_fascism_losing_popularity"
+		texturefile = "gfx/interface/national_spirit/fascism_losing_popularity.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_trianon_restrictions"
+		texturefile = "gfx/interface/ideas/trianon_restrictions.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_multinational_state"
+		texturefile = "gfx/interface/national_spirit/multinational_state.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_bomber_production_innovations"
+		texturefile = "gfx/interface/national_spirit/bomber_production_innovations.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_fighter_production_innovations"
+		texturefile = "gfx/interface/national_spirit/fighter_production_innovations.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_gyori_program_army_research"
+		texturefile = "gfx/interface/national_spirit/gyori_program_army_research.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_industrial_effort"
+		texturefile = "gfx/interface/national_spirit/industrial_effort.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_levente_movement"
+		texturefile = "gfx/interface/national_spirit/levente_movement.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_naval_defense"
+		texturefile = "gfx/interface/national_spirit/naval_defense.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_revisionist_education"
+		texturefile = "gfx/interface/national_spirit/revisionist_education.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_supporting_italy"
+		texturefile = "gfx/interface/national_spirit/supporting_italy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_visegrad_military_council"
+		texturefile = "gfx/interface/national_spirit/visegrad_military_council.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_war_preparation"
+		texturefile = "gfx/interface/national_spirit/war_preparation.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_successful_revision"
+		texturefile = "gfx/interface/national_spirit/successful_revision.dds"
+	}
+	
+	#Government ideas/advisors
+
+	SpriteType = {
+		name = "GFX_idea_horthy"
+		texturefile = "gfx/interface/ideas/idea_horthy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_king_horthy"
+		texturefile = "gfx/interface/ideas/idea_king_horthy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_magdolna_purgly"
+		texturefile = "gfx/interface/ideas/idea_magdolna_purgly.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_bela_imredy"
+		texturefile = "gfx/interface/ideas/idea_bela_imredy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_dome_sztojay"
+		texturefile = "gfx/interface/ideas/idea_dome_sztojay.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_ferenc_feketehalmi_czeyndner"
+		texturefile = "gfx/interface/ideas/idea_ferenc_czeydner.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_ferenc_keresztes_fischer"
+		texturefile = "gfx/interface/ideas/idea_ferenc_fischer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_ferenc_szombathelyi"
+		texturefile = "gfx/interface/ideas/idea_ferenc_szombathelyi.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_janos_kadar"
+		texturefile = "gfx/interface/ideas/idea_janos_kadar.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_matyas_rakosi"
+		texturefile = "gfx/interface/ideas/idea_matyas_rakosi.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_fidel_pallfy"
+		texturefile = "gfx/interface/ideas/idea_fidel_pallfy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_jozsef_szell"
+		texturefile = "gfx/interface/ideas/idea_jozsef_szell.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_kalman_kanya"
+		texturefile = "gfx/interface/ideas/idea_kalman_kanya.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_miklos_kallay"
+		texturefile = "gfx/interface/ideas/idea_miklos_kallay.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_tihamer_fabinyi"
+		texturefile = "gfx/interface/ideas/idea_tihamer_fabinyi.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_vilmos_roder"
+		texturefile = "gfx/interface/ideas/idea_vilmos_roder.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_zoltan_tildy"
+		texturefile = "gfx/interface/ideas/idea_zoltan_tildy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_HUN_karoly_rassay"
+		texturefile = "gfx/interface/ideas/idea_karoly_rassay.dds"
+	}
+	
+
+	SpriteType = {
+		name = "GFX_idea_feg"
+		texturefile = "gfx/interface/ideas/feg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_digep"
+		texturefile = "gfx/interface/ideas/digep.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_mavag"
+		texturefile = "gfx/interface/ideas/mavag.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_csepel_muvek"
+		texturefile = "gfx/interface/ideas/csepel_muvek.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_raba"
+		texturefile = "gfx/interface/ideas/raba.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_ganz_villamossagi_gyar"
+		texturefile = "gfx/interface/ideas/ganz_villamossagi_gyar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_mw_aircraft"
+		texturefile = "gfx/interface/ideas/csepel_muvek.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_lloyd_aircraft"
+		texturefile = "gfx/interface/ideas/idea_generic_air_manufacturer_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_mavag_aircraft"
+		texturefile = "gfx/interface/ideas/mavag_aircraft.dds"
+	}
+}

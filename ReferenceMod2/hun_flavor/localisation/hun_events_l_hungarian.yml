@@ -1,0 +1,1754 @@
+﻿l_hungarian:
+ hun_news.1.t:0 "Jugoszlávia Felosztása"
+ hun_news.1.d:0 "Magyarország elég befolyást gyakorolt a Balkánra, hogy végül Jugoszlávia felosztását sikerüljön megvalósítania. A balkáni régió új arca néhány nemzet számára kedvezö, ám vannak, akik szerint ez elborzasztó látvány."
+ hun_news.1.a:0 "Az új térkép pompásan fest."
+ hun_news.1.b:0 "Ez egész Európára veszélyt jelent!"
+ hun_news.1.c:0 "Lenyügözö, milyen gyorsan keletkeznek és szünnek meg országok."
+ 
+ hun_news.2.t:0 "A Kisantant"
+ hun_news.2.d:0 "Az osztrák-magyar állam újdonsült felemelkedését követöen Csehszlovákia összefogásra szólította fel a volt Kisantant többi tagját. A megújult szövetség készen áll a Habsburgok birodalmi ambícióival szembeszállni, ha kell akár erövel is."
+ hun_news.2.d_2:0 "Miután Magyarország kijelentette, hogy igényt tart korábbi területeire, Csehszlovákia cselekvésre sarkallta a Kisantant másik két tagját. A szövetség sikeresen megújításra került, és tagjai újult erövel állnak a magyar terjeszkedés útjába."
+ hun_news.2.a:0 "A ménykü csapna beléjük!"
+ hun_news.2.b:0 "Éljen!"
+ hun_news.2.c:0 "Ez bizonyára csökkenteni fogja a feszültséget a térségben."
+ 
+ hun_news.3.t:0 "A Kisantant Vége"
+ hun_news.3.d:0 "Csehszlovákia sikertelenül próbálta a Kisantant tagjait összehívni, hogy az új osztrák-magyar állam terjeszkedése ellen közösen lépjenek fel. Könnyen lehet, hogy egyesével nem tudnak majd ellenállni az újjászületett birodalom erejének, de egy dolog biztos: a Kisantant hivatalosan is feloszlott."
+ hun_news.3.d_2:0 "Románia és Jugoszlávia hivatalosan is kilépett a Kisantantból, miután elmulasztottak válaszolni Csehszlovákia kérésére, amelynek értelmében megújításra került volna a szövetség, Magyarország újdonsült területi ambícióinak korlátozására."
+ hun_news.3.a:0 "A Kisantant gyenge országok gyenge összefogása volt."
+ hun_news.3.b:0 "A tétlenség fogja a vesztünket okozni."
+ hun_news.3.c:0 "Nem sikerült valami tartósra ez a szövetség."
+ 
+ hun_news.4.t:0 "A Visegrádi Szövetség"
+ hun_news.4.d_both:0 "A frissen demokratikussá vált Magyarország nem sokáig maradt tétlen a nemzetközi színtéren. A magyar, csehszlovák és lengyel kormányok közti hosszas tárgyalásokat követöen megszületett a Visegrádi hármas szövetség. A három ország egyesült erövel komoly befolyással bírhat Európában."
+ hun_news.4.d_POL:0 "Magyarország újonnan megválasztott demokratikus vezetösége egy szövetségi rendszer kiépítésébe kezdett, elsö lépésként Lengyelországgal aláírva egy kölcsönös védelmi egyezményt. Az eredeti tervek szerint Csehszlovákia is része lett volna a szövetségnek, de a tárgyalások nélkülük értek véget. Könnyen lehet, hogy ez egy erös szövetséggé növi ki magát, vagy csupán egy gyenge próbálkozás az európai nagyhatalmak közötti érvényesülésre."
+ hun_news.4.d_CZE:0 "Magyarország újonnan megválasztott demokratikus vezetösége egy szövetségi rendszer kiépítésébe kezdett, elsö lépésként Csehszlovákiával aláírva egy kölcsönös védelmi egyezményt. Az eredeti tervek szerint Lengyelország is része lett volna a szövetségnek, de a tárgyalások nélkülük értek véget. Könnyen lehet, hogy ez egy erös szövetséggé növi ki magát, vagy csupán egy gyenge próbálkozás az európai nagyhatalmak közötti érvényesülésre."
+ hun_news.4.a:0 "Reméljük az együttmüködés tartós lesz."
+ hun_news.4.b:0 "Jól tettük, hogy kimaradtunk ebböl."
+ hun_news.4.c:0 "Ez már majdnem érdekes."
+ hun_news.4.c:0 "Ez majd talán stabilizálja a régiót."
+ 
+ hun_news.5.t:0 "[From.GetName] Állásfoglalás a [HUN.GetAdjective] Terjeszkedés Ellen"
+ hun_news.5.d:0 "\n[From.GetName] kijelentette, hogy amennyiben [HUN.GetName] nem hagy fel a terjeszkedéssel, háborút fog indítani ellenük."
+ hun_news.5.a:0 "Jöjjenek csak!"
+ hun_news.5.b:0 "Nem türhetjük, hogy Európa békéjét ilyen könnyen felrúgják."
+ hun_news.5.c:0 "Ez vajon elég lesz ahhoz, hogy megállítsa öket?"
+ 
+ hun_news.6.t:0 "[From.GetAdjective] szembeszáll a [HUN.GetAdjective] agresszióval"
+ hun_news.6.d:0 "[From.GetLeader] betartotta ígéretét, miszerint megtámadja [HUN.GetName]t, amennyiben folytatja a féktelen terjeszkedést. A hadüzenet immár hivatalos, [From.GetName] és [HUN.GetName] háborúban állnak."
+ hun_news.6.a:0 "Próbáljanak csak meg [HUN.GetAdjective] földre lépni."
+ hun_news.6.b:0 "Fegyverbe!"
+ hun_news.6.c:0 "Ha háború, hát háború."
+ 
+ hungary_flavor_gen.1.t:0 "Ausztria és Magyarország Újra Egyesül"
+ hungary_flavor_gen.1.d:0 "Az osztrák és magyar kormány hosszas konferenciáján arról döntöttek, hogy a két ország egyesülése esetén újra Habsburg Ottó, a császár legidösebb fia vegye át az uralkodói szerepet a két ország felett."
+ hungary_flavor_gen.1.a:0 "Ez valóban nagyon érdekes."
+ 
+ hungary_flavor_gen.2.t:0 "A Dunamenti Koalíció"
+ hungary_flavor_gen.2.d:0 "Az újonnan már demokratikus magyar kormány a környezö országoknak azt a javaslatot tette, miszerint egyesüljenek egy nagy Dunamenti Koalícióba, annak érdekében, hogy az ellenséges országok ellen együtt léphessenek fel, így több esély lenne arra, hogy megvédjék szuverenitásukat."
+ hungary_flavor_gen.2.a:0 "Elfogad."
+ hungary_flavor_gen.2.b:0 "Elutasít."
+ 
+ hungary_flavor_gen.3.t:0 "Imperialista Puccs Csehszlovákiában"
+ hungary_flavor_gen.3.d:0 "Az elmúlt napokban egy nagy tömeg rohamozta meg Prágát. Annyit biztosan tudtunk, hogy a mozgalom Ausztria-Magyarországot támogatja. Úgy özönlötték el a várost, hogy alig ütköztek némi ellenállásba. Végül elfoglalták a kormányzati hivatalokat, és saját tisztviselöiket ülették a régiek helyére. Ez az imperialista mozgalom létrehozott egy új kormányt, amely nyíltan arra törekszik, hogy csatlakozzon Ausztria és Magyarország újraegyesült birodalmához."
+ hungary_flavor_gen.3.a:0 "Kiváló fejlemények."
+ hungary_flavor_gen.3.b:0 "Ez egy váratlan fordulat."
+ 
+ hungary_flavor_gen.4.t:0 "[From.GetAdjective] Terjeszkedés"
+ hungary_flavor_gen.4.d:0 "[From.GetName] a közelmúltban néhány agresszív területi terjeszkedést hajtott végre Európában. Hagyhatjuk öket, hogy tovább nyerjék vissza területi igényeiknek megfelelöen más országok jogos tulajdonát, vagy választhatjuk azt is, hogy ezt tovább nem türve, katonai beavatkozást teszünk."
+ hungary_flavor_gen.4.a:0 "Be kell avatkoznunk!"
+ hungary_flavor_gen.4.b:0 "Ugyan, majd végül úgy is abbahagyják."
+ 
+ hungary_flavor_gen.5.t:0 "Visegrádi Szövetség"
+ hungary_flavor_gen.5.d:0 "Magyarország kifejezte azon szándékát, hogy meghívjon bennünket újdonsült szövetségébe, amit 'Visegrádi Szövetségnek' neveznek. A szövetség regionális alapú, és Magyarország körüli országok köré épül. A tagság elönyünkre válhat, és a szomszédos országokkal való szoros együttmüködés más hasznokat is hozhat. Mit válaszolunk a kérésükre?"
+ hungary_flavor_gen.5.a:0 "Elfogadjuk."
+ hungary_flavor_gen.5.b:0 "Elutasítjuk."
+ 
+ hungary_flavor_gen.6.t:0 "Visegrádi Gazdasági Kör"
+ hungary_flavor_gen.6.d:0 "Egy sor találkozó után a Visegrádi Szövetség tagjai úgy határoztak, hogy a szövetséget kiterjesztik gazdasági unióvá. A jelenlegi vezetö, Magyarország, bejelentette a változásokat, és kiegészítette a szövetség szerzödését. Mostantól kezdve minden tagállam közös piaccal rendelkezik, és szabadon kereskedhet bármely másik tagállammal."
+ hungary_flavor_gen.6.a:0 "Ez mindannyiunk javára válik."
+ 
+ hungary_flavor_gen.7.t:0 "Visegrádi Szövetségi Tagság"
+ hungary_flavor_gen.7.d:0 "A mai naptól hivatalosan is tagjai vagyunk a Visegrádi Szövetségnek. Aláírtuk minden szerzödést, amely a tagsággal jár, ahogy minden tagállam elöttünk ezt már megtette."
+ hungary_flavor_gen.7.a:0 "Ez a szövetség hasznunkra válik majd."
+ 
+ hungary_flavor_gen.8.t:0 "A Visegrádi Szövetség Elhagyása"
+ hungary_flavor_gen.8.d:0 "Természetesen minden szerzödést fel kell mondanunk a tagállamokkal, most hogy kiléptünk a szövetségböl. Sokáig fog tartani, de végül teljesen szabadok leszünk a szövetség megkötéseitöl."
+ hungary_flavor_gen.8.a:0 "Ami történt megtörtént. Koncentráljunk a jövöre."
+ 
+ hungary_flavor_gen.9.t:0 "[From.GetName] Elhagyja a Visegrádi Szövetséget"
+ hungary_flavor_gen.9.d:0 "\n[From.GetName] nem volt sokáig tagja a szövetségnek, és máris a kilépés mellett döntött. Bizonyára megvolt rá az okuk, és fájó szívvel veszünk tölük búcsút, de mindenekelött fel kell mondanunk velük a szövetség keretein belül kötött szerzödéseinket."
+ hungary_flavor_gen.9.a:0 "Szomorú nap ez a szövetség számára."
+ 
+ hungary_flavor_gen.10.t:0 "Visegrádi Kutatás Kör"
+ hungary_flavor_gen.10.d:0 "A Visegrádi Szövetség folyamatosan bövülö egyezményrendszerének mostantól része egy kötelezö technológiai csoportba való belépés is, ami biztosítja a legújabb fejlesztések kivétel nélküli megosztását. Közös erövel bizonyára gyorsabban fogunk fejlödni, mint egyesével."
+ hungary_flavor_gen.10.a:0 "Együtt a tudományért!"
+ 
+ hungary_flavor_gen.11.t:0 "Visegrádi Katonai Tanács"
+ hungary_flavor_gen.11.d:0 "A Visegrádi Szövetség még szorosabb együttmüködéssé alakul, most hogy létrejött egy egyesített katonai tanács, ami a közös hadmüveleteket hivatott felülvigyázni. A tanács közeli kapcsolatban lesz minden tagállam katonai vezetésével, így egy esetleges krízis fennállása esetén gyorsan tud reagálni bármely fronton."
+ hungary_flavor_gen.11.a:0 "A biztonság mindannyiunk érdeke."
+ 
+ hungary_flavor_aus.1.t:0 "Szövetség Magyarországgal"
+ hungary_flavor_aus.1.d:0 "Magyar diplomaták az elmúlt hónapokban éjjel-nappal azon dolgoznak a nagykövetségen, hogy egy szövetség jöjjön létre országaink között. Ez lehet, hogy elönyös lenne. Talán még egyesülhetnének is országaink megannyi év után."
+ hungary_flavor_aus.1.a:0 "Ez nagyszerü! A magyarok mindig is a barátaink voltak."
+ hungary_flavor_aus.1.b:0 "Nem fogjuk támogatni az ostoba nacionalista törekvéseket."
+ 
+ hungary_flavor_aus.2.t:0 "Magyarország Népszavazást Kezdeményez az Örvidéken"
+ hungary_flavor_aus.2.d:0 "Magyarország hatalmas területeket veszített az elsö világháború után, az egyik ilyen terület az Örvidék (Burgenland), amelyet most mi birtokolunk. Magyarország azt javasolja, hogy az emberek döntsék el azt, kihez szeretnének tartozni, hozzánk, vagy hozzájuk. Ez ugyanolyan népszavazás lenne, mint az 1921-ben megtartott soproni népszavazás, ahol az emberek úgy döntöttek, inkább Magyarország részei kívánnak maradni. Engedélyezzük ezt a népszavazást?"
+ hungary_flavor_aus.2.a:0 "Népszavazás engedélyezése."
+ hungary_flavor_aus.2.b:0 "Soha!"
+ 
+ hungary_flavor_aus.3.t:0 "Magyarország Felajánlja Szlovéniát az Örvidékért"
+ hungary_flavor_aus.3.d:0 "Annak ellenére, hogy Magyarország nem hívta meg a konferenciára Jugoszláviát, felajánlja Örvidékért cserébe egész Szlovéniát. Való igaz, hogy az Örvidék történelmi magyar terület, Szlovénia pedig hosszú idön át hozzánk tartozott. Így voltaképp ez egy igazságos ajánlat a magyar kormánytól. Mit válasszunk?"
+ hungary_flavor_aus.3.a:0 "Elfogadjuk az ajánlatukat."
+ hungary_flavor_aus.3.b:0 "Még mit nem! Örvidék a miénk!"
+ 
+ hungary_flavor_pol.1.t:0 "Szövetség Magyarországgal"
+ hungary_flavor_pol.1.d:0 "Magyarország az elsö világháború utáni nehéz idökön túltette magát, és felemelkedésnek indult. Most, hogy egy erös kormányuk van, létre tudtak hozni egy új frakciót, amibe most meghívtak minket. Ezzel a szövetséggel még erösebbek lehetünk, és megvédhetjük nemzeti szuverenitásunkat."
+ hungary_flavor_pol.1.a:0 "Miért is utasítanánk el?"
+ hungary_flavor_pol.1.b:0 "Nem tudjuk elfogadni."
+ 
+ hungary_flavor_pol.2.t:0 "Ausztria-Magyarország Követeli Krakkót és Galíciát"
+ hungary_flavor_pol.2.d:0 "\nA legtöbb déli terület egykor az Osztrák Magyar Monarchia része volt. Most, hogy újjáalakultak Ausztria-Magyarország néven, benyújtották igényeiket Krakkó és Galícia területeire. Ezekröl vagy lemondunk, vagy harcba szállunk értük."
+ hungary_flavor_pol.2.a:0 "A kérdéses területek átadása."
+ hungary_flavor_pol.2.b:0 "Felháborító ez a követelés!"
+ 
+ hungary_flavor_pol.3.t:0 "Lengyel-Magyar Hírszerzési Kooperáció"
+ hungary_flavor_pol.3.d:0 "A magyar diplomaták aláírták azt a közös megegyezést, amely szerint a hírszerzési információkat országaink megosztják egymással."
+ hungary_flavor_pol.3.a:0 "Az együttmüködésben mindig a helyes választás."
+ 
+ hungary_flavor_pol.4.t:0 "[From.GetName] Támogatja Északi Területi Igényeinket"
+ hungary_flavor_pol.4.d:0 "\nA(z) [Root.GetFactionName] olyan lehetöségeket teremt, amiket mi egyedül nem tudtunk volna kihasználni. [From.GetName] hivatalosan is támogatja területi igényünket Kelet-Poroszországra, így már játszi könnyedséggel tudnánk megszerezni, ha le tudnánk gyözni Németországot."
+ hungary_flavor_pol.4.a:0 "Egyre gyümölcsözöbb ez az új szövetség."
+ 
+ hungary_flavor_bul.1.t:0 "Szövetség Magyarországgal"
+ hungary_flavor_bul.1.d:0 "Magyar diplomaták nemrégiben felkeresték kormányunkat egy tervezett szövetség jegyében. Az általuk létrehozott frakciót 'Az Új Központi Hatalmak'-nak nevezik, és szeretnék, ha csatlakoznánk ehhez a szövetséghez. Érdekes javaslat, mivel az ö riválisak megyegyeznek a mieinkel."
+ hungary_flavor_bul.1.a:0 "Valóban érdekes. Elfogadjuk!"
+ hungary_flavor_bul.1.b:0 "Új Központi Hatalmak? Ostobaság!"
+ 
+ hungary_flavor_bul.2.t:0 "Burgasz Ipari Fejlesztési Projekt"
+ hungary_flavor_bul.2.d:0 "[From.GetName] segítségével új gyárak épültek Burgasz régióban. A gyárak elsösorban fegyvereket gyártanak, de teljes mértékben az irányításunk alatt vannak. Ez a gesztus bizonyítja, hogy [From.GetName] a mi érdekeinket is szem elött tartja."
+ hungary_flavor_bul.2.a:0 "Végig tudtam, hogy jó döntés volt szövetkezni velük."
+ 
+ hungary_flavor_ita.1.t:0 "Szlovénia Záráért és Fiuméért Cserébe"
+ hungary_flavor_ita.1.d:0 "Magyarország felvettette a konferencián Jugoszlávia felosztását. Elgondolásuk szerint Szlovéniát átadják nekünk cserébe Záráért. Igazából mindkettöre szükségünk lenne, de csak egy választásunk van. Zára átadásával egy fontos kikötöt is elveszítünk az Adriai-tengeren. Hogy döntsünk?"
+ hungary_flavor_ita.1.a:0 "Elfogadjuk az ajánlatot."
+ hungary_flavor_ita.1.b:0 "Elutasítjuk!"
+ 
+ hungary_flavor_ita.2.t:0 "Tárgyalások Magyarországgal"
+ hungary_flavor_ita.2.d:0 "Miután Magyarország Németország felé kezdett közelíteni, a diplomatáik minket is megkerestek a diplomáciai kapcsolataink rendezése végett.\n\n\n(A feltételek a válasz gombján olvashatók)"
+ hungary_flavor_ita.2.a:0 "Elfogadjuk a kezdeményezést."
+ hungary_flavor_ita.2.b:0 "Elutasítjuk a feltételeiket."
+ 
+ hungary_flavor_ita.3.t:0 "Zára és Fiume Átadása - Katonai Támogatásért"
+ hungary_flavor_ita.3.d:0 "\nMagyarország azt szeretné, ha átadnánk nekik Zárát és Fiumét, cserébe pedig tekintélyes mennyiségü fegyvert, és egy megnemtámadási szerzödést javasolnak. Mit reagáljunk a javaslatunkra?"
+ hungary_flavor_ita.3.a:0 "Elfogadjuk az ajánlatot."
+ hungary_flavor_ita.3.b:0 "Elutasítjuk!"
+ 
+ hungary_flavor_ita.4.t:0 "Zára, Fiume és Isztria Átadása - Katonai és Politikai Támogatásért"
+ hungary_flavor_ita.4.d:0 "\nEgy merész ajánlatot nyújtottak be hozzánk a magyar diplomaták. Azt szeretnék, hogy adjuk át Zárát, Fiumét és Isztriát, cserébe pedig tekintélyes mennyiségü fegyvert adnának. Továbbá ígéretet tettek arra, hogy bármilyen módon hajlandók lennének segítenek nyújtani politikai céljaink megvalósítására. A szerzödés tartalmazna egy megnemtámadási egyezményre vonatkozó bejegyzést is. Ennek elfogadásával egy értékes szövetség veheti kezdetét, de ennek területi ára van. Mit reagáljunk a javaslatunkra?"
+ hungary_flavor_ita.4.a:0 "Elfogadjuk az ajánlatot."
+ hungary_flavor_ita.4.b:0 "Elutasítjuk!"
+ 
+ hungary_flavor_ita.5.t:0 "Ausztria-Magyarország Követeli Korábbi Területeit"
+ hungary_flavor_ita.5.d:0 "\nAz újjászületett Ausztria-Magyarország és kormánya világossá tette, hogy vissza szeretnék kapni az általuk jogosnak vélt területeiket. A 'jogos' tulajdon magába foglalja az általunk uralt Isztriát és Dél-Tirolt is. Azzal a szándékkal kerestek meg minket, hogy békésen oldjuk meg a területi vitát, cserébe pedig némi görög területet, és örök békét ígértek országaink között. Egyetértünk abban, hogy ezek a területek öket illetik?"
+ hungary_flavor_ita.5.a:0 "Végre egy lehetöség a görög ambícióink megvalósítására."
+ hungary_flavor_ita.5.b:0 "Nem! Eszükben sincs."
+ 
+ hungary_flavor_ita.6.t:0 "Jugoszlávia Felosztásának Gyümölcsei"
+ hungary_flavor_ita.6.d:0 "A Jugoszlávia felosztását tárgyaló konferencia során [From.GetName] nekünk ítélt néhány területet, amire már régóta fájt a fogunk. Néhány tanácsadó szerint itt az ideje közelebbi kapcsolatokat kiépíteni velük, és belépni a szövetségükbe. Még az is lehet, hogy a végén még több terület hullik majd az ölünkbe."
+ hungary_flavor_ita.6.a:0 "Javasoljunk egy szövetséget."
+ hungary_flavor_ita.6.b:0 "Tartsuk a távolságot."
+ 
+ hungary_flavor_ita.7.t:0 "Németország Átadja Ljubljana Területét"
+ hungary_flavor_ita.7.d:0 "Mindenkinek tudtára adtuk, hogy mik a követeléseink, és a németek eleget tettek ennek. Ljubljana most már a mi irányításunk alatt áll."
+ hungary_flavor_ita.7.a:0 "Nem is vártunk kevesebbet."
+ 
+ hungary_flavor_ger.1.t:0 "Magyarország Csatlakozna a Tengely Frakcióhoz"
+ hungary_flavor_ger.1.d:0 "Számtalan diplomáciai küldetést követöen, Magyarország végre megkeresett minket azzal a szándékkal, hogy csatlakoznának a Tengely frakcióhoz. Magyarország egy nagyon értékes szövetségesünk lehet, ha segítünk nekik visszaszerezni jogos területeiket."
+ hungary_flavor_ger.1.a:0 "Üdvözöljük köreinkben magyar barátainkat."
+ hungary_flavor_ger.1.b:0 "Jobb nekünk nélkülük."
+ 
+ hungary_flavor_ger.2.t:0 "Gyözedelmes Kommunizmus"
+ hungary_flavor_ger.2.d:0 "Most, hogy a munkásforradalom diadalmaskodott, el kell döntetnünk, hogyan folytassuk tovább a dolgokat. Keressünk más kommunista országokkal az együttmüködést az internacionáléhoz híven, vagy inkább saját utunkat járjuk?"
+ hungary_flavor_ger.2.a:0 "Az internacionalizmus a jövö!"
+ hungary_flavor_ger.2.b:0 "Magunknak kell folytatnunk a forradalmat."
+ 
+ hungary_flavor_ger.3.t:0 "A kommunista Németország szívesen csatlakozna a(z) [Root.GetFactionName] frakcióba"
+ hungary_flavor_ger.3.d:0 "Hihetetlen, de Németország újonnan már kommunista. Most be szeretnének lépni a(z) [Root.GetFactionName] frakcióba, nekünk pedig döntenünk kell erröl. Szeretnénk Németországot a szövetségünkben tudni?"
+ hungary_flavor_ger.3.a:0 "Természetesen!"
+ hungary_flavor_ger.3.b:0 "A saját útjukat kell járniuk."
+ 
+ hungary_flavor_ger.4.t:0 "[From.GetName] Elfogadja a Szövetséget"
+ hungary_flavor_ger.4.d:0 "Tárgyalások zajlottak [From.GetName] kormányával, és sikeresen aláírtuk a két ország közti szövetséget. A forradalom tüze még fényesebbé vált ezen a napon."
+ hungary_flavor_ger.4.a:0 "Elöre elvtársak!"
+ 
+ hungary_flavor_ger.5.t:0 "[From.GetName] Visszautasítja a Szövetséget"
+ hungary_flavor_ger.5.d:0 "Próbáltunk közeledni a(z) [From.GetAdjective] vezetés felé, mégis úgy döntöttek, hogy nem szeretnék, ha csatlakoznánk a(z) [From.GetFactionName] frakcióba."
+ hungary_flavor_ger.5.a:0 "Biztos megvannak az okai..."
+ 
+ hungary_flavor_ger.6.t:0 "Magyarország Visszaállítaná az Osztrák-Magyar Monarchiát"
+ hungary_flavor_ger.6.d:0 "\nAz elsö világháború utáni békediktátumok igazságtalanságaival kapcsolatban Magyarország megkezdte a tárgyalásokat Ausztriával. Magyarország elkötelezett abban, hogy visszaállítsa az Osztrák-Magyar Monarchiát, ezennel Ausztria-Magyarország néven. Minthogy Ausztria területi integritása fontos lehet számunkra, ez a lépés potenciálisan árthat a jövöbeni politikai törekvéseinknek."
+ hungary_flavor_ger.6.a:0 "Nem olyan lényeges."
+ hungary_flavor_ger.6.b:0 "Nem gyengíthetik a befolyásunkat!"
+ 
+ hungary_flavor_ger.7.t:0 "Magyarország Nem Hajlandó Meghátrálni"
+ hungary_flavor_ger.7.d:0 "Makacsul kapaszkodnak egyesülési ambícióikba, és továbbra is tárgyalásokat folytat Ausztriával. Mi ezt nyíltan elleneztük, ám most már eröteljes beavatkozásra van szükség ahhoz, hogy értsenek a szóból. Cselekedjünk, vagy hagyjuk, hogy azt tegyenek, amit akarnak?"
+ hungary_flavor_ger.7.a:0 "Csak a beavatkozásból értenek."
+ hungary_flavor_ger.7.b:0 "Félni fogják [Root.GetName] haragját... valamikor!"
+ 
+ hungary_flavor_ger.8.t:0 "Magyarország Bebiztosítása"
+ hungary_flavor_ger.8.d:0 "Ahogy a háború egyre tovább húzódik, néhányan a vezérkarból kezdik megkérdöjelezni Magyarország hüségét. Jelentéseink szerint az ellenséggel tárgyalnak, és köpönyegforgatásra készülnek. Biztosíthatnánk a hüségüket, ha megszállás alá vonnánk öket, és egy németbarát kormányt helyeznénk az ország élére. Már el is készült egy terv 'Margaréta hadmüvelet' néven, ami ezt a célt szolgálná."
+ hungary_flavor_ger.8.a:0 "Készüljünk fel a Margaréta hadmüveletre."
+ hungary_flavor_ger.8.b:0 "Biztosan nem gondolkoznak áruláson."
+ hungary_flavor_ger.8.tt:0 "Egy németbarát kormány kerül hatalomra Magyarországon.\n"
+ 
+ hungary_flavor_ger.9.t:0 "Segítségkérés Magyarországról"
+ hungary_flavor_ger.9.d:0 "A magyarok közelebbi együttmüködésre vágynak, így azt kérték tölünk, hogy a vezérkar egy részét küldjük Magyarországra, hogy segítsenek a hadsereg vezetésében. Könnyebben befolyásolhatnánk öket, ha elküldenénk egy ilyen delegációt, és ha még néhány tábornokkal is megsegítjük öket, talán még épkézláb szövetségesekké is válhatnak a jövöben. Mi a válaszunk a kérésükre?"
+ hungary_flavor_ger.9.a:0 "Végül is küldhetünk nekik néhányat a tábornokaink közül."
+ hungary_flavor_ger.9.b:0 "Elég lesz a delegáció. A tábornokokra nekünk is szükségünk van."
+ hungary_flavor_ger.9.c:0 "Nem áll érdekünkben a kisegítésük."
+ 
+ hungary_flavor_ger.10.t:0 "Olaszország Követeli Ljubljana Területét"
+ hungary_flavor_ger.10.d:0 "Olaszország jelezte szándékát, miszerint szeretné Szlovénia délnyugati részét magához csatolni, ami jelenleg a mi irányításunk alatt áll. A barátság jegyében átadhatnánk nekik a területet, ezzel is megerösítve a két ország közti szövetséget."
+ hungary_flavor_ger.10.a:0 "Megkaphatják."
+ hungary_flavor_ger.10.b:0 "Ljubljana a miénk!"
+ 
+ hungary_flavor_ger.11.t:0 "Németország Követeli az Anschluss-t"
+ hungary_flavor_ger.11.d:0 "A német egység kérdése már régóta fenn áll, és ezennel Németország úgy döntött, eleget tesz a dolognak. Követeléseik szerint Ausztriának egyesülnie kell Németországgal, és mivel Ausztria a mi védelmünk alatt áll, jogunkban áll válaszolni erre a követelésre. Az más kérdés, hogy az osztrák nép mindig is ragaszkodott Németországhoz, föleg most, hogy a német államfö egy osztrák ember."
+ hungary_flavor_ger.11.a:0 "Átengedjük nekik Ausztriát."
+ hungary_flavor_ger.11.b:0 "Ausztria velünk marad!"
+ 
+ hungary_flavor_ger.12.t:0 "Németország Felosztaná Csehszlovákiát"
+ hungary_flavor_ger.12.d:0 "Csehszlovákia a mi védelmünk alatt áll, Németország mégis feldarabolná saját szája íze szerint. Jogunkban áll megvédeni a cseheket, de ez valószínüleg háborúhoz vezetne. Mi legyen a válaszunk?"
+ hungary_flavor_ger.12.a:0 "Nem tudjuk megvédeni Csehszlovákiát."
+ hungary_flavor_ger.12.b:0 "Nem hagyjuk öket cserben!"
+ 
+ hungary_flavor_ger.13.t:0 "Magyar Földek Szerbiában"
+ hungary_flavor_ger.13.d:0 "Mint az köztudott, Magyarország vissza szeretné állítani a régi királyságát, és történetesen a mi kezünkre került ennek egy része. A Vajdaság (Szerbia északi része) korábban a Magyar Királyságé volt, és számunkra nincs nagy stratégiai jelentösége. Felajánljuk a Vajdaság maradékát is magyaroknak?"
+ hungary_flavor_ger.13.a:0 "Megkaphatják, ha kérik."
+ hungary_flavor_ger.13.b:0 "Legyenek elégedettek azzal, amijük van."
+ 
+ hungary_flavor_ger.14.t:0 "Hitler-Horthy Találkozó"
+ hungary_flavor_ger.14.d_nothing:0 "Terveink szerint feldaraboljuk Csehszlovákiát, de Magyarország pozíciója a helyzetben még nem tisztázott. Az Adolf Hitler és Horthy Miklós közötti találkozón a dolog megbeszélésre került, és Horthy álláspontja semleges volt. Nem tart igényt Csehszlovákia egyetlen részére sem, és látszólag elítélte azon szándékunkat, hogy bekebelezzük azt."
+ hungary_flavor_ger.14.d_carpathian_ruthenia:0 "Terveink szerint feldaraboljuk Csehszlovákiát, de Magyarország pozíciója a helyzetben még nem tisztázott. Az Adolf Hitler és Horthy Miklós közötti találkozón a dolog megbeszélésre került, és Horthy távolságtartó álláspontot képviselt. Kifejezte igényét arra, hogy Magyarország megszállhassa Kárpátalját, de nem volt hajlandó döntö szerepet vállalni Csehszlovákia felosztásában."
+ hungary_flavor_ger.14.d_slovakia:0 "Terveink szerint feldaraboljuk Csehszlovákiát, de Magyarország pozíciója a helyzetben még nem tisztázott. Az Adolf Hitler és Horthy Miklós közötti találkozón a dolog megbeszélésre került, és Horthy elvállalta az agresszor szerepét. Magyarország hajlandó katonai erövel megszállni Szlovákiát, ha cserébe megengedjük nekik, hogy megtartsák."
+ hungary_flavor_ger.14.a:0 "Ezek elfogadható feltételek."
+ hungary_flavor_ger.14.b:0 "Nem tudunk ígéreteket tenni."
+ hungary_flavor_ger.14.c:0 "Tehát saját kedvünk szerint cselekedhetünk."
+ 
+ hungary_flavor_ger.16.t:0 "A magyar SS"
+ hungary_flavor_ger.16.d:0 "Sikerült megegyeznünk a magyar kormánnyal két, magyarokból álló SS alakulat létrehozásáról. A hadosztályok szinte teljes mértékben magyar katonákból fognak állni, így nekünk alig kell hozzájárulnunk a megalakításukhoz. Cserébe beleegyeztünk, hogy támogatjuk a magyar páncélos jármüvek gyártását, és megosztjuk velük néhány nehéztank tervrajzunkat."
+ hungary_flavor_ger.16.a:0 "Kiváló."
+ 
+ hungary_flavor_cze.1.t:0 "Magyarország Követeli a Felvidéket"
+ hungary_flavor_cze.1.d:0 "A revíziós magyar kormány úgy döntött, minden régi magyar földet visszavesznek, ha kell békével, és ha nem megy másképp, akkor fegyverrel. A jelenlegi szlovák régiónk pár évtizede még Magyarországhoz tartozott, és most azt követelik, adjuk át jogos földjeiket. Ennek megtagadásával csak provokáljuk a magyar kormányt, ami akár háborúhoz is vezethet."
+ hungary_flavor_cze.1.a:0 "Rendben. Igazuk van... Átadjuk."
+ hungary_flavor_cze.1.a:0 "Mégis mit képzelnek?! Nem adunk át semmit!"
+ 
+ hungary_flavor_cze.2.t:0 "Imperialista Puccs"
+ hungary_flavor_cze.2.d:0 "Egy mozgalom, amely támogatja Ausztria-Magyarország cselekvéseit, megrohamozta Prágát, és átvette az irányítást a kormány felett. Az ország katonai vezetését bizonyára lekenyerezték, ugyanis nem volt nagy ellenállás. A birodalmat támogatók kétségkívül külföldi támogatást kaptak, és az elsö számú gyanúsított maga Ausztria-Magyarország. Ki gondolta volta?!"
+ hungary_flavor_cze.2.a:0 "Éljen a Birodalom!"
+ 
+ hungary_flavor_cze.3.t:0 "Egyesülés Ausztria-Magyarországgal"
+ hungary_flavor_cze.3.d:0 "Most, hogy Ausztria és Magyarország újra egyesült, igyekeznek visszaállítani régi határaikat. Hazánk teljeskörü tagja volt a birodalomnak, és ahogyan az várható volt, meghívtak minket is, hogy csatlakozzunk hozzájuk. Szükségünk van a védelmükre, és nem is volt olyan rossz anno. Mi legyen a reakciónk?"
+ hungary_flavor_cze.3.a:0 "Csatlakozzunk a birodalomhoz!"
+ hungary_flavor_cze.3.a:0 "Micsoda abszurd gondolat."
+ 
+ hungary_flavor_cze.4.t:0 "Szövetség Ausztria-Magyarországgal"
+ hungary_flavor_cze.4.d:0 "Aláírtuk a hön áhított szerzödést. Most már egy oldalon állunk."
+ hungary_flavor_cze.4.a:0 "Kiváló!"
+ 
+ hungary_flavor_cze.5.t:0 "A Kisantant Újjáélesztése"
+ hungary_flavor_cze.5.d:0 "Az osztrák-magyar állam újjáéledt, és vele együtt a leigázásunk veszélye is. Noha a Kisantant többi országával romlottak a kapcsolataink az évek során, nem szabad elfelednünk, hogy miért alakult meg a szövetségünk annak idején. A Habsburgok visszatérését minden áron meg kell akadályozni, így a legjobb lenne, ha megerösítenénk kapcsolatainkat Romániával és Jugoszláviával, hogy könnyebben meg tudjuk magunkat védeni."
+ hungary_flavor_cze.5.d_2:0 "Magyarország bejelentette területi igényeit az elvesztett területeikre, és ebbe beletartozik az országunk nagy része is. Noha a Kisantant többi országával romlottak a kapcsolataink az évek során, nem szabad elfelednünk, hogy miért alakult meg a szövetségünk annak idején. Magyarország terjeszkedését minden áron meg kell akadályozni, így a legjobb lenne, ha megerösítenénk kapcsolatainkat Romániával és Jugoszláviával, hogy könnyebben meg tudjuk magunkat védeni."
+ hungary_flavor_cze.5.a:0 "Küldjünk követeket Romániába és Jugoszláviába."
+ hungary_flavor_cze.5.b:0 "A Kisantant csupán egy rég elfeledett álom. Nem tehetünk semmit."
+ 
+ hungary_flavor_cze.6.t:0 "A Kisantant Sorsa"
+ hungary_flavor_cze.6.d_both:0 "Nyugodtak lehetünk, hiszen a Kisantant teljes erejét magunk mellett tudhatjuk. Mind Románia, mind Jugoszlávia beleegyezett a szövetség megerösítésébe, így közös erövel szállhatunk szembe az új fenyegetéssel."
+ hungary_flavor_cze.6.d_rom:0 "Románia üdvözölte a közeledésünket, de sajnos Jugoszlávia visszautasított minket. Felölünk akár el is pusztulhatnak, de a legjobb az lett volna, ha ök is belátják, hogy mellettünk jobb lenne nekik."
+ hungary_flavor_cze.6.d_yug:0 "Jugoszlávia üdvözölte a közeledésünket, de sajnos a románok másképp döntöttek. Talán ennyi is elég lesz ahhoz, hogy a határaink között fekvö-dühöngö vadállatot kordában tartsuk, de könnyen lehet hogy eröfeszítéseink hiábavalóak lesznek."
+ hungary_flavor_cze.6.d_neither:0 "A segítségkérésünk nem talált meghallgatásra. Sem Románia, sem Jugoszlávia nem volt hajlandó a szövetséget megújítani, így teljesen egyedül kell mindannyiunknak szembenézni az újjászületö fenyegetéssel."
+ hungary_flavor_cze.6.a:0 "Együtt útját tudjuk állni a veszélynek!"
+ hungary_flavor_cze.6.b:0 "Legalább Románia mellettünk áll."
+ hungary_flavor_cze.6.b:0 "Legalább déli testvéreink mellettünk állnak"
+ hungary_flavor_cze.6.b:0 "Ez egy leírhatatlanul nagy csalódás."
+ 
+ hungary_flavor_cze.7.t:0 "Szlovák-Magyar Kis Háború"
+ hungary_flavor_cze.7.d:0 "Ezekben a gondterhelt idökben újabb veszedelmek fenyegetik kicsiny országunkat. Magyarország megtámadott bennünket kelet felöl, hogy kibövítse újonnan megszerzett területeit. Noha a támadás váratlanul ért minket, rövidesen sikerült egy ellentámadást megszerveznünk, és visszanyomtuk a magyarokat, majdnem egészen addig, ahonnan indultak. A harcok pár nap után abbamaradtak, és pár tucat embertöl, valamint jelentéktelen mennyiségü területtöl eltekintve semmit nem vesztettünk. A magyarokat megállítottuk, és a hazát megvédtük!"
+ hungary_flavor_cze.7.a:0 "Sikeresen véget vetettünk a magyar agressziónak."
+ 
+ hungary_flavor_cze.8.t:0 "Magyarország Népszavazást Kezdeményez Dél-Felvidékért"
+ hungary_flavor_cze.8.d:0 "Magyarországnak már demokratikus kormánya van, de a jelek szerint még nem mondtak le teljesen a régi területeikröl. Azt kérik, hogy tartsunk népszavazást a Felvidék déli részén, és engedjük az ott lakóknak, hogy maguk döntsék el, Csehszlovákiához vagy Magyarországhoz akarnak tartozni. Az eredmény valószínüleg nekik kedvezne, de egyesek szemében nem volna demokratikus lépés a népszavazás elutasítása."
+ hungary_flavor_cze.8.a:0 "Engedélyezzük a népszavazást."
+ hungary_flavor_cze.8.b:0 "Dél-Felvidék a miénk, és örökre is az marad!"
+ 
+ hungary_flavor_cze.9.t:0 "Magyarország Ránk Kényszeríti a Népszavazást"
+ hungary_flavor_cze.9.d:0 "Nemet mondtunk a népszavazásra, Magyarország mégis megtalálta a módját, hogy minket megkerülve, a [Root.GetFactionName] vezetöségén keresztül kikényszerítse a szavazás megtartását. Ez egy olyan sértés, amit nem fogunk egyhamar elfelejteni. Ezt a békát viszont le kell nyeljük, és engedelmeskednünk kell a szövetségeseink akaratának."
+ hungary_flavor_cze.9.a:0 "Ezt nem fogjuk elfelejteni!"
+ 
+ hungary_flavor_rom.1.t:0 "Magyarország Követeli Erdélyt"
+ hungary_flavor_rom.1.d:0 "A revíziós magyar kormány úgy döntött, minden régi magyar földet visszavesznek, ha kell békével, és ha nem megy másképp, akkor fegyverrel. Erdély egy kulcsfontosságú területe Magyarországnak, mivel egykori területeinek bányái, ásványi kincsei javarészt innen származnak. Erdélyben sok román, magyar és német él, de tulajdona vitatott közöttünk. A trianoni békediktátum alapján ez már a mi területünk, amelyet joggal uralunk. Egyesek szerint nemhogy visszautasítunk kellene a követelést, hanem ellenköveteléssel válaszolni rá. Igényt tarthatunk bármire ami a Tiszától keletre van, csak úgy, mint Magyarország Erdélyre. A visszautasítás komoly kockázatokkal jár, mivel Magyarország készen áll a fegyveres beavatkozásra is, ha kell. Mit tegyünk?"
+ hungary_flavor_rom.1.a:0 "Nem háborúzhatunk Magyarországgal. Átadjuk!"
+ hungary_flavor_rom.1.b:0 "Jöjjenek csak, de Erdély a mienk marad!"
+ hungary_flavor_rom.1.c:0 "Románia a Tiszáig tart, és ezt a magyarok is jobb ha belátják!"
+ 
+ hungary_flavor_rom.2.t:0 "Ausztria-Magyarország Követeli Bukovinát."
+ hungary_flavor_rom.2.d:0 "Bukovina egy kisebb tartomány Kárpátaljától keletre, amely az Osztrák Magyar Monarchia része volt. Most, hogy a birodalom újjáéledt, visszakövetelik a régi területeket. A terület jogilag minket illet, de ha nem adjuk át, akár háborút is indíthatnak ellenünk, amit valószínüleg elveszítenénk. Mit tegyünk?"
+ hungary_flavor_rom.2.a:0 "Nem keveredhetünk háborúba. Átadjuk!"
+ hungary_flavor_rom.2.b:0 "Jöjjenek csak, de Bukovina a mienk marad!"
+ 
+ hungary_flavor_rom.3.t:0 "[From.GetName] Követeli Bánságot"
+ hungary_flavor_rom.3.d:0 "\nNem volt elég, hogy Erdélyt elragadták tölünk, [From.GetName] most Bánságra vetett szemet. Elsösorban románok által lakott területröl van szó, így jogosan minket illet. Ha hihetünk a fenyegetésnek, háborúval nézünk szembe, amennyiben nem vonjuk ki az eröinket Bánságból."
+ hungary_flavor_rom.3.a:0 "Azonnal vonuljunk ki onnan!"
+ hungary_flavor_rom.3.b:0 "Az életünk árán is megvédjük!"
+ 
+ hungary_flavor_rom.4.t:0 "[From.GetName] Visszakozik"
+ hungary_flavor_rom.4.d:0 "Bátorságunk elnyerte jutalmát. A gyáva [From.GetAdjective]ok visszafordultak az utolsó pillanatban, és felhagytak a határaink fenyegetésével."
+ hungary_flavor_rom.4.a:0 "Üres fenyegetés volt csupán, ahogy azt mindig is tudtuk."
+ 
+ hungary_flavor_rom.5.t:0 "A Kisantant Újjáélesztése"
+ hungary_flavor_rom.5.d:0 "Az Osztrák-Magyar Monarchia újra felemelkedése után Csehszlovákia kifejezte az iránti igényét, hogy a Kisantant szövetséget megújítsák. Kétségtelen, hogy a monarchia veszélyt jelent a területeink integritására, és együtt több esélyünk van a Habsburgok visszaszorítására."
+ hungary_flavor_rom.5.d_2:0 "A magyarok bejelentették, hogy igényt tartanak az összes elvesztett területükre, és ezzel egyidöben Csehszlovákia a Kisantant megújítását kezdte szorgalmazni. Noha nevetségesen gyenge a magyarok törekvése, balgaság volna alábecsülni öket. Ha beleegyezünk a Kisantant megújításába, egyesült erövel tudnánk fellépni Magyarország visszatérö ambícióival szemben."
+ hungary_flavor_rom.5.a:0 "Együtt kell kiállnunk ez ellen a gyalázat ellen."
+ hungary_flavor_rom.5.b:0 "Minket nyugodtan hagyjanak csak ki a kis szövetségükböl."
+ hungary_flavor_rom.5.tt:0 "Románia csatlakozik a Kisantanthoz."
+ 
+ hungary_flavor_rom.6.t:0 "[From.GetName] Elutasítja a Követelést"
+ hungary_flavor_rom.6.d:0 "A követeléseink visszautasítása nem volt teljesen váratlan, de ettöl függetlenül egy folt a népünk büszkeségén. [From.GetName] pimaszul szembeszállt akaratunkkal, és nem vonta ki eröit a Tiszántúlról, így jogunkban áll hadat üzenni nekik."
+ hungary_flavor_rom.6.a:0 "A katonáik vérével fogjuk tisztára mosni azt a földet."
+ 
+ hungary_flavor_rom.7.t:0 "[From.GetName] Elfogadja a Követelést"
+ hungary_flavor_rom.7.d:0 "Sokan kételkedtek abban, hogy az ellenkövetelésünk bármilyen hatást gyakorolna a [From.GetAdjective] kormányra, de valamiért mégis elfogadták öket, és katonáik fülüket farkukat behúzva vonultak vissza a Tiszántúlról. Ennél simábban nem is mehetett volna a dolog."
+ hungary_flavor_rom.7.a:0 "Éljen Nagy-Románia!"
+ 
+ hungary_flavor_sov.1.t:0 "Magyarország Csatlakozna a Kominternhez"
+ hungary_flavor_sov.1.d:0 "Amint Magyarországon létrejött a kommunista forradalom, a kormányuk hozzánk fordult azzal a szándékkal, hogy szeretnének csatlakozni a frakciónkba. Magyarország az internacionalizmusra hajaz, és mindenben hajlandók együttmüködni velünk, ám ez veszélyes, hisz Magyarország köztudottan egy szabadságharcos nemzet. Még sok galibát okozhatnak a patrióta hajlamaikból fakadóan. Ettöl függetlenül, mit válaszolunk?"
+ hungary_flavor_sov.1.a:0 "Üdv nálunk, elvtársak!"
+ hungary_flavor_sov.1.b:0 "Kizárt dolog!"
+ 
+ hungary_flavor_sov.2.t:0 "Magyarország Átállna az Oldalunkra"
+ hungary_flavor_sov.2.d:0 "A süllyedö hajót elhagyni igyekvö magyarok tölünk remélnek védelmet a hanyatló Németországgal szemben. Magyarország veresége valóban nincs messze, így nem teljesen váratlan ez az ajánlat. Mit válaszoljunk a kérésükre?"
+ hungary_flavor_sov.2.a:0 "Támogatjuk a kiugrási kísérletüket."
+ hungary_flavor_sov.2.b:0 "A vörös hadsereg majd felszabadítja öket."
+ hungary_flavor_sov.2.tt:0 "Egy kommunista rezsim megpróbálja átvenni a hatalmat Magyarországon, ami majd örömmel csatlakozik a háborúnkhoz Németország ellen.\n"
+ 
+ hungary_flavor_eng.1.t:0 "Magyarország Csatlakozni Kíván a Szövetségesekhez"
+ hungary_flavor_eng.1.d:0 "Magyarország átfordult demokráciába, és népük végre szabaddá vált. Újdonsült kormányuk felkeresett minket azzal a szándékkal, hogy szeretnének csatlakozni a frakciónkba. Magyarország egy értékes szövetség lehet, hiszen a körülötte léveö országokkal való kapcsolatokat is könnyebben vehetjük fel rajtuk keresztül. Egyedül, ami aggasztó, az a fasiszta befolyás Magyarország körül. Mit válaszoljunk nekik?"
+ hungary_flavor_eng.1.a:0 "Harcoljunk együtt a szabadságért!"
+ hungary_flavor_eng.1.b:0 "Sajnáljuk, de jobb nekünk nélkülük."
+ 
+ hungary_flavor_eng.2.t:0 "A Dunamenti Konferencia Magyar Vezetéssel"
+ hungary_flavor_eng.2.d:0 "Nemrég váratlan, de szívélyes szövetségest találtunk Magyarországban. Ök, ahogy azt szerettük volna, elkezdtek tárgyalni a körülöttük lévö országokkal annak érdekében, hogy megszüntessük a területen a fasiszta befolyást. Amely ország aláírja a konferencián az egyezményt, egyúttal belép a frakciónkba is."
+ hungary_flavor_eng.2.a:0 "Reméljük a legjobbakat."
+ 
+ hungary_flavor_eng.3.t:0 "Magyarország Átállna az Oldalunkra"
+ hungary_flavor_eng.3.d:0 "A süllyedö hajót elhagyni igyekvö magyarok tölünk remélnek védelmet a hanyatló Németországgal szemben. Magyarország veresége valóban nincs messze, így nem teljesen váratlan ez az ajánlat. Mit válaszoljunk a kérésükre?"
+ hungary_flavor_eng.3.a:0 "Támogatjuk a kiugrási kísérletüket."
+ hungary_flavor_eng.3.b:0 "Majd a háború végén elszámolunk velük."
+ hungary_flavor_eng.3.tt:0 "Egy velünk szimpatizáló rezsim megpróbálja átvenni a hatalmat Magyarországon, ami majd örömmel csatlakozik a háborúnkhoz Németország ellen.\n"
+ 
+ hungary_flavor_eng.4.t:0 "[From.GetName] Békét Ajánl"
+ hungary_flavor_eng.4.d:0 "Hivatalosan elítéltük [From.GetName] terjeszkedését, még hadba is vonultunk, hogy megállítsuk öket, de eröfeszítéseink hiábavalónak bizonyultak. Minden területet megszereztek, amelyre igényt tartottak, és most békét akarnak kötni. Feltételeik szerint minden területet megtartanának, amit a trianoni békediktátum során elvesztettek, cserébe felhagynának a harccal. Mi a válaszunk?"
+ hungary_flavor_eng.4.a:0 "Miért is ne? Jobb dolgunk is van, mint ez a háború."
+ hungary_flavor_eng.4.b:0 "Nem hagyhatjuk, hogy ennyivel megússzák."
+ 
+ hungary_flavor_eng.5.t:0 "[From.GetName] felajánlja segítségét Románia ellen"
+ hungary_flavor_eng.5.d:0 "Miután Románia hivatalosan is hadat üzent nekünk, megkerestek bennünket egy ajánlattal, a [From.GetAdjective] nagykövetségröl. [From.GetName] hajlandó megtámadni Romániát, ha beleegyezünk, hogy megkaphatják Erdélyt a háború után. Hasznos volna egy aktív szövetséges, aki le tudja kötni Románia eröit, de ez azt is jelentené, hogy [From.GetName] mögé állunk a területi revíziójuk ügyében."
+ hungary_flavor_eng.5.a:0 "Minden segítségre szükségünk van."
+ hungary_flavor_eng.5.b:0 "Az ördöggel nem tárgyalunk."
+ 
+ hungary_flavor_yug.1.t:0 "Örökbaratsági Szerzödés [From.GetName]gal"
+ hungary_flavor_yug.1.d:0 "Bár [From.GetName] még mindig rendelkezik területi követelésekkel általunk birtokolt területekre, mégis diplomatákat küldtek hozzánk egy egészen más szándékkal. Azt szeretnék, hogy rendezzük a kapcsolatokat országaink között, erre a javaslatuk egy 'örökbarátsági szerzödés', ami nem jelent túl sok mindent azon kívül, hogy nem folytatunk egymással az ellenségeskedést, és talán pozitív irányba haladhatunk velük. Elfogadjuk ezt a javaslatot?"
+ hungary_flavor_yug.1.a:0 "Igen! Barátok leszünk."
+ hungary_flavor_yug.1.b:0 "Soha!"
+ 
+ hungary_flavor_yug.2.t:0 "Területi Tárgyalások [From.GetName] Kormányával"
+ hungary_flavor_yug.2.d:0 "Most, hogy úgy döntöttünk, együttmüködünk [From.GetName] kormányával - hála az örökbarátsági szerzödésnek -, azt javasolják, rendezzük békésen területi vitáinkat. A nagyrészt magyarok által lakott bácskai területet szeretnék, ha átadnánk, cserébe bármilyen szívességet megtesznek nekünk a jövöben. Lehet, hogy érdemes megfontolni, hiszen hasznos lehet egy szomszédos ország, ha katonailag kell kisegíteni minket."
+ hungary_flavor_yug.2.a:0 "Átadjuk a barátság jegyében."
+ hungary_flavor_yug.2.b:0 "Ezt nem engedhetjük meg magunknak."
+ 
+ hungary_flavor_yug.3.t:0 "Szövetség [From.GetName] Kormányával"
+ hungary_flavor_yug.3.d:0 "Az örökbarátsági szerzödés [From.GetName] és Jugoszlávia között jó kapcsolatokat eredményezett, de ez nem más, mint egy üres megállapodás. A kapcsolatok megerösítésének érdekében [From.GetName] meghívott a saját frakciójába szövetségesként. Elfogadjuk?"
+ hungary_flavor_yug.3.a:0 "A szoros együttmüködés az érdekünk."
+ hungary_flavor_yug.3.b:0 "Tartjuk a távolságot."
+ 
+ hungary_flavor_yug.4.t:0 "A Kisantant Újjáélesztése"
+ hungary_flavor_yug.4.d:0 "Az osztrák-magyar állam újra felemelkedése után Csehszlovákia kifejezte aziránti igényét, hogy a Kisantant szövetséget megújítsák. Kétségtelen, hogy a két állam újraegyesülése veszélyt jelent a területeink integritására, és együtt több esélyünk van a Habsburgok megakadályozására."
+ hungary_flavor_yug.4.d_2:0 "A magyarok bejelentették, hogy igényt tartanak az összes elvesztett területükre, és ezzel egyidöben Csehszlovákia a Kisantant megújítását kezdte szorgalmazni. Noha nevetségesen gyenge a magyarok törekvése, balgaság volna alábecsülni öket. Ha beleegyezünk a Kisantant megújításába, egyesült erövel tudnánk fellépni Magyarország visszatérö ambícióival szemben."
+ hungary_flavor_yug.4.a:0 "Együtt kell kiállnunk ez ellen a gyalázat ellen."
+ hungary_flavor_yug.4.b:0 "Minket nyugodtan hagyjanak csak ki a kis szövetségükböl."
+ hungary_flavor_yug.4.tt:0 "Jugoszlávia csatlakozik a Kisantanthoz."
+ 
+ hungary_flavor_yug.5.t:0 "A Visegrádi Szövetség"
+ hungary_flavor_yug.5.d:0 "Magyarország nemrég megalapította saját frakcióját, amit Visegrádi Szövetségnek neveznek. A paktum eddig nem sok országra terjed ki, de a magyarok minket akarnak egyik elsöként bevonni a szövetségükbe. Elönyünkre válhatna egy regionális szövetségi rendszerbe való belépés, de könnyen lehet, hogy ez nem lesz elég, hogy megvédjen bennünket a fasiszta szomszédainktól. Mit válaszoljunk a magyaroknak?"
+ hungary_flavor_yug.5.a:0 "Jó ötletnek hangzik."
+ hungary_flavor_yug.5.b:0 "Nem veszünk részt a szövetségükben."
+ 
+ hungary_flavor_yug.6.t:0 "Magyarország Tárgyalást Kezdeményez a Határvitáról"
+ hungary_flavor_yug.6.d:0 "\nMár jó pár éve beárnyékolják a határviták Magyarországgal való kapcsolatunkat, és most úgy döntöttek, ideje tárgyalóasztalhoz ülni, és rendezni a vitatott területek helyzetét. Elsösorban Bácska és Muraköz területeit szeretnék magyar kézen tudni, lévén hogy azok rendelkeznek jelentösebb magyar lakossággal. Hogyan közelítsük meg ezt a kérdést?"
+ hungary_flavor_yug.6.a:0 "A kéréseik jogosak."
+ hungary_flavor_yug.6.b:0 "Néhány helyen engedhetünk nekik."
+ hungary_flavor_yug.6.c:0 "A határok a helyükön maradnak."
+ 
+ hungary_flavor_tur.1.t:0 "[From.GetAdjective] Szövetség"
+ hungary_flavor_tur.1.d:0 "[From.GetName] egy új szövetség kiépítésén dolgozik, hogy a nagy háború után elszenvedett sértéseket megtorolja. Lévén, hogy akkor is az ö oldalukon álltunk, lehet hogy érdemes lenne segítenünk nekik, hátha nekünk is sikerül némi területet visszaszerezni."
+ hungary_flavor_tur.1.a:0 "[From.GetName] oldalán állunk!"
+ hungary_flavor_tur.1.b:0 "Ezúttal nem leszünk a vesztes oldalon."
+ 
+ hungary_flavor_tur.2.t:0 "[From.GetAdj] Seregcsere Program"
+ hungary_flavor_tur.2.d:0 "[From.GetName], újdonsült szövetségesünk azt ajánlja, hogy erösítsük országaink közötti kapcsolatot úgy, hogy néhány dandárt kölcsönzünk egymás seregeibe. Kapnánk tölük néhány egységnyi gyalogságot, és mi is küldenénk nekik egy keveset cserébe. Beleegyezünk a cserébe, vagy túl veszélyes volna az embereink életét kockáztatni a barátság jegyében?"
+ hungary_flavor_tur.2.a:0 "A diverzitás jót tesz majd a seregnek."
+ hungary_flavor_tur.2.b:0 "Nem kockáztathatunk török életeket az ö zászlójuk alatt."
+ hungary_flavor_tur.2.tt:0 "Kapunk két egységnyi gyalogságot [From.GetName] kormányától.\n"
+ 
+ hungary_flavor_alb.1.t:0 "[From.GetAdjective] Nagylelküség"
+ hungary_flavor_alb.1.d:0 "A Jugoszláviát feldaraboló tárgyalások során [From.GetName] nekünk ítélte Montenegrót. Esetleg meghálálhatnánk ezt a gesztust azzal, hogy felvételt kérvényezünk a szövetségükbe, és segítjük a jövöbeli eröfeszítéseiket. Ki tudja, talán még csurran-cseppen egyéb terület is Montenegró mellett, ha gyözelemre segítjük öket."
+ hungary_flavor_alb.1.a:0 "Igaz ügyért harcolnak, velük a helyünk."
+ hungary_flavor_alb.1.b:0 "Csendben fogadjuk el a területet, de tartsuk a távolságot." 
+ 
+ hungary_flavor_fin.1.t:0 "[From.GetAdjective] Szövetség"
+ hungary_flavor_fin.1.d:0 "[From.GetAdjective] diplomaták kerestek fel minket egy szövetségi ajánlattal. Hasznát vennénk a segítségnek a szovjetek ellen, de ez a szövetség talán kevés ahhoz, hogy megmentsen minket."
+ hungary_flavor_fin.1.a:0 "Szükségünk van a segítségre."
+ hungary_flavor_fin.1.b:0 "Egyedül is boldogulunk."
+ 
+ hungary_flavor_partition.1.t:0 "Jugoszlávia Felosztása"
+ hungary_flavor_partition.1.d:0 "A Jugoszlávia újraosztását tárgyaló konferencia kezdetét vette. Az elsö intézkedésröl már döntés is született: A többségi magyar lakossággal bíró Bácska és Muraköz területek ismét Magyarországhoz kerülnek. A többi terület hovatartozása kevésbé egyértelmü, így azokról mind külön döntés fog születni."
+ hungary_flavor_partition.1.a:0 "Lássuk mi mindent tehetünk még."
+ 
+ hungary_flavor_partition.2.t:0 "Szlavónia Sorsa"
+ hungary_flavor_partition.2.d:0 "Senki nem jelentette be igényét erre a területre, viszont sok évszázadon át a Magyar Királyság része volt. Vissza kívánjuk csatolni ezt a területet az országunkhoz egy horvát autonómiával, mint régen, vagy inkább biztosítsunk függetlenséget a horvátoknak?"
+ hungary_flavor_partition.2.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.2.b:0 "Horvát bábállam létrehozása"
+ hungary_flavor_partition.2.c:0 "Horvátország felszabadítása"
+ 
+ hungary_flavor_partition.3.t:0 "Horvátország Sorsa"
+ hungary_flavor_partition.3.d:0 "Következönek a történelmi Horvátországról (tartomány) kell döntenünk. Történelmileg Magyarország része volt, de a Horvát-Magyar Kiegyezés (1868) során különvált az országtól. Mit tegyünk Jugoszlávia ezen részével?"
+ hungary_flavor_partition.3.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.3.b:0 "Átadás Horvátországnak"
+ 
+ hungary_flavor_partition.4.t:0 "Pag Sorsa"
+ hungary_flavor_partition.4.d:0 "Pag a horvát tengerpartnak azon keskeny része, ami összeköti Fiumét és Zárát. Olaszország nyíltan bejelentette igényét a terület iránt, de mi vagyunk a végsö döntséhozók a konferencián."
+ hungary_flavor_partition.4.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.4.b:0 "Átadás Horvátországnak"
+ hungary_flavor_partition.4.c:0 "Átadás Olaszországnak"
+ 
+ hungary_flavor_partition.6.t:0 "Bosznia Sorsa"
+ hungary_flavor_partition.6.d:0 "Most a bosnyák tartományról kell döntést hoznunk. Ez egy szerbek, bosnyákok és horvátok által lakott terület. Mi a döntésünk a sorsa felöl?"
+ hungary_flavor_partition.6.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.6.b:0 "Átadás Szerbiának"
+ hungary_flavor_partition.6.c:0 "Átadás Horvátországnak"
+ hungary_flavor_partition.6.e:0 "Átadás Jugoszláviának"
+ 
+ hungary_flavor_partition.7.t:0 "Dalmácia Sorsa"
+ hungary_flavor_partition.7.d:0 "A felosztás még érintetlenül hagyta a horvát tengerpart déli részét. Csak úgy, mint a többi partszakasz esetében, Olaszország ennél is kifejezte igényét a területre. Kihez tartozzon hát?"
+ hungary_flavor_partition.7.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.7.b:0 "Átadás Szerbiának"
+ hungary_flavor_partition.7.c:0 "Átadás Horvátországnak"
+ hungary_flavor_partition.7.e:0 "Átadás Olaszországnak"
+ 
+ hungary_flavor_partition.5.t:0 "Szerbia Sorsa"
+ hungary_flavor_partition.5.d:0 "Jugoszlávia belsö területei nagyrészt szerb nemzetiségüek, így az egyértelmüen Szerbiához tartozó területekröl kell elsösorban döntést hoznunk. Magunkba olvaszthatjuk akár az egész országot, vagy egy bábkormányt helyezhetünk az élére, söt, akár fel is szabadíthatjuk, és biztosíthatjuk szuverenitásukat."
+ hungary_flavor_partition.5.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.5.b:0 "Szerb bábállam létrehozása"
+ hungary_flavor_partition.5.c:0 "Szerbia felszabadítása"
+ 
+ hungary_flavor_partition.8.t:0 "Torontál Sorsa"
+ hungary_flavor_partition.8.d:0 "Most, hogy Szerbia sorsa eldölt, ideje a töle északra fekvö területeket is elrendezni. Torontál a Tiszától keletre fekszik a Vajdaságban, és három országgal határos: [Root.GetName], Románia és Szerbia. Történelmileg a Magyar Királyság része, de mint mindig, a románok ezúttal is harsányan hangoztatják, hogy a Tiszától keletre minden volt magyar terület az övék. Mi legyen a sorsa?"
+ hungary_flavor_partition.8.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.8.b:0 "Átadás Szerbiának"
+ hungary_flavor_partition.8.c:0 "Átadás Romániának"
+ 
+ hungary_flavor_partition.9.t:0 "Szerém Sorsa"
+ hungary_flavor_partition.9.d:0 "A másik északi terület, amiröl még nem született döntés, Szerém. Lakosságának nagy része szerb, de vannak horvát, és magyar kisebségek is. Csak úgy, mint Torontál, ez a terület is a Magyar Királyság része volt annak idején."
+ hungary_flavor_partition.9.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.9.b:0 "Átadás Szerbiának"
+ hungary_flavor_partition.9.c:0 "Átadás Horvátországnak"
+ 
+ hungary_flavor_partition.10.t:0 "Macedónia Sorsa"
+ hungary_flavor_partition.10.d:0 "Macedóniát Szerbia foglalta el az Elsö Balkáni Háborúban, annak ellenére, hogy Bulgáriának ígérték. Most ránk hárul a feladat, hogy a tartomány sorsáról döntsünk."
+ hungary_flavor_partition.10.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.10.b:0 "Átadás Szerbiának"
+ hungary_flavor_partition.10.c:0 "Átadás Bulgáriának"
+ 
+ hungary_flavor_partition.11.t:0 "Tetovo Sorsa"
+ hungary_flavor_partition.11.d:0 "Tetovo egy apró terület Macedónia és Albánia között. Többségében albán lakosságú, és Bulgária nem kifejezetten tart rá igényt. Mit tegyünk vele?"
+ hungary_flavor_partition.11.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.11.b:0 "Átadás Albániának"
+ hungary_flavor_partition.11.c:0 "Átadás Olaszországnak"
+ hungary_flavor_partition.11.e:0 "Átadás Bulgáriának"
+ hungary_flavor_partition.11.f:0 "Átadás Szerbiának"
+ 
+ hungary_flavor_partition.12.t:0 "Prizren Sorsa"
+ hungary_flavor_partition.12.d:0 "Prizren eredetileg szerb terület, de jelentös albán lakossága van. Mi legyen a sorsa?"
+ hungary_flavor_partition.12.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.12.b:0 "Átadás Albániának"
+ hungary_flavor_partition.12.c:0 "Átadás Olaszországnak"
+ hungary_flavor_partition.12.e:0 "Átadás Szerbiának"
+ 
+ hungary_flavor_partition.13.t:0 "Montenegró Sorsa"
+ hungary_flavor_partition.13.d:0 "Montenegró történelmileg szerb terület, de lakosságának nagy része montenegrói. Kihez kerüljön a felosztás után ez a terület?"
+ hungary_flavor_partition.13.a:0 "Megtartjuk magunknak."
+ hungary_flavor_partition.13.b:0 "Átadás Szerbiának"
+ hungary_flavor_partition.13.c:0 "Átadás Albániának"
+ hungary_flavor_partition.13.e:0 "Átadás Olaszországnak"
+ hungary_flavor_partition.13.f:0 "Montenegró felszabadítása"
+ 
+ hungary_flavor_partition.14.t:0 "Ulcinj Sorsa"
+ hungary_flavor_partition.14.d:0 "Ulcinj egy kis terület az adriai parton, ami a vitatottak közé tartozik. Sokan követelik magukénak, és ránk hárul a feladat, hogy eldöntsük kié lesz. Ami biztos, hogy lakosságának többsége albán."
+ hungary_flavor_partition.14.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.14.b:0 "Átadás Montenegrónak"
+ hungary_flavor_partition.14.c:0 "Átadás Albániának"
+ hungary_flavor_partition.14.e:0 "Átadás Olaszországnak"
+ hungary_flavor_partition.14.f:0 "Átadás Szerbiának"
+ 
+ hungary_flavor_partition.15.t:0 "Kotor Sorsa"
+ hungary_flavor_partition.15.d:0 "Kotor Montenegró és Dalmácia között fekszik. Többségében montenegrói lakosú, de sok szerb és horvát is él a területen. Kié legyen?"
+ hungary_flavor_partition.15.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.15.b:0 "Átadás Montenegrónak"
+ hungary_flavor_partition.15.c:0 "Átadás Olaszországnak"
+ hungary_flavor_partition.15.e:0 "Átadás Horvátországnak"
+ hungary_flavor_partition.15.f:0 "Átadás Szerbiának" 
+ 
+ hungary_flavor_partition.16.t:0 "Ljubljana Sorsa"
+ hungary_flavor_partition.16.d:0 "Ljubljana, mint terület, Szlovénia déli része, és egyike az olaszok által követelt területeknek. Átadjuk nekik, vagy megtartjuk azt is magunknak?"
+ hungary_flavor_partition.16.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.16.b:0 "Átadás Olaszországnak"
+ hungary_flavor_partition.16.c:0 "Kössünk alkut Olaszországgal"
+ hungary_flavor_partition.16.tt:0 "Felajánljuk az Olaszoknak néhány adriai kikötöért cserébe."
+ 
+ hungary_flavor_partition.17.t:0 "Alku Olaszországgal"
+ hungary_flavor_partition.17.d:0 "Az olaszok igényt tartanak Ljubljana területére, de nem adjuk nekik oda ingyen. Elkérhetjük tölük Zárát vagy Fiumét, vagy akár mindkettöt a területért cserébe. Természetesen, ha mindkettöt kérjük, kevesebb az esély arra, hogy átadják."
+ hungary_flavor_partition.17.a:0 "Zárát és Fiumét is kérjük"
+ hungary_flavor_partition.17.b:0 "Fiumét kérjük"
+ hungary_flavor_partition.17.c:0 "Zárát kérjük"
+ 
+ hungary_flavor_partition.18.t:0 "Szlovénia Sorsa"
+ hungary_flavor_partition.18.d:0 "Az utolsó olyan tartomány, amelyröl döntenünk kell. Az olaszok érdeklödnek a terület iránt, de nem jelentettek be nyílt követelést. Mi legyen a sorsuk?"
+ hungary_flavor_partition.18.a:0 "Megtartjuk magunknak"
+ hungary_flavor_partition.18.b:0 "Átadás Németországnak"
+ hungary_flavor_partition.18.c:0 "Átadás Olaszországnak"
+ hungary_flavor_partition.18.e:0 "Átadás Ausztriának az Örvidékért cserébe"
+ hungary_flavor_partition.18.f:0 "Átadás Jugoszláviának"
+ 
+ hungary_flavor_partition.19.t:0 "Olaszország Elfogadja az Ajánlatot"
+ hungary_flavor_partition.19.d:0 "Olaszország úgy döntött, átadja Zárát és Fiumét Szlovéniáért cserébe"
+ hungary_flavor_partition.19.a:0 "Pompás!"
+ hungary_flavor_partition.19.b:0 "Rendben, de Zárát megtarthatják"
+ hungary_flavor_partition.19.c:0 "Rendben, de Fiumét megtarthatják"
+ 
+ hungary_flavor_partition.20.t:0 "Olaszország Elutasítja az Ajánlatot"
+ hungary_flavor_partition.20.d:0 "A rendkívül nagylelkü ajánlatunk, miszerint átadjuk Szlovéniát az adriai kikötövárosaikért cserébe, megbukott. Mintha süket fülekre találtunk volna Olaszországban, csak úgy indoklás nélkül visszautasították a cserét."
+ hungary_flavor_partition.20.a:0 "Teljesen elment volna az eszük?"
+ 
+ hungary_flavor.1.t:0 "Üdvözöl a Hungarian Flavor mod"
+ hungary_flavor.1.d:0 "Üdvözlet!\nEnnek a mod-nak az a célja, hogy a Magyarországgal való játékot élvezhetöbbé tegyük. Történelmileg igen szükösek voltak Magyarország lehetöségei ebben a korszakban, így egy teljesen realisztikus reprezentáció nem feltétlenül lenne mindenki számára élvezhetö. Ha egy könnyebb, de kevésbé realisztikus játékot szeretnél játszani, válaszd a 'Nem realisztikus verzió'-t, ha pedig egy valósághübb, de nehezebb játékot szeretnél, válaszd a 'Realisztikus verzió'-t."
+ hungary_flavor.1.a:0 "Realisztikus verzió"
+ hungary_flavor.1.b:0 "Nem realisztikus verzió"
+ hungary_flavor.1.realism:0 "Kevésbé lesz egyszerü a céljaid elérése, és nehezebben tudod majd az akaratodat érvényesíteni a környezö országokban. Ez számít a mod hivatalos verziójának.\n"
+ hungary_flavor.1.no_realism:0 "Egyszerübb lesz a céljaid elérése, és könnyebb lesz az akaratodat érvényesíteni a környezö országokban. Ez könnyen olyan helyzeteket eredményezhet, amelyek történelmileg teljesen szürreálisak.\n"
+ 
+ hungary_flavor.2.t:0 "Unió Ausztriával"
+ hungary_flavor.2.d:0 "Az a törekvésünk, hogy visszaállítsuk régi birodalmunkat Ausztriával, sikeres volt. Országainkat ismét a Habsburg-ház uralja, és végre megkezdhetjük a régi területeink visszaszerzését is. Éljen soká Ausztria-Magyarország!"
+ hungary_flavor.2.a:0 "Ámen!"
+ hungary_flavor.2.tt:0 "Ausztria és Magyarország egy uniót fog formálni Ausztria-Magyarország néven, és az uniót a Habsburg-Ház fogja képviselni.\n"
+ 
+ hungary_flavor.4.t:0 "Ausztria Elfogadja a Szövetséget"
+ hungary_flavor.4.d:0 "Ausztria elfogadta a felajánlott szövetséget, és csatlakozott a frakciónkba."
+ hungary_flavor.4.a:0 "Kiváló!"
+ 
+ hungary_flavor.5.t:0 "Ausztria Elutasítja a Szövetséget"
+ hungary_flavor.5.d:0 "Az osztrák kormány nem volt hajlandó elfogadni a diplomatáink által benyújtott javaslatot. Elítélték, amit tenni készültünk azzal az indokkal, hogy nem támogatják 'az ostoba magyar revizionisták érdekeit'."
+ hungary_flavor.5.a:0 "Felháborító!"
+ 
+ hungary_flavor.7.t:0 "Lengyelország Elfogadja a Szövetséget"
+ hungary_flavor.7.d:0 "Lengyelország elfogadja a szövetségröl szóló javaslatunkat. Ezt az új mérföldkövet meg kell ünnepelnünk! Magyarország és Lengyelország mindig is baráti nemzet volt, de most már nem csak barátok, hanem egymáshoz hü szövetségesek is."
+ hungary_flavor.7.a:0 "Kiváló!"
+ 
+ hungary_flavor.8.t:0 "Lengyelország Elutasítja a Szövetséget"
+ hungary_flavor.8.d:0 "Lengyelország érthetetlen módon elutasítja közeledésünket. Habár nem is leszünk szövetségesek, továbbra is megörizzük örök barátságunkat, remélhetöleg. De vajon miért utasították el?"
+ hungary_flavor.8.a:0 "Biztos megint túl sok vodkát ittak."
+ 
+ hungary_flavor.10.t:0 "Bulgária Elfogadja a Szövetséget"
+ hungary_flavor.10.d:0 "Bulgária csatlakozott a szövetségünkhöz. Szereztünk egy stratégiai jelentöségü szövetségest."
+ hungary_flavor.10.a:0 "Kiváló!"
+ 
+ hungary_flavor.11.t:0 "Bulgária Elutasítja a Szövetséget"
+ hungary_flavor.11.d:0 "Az eszement bolgárok visszautasították kezdeményezésünket. És ezek nevezik magukat szerencsés nemzetnek? Ha háborúba keverednek, ki fog mellettünk harcolni? Mert most már mi sem."
+ hungary_flavor.11.a:0 "Elképesztö!"
+ 
+ hungary_flavor.12.t:0 "Csehszlovákia Elfogadja a Követeléseket"
+ hungary_flavor.12.d:0 "Siker! A Csehszlovák állam átadja nekünk Felvidéket. Egy lépéssel közelebb állunk ahhoz, hogy visszaállítsuk [Root.GetName] dicsöségét."
+ hungary_flavor.12.a:0 "Kiváló!"
+ 
+ hungary_flavor.13.t:0 "Csehszlovákia Elutasítja a Követeléseket"
+ hungary_flavor.13.d:0 "A felettébb makacs csehszlovák kormány nem hajlandó átadni jogos területünket; Felvidéket. Ez felháborító! Nem hagyhatjuk öket büntetlenül! Amint készen állunk, ízekre tépjük jogtalanul összetákolt országunkat."
+ hungary_flavor.13.a:0 "Térdre fogjuk kényszeríteni öket!"
+ 
+ hungary_flavor.20.t:0 "Románia Ellenköveteléssel Válaszol"
+ hungary_flavor.20.d:0 "A lehetö legváratlanabb válasz érkezett az erdélyi követeléseinkre Romániából: Bejelentették igényüket a Tiszántúlra. Állításuk szerint országuk jogosan a Tiszáig ér, mivel a nagy háború után megszállták, és állítólag az Antant nekik ígérte. Követelik tölünk, hogy azonnali hatállyal adjuk át nekik az Alföld régiót, ha már volt hozzá merszünk, hogy követeljük Erdélyt."
+ hungary_flavor.20.a:0 "Ennek csak egyféleképpen vethetünk véget: Háború!"
+ hungary_flavor.20.b:0 "Micsoda eszement gondolat."
+ hungary_flavor.20.c:0 "Ha háborúba keverednénk, azt jelenleg elveszítenénk. Vonuljunk ki!"
+ 
+ hungary_flavor.21.t:0 "Románia Elfogadja a Követeléseket"
+ hungary_flavor.21.d:0 "Erdély ismét a miénk! Románia vállalta, hogy visszavonja eröit, és átadják Erdély területét annak érdekében, hogy elkerüljék a velünk való a háborút. [Root.GetName] feltámad!"
+ hungary_flavor.21.a:0 "Dicsöség Magyarországnak!"
+ 
+ hungary_flavor.22.t:0 "Románia Elutasítja a Követeléseket"
+ hungary_flavor.22.d:0 "Gyalázatos! Románia elutasítja Erdély átadását, és inkább felkészül a velünk való háborúra. Mi betartjuk ígéretünket, és tankjainkkal fogunk átgázolni Románián, amiért jogos területeinket nem hajlandók átadni."
+ hungary_flavor.22.a:0 "Ízekre szedjük öket!"
+ 
+ hungary_flavor.23.t:0 "Tárgyalás Olaszországgal"
+ hungary_flavor.23.d:0 "Elkészült az olaszokkal aláírandó egyezmény vázlata. A végleges változatban beérhetjük egy megnemtámadási szerzödéssel, de ha többet ajánlanánk Olaszországnak, akkor talán belemennének néhány tengerparti területük átadásába is, mint például Fiume. Természetesen eldönthetjük, hogy melyik területeket igényeljük a segítségünkért cserébe."
+ hungary_flavor.23.a:0 "Egy egyszerü megnemtámadási szerzödés elég lesz."
+ hungary_flavor.23.b:0 "Felajánljuk a felszerelésünk egy részét a megnemtámadási szerzödés mellé."
+ hungary_flavor.23.c:0 "Katonai és politikai támogatást is felajánlunk a megnemtámadási szerzödés mellé."
+ 
+ hungary_flavor.24.t:0 "Fiume kérdése"
+ hungary_flavor.24.d:0 "Olaszország birtokában van Fiume, ami a Trianoni békediktátumok elött Magyarországé volt. Megkérhetnénk öket, hogy adják át a felajánlott segítségünkért cserébe."
+ hungary_flavor.24.a:0 "Foglaljuk bele Fiumét a szerzödésbe."
+ hungary_flavor.24.b:0 "Nincs szükségünk Fiumére."
+ 
+ hungary_flavor.25.t:0 "Zára kérdése"
+ hungary_flavor.25.d:0 "Olaszország birtokában van Zára, egy kikötöváros Dalmácia északi részén. Megkérhetnénk öket, hogy adják át a felajánlott segítségünkért cserébe."
+ hungary_flavor.25.a:0 "Foglaljuk bele Zárat a szerzödésbe."
+ hungary_flavor.25.b:0 "Nincs szükségünk Zárára."
+ 
+ hungary_flavor.26.t:0 "Isztria kérdése"
+ hungary_flavor.26.d:0 "Olaszország birtokában van Isztria, ami történelmileg horvát terület. Megkérhetnénk öket, hogy adják át a felajánlott segítségünkért cserébe."
+ hungary_flavor.26.a:0 "Foglaljuk bele Isztriát a szerzödésbe."
+ hungary_flavor.26.b:0 "Nincs szükségünk Isztriára."
+ 
+ hungary_flavor.27.t:0 "Olaszország elfogadja a feltételeket"
+ hungary_flavor.27.d:0 "Az olaszok beleegyeztek a szerzödés aláírásába. A tárgyalás sikeresen lezárult, és mindkét fél elégedettnek tünt az eredménnyel."
+ hungary_flavor.27.a:0 "Újabb sikeres diplomáciai küldetés."
+ 
+ hungary_flavor.28.t:0 "Olaszország elutasítja a feltételeket"
+ hungary_flavor.28.d:0 "Az olasz külügyminiszter visszautasította diplomatáink közeledését, mondván, hogy ilyen feltételek mellett nem hajlandóak velünk tárgyalni."
+ hungary_flavor.28.a:0 "Aggasztó."
+ 
+ hungary_flavor.30.t:0 "Szövetség Németországgal"
+ hungary_flavor.30.d:0 "[Root.GetName] és Németország külügyminiszterei aláírják a szerzödést, miszerint [Root.GetName] csatlakozik a Tengely frakcióhoz."
+ hungary_flavor.30.a:0 "Kiváló!"
+ 
+ hungary_flavor.31.t:0 "Németország Elutasítja a Szövetséget"
+ hungary_flavor.31.d:0 "Németország elutasította csatlakozásunkat a Tengely frakcióhoz."
+ hungary_flavor.31.a:0 "Ez nekik most miért jó?"
+ 
+ hungary_flavor.32.t:0 "Szövetség a Szovjetunióval"
+ hungary_flavor.32.d:0 "A Szovjetunió elfogadta a csatlakozási kérelmünket a Kominternbe. A forradalom zászlajának magasan kell lobognia ezen a csodás napon."
+ hungary_flavor.32.a:0 "Világ proletárjai, egyesüljetek!"
+ 
+ hungary_flavor.33.t:0 "A Szovjetunió Elutasítja a Szövetséget"
+ hungary_flavor.33.d:0 "A kommunizmus anyaországa elutasított minket. Mivel felháborító módon visszautasították közeledésünket, egymagunk kell folytatnunk forradalmunkat."
+ hungary_flavor.33.a:0 "Még úgy is visszasírnak bennünket."
+ 
+ hungary_flavor.34.t:0 "Szövetség az Egyesült Királysággal"
+ hungary_flavor.34.d:0 "Miután rövid tárgyalásokat folytattunk az Egyesült Királyság kormányával, arra jutottak, hogy elfogadják a csatlakozási kérelmünket a Szövetségesek frakcióba. Mostantól a Szövetségesek védelmét élvezzük."
+ hungary_flavor.34.a:0 "Remek!"
+ 
+ hungary_flavor.35.t:0 "Az Egyesült Királyság Elutasítja a Szövetséget"
+ hungary_flavor.35.d:0 "\nElutasították a Szövetségesekhez való csatlakozási kérelmünket. Úgy tünik, egyedül kell boldogulnunk a jövöben."
+ hungary_flavor.35.a:0 "Micsoda szégyen!"
+ 
+ hungary_flavor.36.t:0 "A Dunamenti Konferencia"
+ hungary_flavor.36.d:0 "Budapesten konferenciát fogunk tartani, ahol remélhetöleg létrejön egy Dunamenti Koalíció. Meghívót küldtük minden környékbeli országnak, akiket szívesen látnánk a konferencián. Szeretnénk meggyözni ezen országok vezetését arról, hogy egy szövetség felállítása mindannyiunk számára elöny."
+ hungary_flavor.36.a:0 "Kezdödjön hát a konferencia."
+ 
+ hungary_flavor.37.t:0 "Csehszlovákia Csatlakozni Szeretne a Birodalomhoz"
+ hungary_flavor.37.d:0 "\nA csehszlovák kormány elfogadta azt a javaslatot, hogy csatlakozzanak Ausztria-Magyarországhoz, mivel fontos tagjai voltak anno az Osztrák Magyar Monarchiának is. Most már egy oldalon állunk, de országuk autonómiát élvez."
+ hungary_flavor.37.a:0 "Kiváló hírek!"
+ 
+ hungary_flavor.38.t:0 "Csehszlovákia Elutasítja a Birodalomhoz Való Csatlakozást"
+ hungary_flavor.38.d:0 "Úgy tünik, a csehszlovák kormány számára nem fontos a dicsöség és a nemzeti büszkeség, ezért inkább úgy döntöttek, egyedül maradnak, de az ostobák nem is sejtik, hogy ha nem mi, akkor Németország fogja bekebelezni, elöbb vagy utóbb. Ám, nekünk ezt meg kellene elöznünk."
+ hungary_flavor.38.a:0 "Lehet, hogy más megoldást kellene választanunk."
+ 
+ hungary_flavor.39.t:0 "Lengyelország Elfogadja a Követeléseket"
+ hungary_flavor.39.d:0 "A lengyel kormány ésszerüen döntött, és átadja azon területeket, melyek anno az Osztrák Magyar Monarchiához tartoztak."
+ hungary_flavor.39.a:0 "Kiváló hírek!"
+ 
+ hungary_flavor.40.t:0 "Lengyelország Elutasítja a Követeléseket"
+ hungary_flavor.40.d:0 "A lengyel kormány ostoba módon elutasítja nagylelkü ajánlatunkat, miszerint Krakkó és Galícia  területét átadják nekünk a békéért cserébe. Úgy tünik, túl sok vodkát ittak."
+ hungary_flavor.40.a:0 "A következö tárgyalásokat fegyverrel folytatjuk le!"
+ 
+ hungary_flavor.41.t:0 "Románia Elfogadja a Követeléseket"
+ hungary_flavor.41.d:0 "Ahogy az várható volt, a gyáva román kormány inkább átadják Bukovinát, mintsem, hogy szembeszálljanak birodalmunkkal."
+ hungary_flavor.41.a:0 "Kiváló hírek!"
+ 
+ hungary_flavor.42.t:0 "Románia Elutasítja a Követeléseket"
+ hungary_flavor.42.d:0 "Az ostoba román kormány azt hitte, csak vicceltünk, mikor azt ígértük, hogy ha nem adják vissza Bukovinát, akkor átgázolunk rajtuk. Ennek okán elküldték a fenébe diplomatáinkat, akik épp haza tartanak."
+ hungary_flavor.42.a:0 "El akarnak bukni egy aprócska föld miatt?"
+ 
+ hungary_flavor.43.t:0 "Tárgyalások az Imperialista Csehszlovák Kormánnyal"
+ hungary_flavor.43.d:0 "\nAz újonnan megalakult imperialista kormány Csehszlovákiában tárgyalásokat kezdeményezett velünk. Azt kérték, segítsük öket az országuk védelmében, cserébe boldogan csatlakoznak a birodalomhoz és a frakcióhoz."
+ hungary_flavor.43.a:0 "Üdvözli öket Az Új Központi Hatalmak"
+ hungary_flavor.43.b:0 "Nincs szükség nyílt együttmüködésre."
+ 
+ hungary_flavor.45.t:0 "Ausztria Elfogadja az Örvidéki Népszavazást"
+ hungary_flavor.45.d:0 "Ausztria, mint régi-új barátunk, lehetövé tette a népszavazást Örvidék tartományban. Az ott élö emberek most szavazatukkal eldönthetik, hogy továbbra is Ausztria részei kívánnak maradni, vagy inkább visszatérnének Magyarországhoz."
+ hungary_flavor.45.a:0 "Kiváló!"
+ 
+ hungary_flavor.46.t:0 "Ausztria Elutasítja az Örvidéki Népszavazást"
+ hungary_flavor.46.d:0 "Az osztrák kormány elutasította azt a javaslatot, miszerint az örvidéki emberek maguk döntsék el, melyik ország részei kívánnak lenni. Ha nem a szövetségeseinkröl lenne szó ez olyan sértés lenne, amit nem hagyhatnánk szótlanul. Azonban, meg kell öriznünk nyugalmunkat, hogy a frakciónkban béke maradhasson."
+ hungary_flavor.46.a:0 "Kiábrándító..."
+ 
+ hungary_flavor.47.t:0 "Szlovéniát Örvidékért Cserébe"
+ hungary_flavor.47.d:0 "Mi már megszereztük Szlovéniát, ám nem tartozik az igényelt területeink közé. Ausztria jogos területe, Szlovénia jelenleg a mi uralmunk alatt áll, viszont a mi jogos területünk, Örvidék, az ö tulajdonukban van. Ez egy remek csere lehetöség lenne, mindenki jól járna. Tegyünk ajánlatot Ausztriának?"
+ hungary_flavor.47.a:0 "Természetesen!"
+ hungary_flavor.47.b:0 "A határok tökéletes helyen vannak."
+ 
+ hungary_flavor.48.t:0 "Ausztria Elfogadja Szlovénia Cseréjét"
+ hungary_flavor.48.d:0 "Az osztrák kormány azt lépte, ami várható volt. Elfogadták azt a javaslatunkat, hogy cseréljük el Szlovéniát az Örvidékért cserébe. Ezzel mindkét állam rendezte területi vitáit."
+ hungary_flavor.48.a:0 "Kiváló!"
+ 
+ hungary_flavor.49.t:0 "Ausztria Elutasítja Szlovénia Cseréjét"
+ hungary_flavor.49.d:0 "Meglepett minket, de az osztrák kormány elutasította Szlovénia cseréjét az Örvidékre. Érthetetlen, hisz Szlovénia a történelmi tartományuk, ahogy az Örvidék a mienk. Ennél igazságosabb cserét elképzelni sem lehetett volna."
+ hungary_flavor.49.a:0 "Féleszüek!"
+ 
+ hungary_flavor.50.t:0 "Györi Program"
+ hungary_flavor.50.d:0 "A fegyvergyártás eddig korlátozott volt az elsö világháború utáni békediktátumok által, de most a(z) [Root.GetAdjective] hadsereg modernizációra érett. Az Imrédy Béla által készített fegyverkezési terv alapos reformáció és szerkezetátalakítást tenne lehetövé, de nem csak a hadsereg számára, hanem az ipar számára is. A teljes költség ára 1 milliárd magyar pengö, amelyböl 600 milliót költenénk a hadseregre és a kutatásokra, 400 milliót pedig a védelemre és az iparra. A költségek alapjai beszerezhetöek alkalmi adóztatással, és rövid lejáratú hitelekkel."
+ hungary_flavor.50.a:0 "Elfogadjuk ezt a tervezetet."
+ hungary_flavor.50.b:0 "Ez túl költséges lenne."
+ 
+ hungary_flavor.51.t:0 "Györi Program: I. Ütem"
+ hungary_flavor.51.d:0 "A Györi Program elsö üteme készen áll. Az elsö terv a kutatásra és az ipar fejlödésére vonatkozik, így számos építkezési támogatást és kutatási megállapodást tárgyaltunk meg. Addig kell kihasználunk ezeket a megállapodásokat, ameddig érvényben vannak."
+ hungary_flavor.51.a:0 "Kiváló! [Root.GetName] felemelkedik."
+ 
+ hungary_flavor.52.t:0 "Györi Program: II. Ütem"
+ hungary_flavor.52.d:0 "A Györi Program második ütemében a hangsúly a hadsereg fejlesztésén van. A korszerüsítés, és a határok védelme rendben kell, hogy legyen annak érdekében, hogy megóvjuk nemzetünket a külsö fenyegetésektöl."
+ hungary_flavor.52.a:0 "Újra dicsö és erös hadseregünk lesz."
+ 
+ hungary_flavor.53.t:0 "Györi Program: III. Ütem"
+ hungary_flavor.53.d:0 "A Györi Program harmadik üteme készen áll. Most a nemzeti légiközlekedési eröfeszítéseken van a hangsúly. A légierö terén nemzetünk elmaradott a szomszédos országokkal szemben is, ezért új repülögép modellek tervezésére van szükség, és a légi hadviselési taktikák, stratégiák is újításokat kell, hogy évezzenek."
+ hungary_flavor.53.a:0 "Az ég is hirdetni fogja [Root.GetName] erejét."
+ 
+ hungary_flavor.54.t:0 "Györi Program: IV. Ütem"
+ hungary_flavor.54.d:0 "A Györi Program negyedik, és egyben az utolsó üteméhez érkeztünk, középpontjában a haditengerészettel. Kezdetben a haditengerészet nem szerepelt a Györi Program terveiben, mert nem rendelkeztük tengeri kikötökkel. Ám az extra források lehetövé teszik, hogy befektessünk a haditengerészet fejlesztésébe, hisz ki tudja, mikor lesz szükségünk egy flotta felállítására."
+ hungary_flavor.54.a:0 "A haditengerészetünk ismét naggyá lesz."
+ 
+ hungary_flavor.55.t:0 "[Root.GetAdjective]-Jugoszláv Örökbarátság"
+ hungary_flavor.55.d:0 "Az örökbarátsági szerzödés [Root.GetName] és Jugoszlávia között aláírásra került a jó kapcsolataink és az együttmüködések javára. Ez egy szövetség kezdete lehet, amely segítheti megvédeni mindkettönk országának szuverenitását a külföldi fenyegetésektöl."
+ hungary_flavor.55.a:0 "Kiváló!"
+ 
+ hungary_flavor.56.t:0 "Jugoszlávia Elutasítja az Örökbarátsági Szerzödést"
+ hungary_flavor.56.d:0 "\nTalán úgy érzik, hogy a revíziós törekvéseink fenyegetik területi egységüket, ezért a jugoszláv kormány elutasította az országaink közti együttmüködést. Bizonyára ez nem azt jelenti, hogy ellenségeskedö cselekményekre készülnek ellenünk... remélhetöleg."
+ hungary_flavor.56.a:0 "Szégyen!"
+ 
+ hungary_flavor.57.t:0 "Területi Tárgyalások Jugoszláviával"
+ hungary_flavor.57.d:0 "Bár Jugoszlávia baráti állam, mégis valamilyen módon rendeznünk kell területi vitáinkat. Bácska egyértelmüen hozzánk kell, hogy tartozzon, és Jugoszláviának szüksége van a segítségünkre, ha a jövöben meg szeretnék örizni a területi szuverenitásukat. Ígéretet teszünk nekik arra, hogy megvédjük öket bármilyen konfliktusban azzal a feltétellel, hogy visszaadják nekünk Bácskát."
+ hungary_flavor.57.a:0 "Biztosan elfogadják, hogy Bácska Magyarországé."
+ hungary_flavor.57.b:0 "Nem kockáztathatjuk a kapcsolatainkat területekért."
+ 
+ hungary_flavor.58.t:0 "Sikeres Tárgyalások Jugoszláviával"
+ hungary_flavor.58.d:0 "Jugoszlávia elfogadta a javaslatunkat, és átadták Bácskát a katonai támogatásunkért cserébe. Ezzel egyértelmüen komolyan veszik a barátságunkat, és ez így van rendjén. Mi cserébe megtartjuk ígéretünket, miszerint támogathassuk politikai eröfeszítéseiket."
+ hungary_flavor.58.a:0 "Ez nem más mint a két ország barátságának gyümölcse."
+ 
+ hungary_flavor.59.t:0 "Sikertelen Tárgyalások Jugoszláviával"
+ hungary_flavor.59.d:0 "Jugoszlávia nem volt hajlandó arra, hogy átadja nekünk Bácskát. A barátság ennek ellenére nem ért véget a két ország között, de nem is tudtuk még erösebbé tenni a köztünk lévö kapcsolatot. A tárgyalóasztalt mindenki savanyú szájjal hagyta el."
+ hungary_flavor.59.a:0 "Ez biztosan nem tesz majd jót a két ország viszonyának."
+ 
+ hungary_flavor.60.t:0 "Szövetség Jugoszláviával"
+ hungary_flavor.60.d:0 "Jugoszlávia értékes partnernek bizonyult az együttmüködésükböl ítélve, és a politikai nézeteink is összhangban vannak. Ahhoz, hogy tovább erösítsük a barátságot, meg kell hívnunk öket a szövetségi frakciónkba, amellyel mindketten garantáljuk az egymás iránti elkötelezettséget. Rajtunk áll, hogy miképp döntünk."
+ hungary_flavor.60.a:0 "Természetesen behívjuk öket a szövetségbe."
+ hungary_flavor.60.b:0 "Nem kellene belerángatnunk öket."
+ 
+ hungary_flavor.61.t:0 "Jugoszlávia Belép a Szövetségbe"
+ hungary_flavor.61.d:0 "Az örökbarátsági szerzödést [Root.GetName] és Jugoszlávia között kiterjesztetett katonai szövetséggé. Ök beléptek a frakciónkba, így már egymás védelmét élvezzük."
+ hungary_flavor.61.a:0 "Igyunk a barátságra!"
+ 
+ hungary_flavor.62.t:0 "Jugoszlávia Elutasítja a Szövetséget"
+ hungary_flavor.62.d:0 "A szövetséggel kapcsolatos tárgyalás Jugoszláviával talán hiba volt. Ök nyiltan elutasították az ajánlatunkat, mert nem akarnak részt venni politikai küzdelmeinkben. Úgy tünik, inkább a semlegességet választják."
+ hungary_flavor.62.a:0 "Nem tudják, hogy milyen lehetöségeket szalasztottak el."
+ 
+ hungary_flavor.63.t:0 "A Györi Program Finanszírozása"
+ hungary_flavor.63.d:0 "Egyes befektetök megkeresték kormányunkat a Györi Programmal kapcsolatban. Az érdeklödésüket fejezték ki a katonai fegyverkezés, illetve az ipari fejlesztések iránt. Ezek a befektetök hajlandók finanszírozni a programot alacsony kamatú hitelek formájában."
+ hungary_flavor.63.a:0 "A pénz mindig jól jön."
+ 
+ hungary_flavor.64.t:0 "Olaszország Elfogadja a Követeléseinket"
+ hungary_flavor.64.d:0 "Olaszország helyesen döntött, és elfogadta az ajánlatunkat. Talán csak a békét szeretnék megörizni, vagy rosszul ítélték meg a görög területek értékét, de mindenesetre hajlandóak átadni Dél-Tirolt és Isztriát."
+ hungary_flavor.64.a:0 "Meglepö, ám mégis nagyszerü hír."
+ 
+ hungary_flavor.65.t:0 "Olaszország Elutasítja a Követeléseinket"
+ hungary_flavor.65.d:0 "Nem meglepö, hogy Olaszország nem hajlandó átadni Dél-Tirolt és Isztriát. A görög területek ígérete nem volt elég, hogy meggyözze öket, és valószínüleg úgy érzik, elég erösek velünk szemben, hogy nemet mondhassanak követeléseinkre. A régi tartományaink egyelöre idegen kézen maradnak."
+ hungary_flavor.65.a:0 "Úgy látszik, erövel kell elvennünk."
+ 
+ hungary_flavor.66.t:0 "Németország Ellenzi az Osztrák-Magyar Együttmüködést"
+ hungary_flavor.66.d:0 "\nAusztria és Magyarország újraegyesítésének terve nem volt észrevétlen, és Németország készen áll arra, hogy felvegye velünk a harcot. Ha nem szüntetjük meg a tárgyalásokat Ausztriával, akkor katonai beavatkozással fenyegetnek bennünket."
+ hungary_flavor.66.a:0 "Folytassuk a tárgyalásokat."
+ hungary_flavor.66.b:0 "Hagyjuk abba, amíg még lehet!"
+ 
+ hungary_flavor.67.t:0 "Ausztria-Magyarország Fövárosa Kérdés"
+ hungary_flavor.67.d:0 "Ausztria és Magyarország újraegyesülése megtörtént, és most döntenünk kell arról, hogy melyikünk fövárosa legyen a birodalom fövárosa is. Történelmileg Bécsben volt a birodalmi föváros. Igaz, korábban osztrák vezetése volt a két országnak, most pedig magyar, de stratégiailag és gazdaságilag elönyösebb lehet, ha Bécset nevezzük ki fövárossá."
+ hungary_flavor.67.a:0 "Budapest lesz a föváros"
+ hungary_flavor.67.b:0 "Bécs lesz a föváros"
+ 
+ hungary_flavor.78.t:0 "Kiugrási Kísérlet"
+ hungary_flavor.78.d:0 "Ahogy egyre inkább ellenfeleink oldalára billen a háború mérlege, felmerül az a kérdés, hogy meddig akarjuk a saját vérünket ontani a Tengely már-már öngyilkos törekvéseiben. Ahogy Bismarck is megmondta, 'Egy országnak sem szabad feláldoznia magát egy szövetség oltárán.'"
+ hungary_flavor.78.a:0 "Kezdjünk tárgyalásokat a Szovjetunióval."
+ hungary_flavor.78.b:0 "Próbáljunk meg a Szövetségesek oldalára állni."
+ hungary_flavor.78.c:0 "Hüek maradunk a Tengelyhez."
+ 
+ hungary_flavor.79.t:0 "A Szovjetunió Támogatja a Kiugrási Kísérletet"
+ hungary_flavor.79.d:0 "A tárgyalások lezárultak, és a szovjetek beleegyeztek abba, hogy megvédenek bennünket, miután hátat fordítunk a Tengely tagállamainak."
+ hungary_flavor.79.a:0 "Így talán a gyöztes oldalon végezhetjük a háborút."
+ 
+ hungary_flavor.80.t:0 "Belépés a Kominternbe"
+ hungary_flavor.80.d:0 "Minden intézkedést megtettünk, hogy a honvédség egységeit eltávolítsuk a közvetlen veszély közeléböl, és egy kommunista kormány is készen áll a kormányzásra. Már csak annyi dolgunk maradt, hogy hivatalossá tegyük a Tengelyböl való kilépésünket, és ezek után reméljük a legjobbakat."
+ hungary_flavor.80.a:0 "Innen már nincs visszaút."
+ 
+ hungary_flavor.81.t:0 "A Szovjetunió Elutasította a Kiugrási Kísérletet"
+ hungary_flavor.81.d:0 "\nA Szovjetunió nem viszonozza a közeledésünket, mondván, hogy az ellenséggel nem hajlandók tárgyalni, amíg az meg nem adja magát."
+ hungary_flavor.81.a:0 "Úgy néz ki, hogy a németek mellett ragadtunk."
+ 
+ hungary_flavor.82.t:0 "A Szövetségesek Támogatják a Kiugrási Kísérletet"
+ hungary_flavor.82.d:0 "\nA tárgyalások lezárultak, és a Szövetségesek beleegyeztek abba, hogy megvédenek bennünket, miután hátat fordítunk a Tengely tagállamainak."
+ hungary_flavor.82.a:0 "Így talán a gyöztes oldalon végezhetjük a háborút."
+ 
+ hungary_flavor.83.t:0 "Csatlakozás a Kominternbe"
+ hungary_flavor.83.d:0 "Minden intézkedést megtettünk, hogy a honvédség egységeit eltávolítsuk a közvetlen veszély közeléböl, és egy ideiglenes kormány is készen áll a kormányzásra. Már csak annyi dolgunk maradt, hogy hivatalossá tegyük a Tengelyböl való kilépésünket, és ezek után reméljük a legjobbakat."
+ hungary_flavor.83.a:0 "Innen már nincs visszaút."
+ 
+ hungary_flavor.84.t:0 "A Szövetségesek Elutasítják a Kiugrási Kísérletet"
+ hungary_flavor.84.d:0 "\nAz Egyesült Királyság nem viszonozza a közeledésünket, mondván, hogy csak a feltétel nélküli megadásunkat fogadják el."
+ hungary_flavor.84.a:0 "Úgy néz ki, hogy a németek mellett ragadtunk."
+ 
+ hungary_flavor.85.t:0 "Nyilas Puccs Budapesten"
+ hungary_flavor.85.d:0 "Egy váratlan fordulat keretében az egész ország felbolydult. A német vezetés parancsára a nyilaskeresztesek megkezdték a hatalomátvétel megszervezését, majd német és magyar csapatok szállták meg a föváros stratégiai fontosságú pontjait, este pedig Szálasi Ferenc bejelentette a rádióban a hatalomátvételt és a háború folytatását. A német vezetés feltehetöen azért ítélte szükségesnek ezt a lépést, mert nem bíztak Magyarország lojalitásában."
+ hungary_flavor.85.a:0 "Az ellenállás fölösleges lenne."
+ hungary_flavor.85.b:0 "Készüljünk az ellenállásra!"
+ hungary_flavor.85.tt:0 "A Nyilaskeresztes Párt kerül hatalomra Szálasi Ferenccel az élén.\n"
+ 
+ hungary_flavor.86.t:0 "Románia Elfogadja a Követelést"
+ hungary_flavor.86.d:0 "A fenyegetésünk beváltotta a hozzá füzött elvárásokat. A gyáva románok farkukat behúzva menekültek a határról, teljesen üresen hagyva Bánát megyét, ami így már a miénk lehet."
+ hungary_flavor.86.a:0 "A gyávák futnak, amíg a bátrak gyözedelmeskednek."
+ 
+ hungary_flavor.87.t:0 "Románia Elutasítja a Követelést"
+ hungary_flavor.87.d:0 "Nem sikerült rákényszeríteni Romániát hogy lemondjon a Bánságról. Talán nem hiszik, hogy valóban beváltjuk a fenyegetéseinket, és átgázolunk az országukon, ha nem vonulnak ki a területröl. Igazából rajtunk múlik, hogy megkíméljük-e öket, vagy ígéreteinkhez híven lerohanjuk öket."
+ hungary_flavor.87.a:0 "Megbánják még a napot, amikor ellenszegültek [Root.GetName] hatalmának!"
+ hungary_flavor.87.b:0 "Fölöslegesen nem fogjuk a vérünket ontani egy koszos román megye miatt."
+ 
+ hungary_flavor.88.t:0 "Törökország Elfogadja a Szövetséget"
+ hungary_flavor.88.d:0 "Törökország mától hivatalosan is tagja a(z) [Root.GetFactionName] frakciónak. Háború esetén már kötelesek a segítségünkre sietni, pont úgy, ahogy mi is az övékre."
+ hungary_flavor.88.a:0 "Ez egy fontos lépés a céljaink eléréséhez."
+ 
+ hungary_flavor.89.t:0 "Törökország Elutasítja a Szövetséget"
+ hungary_flavor.89.d:0 "Talán a törökök lemondtak a korábbi büszkeségükröl vagy a nagyratörö ambícióikról, mert úgy döntöttek, kimaradnak a szövetségrendszerünkböl. Valószínüleg nem tudják, hogy ezzel lemondanak mindenfajta jutalomról is, amit a háború végén kaptak volna."
+ hungary_flavor.89.a:0 "A törökök sosem voltak a barátaink, és ez most sincs másképp."
+ 
+ hungary_flavor.90.t:0 "Demokratikus Választások Magyarországon"
+ hungary_flavor.90.d:0 "Miután a liberális eszmék elterjedtek az országban, egyre nagyobb egy választás támogatottsága, ahol demokratikus pártok nyerhetik el a nép szavazatait. Legjobb lenne, ha felkészülünk egy új kormány vezetésére."
+ hungary_flavor.90.a:0 "Micsoda idöket élünk."
+ 
+ hungary_flavor.91.t:0 "Kommunista Hatalomátvétel Magyarországon"
+ hungary_flavor.91.d:0 "A magyarországi munkásmozgalmak országszerte sztrájkokat és tüntetéseket szerveznek, miközben a kommunista párt hatalomátvételre készül. Választásokkal vagy eröszakos lázadással, de elöbb vagy utóbb kommunista kormánya lesz Magyarországnak."
+ hungary_flavor.91.a:0 "Micsoda idöket élünk."
+ 
+ hungary_flavor.92.t:0 "Horthy Miklós, Mint Királyjelölt"
+ hungary_flavor.92.d:0 "Nyílt titok, hogy az ország régense, Horthy Miklós halála után saját fiának szeretné átadni pozícióját, mint Magyarország vezetöje, létrehozva ezzel egy uralkodó dinasztiát. Egyesek már most is támogatják törekvéseit, és egyenesen a megkoronázását szorgalmazzák. Megkoronázzuk Horthy-t királynak, vagy maradjon meg régensi pozíciójában?"
+ hungary_flavor.92.a:0 "Nem fogunk egy újabb dinasztia létrehozásához asszisztálni."
+ hungary_flavor.92.b:0 "Éljen a király!"
+ 
+ hungary_flavor.93.t:0 "Horthy Miklós Visszahelyezése a Tengerészet Élére"
+ hungary_flavor.93.d:0 "\nMost, hogy újra van saját flottánk, és megválasztottuk Horthy-t a vezetésére, már csak az a kérdés, hogy mi legyen a pontos szerepe. Legyen újból ellentengernagy, vagy irányítsa a haditengerészetet hátulról, mint a vezérkar tagja?"
+ hungary_flavor.93.a:0 "Horthy a tengerészet vezérkari vezetöje lesz."
+ hungary_flavor.93.b:0 "Helyet kap a flotta élén, mint ellentengernagy."
+ 
+ hungary_flavor.94.t:0 "Német Vezérkari Segítség"
+ hungary_flavor.94.d:0 "Siker! A német vezérkar nem csak a delegációt fogja Budapestre küldeni, hanem rendelkezésünkre bocsájt két német tábornokot is, akiket szabadon használhatunk a seregünkben. Így már biztosan magunk mellett tudhatjuk a német vezérkar támogatását."
+ hungary_flavor.94.d_2:0 "A német vezérkar beleegyezett a delegáció küldésébe. Mostantól minden döntésünkben számíthatunk a segítségükre, és biztosíthatjuk a közeli kooperációt Németországgal."
+ hungary_flavor.94.a:0 "Csodálatos hír!"
+ hungary_flavor.94.b:0 "Csodálatos hír!"
+ hungary_flavor.94.tt:0 "Erwin von Witzleben és Wilhelm Ritter von Leeb parancsnok elérhetövé válik."
+ 
+ hungary_flavor.95.t:0 "Németország Nem Segít"
+ hungary_flavor.95.d:0 "Valamilyen oknál fogva a németek nem hajlanak a közelebbi kooperációra. Úgy néz ki, csak a saját vezérkarunkra hagyatkozhatunk."
+ hungary_flavor.95.a:0 "Bosszantó egy fejlemény."
+ 
+ hungary_flavor.96.t:0 "Török Seregcsere Program"
+ hungary_flavor.96.d:0 "A törökök beleegyeztek a csere eszközölésébe. Rövidesen megérkeznek az általuk küldött hadosztályok, nekünk pedig két dandárunk már úton van Isztambul felé."
+ hungary_flavor.96.a:0 "Ez még közelebb hozza majd országainkat egymáshoz."
+ hungary_flavor.96.tt:0 "Kapunk két gyalogsági dandárt Törökországtól.\n"
+ 
+ hungary_flavor.97.t:0 "Törökország Elutasítja a Csereprogramot"
+ hungary_flavor.97.d:0 "A török kormány úgy ítélte meg, hogy túl veszélyes lenne katonáit külföldi szolgálatba állítani, és elutasította az ajánlatunkat. Talán jobb is, ha mindkét ország a saját hadseregére hagyatkozik."
+ hungary_flavor.97.a:0 "Biztosan jó oka van annak, hogy így döntöttek."
+ 
+ hungary_flavor.98.t:0 "A Trianoni Megkötések Elévülése"
+ hungary_flavor.98.d:0 "Lévén, hogy már tagjai vagyunk egy nagyobb szövetségnek, a trianoni diktátum általi katonai korlátozásokat már senki nem tudja betartatni. Újdonsült barátaink ki fognak állni a fegyverkezéshez való jogaink mellett."
+ hungary_flavor.98.d_2:0 "A trianoni megkötések már olyan régiek, hogy talán azok is elfelejtették, akik ránk szabták öket. Ebben a mai, sebesen változó világban senki nem várhatja el, hogy továbbra is betartsunk ilyen nevetséges korlátozásokat."
+ hungary_flavor.98.a:0 "Együtt erösek vagyunk."
+ hungary_flavor.98.b:0 "Azok még mindig érvényben voltak? Észre sem vettem."
+ 
+ hungary_flavor.99.t:0 "A Györi Program Szembe Megy a Trianoni Megkötésekkel"
+ hungary_flavor.99.d:0 "\nA fegyverkezési tervezetünk részei olyan kutatások és fejlesztések, amelyeket a szövetségesek megkötései nem engedélyeznek. Megpróbálhatunk a korlátok között maradni, de az lényegesen lassítaná a folyamatot."
+ hungary_flavor.99.a:0 "Nyíltan szembeszegülünk a korlátozásokkal."
+ hungary_flavor.99.b:0 "Próbáljuk meg titokban végrehajtani a tiltott fejlesztést."
+ hungary_flavor.99.c:0 "Kénytelenek vagyunk a korlátokat tiszteletben tartani."
+ hungary_flavor.99.tt:0 "A Györi Program végrehajtása lelassul."
+ 
+ hungary_flavor.100.t:0 "A Visegrádi Szövetség"
+ hungary_flavor.100.d_both:0 "Siker! Mind Csehszlovákia, mind Lengyelország elfogadta a szövetségi ajánlatot. A Visegrádi Szövetség erös alapokon fog nyugodni e két alapítótaggal."
+ hungary_flavor.100.d_cze:0 "Csak Csehszlovákiát sikerült meggyöznünk, hogy csatlakozzon a szövetséghez. Mindenesetre a szövetség létrejött, még ha csak két taggal is."
+ hungary_flavor.100.d_pol:0 "Csak Lengyelországot sikerült meggyöznünk, hogy csatlakozzon a szövetséghez. Mindenesetre a szövetség létrejött, még ha csak két taggal is."
+ hungary_flavor.100.d_neither:0 "Kudarc! Sem Csehszlovákia, sem Lengyelország nem csatlakozik az általunk javasolt szövetséghez."
+ hungary_flavor.100.a:0 "A visegrádi hármas felemelkedik."
+ hungary_flavor.100.b:0 "Csehszlovákiával erös szövetséget fogunk építeni."
+ hungary_flavor.100.c:0 "Legalább lengyel barátaink mellettünk állnak."
+ hungary_flavor.100.e:0 "Úgy látszik ez egy halva született ötlet volt."
+ 
+ hungary_flavor.101.t:0 "Visegrádi Szövetség a Baltikumban"
+ hungary_flavor.101.d_all:0 "Teljes siker volt a balti terjeszkedés! Mindhárom ország belépett a Visegrádi Szövetségbe."
+ hungary_flavor.101.d_some:0 "Csak részleges volt a balti terjeszkedés sikere. Nem sikerült mindhárom országot meggyöznünk a tagságról, de így is bövült a szövetség."
+ hungary_flavor.101.d:0 "Csak részleges volt a balti terjeszkedés sikere. Nem sikerült mindhárom országot meggyöznünk a tagságról, de így is bövült a szövetség."
+ hungary_flavor.101.d_none:0 "Mindhárom balti ország visszautasította a közeledésünket. Úgy néz ki, máshol kell új tagokat keresnünk, ha böviteni szeretnénk a szövetséget."
+ hungary_flavor.101.a:0 "Üdvözöljük az új tagokat."
+ hungary_flavor.101.b:0 "Üdvözöljük az új tagokat."
+ hungary_flavor.101.c:0 "Kiábrándító!"
+ 
+ hungary_flavor.102.t:0 "Az Osztrák-Magyar Monarchia Föderalizálása"
+ hungary_flavor.102.d:0 "\nA döntés megszületett: Ausztria-Magyarországból föderáció lesz. Az ország 6 föderációs tagállamból fog felépülni: Ausztria, Magyarország, Bohémia, Lengyel-Rutén Galícia, Erdély és Jugoszlávia. Néhány államban lesznek kisebb autonóm területek, de mindenesetre ezek lesznek az önmagukat kormányzó részegységek. Minden tagállam képviselöket fog delegálni egy központi parlamentbe, amely az uralkodó felügyeletével fogja irányítani a föderációt. Az egyetlen tisztázatlan dolog, az osztrákok és magyarok helyzete az új föderációban. Egyesek az 'Osztrák-Magyar Föderáció'-t támogatják, amiben még megmaradna néhány kiemelt joga az osztrákoknak és magyaroknak, mások szerint egy teljesen egyenlö 'Dunai Föderáció' volna helyes, amiben minden nemzet ugyanazokat a jogokat élvezi."
+ hungary_flavor.102.a:0 "Legyen a neve Osztrák-Magyar Föderáció."
+ hungary_flavor.102.b:0 "Legyen a neve Dunai Föderáció."
+ 
+ hungary_flavor.103.t:0 "Albánia Csatlakozna a Szövetséghez"
+ hungary_flavor.103.d:0 "Jugoszlávia sikeres felosztása után megkerestek minket Albániából azzal a kérelemmel, hogy felvegyük öket a szövetségünkbe. Elképzelhetö, hogy Montenegró átadását meghívásnak vették, de a lényeg, hogy reagálnunk kell valamit a kérésükre. Mi legyen a válasz?"
+ hungary_flavor.103.a:0 "Elfogadjuk a kérésüket."
+ hungary_flavor.103.b:0 "Na persze, még védjük is meg öket?"
+ 
+ hungary_flavor.104.t:0 "Németország Felajánlja Kárpátalját"
+ hungary_flavor.104.d:0 "Németország megszállta Csehországot, és egy csehszlovák autonóm területet hozott létre, így a Csehszlovák állam széthullani látszik. A német vezetésnek nincsenek szándékai a kárpátaljai terület megszállására, így a barátság jegyében felajánlották nekünk. Figyelmen kívül hagyhatjuk az ajánlatot, de Kárpátalja Megszerzése egy fontos lépés lenne a régi területünk visszaállításában."
+ hungary_flavor.104.a:0 "Elfogadjuk a területet."
+ hungary_flavor.104.b:0 "Kit érdekelnek a határok?"
+ 
+ hungary_flavor.105.t:0 "Olasz Szövetség"
+ hungary_flavor.105.d:0 "A Jugoszláviáról határozó konferencia végeztével az olasz nagykövetek egy ajánlattal keresték meg a delegációnkat. Hálájuk jeléül, amiért helyt adtunk követeléseiknek a jugoszláv területeken, hajlandóak lennének csatlakozni frakciónkhoz, és egyesíteni eröinket."
+ hungary_flavor.105.a:0 "Üdvözöljük öket a szövetségben!"
+ hungary_flavor.105.b:0 "Udvariasan utasítsuk el a közeledésüket."
+ 
+ hungary_flavor.106.t:0 "Magyar-Szlovák Kis Háború"
+ hungary_flavor.106.d:0 "Határaink Szlovákiával nem kerültek tisztázásra, miután bevonultunk Kárpátaljára. A hadsereg vezetése úgy döntött, hogy az Ung völgyét mindenképp biztosítani kell, ezért támadást indított Szlovákia ellen, nyugat felöl. Jelentös mennyiségü területet sikerült megszerezni elfogadható veszteségekkel, azonban az ellenség rövidesen ellentámadásba kezdett, és visszaszorította eröinket majdnem egészen a korábbi határig. Az egész hadakozás csupán pár napig tartott, és néhány tucat halottal végzödött mindkét oldalon. Noha nem sikerült sokkal kitolnunk határainkat, a hadmüveletet mégis sikeresnek könyvelhetjük el."
+ hungary_flavor.106.a:0 "A magyar nemzet újabb sikere!"
+ 
+ hungary_flavor.107.t:0 "Csehszlovákia Engedélyezi a Népszavazást"
+ hungary_flavor.107.d:0 "Csehszlovákia beleegyezett a népszavazás megtartásába. A felvidéki magyarok végre eldönthetik, hogy kihez akarnak tartozni."
+ hungary_flavor.107.a:0 "Reméljük az eredmények nekünk kedveznek majd."
+ 
+ hungary_flavor.108.t:0 "Csehszlovákia Elutasítja a Népszavazást"
+ hungary_flavor.108.d:0 "A csehszlovák kormány elvetette a népszavazás ötletét, nyilván attól tartva, hogy az eredmény kedvezötlen lenne a számukra. Ez még önmagában nem rontotta a két ország nemzetközi kapcsolatát, de a jövöben bizonyára megosztottsághoz vezet majd."
+ hungary_flavor.108.a:0 "Elöbb-utóbb be kell, hogy adják a derekukat."
+ hungary_flavor.108.b:0 "Használjuk a befolyásunkat a frakcióban, és kényszerítsük rájuk a népszavazást."
+ 
+ hungary_flavor.109.t:0 "Jugoszlávia Csatlakozik a Visegrádi Szövetséghez"
+ hungary_flavor.109.d:0 "A Visegrádi szövetség megalakulása után még az sem volt biztos, hogy képes lesz megvédeni magát, nemhogy még befolyását is ki fogja tudni terjeszteni. Jugoszlávia a napokban bejelentette csatlakozását a Visegrádiakhoz, tovább erösítve a szövetséget, és kiterjesztve befolyását a Balkánra. Ez bizonyítja, hogy a Visegrádi országokat nem szabad figyelmen kívül hagyni az Európai színtéren."
+ hungary_flavor.109.a:0 "A szövetség sikeressége tagadhatatlan."
+ 
+ hungary_flavor.110.t:0 "Jugoszlávia Elutasítja a Meghívást"
+ hungary_flavor.110.d:0 "A Jugoszláviával való tárgyalások sikertelenek voltak. Nem sikerült meggyöznünk öket, hogy csatlakozzanak a Visegrádi szövetséghez, így befolyásunk a Balkánon továbbra is korlátozott marad."
+ hungary_flavor.110.a:0 "Nem tudják miböl maradnak ki."
+ 
+ hungary_flavor.111.t:0 "Jugoszlávia Elfogadja a Határváltoztatásokat"
+ hungary_flavor.111.d:0 "A kiegyezö tárgyalások során sikerült eldönteni, hogy mely területek maradjanak Jugoszlávia részei, és melyek legyenek újra Magyarországé. Mindkét fél azon az általános véleményen volt, hogy a magyar nép magyar földre tartozik, így még arról is született megállapodás, hogy néhány falu lakossága áttelepítésre kerüljön. Értékes területekre tettünk szert, ahol jelentös magyar lakosság van jelen."
+ hungary_flavor.111.a:0 "És lám, nem kellett hozzá vérnek folynia."
+ 
+ hungary_flavor.112.t:0 "Jugoszlávia Beleegyezik egy Részleges Határváltoztatásba"
+ hungary_flavor.112.d:0 "\nA tárgyalások heves vitákkal voltak tüzdelve, de végül sikerült kompromisszumot kötni. Néhány magyar település lakossága szabadon áttelepülhet Magyarországra, és Muraköz magyar fennhatóság alá kerül. Több mindenben reménykedtünk, de legalább nem volt hiábavaló az egyezkedés."
+ hungary_flavor.112.a:0 "Igazságos megállapodás."
+ 
+ hungary_flavor.113.t:0 "Jugoszlávia Elutasítja a Határváltoztatást"
+ hungary_flavor.113.d:0 "A jugoszláv vezetés tudtunkra adta, hogy hallani sem akarnak a határok megváltoztatásáról. Nem fognak semmilyen engedményt adni, és az országuk területi integritását minden áron védeni fogják. A tárgyalások kudarcba fulladtak."
+ hungary_flavor.113.a:0 "Kár volt érte az eröfeszítés."
+ 
+ hungary_flavor.114.t:0 "Németország Felajánlja a Vajdaság Maradékát"
+ hungary_flavor.114.d:0 "Újvidék már a miénk, és a legtöbb vajdasági magyar ebben a tartományban él, de Németország felajánlotta a Vajdaság többi részét is. Elfogadjuk ezt az ajánlatot?"
+ hungary_flavor.114.a:0 "Hogy is ne!"
+ hungary_flavor.114.b:0 "Nincs szükségünk ezekre a területekre."
+ 
+ hungary_flavor.115.t:0 "Berlini Találkozó"
+ hungary_flavor.115.d:0 "Adolf Hitler kilátásba helyezett egy találkozót Horthy Miklóssal, az országunk régensével Berlinben. Szándéka szerint fel akarja osztani Csehszlovákiát, és ebben Magyarországnak is szerepet szánt. Ha hajlandók vagyunk az agresszor szerepét játszani a felosztás során, még az is lehet, hogy hajlandó átadni a teljes Felvidéket, de ha úgy kívánjuk, kevesebbel is beérhetjük."
+ hungary_flavor.115.a:0 "Nem veszünk részt ebben a hentesmunkában."
+ hungary_flavor.115.b:0 "Megelégszünk Kárpátaljával."
+ hungary_flavor.115.c:0 "Ha átadják a Felvidéket, teljes mértékben mögöttük állunk."
+ 
+ hungary_flavor.116.t:0 "Hitler Elfogadja a Feltételeket"
+ hungary_flavor.116.d:0 "A találkozó lezárult, és megegyezés született Magyarország területi nyereségeit illetöen. Nincs más hátra, mint felkészülni a bevonulásra."
+ hungary_flavor.116.a:0 "Egy sikeres találkozó."
+ 
+ hungary_flavor.117.t:0 "Eredménytelen Találkozó"
+ hungary_flavor.117.d:0 "Heves viták, és hosszas beszélgetések után nem született megállapodás Magyarország szerepéröl Csehszlovákia felosztásában. Hitler nem tett semmilyen ígéretet Magyarország területi nyereségeiröl."
+ hungary_flavor.117.a:0 "Azért reménykedjünk a legjobbakban."
+ 
+ hungary_flavor.118.t:0 "Finnország Elfogadja a Szövetséget"
+ hungary_flavor.118.d:0 "Finnország sietve aláírta a szövetségi egyezményt. Most arra számítanak, hogy azonnali hatállyal hadat üzenünk a Szovjetuniónak, és a segítségükre sietünk."
+ hungary_flavor.118.a:0 "Együtt legyözhetjük a vöröseket!"
+ 
+ hungary_flavor.119.t:0 "Finnország Elutasítja a Szövetséget"
+ hungary_flavor.119.d:0 "Meglepö módon nemleges választ kaptunk Finnországból. Nem kérnek a segítségünkböl, ami bizonnyal a vesztüket fogja okozni. Egyedül nem képesek visszatartani a Szovjetuniót."
+ hungary_flavor.119.a:0 "Nélkülünk elvesznek..."
+ 
+ hungary_flavor.120.t:0 "Béke az Egyesült Királysággal"
+ hungary_flavor.120.d:0 "Végre elértük minden kitüzött célunkat, a régi határokat sikeresen visszaállítottuk. Az Egyesült Királyság azt gondolta, hogy háborúval útját állhatja a terjeszkedésünknek, de nyilvánvalóan tévedtek. Mindazonáltal egy elhúzódó háború pont annyira árthat nekünk, mint nekik, így talán jobban tennénk, ha békét kötnénk velük. Nekik van jobb dolguk is, mint velünk törödni, mi pedig beérjük a határok visszaállításával."
+ hungary_flavor.120.a:0 "Küldjük el a feltételeket."
+ hungary_flavor.120.b:0 "Még nem végeztünk ezzel a háborúval!"
+ 
+ hungary_flavor.121.t:0 "Az Egyesült Királyság Békét Köt"
+ hungary_flavor.121.d:0 "Az Egyesült Királyság elfogadta a feltételeinket. Visszaadtunk nekik minden területet, amire nem tartunk igényt, és aláírtuk a békeszerzödést velük és szövetségeseikkel, hivatalosan is semmissé téve a trianoni békediktátumot."
+ hungary_flavor.121.a:0 "Béke, Istennek hála."
+ 
+ hungary_flavor.122.t:0 "A Háború Folytatódik"
+ hungary_flavor.122.d:0 "Az Egyesült Királyság elutasította a békekötést, így a háború zavartalanul megy tovább. A jelek szerint hagyományosabb módszerekkel kell öket megállásra kényszerítenünk."
+ hungary_flavor.122.a:0 "Még meg fogják bánni, hogy most nem kötöttek békét."
+ 
+ hungary_flavor.123.t:0 "Szlovák önkormányzat"
+ hungary_flavor.123.d:0 "Immár minden felvidéki terület a mi irányításunk alatt van, de egyesek szerint ideje beismerni, hogy a Felvidék nem csak a magyaroké. A jelentös mennyiségü szlovák lakosság már idötlen idök óta autonómiára áhítozik, és most rajtunk áll hogy megadjuk-e nekik. Ha úgy döntünk felállítunk egy szlovák kormányt, akkor az továbbra is nekünk felelne, de bizonyos ügyekbe nem lenne beleszólásunk. Természetesen azt is mi dönthetjük el, hogy az újonnan létesült Szlovákia mely területeket kapja meg."
+ hungary_flavor.123.a:0 "Nincs szükség szlovák kormányra."
+ hungary_flavor.123.b:0 "A teljes Felvidéket a szlovák bábkormányra bízzuk."
+ hungary_flavor.123.c:0 "Csak a Felvidék északi része lesz a szlovák bábkormány területe."
+ hungary_flavor.123.e:0 "Csak a Felvidék északi része lesz a szlovák bábkormány területe, és Kárpátalját megtartjuk." 
+ 
+ hungary_flavor.124.t:0 "Jugoszláviai területi igények"
+ hungary_flavor.124.d:0 "Most, hogy aláírtuk az örökbarátsági szerzödést Jugoszláviával, ideje rendeznünk a területi követeléseinket velük szemben. Visszavonhatnánk minden követelést, a barátság jegyében, vagy pedig ragaszkodhatnánk a magyarlakta területekhez, abban a reményben, hogy a jövöben sikerül megegyeznünk az átadásrukról."
+ hungary_flavor.124.a:0 "Minden követelést visszavonunk Jugoszláviával szemben."
+ hungary_flavor.124.b:0 "A magyarlakta területekre továbbra is igényt tartunk."
+ hungary_flavor.124.c:0 "Minden területre fenntartjuk az igényünket." 
+ 
+ hungary_flavor.125.t:0 "Horvát területi igények"
+ hungary_flavor.125.d:0 "Horvátország immár független Jugoszláviától, így ideje tisztáznunk a velük szemben támasztott területi igényeinket. Egyesek szerint fölösleges volna ragaszkodni a horvát területekhez, és inkább közelebbi kapcsolatokat kellene kiépítenünk az új horvát állammal."
+ hungary_flavor.125.a:0 "Visszavonunk minden területi követelést a horvát földekkel szemben."
+ hungary_flavor.125.b:0 "Minden területi követelésünk továbbra is érvényben van."
+ 
+ hungary_flavor.126.t:0 "Új államforma"
+ hungary_flavor.126.d:0 "Afelöl már döntöttünk, hogy véget vetünk a régens autoritatív hatalomgyakorlásának, és a tényleges hatalmat a nép által választott parlament kezébe adjuk, de az még nem tisztázott, hogy pontosan milyen államformát vegyünk fel. Megtarthatnánk a királyság egy formáját, parlamentáris monarchiává alakulva, amiben a parlament alá van rendelve a király (vagy régens), vagy pedig átalakíthatnánk az országot egy köztársasággá, és végleg szakíthatnánk a királysággal."
+ hungary_flavor.126.a:0 "Parlamentáris monarchia."
+ hungary_flavor.126.b:0 "Köztársaság."
+ 
+ hungary_flavor.127.t:0 "Harc Erdélyért"
+ hungary_flavor.127.d:0 "Románia csatlakozott a háborúhoz, és hadat üzent a szövetségeseknek. Ez egy egyedi lehetöséggel kecsegtet számunkra: felajánlhatnánk a szövetségeseknek, hogy segítünk a Románia elleni harcban, ha megkaphatjuk Erdélyt a háború végén. Kétséges, hogy elfogadnának-e egy ilyen ajánlatot, hiszen a britek korábban nem támogatták Magyarország területi revízióját, de ha sikerül öket meggyözni, akkor jó eséllyel meg tudnánk kaparintani egész Erdélyt."
+ hungary_flavor.127.a:0 "Felajánljuk a segítségünket Erdélyért cserébe."
+ hungary_flavor.127.b:0 "Próbáljunk meg kimaradni ebböl a konfliktusból."
+ 
+ hungary_flavor.128.t:0 "Az Egyesült Királyság visszautasítja a segítséget"
+ hungary_flavor.128.d:0 "Az ajánlatunk süket fülekre talált az Egyesült Királyságban. Nem kérnek a segítségünkböl, ha Erdély az ára"
+ hungary_flavor.128.a:0 "Pedig ezzel ök is jól jártak volna."
+ 
+ hungary_flavor_territory.1.t:0 "Erdély Integrálása"
+ hungary_flavor_territory.1.d:0 "A közelmúltban szert tettünk némi területre az erdélyi régióban. A helyi lakosság többsége része azonban nem [Root.GetAdjective], ami megnehezíti a hadseregbe való besorozásukat. Ha úgy döntünk, hagyhatjuk a régiót jelenlegi állapotában, és használhatjuk az eröforrásait és ipari létesítményeit, de hosszú távon elönyös volna integrálni a területet, hogy teljesértékü része legyen az országnak. Ha az integráció mellett döntünk, az némi eröforrás ráfordítással jár, és az adminisztratív szerveket is lefoglalná, de végsö soron jól járnánk vele."
+ hungary_flavor_territory.1.a:0 "Kezdjük meg az integrációt."
+ hungary_flavor_territory.1.b:0 "Nem fogjuk integrálni a régiót."
+ hungary_flavor_territory.1.c:0 "Döntés késöbb."
+ 
+ hungary_flavor_territory.2.t:0 "Ellenállás az Erdélyi Integrációval Szemben"
+ hungary_flavor_territory.2.d:0 "\nAz erdélyi régió integrálása folyamatban van, de a helyi lakosság egy része nem kifejezetten akar együttmüködni. Ha fegyveres erökkel kényszerítenénk öket a kooperációra, az megoldaná a közvetlen problémát, de könnyen lehet, hogy késöbb nyílt lázadásba torkollna."
+ hungary_flavor_territory.2.a:0 "Azonnal intézkednünk kell!"
+ hungary_flavor_territory.2.b:0 "Hagyjuk lecsillapodni a helyzetet."
+ 
+ hungary_flavor_territory.10.t:0 "Bánság Megszerzése"
+ hungary_flavor_territory.10.d:0 "Már döntöttünk az erdélyi régió integrálásáról, de az egyik terület a régióban, Bánság csak nemrégiben került irányításunk alá. A helyzet az, hogy Bánság még annyira sem magyar lakosságú, mint egész Erdély, ami megnehezíti a dolgunkat. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.10.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.10.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.11.t:0 "Bánság Elvesztése"
+ hungary_flavor_territory.11.d:0 "Úgy tünik, annyira el voltunk foglalva Bánság integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.11.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.12.t:0 "Bánság Integrációja"
+ hungary_flavor_territory.12.d:0 "Bánság integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, csak úgy, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.12.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.13.t:0 "Bánság Fellázad"
+ hungary_flavor_territory.13.d:0 "Bánság lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.13.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.13.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.13.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.20.t:0 "Dél-Partium Megszerzése"
+ hungary_flavor_territory.20.d:0 "Már döntöttünk az erdélyi régió integrálásáról, de az egyik terület a régióban, Dél-Partium csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.20.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.20.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.21.t:0 "Dél-Partium Elvesztése"
+ hungary_flavor_territory.21.d:0 "Úgy néz ki, annyira el voltunk foglalva Dél-Partium integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.21.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.22.t:0 "Dél-Partium Integrációja"
+ hungary_flavor_territory.22.d:0 "Dél-Partium integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, csak úgy, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.22.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.23.t:0 "Dél-Partium Fellázad"
+ hungary_flavor_territory.23.d:0 "Dél-Partium lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.23.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.23.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.23.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.30.t:0 "Erdély Megszerzése"
+ hungary_flavor_territory.30.d:0 "Már döntöttünk az erdélyi régió integrálásáról, de az egyik terület a régióban, Erdély csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.30.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.30.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.31.t:0 "Erdély Elvesztése"
+ hungary_flavor_territory.31.d:0 "Úgy néz ki, annyira el voltunk foglalva Erdély integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.31.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.32.t:0 "Erdély Integrációja"
+ hungary_flavor_territory.32.d:0 "Erdély integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, csak úgy, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.32.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.33.t:0 "Erdély Fellázad"
+ hungary_flavor_territory.33.d:0 "Erdély lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.33.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.33.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.33.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.40.t:0 "Máramaros Megszerzése"
+ hungary_flavor_territory.40.d:0 "Már döntöttünk az erdélyi régió integrálásáról, de az egyik terület a régióban, Máramaros csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.40.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.40.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.41.t:0 "Máramaros Elvesztése"
+ hungary_flavor_territory.41.d:0 "Úgy néz ki, annyira el voltunk foglalva Máramaros integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.41.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.42.t:0 "Máramaros Integrációja"
+ hungary_flavor_territory.42.d:0 "Máramaros integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, csak úgy, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.42.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.43.t:0 "Máramaros Fellázad"
+ hungary_flavor_territory.43.d:0 "Máramaros lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.43.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.43.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.43.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.50.t:0 "Észak-Partium Megszerzése"
+ hungary_flavor_territory.50.d:0 "Már döntöttünk az erdélyi régió integrálásáról, de az egyik terület a régióban, Észak-Partium csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.50.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.50.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.51.t:0 "Észak-Partium Elvesztése"
+ hungary_flavor_territory.51.d:0 "Úgy néz ki, annyira el voltunk foglalva Észak-Partium integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.51.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.52.t:0 "Észak-Partium Integrációja"
+ hungary_flavor_territory.52.d:0 "Észak-Partium integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, csak úgy, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.52.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.53.t:0 "Észak-Partium Fellázad"
+ hungary_flavor_territory.53.d:0 "Észak-Partium lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.53.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.53.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.53.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.101.t:0 "Felvidék Integrálása"
+ hungary_flavor_territory.101.d:0 "A közelmúltban szert tettünk némi területre a felvidéki régióban. A helyi lakosság jelentös része nem [Root.GetAdjective], ami megnehezíti a hadseregbe való besorozásukat. Ha úgy döntünk, hagyhatjuk a régiót jelenlegi állapotában, és használhatjuk az eröforrásait és ipari létesítményeit, de hosszú távon elönyös volna integrálni a területet, hogy teljesértékü része legyen az országnak. Ha az integráció mellett döntünk, az némi eröforrás ráfordítással jár, és az adminisztratív szerveket is lefoglalná, de végsö soron jól járnánk vele."
+ hungary_flavor_territory.101.a:0 "Kezdjük meg az integrációt."
+ hungary_flavor_territory.101.b:0 "Nem fogjuk integrálni a régiót."
+ hungary_flavor_territory.101.c:0 "Döntés késöbb."
+ 
+ hungary_flavor_territory.102.t:0 "Ellenállás a Felvidéki Integrációval Szemben"
+ hungary_flavor_territory.102.d:0 "\nA felvidéki régió integrálása folyamatban van, de a helyi lakosság egy része nem kifejezetten akar együttmüködni. Ha fegyveres erökkel kényszerítenénk öket a kooperációra, az megoldaná a közvetlen problémát, de könnyen lehet, hogy késöbb nyílt lázadásba torkollna."
+ hungary_flavor_territory.102.a:0 "Azonnal intézkednünk kell."
+ hungary_flavor_territory.102.b:0 "Hagyjuk lecsillapodni a helyzetet."
+ 
+ hungary_flavor_territory.110.t:0 "Nyugat-Felvidék Megszerzése"
+ hungary_flavor_territory.110.d:0 "Már döntöttünk az felvidéki régió integrálásáról, de az egyik terület a régióban, Nyugat-Felvidék csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.110.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.110.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.111.t:0 "Nyugat-Felvidék Elvesztése"
+ hungary_flavor_territory.111.d:0 "Úgy néz ki, annyira el voltunk foglalva Nyugat-Felvidék integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.111.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.112.t:0 "Nyugat-Felvidék Integrációja"
+ hungary_flavor_territory.112.d:0 "Nyugat-Felvidék integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, csak úgy, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.112.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.113.t:0 "Nyugat-Felvidék Fellázad"
+ hungary_flavor_territory.113.d:0 "Nyugat-Felvidék lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell. Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.113.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.113.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.113.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.120.t:0 "Kelet-Felvidék Megszerzése"
+ hungary_flavor_territory.120.d:0 "Már döntöttünk az felvidéki régió integrálásáról, de az egyik terület a régióban, Kelet-Felvidék csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.120.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.120.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.121.t:0 "Kelet-Felvidék Elvesztése"
+ hungary_flavor_territory.121.d:0 "Úgy néz ki, annyira el voltunk foglalva Kelet-Felvidék integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.121.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.122.t:0 "Kelet-Felvidék Integrációja"
+ hungary_flavor_territory.122.d:0 "Kelet-Felvidék integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, csak úgy, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.122.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.123.t:0 "Kelet-Felvidék Fellázad"
+ hungary_flavor_territory.123.d:0 "Kelet-Felvidék lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell. Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.123.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.123.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.123.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.130.t:0 "Kárpátalja Megszerzése"
+ hungary_flavor_territory.130.d:0 "Már döntöttünk az felvidéki régió integrálásáról, de az egyik terület a régióban, Kárpátalja csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.130.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.130.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.131.t:0 "Kárpátalja Elvesztése"
+ hungary_flavor_territory.131.d:0 "Úgy néz ki, annyira el voltunk foglalva Kárpátalja integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.131.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.132.t:0 "Kárpátalja Integrációja"
+ hungary_flavor_territory.132.d:0 "Kárpátalja integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.132.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.133.t:0 "Kárpátalja Fellázad"
+ hungary_flavor_territory.133.d:0 "Kárpátalja lakossága nyílt lázadást indított, azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell. Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.133.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.133.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.133.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.201.t:0 "Horvátország Integrálása"
+ hungary_flavor_territory.201.d:0 "A közelmúltban szert tettünk némi területre a horvát régióban. A helyi lakosság jelentös része nem [Root.GetAdjective], ami megnehezíti a hadseregbe való besorozásukat. Ha úgy döntünk, hagyhatjuk a régiót jelenlegi állapotában, és használhatjuk az eröforrásait és ipari létesítményeit, de hosszú távon elönyös volna integrálni a területet, hogy teljesértékü része legyen az országnak. Ha az integráció mellett döntünk, az némi eröforrás ráfordítással jár, és az adminisztratív szerveket is lefoglalná, de végsö soron jól járnánk vele."
+ hungary_flavor_territory.201.a:0 "Kezdjük meg az integrációt."
+ hungary_flavor_territory.201.b:0 "Nem fogjuk integrálni a régiót."
+ hungary_flavor_territory.201.c:0 "Döntés késöbb."
+ 
+ hungary_flavor_territory.202.t:0 "Ellenállás a Horvátországi Integrációval Szemben"
+ hungary_flavor_territory.202.d:0 "A horvát régió integrálása folyamatban van, de a helyi lakosság egy része nem kifejezetten akar együttmüködni. Ha fegyveres erökkel kényszerítenénk öket a kooperációra, az megoldaná a közvetlen problémát, de könnyen lehet, hogy késöbb nyílt lázadásba torkollna."
+ hungary_flavor_territory.202.a:0 "Azonnal intézkednünk kell."
+ hungary_flavor_territory.202.b:0 "Hagyjuk lecsillapodni a helyzetet."
+ 
+ hungary_flavor_territory.210.t:0 "Szlavónia Megszerzése"
+ hungary_flavor_territory.210.d:0 "Már döntöttünk az horvátországi régió integrálásáról, de az egyik terület a régióban, Szlavónia csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.210.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.210.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.211.t:0 "Szlavónia Elvesztése"
+ hungary_flavor_territory.211.d:0 "Úgy néz ki, annyira el voltunk foglalva Szlavónia integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.211.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.212.t:0 "Szlavónia Integrációja"
+ hungary_flavor_territory.212.d:0 "Szlavónia integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.212.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.213.t:0 "Szlavónia Fellázad"
+ hungary_flavor_territory.213.d:0 "Szlavónia lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.213.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.213.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.213.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.220.t:0 "Fiume Megszerzése"
+ hungary_flavor_territory.220.d:0 "Már döntöttünk az horvát régió integrálásáról, de az egyik terület a régióban, Fiume csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.220.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.220.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.221.t:0 "Fiume Elvesztése"
+ hungary_flavor_territory.221.d:0 "Úgy néz ki, annyira el voltunk foglalva Fiume integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.221.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.222.t:0 "Fiume Integrációja"
+ hungary_flavor_territory.222.d:0 "Fiume integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.222.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.223.t:0 "Fiume Fellázad"
+ hungary_flavor_territory.223.d:0 "Fiume lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.223.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.223.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.223.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.230.t:0 "Horvátország Megszerzése"
+ hungary_flavor_territory.230.d:0 "Már döntöttünk az horvát régió integrálásáról, de az egyik terület a régióban, Horvátország csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.230.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.230.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.231.t:0 "Horvátország Elvesztése"
+ hungary_flavor_territory.231.d:0 "Úgy néz ki, annyira el voltunk foglalva Horvátország integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.231.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.232.t:0 "Horvátország Integrációja"
+ hungary_flavor_territory.232.d:0 "Horvátország integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.232.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.233.t:0 "Horvátország Fellázad"
+ hungary_flavor_territory.233.d:0 "Horvátország lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.233.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.233.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.233.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.240.t:0 "Dalmácia Megszerzése"
+ hungary_flavor_territory.240.d:0 "Már döntöttünk az horvát régió integrálásáról, de az egyik terület a régióban, Dalmácia csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.240.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.240.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.241.t:0 "Dalmácia Elvesztése"
+ hungary_flavor_territory.241.d:0 "Úgy néz ki, annyira el voltunk foglalva Dalmácia integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.241.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.242.t:0 "Dalmácia Integrációja"
+ hungary_flavor_territory.242.d:0 "Dalmácia integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.242.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.243.t:0 "Dalmácia Fellázad"
+ hungary_flavor_territory.243.d:0 "Dalmácia lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.243.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.243.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.243.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.250.t:0 "Kotor Megszerzése"
+ hungary_flavor_territory.250.d:0 "Már döntöttünk az horvát régió integrálásáról, de az egyik terület a régióban, Kotor csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.250.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.250.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.251.t:0 "Kotor Elvesztése"
+ hungary_flavor_territory.251.d:0 "Úgy néz ki, annyira el voltunk foglalva Kotor integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.251.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.252.t:0 "Kotor Integrációja"
+ hungary_flavor_territory.252.d:0 "Kotor integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.252.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.253.t:0 "Kotor Fellázad"
+ hungary_flavor_territory.253.d:0 "Kotor lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.253.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.253.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.253.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.260.t:0 "Pag Megszerzése"
+ hungary_flavor_territory.260.d:0 "Már döntöttünk az horvát régió integrálásáról, de az egyik terület a régióban, Pag csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.260.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.250.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.261.t:0 "Pag Elvesztése"
+ hungary_flavor_territory.261.d:0 "Úgy néz ki, annyira el voltunk foglalva Pag integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.261.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.262.t:0 "Pag Integrációja"
+ hungary_flavor_territory.262.d:0 "Pag integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.262.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.263.t:0 "Pag Fellázad"
+ hungary_flavor_territory.263.d:0 "Pag lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.263.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.263.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.263.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.301.t:0 "Vajdaság Integrálása"
+ hungary_flavor_territory.301.d:0 "A közelmúltban szert tettünk némi területre a vajdasági régióban. A helyi lakosság jelentös része azonban nem [Root.GetAdjective], ami megnehezíti a hadseregbe való besorozásukat. Ha úgy döntünk, hagyhatjuk a régiót jelenlegi állapotában, és használhatjuk az eröforrásait, és ipari létesítményeit, de hosszú távon elönyös volna integrálni a területet, hogy teljesértékü része legyen az országnak. Ha az integráció mellett döntünk, az némi eröforrás ráfordítással jár, és az adminisztratív szerveket is lefoglalná, de végsö soron jól járnánk vele."
+ hungary_flavor_territory.301.a:0 "Kezdjük meg az integrációt."
+ hungary_flavor_territory.301.b:0 "Nem fogjuk integrálni a régiót."
+ hungary_flavor_territory.301.c:0 "Döntés késöbb."
+ 
+ hungary_flavor_territory.302.t:0 "Ellenállás a Vajdasági Integrációval Szemben"
+ hungary_flavor_territory.302.d:0 "A vajdasági régió integrálása folyamatban van, de a helyi lakosság egy része nem kifejezetten akar együttmüködni. Ha fegyveres erökkel kényszerítenénk öket a kooperációra, az megoldaná a közvetlen problémát, de könnyen lehet, hogy késöbb nyílt lázadásba torkollna."
+ hungary_flavor_territory.302.a:0 "Azonnal intézkednünk kell."
+ hungary_flavor_territory.302.b:0 "Hagyjuk lecsillapodni a helyzetet."
+ 
+ hungary_flavor_territory.310.t:0 "Torontál Megszerzése"
+ hungary_flavor_territory.310.d:0 "Már döntöttünk az vajdasági régió integrálásáról, de az egyik terület a régióban, Torontál csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.310.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.310.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.311.t:0 "Torontál Elvesztése"
+ hungary_flavor_territory.311.d:0 "Úgy néz ki, annyira el voltunk foglalva Torontál integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.311.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.312.t:0 "Torontál Integrációja"
+ hungary_flavor_territory.312.d:0 "Torontál integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.312.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.313.t:0 "Torontál Fellázad"
+ hungary_flavor_territory.313.d:0 "Torontál lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.313.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.313.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.313.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.320.t:0 "Szerém Megszerzése"
+ hungary_flavor_territory.320.d:0 "Már döntöttünk az vajdasági régió integrálásáról, de az egyik terület a régióban, Szerém csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.320.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.320.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.321.t:0 "Szerém Elvesztése"
+ hungary_flavor_territory.321.d:0 "Úgy néz ki, annyira el voltunk foglalva Szerém integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.321.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.322.t:0 "Szerém Integrációja"
+ hungary_flavor_territory.322.d:0 "Szerém integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.322.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.323.t:0 "Szerém Fellázad"
+ hungary_flavor_territory.323.d:0 "Szerém lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.323.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.323.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.323.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.401.t:0 "Örvidék Integrálása"
+ hungary_flavor_territory.401.d:0 "A közelmúltban szert tettünk némi területre az örvidéki régióban. A helyi lakosság jelentös része azonban nem [Root.GetAdjective], ami megnehezíti a hadseregbe való besorozásukat. Ha úgy döntünk, hagyhatjuk a régiót jelenlegi állapotában, és használhatjuk az eröforrásait, és ipari létesítményeit, de hosszú távon elönyös volna integrálni a területet, hogy teljesértékü része legyen az országnak. Ha az integráció mellett döntünk, az némi eröforrás ráfordítással jár, és az adminisztratív szerveket is lefoglalná, de végsö soron jól járnánk vele."
+ hungary_flavor_territory.401.a:0 "Kezdjük meg az integrációt."
+ hungary_flavor_territory.401.b:0 "Nem fogjuk integrálni a régiót."
+ hungary_flavor_territory.401.c:0 "Döntés késöbb."
+ 
+ hungary_flavor_territory.402.t:0 "Ellenállás az Örvidéki Integrációval Szemben"
+ hungary_flavor_territory.402.d:0 "Az örvidéki régió integrálása folyamatban van, de a helyi lakosság egy része nem kifejezetten akar együttmüködni. Ha fegyveres erökkel kényszerítenénk öket a kooperációra, az megoldaná a közvetlen problémát, de könnyen lehet, hogy késöbb nyílt lázadásba torkollna."
+ hungary_flavor_territory.402.a:0 "Azonnal intézkednünk kell."
+ hungary_flavor_territory.402.b:0 "Hagyjuk lecsillapodni a helyzetet."
+ 
+ hungary_flavor_territory.410.t:0 "Örvidék Megszerzése"
+ hungary_flavor_territory.410.d:0 "Már döntöttünk az örvidéki régió integrálásáról, de az egyik terület a régióban, Örvidék csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.410.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.410.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.411.t:0 "Örvidék Elvesztése"
+ hungary_flavor_territory.411.d:0 "Úgy néz ki, annyira el voltunk foglalva Örvidék integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.411.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.412.t:0 "Örvidék Integrációja"
+ hungary_flavor_territory.412.d:0 "Örvidék integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.412.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.413.t:0 "Örvidék Fellázad"
+ hungary_flavor_territory.413.d:0 "Örvidék lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.413.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.413.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.413.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.501.t:0 "Csehország Integrálása"
+ hungary_flavor_territory.501.d:0 "A közelmúltban szert tettünk némi területre a cseh régióban. A helyi lakosság jelentös része azonban nem [Root.GetAdjective], ami megnehezíti a hadseregbe való besorozásukat. Ha úgy döntünk, hagyhatjuk a régiót jelenlegi állapotában, és használhatjuk az eröforrásait, és ipari létesítményeit, de hosszú távon elönyös volna integrálni a területet, hogy teljesértékü része legyen az országnak. Ha az integráció mellett döntünk, az némi eröforrás ráfordítással jár, és az adminisztratív szerveket is lefoglalná, de végsö soron jól járnánk vele."
+ hungary_flavor_territory.501.a:0 "Kezdjük meg az integrációt."
+ hungary_flavor_territory.501.b:0 "Nem fogjuk integrálni a régiót."
+ hungary_flavor_territory.501.c:0 "Döntés késöbb."
+ 
+ hungary_flavor_territory.502.t:0 "Ellenállás a Csehországi Integrációval Szemben"
+ hungary_flavor_territory.502.d:0 "\nA cseh régió integrálása folyamatban van, de a helyi lakosság egy része nem kifejezetten akar együttmüködni. Ha fegyveres erökkel kényszerítenénk öket a kooperációra, az megoldaná a közvetlen problémát, de könnyen lehet, hogy késöbb nyílt lázadásba torkollna."
+ hungary_flavor_territory.502.a:0 "Azonnal intézkednünk kell."
+ hungary_flavor_territory.502.b:0 "Hagyjuk lecsillapodni a helyzetet."
+ 
+ hungary_flavor_territory.510.t:0 "Bohémia Megszerzése"
+ hungary_flavor_territory.510.d:0 "Már döntöttünk az cseh régió integrálásáról, de az egyik terület a régióban, Bohémia csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.510.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.510.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.511.t:0 "Bohémia Elvesztése"
+ hungary_flavor_territory.511.d:0 "Úgy néz ki, annyira el voltunk foglalva Bohémia integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.511.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.512.t:0 "Bohémia Integrációja"
+ hungary_flavor_territory.512.d:0 "Bohémia integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.512.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.513.t:0 "Bohémia Fellázad"
+ hungary_flavor_territory.513.d:0 "Bohémia lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.513.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.513.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.513.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.520.t:0 "Szudétavidék Megszerzése"
+ hungary_flavor_territory.520.d:0 "Már döntöttünk az cseh régió integrálásáról, de az egyik terület a régióban, Szudétavidék csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.520.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.520.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.521.t:0 "Szudétavidék Elvesztése"
+ hungary_flavor_territory.521.d:0 "Úgy néz ki, annyira el voltunk foglalva Szudétavidék integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.521.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.522.t:0 "Szudétavidék Integrációja"
+ hungary_flavor_territory.522.d:0 "Szudétavidék integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.522.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.523.t:0 "Szudétavidék Fellázad"
+ hungary_flavor_territory.523.d:0 "Szudétavidék lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.523.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.523.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.523.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.530.t:0 "Kelet-Szudétavidék Megszerzése"
+ hungary_flavor_territory.530.d:0 "Már döntöttünk az cseh régió integrálásáról, de az egyik terület a régióban, Kelet-Szudétavidék csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.530.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.530.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.531.t:0 "Kelet-Szudétavidék Elvesztése"
+ hungary_flavor_territory.531.d:0 "Úgy néz ki, annyira el voltunk foglalva Kelet-Szudétavidék integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.531.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.532.t:0 "Kelet-Szudétavidék Integrációja"
+ hungary_flavor_territory.532.d:0 "Kelet-Szudétavidék integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.532.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.533.t:0 "Kelet-Szudétavidék Fellázad"
+ hungary_flavor_territory.533.d:0 "Kelet-Szudétavidék lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.533.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.533.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.533.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.540.t:0 "Morávia Megszerzése"
+ hungary_flavor_territory.540.d:0 "Már döntöttünk az cseh régió integrálásáról, de az egyik terület a régióban, Morávia csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.540.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.540.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.541.t:0 "Morávia Elvesztése"
+ hungary_flavor_territory.541.d:0 "Úgy néz ki, annyira el voltunk foglalva Morávia integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.541.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.542.t:0 "Morávia Integrációja"
+ hungary_flavor_territory.542.d:0 "Morávia integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.542.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.543.t:0 "Morávia Fellázad"
+ hungary_flavor_territory.543.d:0 "Morávia lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.543.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.543.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.543.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.601.t:0 "Galícia Integrálása"
+ hungary_flavor_territory.601.d:0 "A közelmúltban szert tettünk némi területre a galíciai régióban. A helyi lakosság jelentös része azonban nem [Root.GetAdjective], ami megnehezíti a hadseregbe való besorozásukat. Ha úgy döntünk, hagyhatjuk a régiót jelenlegi állapotában, és használhatjuk az eröforrásait, és ipari létesítményeit, de hosszú távon elönyös volna integrálni a területet, hogy teljesértékü része legyen az országnak. Ha az integráció mellett döntünk, az némi eröforrás ráfordítással jár, és az adminisztratív szerveket is lefoglalná, de végsö soron jól járnánk vele."
+ hungary_flavor_territory.601.a:0 "Kezdjük meg az integrációt."
+ hungary_flavor_territory.601.b:0 "Nem fogjuk integrálni a régiót."
+ hungary_flavor_territory.601.c:0 "Döntés késöbb."
+ 
+ hungary_flavor_territory.602.t:0 "Ellenállás a Galíciai Integrációval Szemben"
+ hungary_flavor_territory.602.d:0 "A galíciai régió integrálása folyamatban van, de a helyi lakosság egy része nem kifejezetten akar együttmüködni. Ha fegyveres erökkel kényszerítenénk öket a kooperációra, az megoldaná a közvetlen problémát, de könnyen lehet, hogy késöbb nyílt lázadásba torkollna."
+ hungary_flavor_territory.602.a:0 "Azonnal intézkednünk kell."
+ hungary_flavor_territory.602.b:0 "Hagyjuk lecsillapodni a helyzetet."
+ 
+ hungary_flavor_territory.610.t:0 "Zaolzie Megszerzése"
+ hungary_flavor_territory.610.d:0 "Már döntöttünk az galíciai régió integrálásáról, de az egyik terület a régióban, Zaolzie csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.610.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.610.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.611.t:0 "Zaolzie Elvesztése"
+ hungary_flavor_territory.611.d:0 "Úgy néz ki, annyira el voltunk foglalva Zaolzie integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.611.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.612.t:0 "Zaolzie Integrációja"
+ hungary_flavor_territory.612.d:0 "Zaolzie integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.612.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.613.t:0 "Zaolzie Fellázad"
+ hungary_flavor_territory.613.d:0 "Zaolzie lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.613.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.613.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.613.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.620.t:0 "Krakkó Megszerzése"
+ hungary_flavor_territory.620.d:0 "Már döntöttünk az galíciai régió integrálásáról, de az egyik terület a régióban, Krakkó csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.620.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.620.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.621.t:0 "Krakkó Elvesztése"
+ hungary_flavor_territory.621.d:0 "Úgy néz ki, annyira el voltunk foglalva Krakkó integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.621.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.622.t:0 "Krakkó Integrációja"
+ hungary_flavor_territory.622.d:0 "Krakkó integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.622.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.623.t:0 "Krakkó Fellázad"
+ hungary_flavor_territory.623.d:0 "Krakkó lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.623.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.623.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.623.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.630.t:0 "Sztaniszló Megszerzése"
+ hungary_flavor_territory.630.d:0 "Már döntöttünk az galíciai régió integrálásáról, de az egyik terület a régióban, Sztaniszló csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.630.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.630.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.631.t:0 "Sztaniszló Elvesztése"
+ hungary_flavor_territory.631.d:0 "Úgy néz ki, annyira el voltunk foglalva Sztaniszló integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.631.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.632.t:0 "Sztaniszló Integrációja"
+ hungary_flavor_territory.632.d:0 "Sztaniszló integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.632.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.633.t:0 "Sztaniszló Fellázad"
+ hungary_flavor_territory.633.d:0 "Sztaniszló lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.633.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.633.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.633.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.640.t:0 "Lemberg Megszerzése"
+ hungary_flavor_territory.640.d:0 "Már döntöttünk az galíciai régió integrálásáról, de az egyik terület a régióban, Lemberg csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.640.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.640.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.641.t:0 "Lemberg Elvesztése"
+ hungary_flavor_territory.641.d:0 "Úgy néz ki, annyira el voltunk foglalva Lemberg integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.641.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.642.t:0 "Lemberg Integrációja"
+ hungary_flavor_territory.642.d:0 "Lemberg integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.642.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.643.t:0 "Lemberg Fellázad"
+ hungary_flavor_territory.643.d:0 "Lemberg lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.643.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.643.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.643.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.701.t:0 "Szlovénia Integrálása"
+ hungary_flavor_territory.701.d:0 "A közelmúltban szert tettünk némi területre a szlovén régióban. A helyi lakosság jelentös része azonban nem [Root.GetAdjective], ami megnehezíti a hadseregbe való besorozásukat. Ha úgy döntünk, hagyhatjuk a régiót jelenlegi állapotában, és használhatjuk az eröforrásait, és ipari létesítményeit, de hosszú távon elönyös volna integrálni a területet, hogy teljesértékü része legyen az országnak. Ha az integráció mellett döntünk, az némi eröforrás ráfordítással jár, és az adminisztratív szerveket is lefoglalná, de végsö soron jól járnánk vele."
+ hungary_flavor_territory.701.a:0 "Kezdjük meg az integrációt."
+ hungary_flavor_territory.701.b:0 "Nem fogjuk integrálni a régiót."
+ hungary_flavor_territory.701.c:0 "Döntés késöbb."
+ 
+ hungary_flavor_territory.702.t:0 "Ellenállás a Szlovéniai Integrációval Szemben"
+ hungary_flavor_territory.702.d:0 "A szlovén régió integrálása folyamatban van, de a helyi lakosság egy része nem kifejezetten akar együttmüködni. Ha fegyveres erökkel kényszerítenénk öket a kooperációra, az megoldaná a közvetlen problémát, de könnyen lehet, hogy késöbb nyílt lázadásba torkollna."
+ hungary_flavor_territory.702.a:0 "Azonnal intézkednünk kell."
+ hungary_flavor_territory.702.b:0 "Hagyjuk lecsillapodni a helyzetet."
+ 
+ hungary_flavor_territory.710.t:0 "Szlovénia Megszerzése"
+ hungary_flavor_territory.710.d:0 "Már döntöttünk az szlovén régió integrálásáról, de az egyik terület a régióban, Szlovénia csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.710.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.710.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.711.t:0 "Szlovénia Elvesztése"
+ hungary_flavor_territory.711.d:0 "Úgy néz ki, annyira el voltunk foglalva Szlovénia integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.711.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.712.t:0 "Szlovénia Integrációja"
+ hungary_flavor_territory.712.d:0 "Szlovénia integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.712.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.713.t:0 "Szlovénia Fellázad"
+ hungary_flavor_territory.713.d:0 "Szlovénia lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.713.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.713.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.713.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.720.t:0 "Ljubljana Megszerzése"
+ hungary_flavor_territory.720.d:0 "Már döntöttünk az szlovén régió integrálásáról, de az egyik terület a régióban, Ljubljana csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.720.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.720.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.721.t:0 "Ljubljana Elvesztése"
+ hungary_flavor_territory.721.d:0 "Úgy néz ki, annyira el voltunk foglalva Ljubljana integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.721.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.722.t:0 "Ljubljana Integrációja"
+ hungary_flavor_territory.722.d:0 "Ljubljana integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.722.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.723.t:0 "Ljubljana Fellázad"
+ hungary_flavor_territory.723.d:0 "Ljubljana lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.723.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.723.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.723.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.801.t:0 "Dél-Tirol és Isztria Integrálása"
+ hungary_flavor_territory.801.d:0 "A közelmúltban szert tettünk némi területre a dél-tiroli és isztriai régióban. A helyi lakosság jelentös része azonban nem [Root.GetAdjective], ami megnehezíti a hadseregbe való besorozásukat. Ha úgy döntünk, hagyhatjuk a régiót jelenlegi állapotában, és használhatjuk az eröforrásait, és ipari létesítményeit, de hosszú távon elönyös volna integrálni a területet, hogy teljesértékü része legyen az országnak. Ha az integráció mellett döntünk, az némi eröforrás ráfordítással jár, és az adminisztratív szerveket is lefoglalná, de végsö soron jól járnánk vele."
+ hungary_flavor_territory.801.a:0 "Kezdjük meg az integrációt."
+ hungary_flavor_territory.801.b:0 "Nem fogjuk integrálni a régiót."
+ hungary_flavor_territory.801.c:0 "Döntés késöbb."
+ 
+ hungary_flavor_territory.802.t:0 "Ellenállás a Dél-Tiroli és Isztriai Integrációval Szemben"
+ hungary_flavor_territory.802.d:0 "\nA dél-tiroli és isztriai régió integrálása folyamatban van, de a helyi lakosság egy része nem kifejezetten akar együttmüködni. Ha fegyveres erökkel kényszerítenénk öket a kooperációra, az megoldaná a közvetlen problémát, de könnyen lehet, hogy késöbb nyílt lázadásba torkollna."
+ hungary_flavor_territory.802.a:0 "Azonnal intézkednünk kell."
+ hungary_flavor_territory.802.b:0 "Hagyjuk lecsillapodni a helyzetet."
+ 
+ hungary_flavor_territory.810.t:0 "Dél-Tirol Megszerzése"
+ hungary_flavor_territory.810.d:0 "Már döntöttünk az dél-tiroli és isztriai régió integrálásáról, de az egyik terület a régióban, Dél-Tirol csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.810.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.810.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.811.t:0 "Dél-Tirol Elvesztése"
+ hungary_flavor_territory.811.d:0 "Úgy néz ki, annyira el voltunk foglalva Dél-Tirol integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.811.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.812.t:0 "Dél-Tirol Integrációja"
+ hungary_flavor_territory.812.d:0 "Dél-Tirol integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.812.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.813.t:0 "Dél-Tirol Fellázad"
+ hungary_flavor_territory.813.d:0 "Dél-Tirol lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.813.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.813.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.813.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.820.t:0 "Isztria Megszerzése"
+ hungary_flavor_territory.820.d:0 "Már döntöttünk az dél-tiroli és isztriai régió integrálásáról, de az egyik terület a régióban, Isztria csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.820.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.820.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.821.t:0 "Isztria Elvesztése"
+ hungary_flavor_territory.821.d:0 "Úgy néz ki, annyira el voltunk foglalva Isztria integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.821.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.822.t:0 "Isztria Integrációja"
+ hungary_flavor_territory.822.d:0 "Isztria integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.822.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.823.t:0 "Isztria Fellázad"
+ hungary_flavor_territory.823.d:0 "Isztria lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.823.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.823.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.823.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.830.t:0 "Primorska Megszerzése"
+ hungary_flavor_territory.830.d:0 "Már döntöttünk az dél-tiroli és isztriai régió integrálásáról, de az egyik terület a régióban, Primorska csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.830.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.830.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.831.t:0 "Primorska Elvesztése"
+ hungary_flavor_territory.831.d:0 "Úgy néz ki, annyira el voltunk foglalva Primorska integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.831.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.832.t:0 "Primorska Integrációja"
+ hungary_flavor_territory.832.d:0 "Primorska integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.832.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.833.t:0 "Primorska Fellázad"
+ hungary_flavor_territory.833.d:0 "Primorska lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.833.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.833.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.833.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_territory.901.t:0 "Bosznia Integrálása"
+ hungary_flavor_territory.901.d:0 "A közelmúltban szert tettünk némi területre a bosnyák régióban. A helyi lakosság jelentös része azonban nem [Root.GetAdjective], ami megnehezíti a hadseregbe való besorozásukat. Ha úgy döntünk, hagyhatjuk a régiót jelenlegi állapotában, és használhatjuk az eröforrásait, és ipari létesítményeit, de hosszú távon elönyös volna integrálni a területet, hogy teljesértékü része legyen az országnak. Ha az integráció mellett döntünk, az némi eröforrás ráfordítással jár, és az adminisztratív szerveket is lefoglalná, de végsö soron jól járnánk vele."
+ hungary_flavor_territory.901.a:0 "Kezdjük meg az integrációt."
+ hungary_flavor_territory.901.b:0 "Nem fogjuk integrálni a régiót."
+ hungary_flavor_territory.901.c:0 "Döntés késöbb."
+ 
+ hungary_flavor_territory.902.t:0 "Ellenállás a Boszniai Integrációval Szemben"
+ hungary_flavor_territory.902.d:0 "A bosnyák régió integrálása folyamatban van, de a helyi lakosság egy része nem kifejezetten akar együttmüködni. Ha fegyveres erökkel kényszerítenénk öket a kooperációra, az megoldaná a közvetlen problémát, de könnyen lehet, hogy késöbb nyílt lázadásba torkollna."
+ hungary_flavor_territory.902.a:0 "Azonnal intézkednünk kell."
+ hungary_flavor_territory.902.b:0 "Hagyjuk lecsillapodni a helyzetet."
+ 
+ hungary_flavor_territory.910.t:0 "Bosznia Megszerzése"
+ hungary_flavor_territory.910.d:0 "Már döntöttünk az bosnyák régió integrálásáról, de az egyik terület a régióban, Bosznia csak nemrégiben került irányításunk alá. Ha úgy kívánjuk, kihagyhatjuk a területet az integrálásból, de máskülönben azonnal kezdetét veheti a folyamat."
+ hungary_flavor_territory.910.a:0 "Kezdjük el az integrálást."
+ hungary_flavor_territory.910.b:0 "Maradjon gyarmati terület."
+ 
+ hungary_flavor_territory.911.t:0 "Bosznia Elvesztése"
+ hungary_flavor_territory.911.d:0 "Úgy néz ki, annyira el voltunk foglalva Bosznia integrálásával, hogy elfelejtettünk a védelméröl gondoskodni! Ellenséges kezekbe került, így az integráció félbeszakadt. Amint visszaszerezzük, újra el tudjuk majd kezdeni a folyamatot."
+ hungary_flavor_territory.911.a:0 "Elöbb-utóbb vissza fogjuk szerezni!"
+ 
+ hungary_flavor_territory.912.t:0 "Bosznia Integrációja"
+ hungary_flavor_territory.912.d:0 "Bosznia integrációja sikeres volt. A helyi lakosság most már készen áll a seregbe való sorozásra, mintha a saját népünkböl valók lennének. A helyi lakkosság még koránt sem [Root.GetAdjective], de évtizedek elteltével ez még lehet másképp."
+ hungary_flavor_territory.912.a:0 "Kiváló!"
+ 
+ hungary_flavor_territory.913.t:0 "Bosznia Fellázad"
+ hungary_flavor_territory.913.d:0 "Bosznia lakossága nyílt lázadást indított azzal a szándékkal, hogy [Root.GetName]tól függetlenek legyenek. Ha elejét akarjuk venni a lázadásnak, azonnal cselekednünk kell! Ha azonban nem akarunk embereröt vesztegetni a lázadásra, meg is adhatjuk nekik, amit akarnak, vagy megpróbálhatunk tárgyalni velük. Forrásaink szerint hajlandók lennének letenni a fegyvert, ha regionális autonómiát kapnának, és felhagynánk a terület integrálásával."
+ hungary_flavor_territory.913.a:0 "Adjunk nekik függetlenséget."
+ hungary_flavor_territory.913.b:0 "Vegyük fel a harcot."
+ hungary_flavor_territory.913.c:0 "Próbáljunk meg tárgyalni velük."
+ 
+ hungary_flavor_elections.1.t:0 "1939-es Választások"
+ hungary_flavor_elections.1.d:0 "Eljött az ideje az 1939. évi választásoknak. A Nemzeti Egység Pártjának (NEP) két lehetséges jelöltje is van - Teleki Pál és Bethlen István - de a kevésbé népszerü Független Kisgazdapárt is versenyben van."
+ hungary_flavor_elections.1.a:0 "Megtartjuk a jelenlegi miniszterelnököt"
+ hungary_flavor_elections.1.b:0 "Válasszuk Teleki Pált (NEP)"
+ hungary_flavor_elections.1.c:0 "Válasszuk Bethlen Istvánt (NEP)"
+ hungary_flavor_elections.1.e:0 "Válasszuk a Független Kisgazda jelöltet"
+ 
+ hungary_flavor_elections.2.t:0 "1943-as Választások"
+ hungary_flavor_elections.2.d:0 "Eljött az ideje az 1943. évi választásoknak. A Nemzeti Egység Pártjának (NEP) két lehetséges jelöltje is van - Bárdossy László és Kállay Miklós - de a kevésbé népszerü Független Kisgazdapárt is versenyben van."
+ hungary_flavor_elections.2.a:0 "Megtartjuk a jelenlegi miniszterelnököt"
+ hungary_flavor_elections.2.b:0 "Válasszuk Bárdossy Lászlót (NEP)"
+ hungary_flavor_elections.2.c:0 "Válasszuk Kállay Miklóst (NEP)"
+ hungary_flavor_elections.2.e:0 "Válasszuk a Független Kisgazda jelöltet"
+ 
+ hungary_flavor_elections.3.t:0 "1947-es Választások"
+ hungary_flavor_elections.3.d:0 "Eljött az ideje az 1947. évi választásoknak. A Nemzeti Egység Pártjának (NEP) két lehetséges jelöltje is van - Bárdossy László és Kállay Miklós - de a kevésbé népszerü Független Kisgazdapárt is versenyben van."
+ hungary_flavor_elections.3.a:0 "Megtartjuk a jelenlegi miniszterelnököt"
+ hungary_flavor_elections.3.b:0 "Válasszuk Bárdossy Lászlót (NEP)"
+ hungary_flavor_elections.3.c:0 "Válasszuk Kállay Miklóst (NEP)"
+ hungary_flavor_elections.3.e:0 "Válasszuk a Független Kisgazda jelöltet"
+ 

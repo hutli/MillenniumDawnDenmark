@@ -1,0 +1,364 @@
+spriteTypes = {	
+
+	### Hungary equipment ###
+
+	SpriteType = {
+		name = "GFX_HUN_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/GER_mechanized_equipment_3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/GER_mechanized_equipment_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/GER_mechanized_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/HUN_infantry_equipment_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/HUN_infantry_equipment_0.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/HUN_infantry_equipment_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/HUN_infantry_equipment_3.dds"
+	}
+
+	### Hungary Aircrafts ###
+	
+	SpriteType = {
+		name = "GFX_HUN_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/HUN_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_HUN_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/HUN_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_HUN_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/HUN_tactical_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_HUN_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/HUN_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/HUN_strategic_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_HUN_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/HUN_strategic_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_HUN_CAS1_medium"
+		texturefile = "gfx/interface/technologies/HUN_CAS1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_CAS2_medium"
+		texturefile = "gfx/interface/technologies/HUN_CAS2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_CAS3_medium"
+		texturefile = "gfx/interface/technologies/HUN_CAS3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_HUN_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/HUN_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/HUN_heavy_fighter2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_HUN_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/HUN_heavy_fighter3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/HUN_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/HUN_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/HUN_naval_bomber3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_HUN_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/HUN_early_fighter.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_fighter1_medium"
+		texturefile = "gfx/interface/technologies/HUN_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_fighter2_medium"
+		texturefile = "gfx/interface/technologies/HUN_fighter2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_HUN_fighter3_medium"
+		texturefile = "gfx/interface/technologies/HUN_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/HUN_early_bomber.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/HUN_tactical_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/HUN_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/HUN_jet_fighter2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/HUN_jet_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/HUN_jet_tactical_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/HUN_jet_tactical_bomber1.dds"
+	}	
+	
+	### Hungary tanks ####
+
+	SpriteType = {
+		name = "GFX_HUN_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/hun_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/hun_imp_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_improved_light_spaa_medium"
+	        texturefile="gfx/interface/technologies/hun_improved_light_tank_aa_equipment_1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_HUN_gwtank_medium"
+		texturefile = "gfx/interface/technologies/hun_gwtank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/hun_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/hun_basic_main_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_basic_medium_td_medium"
+		texturefile = "gfx/interface/technologies/hun_basic_main_tank_destroyer_equipment.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/hun_imp_main_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUN_improved_medium_td_medium"
+	        texturefile="gfx/interface/technologies/hun_imp_main_tank_destroyer_equipment.dds"
+        }
+
+	SpriteType = {
+		name = "GFX_HUN_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/hun_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/hun_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_HUN_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/hun_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/hun_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/hun_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/hun_superheavy_tank.dds"
+	}
+
+	### Hungarian Artillery ###
+
+	SpriteType = {
+		name = "GFX_HUN_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_1_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_HUN.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_HUN.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_antitank4_medium"
+		texturefile = "gfx/interface/technologies/antitank5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_antitank3_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_antitank1_medium"
+		texturefile = "gfx/interface/technologies/antitank2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_antiair4_medium"
+		texturefile = "gfx/interface/technologies/antiair5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_antiair3_medium"
+		texturefile = "gfx/interface/technologies/antiair2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_HUN_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_HUN.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_antiair1_medium"
+		texturefile = "gfx/interface/technologies/antiair1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_2_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_rocket_artillery3_medium"
+		texturefile = "gfx/interface/technologies/rocket_artillery3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_rocket_artillery2_medium"
+		texturefile = "gfx/interface/technologies/rocket_artillery2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_artillery5_medium"
+		texturefile = "gfx/interface/technologies/artillery5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_3_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_artillery3_medium"
+		texturefile = "gfx/interface/technologies/artillery3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_artillery2_medium"
+		texturefile = "gfx/interface/technologies/artillery2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_interwar_artillery_medium"
+		texturefile = "gfx/interface/technologies/artillery1.dds"
+	}
+}

@@ -1,0 +1,21 @@
+﻿
+
+units = {
+
+	##### NAVAL UNITS #####
+	###### k.u.k Kriegsmarine ######
+	navy = {				
+		name = "k.u.k Kriegsmarine"			
+		base = 591
+		location = 591 # Jablanac
+		ship = { name = "SMS Kaiser Franz Joseph I" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HUN } } }
+		ship = { name = "SMS Tátra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HUN } } }
+		ship = { name = "SMS Balaton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HUN } } }
+		# Submarines
+		ship = { name = "SM U-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HUN } } }				
+		ship = { name = "SM U-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HUN } } }				
+		ship = { name = "SM U-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HUN } } }				
+		ship = { name = "SM U-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HUN } } }				
+	}				
+
+}

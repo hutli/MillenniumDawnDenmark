@@ -1,0 +1,28 @@
+focus_tree = {
+
+    id = denmark_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			original_tag = DEN
+	    }
+    }
+	
+	focus = {
+		id = DEN_political_focus
+		icon = demand_territory
+		x = @diplomatic_focus_three
+		y = 0
+		cost = 10
+		
+	    completion_reward = {
+			add_political_power = 50
+		}
+		
+		ai_will_do = {
+		    factor = 10
+		}
+	}
+}

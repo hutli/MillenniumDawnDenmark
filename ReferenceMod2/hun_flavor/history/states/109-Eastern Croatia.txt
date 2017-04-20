@@ -1,0 +1,22 @@
+
+state={
+	id=109
+	name="STATE_109" # Slavonia
+	manpower = 824400
+	
+	state_category = large_town
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+	}
+
+	provinces={
+		 3627 9595 11594 6647 
+	}
+}

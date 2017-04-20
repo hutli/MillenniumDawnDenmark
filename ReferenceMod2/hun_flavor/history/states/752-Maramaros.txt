@@ -1,0 +1,20 @@
+
+state={
+	id=752
+	name="STATE_752"
+	manpower=463100
+	
+	state_category = rural
+	
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ROM
+	}
+
+	provinces={
+		727 9704 11676 
+	}
+}

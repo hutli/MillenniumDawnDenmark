@@ -1,0 +1,406 @@
+######################
+#Hungarian Flavor mod#
+######################
+
+TELEPÍTÉSI ÚTMUTATÓ
+	1. Ha már telepítve van a mod-nak egy korábbi verziója, azt töröld ki.
+	2. Emellett a fájl mellett egy mappát, illetve egy ".mod" fájlt találsz. Ezeket másold a mod mappádba. (Windows felhasználóknak C:\Users\[Felhasználónév]\Documents\Paradox Interactive\Hearts of Iron IV\mod)
+	3. Indítsd el a játékot a launcher-en keresztül.
+	4. Ezen belül a "mod" fülön legyen kiválasztva a Hun Flavor, más mod-ot nem ajánlott mellette használni.
+	Ha magyar nyelven szeretnéd játszani a Hungarian Flavor mod-ot, muszáj az alapjáték magyarítását is letölteni, amit a Paradox Hungary csapata készít. A jelenlegi állás 90%-os, és a játék 1.3.2-es verziójával kompatibilis. A magyarítás letöltésével kiválasztható lesz a launcher-ben külön a magyar nyelv is!
+	Magyarítás letöltése (v0.9.3_2):  http://www.heartsofiron4hun.eu/
+	5. Kész!
+	
+További információkért látogass el a http://www.moddb.com/mods/hungarian-flavor weboldalra
+
+HOZZÁJÁRULÁSOK:
+	Frank Robin a Paradox Hungary-tõl:   	A mod társszerzõje
+	MajesticLemmings Steam felhasználó:  	Egyedi képek a fegyverekrõl és egységekrõl a magyar technológia fában
+	VulturGryphus Steam felhasználó:  		Orosz fordítás
+	Archangel Steam felhasználó:  			Egyedi képek néhány tank variánsnak a technológia fában (átemelve a Flavor Names extended modból)
+	Paradox Hungary:  						Magyar fordítás, a fókuszok/események/vezetõk/ideák/nemzeti jellemzõk grafikái, térképi változások, stb.
+	AdmiralWert ModDB felhasználó:  		Történelmi tanácsadás
+	OrangeWulf ModDB felhasználó:  			Osztrák-magyar zászlók
+	warchief1978 ModDB felhasználó:  		Történelmi tanácsadás a hadsereg és a haditengerészet terén + rengeteg ötlet
+	WolferosTeam:  							Néhány Ausztria-Magyarországhoz köthetõ grafikai elem
+	
+	Szeretném mélységes köszönetemet kifejezni mindenkinek, aki bármilyen módon hozzájárult a mod fejlesztéséhez. A közösség rendkívüli mértékben segítette a munkámat a folyamatos visszajelzésekkel, ötletekkel.
+
+	
+VÁLTOZÁSNAPLÓ (frissítve: 2017.02.28)
+v 3.2.0
+	- Ez a verzió már teljesen kompatibilis az alapjáték 1.3.3-as patchével (korábban gondok voltak a fókuszfával, ha a játék 1.3.3-as verzión volt).
+	- Ha Románia alattvaló nemzet volt, és az uralkodója döntött Besszarábia sorsáról, az uralkodó kapta meg azt az eventet is, ami Romániának új szövetségeseket keresett. Ez most már javítva van.
+	- Korábban nem jelent meg a britek figyelmeztetése a túlzott terjeszkedés ellen, hanem egyszer csak megtámadták Magyarországot/Ausztria-Magyarországot. Ez most már javítva van, mindenki látja az eventet (nem csak az Egyesült Királyság).
+	- Egy külön event jelenik meg amikor a britek beváltják a fenyegetéseiket, és megtámadják Magyarországot/Ausztria-Magyarországot, amit szintén mindenki lát.
+	- Németország már nem tudja a "Csehszlovákia Sorsa" fókuszt befejezni, ha Csehszlovákia nem birtokolja az összes érintett területet.
+	- A MAORT ipari konszern mostantól csak azután érhetõ el, hogy "A MAORT Megalapítása" fókusz elkészült.
+	- Ha Magyarország/Ausztria-Magyarország mind a "Nemzeti Identitás Felszámolása" és a "Területi Irányelvek" fókuszt befejezte, automatikusan megkapja a magyarlakta területeket mint magterület (Dél-Felvidék, Beregszász, Bácska, Muraköz, Észak-Erdély). Ugyenazt a feladatot már eddig is ellátta a revizionista ágon a "Régi Követelések Megerõsítése" fókusz.
+	- A "Legio Hungarica" szövetség át lett nevezve "Az Új Központi Hatalmak"-ra, a szavazás eredményének (http://www.rkursem.com/poll/view.php?cmd=view&id=299695617b3831c9a ) megfelelõen.
+	- A "Kiugrási Kísérlet" fókusz határozatlan ideig eltávolításra került, mert nem sikerült mûködésre bírni az eventet ami a kiugrást végrehajtaná (Magyarország valamiért nem tud békét kötni a szövetségesekkel/szovjetekkel a white_peace paranccsal).
+	- A játék eleji event, ami megkérdezi a játékost, hogy a realisztikus, vagy a nem realisztikus verziót akarja használni, most már a játék legelején, egybõl megjelenik (ez korábban pár hétbe telt).
+	- A "Neubaufahrzeug" tank átnevezésre került, mostantól "VK 30.01p" a neve.
+	- A szabadcsapatok átnevezésre kerültek, és egy történelemhûbb sablont kaptak.
+	- A horvát régió azon területei, amik az Osztrák-Magyar Monarchiának részei voltak, de a Magyar Királyságnak nem, már nem kerülnek integrálásra Magyarország által (ide tartozik Dalmácia, Zára és Kotor).
+	- A magyar gyalogsági felszerelések és támogató felszerelések új neveket kaptak, amik történelmi forrásoknak jobban megfelelnek. Hálás köszönet warchief1978-nak a befektetett munkáért.
+	- A magyar tüzérségi egységek új neveket (és néhol új képeket) kaptak, amik jobban megfelelnek a történelmi forrásoknak. Hálás köszönet warchief1978-nak a befektetett munkáért.
+	- Új fókuszok kerültek a konzervatív (semleges) ágra. Továbbra is várom a javaslatokat, hogy hogyan lehetne még bõvíteni.
+	- A visszaszerzett területek gazdasági/ipari fókuszai át lettek helyezve a tényleges ipari ágra. Mostantól nem szükséges a területeket követelõ fókuszok befejezése az ipari/gazdasági fókuszokhoz.
+	- A "Gumiipar Kiterjesztése" fókusz lejjebb került az ipari ágon (most mér a "Dunántúli Építöipari Beruházások" kell az elkezdéséhez, "A MAORT Megalapítása" helyett).
+	- A területi követelések most már annál nagyobb valószínûséggel lesznek sikeresek, minél nagyobb Magyarország/Ausztria-Magyarország hadserege.
+	- Az olasz tárgyalások átdolgozásra kerültek. A fókusz most már egy átláthatóbb eventsorozatot indít el, amiben pontosan meghatározható, hogy mit hajlandó adni a játékos, és mit kér érte cserébe. Például lehetséges az az opció is, hogy mind katonai, mind politikai támogatást nyújtson az ország, és egyedül Fiumét kéri érte cserébe (amit jó valószínûséggel elfogad Olaszország).
+	- Új fókusz az ipari ágon: "Olajtartalékok Felderítése". Ha mind Bácska, mind Szlovákia az ország irányítása alatt van, felméréseket lehet végezni ezeken a területeken, felderítve az ottani olajmezõket, és megnövelve a területek olajtermelõ kapacitását.
+	- Új fókusz az ipari ágon: "Horvátországi Kohászat". Kiépíti az acél-, és alumíniumfeldolgozást Horvátországban és Szlavóniában (akkoriban inkább exportra termelték ezeket a helyi nyersanyagokat, nem pedig helyi felhasználásra).
+	- Új fókusz a monarchista ágon: "Az Osztrák Vaskohászat Fejlesztése". Megnöveli az osztrák acélkitermelést, és épít egy új (katonai) gyárat Felsõ Ausztriában (az alapjátékban alul-reprezentált az osztrák vas és acélipar.
+	- Új fókusz a revizionista ágon: "Fiume Követelése". Ad egy területi követelést Fiumére, és egy háborús okot Olaszország ellen.
+	- Az "Olasz Területek Követelése" most már "A Birodalom Visszaállítása" fókusz után érhetõ el az "Egyesülés Csehszlovákiával" helyett.
+	- Már nincs idõbeli szünet a Jugoszláviát felosztó eventek között (kivéve azokat, amik más országok válaszára alapoznak), így már végig lehet rajtuk kattintgatni, miközben a játék mindvégig szünetel (pause).
+	- A "Háború Ausztriával" fókusz már nem kerül átugrásra, ha "A Birodalom Visszaállítása" fókusz elkészült.
+	
+A realisztikus verzióra kiható változások:
+	- A területeket követelõ fókuszoknak már nem elõfeltétele egy bizonyos méretû hadsereg. Cserébe a tooltip-jeikben figyelmeztetik a játékost, hogy egy bizonyos méretû hadsereg alatt nem lesz komolyan véve a követelés, és egybõl el fogják vetni (ami ugyanúgy mint eddig, háborús okot szolgáltat az adott ország ellen).
+
+v 3.1.2
+	- A 3.1.1-es verzióban átrendezésre került Jugoszláviát felosztó eventek mostanra már tényleg át vannak rendezve.
+	- Mostantól a "Sorozási Reformok" fókusz helyett a "Konzervatív Kormány Megerõsítése" fókusz van eleve elkészítve az 1939-es kezdõdátumnál.
+	- A Zaolzie terület és a Felvidék közti határ igazításra került.
+	- Bekerült egy tengeri átjáró a horvát Pag terület két provinciája közé, így a terület tulajdonosa már tud egységeket mozgatni közöttük, anélkül, hogy hozzáférne Zárához és Dalmáciához.
+	- A Fiumei kikötõ 1-es szintûrõl 6-os szintûre lett bõvítve (a korabeli kikötõk közül az egyik legjelentõsebb volt a régióban).
+	- A déli dalmáciai kikötõ kikerült a játékból, helyette Kotor területén került hozzáadásra egy másik.
+	
+v 3.1.1
+	- Jugoszlávia felosztását követõen Magyarország/Ausztria-Magyarország két flottát kapott egy helyett, ha a horvát tengerpart a birtokában volt, ez most már javításra került.
+	- A "Sikeres Revízió Megünneplése" fókusz most már mindenképp eltünteti a Revizionista Jellem módosítót (korábban problémát okozott, ha a hungarista, vagy semleges ágak egyike módosította a Revizionista Jellemet)
+	- Egy jugoszláv hadosztály korábban osztrák területen kezdett, ez vissza lett helyezve a határ jugoszláv oldalára.
+	- A Jugoszláviát felosztó eventek újrarendezésre kerültek, és a Szerbia sorsáról döntõ event a Boszniai és Dalmáciai eventek elé került. Így újra lehetséges Bosznia és Dalmácia Szerbiának adása.
+	- A "A Konzervatív Kormány Megerösítése" fókusz mostantól egy a semlegességet folyamatosan népszerûsítõ módosítót is ad.
+	- Az integrációs eventek tooltip-jei frissítésre kerültek, így most már részletesen tájékoztatnak arról, hogy melyik választásnak mi lesz a hatása.
+	- Csehszlovákia most már átnevezõdik az imperialista puccs után (ez csak az angol verziót érinti).
+	- Ha a történelmi fókusz ki van kapcsolva, és Ausztria egy erõs szövetség tagja, akkor jó eséllyel elutasítják a német Anschluss követeléseket.
+	
+v 3.1.0
+	- A Szovjetunió most már normálisan megkapja Bukovinát, ha Románia elfogadja a követelést, és birtokában van Bukovina.
+	- Ha Románia alattvaló nemzet, akkor a Besszarábiát követelõ esemény, és a Második Bécsi Döntés Románia helyett a Romániát irányító országnak jelenik meg.
+	- A "Háború Ausztriával" és "Osztrák Barátság" fókuszok már nem zárják ki egymást, cserébe az elõkövetelményeik megváltoztak.
+	- Új fókusz a katonai ágon: "Székely Hegyivadászok". Hasonlóan a "Szent László Ejtõernyõs Alakulat"-hoz, ez is egy elit egységet, és egy hadosztály sablont ad.
+	- Új terület Horvátországban: Pag (a valóságban egy sziget neve, a játékban egy tengerpart és egy sziget provinciája). Olaszország most már csak erre a szakaszra tart igényt, egész Horvátország helyett.
+	- Jugoszlávia most már kevésbé hajlandó belépni a Kisantantba, ha aláírták már az Örökbarátsági Szerzõdést Magyarországgal/Ausztria-Magyarországgal (különösen, ha már szövetségesek is).
+	- Egy új rendszer kezeli Magyarország/Ausztria-Magyarország területi követelésit.
+		A rendszer többnyire el van rejtve a játékos elõl, legkönnyebben "A Sikeres Revízió Megünneplése" fókusz követelményein keresztül követhetõ.
+		A "Revizionizmus" és "A Birodalom Visszaállítása" fókuszok generálnak területi követeléseket (értelemszerûen elõbbi a történelmi Magyar Királyság területén, míg utóbbi a volt Osztrák-Magyar Monarchia területén).
+		Ezek a követelések változhatnak, vagy visszavonásra kerülhetnek olyan események hatására, mint pl. a Jugoszláv Örökbarátsági Szerzõdés (természetesen a játékosnak hatalmában áll dönteni a követelések megtartásáról is).
+		Néhány fókusz, mint pl. a "Régi Követelések Megerõsítése" vagy a "A Sikeres Revízió Megünneplése" figyelembe veszik az így számon tartott követeléseket (pl. a "Régi Követelések Megerõsítése" csak azokra a területekre vonatkozik, amiket követel az ország).
+	- Egy új esemény foglalkozik Szlovákia önrendelkezésével. Ha Magyarország a teljes Felvidék birtokában van, dönthet úgy, hogy létrehoz egy Szlovák bábállamot, ami a játékos által megszabott területtel rendelkezik majd. Az átadott területek kikerülnek a követelt területek listájából.
+	- Ha Horvátország létezik, és birtokában van valamely magterületének, Magyarország/Ausztria-Magyarország kap egy eseményt, amiben lemondhat a Horvátország felé támasztott követeléseirõl.
+	- Csehszlovákia most már nem fog engedni a német követeléseknek, ha szövetségesek Magyarországgal/Ausztria-Magyarországgal.
+	- A Szudétavidék kérdése már nem a Müncheni konferenciára van bízva, ha Csehszlovákia egy szövetség része. Ilyenkor vagy Csehszlovákia, vagy a szövetség vezetõje dönt a kérdésben.
+	- A magyar hajó-osztályoknak már saját nevük van, warchief1978-nak köszönhetõen. Sajnos a játék nem ad arra lehetõséget, hogy külön hajóneveket kapjon Ausztria-Magyarország, így nekik is ugyanazok vannak.
+	- A Sikeres Revízió nemzeti jellem most már 10%-al megnöveli a magterületeken a hadosztályok védekezõ, és támadó képességét.
+	- A magyar alumíniumtermelés átkerült Észak-Magyarországról a Dunántúlra (ahol történelmileg is volt/van).
+	- Az Ausztria-Magyarország megalapításakor, vagy Csehszlovákiával való összeolvadáskor elõforduló indokolatlan technológia bónuszok most már remélhetõleg eltûntek, hála AdidasF-CZ (Steam felhasználó) visszajelzésének.
+	- A Horthy-Hitler találkozónak újra van hatása, és nem okozza a játék összeomlását sem. Ha sikeres megállapodás születik a találkozón, akkor az AI Németország annak megfelelõen fog dönteni Csehszlovákia feldarabolásakor.
+	- Albánia mostantól magterületként kapja meg azokat a területeket, amik albán többségûek, és nekik vannak ítélve Jugoszlávia feldarabolásakor (Tetovo, Prizren, Ulcinj).
+	- Új fókuszok kerültek a kommunista ágra. Így már van értelme a Kádár és Rákosi közti választásnak, mert mindketten saját ágat kaptak, amik különbözõ területekre koncentrálnak. Kádár ága inkább a jólét fenntartására, és a nyugat felé nyitásra koncentrál, míg Rákosi a klasszikus, Sztálinista kommunizmust alkalmazza, és nagy mértékben államosít.
+	- Kádár János ideológiája át lett állítva sztálinizmusról leninizmusra (nincs hatással a játékmenetre).
+	- A "Háború Ausztriával" fókusz tooltip-je javításra került (a tényleges elõfeltételek változatlanok).
+	- A "Háború Utáni Átszervezés" fókusz most már akkor is elérhetõ, ha az ország háborúban van. Erre azért volt szükség, mert a háborút jelzõ flag-et csak akkor kapta meg az ország, ha a háború egyik fõ résztvevõje volt.
+	- Ha Magyarország nem harcol Románia ellen, de Románia hadban áll a szövetségesekkel, Magyarország kaphat egy eseményt, amiben felajánlhatják segítségüket a szövetségeseknek, ha cserébe odaígérik Erdélyt. Ezt az eseményt csak akkor kaphatja meg Magyarország, ha  még nem tagja frakciónak, vagy pedig a szövetségesek tagja.
+	- Bács-Kiskun terület mostantól része a "Magyar Autópálya-Hálózat" fókusznak.
+	- Új fókuszok kerültek a hungarista ágra, amik lefedik Szálasi tervezett reformjait és törvényeit.
+	- Ha fasiszta ideológiájú kormány van hatalmon (Szálasi), akkor "A Sikeres Revízió Megünneplése" fókusz egy kicsit más nemzeti jellemet ad jutalmul, aminek "Hungária Egyesült Földek" a neve.
+	- Új fókuszok kerültek a revizionista ágba, amik a Horthy-féle konzervatív kormány(ok) megerõsítését teszik lehetõvé. Ez az ág kölcsönösen kizárja a hungarista ágat. Néhány intézkedés, ami ezekkel a fókuszokkal elérhetõ:
+		A Nyilaskeresztes párt betiltása
+		A monarchia megerõsítése, és Horthy, vagy egy Habsburg megkoronázása
+		A monarchia leépítése, és parlamentáris monarchia, vagy köztársaság létrehozása (ezzel félig-meddig értelmet nyernek a választások, a játékos dönthet arról, hogy melyik jelöltet szeretné megválasztani).
+	- A Szlovéniát Burgenlandra elcserélõ esemény már nem jöhet föl, ha Magyarország és Ausztria háborúban állnak.
+	- Primorska (mai szlovén tartomány) most már hozzátartozik az "Olasz Területek Követelése" fókuszhoz.
+	- A "Brit Állásfoglalás a magyar Terjeszkedés Ellen" (hír) esemény most már rendesen megjelenik, figyelmeztetve a játékost, hogy a következõ agresszív terjeszkedés a britek támadásával járhat.
+	- A "Magyar SS" fókusz átdolgozásra került. Már nem Magyarországnak adja a hadosztályt, és a sablont, hanem Németországnak ad két magyar SS hadosztályt. Cserébe Magyarország termelési bónuszt kap a nehéz tankok gyártásához, és tank kutatási bónuszt. (Történelmi szemszögbõl nem hihetõ, hogy Magyarország saját SS alakulatokkal rendelkezzen, mert azokat Németország irányította)
+	
+A realisztikus verzióra kiható változások:
+	- Az "Iparosítási Fókusz" és az "Erõditési Fókusz" fókuszok által adott bónuszok csökkentek.
+	- A "Háború Ausztriával" és az "Olasz Területek Követelése" fókuszok elõkövetelményei közé bekerült a hadsereg mérete (elõbbi esetében 100 000, utóbbinál 500 000).
+		
+v 3.0.3
+	- Sok órányi hajtépés után végre sikerült azonosítanom a crash-ek okát:
+		A "Csehszlovákia Felosztása" során bekövetkezõ crash-t az alapjáték eventjeivel való konfliktus okozta. Visszaállítottam a német eseményt, így már az AI nem veszi fegyelembe a Horthy-Hitler egyezményt. Sajnos nem találtam más megoldást a problémára, de igyekszem felvenni a kapcsolatot valakivel a Paradox Interactive-tól, hátha tud segíteni valami megoldás keresésével.
+		A Jugoszlávia felosztása során bekövetkezõ crash-eket néhány eltévedt épület okozta, amik kikerültek a területükbõl a 3.0.0 verzióban történt területi változások miatt. A buildings.txt fájl újragenerálásra került, így a jugoszláv területek már problémamentesen átadódnak az eseményt során.
+		
+v 3.0.2
+	- Korábban volt 8 esemény a területi integrációs események között, ami kétszer szerepelt. A fölösleges események törlésre kerültek, így már remélhetõleg nem fog összeomlani a játék 1939 körül.
+	- Néhány adat megváltozott Isztriával kapcsolatban: A lakossága lecsökkent valósághû keretek közé, és most már horvát magterület.
+	- A 3.0.0 verzióban hozzáadott területek most már hozzá lettek rendelve ellátási zónákhoz.
+	
+v 3.0.1
+	- Néhány rejtett fájl (amik a Google Drive jóvoltából kerültek be), törlésre került. Ez elképzelhetõ hogy megoldja a játék összeomlását egyes esetekben.
+	- Ausztria nem kapta meg a szövetséget kérõ eseményt a 3.0.0 verzióban egy hiba miatt. Ez most már javításra került.
+
+v 3.0.0
+#Ez a verzió sok változáson esett át, amelynek célja, hogy realisztikusabbá tegyük a mod-ot. A Moddb weboldalon a játékosok szavazhattak arról, hogy realisztikusabbá tegyük-e a mod-ot, avagy sem. A játékosok kétharmada a realisztikusra szavazott, ám nem akartuk cserben hagyni azokat sem, akik a nem realisztikusra szavaztak. Ezért oldottuk meg úgy, hogy a játék elkezdése után -pár nappal- egy esemény ablak ugrik fel, amelyben kiválaszthatod, hogy milyen módon szeretnél játszani.#
+
+Mindkét verzióra kiható változások:
+	- Az orosz fordítás módosításokon esett át. (ezúton is köszönet VulturGryphus-nak)
+	- A Szamos és a Tisza folyók javítva lettek.
+	- Új tartományok hozzáadva: Máramaros/Észak-Partium/Kotor/Primorska/Tetovo/Prizren/Ulcinj, ezen kívül számos más tartomány került határ-módosításra. 
+	- Arad (tartomány) át lett nevezve Dél-Partium-ra. Trieszt (gyõzelmi pont) át lett nevezve Koper-re.
+	- Magyarország politikai felépítése 1936 és 1939 éveire nézve megváltozott. Horthy és kormánya politikailag "semleges" lett, ebbõl adódóan Szálasi és pártja pedig "fasiszta" lett.
+	- A "Bosszú Trianonért" fókusz át lett mozgatva a monarchista ágból, és most közvetlenül elérhetõ a "Revizionizmus" fókusz után. Egy új követelmény szerint Magyarország/Ausztria-Magyarország sokkal erõsebb állammá kell, hogy váljon, vagy erõsebb európai szövetségesekre van szüksége.
+	- Számos esemény egyedi képet kapott, ugyanis elõtte csak egy általános kép volt helyettük.
+	- Számos magyar Nemzeti Jellemzõ is egyedi képet kapott.
+	- Számos fókusz új képet kapott.	
+	- Magyarország és Ausztria-Magyarország esetén néhány korai hajó technológia saját nevet kapott.
+	- Számos egyedi magyar, és osztrák-magyar hajónév került a játékba, hála warchief1978-nak.
+	- A könnyû és közepes tankok variánsainak már egyedi nevük van, hála warchief1978-nak.
+	- A T2-es nehéz harckocsi (korábban Tiger I) helyére a magyar M43 Tas került.
+	- A német fókuszok, amik területet követelnek Ausztriától, vagy Csehszlovákiától, most már Ausztria/Csehszlovákia uralkodónemzetét érintik, amennyiben bábállamok. Így már nem fordulhat elõ, hogy Németország az uralkodó ország beleegyezése nélkül bekebelezi/megcsonkítja a bábállamot. 
+	- Az 1938-as Horthy és Hitler közti találkozó most már egy eseménysorozat formájában szerepel a mod-ban. Az események során (amik a német "Csehszlovákia Sorsa" fókusz elkészülése közben jelennek meg), Magyarország és Németország megegyezhetnek Csehszlovákia feldarabolásának feltételeirõl. Hitler nem feltétlenül fogadja el a kéréseket, de ha elfogadja, akkor a tényleges feldaraboláskor tartja is magát hozzájuk (kivéve ha Németország is játékos által van irányítva, olyankor természetesen övé a választás).
+	- Néhány fókusz most már csak akkor elérhetõ, ha Magyarország/Ausztria-Magyarország független (fõleg a nemzetközi hatású fókuszok, mint a szövetségek létesítése, vagy területek követelése)
+	- A fókuszok és események által generált háborús indokok most már korrektül reprezentálják a tényleges háborús indokot. Ha például egy területi vita okozza a háborút (pl. Románia nem adja át Erdélyt), akkor arra a bizonyos területre irányul a háború, nem pedig teljes megszállásra.
+	- Új fókusz a revizionista ágon:  "Finnország Kisegítése". Ha Finnország egy védekezõ háborúban van a Szovjetunióval szemben, akkor Magyarország szövetségre léphet velük, és segíthet nekik a háborúban.
+	- Új fókusz a revizionista ágon: "A Sikeres Revízió Megünneplése". Lecseréli a Revizionista Jellem nemzeti jellemet egy jobb jellemre. Ha az Egyesült Királyság korábban megtámadta Magyarországot/Ausztria-Magyarországot a túlzott terjeszkedés miatt, akkor ezután a fókusz után alkalom nyílik egy potenciális békekötésre, amennyiben Magyarország/Ausztria-Magyarország hajlandó lemondani az általa nem követelt területekrõl.
+	- Új fókusz a revizionista ágon: "Kiterjesztett Sorozás". Módosítja az ország sorozási törvényeit kiterjesztettre.
+	- Új fókusz a revizionista ágon: "A Hungarizmus Felemelkedése". Mivel Magyarország most már semleges kormánnyal kezd, szükségessé vált egy olyan fókusz, ami elérhetõvé teszi a fasiszta kormányt is. A jövõben ez a fókusz saját ágat indít majd, és mélyebben ki lesz dolgozva.
+	- Új fókusz a revizionista ágon: "Magyar SS": Ad egy új hadosztály sablont, és egy fél-elit egységet.
+	- Új fókusz a hadsereg fejlesztõ ágon: "Szent László Ejtõernyõs Hadosztály": Elérhetõvé tesz egy új (ejtõernyõs) hadosztály sablont és egy fél-elit egységet.
+	- Most már van lehetõség a Nyilaskeresztes puccsnak (kiugrási kísérlet után történhet) való ellenállásra. Ha Magyarország az ellenállást választja, polgárháború robban ki, és Magyarország távozik a tengelyhatalmak közül.
+	- Mivel az 1.3.2 patch megoldja az eltûnõ hadosztályok problémáját, Ausztria-Magyarország már nem kap extra egységeket megalakuláskor.
+	- Az alap vegyesdandárok már nem tartalmaznak légelhárító lövegeket. Akármennyire is történelem hû a dolog, egyszerûen nem passzol a játékba 1936-ban.
+	- A mod magyar nyelve teljes javításon esett át, így már nem találkozhattok elírásokkal és helyesírási hibákkal, ha mégis, azt jelezzétek.
+
+A realisztikus verzióra kiható változások:
+	- A "Régi Követelések Megerõsítése" fókusz csak azokat a területeket teszi magtartománnyá, amelyeken magyar többség él. Ettõl függetlenül Magyarország/Ausztria-Magyarország igényt szerez az összes régi területre is.
+	- A korábbi magyar/osztrák-magyar területek integrálása már eseményekkel, és módosítókkal van megoldva.
+		Amint az ország egy új területre tesz szert a korábbi területei közül (pl. Magyarországnál Erdély), megjelenik egy esemény, amiben eldönthetõ, hogy integrálásra kerüljön-e a régió, vagy maradjanak "kolóniák" a benne lévõ területek
+		Az integrálás választása esetén a régió általad uralt területei magtartománnyá válnak, és kapsz egy halmozódó módosítót, ami annál jobban nehezíti a sorozást, minél több integrálás alatt lévõ területed van
+		Amíg az integrálás folyamatban van, események jelenhetnek meg, amik befolyásolhatják a folyamatot mind regionális, mind területi szinten
+		Ha megszerzel egy új területet abban a régióban, amit korábban már elkezdtél integrálni, egy esemény segítségével elkezdheted azt is integrálni, vagy dönthetsz úgy, hogy az a terület kimarad az integrációból
+	- Új fókuszok érhetõek el, amik az integrációt gyorsítják. Az elsõ ilyen akkor érhetõ el, ha a realisztikus verzióval játszol, és olyan területet birtokolsz, ami korábban a Magyar Királyság része volt (vagy az Osztrák-Magyar Monarchiáé, amennyiben Ausztria-Magyarországgal játszol).
+	- Néhány fókusz új követelményeket kapott
+		A szövetségi fókuszok már igénylik a célországokkal való jó viszonyt
+		A területi követelések a hadsereg egy bizonyos méretét igénylik
+	- Néhány esemény kiigazításra került, így már a célországok nem teljesítik olyan könnyen Magyarország kéréseit.
+	- A "Magyar Autópálya-Hálózat" és "Körkörös Úthálózat" fókuszok most már kevesebb infrastruktúrát adnak, és nem szabadítanak fel új építkezési helyeket.
+	- A "Repülési Fókusz" és "Toldi Projekt" fókuszok most már csak akkor érhetõek el, ha Magyarország/Ausztria-Magyarország nem rendelkezik a Trianoni Megkötések módosítóval (A Trianoni békeszerzõdés értelmében sem páncélos jármûveket, sem repülõgépeket nem használhatott a honvédség).
+
+v 2.9.4
+	- Az "Õrvidéki Népszavazás" nem mûködött megfelelõen egy bug miatt, ez most javításra került.
+	
+v 2.9.3
+	- Az orosz fordítás frissítésre került (ezúton is köszönet VulturGryphus-nak a munkájáért).
+	- Néhány fókusz új képet kapott (ezúton is köszönet a Paradox Hungary-nek).
+	- Néhány hiányzó tooltip bekerült a magyar változatba.
+	
+v 2.9.2
+	- A "Háború Ausztriával" fókusz átugrásra kerül, ha Magyarország már elfoglalta Ausztriát a fókusz nélkül is.
+	- A "Birodalom Visszaállítása" fókusz most már nem okozhat német beavatkozást, ha Ausztria nem létezik (ebben az esetben Magyarország már elfoglalta õket)
+	- Beregszászon az infrastruktúra mostantól 6-os szinten kezd.
+	- Magyarország gyõzelmi pontjai módosultak (most már Pécs és Debrecen is 3-at érnek).
+	- A vezetõk portréi és a magyar lokalizáció is javításon esett át, hála a Paradox Hungary-tek.
+	- Az eltûnõ osztrák egységek problémájára ideiglenes javítás: Ausztria-Magyarország megkapja a kezdõ osztrák egységeket, amikor megalakul. Ez csak addig szükséges, amíg a Paradox Interactive ki nem javítja az eltûnést okozó bug-ot.
+	
+v 2.9.1
+	- Az egyik újonnan hozzáadott területen 0 ellátmányt kaptak a seregek, ez most már javításra került.
+	- Fiume és Bács-Kiskun most már részei az infrastruktúra-építõ fókuszoknak.
+	
+v 2.9.0
+	- Észak-Dalmácia mostantól külön terület, és a korábbi Dalmácia át lett nevezve Dél-Dalmáciává.
+	- Számos változtatás került a Jugoszláviát feldaraboló eventsorozatba, most már például külön lehet dönteni Észak-Dalmáciáról, Torontálról és Szerémrõl.
+	- Ha Olaszország igényei (elsõsorban Dalmácia) kielégítésre kerülnek a konferencia alatt, és Magyarország/Ausztria-Magyarország egy szövetséget vezet, akkor a konferencia után felajánlhatják az olaszok, hogy csatlakoznak hozzá. Az olasz követelésekrõl az eventek leírása tájékoztat.
+	- A feldaraboló konferencia során szabadon odaítélt területek egy halmozódó relécióbónuszt adnak az adott országgal, ami annál nagyobb, minél több területet kapott. Ha például odaadjuk Olaszországnak egész Dalmáciát, azért +20-al növekedik a relációnk, ha pedig Szlovéniát is megkapják, az már +30.
+	- A Nyilaskeresztes Párt-Hungarista Mozgalom új ideológiája a "Hungarizmus" (ennek nincs játékbeli hatása, csak kapott egy új leírást ez az ideológia is).
+	- Bács-Kiskun mostantól külön terület az Alföldtõl (minden olyan provincia az Alföldön, ami nem a Tiszántúl része, átkerült Bács-Kiskunhoz).
+	- A térképen a magyar erõdítmények pozíciója meg lett igazítva, így most már nagy részük az országból "kifelé" néz (ennek sincs hatása a játékmenetre).
+	- Németország most már kiválaszthatja a "Csehszlovákia Felosztása" fókuszt, akkor is, ha Csehszlovákia már egy szövetség része, de ebben az esetben Csehszlovákia nagyobb eséllyel fog ellenállni a német követeléseknek.
+	- Új event: Magyar-szlovák kis háború. Az event a történelmi konfliktust reprezentálja, ami Magyarország és Szlovákia közt zajlott, nem sokkal az Elsõ Bécsi Döntés után. A küzdelmek nem tartottak sokáig, és nem sokat értek el, de mindkét ország sikernek könyvelte el a hadmûveletet.
+	- Akik rendelkeznek a "Together for Victory" DLC-vel, azok számára a hungarista hatalomátvételkor Magyarország német uradalommá változik (a legfüggetlenebb szintje az alattvaló országok funkciónak).
+	- Magyarország mostantól kap egy egységnyi szabadcsapatot Jugoszlávia feldarabolásakor (ez reprezentálja az ott élõ magyar lakosság patrióta részét). Ugyanez érvényes a német "Elsö Ljubljanai Döntés" fókusz utáni területszerzéskor is.
+	- Magyarország most már magterületként kapja meg Bácskát az "Elsö Ljubljanai Döntés" után.
+	- Horvátország most már rendesen megkapja Szerém megyét, ha Németország nekik ítéli a "Jugoszlávia Felosztása" (német) fókusz után.
+	- Néhány fókusznak új képe lett (ezek az 1.3-as patch-csel jöttek be)
+	- Új fókusz a monarchia ágán: "Bosszú Trianonért".
+	- Technológia megosztás fókuszok kerültek a fókuszfa számos helyére (komintern, szövetséges, és tengely ágak).
+	- A fókuszfa tengely ága kisebb átrendezésen esett át.
+	- A "Sorozási Reformok" fókusz átkerült a demokratikus/kommunista oldalra, és a helyére egy új fókusz, a "Levente Egyesületek Kiterjesztése" került. A fókusz hasonló bónuszokat ad a "Sorozási Reformok"-hoz. 
+	- Új fókusz a demokratikus ágon: "Dél-Felvidéki Népszavazás" (kölcsönösen kizárja, és ugyanaz a követelménye, mint a "Béke a Szomszédainkkal" fókusznak)
+	- Új fókusz a demokratikus ágon: "Kiegyezés Jugoszláviával" (elõkövetelménye a "Dél-Felvidéki Népszavazás" fókusz)
+	- A Visegrádi Szövetség része a demokratikus ágnak kiegészítésre került, többek között egy Jugoszláviát meghívó fókusszal.
+	- A "Wilson 10. Pontja" fókusznak mostantól elõkövetelménye, hogy legalább egy területet uralj mind a 6 érintett régióból (Austria-Szlovénia, Magyarország (Szlovákiát is beleértve), Csehország, Galícia-Lodomeria, Erdély, Horvátország-Bosznia)
+	- A "Wilson 10. Pontja" fókusz befejeztével lehetõség nyílik az új föderáció elnevezésére "Osztrák-Magyar Föderáció"-ként, vagy pedig "Dunai Föderáció"-ként. A névváltással új zászlók, és térképszín is jár (bár a térképszín valamiért nem változik meg azonnal). A két opció jelenleg csak látványban tér el, de jövõbeli verziókban egyéb (belpolitikai) következményei is lehetnek.
+	- Romániának most már lehetõsége van ellenkövetelést benyújtani, amikor Magyarország/Ausztria-Magyarország Erdélyt követeli. Ha benyújtják, Magyarországnak lehetõsége van válaszképp visszavonulni az Alföldrõl (minden ami a Tiszától keletre fekszik), figyelmen kívül hagyni a követelést, vagy háborút indítani.
+	- Magyarország mostantól ugyanolyan területi igénnyel kezdd Bácska és Muraköz területekre, mint Dél-Felvidékre és Kárpátaljára.
+	- A "A Fasizmus Népszerütlensége" módosító mostantól idõzített, vagyis nem fókuszok fogják megszüntetni, hanem magától lejár egy bizonyos idõ után.
+	- A Rákosi- és Kádár-rendszer által adott módosítók most már maradók, tehát nem vesznek el, amikor az egypártrendszer bevezetésre kerül. Az egypártrendszer módosító ehhez mérten már nem ad Politikai Hatalom bónuszt.
+	- Néhány rosszul párosított lokalizáció javításra került a mod román és jugoszláv eventjei közt.
+	- A "Burgaszi Ipari Fejlesztési Projekt" fókusz mostantól 75 Politikai Hatalmat ad befejezéskor.
+v 2.8.4
+	- Most már nem fordul elõ, hogy játék kezdéskor Magyarország helyett Ausztria-Magyarország jelenik meg.
+	- Apróbb módosítások a fókusz fán (fõleg fókuszok helye került igazításra).
+	- A sorozási módosító a "Trianoni megkötések" debuff-ban már a teljes élõerõ egy bizonyos százaléka, a sorozás fix csökkentése helyett.
+	
+v 2.8.3
+	- Néhány elírás javításra került a lokalizációs fájlokban.
+	- A mod most már kihasznál néhány funkciót, ami az 1.3-as patch-csel elérhetõvé vált.
+	- Végre valahára gondtalan az átalakulás Ausztria-Magyarországgá, hála a cosmetic tags funkciónak.
+	- Magyarország helyet kapott az 1936-os és 1939-es kezdõdátumok képernyõjén, és rövid leírással lett ellátva.
+	
+v 2.8.2
+	- A "Györi program szembemegy a Trianoni korlátozásokkal" event most már csak egyszer tud megjelenni.
+	- A mod ezen verziója már kompatibilis az alapjáték 1.3-as (Torch) patch-csével.
+	
+v 2.8.1
+	- Egy event magyar lokalizációja hiányzott a 2.8-as verzióban, ez most már pótolva van.
+	- Szerbia és Montenegró új térképszíneket kaptak, ami jobban illik az általában használt színeikhez (kékes árnyalat).
+	- Magyarország zászlói enyhe átszínezésen estek át, hogy jobban passzoljanak az új osztrák-magyar zászlókhoz.
+	- Apróbb javítások a magyar lokalizációban (hála a Paradox Hungary-nek).
+	
+v 2.8.0
+	- Magyarország mostantól egy "Trianoni Megkötések" módosítóval kezdi a játékot, ami a katonai korlátozásokat képviseli, amiket a szövetségesek róttak ki az országra az elsõ világháborút követõen. A módosítót el lehet távolítani a Gyõri Programon keresztól, egy nagyobb frakcióba veló belépéssel, de idõvel magától is elmúlik.
+	- Ha Olaszország elfogadja Szlovéniát Záráért, és Fiuméért cserébe, most már az is opció, hogy csak az egyiket fogadjuk el.
+	- Ausztria-Magyarország új fasiszta és kommunista zászlókat kapott, OrangeWolf-nak köszönhetõen. A semleges zászló is át lett színezve, hogy jobban passzoljon a többihez.
+	- Fiume lakossága meg lett növelve 150.000-re, ami hûebb reprezentációja a város akkori népességének.
+	- Néhány pontatlanság javításra került az eventek lokalizációjában.
+	- Egyedi portrék kerültek minden magyar politikai tanácsadó sablonportréja helyére. Külön köszönet a Paradox Hungary-nek, hogy segített ezt megvalósítani.
+	- A Ganz Villamossági Gyárnak mostantól saját emblémája van az általános helyett.
+	- Mostantól nem számít milyen sorrendben készülnek el a "A Régi Követelések Megerösítése", és a "A Birodalom Visszaállítása" fókuszok. Ha elõbb a "A Régi Követelések Megerösítése" készül el, az osztrák-magyar követelések akkor érvényesülnek majd, ha megalapul az ország.
+	- "A Régi Követelések Megerösítése", és a "A Birodalom Visszaállítása" fókuszok elkészültével lehetõséget kapnak a környezõ államok (Csehszlovákia, Románia és Jugoszlávia), hogy megerõsítsék a Kisantant szövetséget, és szembeszálljanak a Magyarország által nyújtott fenyegetéssel. Ha az egyik fókusz után elmulasztották ezt a lehetõséget, a következõnél már nem lesz rá eséjük.
+	- Új fókusz a tengely ágon: "Kiugrási Kísérlet". Ez összeköti a korábbi kiugrási kísérlet eventsorozatot a Nyilaskeresztes hatalomátvétellel (ahogy az történelmileg is történt).
+	- A "A Haditengerészet Felélesztése" fókusz mostantól nem 70, hanem 140 napba telik, és két új admirálist is elérhetõvé tesz:
+		Trunkwalter Ödön 
+		Hardy Kálmán 
+	- Új fókusz a katonai ágon: "A Bay-Csoport". A fókusz radarállomásokat épít Magyarország kezdõterületén.
+	- Új fókusz az ipari ágon: "Magyar Lloyd Repülõgépgyár".
+	- A "A Fasizmus Népszerütlensége" módosító már nem 0.1-el, hanem 0.2-vel csökkenti a fasizmis népszerûségét naponta. Így kicsit könnyebb ideológiát váltani, ha amellett döntünk.
+	- Most már Fiume is része a "Körkörös Úthálózat" fókusznak
+	- Új fókuszok a kommunista, és demokratikus ágakban, amik a szövetséges, és szövjet licenszek vételét fedezik.
+	- Új fókusz a kommunista ágon: "Kádár Ügykezelése" (kizárja a "Rákosi Ügykezelése" fókuszt)
+	- Az "Új Kezdet" fókusz mostantól "Nyugatra Hajlás" néven szerepel, és javítja a kapcsolatokat nyugati országokkal.
+	- Új ág a demokratikus oldalon: "A Visegrádi Szövetség". Ennek segítségével Magyarország saját, regionális, demokratikus szövetségrendszert építhet ki maga köré.
+		Eleinte Csehszlovákia és Lengyelország kap meghívást a frakcióba
+		Egy fókuszon keresztül kiterjeszthetõ a szövetség észak felé, a Balti Államok meghívásával.
+		Egy fókusz segítségével a szövetség kiterjeszthetõ gazdasági unióvá (hasonlóképp a mai EU-hoz), ami javítja a kereskedelmi kapcsolatokat a tagállamok közt (az új tagállamok belépéskor megkapják a bónuszokat)
+	- Új fókusz a monarchia ágán: "Wilson 10. Pontja". A fókusz segítségével a monarchia egy föderációvá alakítható át, amiben regionális autonómiával rendelkeznek az egyes nemzetiségek.
+	- Kárpátalja mostantól két részre van osztva:  a déli rész - Beregszász - (történelmileg) az Elsõ Bécsi Döntés keretein belül kerül Magyarországhoz, az északi rész pedig Csehszlovákia feldarabolásakor.
+	
+v 2.7.3
+Kisebb (soron kívüli) gyorsjavítás
+	- Az egyik választási lehetõség nem jelent meg a "Dalmácia sorsa" eventnél, és gond volt a választási lehetõségek magyar lokalizációjával is, ezek most már javítva vannak.
+	- A magyar fordítás frissítésre, és javításra került (hála a Paradox Hungary-nek)
+
+v 2.7.2
+	- Apró javítás a Tisza folyón.
+	- Új vezetõi portrék az alábbi magyar/osztrák-magyar vezetõknek:
+		Szálasi Ferenc
+		Habsburg Ottó
+		Bajcsy Zsilinszyky Endre 
+		(bónuszként új portréja van Purgly Magdolnának is)
+		Ezúton is hálás köszönet a Paradox Hungary-nek, hogy a portrékat elkészítették.
+	- Apróbb javítások a területek magyar lokalizációjában.
+	- Magyarország most már Fiumét is magterületként tartja számon a "A Régi Követelések Megerösítése" fókusz után.
+	
+v 2.7.1
+	- A Tisza végre megjelenik a játékban (az alapjátékban láthatatlan volt)
+	
+v 2.7.0
+	- Különféle hibák javításra kerültek a Jugoszlávia felosztását kezelõ eventek között.
+	- Dalmáciát most már szabadon oda lehet adni Olaszországnak, függetlenül attól, hogy milyen területeik vannak.
+	- Egy új eventen keresztül a játékosnak lehetõsége van királlyá koronázni Horthy-t.
+	- A "Horthy Visszaállítása" fókusz most már két opciót prezentál a játékosnak: vagy mint admirális, vagy mint vezérkari tag állítja vissza Horthy-t a haditengerészet élére.
+	- Néhány követelés már kevesebb nemzetközi feszültséget generál.
+	- Muraköz népessége finomhangolásra került.
+	- Néhány hajómodell alapból elérhetõ Magyarország számára (azok, amik a régi flottában lévõ hajóknak megfeleltethetõk)
+	- Jugoszlávia felosztásakor Magyarország megkapja a Jugoszláv flotta egy részét (7 hajót)
+	- A Bulgáriára vonatkozó fókuszt átugorja Olaszország, ha Bulgária már tagja egy frakciónak. Így Bulgária nem fog kilépni Magyarország szövetségébõl az olaszok miatt.
+	- Szerém terület legnyugatibb provinciája átkerült Horvátországhoz.
+	- Fiume mostantól különálló enklávé, hasonlóan Zárához, és olasz irányítás alatt kezdi a játékot.
+	- Horvátország mostantól rendelkezik kikötõvel, Fiumétõl kissé délre.
+	- Montenegró kicsit barátságosabb színnel lett ellátva.
+	- Magyarország 1936-os kezdése finomhangolásra került, most már kevésbé van megbénítva az ország a kezdeti erõsítések által.
+	- Új fókusz az ipari ágon: "Gumiipar Kiterjesztése".
+	- Új fókuszok a katonai ágon, amik a licenszek vételét kezelik (svéd, és német, ebben az idõszakban)
+	- Új fókusz a tengely ágon: "Segítség A Német Vezérkartól".
+	- Néhány új fókusz a revizionista ágon, amik Magyarország szövetségeseivel biztosítanak további interakciót.
+	
+A korábbi verziókról további információt a mod ModDB oldalán találsz (http://www.moddb.com/mods/hungarian-flavor)
+	
+KOMPATIBILITÁS:
+	A mod a 2.8.2-es verziótól kezdõdõen kompatibilis a játék 1.3-as (Torch) patch-ével.
+	Nem vállalok felelõsséget bármely más moddal való kompatibilitásért, a Hungarian Flavor mod használata minden egyéb mod nélkül javasolt.
+	A mod nem (vagy nem teljesen) kompatibilis olyan modokkal amik:
+		- a játékot alapjaiban alakítják át
+		- Magyarországot módosítják
+		- Németországot módosítják
+		- Olaszországot módosítják
+		- a térképet módosítják
+		- az országok színét módosítják
+		
+	(moddereknek) Itt az alapjáték fájljainak listája, amiket a mod módosít(frissítve: 2017.02.01):
+		common/bookmarks/blitzkrieg.txt
+		common/bookmarks/the_gathering_storm.txt
+		common/countries/colors.txt
+		common/countries/Hungary.txt
+		common/ides/_economic.txt
+		common/ides/austria.txt
+		common/ides/hungary.txt
+		common/ideologies/00_ideologies.txt
+		common/national_focus/germany.txt
+		common/national_focus/italy.txt
+		
+		events/Bulgaria.txt
+		events/Germany.txt
+		events/Hungary.txt
+		events/Italy.txt
+		events/Romania.txt
+		events/SovietUnion.txt
+		events/Yugoslavia.txt
+		
+		gfx/flags/small/HUN_communism.tga
+		gfx/flags/small/HUN_democratic.tga
+		gfx/flags/small/HUN_fascism.tga
+		gfx/flags/small/HUN_neutrality.tga
+		gfx/flags/medium/HUN_communism.tga
+		gfx/flags/medium/HUN_democratic.tga
+		gfx/flags/medium/HUN_fascism.tga
+		gfx/flags/medium/HUN_neutrality.tga
+		gfx/flags/HUN_communism.tga
+		gfx/flags/HUN_democratic.tga
+		gfx/flags/HUN_fascism.tga
+		gfx/flags/HUN_neutrality.tga
+		
+		history/countries/HUN - Hungary.txt
+		history/states/4-Austria.txt
+		history/states/43-Hungary.txt
+		history/states/45-Yugoslavia.txt
+		history/states/73-Carpathian Ruthenia.txt
+		history/states/76-Northern Transylvania.txt
+		history/states/102-Slovenia.txt
+		history/states/103-Croatia.txt
+		history/states/105-Montenegro.txt
+		history/states/107-Kosavo.txt
+		history/states/109-Eastern Croatia.txt
+		history/states/152-Upper Austria.txt
+		history/states/154-Southern plain.txt
+		history/states/155-Western Hungary.txt
+		history/states/163-Dalmatia.txt
+		history/states/736-Istria.txt
+		history/units/HUN_1936.txt
+		history/units/HUN_1939.txt
+		
+		map/strategicregions/24-Western Balkans.txt
+		map/supplyareas/7-SupplyArea.txt
+		map/supplyareas/26-SupplyArea.txt
+		map/supplyareas/28-SupplyArea.txt
+		map/supplyareas/32-SupplyArea.txt
+		map/supplyareas/33-SupplyArea.txt
+		map/supplyareas/34-SupplyArea.txt
+		map/supplyareas/36-SupplyArea.txt
+		map/supplyareas/37-SupplyArea.txt
+		map/supplyareas/355-SupplyArea.txt
+		map/airports.txt
+		map/buildings.txt
+		map/definition.csv
+		map/provinces.bmp
+		map/rivers.bmp
+		map/rocketsites.txt
+		map/unitstacks.txt
+		
+		Ha modot fejlesztesz, és szeretnéd a Hungarian Flavor-t beépíteni a saját mododba, vagy kompatibilissá tenni vele, vedd fel a kapcsolatot velem ModDB-n: http://www.moddb.com/members/mullerr

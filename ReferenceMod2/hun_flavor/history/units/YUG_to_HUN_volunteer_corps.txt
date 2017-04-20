@@ -1,0 +1,29 @@
+﻿division_template = {
+	name = "Területvédelmi dandár"  			# Volunteer corps
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	
+	support = {
+        artillery = { x = 0 y = 0 }	
+		engineer = { x = 0 y = 1 }	
+	}
+	
+	priority = 0
+}
+units = {
+	## Jugoszláviai Szabadcsapat ##
+	division = {
+		name = "Jugoszláviai-Magyar Szabadcsapat"
+		location = 3617
+		division_template = "Területvédelmi dandár" 
+		start_experience_factor = 0.08
+		start_equipment_factor = 0.8
+
+	}
+}

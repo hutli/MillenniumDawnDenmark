@@ -1,0 +1,1754 @@
+﻿l_english:
+ hun_news.1.t:0 "The partition of Yugoslavia"
+ hun_news.1.d:0 "Hungary has managed to gain enough power in the Balkan region, to push for a repartition of the territories of Yugoslavia. The new face of the Balkans looks promising to some, while terrifying to others."
+ hun_news.1.a:0 "The new borders look nice."
+ hun_news.1.b:0 "The peace of Europe is in danger!"
+ hun_news.1.c:0 "Amazing, how quickly countries appear, and vanish."
+ 
+ hun_news.2.t:0 "The Little Entente"
+ hun_news.2.d:0 "After the reemergence of Austria-Hungary, Czechoslovakia initiated the renewal of the Little Entente alliance. The alliance is now official, and looking to defend its members' territorial integrity from the newborn empire."
+ hun_news.2.d_2:0 "Shortly after Hungary annonuced her claims on old territory, Czechoslovakia called for a renewal of the Little Entente alliance. The newly strengthened bond is looking to contain Hungarian expansion in any way possible."
+ hun_news.2.a:0 "Damn them all to hell."
+ hun_news.2.b:0 "Hurrah!"
+ hun_news.2.c:0 "This will surely temper tensions in the region."
+ 
+ hun_news.3.t:0 "End of the Little Entente"
+ hun_news.3.d:0 "Czechoslovakia tried to rally the members of the Little Entente, after the reawakening of the Austro-Hungarian empire, but the dying light of the alliance was forever extinguished, when neither Romania, nor Yugoslavia responded to the call."
+ hun_news.3.d_2:0 "The Little Entente is now officially dissolved, as its members refused to band together after the rise of revisionist spirit in Hungary. Czechoslovakia, being the only remaining supporter of the alliance, tried to salvage what was left of the fraction, by sending requests to Bucharest and Belgrade, but the call was not heeded."
+ hun_news.3.a:0 "Their weak coalition crumbles."
+ hun_news.3.b:0 "Inaction will be our undoing."
+ hun_news.3.c:0 "Looks like this alliance was not meant to be."
+ 
+ hun_news.4.t:0 "The Visegrád Group"
+ hun_news.4.d_both:0 "The newly democratic Hungary has not been idle  on the international front. After a long meeting between the leaders of Hungary, Czechoslovakia, and Poland, the triple alliance of Visegrád was born, and all three members signed military agreements with each other. This new faction can become a serious player in Europe, should conflict reach its members."
+ hun_news.4.d_POL:0 "Hungary, with its new democratic leadership, has begun to form the semblance of an alliance, by signing a pact with Poland. Originally, the plans included Czechoslovakia in the alliance, but the negotiations ended without them. This might be the start of a greater alliance, or a weak attempt at forming a faction between the great powers of Europe."
+ hun_news.4.d_CZE:0 "Hungary, with its new democratic leadership, has begun to form the semblance of an alliance, by signing a pact with Czechoslovakia. Originally, the plans included Poland in the alliance, but the negotiations ended without them. This might be the start of a greater alliance, or a weak attempt at forming a faction between the great powers of Europe."
+ hun_news.4.a:0 "Let us hope for lasting cooperation."
+ hun_news.4.b:0 "We are wise to stay out of this."
+ hun_news.4.c:0 "This is mildly interesting."
+ hun_news.4.c:0 "Maybe this will stabilize the region."
+ 
+ hun_news.5.t:0 "[From.GetAdjective] decree against [HUN.GetAdjective] expansion"
+ hun_news.5.d:0 "[From.GetName] has issued an open declaration of disapproval against recent [HUN.GetAdjective] actions, deeming their unjustified expansion as an act of war. They also proclaimed, that they are willing to take up arms against [HUN.GetName], to turn them away from the path of revisionism."
+ hun_news.5.a:0 "Let them try."
+ hun_news.5.b:0 "We must not condone the violation of the peace of Europe."
+ hun_news.5.c:0 "Will this be enough to stop them?"
+ 
+ hun_news.6.t:0 "[From.GetAdjective] goes to war to stop [HUN.GetAdjective] expansion"
+ hun_news.6.d:0 "[From.GetLeader] has made right on his promise to stand up to [HUN.GetAdjective] aggressiveness. [From.GetName] is now at war with [HUN.GetName]."
+ hun_news.6.a:0 "We will welcome them with machine guns."
+ hun_news.6.b:0 "To arms!"
+ hun_news.6.c:0 "War it is then."
+ 
+ hungary_flavor_gen.1.t:0 "Reemergence of Austria-Hungary"
+ hungary_flavor_gen.1.d:0 "Following a long conference between the Austrian and Hungarian governments, it has been decided, that the two nations will once again be ruled by the same ruler, namely Otto von Habsburg, eldest son of the last Habsburg emperor."
+ hungary_flavor_gen.1.a:0 "A most interesting development indeed."
+ 
+ hungary_flavor_gen.2.t:0 "The Danubian Coalition"
+ hungary_flavor_gen.2.d:0 "The newly democratic Hungary has called all the unaligned leaders of the area to discuss a proposed coalition. It would be taken under the wings of the United Kingdom, whose representatives will also be attending the conference. Joining this alliance might well protect us from external threats, but it would also tie our hands in some foreign matters."
+ hungary_flavor_gen.2.a:0 "Accept."
+ hungary_flavor_gen.2.b:0 "Decline."
+ 
+ hungary_flavor_gen.3.t:0 "Imperialist coup in Czechoslovakia"
+ hungary_flavor_gen.3.d:0 "The recent days have seen much movement in Prague. Supporters of the old Austro-Hungarian Monarchy have swiftly stormed the city, meeting little resistance, and capturing government officials by the hundreds. The imperialists have set up a new government, which openly seeks to rejoin the reborn Monarchy."
+ hungary_flavor_gen.3.a:0 "What an excellent development."
+ hungary_flavor_gen.3.b:0 "An unexpected turn of events."
+ 
+ hungary_flavor_gen.4.t:0 "[From.GetAdjective] expansion"
+ hungary_flavor_gen.4.d:0 "[From.GetName] has made some aggressive expansion recently, turning some heads all across Europe. Letting them continue with their demands and territory grabs might potentially ruin the precarious peace, set up after the Great War, but the alternative is military intervention. Will we tolerate this attack against democracy?"
+ hungary_flavor_gen.4.a:0 "We have to intervene."
+ hungary_flavor_gen.4.b:0 "They'll stop eventually."
+ 
+ hungary_flavor_gen.5.t:0 "The Visegrád Group"
+ hungary_flavor_gen.5.d:0 "Hungary has plans for a new alliance, that includes [Root.GetName]. They call their initiative 'The Visegrád Group', and the goal of the alliance is to ensure military protection of its members, and to have a common foreign policy, which represents the views of all of its memberstates. The alliance could be beneficial, and closer cooperation with neighboring powers would make us stronger internationally. What will we answer to their invitation?"
+ hungary_flavor_gen.5.a:0 "Accept."
+ hungary_flavor_gen.5.b:0 "Decline."
+ 
+ hungary_flavor_gen.6.t:0 "The Visegrád Economic Circle"
+ hungary_flavor_gen.6.d:0 "After a series of meetings between members of the Visegrád Group, the current leader, Hungary, has announced, that the Visegrád Group will now also be an economic union, creating a shared market between its members, and ensuring the free flow of trade internally."
+ hungary_flavor_gen.6.a:0 "This will benefit us all."
+ 
+ hungary_flavor_gen.7.t:0 "Visegrád Group membership"
+ hungary_flavor_gen.7.d:0 "We have now officially joined the Visegrád Group. We have signed all treaties that go with the membership, and are now full beneficiaries of all the bonuses that members have."
+ hungary_flavor_gen.7.a:0 "This will benefit us all."
+ 
+ hungary_flavor_gen.8.t:0 "Leaving the Visegrád Group"
+ hungary_flavor_gen.8.d:0 "After leaving the Visegrád Group, we naturally have to invalidate all treaties and agreements that were included in the membership. It will take a long time, but we will finally be free of the boundaries of the union."
+ hungary_flavor_gen.8.a:0 "We must put this behind us."
+ 
+ hungary_flavor_gen.9.t:0 "[From.GetName] leaves the Visegrád Group"
+ hungary_flavor_gen.9.d:0 "[From.GetName] has been a member of the Visegrád Group for a short time, and has decided to leave already. Surely, they had their reasons, and we are sad to see them go, but important matters require our attention with these events, as we have to annul our treaties and agreements with them, in accordance with the Visegrád Group's policy."
+ hungary_flavor_gen.9.a:0 "This is a sad day for the alliance."
+ 
+ hungary_flavor_gen.10.t:0 "The Visegrád Technology Circle"
+ hungary_flavor_gen.10.d:0 "As part of the Visegrád Group's ever expanding system of treaties, memberstates now enter a mandatory technology circle, which guarantees sharing of technologies, without discrimination. With a joint effort, nations of the alliance will no doubt advance faster than alone."
+ hungary_flavor_gen.10.a:0 "Together, for science!"
+ 
+ hungary_flavor_gen.11.t:0 "The Visegrád Military Council"
+ hungary_flavor_gen.11.d:0 "The already strong cooperation between members of our alliance is now extended by a common military board. The Visegrád Military Council will oversee joint operations, closely cooperating with each nation's high command."
+ hungary_flavor_gen.11.a:0 "Security is in our common interest."
+ 
+ hungary_flavor_aus.1.t:0 "Hungarian aliance"
+ hungary_flavor_aus.1.d:0 "Diplomats from Hungary have been working day and night in the past month at our embassies to bring an alliance undro the roof between the two countries. It might indeed be beneficial for the two nations to reunite after three long decades."
+ hungary_flavor_aus.1.a:0 "Of course, the Hungarians have ever been our friends."
+ hungary_flavor_aus.1.b:0 "We will not serve their foolish nationalist purposes."
+ 
+ hungary_flavor_aus.2.t:0 "Hungary pushes for Burgenland referendum"
+ hungary_flavor_aus.2.d:0 "Our new and old ally, Hungary has suffered great territorial losses after the Great War, including one of our states: Burgenland. They have proposed a referendum for the people living in the area, which would enable them to vote for staying in Austria, or rejoining Hungary, much like the city of Sopron did in 1921. The referendum is likely to go in favor of Hungary, considering the ethnic structure of the state. Will we allow this vote tho proceed?"
+ hungary_flavor_aus.2.a:0 "Allow the referendum."
+ hungary_flavor_aus.2.b:0 "Never."
+ 
+ hungary_flavor_aus.3.t:0 "Hungary offers Slovenia for Burgenland"
+ hungary_flavor_aus.3.d:0 "Although we were not invited to the conference that repartitions Yugoslavia, the Hungarian leadership decided to send us a bold offer regarding Slovenia. They wish to trade it to us, in exchange for Burgenland. Slovenia was part of our country for a long time, and Burgenland is historically Hungarian land, so the exchange would certainly make sense. What is our response?"
+ hungary_flavor_aus.3.a:0 "Accept."
+ hungary_flavor_aus.3.b:0 "Decline."
+ 
+ hungary_flavor_pol.1.t:0 "Hungarian alliance"
+ hungary_flavor_pol.1.d:0 "Out of the ashes of the Great War, Hungary has finally risen, and formed a faction of their own. THey have now reached out to our government, to invite us to this alliance, and stand against whatever may threaten the sovereignty."
+ hungary_flavor_pol.1.a:0 "How could we refuse?"
+ hungary_flavor_pol.1.b:0 "We can't accept."
+ 
+ hungary_flavor_pol.2.t:0 "Austria-Hungary demands Krakow and Galicia"
+ hungary_flavor_pol.2.d:0 "Most of our southern territories were once part of Austria-Hungary. Now that the Empire is reborn, they requested that we relinquish control over Krakow and Galicia, or face repercussions."
+ hungary_flavor_pol.2.a:0 "Cede the territories in question."
+ hungary_flavor_pol.2.b:0 "Refuse the demand."
+ 
+ hungary_flavor_pol.3.t:0 "Polish-Hungarian intelligence exchange"
+ hungary_flavor_pol.3.d:0 "Hungarian diplomatic and intelligence corps have signed a mutual agreement with ours, which expands intelligence exchange between the two countries, benefiting both."
+ hungary_flavor_pol.3.a:0 "Cooperation is always the way to go."
+ 
+ hungary_flavor_pol.4.t:0 "[From.GetName] supports our northern claims"
+ hungary_flavor_pol.4.d:0 "Our new alliance might provide opportunities, that we alone could not have exploited. [From.GetName] is officially backing our claim on Ostpreussen, which would make it very easy to take it in a war, should we beat Germany."
+ hungary_flavor_pol.4.a:0 "[Root.GetFactionName] is our salvation."
+ 
+ hungary_flavor_bul.1.t:0 "Hungarian alliance"
+ hungary_flavor_bul.1.d:0 "Hungarian diplomats have recently approached our government with a proposed alliance. Apparently, they have formed a faction they call 'The New Central Powers', and would like us to join. An interesting proposal for sure, as some of the rivals of hungary coincide with ours."
+ hungary_flavor_bul.1.a:0 "Interesting indeed. We accept!"
+ hungary_flavor_bul.1.b:0 "New Central Powers? Nonsense."
+ 
+ hungary_flavor_bul.2.t:0 "Burgas Industrial Development Project"
+ hungary_flavor_bul.2.d:0 "[From.GetName] has decided to help us by funding factory construction in Burgas. The factories are primarily for military purpose, but they are under our full control. This act of generosity is proof of the goodwill of [From.GetName]."
+ hungary_flavor_bul.2.a:0 "I knew it was the right choice to side with them."
+ 
+ hungary_flavor_ita.1.t:0 "Ljubljana for Zara and Fiume"
+ hungary_flavor_ita.1.d:0 "Hungary has called for a conference, to repartition Yugoslavia. On the subject of Slovenia, they have decided to offer it to us, in exchange for the ports of Zara and Fiume. This might seem like a fruitious deal, but we would lose a precious port on the Mediterranean Sea. What is our reply?"
+ hungary_flavor_ita.1.a:0 "Accept."
+ hungary_flavor_ita.1.b:0 "Decline."
+ 
+ hungary_flavor_ita.2.t:0 "Negotiations with Hungary"
+ hungary_flavor_ita.2.d:0 "Following the Hungarian drift towards Germany, their diplomats have apporached us to settle our diplomatic relations.\n\n\n(Hover over the response to see the conditions proposed by Hungary)."
+ hungary_flavor_ita.2.a:0 "Accept."
+ hungary_flavor_ita.2.b:0 "Decline."
+ 
+ hungary_flavor_ita.3.t:0 "Zara and Fiume in Exchange for military support"
+ hungary_flavor_ita.3.d:0 "Hungary has expressed their desire to acquire the port of Zara, and have proposed the following deal: Our countries sign a pact of non-aggression, and they trade a significant amount of infantry equipment with us, in exchange for our ports in Croatia. What shall we tell their diplomats?"
+ hungary_flavor_ita.3.a:0 "Accept the deal."
+ hungary_flavor_ita.3.b:0 "Decline the deal."
+ 
+ hungary_flavor_ita.4.t:0 "Zara, Fiume and Istria for military and political support"
+ hungary_flavor_ita.4.d:0 "A bold proposal was presented to us by Hungarian diplomats. They wish to trade a significant amount of equipment for the ports of Zara and Fiume, and the province of Istria, furthermore promising to aid our political goals in the future, in any way they can. This might gain us a valuable ally, but we would lose Dalmatian land in the process."
+ hungary_flavor_ita.4.a:0 "Accept the deal."
+ hungary_flavor_ita.4.b:0 "Decline the deal."
+ 
+ hungary_flavor_ita.5.t:0 "Austria-Hungary demands their old territories"
+ hungary_flavor_ita.5.d:0 "The reawakened Monarhcy of Austria-Hungary has made it clear, that they wish to restore their old territoy. That includes our provinces of Istria and South Tyrol. They have now approached us with a proposed peaceful transfer of those territories, in return for some Greek territory, and a promise of peace in the future. Do we agree to this deal?"
+ hungary_flavor_ita.5.a:0 "Finally an opportunity to expand into Greece."
+ hungary_flavor_ita.5.b:0 "We will not become the lapdogs of the Monarchy."
+ 
+ hungary_flavor_ita.6.t:0 "Fruits of the Yugoslavian partition"
+ hungary_flavor_ita.6.d:0 "During the conference, which arranged the repartition of Yugoslavia, [From.GetName] has given us some much desired land. Some advisors are suggesting, that this is the beginning of a fruitful friendship between our countries, and we should seek closer ties with them. We could ask to join their faction, and perhaps we will end up with even more territory gained."
+ hungary_flavor_ita.6.a:0 "Propose an alliance."
+ hungary_flavor_ita.6.b:0 "We will keep the distance."
+ 
+ hungary_flavor_ita.7.t:0 "Germany cedes Ljubljana"
+ hungary_flavor_ita.7.d:0 "We have made our claims known for everyone, and Germany has taken the hint. They handed over ownership of Ljubljana to us."
+ hungary_flavor_ita.7.a:0 "As expected."
+ 
+ hungary_flavor_ger.1.t:0 "Hungary seeks membership in the Axis"
+ hungary_flavor_ger.1.d:0 "After countless diplomatic missions to our government, Hungary has finally approached us with a proposed alliance, seeking entry into the Axis. They could indeed make valuable allies if we aid them in their territorial expansion."
+ hungary_flavor_ger.1.a:0 "Welcome our Hungarian friends."
+ hungary_flavor_ger.1.b:0 "We are better off without them."
+ 
+ hungary_flavor_ger.2.t:0 "Communism victorious"
+ hungary_flavor_ger.2.d:0 "Now that the worker's revolution is triumphant, we have to decide on how to continue. Will we seek international cooperation with other communist countries, or will we be the masters of our own fate, and struggle towards the socialist utopia all by ourselves?"
+ hungary_flavor_ger.2.a:0 "Internationalism is the way to go."
+ hungary_flavor_ger.2.b:0 "We need to continue the revolution on our own."
+ 
+ hungary_flavor_ger.3.t:0 "Communist Germany seeks entry into [Root.GetFactionName]"
+ hungary_flavor_ger.3.d:0 "In a strange twist of fate, Germany has become the newest communist nation. They now seek entry into the [Root.GetFactionName], and we need to decide whether to accept their request or not."
+ hungary_flavor_ger.3.a:0 "Of course we will."
+ hungary_flavor_ger.3.b:0 "They need to find their own path."
+ 
+ hungary_flavor_ger.4.t:0 "[From.GetName] accepts faction membership"
+ hungary_flavor_ger.4.d:0 "The negotiations with [From.GetName] were, successful, and we have signed the alliance between the two countries. The fire of the revolution shall burn all the more brighter after this day.!
+ hungary_flavor_ger.4.a:0 "Onwards, comerades!"
+ 
+ hungary_flavor_ger.5.t:0 "[From.GetName] declines faction membership"
+ hungary_flavor_ger.5.d:0 "Despite our best efforts, we could not convince the [From.GetAdjective] leadership to invite us into the [From.GetFactionName]."
+ hungary_flavor_ger.5.a:0 "They must have their reasons."
+ 
+ hungary_flavor_ger.6.t:0 "Hungary seeks to restore Austro-Hungarian Monarchy"
+ hungary_flavor_ger.6.d:0 "Seeking to revise the treaties of the Great War, Hungary has started negotiations with Austria to reawaken the Austro-Hungarian monarchy. Seeing as the territorial integrity of Austria might be in our interest, this step could potentially harm our future political endavours."
+ hungary_flavor_ger.6.a:0 "This is of little consequence."
+ hungary_flavor_ger.6.b:0 "We can't let them interfere with our sphere of influence."
+ 
+ hungary_flavor_ger.7.t:0 "Hungary refuses to back down"
+ hungary_flavor_ger.7.d:0 "Stubbornly clinging to her imperialist ambitions, Hungary has refused to cease negotiations with Austria. We did openly oppose their actions, which is cause enough for a forceful intervention. Will we take action right away, or will we let the situation play out?"
+ hungary_flavor_ger.7.a:0 "An intervention will be necessary."
+ hungary_flavor_ger.7.b:0 "They will regret opposing the power of [Root.GetName]... Later."
+ 
+ hungary_flavor_ger.8.t:0 "Securing the loyalty of Hungary"
+ hungary_flavor_ger.8.d:0 "As the war draws on, some of our political advisors are beginningto question the motives of Hungary. We have received reports, that they are negotiating with the enemy, and trying to undermine [Root.GetName]. We could easily ensure their loyalty by occupying their country, and staging a coup, to install a friendlier government. A plan has been devised under the name 'Margaretha', that would serve this need."
+ hungary_flavor_ger.8.a:0 "Start preparations for Opearation Margaretha."
+ hungary_flavor_ger.8.b:0 "Surely, they foster no thoughts of betrayal."
+ hungary_flavor_ger.8.tt:0 "A German-friendly regime will be installed in Hungary.\n"
+ 
+ hungary_flavor_ger.9.t:0 "Assisting Hungary"
+ hungary_flavor_ger.9.d:0 "Seeking close cooperation, Hungary has requested that part of our general staff be sent to advise them in military matters. We could exert more influence in their country, if we were to do so, and sending them some of our generals might even make them a competent ally in the future. What is our response to their request?"
+ hungary_flavor_ger.9.a:0 "We can spare some generals."
+ hungary_flavor_ger.9.b:0 "Send a token mission of military advisors."
+ hungary_flavor_ger.9.c:0 "They do not have our support."
+ 
+ hungary_flavor_ger.10.t:0 "Italian Claims on Ljubljana"
+ hungary_flavor_ger.10.d:0 "We own the southern part of Slovenia, but Italy has also laid claims on it. Perhaps, as a sign of goodwill, we should hand it over to them for now. This might help cement the alliance between our nations."
+ hungary_flavor_ger.10.a:0 "They can have it."
+ hungary_flavor_ger.10.b:0 "Ljubljana is ours."
+ 
+ hungary_flavor_ger.11.t:0 "Germany demanding Anschluss"
+ hungary_flavor_ger.11.d:0 "The question of German unity has been hanging in the air for a long time, and now Germany has made her move to put an end to the matter. They demand that [AUS.GetName] be united with them, and since we are protecting [AUS.GetName] at this time, we will be deciding what to answer."
+ hungary_flavor_ger.11.a:0 "Let them take it."
+ hungary_flavor_ger.11.b:0 "We will protect thair freedom."
+ 
+ hungary_flavor_ger.12.t:0 "Germany wants to partition Czechoslovakia"
+ hungary_flavor_ger.12.d:0 "Czechoslovakia is under our protection, yet Germany seeks to rip it apart and dived it up as they desire. We can decide to protect them, but that would likely result in a war with Germany. What will we react to this?"
+ hungary_flavor_ger.12.a:0 "We can not protect Czechoslovakia."
+ hungary_flavor_ger.12.b:0 "Let them try. We will drive them back."
+ 
+ hungary_flavor_ger.13.t:0 "Former Hungarian lands in Serbia"
+ hungary_flavor_ger.13.d:0 "As it is known, Hungary wants to recreate their old Kingdom, and we are now in posession of some of it. States in Vojvodina (the northern part of Serbia) belonged to the Kingdom of Hungary for centuries, and there is not much strategic value in keeping them. Will we offer it to Hungary?"
+ hungary_flavor_ger.13.a:0 "We will offer them their lands back."
+ hungary_flavor_ger.13.b:0 "They should be content with what they have."
+ 
+ hungary_flavor_ger.14.t:0 "Meeting with Horthy"
+ hungary_flavor_ger.14.d_nothing:0 "We have devised plans to divide Czechoslovakia, but the position of Hungary is still unsure in the matter. During a meeting with their regent, Miklós Horthy, the matter was discussed, and their stance was neutral. Horthy wants no part of Czechoslovakia, and seems to despise us for wanting to destroy it."
+ hungary_flavor_ger.14.d_carpathian_ruthenia:0 "We have devised plans to divide Czechoslovakia, but the position of Hungary is still unsure in the matter. During a meeting with their regent, Miklós Horthy, the matter was discussed, and Horthy seemed reluctant to claim a decisive role in the plan. He expressed a desire to acquire Carpathian Ruthenia though, which does not play a significant role in our plans."
+ hungary_flavor_ger.14.d_slovakia:0 "We have devised plans to divide Czechoslovakia, but the position of Hungary is still unsure in the matter. During a meeting with their regent, Miklós Horthy, the matter was discussed, and Horthy agreed to make Hungary the aggressor in this matter, if we gave them the entirety of Slovakia."
+ hungary_flavor_ger.14.a:0 "We can agree to these requests."
+ hungary_flavor_ger.14.b:0 "We can make no promises."
+ hungary_flavor_ger.14.c:0 "We will be carving up Czechoslovakia on our own terms then."
+ 
+ hungary_flavor_ger.16.t:0 "The Hungarian SS"
+ hungary_flavor_ger.16.d:0 "We have agreed with the Hungarian government, on the formation of two Hungarian SS divisions, for which they will provide most of the manpower. In return, we will subsidize their tank production, and share some of our heavy tank designs with them."
+ hungary_flavor_ger.16.a:0 "A welcome addition to our army."
+ 
+ hungary_flavor_cze.1.t:0 "Hungary demands Slovakia"
+ hungary_flavor_cze.1.d:0 "The revisionist government of Hungary has decided to claim all former Hungarian land. Slovakia, a former province of the Kingdom of Hungary, is in our possession, so they issued their demands to immediately transfer ownership of it. Refusing might provoke aggression, and possibly, war."
+ hungary_flavor_cze.1.a:0 "Cede the territory."
+ hungary_flavor_cze.1.b:0 "Refuse."
+ 
+ hungary_flavor_cze.2.t:0 "Imperialist coup"
+ hungary_flavor_cze.2.d:0 "A small group of people, who still support the Austro-Hungarian Monarchy, have stormed Prague, and seized control over the government. The military leadership of the country was either bribed, or is just shocked into inaction, as the coup did not meet much resistance. The imperialists certainly had foreign support, and the prime suspect is the neighboring Austro-Hungarian Empire. Who would have thought?"
+ hungary_flavor_cze.2.a:0 "Long live the Habsburgs... I guess."
+ 
+ hungary_flavor_cze.3.t:0 "Merge with Austria-Hungary"
+ hungary_flavor_cze.3.d:0 "Now that Austria-Hungary has reemerged, they seek to restore their old territory. Our country has entirely been part of the Empire, and as expected, they invited us to rejoin their fold. We would enjoy the protection of a much larger country, but we would be subjects to other nations yet again."
+ hungary_flavor_cze.3.a:0 "We need their protection."
+ hungary_flavor_cze.3.a:0 "What an absurd proposition."
+ 
+ hungary_flavor_cze.4.t:0 "Alliance Austria-Hungary"
+ hungary_flavor_cze.4.d:0 "We have signed the much desired treaty with Austria-Hungary. We are now part of their faction."
+ hungary_flavor_cze.4.a:0 "Excellent."
+ 
+ hungary_flavor_cze.5.t:0 "Reawakening the Little Entente"
+ hungary_flavor_cze.5.d:0 "Austria-Hungary has resurfaced, and with it, the threats of subjugation as well. Although our relations with the other members of the Little Entente have deteriorated somewhat, we must not forget the reason we bound together in the first place. The restoration of the Habsburgs has to be prevented at all costs, so we should tighten our relationship with Romania and Yugoslavia, to defend ourselves."
+ hungary_flavor_cze.5.d_2:0 "Hungary has announced their claims on all of their lost territory, and that includes most of our country. Although our relations with the other members of the Little Entente have deteriorated somewhat, we must not forget the reason we bound together in the first place. The expansion of Hungary has to be limited at all costs, so we should tighten our relationship with Romania and Yugoslavia, to defend ourselves."
+ hungary_flavor_cze.5.a:0 "Send emissaries to Romania and Yugoslavia."
+ hungary_flavor_cze.5.b:0 "The Little Entente is but a long forgotten dream. We can do nothing."
+ 
+ hungary_flavor_cze.6.t:0 "Fate of the Little Entente"
+ hungary_flavor_cze.6.d_both:0 "We can rest easy, as the entirety of the Little Entente is behind us now. Both Romania and Yugoslavia have agreed to reinforce our alliance, and isolate this new threat as much as we can."
+ hungary_flavor_cze.6.d_rom:0 "Romania has answered our call, and decided to stand with us against the threats we face. Yugoslavia can be consumed by it for all we care, but it would have been best if they too listened to reason."
+ hungary_flavor_cze.6.d_yug:0 "Yugoslavia has answered our call, and decided to stand with us against the threats we face. Perhaps this will be enough to stop the war-hungry beast between our borders, but our efforts might be too little, too late."
+ hungary_flavor_cze.6.d_neither:0 "Our calls have gone unheard. Romania and Yugoslavia decided that our alliance is not worth enough, for them to take action against the threats ahead. But if we will not contain it, who will?"
+ hungary_flavor_cze.6.a:0 "We will stop this menace together!"
+ hungary_flavor_cze.6.b:0 "At least Romania stands with us."
+ hungary_flavor_cze.6.b:0 "At least our southern brothers stand with us."
+ hungary_flavor_cze.6.b:0 "This is a big disappointment for our nation."
+ 
+ hungary_flavor_cze.7.t:0 "Slovakian-Hungarian small war"
+ hungary_flavor_cze.7.d:0 "In these time of troubles, our country faced yet another danger. The Hungarians have attacked us from the east, seeking to expand their newly gained territroy. Though the attack took us unawares, we eventually managed to push them back, almost to where they started from. Hostilities have ceased, and only a few dozen died on both sides, while we lost very little land in the process. The Hungarians have been halted, and our nation defended!"
+ hungary_flavor_cze.7.a:0 "We have successfully stopped Hungarian aggression."
+ 
+ hungary_flavor_cze.8.t:0 "Hungary asks for a referendum in Southern Slovakia"
+ hungary_flavor_cze.8.d:0 "Although Hungary now has a democratic leadership, it would seem that they have not given up on regaining old territory. They ask, that we hold a referendum in Southern Slovakia, and let the people decide, whether they want to stay in Czechoslovakia, or join Hungary. The results would likely go their way, but disallowing the referendum would make us look undemocratic in the eyes of some."
+ hungary_flavor_cze.8.a:0 "Allow the referendum."
+ hungary_flavor_cze.8.b:0 "Southern Slovakia is ours, and always will be."
+ 
+ hungary_flavor_cze.9.t:0 "Hungary forces through Southern Slovakian referendum"
+ hungary_flavor_cze.9.d:0 "Even though we refused to hold the Southern Slovakian referendum, Hungary used their influence in [Root.GetFactionName], and forced our hand. This is an outrage, that will not be forgotten anytime soon. For now, we have to swallow our pride, and comply to the wishes of our allies."
+ hungary_flavor_cze.9.a:0 "We will remember this."
+ 
+ hungary_flavor_rom.1.t:0 "Hungary demands Transylvania"
+ hungary_flavor_rom.1.d:0 "The revisionist government of Hungary has decided to claim all former Hungarian land. Transylvania, a former province of the Kingdom of Hungary, is in our possession, so they issued their demands to cede all of it immediately. Refusing might provoke aggression, and possibly, war, yet some are suggesting, to issue a counterdemand, and say that we want all of their territory east of the Tisza. What will we answer to their demands?"
+ hungary_flavor_rom.1.a:0 "Cede the territory."
+ hungary_flavor_rom.1.b:0 "Refuse."
+ hungary_flavor_rom.1.c:0 "We will issue a counterdemand!"
+ 
+ hungary_flavor_rom.2.t:0 "Austria-Hungary demands Bucovina"
+ hungary_flavor_rom.2.d:0 "Bucovina - a small province in the northern Carpathian mountains - used to belong to Austria-Hungary. Now, that they have rien from the ashes of the Great War, they ask that we return it to them. The province is rightfully ours, but is it worth risking our entire nation for?"
+ hungary_flavor_rom.2.a:0 "Cede Bucovina."
+ hungary_flavor_rom.2.b:0 "Refuse."
+ 
+ hungary_flavor_rom.3.t:0 "[From.GetName] threatens war for Banat"
+ hungary_flavor_rom.3.d:0 "After strongarming us into handing over Transylvania, Hungary has now laid her eyes on Banat. This province is primarily Romanian in ethnitcity, so they have no valid claim on it. They threaten to go to war over the dispute, if we refuse to withdraw from the province."
+ hungary_flavor_rom.3.a:0 "Withdraw the troops from Banat."
+ hungary_flavor_rom.3.b:0 "We'll defend it if we have to."
+ 
+ hungary_flavor_rom.4.t:0 "[From.GetName] backs down"
+ hungary_flavor_rom.4.d:0 "Our bravery yielded rewards. The cowards in Hungary backed down, instead of doing right on their promise to declare war over Banat."
+ hungary_flavor_rom.4.a:0 "It was an empty threat, as expected."
+ 
+ hungary_flavor_rom.5.t:0 "Reawakening the Little Entente"
+ hungary_flavor_rom.5.d:0 "With the Reemergence of Austria-Hungary, our territorial integrity might be in danger. Czechoslovakia has also recognized this, and called for a renewal of the Little Entente alliance. Perhaps togther we stand a chance against the new Austro-Hungarian empire."
+ hungary_flavor_rom.5.d_2:0 "Hungary has recently announced their claims on all of their old territory. Although their effort seems laughably weak, we must not underestimate the power of stupidity. Czechoslovakia has called for a renewal of the Little Entente alliance, in an effort to contain the newfound ambitions of Hungary."
+ hungary_flavor_rom.5.a:0 "We will stand against this outrage together."
+ hungary_flavor_rom.5.b:0 "Tell them to leave us out of their petty alliance."
+ hungary_flavor_rom.5.tt:0 "Romania will join Czechoslovakia in the Little Entente."
+ 
+ hungary_flavor_rom.6.t:0 "[From.GetName] refuses demands"
+ hungary_flavor_rom.6.d:0 "Although not entirely unexpected, the refusal of our demands is still an affront to our very nation. [From.GetName] refused to cede their holdings east of the Tisza, so now we are free to declare a war for it."
+ hungary_flavor_rom.6.a:0 "We will wash that land clean with their soldiers' blood."
+ 
+ hungary_flavor_rom.7.t:0 "[From.GetName] yields"
+ hungary_flavor_rom.7.d:0 "Many doubted that the demands will have any effect on the judgement of the [From.GetAdjective] government, yet they somehow still gave in, and retreated from the Transtisza region. It has never been this easy to gain territory."
+ hungary_flavor_rom.7.a:0 "Glory to Romania!"
+ 
+ hungary_flavor_sov.1.t:0 "Hungary seeks membership in the Comintern"
+ hungary_flavor_sov.1.d:0 "As the communist revolution has taken hold in Hungary, its leaders have turned to us, seeking to support, and be supported by the international communist organization. Will we allow them into our fold?"
+ hungary_flavor_sov.1.a:0 "Of course."
+ hungary_flavor_sov.1.b:0 "They are but the litter of Imperialism."
+ 
+ hungary_flavor_sov.2.t:0 "Hungary wants to switch sides"
+ hungary_flavor_sov.2.d:0 "Like a rat, that has caught the smell of poison, Hungary seeks to abandon their German allies, and turn to us for protection. Their defeat is close, so this exit attempt is not entirely unexpected. What is our response?"
+ hungary_flavor_sov.2.a:0 "We'll support their attempts."
+ hungary_flavor_sov.2.b:0 "They will be liberated by force."
+ hungary_flavor_sov.2.tt:0 "A communist regime will attempt to take power in Hungary, which will gladly join us in the war against Germany.\n"
+ 
+ hungary_flavor_eng.1.t:0 "Hungary seeks membership in the Allies"
+ hungary_flavor_eng.1.d:0 "Hungary, a with a newly elected democratic government at its head, has approached us with a request to join the Allies. While this might easily drag us into a war against surrounding fascist countries, Hungary might prove to be a valuable ally, and perhaps even a diplomatic relay towards neighboring countries."
+ hungary_flavor_eng.1.a:0 "Accept."
+ hungary_flavor_eng.1.b:0 "Decline."
+ 
+ hungary_flavor_eng.2.t:0 "Danubian Conference arbitrated by Hungary"
+ hungary_flavor_eng.2.d:0 "We have recently found an unexpected, but welcome ally in Hungary. They have started arranging for a conference of sorts, to which they invited the local country leaders, to discuss a defensive coalition within the bounds of the Allies. Any signatories to this coalition, will become part of our alliance."
+ hungary_flavor_eng.2.a:0 "Let us hope for the best."
+ 
+ hungary_flavor_eng.3.t:0 "Hungary wants to switch sides"
+ hungary_flavor_eng.3.d:0 "Like a rat, that has caught the smell of poison, Hungary seeks to abandon their German allies, and turn to us for protection. Their defeat is close, so this exit attempt is not entirely unexpected. What is our response?"
+ hungary_flavor_eng.3.a:0 "We'll support their attempts."
+ hungary_flavor_eng.3.b:0 "They will be liberated by force."
+ hungary_flavor_eng.3.tt:0 "A democratic regime will attempt to take power in Hungary, which will gladly join us in the war against Germany.\n"
+ 
+ hungary_flavor_eng.4.t:0 "[From.GetName] asks for peace"
+ hungary_flavor_eng.4.d:0 "We have condemned the actions of [From.GetName], to the point where we took up arms to stop them. Now they have achieved what they set out to do, and wish to negotiate a peace treaty. They would get to keep all land that was taken from them in the Treaty of Trianon, and hostilities would cease. What is our response."
+ hungary_flavor_eng.4.a:0 "Fair enough. We have other things to worry about."
+ hungary_flavor_eng.4.b:0 "We will not let them get away with this."
+ 
+ hungary_flavor_eng.5.t:0 "[From.GetName] offers their help against Romania"
+ hungary_flavor_eng.5.d:0 "After the declaration of war from Romania, [From.GetAdjective] diplomats have approached us with a proposal. [From.GetName] is willing to declare war on Romania, if we promise, that they get Transylvania back, at the end of the war. Having an active ally in the region, that keeps Romania busy could certainly be beneficial, but this would mean commiting to [From.GetAdjective] revisionism."
+ hungary_flavor_eng.5.a:0 "We can use all the help we can get."
+ hungary_flavor_eng.5.b:0 "We won't make deals with the devil."
+ 
+ hungary_flavor_yug.1.t:0 "Everlasting Friendship with [From.GetName]"
+ hungary_flavor_yug.1.d:0 "[From.GetName], although still posing territorial claims to their former lands in our possession, has begun to send diplomats, and ambassadors to settle the relations between our countries. They propose an agreement of 'Everlasting Friendship', which would not bind our countries to much of anything, but it would mean that hostile relations between the two nations would end for good. This agreement might result in further relations with [From.GetName] down the line, if we agree to them."
+ hungary_flavor_yug.1.a:0 "Friendship it is."
+ hungary_flavor_yug.1.b:0 "Never."
+ 
+ hungary_flavor_yug.2.t:0 "Territorial negotiations with [From.GetName]"
+ hungary_flavor_yug.2.d:0 "Now that we have opted for cooperation with [From.GetName], in the Pact of Everlasting Friendship, they have proposed a settlement of territorial disputes. The province of Novi Sad is largely populated by Hungarians, and they want us to give it to them in return for future favors. We might be able to benefit from this, as a strong ally could help us in a possible conflict in the near future."
+ hungary_flavor_yug.2.a:0 "We will cede it, as a sign of friendship."
+ hungary_flavor_yug.2.b:0 "That is a line we cannot cross."
+ 
+ hungary_flavor_yug.3.t:0 "Alliance with [From.GetName]"
+ hungary_flavor_yug.3.d:0 "The Pact of Everlasting Friendship between [From.GetName] and Yugoslavia, while a proof of good relations, is nothing but an empty agreement. To further strengthen our relations, [From.GetName] has proposed a proper alliance, inviting us into their faction."
+ hungary_flavor_yug.3.a:0 "Tighter cooperation is our mutual interest."
+ hungary_flavor_yug.3.b:0 "We will keep our distance."
+ 
+ hungary_flavor_yug.4.t:0 "Reawakening the Little Entente"
+ hungary_flavor_yug.4.d:0 "With the Reemergence of Austria-Hungary, our territorial integrity might be in danger. Czechoslovakia has also recognized this, and called for a renewal of the Little Entente alliance. Perhaps togther we stand a chance against the new Austro-Hungarian empire."
+ hungary_flavor_yug.4.d_2:0 "Hungary has recently announced their claims on all of their old territory. Although their effort seems laughably weak, we must not underestimate the power of stupidity. Czechoslovakia has called for a renewal of the Little Entente alliance, in an effort to contain the newfound ambitions of Hungary."
+ hungary_flavor_yug.4.a:0 "We will stand against this outrage together."
+ hungary_flavor_yug.4.b:0 "Tell them to leave us out of their petty alliance."
+ hungary_flavor_yug.4.tt:0 "Yugoslavia will join Czechoslovakia in the Little Entente."
+ 
+ hungary_flavor_yug.5.t:0 "The Visegrád Group"
+ hungary_flavor_yug.5.d:0 "Hungary has recently set out to found their own faction among the greater powers in Europe, which they call the Visegrád Group. It doesn't have a whole lot of members yet, and they seek to invite us as one of the first. We could benefit from entering a regional alliance, but it might not be enough to defend us against our fascist neighbors. What shall we tell the Hungarians?"
+ hungary_flavor_yug.5.a:0 "Sounds like a deal."
+ hungary_flavor_yug.5.b:0 "We will take no part in this."
+ 
+ hungary_flavor_yug.6.t:0 "Hungary wants to settle border issue"
+ hungary_flavor_yug.6.d:0 "For some time now, our relations with Hungary have been overshadowed by the border disputes between our nations. Now they seek to settle these issues once and for all, and have called for a meeting, at which they wish to discuss a border settlement. The primary areas of concern are Novi Sad and Prekmurje, as these states have a significant Hungarian population. How will we approach the meeting ahead?"
+ hungary_flavor_yug.6.a:0 "Their request is just."
+ hungary_flavor_yug.6.b:0 "We can give some concessions."
+ hungary_flavor_yug.6.c:0 "The borders are not up for debate."
+ 
+ hungary_flavor_tur.1.t:0 "Alliance with [From.GetName]"
+ hungary_flavor_tur.1.d:0 "[From.GetName] is building a new alliance, to try and right the wrongs of the peace treaties of the Great War. Seeing as we were allies that time, it might prove advantageous to join them in their efforts, as we might be able to regain some land as well."
+ hungary_flavor_tur.1.a:0 "To victory with [From.GetName]!"
+ hungary_flavor_tur.1.b:0 "We won't be on the losing side again."
+ 
+ hungary_flavor_tur.2.t:0 "Troop exchange with [From.GetName]"
+ hungary_flavor_tur.2.d:0 "[From.GetName], our new ally, has proposed, that we build the friendship between our countries, by exchanging troops between our armies. We would receive a small number of their troops, and send them some of our own in return. Will we agree to their proposal, or is it too risky to jeopardize the lives of our men for the friendship of [From.GetName]?"
+ hungary_flavor_tur.2.a:0 "Their brigades will be a welcome addition to our army."
+ hungary_flavor_tur.2.b:0 "We cannot risk Turkish lives for their cause."
+ hungary_flavor_tur.2.tt:0 "We will receive 2 divisions of infantry from [From.GetName].\n"
+ 
+ hungary_flavor_alb.1.t:0 "[From.GetAdjective] generosity"
+ hungary_flavor_alb.1.d:0 "In the recent negotiations that partitioned Yugoslavia, we have received Montenegro from [From.GetName]. Perhaps we should consider closer cooperation with them, so we might enjoy such benefits in the future. We could send a request to join their faction, and aid their future efforts."
+ hungary_flavor_alb.1.a:0 "Their cause is just, we will join them."
+ hungary_flavor_alb.1.b:0 "Quietly accept the land, but don't align ourselves with them."
+ 
+ hungary_flavor_fin.1.t:0 "[From.GetAdjective] Alliance"
+ hungary_flavor_fin.1.d:0 "Diplomats from [From.GetName] have reached out to us, with an alliance offer. We could certainly use the help against the Soviets, but their forces might not be enough to stop them."
+ hungary_flavor_fin.1.a:0 "We need their help."
+ hungary_flavor_fin.1.b:0 "We can hold our own just fine."
+ 
+ hungary_flavor_partition.1.t:0 "The Partition of Yugoslavia"
+ hungary_flavor_partition.1.d:0 "The conference aiming to repartition Yugoslavia has commenced, and the first order of bussiness has been taken care of: Novi Sad, and Prekmurje will be returned to [Root.GetName], as their population is mostly Hungarian. These historical issues have been righted, and now we can move on to more controversial matters."
+ hungary_flavor_partition.1.a:0 "Let us see what else we can do."
+ 
+ hungary_flavor_partition.2.t:0 "The fate of Slavonia"
+ hungary_flavor_partition.2.d:0 "The inland region of Slavonia is next on the list. Noone has issued any claims on this land, but it was part of the historical Kingdom of Hungary for a very long time. Do we want to restore it to our country, or give the Croats freedom?"
+ hungary_flavor_partition.2.a:0 "We will have it back."
+ hungary_flavor_partition.2.b:0 "Create Croatian Puppet."
+ hungary_flavor_partition.2.c:0 "Liberate the Croats."
+ 
+ hungary_flavor_partition.3.t:0 "The fate of Croatia"
+ hungary_flavor_partition.3.d:0 "We need to decide upon the ownership of the Croatian core lands. Historically, it belonged to Hungary, but in the Croatian-Hungarian Settlement of 1868, it started existing as a separate entity, even if within the Habsburg monarchy. What will we do with this piece of coast?"
+ hungary_flavor_partition.3.a:0 "Annex it, just like Slavonia."
+ hungary_flavor_partition.3.b:0 "Give it back to Croatia."
+ 
+ hungary_flavor_partition.4.t:0 "The fate of Pag"
+ hungary_flavor_partition.4.d:0 "Pag is the small, coastal region of Croatia, that connects Fiume and Zara. Italy has laid claim to this territory, but we have the ultimate say in the fate of the land."
+ hungary_flavor_partition.4.a:0 "Annex it."
+ hungary_flavor_partition.4.b:0 "Give it back to Croatia."
+ hungary_flavor_partition.4.c:0 "Give it to Italy."
+ 
+ hungary_flavor_partition.6.t:0 "The fate of Bosnia"
+ hungary_flavor_partition.6.d:0 "Bosnia is next on the list of territories to deal with. The region has a mixed pupulation of muslims, croats and serbs. What will we do with it?"
+ hungary_flavor_partition.6.a:0 "Annex it."
+ hungary_flavor_partition.6.b:0 "Give it to Serbia."
+ hungary_flavor_partition.6.c:0 "Give it to Croatia."
+ hungary_flavor_partition.6.e:0 "Leave it be."
+ 
+ hungary_flavor_partition.7.t:0 "The fate of Dalmatia"
+ hungary_flavor_partition.7.d:0 "The coastline of Dalmatia, this small strip of Croatian shore is still undecided upon. Just like with the rest of the coast, Italy has expressed their intention to claim this land. What shall be its fate?"
+ hungary_flavor_partition.7.a:0 "Annex it."
+ hungary_flavor_partition.7.b:0 "Give it to Serbia."
+ hungary_flavor_partition.7.c:0 "Give it to Croatia."
+ hungary_flavor_partition.7.e:0 "Give it to Italy."
+ 
+ hungary_flavor_partition.5.t:0 "The fate of Serbia"
+ hungary_flavor_partition.5.d:0 "The core of Yugoslavia is serbian, and as such, their lands should enjoy priority, when deciding how to divide this artificial union of nations. We could annex the entirety of Serbia, or release it as a sovereign nation. The states of Macedonia and Montenegro will be decided upon later, as those have some other claimants, aside from Serbia."
+ hungary_flavor_partition.5.a:0 "Annex it."
+ hungary_flavor_partition.5.b:0 "Create a Serbian puppet state."
+ hungary_flavor_partition.5.c:0 "Liberate Serbia."
+ 
+ hungary_flavor_partition.8.t:0 "The fate of Torontal"
+ hungary_flavor_partition.8.d:0 "Now that Serbia has been dealt with, the regions to its north lie unclaimed. Torontal, the region to the east of Tisza, borders [Root.GetName], Romania, and Serbia. Historically, the Kingdom of Hungary owned this piece of land, but Romanians advocate their right to every bit of land east of the Tisza (including Hungarian territory)."
+ hungary_flavor_partition.8.a:0 "It belongs to us."
+ hungary_flavor_partition.8.b:0 "Serbia can have it."
+ hungary_flavor_partition.8.c:0 "Actually, let Romania have it."
+ 
+ hungary_flavor_partition.9.t:0 "The fate of Srem"
+ hungary_flavor_partition.9.d:0 "The other territory to the north of Serbia, that is yet undecided upon, is Srem. Its population is mostly Serbian, but there are some Croatian and Hungarian minorities as well. Just like Torontal, this land too was part of the Kingdom of Hungary in the olden days."
+ hungary_flavor_partition.9.a:0 "It belongs to us."
+ hungary_flavor_partition.9.b:0 "Serbia can have it."
+ hungary_flavor_partition.9.c:0 "Let us give it to Croatia."
+ 
+ hungary_flavor_partition.10.t:0 "The fate of Macedonia"
+ hungary_flavor_partition.10.d:0 "Macedonia was annexed by Serbia in the First Balkan War, even though Bulgaria laid claims to it. Now it falls to us to decide who this province belongs to."
+ hungary_flavor_partition.10.a:0 "[Root.GetName] of course."
+ hungary_flavor_partition.10.b:0 "It belongs to Serbia."
+ hungary_flavor_partition.10.c:0 "Give it to Bulgaria."
+ 
+ hungary_flavor_partition.11.t:0 "The fate of Tetovo"
+ hungary_flavor_partition.11.d:0 "Tetovo is a small strip of land between Macedonia and Albania, with a majority of Albanians. What will we do with this tiny territory?"
+ hungary_flavor_partition.11.a:0 "Annex it."
+ hungary_flavor_partition.11.b:0 "Give it to Albania."
+ hungary_flavor_partition.11.c:0 "Give it to Italy."
+ hungary_flavor_partition.11.e:0 "Give it to Bulgaria."
+ hungary_flavor_partition.11.f:0 "Give it to Serbia."
+ 
+ hungary_flavor_partition.12.t:0 "The fate of Prizren"
+ hungary_flavor_partition.12.d:0 "Prizren was originally part of Serbia, but it has a significant Albanian population. What will its fate be?"
+ hungary_flavor_partition.12.a:0 "Annex it."
+ hungary_flavor_partition.12.b:0 "Give it to Albania."
+ hungary_flavor_partition.12.c:0 "Give it to Italy."
+ hungary_flavor_partition.12.e:0 "Give it to Serbia."
+ 
+ hungary_flavor_partition.13.t:0 "The fate of Montenegro"
+ hungary_flavor_partition.13.d:0 "Montenegro is historically Serbian, but its people have a strong sense of pride, and have expressed the desire to govern themselves. Who shall the land go to, in this repartition"
+ hungary_flavor_partition.13.a:0 "Annex it."
+ hungary_flavor_partition.13.b:0 "It belongs to Serbia."
+ hungary_flavor_partition.13.c:0 "Give it to Albania."
+ hungary_flavor_partition.13.e:0 "Give it to Italy"
+ hungary_flavor_partition.13.f:0 "Liberate Montenegro" 
+ 
+ hungary_flavor_partition.14.t:0 "The fate of Ulcinj"
+ hungary_flavor_partition.14.d:0 "Ulcinj is a more controversial part of the Adriatic coastline, with mostly Albanian population. It has many claimants, and it falls to us to decide who it belongs to."
+ hungary_flavor_partition.14.a:0 "Annex it."
+ hungary_flavor_partition.14.b:0 "Give it to Montenegro."
+ hungary_flavor_partition.14.c:0 "Give it to Albania."
+ hungary_flavor_partition.14.e:0 "Give it to Italy"
+ hungary_flavor_partition.14.f:0 "Give it to Serbia" 
+ 
+ hungary_flavor_partition.15.t:0 "The fate of Kotor"
+ hungary_flavor_partition.15.d:0 "Kotor is wedged between Montenegro and Dalmatia. It's population is mostly Montenegrin, but there are some Serbs and Croats living in the area.  What should we do with it?"
+ hungary_flavor_partition.15.a:0 "Annex it."
+ hungary_flavor_partition.15.b:0 "Give it to Montenegro."
+ hungary_flavor_partition.15.c:0 "Give it to Italy."
+ hungary_flavor_partition.15.e:0 "Give it to Croatia"
+ hungary_flavor_partition.15.f:0 "Give it to Serbia"  
+ 
+ hungary_flavor_partition.16.t:0 "The fate of Ljubljana"
+ hungary_flavor_partition.16.d:0 "Ljubljana is the southern half of Slovenia. Italy has made explicit claims to it, but we are the final decision makers in this conference. Will we give it to them, or keep it for ourselves?"
+ hungary_flavor_partition.16.a:0 "Annex it."
+ hungary_flavor_partition.16.b:0 "Give it to Italy."
+ hungary_flavor_partition.16.c:0 "Make a deal with Italy."
+ hungary_flavor_partition.16.tt:0 "We will offer Ljubljana to Italy for some of their Adriatic ports."
+ 
+ hungary_flavor_partition.17.t:0 "A deal with Italy"
+ hungary_flavor_partition.17.d:0 "Italy wants Ljubljana, but we shouldn't give it to the for free. We could ask for Fiume or Zara, or even both, in return for the state."
+ hungary_flavor_partition.17.a:0 "We want Zara and Fiume."
+ hungary_flavor_partition.17.b:0 "We want Fiume."
+ hungary_flavor_partition.17.c:0 "We want Zara."
+ 
+ hungary_flavor_partition.18.t:0 "The fate of Slovenia"
+ hungary_flavor_partition.18.d:0 "The last state that is yet untouched in the agreement is Slovenia. Italy has eypressed interest in the region, but it is not an essential part of their claims."
+ hungary_flavor_partition.18.a:0 "Annex it."
+ hungary_flavor_partition.18.b:0 "Give it to Germany."
+ hungary_flavor_partition.18.c:0 "Give it to Italy."
+ hungary_flavor_partition.18.e:0 "Offer it to Austria in exchange for Burgenland."
+ hungary_flavor_partition.18.f:0 "Leave it be."
+ 
+ hungary_flavor_partition.19.t:0 "Italy accepts"
+ hungary_flavor_partition.19.d:0 "Italy has accepted to transfer their adriatic ports, in return for Slovenia."
+ hungary_flavor_partition.19.a:0 "Splendid."
+ hungary_flavor_partition.19.b:0 "Actually, we only want Fiume."
+ hungary_flavor_partition.19.c:0 "They can keep Fiume, we only need Zara."
+ 
+ hungary_flavor_partition.20.t:0 "Italy declines"
+ hungary_flavor_partition.20.d:0 "Italy has declined the generous offer of Slovenia in return of some petty ports."
+ hungary_flavor_partition.20.a:0 "Strange."
+ 
+ hungary_flavor.1.t:0 "Welcome to the Hungarian Flavor mod"
+ hungary_flavor.1.d:0 "Welcome!\nThis mod aims to make playing Hungary a more enjoyable experience. However, historically, Hungary's options were very limited during this time-period, so a realistic representation of the country would not necessarily be fun for everyone. If you wish to play Hungary in a less challenging scenario, choose the 'Non-realistic version', and if you want a more realistic, challenging experience, choose the 'Realistic version'."
+ hungary_flavor.1.a:0 "Realistic version"
+ hungary_flavor.1.b:0 "Non-realistic version"
+ hungary_flavor.1.realism:0 "You will have a harder time achieving your goals, and convincing neighboring nations to agree to your requests. This is considered to be the standard, official version of the mod.\n"
+ hungary_flavor.1.no_realism:0 "You will have an easier time enforcing your will upon other nations, and reaching your goals. This might easily result in scenarios, that are implausible from a historical viewpoint.\n"
+ 
+ hungary_flavor.2.t:0 "Union with Austria"
+ hungary_flavor.2.d:0 "Our efforts to restore the old monarchy have been successful. The two countries will once again be one, under Habsburg rulership, and the restoration of old territory might begin. Long live Austria-Hungary!"
+ hungary_flavor.2.a:0 "Long live Austria-Hungary indeed!"
+ hungary_flavor.2.tt:0 "Austria and Hungary will form a union under the name of Austria-Hungary, with a Habsburg ruler as its monarch.\n"
+ 
+ hungary_flavor.4.t:0 "Austria accepts"
+ hungary_flavor.4.d:0 "Austria accepted the proposed alliance, and have now joined our cause."
+ hungary_flavor.4.a:0 "Excellent."
+ 
+ hungary_flavor.5.t:0 "Austria declines"
+ hungary_flavor.5.d:0 "The Austrian government refused to enter the pact proposed by our diplomats, condemning the goals of Hungarian revisionism as senseless patriotism."
+ hungary_flavor.5.a:0 "Fools."
+ 
+ hungary_flavor.7.t:0 "Poland accepts"
+ hungary_flavor.7.d:0 "Poland has wisely accepted the alliance we proposed. We shall celebrate this great milestone in the friendship of Hungary and Poland."
+ hungary_flavor.7.a:0 "Excellent."
+ 
+ hungary_flavor.8.t:0 "Poland declines"
+ hungary_flavor.8.d:0 "The historical friend of our country, Poland has decided to ruin the good relationship between our peoples, by rejecting the proposed alliance."
+ hungary_flavor.8.a:0 "They must be drunk on vodka again."
+ 
+ hungary_flavor.10.t:0 "Bulgaria accepts"
+ hungary_flavor.10.d:0 "Bulgaria has decided to join our faction, as we proposed. They will make a great strategic ally, and both of our countries will benefit from this."
+ hungary_flavor.10.a:0 "Excellent."
+ 
+ hungary_flavor.11.t:0 "Bulgaria declines"
+ hungary_flavor.11.d:0 "The foolish bulgarians have declined our gratious invitation. They can call themselves lucky, if they will have a country to call their own after the wars to come."
+ hungary_flavor.11.a:0 "Outrage!"
+ 
+ hungary_flavor.12.t:0 "Czechoslovakia yields"
+ hungary_flavor.12.d:0 "Success! The Chechoslovakian government agreed to cede Slovakia to us. One more step towards the ultimate goal of restoring [Root.GetName] to its former glory."
+ hungary_flavor.12.a:0 "Excellent."
+ 
+ hungary_flavor.13.t:0 "Czechoslovakia refuses"
+ hungary_flavor.13.d:0 "The foolish Czechoslovakians refused to let go of Slovakia. This is outrageous, and can't be allowed to go unpunished. Once we are ready, their puny country will be quickly consumed by our great army."
+ hungary_flavor.13.a:0 "They will beg for mercy."
+ 
+ hungary_flavor.20.t:0 "Romania issues a counterdemand!"
+ hungary_flavor.20.d:0 "The most unexpected of things has happened: Instead of agreeing to our demands, Romania has issued a demand of their own, on nothing less than Alföld! They claim, that their country should reach all the way to the river Tisza, and we should immediately surrender that land to them."
+ hungary_flavor.20.a:0 "This means war."
+ hungary_flavor.20.b:0 "What a preposterous idea."
+ hungary_flavor.20.c:0 "We didn't expect this. Withdraw from the Transtisza region."
+ 
+ hungary_flavor.21.t:0 "Romania yields"
+ hungary_flavor.21.d:0 "Transylvania is ours once again! Romania has agreed to withdraw their forces, and cede all territory, to try and avoid a war with us. Glorious shall [Root.GetName] be!"
+ hungary_flavor.21.a:0 "Glorious indeed."
+ 
+ hungary_flavor.22.t:0 "Romania refuses"
+ hungary_flavor.22.d:0 "Outrage! Romania has declined our generous offer to leave them be id they cede Transylvania. Now we are free to keep our promise to invade them and take anything we want by force."
+ hungary_flavor.22.a:0 "Blasted fools."
+ 
+ hungary_flavor.23.t:0 "Italian Negotiations"
+ hungary_flavor.23.d:0 "We have drafted the start of the proposal, that is about to be presented to Italy. We can settle for a simple non-aggression pact, but if we would offer more, Italy might agree to some territorial concessions, including Fiume and Zara. We would be able to choose which states we ask in return for our help."
+ hungary_flavor.23.a:0 "A simple non-aggression pact will suffice."
+ hungary_flavor.23.b:0 "Offer military support in addition to the non-aggression pact."
+ hungary_flavor.23.c:0 "Offer military and political support in addition to the non-aggression pact."
+ 
+ hungary_flavor.24.t:0 "The question of Fiume"
+ hungary_flavor.24.d:0 "Italy owns Fiume, which was part of Hungary before the peace treaties at Trianon. We could request that they hand it over, in exchange for the help we offer."
+ hungary_flavor.24.a:0 "We will include Fiume in the proposal."
+ hungary_flavor.24.b:0 "We do not need Fiume."
+ 
+ hungary_flavor.25.t:0 "The question of Zara"
+ hungary_flavor.25.d:0 "Italy owns Zara, a port city in the northern parts of Dalmatia. We could request that they hand it over, in exchange for the help we offer."
+ hungary_flavor.25.a:0 "We will include Zara in the proposal."
+ hungary_flavor.25.b:0 "We do not need Zara."
+ 
+ hungary_flavor.26.t:0 "The question of Istria"
+ hungary_flavor.26.d:0 "Italy owns Istria, a historically Croatian province. We could request that they hand it over, in exchange for the help we offer."
+ hungary_flavor.26.a:0 "We will include Istria in the proposal."
+ hungary_flavor.26.b:0 "We do not need Istria."
+ 
+ hungary_flavor.27.t:0 "Italy accepts_conditions"
+ hungary_flavor.27.d:0 "Italy has agreed to our conditions. The pact has been signed, and both sides seemed satisfied with the results."
+ hungary_flavor.27.a:0 "A successful agreement."
+ 
+ hungary_flavor.28.t:0 "Italy refuses to negotiate"
+ hungary_flavor.28.d:0 "The Italian foreign minister has dismissed our ambassadors, saying that they can not negotiate with the conditions we proposed."
+ hungary_flavor.28.a:0 "Worrying."
+ 
+ hungary_flavor.30.t:0 "German alliance"
+ hungary_flavor.30.d:0 "The Foreign Ministers of [Root.GetName] and Germany have officially signed the treaty, which allows [Root.GetName] into the Axis."
+ hungary_flavor.30.a:0 "Excellent."
+ 
+ hungary_flavor.31.t:0 "Germany refuses alliance"
+ hungary_flavor.31.d:0 "Germany has surprisingly refused our request, denying entry into the Axis."
+ hungary_flavor.31.a:0 "What arrogance."
+ 
+ hungary_flavor.32.t:0 "Soviet alliance"
+ hungary_flavor.32.d:0 "The mighty Soviet Union has accepted our request for membership in the Communist International. The flag of the revolution shall rise high this day, for we are part of something much greater than ourselves!"
+ hungary_flavor.32.a:0 "Workers rejoice!"
+ 
+ hungary_flavor.33.t:0 "Soviet Union refuses alliance"
+ hungary_flavor.33.d:0 "We have been neglected by the motherland of communism. They have rejected our proposed alliance, and thus, we must carry on with the revolution on our own."
+ hungary_flavor.33.a:0 "They will see reason eventually."
+ 
+ hungary_flavor.34.t:0 "Alliance with the UK"
+ hungary_flavor.34.d:0 "After a short series of negoriations, the government of the United Kingdom has accepted our proposal, and granted us membership in their alliance. We shall now enjoy the protection of the Allies, in the case of an attack from any adversary."
+ hungary_flavor.34.a:0 "Superb."
+ 
+ hungary_flavor.35.t:0 "United Kingdom declines alliance"
+ hungary_flavor.35.d:0 "Our request to join the Allies was turned down by th United Kingdom. It seems that we are left alone in this fight of ours."
+ hungary_flavor.35.a:0 "What a disgrace."
+ 
+ hungary_flavor.36.t:0 "The Danubian Conference"
+ hungary_flavor.36.d:0 "Budapest will host the conference, at which the Danubian Coalition will (hopefully) be born. Invitations have been sent to all of our unaligned neighbors, and some countries in the Balkans. The more nations we can convince to join the coalition, the stronger our alliance will be."
+ hungary_flavor.36.a:0 "Let the event commence."
+ 
+ hungary_flavor.37.t:0 "Czechoslovakia reenters the Empire"
+ hungary_flavor.37.d:0 "Czechoslovakia has seen reason, and accepted our proposal. They are once again where they belong, under the protective wings of Austria-Hungary."
+ hungary_flavor.37.a:0 "Excellent news."
+ 
+ hungary_flavor.38.t:0 "Czechoslovakia refuses to join the empire"
+ hungary_flavor.38.d:0 "Czechoslovakia seems to foster unreasonable amounts of national pride (as if they were a proper nation to begin with), and refused to join the Empire."
+ hungary_flavor.38.a:0 "Perhaps we should try a different approach."
+ 
+ hungary_flavor.39.t:0 "Poland yields"
+ hungary_flavor.39.d:0 "Poland agreed to our reasonable demand, and ceded all of the territories immediately. Krakow and Galicia are once again ours to rule over."
+ hungary_flavor.39.a:0 "Excellent news."
+ 
+ hungary_flavor.40.t:0 "Poland refuses"
+ hungary_flavor.40.d:0 "Poland declined our generous proposal, and instead chose to risk the anger of the Empire. It would seem that they don't listen to reason."
+ hungary_flavor.40.a:0 "They will listen to guns."
+ 
+ hungary_flavor.41.t:0 "Romania yields"
+ hungary_flavor.41.d:0 "As expected, Romania has given in to the demands, and ceded Bucovina. It is a small gain, but a gain nevertheless"
+ hungary_flavor.41.a:0 "Excellent news."
+ 
+ hungary_flavor.42.t:0 "Romania refuses"
+ hungary_flavor.42.d:0 "Romania must think that we were joking when we asked for Bucovina. They dismissed the proposal immediately, and sent our diplomats home."
+ hungary_flavor.42.a:0 "Do they want to fall because of a small piece of land?"
+ 
+ hungary_flavor.43.t:0 "Negotiations with the Imperialist Czechoslovakian government"
+ hungary_flavor.43.d:0 "The newly estabilished imperialist government in Czechoslovakia has initiated negotiations with us. They wish to aid our efforts as best as they can, and would happily join our faction to do so."
+ hungary_flavor.43.a:0 "Welcome them into The New Central Powers"
+ hungary_flavor.43.b:0 "There is no need for open cooperation yet."
+ 
+ hungary_flavor.45.t:0 "Austria allows Burgenland referendum"
+ hungary_flavor.45.d:0 "Our new friend, Austira, has allowed the referendum in Burgenland, that we proposed. Now the people living there are free to choose between staying in Austria, or joining Hungary. All we have to do is hope for the best of results."
+ hungary_flavor.45.a:0 "Excellent."
+ 
+ hungary_flavor.46.t:0 "Austria disallows Burgenland referendum"
+ hungary_flavor.46.d:0 "The Austrian government has declined the proposed referendum for Burgenland. If they were not allies of Hungary, this would be considered as an act of offense, and would be dealt with in kind. We have to keep calm however, if we are to preserve peace within our faction."
+ hungary_flavor.46.a:0 "Disappointing."
+ 
+ hungary_flavor.47.t:0 "Slovenia for Burgenland"
+ hungary_flavor.47.d:0 "We have acquired Slovenia in the recent years, and Austria still holds the old Hungarian province of Burgenland. It would make sense to exchange these territories between the two countries, and restore historical borders. Will we make this offer to Austria?"
+ hungary_flavor.47.a:0 "Of course."
+ hungary_flavor.47.b:0 "The borders are good just the way they are."
+ 
+ hungary_flavor.48.t:0 "Austria accepts Slovenian trade"
+ hungary_flavor.48.d:0 "Austria made the sensible decision to accept Slovenia in exchange for Burgenland. Both states have been restored to their historical owners."
+ hungary_flavor.48.a:0 "Very well."
+ 
+ hungary_flavor.49.t:0 "Austria declines Slovenian trade"
+ hungary_flavor.49.d:0 "It may come as a surprise, but Austria refused to cede Burgenland in return for Slovenia. The territorial gains would certainly have outweighed the losses, and they would have regained a province that is traditionally theirs."
+ hungary_flavor.49.a:0 "Strange."
+ 
+ hungary_flavor.50.t:0 "The 'Györi Program'"
+ hungary_flavor.50.d:0 "As our armament efforts were limited for a long time, due to the peace agreements after the Great War, the [Root.GetAdjective] army is in dire need of modernisation. A rearmament plan developed by Béla Imrédy proposes a thorough reformation and restructuration of not just the army, but the industry of the country. The total cost of the execution would be a billion Hungarian Pengös, 400 millions of which would go towards defense, and insutry development, while 600 million would go directly to the army, and research. The funds would be acquired through one time taxes, and short-term loans."
+ hungary_flavor.50.a:0 "Approve of the plan."
+ hungary_flavor.50.b:0 "This would be too expensive."
+ 
+ hungary_flavor.51.t:0 "Györi Program: Phase I"
+ hungary_flavor.51.d:0 "The first phase of the Györi Program is ready to be put into action. Research, and industrial development are the primary focuses of this part of the plan, thus many construction grants and research agreements have been negotiated to this end. We should take advantage of these agreements, while they last."
+ hungary_flavor.51.a:0 "[Root.GetName] will prevail."
+ 
+ hungary_flavor.52.t:0 "Györi Program: Phase II"
+ hungary_flavor.52.d:0 "The second phase of the Györi Program is now starting. The focus of the plan now shifts towards the army, and defense efforts. Modernisation of the army, and protection of our borders are in order, if we want to survive any military conflict."
+ hungary_flavor.52.a:0 "Our army shall be the best."
+ 
+ hungary_flavor.53.t:0 "Györi Program: Phase III"
+ hungary_flavor.53.d:0 "The third phase of the Györi Program is ready to be executed. The national aviation effort is far beyond that of the surrounding countries, and as such, deserves special attention during the plan. We need to spend every effort to develop new aircraft models, and put them through production."
+ hungary_flavor.53.a:0 "The skies will know the might of [Root.GetName]."
+ 
+ hungary_flavor.54.t:0 "Györi Program: Phase IV"
+ hungary_flavor.54.d:0 "The fourth, and final phase of the Györi Program focuses on the navy. Initially, the navy was not included in the plan, due to lack of any ports in the country. Some extra funds have enabled us to invest in naval development, and production."
+ hungary_flavor.54.a:0 "The navy shall be great once again."
+ 
+ hungary_flavor.55.t:0 "[Root.GetAdjective]-Yugoslavian Everlasting Friendship"
+ hungary_flavor.55.d:0 "The Pact of Everlasting Friendship between [Root.GetName] and Yugoslavia has been signed, officially cementing the good relations, and cooperation between the two countries. This might be the beginning of an alliance, that might help defend both nations from foreign threats."
+ hungary_flavor.55.a:0 "Excellent."
+ 
+ hungary_flavor.56.t:0 "Yugoslavia declines Everlasting Friendship"
+ hungary_flavor.56.d:0 "Perhaps still feeling threatened by the possibility of revisionist claims from [Root.GetName], Yugoslavia has dismissed the idea of cooperation between our countries. Surely, this is not meant as an act of hostility, merely a sign of caution on their behalf."
+ hungary_flavor.56.a:0 "A shame."
+ 
+ hungary_flavor.57.t:0 "Territorial settlement with Yugoslavia"
+ hungary_flavor.57.d:0 "Though we have declared our friensdhip with Yugoslavia, there is still the question of our territorial disputes. Novi Sad clearly belongs to us, and Yugoslavia needs our help, if it is to succeed in future endavours. We promise them help in the future, if they cede Vojvodina to us, as a sign of friendship."
+ hungary_flavor.57.a:0 "They will surely agree that Novi Sad is Hungarian."
+ hungary_flavor.57.b:0 "We cannot risk the good relations with them for territorial gains."
+ 
+ hungary_flavor.58.t:0 "Successful negotiations with Yugoslavia"
+ hungary_flavor.58.d:0 "Yugoslavia has accepted our proposal, and handed over control of Novi Sad. They clearly take our friendship seriously, and rightly so. We will make right on our promises, and support their political efforts."
+ hungary_flavor.58.a:0 "A fruit of the friendship between our countries."
+ 
+ hungary_flavor.59.t:0 "Unsuccessful negotiations with Yugoslavia"
+ hungary_flavor.59.d:0 "Yugoslavia has understandably refused to cede Novi Sad. We offered little in return, and their territorial integrity is backed by the Allies. The friendship between our countries might not yet come to an end, but everybody left the negotiating table with a sour taste in their mouths."
+ hungary_flavor.59.a:0 "This is bound to hurt our relations with them."
+ 
+ hungary_flavor.60.t:0 "Alliance with Yugoslavia"
+ hungary_flavor.60.d:0 "Yugoslavia has proven to be a willing partner in cooperation, and our political views align with theirs. To further strengthen our friendship, we should invite them into our faction, and guarantee to defend one another in conflicts to come."
+ hungary_flavor.60.a:0 "Of course, we shall invite them."
+ hungary_flavor.60.b:0 "We don't have to drag them into this."
+ 
+ hungary_flavor.61.t:0 "Yugoslavia accepts alliance"
+ hungary_flavor.61.d:0 "The Pact of Everlasting Friendship between [Root.GetName] and Yugoslavia has been extended to include a military alliance. They have joined our faction, and will now enjoy our protection, just as we will enjoy their help."
+ hungary_flavor.61.a:0 "A toast to our friendship!"
+ 
+ hungary_flavor.62.t:0 "Yugoslavia declines alliance"
+ hungary_flavor.62.d:0 "The negotiations about an alliance with Yugoslavia have been a failure. They outright rejected the proposal, not wanting to get involved in any of our political struggles. It would seem that they value their neutrality too much."
+ hungary_flavor.62.a:0 "They don't know what they're missing out on."
+ 
+ hungary_flavor.63.t:0 "Funding for the Györi Program"
+ hungary_flavor.63.d:0 "Some investors have approached the governmental coordinators, responsible for the execution of the Györi Program. They expressed their interest in the success of the armament, as they own stocks of various industrial concerns affected. These investors are willing to provide funding for the program, in the form of generous, low-interest loans."
+ hungary_flavor.63.a:0 "Money is always welcome."
+ 
+ hungary_flavor.64.t:0 "Italy accepts demands"
+ hungary_flavor.64.d:0 "Italy made the sensible decision to accept the Greek territories in return for giving up the Austro-Hungarian ones. Maybe they only did it to keep the peace, maybe they misjudged the value of the provinces. Whichever the case, the deal is sealed."
+ hungary_flavor.64.a:0 "Surprising, but welcome news."
+ 
+ hungary_flavor.65.t:0 "Italy declines demands"
+ hungary_flavor.65.d:0 "Unsurprisingly, Italy has refused to relinquish control over our former territory. The promise of Greek territories was not enough to convince them, and they fail to see the true strength of our nation. Our former territories remain in Italian hands."
+ hungary_flavor.65.a:0 "It's a shame we will have to take them by force."
+ 
+ hungary_flavor.66.t:0 "Germany opposes Austro-Hungarian cooperation"
+ hungary_flavor.66.d:0 "Our effort to restore Austria-Hungary have not gone unnoticed, and Germany is ready to take action against them. If we do not cease negotiations with Austria, they threaten military intervention, if necessary."
+ hungary_flavor.66.a:0 "Continue negotiations."
+ hungary_flavor.66.b:0 "Back down."
+ 
+ hungary_flavor.67.t:0 "The capital of Austria-Hungary"
+ hungary_flavor.67.d:0 "The monarchy of Austria-Hungary has been restored, but historically, she had her capital in Vienna. Granted that the union was originally under Austrian leadership, and now it is under Hungarian, it might still be strategically beneficial, to move the capital to Vienna."
+ hungary_flavor.67.a:0 "We'll stick with Budapest."
+ hungary_flavor.67.b:0 "Vienna it is."
+ 
+ hungary_flavor.78.t:0 "Possible exit attempt"
+ hungary_flavor.78.d:0 "As the war is turning more and more in the favor of our enemy, it might be time to plan our exit from the war. As Bismarck once said, 'No nation ought to sacrifice itself on the altar of an alliance'."
+ hungary_flavor.78.a:0 "Negotiate a secret treaty with the Soviets."
+ hungary_flavor.78.b:0 "We have to try to reach out to the Allies."
+ hungary_flavor.78.c:0 "We will be forever loyal to the Axis."
+ 
+ hungary_flavor.79.t:0 "Soviets support exit attempt"
+ hungary_flavor.79.d:0 "The negotiations were successful. The Soviet Union has agreed to support our exit attempt, and promised to protect us, once we abandon Germany."
+ hungary_flavor.79.a:0 "At least we might still be on the winning side."
+ 
+ hungary_flavor.80.t:0 "Joining the Soviet Union"
+ hungary_flavor.80.d:0 "Arrangements were made to withdraw all Hungarian forces from potential danger, and a Soviet-friendly government has been set up. Everything is set for our exit attempt, now we have to hope for the best and trust in our new allies to defend us against Germany."
+ hungary_flavor.80.a:0 "We have made our choice."
+ 
+ hungary_flavor.81.t:0 "Soviets rebuff exit attempt"
+ hungary_flavor.81.d:0 "The Soviet Union refused to negotiate our exit, stating that they will not negotiate with the enemy."
+ hungary_flavor.81.a:0 "We're stuck with the Germans then."
+ 
+ hungary_flavor.82.t:0 "Allies support exit attempt"
+ hungary_flavor.82.d:0 "The negotiations were successful. The Allies have agreed to support our exit attempt, and promised to protect us, once we abandon Germany."
+ hungary_flavor.82.a:0 "At least we might still be on the winning side."
+ 
+ hungary_flavor.83.t:0 "Joining the Allies"
+ hungary_flavor.83.d:0 "Arrangements were made to withdraw all Hungarian forces from potential danger, and a temporary government has been set up. Everything is set for our exit attempt, now we have to hope for the best and trust in our new allies to defend us against Germany."
+ hungary_flavor.83.a:0 "We have made our choice."
+ 
+ hungary_flavor.84.t:0 "Allies rebuff exit attempt"
+ hungary_flavor.84.d:0 "The United Kingdom refused to negotiate our exit, stating that they will not negotiate with the enemy."
+ hungary_flavor.84.a:0 "We're stuck with the Germans then."
+ 
+ hungary_flavor.85.t:0 "The Arrow Cross Party"
+ hungary_flavor.85.d:0 "An unexpected turn of events has caused great commotion in the country. German forces have crossed the border, and occupied key facilities, including administrative buildings in the capital. The previous government has been replaced with the fascist Arrow Cross Party, led by Ferenc Szálasi, which took control of the country immediately. This is most likely the German's way of saying they don't trust us to follow their lead."
+ hungary_flavor.85.a:0 "There is nothing we can do."
+ hungary_flavor.85.b:0 "Get ready to fight!"
+ hungary_flavor.85.tt:0 "The Arrow Cross Party will become the ruling party, with Ferenc Szálasi as its head.\n"
+ 
+ hungary_flavor.86.t:0 "Romania withdraws from Banat"
+ hungary_flavor.86.d:0 "Our threat proved to be enough to scare the Romanians. All of their forces were withdrawn from the borders, leaving Banat free to be annexed by us."
+ hungary_flavor.86.a:0 "The cowards flee, and the brave conquer."
+ 
+ hungary_flavor.87.t:0 "Romania refuses to withdraw from Banat"
+ hungary_flavor.87.d:0 "The threat was not enough to coerce Romania into ceding Banat. We can now declare war over the territory, or back down. Not declaring would make us seem weak internationally, as we have made explicit threats stating the opposite."
+ hungary_flavor.87.a:0 "They will regret this."
+ hungary_flavor.87.b:0 "We won't waste sweat and blood for such a small piece of land."
+ 
+ hungary_flavor.88.t:0 "Turkey accepts alliance"
+ hungary_flavor.88.d:0 "The agreement has been signed, Turkey is now officially a member of [Root.GetFactionName]. In the event of a war, the two countries will now stand, or fall together."
+ hungary_flavor.88.a:0 "This is an important step in the right direction."
+ 
+ hungary_flavor.89.t:0 "Turkey declines alliance"
+ hungary_flavor.89.d:0 "Perhaps the new Turkish state has lost all of its pride, or desire for greatness, because they decided to stay out of our faction, and be left out of all the glory and rewards that would have come with it."
+ hungary_flavor.89.a:0 "We are better off without them anyways."
+ 
+ hungary_flavor.90.t:0 "Support for democratic elections in Hungary"
+ hungary_flavor.90.d:0 "Liberal ideas have taken hold of the country, and support for democratic elections is on the rise. We better prepare for a change in government."
+ hungary_flavor.90.a:0 "What a time to be alive."
+ 
+ hungary_flavor.91.t:0 "Support for communism in Hungary"
+ hungary_flavor.91.d:0 "Worker unions are organising protests and strikes countrywide, while the communist party is preparing to set up a new government. Either through elections, or a forceful rebellion, communism will eventually grab hold of the power in Hungary."
+ hungary_flavor.91.a:0 "What a time to be alive."
+ 
+ hungary_flavor.92.t:0 "Miklós Horthy: Regent, or King"
+ hungary_flavor.92.d:0 "It is no secret, that our regent, Miklós Horthy, would like his son to succeed him, effectively starting a new ruling dynasty in Hungary. There is some support for crowning him King of Hungary, which would finally put an end to the regency, though some might see this as an undemocratic move. Will we support his claim to the throne?"
+ hungary_flavor.92.a:0 "We will not assist in creating another dynasty."
+ hungary_flavor.92.b:0 "Long live the King!"
+ 
+ hungary_flavor.93.t:0 "Reinstatement of Miklós Horthy"
+ hungary_flavor.93.d:0 "Miklós Horthy will be reinstated as commander of our new navy, the only question is what his role should be. Should he become an admiral again, or rather direct our naval effort from the back, as chief of navy?"
+ hungary_flavor.93.a:0 "Horthy will become the chief of navy."
+ hungary_flavor.93.b:0 "He will be reestabilished as an admiral."
+ 
+ hungary_flavor.94.t:0 "Germany agrees to help"
+ hungary_flavor.94.d:0 "Not only did Germany agree to sending a delegation to aid us, they also transferred two of their generals to lead our troops. This is a massive success, and an important milestone in the cooperation of our nations."
+ hungary_flavor.94.d_2:0 "Germany agreed to send the delegation we asked for. Part of the General Staff will now be directing the military efforts of Hungary, and aiding our high command."
+ hungary_flavor.94.a:0 "Wonderful news."
+ hungary_flavor.94.b:0 "Wonderful news."
+ hungary_flavor.94.tt:0 "Generals Erwin von Witzleben and Wilhelm Ritter von Leeb will report for duty."
+ 
+ hungary_flavor.95.t:0 "Germany refuses to help"
+ hungary_flavor.95.d:0 "For some strange reason, Germany declined our request for closer cooperation. We will have to rely on our own military staff to direct the coordination of the army."
+ hungary_flavor.95.a:0 "This is disappointing, to say the least."
+ 
+ hungary_flavor.96.t:0 "Turkish troop exchange"
+ hungary_flavor.96.d:0 "Turkey agreed to the troop exchange program. We will shortly be greeting the brigades that they sent us, and our divisions are already on their way to Istanbul."
+ hungary_flavor.96.a:0 "This will bring our nations even closer to one another."
+ hungary_flavor.96.tt:0 "We will receive two infantry divisions from Turkey.\n"
+ 
+ hungary_flavor.97.t:0 "Turkey declines troop exchange proposal"
+ hungary_flavor.97.d:0 "The Turkish government rejected our offer of troop exchange, probably due to the risk they would be putting their soldiers in. Perhaps it is best that we both stick to our own armies."
+ hungary_flavor.97.a:0 "They surely have their reasons."
+ 
+ hungary_flavor.98.t:0 "Trianon restrictions invalidated"
+ hungary_flavor.98.d:0 "As we are now part of an alliance, noone can enforce the restrictions set by the allies after the Great War anymore. Our friends will protect our right to arm ourselves."
+ hungary_flavor.98.d_2:0 "The military restrictions set by the allies after the Great War are long forgotten, even by those who set them. In today's ever-changing political climate, such a restriction can not be enforced anymore. "
+ hungary_flavor.98.a:0 "Together we are strong."
+ hungary_flavor.98.b:0 "Were those restrictions still valid? I didn't notice."
+ 
+ hungary_flavor.99.t:0 "Györi program goes against Trianon restrictions"
+ hungary_flavor.99.d:0 "The armament program we started is openly violating the military restrictions set by the allies at Trianon. We are not supposed to research, or manufacture artillery, armored vehicles, and aircraft. We could try to keep to these boundaries, and still continue with the program, but it would slow our efforts noticeably."
+ hungary_flavor.99.a:0 "We will openly disobey the constraints."
+ hungary_flavor.99.b:0 "Perform the restricted research in secret."
+ hungary_flavor.99.c:0 "Try our best to stay within the boundaries."
+ hungary_flavor.99.tt:0 "The progress of the Györi Program will be slightly hindered."
+ 
+ hungary_flavor.100.t:0 "The Visegrád Group"
+ hungary_flavor.100.d_both:0 "Success! Both Czechoslovakia, and Poland have agreed to enter the Visegrád group. This is the beginning of a fruitful alliance."
+ hungary_flavor.100.d_cze:0 "Only Czechoslovakia agreed to enter our alliance. Nevertheless, the faction will be formed, even if only with two founding members."
+ hungary_flavor.100.d_pol:0 "Only Poland agreed to enter our alliance. Nevertheless, the faction will be formed, even if only with two founding members."
+ hungary_flavor.100.d_neither:0 "Disaster! Neither Czechoslovakia, nor Poland entered the proposed alliance. We are left alone in our fight."
+ hungary_flavor.100.a:0 "The Visegrád Triangle is strong."
+ hungary_flavor.100.b:0 "We will build a strong alliance with Czechoslovakia."
+ hungary_flavor.100.c:0 "At least our Polish friends are willing to join."
+ hungary_flavor.100.e:0 "It seems this alliance died before it could be born."
+ 
+ hungary_flavor.101.t:0 "Baltic expansion of the Visegrád Group"
+ hungary_flavor.101.d_all:0 "The expansion has been a full-blown success! All three candidates have accepted the invitation. This is certainly cause for celebration."
+ hungary_flavor.101.d_some:0 "The Baltic expansion has been a partial success. We could not convince all Baltic states to join, but the alliance expands nevertheless."
+ hungary_flavor.101.d:0 "The Baltic expansion has been a partial success. We could not convince all Baltic states to join, but the alliance expands nevertheless."
+ hungary_flavor.101.d_none:0 "The Baltic states have all rejected our request. It seems we must look elsewhere, if we still wish to expand the alliance."
+ hungary_flavor.101.a:0 "Let us welcome the new members."
+ hungary_flavor.101.b:0 "Let us welcome the new members."
+ hungary_flavor.101.c:0 "A disappointing result."
+ 
+ hungary_flavor.102.t:0 "Federalisation of Austria-Hungary"
+ hungary_flavor.102.d:0 "The decision has been made. Austria-Hungary will be turned into a federation, with 6 memberstates: Austria, Hungary, Bohemia, Poland-Ruthenia, Transylvania, and Jugoslavia. Some states will have subdivisions, where the ethnic borders necessitate it, but for the most part, these will be the self-governing regions of the federation. All states will delegate representatives into a common governmental body, which will rule with supervision from the monarch."
+ hungary_flavor.102.a:0 "It shall be called the Austro-Hungarian Federation."
+ hungary_flavor.102.b:0 "It shall be called the Danubian Federation."
+ 
+ hungary_flavor.103.t:0 "Albania wants to join our faction"
+ hungary_flavor.103.d:0 "After the successful partition of Yugoslavia, Albania has approached us with a request to join our faction. Perhaps they mistook our generosity regarding the state of Montenegro, for an act of friendship. At any rate, we have to deal with their request. What is our response?"
+ hungary_flavor.103.a:0 "We will accept their request."
+ hungary_flavor.103.b:0 "Is it not enough that we gave them Montenegro?"
+ 
+ hungary_flavor.104.t:0 "Germany offers Carpathian Ruthenia"
+ hungary_flavor.104.d:0 "Germany has now annexed Bohemia, and the Czechoslovakian state is falling to pieces. They do not have explicit plans of their own for Carpathian Ruthenia, and have offered us a chance to take it, as an act of friendship. We can just ignore the offer, but claiming it might be an important step towards revision of our territory."
+ hungary_flavor.104.a:0 "We accept the territory."
+ hungary_flavor.104.b:0 "We don't care about borders."
+ 
+ hungary_flavor.105.t:0 "Italian Alliance"
+ hungary_flavor.105.d:0 "After the Yugoslavian conference was over, Italian ambassadors have approached our delegation with a proposal. In return for giving in to their claims in Yugoslavia, they are willing to join our alliance, and join forces with us."
+ hungary_flavor.105.a:0 "Welcome them to our faction."
+ hungary_flavor.105.b:0 "Politely refuse their initiative."
+ 
+ hungary_flavor.106.t:0 "Hungarian-Slovakian Small War"
+ hungary_flavor.106.d:0 "Our borders with Slovakia were not strictly defined after the annexation of Carpathian Ruthenia. In an attempt to secure the valley of Ung, our forces have launched an offensive against Slovakia from the west, taking minimal losses. Slovakians withdrew from the region, but shortly launched a counterattack, retaking some of the lost territory. The entire skirmish lasted for a few days, and ended with a couple dozen dead on both sides. Still, we can consider this a success, and put a positive spin on it in propaganda pieces."
+ hungary_flavor.106.a:0 "A great success for out nation."
+ 
+ hungary_flavor.107.t:0 "Czechoslovakia allows referendum"
+ hungary_flavor.107.d:0 "Czechoslovakia has agreed to the proposed referendum. The people of Southern Slovakia can finally decide, where they want to belong."
+ hungary_flavor.107.a:0 "Let us hope for favorable results."
+ 
+ hungary_flavor.108.t:0 "Czechoslovakia disallows referendum"
+ hungary_flavor.108.d:0 "Czechoslovakia refused to host the referendum for Southern Slovakia. Relations between our countries have not deteriorated, but this is bound to drive a wedge between us in the future."
+ hungary_flavor.108.a:0 "They can't deny our right to it forever."
+ hungary_flavor.108.b:0 "Use our influence in the faction to force the referendum."
+ 
+ hungary_flavor.109.t:0 "Yugoslavia enters the Visegrád Group"
+ hungary_flavor.109.d:0 "After the formation of the Visegrád Group, it was dubious at first, whether the alliance was strong enough to defend itself, let alone expand its influence. Yugoslavia has just announced its entry into the group, massively strengthening its influence in the region. This means that the Visegrád Group is no longer just a petty pact of nations, but a force to be reckoned with in the playing field of Europe."
+ hungary_flavor.109.a:0 "A resounding success for the alliance."
+ 
+ hungary_flavor.110.t:0 "Yugoslavia declines invitation"
+ hungary_flavor.110.d:0 "The negotiations with Yugoslavia failed. We did not manage to convince them to join the Visegrád Group, and thus, our influence remains limited in the Balkans."
+ hungary_flavor.110.a:0 "They don't know what they are missing."
+ 
+ hungary_flavor.111.t:0 "Yugoslavia agrees to border changes"
+ hungary_flavor.111.d:0 "During the settlement negotiations with Yugoslavia, it was agreed upon, that the Hungarian people needed to be kept on Hungarian soil. We managed to settle on which regions shall remain part of Yugoslavia, and which would become part of Hungary again. We have regained important land, with significant Hungarian population."
+ hungary_flavor.111.a:0 "And yet, no blood needed to be shed."
+ 
+ hungary_flavor.112.t:0 "Yugoslavia agrees to partial border change"
+ hungary_flavor.112.d:0 "The negotiations were frought with arguments for both sides, and eventually, a compromise was reached. Some Hungarian population is to be transferred to Hungarian soil, and the territory of Prekmurje will be given to Hungary. This is not all that we hoped for, but at least the effort was not entirely in vain."
+ hungary_flavor.112.a:0 "A fair agreement nonetheless."
+ 
+ hungary_flavor.113.t:0 "Yugoslavia refuses to change borders"
+ hungary_flavor.113.d:0 "The Yugoslavian government made it clear, that ceding territory was out of the question. They would not make any concessions, and they will defend the sovereignty of their nation by all means necessary. The negotiations achieved nothing."
+ hungary_flavor.113.a:0 "A waste of effort."
+ 
+ hungary_flavor.114.t:0 "Germany offers the rest of Vojvodina"
+ hungary_flavor.114.d:0 "We already own Novi Sad, which has the most Hungarians in Vojvodina, but Germany has offered the rest of it, as a sing of goodwill. Will we take their offer?"
+ hungary_flavor.114.a:0 "Of course."
+ hungary_flavor.114.b:0 "We have no need of those lands."
+ 
+ hungary_flavor.115.t:0 "Meeting in Berlin"
+ hungary_flavor.115.d:0 "Hitler has arranged to meet our regent, Miklós Horthy in Berlin, to discuss an important matter. He seeks to divide Czechoslovakia with Hungary, and wanted to know what role Hungary would play in this. If we were to play the role of aggressor, he might even give us the entirety of Slovakia, but we could settle for less if we wanted to."
+ hungary_flavor.115.a:0 "We want no part of this."
+ hungary_flavor.115.b:0 "We will be content with Carpathian Ruthenia."
+ hungary_flavor.115.c:0 "We offer full cooperation, if they give us Slovakia."
+ 
+ hungary_flavor.116.t:0 "Hitler agrees to our request"
+ hungary_flavor.116.d:0 "The meeting was concluded, and Horthy has agreed with Hitler on the terms of our involvement in the partition of Czechoslovakia. We should now make preparations to fulfill our end of the bargain."
+ hungary_flavor.116.a:0 "A successful meeting."
+ 
+ hungary_flavor.117.t:0 "Inconclusive meeting"
+ hungary_flavor.117.d:0 "After much discussion, there was no agreement in what Hungary will get after the partition. Hitler made no promises about our territorial gains."
+ hungary_flavor.117.a:0 "We shall still hope for the best of outcomes."
+ 
+ hungary_flavor.118.t:0 "Finland accepts alliance"
+ hungary_flavor.118.d:0 "Finland has hastily signed the alliance that we proposed. They now expect us to immediately declare war on the Soviet Union, and help defend their country."
+ hungary_flavor.118.a:0 "Together we will beat the commies!"
+ 
+ hungary_flavor.119.t:0 "Finland declines alliance"
+ hungary_flavor.119.d:0 "Suprisingly, Finland has rejected our proposal, eliminating the possibility, that our alliance comes to their aid. They are now surely doomed, for they alone can not stop the Soviet Union."
+ hungary_flavor.119.a:0 "They will perish without us."
+ 
+ hungary_flavor.120.t:0 "Peace with Britain"
+ hungary_flavor.120.d:0 "We have now accomplished everything we set out to do, as our borders have been restored. The United Kingdom thought that they could contain our expansion by declaring war against us, and they have obviously failed. However, a drawn out war could hurt us just as much as it could hurt them, so it may benefit us to seek peace with them. They have bigger things to worry about, and we are content with what we have accomplished."
+ hungary_flavor.120.a:0 "Send the peace offer."
+ hungary_flavor.120.b:0 "We are not done with this war yet."
+ 
+ hungary_flavor.121.t:0 "Britain accepts"
+ hungary_flavor.121.d:0 "The United Kingdom has accepted the peace offer we sent. We returned all territory that was not claimed by us, and singed a peace treaty with them and their allies, officially nullifying the Treaty of Trianon."
+ hungary_flavor.121.a:0 "Peace at last."
+ 
+ hungary_flavor.122.t:0 "The war continues"
+ hungary_flavor.122.d:0 "The United Kingdom refused our peace terms, so the war goes on as if nothing happened. Seems like we will need to use more conventional means to convince them to stop."
+ hungary_flavor.122.a:0 "They will regret not signing the peace now."
+ 
+ hungary_flavor.123.t:0 "Slovakian self-governance"
+ hungary_flavor.123.d:0 "We have now acquired all Slovakian lands, and though they belonged to [Root.GetName] originally, there are those who propose the estabilishment of a Slovakian government, that would still answer to us, but would have some degree of independence. We could decide freely, which lands this new Slovakia would get, so we would be free to keep all lands, that are primarily inhabited by Hungarians."
+ hungary_flavor.123.a:0 "We will not set up a new government."
+ hungary_flavor.123.b:0 "Set up all of Slovakia as a puppet state."
+ hungary_flavor.123.c:0 "Set up Northern Slovakia as a puppet state."
+ hungary_flavor.123.e:0 "Set up Northern Slovakia as a puppet state, but keep Carpathian Ruthenia." 
+ 
+ hungary_flavor.124.t:0 "Claims on Yugoslavia"
+ hungary_flavor.124.d:0 "Now that we have signed the pact of friendship with Yugoslavia, it is time to consider our territorial claims towards them. We could renounce all claims towards them, as a sign of friendship, or we could hold on to our claims on Hungarian-inhabited lands, in hopes of a future settlement with Yugoslavia."
+ hungary_flavor.124.a:0 "We will renounce all claims towards Yugoslavia."
+ hungary_flavor.124.b:0 "We still want the territories, that have a Hungarian majority."
+ hungary_flavor.124.c:0 "We will not be renouncing any claims." 
+ 
+ hungary_flavor.125.t:0 "Claims on Croatia"
+ hungary_flavor.125.d:0 "Croatia is now its own state, having been separated from Yugoslavia. While we do still have territorial claims towards them, it might be the smart choice to abandon these claims, and instead seek friendship with Croatia."
+ hungary_flavor.125.a:0 "We will renounce all claims towards Croatia."
+ hungary_flavor.125.b:0 "We maintain all claims towards Croatia."
+ 
+ hungary_flavor.126.t:0 "A new government"
+ hungary_flavor.126.d:0 "We have decided to put an end to the authoritarian rulership of the regent. Hungary shall be governed by a parliment, that is elected by the people. The only question now is, what kind of government should we form. We could maintain a form of the monarchy, giving marginal power to the king (or regent), or we could abandon the idea of a kingdom entirely, and turn the country into a republic."
+ hungary_flavor.126.a:0 "A Parlimentary Monarchy shall be estabilished."
+ hungary_flavor.126.b:0 "Hungary will become a republic."
+ 
+ hungary_flavor.127.t:0 "Fight for Transylvania"
+ hungary_flavor.127.d:0 "Romania has taken sides in the current conflict, and is now at war with the Allies. If we want to, we could offer our help against Romania, in return for a promise, that we will get Transylvania at the end of the war. It is a risky proposal, as the English have not exactly been supportive of our territorial revision, but should they agree, we could end up restoring the entirety of Transylvania to our country."
+ hungary_flavor.127.a:0 "Offer our help in return for Transylvania."
+ hungary_flavor.127.b:0 "Try to stay neutral as long as possible."
+ 
+ hungary_flavor.128.t:0 "United Kingdom refuses help"
+ hungary_flavor.128.d:0 "Our proposal was met with resistance from the United Kingdom. They do not want our help, if it comes at the cost of giving us Transylvania."
+ hungary_flavor.128.a:0 "We both could have benefited from this."
+ 
+ hungary_flavor_territory.1.t:0 "Integration of the Transylvanian region"
+ hungary_flavor_territory.1.d:0 "We have recently acquired territory in the Transylvanian region, which is historically a part of our nation. However, a significant portion of the population is not [Root.GetAdjective], and thus, we can not easily conscript them into the army. We could leave things as they are, and just use the region's resources and industrial capacity, or we could start the process of integrating them, so they eventually become a full part of our country. If we decide to integrate the region, we would have to allocate some resources to the process, and our administrative capacity would take a hit, but it might all be worth it in the end."
+ hungary_flavor_territory.1.a:0 "Start the integration process."
+ hungary_flavor_territory.1.b:0 "Don't integrate the region."
+ hungary_flavor_territory.1.c:0 "Decide later."
+ 
+ hungary_flavor_territory.2.t:0 "Resistance to integration in the Transylvanian region"
+ hungary_flavor_territory.2.d:0 "The integration of the Translyvanian region is under way, but some of the locals are reluctant to cooperate. Sending in our armed forces to ensure collaboration would solve the problem, but it might provoke the population into open resistance."
+ hungary_flavor_territory.2.a:0 "We will have to deal with this."
+ hungary_flavor_territory.2.b:0 "Let it run its course."
+ 
+ hungary_flavor_territory.10.t:0 "Acquisition of Banat"
+ hungary_flavor_territory.10.d:0 "We have already decided for the integration of the Transylvanian region, but one of its states, Banat, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.10.a:0 "Start the integration process."
+ hungary_flavor_territory.10.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.11.t:0 "Banat lost"
+ hungary_flavor_territory.11.d:0 "We were too busy integrating Banat, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.11.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.12.t:0 "Banat integrated"
+ hungary_flavor_territory.12.d:0 "Our integration in Banat has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.12.a:0 "Excellent."
+ 
+ hungary_flavor_territory.13.t:0 "Rebellion in Banat"
+ hungary_flavor_territory.13.d:0 "Some upstart separatists in Banat have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.13.a:0 "Let them go."
+ hungary_flavor_territory.13.b:0 "Fight the rebels."
+ hungary_flavor_territory.13.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.20.t:0 "Acquisition of Southern Partium"
+ hungary_flavor_territory.20.d:0 "We have already decided for the integration of the Transylvanian region, but one of its states, Southern Partium, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.20.a:0 "Start the integration process."
+ hungary_flavor_territory.20.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.21.t:0 "Southern Partium lost"
+ hungary_flavor_territory.21.d:0 "We were too busy integrating Southern Partium, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.21.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.22.t:0 "Southern Partium integrated"
+ hungary_flavor_territory.22.d:0 "Our integration in Southern Partium has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.22.a:0 "Excellent."
+ 
+ hungary_flavor_territory.23.t:0 "Rebellion in Southern Partium"
+ hungary_flavor_territory.23.d:0 "Some upstart separatists in Southern Partium have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.23.a:0 "Let them go."
+ hungary_flavor_territory.23.b:0 "Fight the rebels."
+ hungary_flavor_territory.23.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.30.t:0 "Acquisition of Southern Transylvania"
+ hungary_flavor_territory.30.d:0 "We have already decided for the integration of the Transylvanian region, but one of its states, Southern Transylvania, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.30.a:0 "Start the integration process."
+ hungary_flavor_territory.30.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.31.t:0 "Southern Transylvania lost"
+ hungary_flavor_territory.31.d:0 "We were too busy integrating Southern Transylvania, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.31.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.32.t:0 "Southern Transylvania integrated"
+ hungary_flavor_territory.32.d:0 "Our integration in Southern Transylvania has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.32.a:0 "Excellent."
+ 
+ hungary_flavor_territory.33.t:0 "Rebellion in Southern Transylvania"
+ hungary_flavor_territory.33.d:0 "Some upstart separatists in Southern Transylvania have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.33.a:0 "Let them go."
+ hungary_flavor_territory.33.b:0 "Fight the rebels."
+ hungary_flavor_territory.33.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.40.t:0 "Acquisition of Maramures"
+ hungary_flavor_territory.40.d:0 "We have already decided for the integration of the Transylvanian region, but one of its states, Maramures, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.40.a:0 "Start the integration process."
+ hungary_flavor_territory.40.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.41.t:0 "Maramures lost"
+ hungary_flavor_territory.41.d:0 "We were too busy integrating Maramures, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.41.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.42.t:0 "Maramures integrated"
+ hungary_flavor_territory.42.d:0 "Our integration in Maramures has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.42.a:0 "Excellent."
+ 
+ hungary_flavor_territory.43.t:0 "Rebellion in Maramures"
+ hungary_flavor_territory.43.d:0 "Some upstart separatists in Maramures have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.43.a:0 "Let them go."
+ hungary_flavor_territory.43.b:0 "Fight the rebels."
+ hungary_flavor_territory.43.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.50.t:0 "Acquisition of Northern Partium"
+ hungary_flavor_territory.50.d:0 "We have already decided for the integration of the Transylvanian region, but one of its states, Northern Partium, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.50.a:0 "Start the integration process."
+ hungary_flavor_territory.50.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.51.t:0 "Northern Partium lost"
+ hungary_flavor_territory.51.d:0 "We were too busy integrating Northern Partium, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.51.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.52.t:0 "Northern Partium integrated"
+ hungary_flavor_territory.52.d:0 "Our integration in Northern Partium has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.52.a:0 "Excellent."
+ 
+ hungary_flavor_territory.53.t:0 "Rebellion in Northern Partium"
+ hungary_flavor_territory.53.d:0 "Some upstart separatists in Northern Partium have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.53.a:0 "Let them go."
+ hungary_flavor_territory.53.b:0 "Fight the rebels."
+ hungary_flavor_territory.53.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.101.t:0 "Integration of the Slovakian region"
+ hungary_flavor_territory.101.d:0 "We have recently acquired territory in the Slovakian region, which is historically a part of our nation. However, a significant portion of the population is not [Root.GetAdjective], and thus, we can not easily conscript them into the army. We could leave things as they are, and just use the region's resources and industrial capacity, or we could start the process of integrating them, so they eventually become a full part of our country. If we decide to integrate the region, we would have to allocate some resources to the process, and our administrative capacity would take a hit, but it might all be worth it in the end."
+ hungary_flavor_territory.101.a:0 "Start the integration process."
+ hungary_flavor_territory.101.b:0 "Don't integrate the region."
+ hungary_flavor_territory.101.c:0 "Decide later."
+ 
+ hungary_flavor_territory.102.t:0 "Resistance to integration in the Slovakian region"
+ hungary_flavor_territory.102.d:0 "The integration of the Slovakian region is under way, but some of the locals are reluctant to cooperate. Sending in our armed forces to ensure collaboration would solve the problem, but it might provoke the population into open resistance."
+ hungary_flavor_territory.102.a:0 "We will have to deal with this."
+ hungary_flavor_territory.102.b:0 "Let it run its course."
+ 
+ hungary_flavor_territory.110.t:0 "Acquisition of Western Slovakia"
+ hungary_flavor_territory.110.d:0 "We have already decided for the integration of the Slovakian region, but one of its states, Western Slovakia, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.110.a:0 "Start the integration process."
+ hungary_flavor_territory.110.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.111.t:0 "Western Slovakia lost"
+ hungary_flavor_territory.111.d:0 "We were too busy integrating Western Slovakia, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.111.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.112.t:0 "Western Slovakia integrated"
+ hungary_flavor_territory.112.d:0 "Our integration in Western Slovakia has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.112.a:0 "Excellent."
+ 
+ hungary_flavor_territory.113.t:0 "Rebellion in Western Slovakia"
+ hungary_flavor_territory.113.d:0 "Some upstart separatists in Western Slovakia have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.113.a:0 "Let them go."
+ hungary_flavor_territory.113.b:0 "Fight the rebels."
+ hungary_flavor_territory.113.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.120.t:0 "Acquisition of Eastern Slovakia"
+ hungary_flavor_territory.120.d:0 "We have already decided for the integration of the Slovakian region, but one of its states, Eastern Slovakia, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.120.a:0 "Start the integration process."
+ hungary_flavor_territory.120.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.121.t:0 "Eastern Slovakia lost"
+ hungary_flavor_territory.121.d:0 "We were too busy integrating Eastern Slovakia, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.121.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.122.t:0 "Eastern Slovakia integrated"
+ hungary_flavor_territory.122.d:0 "Our integration in Eastern Slovakia has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.122.a:0 "Excellent."
+ 
+ hungary_flavor_territory.123.t:0 "Rebellion in Eastern Slovakia"
+ hungary_flavor_territory.123.d:0 "Some upstart separatists in Eastern Slovakia have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.123.a:0 "Let them go."
+ hungary_flavor_territory.123.b:0 "Fight the rebels."
+ hungary_flavor_territory.123.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.130.t:0 "Acquisition of Carpathian Ruthenia"
+ hungary_flavor_territory.130.d:0 "We have already decided for the integration of the Slovakian region, but one of its states, Carpathian Ruthenia, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.130.a:0 "Start the integration process."
+ hungary_flavor_territory.130.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.131.t:0 "Carpathian Ruthenia lost"
+ hungary_flavor_territory.131.d:0 "We were too busy integrating Carpathian Ruthenia, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.131.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.132.t:0 "Carpathian Ruthenia integrated"
+ hungary_flavor_territory.132.d:0 "Our integration in Carpathian Ruthenia has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.132.a:0 "Excellent."
+ 
+ hungary_flavor_territory.133.t:0 "Rebellion in Carpathian Ruthenia"
+ hungary_flavor_territory.133.d:0 "Some upstart separatists in Carpathian Ruthenia have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.133.a:0 "Let them go."
+ hungary_flavor_territory.133.b:0 "Fight the rebels."
+ hungary_flavor_territory.133.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.201.t:0 "Integration of the Croatian region"
+ hungary_flavor_territory.201.d:0 "We have recently acquired territory in the Croatian region, which is historically a part of our nation. However, a significant portion of the population is not [Root.GetAdjective], and thus, we can not easily conscript them into the army. We could leave things as they are, and just use the region's resources and industrial capacity, or we could start the process of integrating them, so they eventually become a full part of our country. If we decide to integrate the region, we would have to allocate some resources to the process, and our administrative capacity would take a hit, but it might all be worth it in the end."
+ hungary_flavor_territory.201.a:0 "Start the integration process."
+ hungary_flavor_territory.201.b:0 "Don't integrate the region."
+ hungary_flavor_territory.201.c:0 "Decide later."
+ 
+ hungary_flavor_territory.202.t:0 "Resistance to integration in the Croatian region"
+ hungary_flavor_territory.202.d:0 "The integration of the Croatian region is under way, but some of the locals are reluctant to cooperate. Sending in our armed forces to ensure collaboration would solve the problem, but it might provoke the population into open resistance."
+ hungary_flavor_territory.202.a:0 "We will have to deal with this."
+ hungary_flavor_territory.202.b:0 "Let it run its course."
+ 
+ hungary_flavor_territory.210.t:0 "Acquisition of Slavonia"
+ hungary_flavor_territory.210.d:0 "We have already decided for the integration of the Croatian region, but one of its states, Slavonia, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.210.a:0 "Start the integration process."
+ hungary_flavor_territory.210.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.211.t:0 "Slavonia lost"
+ hungary_flavor_territory.211.d:0 "We were too busy integrating Slavonia, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.211.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.212.t:0 "Slavonia integrated"
+ hungary_flavor_territory.212.d:0 "Our integration in Slavonia has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.212.a:0 "Excellent."
+ 
+ hungary_flavor_territory.213.t:0 "Rebellion in Slavonia"
+ hungary_flavor_territory.213.d:0 "Some upstart separatists in Slavonia have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.213.a:0 "Let them go."
+ hungary_flavor_territory.213.b:0 "Fight the rebels."
+ hungary_flavor_territory.213.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.220.t:0 "Acquisition of Fiume"
+ hungary_flavor_territory.220.d:0 "We have already decided for the integration of the Croatian region, but one of its states, Fiume, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.220.a:0 "Start the integration process."
+ hungary_flavor_territory.220.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.221.t:0 "Fiume lost"
+ hungary_flavor_territory.221.d:0 "We were too busy integrating Fiume, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.221.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.222.t:0 "Fiume integrated"
+ hungary_flavor_territory.222.d:0 "Our integration in Fiume has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.222.a:0 "Excellent."
+ 
+ hungary_flavor_territory.223.t:0 "Rebellion in Fiume"
+ hungary_flavor_territory.223.d:0 "Some upstart separatists in Fiume have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.223.a:0 "Let them go."
+ hungary_flavor_territory.223.b:0 "Fight the rebels."
+ hungary_flavor_territory.223.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.230.t:0 "Acquisition of Croatia"
+ hungary_flavor_territory.230.d:0 "We have already decided for the integration of the Croatian region, but one of its states, Croatia, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.230.a:0 "Start the integration process."
+ hungary_flavor_territory.230.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.231.t:0 "Croatia lost"
+ hungary_flavor_territory.231.d:0 "We were too busy integrating Croatia, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.231.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.232.t:0 "Croatia integrated"
+ hungary_flavor_territory.232.d:0 "Our integration in Croatia has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.232.a:0 "Excellent."
+ 
+ hungary_flavor_territory.233.t:0 "Rebellion in Croatia"
+ hungary_flavor_territory.233.d:0 "Some upstart separatists in Croatia have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.233.a:0 "Let them go."
+ hungary_flavor_territory.233.b:0 "Fight the rebels."
+ hungary_flavor_territory.233.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.240.t:0 "Acquisition of Dalmatia"
+ hungary_flavor_territory.240.d:0 "We have already decided for the integration of the Croatian region, but one of its states, Dalmatia, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.240.a:0 "Start the integration process."
+ hungary_flavor_territory.240.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.241.t:0 "Dalmatia lost"
+ hungary_flavor_territory.241.d:0 "We were too busy integrating Dalmatia, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.241.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.242.t:0 "Dalmatia integrated"
+ hungary_flavor_territory.242.d:0 "Our integration in Dalmatia has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.242.a:0 "Excellent."
+ 
+ hungary_flavor_territory.243.t:0 "Rebellion in Dalmatia"
+ hungary_flavor_territory.243.d:0 "Some upstart separatists in Dalmatia have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.243.a:0 "Let them go."
+ hungary_flavor_territory.243.b:0 "Fight the rebels."
+ hungary_flavor_territory.243.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.250.t:0 "Acquisition of Kotor"
+ hungary_flavor_territory.250.d:0 "We have already decided for the integration of the Croatian region, but one of its states, Kotor, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.250.a:0 "Start the integration process."
+ hungary_flavor_territory.250.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.251.t:0 "Kotor lost"
+ hungary_flavor_territory.251.d:0 "We were too busy integrating Kotor, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.251.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.252.t:0 "Kotor integrated"
+ hungary_flavor_territory.252.d:0 "Our integration in Kotor has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.252.a:0 "Excellent."
+ 
+ hungary_flavor_territory.253.t:0 "Rebellion in Kotor"
+ hungary_flavor_territory.253.d:0 "Some upstart separatists in Kotor have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.253.a:0 "Let them go."
+ hungary_flavor_territory.253.b:0 "Fight the rebels."
+ hungary_flavor_territory.253.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.260.t:0 "Acquisition of Pag"
+ hungary_flavor_territory.260.d:0 "We have already decided for the integration of the Croatian region, but one of its states, Pag, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.260.a:0 "Start the integration process."
+ hungary_flavor_territory.260.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.261.t:0 "Pag lost"
+ hungary_flavor_territory.261.d:0 "We were too busy integrating Pag, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.261.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.262.t:0 "Pag integrated"
+ hungary_flavor_territory.262.d:0 "Our integration in Pag has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.262.a:0 "Excellent."
+ 
+ hungary_flavor_territory.263.t:0 "Rebellion in Pag"
+ hungary_flavor_territory.263.d:0 "Some upstart separatists in Pag have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.263.a:0 "Let them go."
+ hungary_flavor_territory.263.b:0 "Fight the rebels."
+ hungary_flavor_territory.263.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.301.t:0 "Integration of the Vojvodina region"
+ hungary_flavor_territory.301.d:0 "We have recently acquired territory in the Vojvodina region, which is historically a part of our nation. However, a significant portion of the population is not [Root.GetAdjective], and thus, we can not easily conscript them into the army. We could leave things as they are, and just use the region's resources and industrial capacity, or we could start the process of integrating them, so they eventually become a full part of our country. If we decide to integrate the region, we would have to allocate some resources to the process, and our administrative capacity would take a hit, but it might all be worth it in the end."
+ hungary_flavor_territory.301.a:0 "Start the integration process."
+ hungary_flavor_territory.301.b:0 "Don't integrate the region."
+ hungary_flavor_territory.301.c:0 "Decide later."
+ 
+ hungary_flavor_territory.302.t:0 "Resistance to integration in the Vojvodina region"
+ hungary_flavor_territory.302.d:0 "The integration of the Vojvodina region is under way, but some of the locals are reluctant to cooperate. Sending in our armed forces to ensure collaboration would solve the problem, but it might provoke the population into open resistance."
+ hungary_flavor_territory.302.a:0 "We will have to deal with this."
+ hungary_flavor_territory.302.b:0 "Let it run its course."
+ 
+ hungary_flavor_territory.310.t:0 "Acquisition of Torontal"
+ hungary_flavor_territory.310.d:0 "We have already decided for the integration of the Vojvodina region, but one of its states, Torontal, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.310.a:0 "Start the integration process."
+ hungary_flavor_territory.310.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.311.t:0 "Torontal lost"
+ hungary_flavor_territory.311.d:0 "We were too busy integrating Torontal, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.311.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.312.t:0 "Torontal integrated"
+ hungary_flavor_territory.312.d:0 "Our integration in Torontal has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.312.a:0 "Excellent."
+ 
+ hungary_flavor_territory.313.t:0 "Rebellion in Torontal"
+ hungary_flavor_territory.313.d:0 "Some upstart separatists in Torontal have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.313.a:0 "Let them go."
+ hungary_flavor_territory.313.b:0 "Fight the rebels."
+ hungary_flavor_territory.313.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.320.t:0 "Acquisition of Srem"
+ hungary_flavor_territory.320.d:0 "We have already decided for the integration of the Vojvodina region, but one of its states, Srem, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.320.a:0 "Start the integration process."
+ hungary_flavor_territory.320.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.321.t:0 "Srem lost"
+ hungary_flavor_territory.321.d:0 "We were too busy integrating Srem, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.321.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.322.t:0 "Srem integrated"
+ hungary_flavor_territory.322.d:0 "Our integration in Srem has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.322.a:0 "Excellent."
+ 
+ hungary_flavor_territory.323.t:0 "Rebellion in Srem"
+ hungary_flavor_territory.323.d:0 "Some upstart separatists in Srem have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.323.a:0 "Let them go."
+ hungary_flavor_territory.323.b:0 "Fight the rebels."
+ hungary_flavor_territory.323.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.401.t:0 "Integration of the Burgenland region"
+ hungary_flavor_territory.401.d:0 "We have recently acquired territory in the Burgenland region, which is historically a part of our nation. However, a significant portion of the population is not [Root.GetAdjective], and thus, we can not easily conscript them into the army. We could leave things as they are, and just use the region's resources and industrial capacity, or we could start the process of integrating them, so they eventually become a full part of our country. If we decide to integrate the region, we would have to allocate some resources to the process, and our administrative capacity would take a hit, but it might all be worth it in the end."
+ hungary_flavor_territory.401.a:0 "Start the integration process."
+ hungary_flavor_territory.401.b:0 "Don't integrate the region."
+ hungary_flavor_territory.401.c:0 "Decide later."
+ 
+ hungary_flavor_territory.402.t:0 "Resistance to integration in the Burgenland region"
+ hungary_flavor_territory.402.d:0 "The integration of the Burgenland region is under way, but some of the locals are reluctant to cooperate. Sending in our armed forces to ensure collaboration would solve the problem, but it might provoke the population into open resistance."
+ hungary_flavor_territory.402.a:0 "We will have to deal with this."
+ hungary_flavor_territory.402.b:0 "Let it run its course."
+ 
+ hungary_flavor_territory.410.t:0 "Acquisition of Burgenland"
+ hungary_flavor_territory.410.d:0 "We have already decided for the integration of the Burgenland region, but one of its states, Burgenland, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.410.a:0 "Start the integration process."
+ hungary_flavor_territory.410.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.411.t:0 "Burgenland lost"
+ hungary_flavor_territory.411.d:0 "We were too busy integrating Burgenland, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.411.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.412.t:0 "Burgenland integrated"
+ hungary_flavor_territory.412.d:0 "Our integration in Burgenland has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.412.a:0 "Excellent."
+ 
+ hungary_flavor_territory.413.t:0 "Rebellion in Burgenland"
+ hungary_flavor_territory.413.d:0 "Some upstart separatists in Burgenland have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.413.a:0 "Let them go."
+ hungary_flavor_territory.413.b:0 "Fight the rebels."
+ hungary_flavor_territory.413.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.501.t:0 "Integration of the Bohemian region"
+ hungary_flavor_territory.501.d:0 "We have recently acquired territory in the Bohemian region, which is historically a part of our nation. However, a significant portion of the population is not [Root.GetAdjective], and thus, we can not easily conscript them into the army. We could leave things as they are, and just use the region's resources and industrial capacity, or we could start the process of integrating them, so they eventually become a full part of our country. If we decide to integrate the region, we would have to allocate some resources to the process, and our administrative capacity would take a hit, but it might all be worth it in the end."
+ hungary_flavor_territory.501.a:0 "Start the integration process."
+ hungary_flavor_territory.501.b:0 "Don't integrate the region."
+ hungary_flavor_territory.501.c:0 "Decide later."
+ 
+ hungary_flavor_territory.502.t:0 "Resistance to integration in the Bohemian region"
+ hungary_flavor_territory.502.d:0 "The integration of the Bohemian region is under way, but some of the locals are reluctant to cooperate. Sending in our armed forces to ensure collaboration would solve the problem, but it might provoke the population into open resistance."
+ hungary_flavor_territory.502.a:0 "We will have to deal with this."
+ hungary_flavor_territory.502.b:0 "Let it run its course."
+ 
+ hungary_flavor_territory.510.t:0 "Acquisition of Bohemia"
+ hungary_flavor_territory.510.d:0 "We have already decided for the integration of the Bohemian region, but one of its states, Bohemia, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.510.a:0 "Start the integration process."
+ hungary_flavor_territory.510.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.511.t:0 "Bohemia lost"
+ hungary_flavor_territory.511.d:0 "We were too busy integrating Bohemia, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.511.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.512.t:0 "Bohemia integrated"
+ hungary_flavor_territory.512.d:0 "Our integration in Bohemia has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.512.a:0 "Excellent."
+ 
+ hungary_flavor_territory.513.t:0 "Rebellion in Bohemia"
+ hungary_flavor_territory.513.d:0 "Some upstart separatists in Bohemia have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.513.a:0 "Let them go."
+ hungary_flavor_territory.513.b:0 "Fight the rebels."
+ hungary_flavor_territory.513.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.520.t:0 "Acquisition of Sudetenland"
+ hungary_flavor_territory.520.d:0 "We have already decided for the integration of the Bohemian region, but one of its states, Sudetenland, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.520.a:0 "Start the integration process."
+ hungary_flavor_territory.520.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.521.t:0 "Sudetenland lost"
+ hungary_flavor_territory.521.d:0 "We were too busy integrating Sudetenland, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.521.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.522.t:0 "Sudetenland integrated"
+ hungary_flavor_territory.522.d:0 "Our integration in Sudetenland has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.522.a:0 "Excellent."
+ 
+ hungary_flavor_territory.523.t:0 "Rebellion in Sudetenland"
+ hungary_flavor_territory.523.d:0 "Some upstart separatists in Sudetenland have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.523.a:0 "Let them go."
+ hungary_flavor_territory.523.b:0 "Fight the rebels."
+ hungary_flavor_territory.523.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.530.t:0 "Acquisition of Eastern Sudetenland"
+ hungary_flavor_territory.530.d:0 "We have already decided for the integration of the Bohemian region, but one of its states, Eastern Sudetenland, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.530.a:0 "Start the integration process."
+ hungary_flavor_territory.530.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.531.t:0 "Eastern Sudetenland lost"
+ hungary_flavor_territory.531.d:0 "We were too busy integrating Eastern Sudetenland, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.531.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.532.t:0 "Eastern Sudetenland integrated"
+ hungary_flavor_territory.532.d:0 "Our integration in Eastern Sudetenland has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.532.a:0 "Excellent."
+ 
+ hungary_flavor_territory.533.t:0 "Rebellion in Eastern Sudetenland"
+ hungary_flavor_territory.533.d:0 "Some upstart separatists in Eastern Sudetenland have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.533.a:0 "Let them go."
+ hungary_flavor_territory.533.b:0 "Fight the rebels."
+ hungary_flavor_territory.533.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.540.t:0 "Acquisition of Moravia"
+ hungary_flavor_territory.540.d:0 "We have already decided for the integration of the Bohemian region, but one of its states, Moravia, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.540.a:0 "Start the integration process."
+ hungary_flavor_territory.540.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.541.t:0 "Moravia lost"
+ hungary_flavor_territory.541.d:0 "We were too busy integrating Moravia, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.541.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.542.t:0 "Moravia integrated"
+ hungary_flavor_territory.542.d:0 "Our integration in Moravia has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.542.a:0 "Excellent."
+ 
+ hungary_flavor_territory.543.t:0 "Rebellion in Moravia"
+ hungary_flavor_territory.543.d:0 "Some upstart separatists in Moravia have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.543.a:0 "Let them go."
+ hungary_flavor_territory.543.b:0 "Fight the rebels."
+ hungary_flavor_territory.543.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.601.t:0 "Integration of the Galicia-Lodomeria region"
+ hungary_flavor_territory.601.d:0 "We have recently acquired territory in the Galicia-Lodomeria region, which is historically a part of our nation. However, a significant portion of the population is not [Root.GetAdjective], and thus, we can not easily conscript them into the army. We could leave things as they are, and just use the region's resources and industrial capacity, or we could start the process of integrating them, so they eventually become a full part of our country. If we decide to integrate the region, we would have to allocate some resources to the process, and our administrative capacity would take a hit, but it might all be worth it in the end."
+ hungary_flavor_territory.601.a:0 "Start the integration process."
+ hungary_flavor_territory.601.b:0 "Don't integrate the region."
+ hungary_flavor_territory.601.c:0 "Decide later."
+ 
+ hungary_flavor_territory.602.t:0 "Resistance to integration in the Galicia-Lodomeria region"
+ hungary_flavor_territory.602.d:0 "The integration of the Galicia-Lodomeria region is under way, but some of the locals are reluctant to cooperate. Sending in our armed forces to ensure collaboration would solve the problem, but it might provoke the population into open resistance."
+ hungary_flavor_territory.602.a:0 "We will have to deal with this."
+ hungary_flavor_territory.602.b:0 "Let it run its course."
+ 
+ hungary_flavor_territory.610.t:0 "Acquisition of Zaolzie"
+ hungary_flavor_territory.610.d:0 "We have already decided for the integration of the Galicia-Lodomeria region, but one of its states, Zaolzie, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.610.a:0 "Start the integration process."
+ hungary_flavor_territory.610.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.611.t:0 "Zaolzie lost"
+ hungary_flavor_territory.611.d:0 "We were too busy integrating Zaolzie, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.611.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.612.t:0 "Zaolzie integrated"
+ hungary_flavor_territory.612.d:0 "Our integration in Zaolzie has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.612.a:0 "Excellent."
+ 
+ hungary_flavor_territory.613.t:0 "Rebellion in Zaolzie"
+ hungary_flavor_territory.613.d:0 "Some upstart separatists in Zaolzie have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.613.a:0 "Let them go."
+ hungary_flavor_territory.613.b:0 "Fight the rebels."
+ hungary_flavor_territory.613.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.620.t:0 "Acquisition of Krakow"
+ hungary_flavor_territory.620.d:0 "We have already decided for the integration of the Galicia-Lodomeria region, but one of its states, Krakow, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.620.a:0 "Start the integration process."
+ hungary_flavor_territory.620.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.621.t:0 "Krakow lost"
+ hungary_flavor_territory.621.d:0 "We were too busy integrating Krakow, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.621.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.622.t:0 "Krakow integrated"
+ hungary_flavor_territory.622.d:0 "Our integration in Krakow has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.622.a:0 "Excellent."
+ 
+ hungary_flavor_territory.623.t:0 "Rebellion in Krakow"
+ hungary_flavor_territory.623.d:0 "Some upstart separatists in Krakow have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.623.a:0 "Let them go."
+ hungary_flavor_territory.623.b:0 "Fight the rebels."
+ hungary_flavor_territory.623.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.630.t:0 "Acquisition of Stanislawow"
+ hungary_flavor_territory.630.d:0 "We have already decided for the integration of the Galicia-Lodomeria region, but one of its states, Stanislawow, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.630.a:0 "Start the integration process."
+ hungary_flavor_territory.630.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.631.t:0 "Stanislawow lost"
+ hungary_flavor_territory.631.d:0 "We were too busy integrating Stanislawow, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.631.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.632.t:0 "Stanislawow integrated"
+ hungary_flavor_territory.632.d:0 "Our integration in Stanislawow has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.632.a:0 "Excellent."
+ 
+ hungary_flavor_territory.633.t:0 "Rebellion in Stanislawow"
+ hungary_flavor_territory.633.d:0 "Some upstart separatists in Stanislawow have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.633.a:0 "Let them go."
+ hungary_flavor_territory.633.b:0 "Fight the rebels."
+ hungary_flavor_territory.633.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.640.t:0 "Acquisition of Lwow"
+ hungary_flavor_territory.640.d:0 "We have already decided for the integration of the Galicia-Lodomeria region, but one of its states, Lwow, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.640.a:0 "Start the integration process."
+ hungary_flavor_territory.640.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.641.t:0 "Lwow lost"
+ hungary_flavor_territory.641.d:0 "We were too busy integrating Lwow, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.641.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.642.t:0 "Lwow integrated"
+ hungary_flavor_territory.642.d:0 "Our integration in Lwow has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.642.a:0 "Excellent."
+ 
+ hungary_flavor_territory.643.t:0 "Rebellion in Lwow"
+ hungary_flavor_territory.643.d:0 "Some upstart separatists in Lwow have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.643.a:0 "Let them go."
+ hungary_flavor_territory.643.b:0 "Fight the rebels."
+ hungary_flavor_territory.643.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.701.t:0 "Integration of the Slovenian region"
+ hungary_flavor_territory.701.d:0 "We have recently acquired territory in the Slovenian region, which is historically a part of our nation. However, a significant portion of the population is not [Root.GetAdjective], and thus, we can not easily conscript them into the army. We could leave things as they are, and just use the region's resources and industrial capacity, or we could start the process of integrating them, so they eventually become a full part of our country. If we decide to integrate the region, we would have to allocate some resources to the process, and our administrative capacity would take a hit, but it might all be worth it in the end."
+ hungary_flavor_territory.701.a:0 "Start the integration process."
+ hungary_flavor_territory.701.b:0 "Don't integrate the region."
+ hungary_flavor_territory.701.c:0 "Decide later."
+ 
+ hungary_flavor_territory.702.t:0 "Resistance to integration in the Slovenian region"
+ hungary_flavor_territory.702.d:0 "The integration of the Slovenian region is under way, but some of the locals are reluctant to cooperate. Sending in our armed forces to ensure collaboration would solve the problem, but it might provoke the population into open resistance."
+ hungary_flavor_territory.702.a:0 "We will have to deal with this."
+ hungary_flavor_territory.702.b:0 "Let it run its course."
+ 
+ hungary_flavor_territory.710.t:0 "Acquisition of Slovenia"
+ hungary_flavor_territory.710.d:0 "We have already decided for the integration of the Slovenian region, but one of its states, Slovenia, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.710.a:0 "Start the integration process."
+ hungary_flavor_territory.710.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.711.t:0 "Slovenia lost"
+ hungary_flavor_territory.711.d:0 "We were too busy integrating Slovenia, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.711.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.712.t:0 "Slovenia integrated"
+ hungary_flavor_territory.712.d:0 "Our integration in Slovenia has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.712.a:0 "Excellent."
+ 
+ hungary_flavor_territory.713.t:0 "Rebellion in Slovenia"
+ hungary_flavor_territory.713.d:0 "Some upstart separatists in Slovenia have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.713.a:0 "Let them go."
+ hungary_flavor_territory.713.b:0 "Fight the rebels."
+ hungary_flavor_territory.713.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.720.t:0 "Acquisition of Ljubljana"
+ hungary_flavor_territory.720.d:0 "We have already decided for the integration of the Slovenian region, but one of its states, Ljubljana, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.720.a:0 "Start the integration process."
+ hungary_flavor_territory.720.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.721.t:0 "Ljubljana lost"
+ hungary_flavor_territory.721.d:0 "We were too busy integrating Ljubljana, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.721.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.722.t:0 "Ljubljana integrated"
+ hungary_flavor_territory.722.d:0 "Our integration in Ljubljana has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.722.a:0 "Excellent."
+ 
+ hungary_flavor_territory.723.t:0 "Rebellion in Ljubljana"
+ hungary_flavor_territory.723.d:0 "Some upstart separatists in Ljubljana have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.723.a:0 "Let them go."
+ hungary_flavor_territory.723.b:0 "Fight the rebels."
+ hungary_flavor_territory.723.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.801.t:0 "Integration of the Istria & South Tirol region"
+ hungary_flavor_territory.801.d:0 "We have recently acquired territory in the Istria & South Tirol region, which is historically a part of our nation. However, a significant portion of the population is not [Root.GetAdjective], and thus, we can not easily conscript them into the army. We could leave things as they are, and just use the region's resources and industrial capacity, or we could start the process of integrating them, so they eventually become a full part of our country. If we decide to integrate the region, we would have to allocate some resources to the process, and our administrative capacity would take a hit, but it might all be worth it in the end."
+ hungary_flavor_territory.801.a:0 "Start the integration process."
+ hungary_flavor_territory.801.b:0 "Don't integrate the region."
+ hungary_flavor_territory.801.c:0 "Decide later."
+ 
+ hungary_flavor_territory.802.t:0 "Resistance to integration in the Istria & South Tirol region"
+ hungary_flavor_territory.802.d:0 "The integration of the Istria & South Tirol region is under way, but some of the locals are reluctant to cooperate. Sending in our armed forces to ensure collaboration would solve the problem, but it might provoke the population into open resistance."
+ hungary_flavor_territory.802.a:0 "We will have to deal with this."
+ hungary_flavor_territory.802.b:0 "Let it run its course."
+ 
+ hungary_flavor_territory.810.t:0 "Acquisition of South Tirol"
+ hungary_flavor_territory.810.d:0 "We have already decided for the integration of the Istria & South Tirol region, but one of its states, South Tirol, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.810.a:0 "Start the integration process."
+ hungary_flavor_territory.810.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.811.t:0 "South Tirol lost"
+ hungary_flavor_territory.811.d:0 "We were too busy integrating South Tirol, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.811.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.812.t:0 "South Tirol integrated"
+ hungary_flavor_territory.812.d:0 "Our integration in South Tirol has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.812.a:0 "Excellent."
+ 
+ hungary_flavor_territory.813.t:0 "Rebellion in South Tirol"
+ hungary_flavor_territory.813.d:0 "Some upstart separatists in South Tirol have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.813.a:0 "Let them go."
+ hungary_flavor_territory.813.b:0 "Fight the rebels."
+ hungary_flavor_territory.813.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.820.t:0 "Acquisition of Istria"
+ hungary_flavor_territory.820.d:0 "We have already decided for the integration of the Istria & South Tirol region, but one of its states, Istria, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.820.a:0 "Start the integration process."
+ hungary_flavor_territory.820.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.821.t:0 "Istria lost"
+ hungary_flavor_territory.821.d:0 "We were too busy integrating Istria, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.821.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.822.t:0 "Istria integrated"
+ hungary_flavor_territory.822.d:0 "Our integration in Istria has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.822.a:0 "Excellent."
+ 
+ hungary_flavor_territory.823.t:0 "Rebellion in Istria"
+ hungary_flavor_territory.823.d:0 "Some upstart separatists in Istria have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.823.a:0 "Let them go."
+ hungary_flavor_territory.823.b:0 "Fight the rebels."
+ hungary_flavor_territory.823.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.830.t:0 "Acquisition of Primorska"
+ hungary_flavor_territory.830.d:0 "We have already decided for the integration of the Istria & South Tirol region, but one of its states, Primorska, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.830.a:0 "Start the integration process."
+ hungary_flavor_territory.830.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.831.t:0 "Primorska lost"
+ hungary_flavor_territory.831.d:0 "We were too busy integrating Primorska, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.831.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.832.t:0 "Primorska integrated"
+ hungary_flavor_territory.832.d:0 "Our integration in Primorska has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.832.a:0 "Excellent."
+ 
+ hungary_flavor_territory.833.t:0 "Rebellion in Primorska"
+ hungary_flavor_territory.833.d:0 "Some upstart separatists in Primorska have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.833.a:0 "Let them go."
+ hungary_flavor_territory.833.b:0 "Fight the rebels."
+ hungary_flavor_territory.833.c:0 "Negotiate with them."
+ 
+ hungary_flavor_territory.901.t:0 "Integration of the Bosnian region"
+ hungary_flavor_territory.901.d:0 "We have recently acquired territory in the Bosnian region, which is historically a part of our nation. However, a significant portion of the population is not [Root.GetAdjective], and thus, we can not easily conscript them into the army. We could leave things as they are, and just use the region's resources and industrial capacity, or we could start the process of integrating them, so they eventually become a full part of our country. If we decide to integrate the region, we would have to allocate some resources to the process, and our administrative capacity would take a hit, but it might all be worth it in the end."
+ hungary_flavor_territory.901.a:0 "Start the integration process."
+ hungary_flavor_territory.901.b:0 "Don't integrate the region."
+ hungary_flavor_territory.901.c:0 "Decide later."
+ 
+ hungary_flavor_territory.902.t:0 "Resistance to integration in the Bosnian region"
+ hungary_flavor_territory.902.d:0 "The integration of the Bosnian region is under way, but some of the locals are reluctant to cooperate. Sending in our armed forces to ensure collaboration would solve the problem, but it might provoke the population into open resistance."
+ hungary_flavor_territory.902.a:0 "We will have to deal with this."
+ hungary_flavor_territory.902.b:0 "Let it run its course."
+ 
+ hungary_flavor_territory.910.t:0 "Acquisition of Bosnia"
+ hungary_flavor_territory.910.d:0 "We have already decided for the integration of the Bosnian region, but one of its states, Bosnia, has only recently come under our ownership. We can decide to exclude this state from the integration indefinitely if we so desire, but otherwise, integration of the state will begin post-haste."
+ hungary_flavor_territory.910.a:0 "Start the integration process."
+ hungary_flavor_territory.910.b:0 "The state is fine as it is."
+ 
+ hungary_flavor_territory.911.t:0 "Bosnia lost"
+ hungary_flavor_territory.911.d:0 "We were too busy integrating Bosnia, and forgot about defending it! It has now fallen into enemy hands, and thus, the integration has been halted. Once we have reacquired it, we will be able to start the integration again."
+ hungary_flavor_territory.911.a:0 "We will take it back eventually."
+ 
+ hungary_flavor_territory.912.t:0 "Bosnia integrated"
+ hungary_flavor_territory.912.d:0 "Our integration in Bosnia has been successful. The population is now ready to be conscripted, as if they were our own. The state is still far from being entirely [Root.GetAdjective], but with time, they will be assimilated."
+ hungary_flavor_territory.912.a:0 "Excellent."
+ 
+ hungary_flavor_territory.913.t:0 "Rebellion in Bosnia"
+ hungary_flavor_territory.913.d:0 "Some upstart separatists in Bosnia have taken up arms in an effort to secede from [Root.GetName]. We have to respond to this immediately, if we wish to contain the uprising. However, if we wish to spare the effort, we could just let them have what they want, or try to negotiate with their leaders. They seem to be interested in acquiring regional autonomy, without any threat of being integrated."
+ hungary_flavor_territory.913.a:0 "Let them go."
+ hungary_flavor_territory.913.b:0 "Fight the rebels."
+ hungary_flavor_territory.913.c:0 "Negotiate with them."
+ 
+ hungary_flavor_elections.1.t:0 "Election of 1939"
+ hungary_flavor_elections.1.d:0 "The time has come for the 1939 Elections. The National Unity Party (NEP) has two potential candidates - Pál Teleki, and István Bethlen - but we could decide for the less popular Independent Smallholder's candidate."
+ hungary_flavor_elections.1.a:0 "Keep the current Prime Minister."
+ hungary_flavor_elections.1.b:0 "Elect Pál Teleki (NEP)."
+ hungary_flavor_elections.1.c:0 "Elect István Bethlen (NEP)."
+ hungary_flavor_elections.1.e:0 "Elect the Independent Smallholder's candidate."
+ 
+ hungary_flavor_elections.2.t:0 "Election of 1943"
+ hungary_flavor_elections.2.d:0 "The time has come for the 1943 Elections. The National Unity Party (NEP) has two potential candidates - lászló Bárdossy, and Miklós Kállay - but we could decide for the less popular Independent Smallholder's candidate."
+ hungary_flavor_elections.2.a:0 "Keep the current Prime Minister."
+ hungary_flavor_elections.2.b:0 "Elect László Bárdossy (NEP)."
+ hungary_flavor_elections.2.c:0 "Elect Miklós Kállay (NEP)."
+ hungary_flavor_elections.2.e:0 "Elect the Independent Smallholder's candidate."
+ 
+ hungary_flavor_elections.3.t:0 "Election of 1947"
+ hungary_flavor_elections.3.d:0 "The time has come for the 1947 Elections. The National Unity Party (NEP) has two potential candidates - lászló Bárdossy, and Miklós Kállay - but we could decide for the less popular Independent Smallholder's candidate."
+ hungary_flavor_elections.3.a:0 "Keep the current Prime Minister."
+ hungary_flavor_elections.3.b:0 "Elect László Bárdossy (NEP)."
+ hungary_flavor_elections.3.c:0 "Elect Miklós Kállay (NEP)."
+ hungary_flavor_elections.3.e:0 "Elect the Independent Smallholder's candidate."
+ 

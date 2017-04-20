@@ -1,0 +1,66 @@
+﻿
+add_namespace = hungary_flavor_fin
+
+
+#########
+#FINLAND#
+#########
+
+# [From.GetAdjective] Alliance (event for Finland upon faction invite)
+country_event = {
+	id = hungary_flavor_fin.1
+	title = hungary_flavor_fin.1.t
+	desc = hungary_flavor_fin.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#We need their help.
+	option = {
+		name = hungary_flavor_fin.1.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}	
+			modifier = {
+				factor = 2
+				has_government = fascism
+			}	
+			modifier = {
+				factor = 2
+				has_war = yes
+			}	
+			modifier = {
+				factor = 2
+				has_defensive_war_with = SOV
+			}		
+			modifier = {
+				factor = 15
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}	
+		}
+		add_opinion_modifier = { target = FROM modifier = HUN_invited_to_faction }
+		FROM = {
+			effect_tooltip = { add_to_faction = ROOT }
+			country_event = { hours = 8 id = hungary_flavor.118 }
+		}		
+		add_ai_strategy = {
+			type = alliance
+			id = "HUN"
+			value = 200
+		}
+	}
+	
+	#We can hold our own just fine.
+	option = {
+		name = hungary_flavor_fin.1.b
+		ai_chance = {
+			factor = 80
+		}
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.119 }
+		}
+	}
+}

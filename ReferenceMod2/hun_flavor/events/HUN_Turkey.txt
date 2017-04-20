@@ -1,0 +1,114 @@
+﻿
+add_namespace = hungary_flavor_tur
+
+
+########
+#TURKEY#
+########
+
+# [From.GetAdjective] Alliance (event for Turkey upon faction invite)
+country_event = {
+	id = hungary_flavor_tur.1
+	title = hungary_flavor_tur.1.t
+	desc = hungary_flavor_tur.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#This is in our best interest.
+	option = {
+		name = hungary_flavor_tur.1.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}	
+			modifier = {
+				factor = 2
+				has_government = fascism
+			}		
+			modifier = {
+				factor = 20
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}	
+		}
+		add_opinion_modifier = { target = FROM modifier = HUN_invited_to_faction }
+		FROM = {
+			effect_tooltip = { add_to_faction = ROOT }
+			country_event = { hours = 8 id = hungary_flavor.88 }
+		}		
+		add_ai_strategy = {
+			type = alliance
+			id = "HUN"
+			value = 200
+		}
+	}
+	
+	#A foolish proposition.
+	option = {
+		name = hungary_flavor_tur.1.b
+		ai_chance = {
+			factor = 80
+		}
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.89 }
+		}
+	}
+}
+
+# Troop exchange with [From.GetName]
+country_event = {
+	id = hungary_flavor_tur.2
+	title = hungary_flavor_tur.2.t
+	desc = hungary_flavor_tur.2.d
+	picture = GFX_report_event_HUN_troop_exchange
+	
+	is_triggered_only = yes
+	
+	#Their brigades will be a welcome addition to our army.
+	option = {
+		name = hungary_flavor_tur.2.a
+		ai_chance = { 
+			factor = 50 		
+			modifier = {
+				factor = 10
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}
+		}
+		add_opinion_modifier = { target = FROM modifier = HUN_troop_exchange }
+		reverse_add_opinion_modifier = { target = FROM modifier = HUN_troop_exchange }		
+		add_manpower = -18000
+		custom_effect_tooltip = hungary_flavor_tur.2.tt
+		FROM = { country_event = { hours = 8 id = hungary_flavor.96 } }
+		hidden_effect = { 
+			if = {
+				limit = { 
+					HUN = { 	
+						OR = {
+							has_cosmetic_tag = HUN_AHU
+							has_cosmetic_tag = HUN_DNF
+						} 
+					} 
+				}
+				load_oob = exchange_AHU_to_TUR 
+			}
+			if = {
+				limit = { 
+					NOT = { HUN = { has_cosmetic_tag = HUN_AHU } } 
+					NOT = { HUN = { has_cosmetic_tag = HUN_DNF } } 
+				}
+				load_oob = exchange_HUN_to_TUR 
+			}
+		}
+	}
+	
+	#We cannot risk Turkish lives for their cause
+	option = {
+		name = hungary_flavor_tur.2.b
+		ai_chance = {
+			factor = 50
+		}
+		FROM = { country_event = { hours = 8 id = hungary_flavor.97 } }
+	}
+}

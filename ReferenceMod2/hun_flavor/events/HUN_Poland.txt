@@ -1,0 +1,164 @@
+﻿
+add_namespace = hungary_flavor_pol
+
+
+########
+#POLAND#
+########
+
+# Hungarian Alliance (event for Poland upon faction invite)
+country_event = {
+	id = hungary_flavor_pol.1
+	title = hungary_flavor_pol.1.t
+	desc = hungary_flavor_pol.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_flavor_pol.1.a
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}			
+			modifier = {
+				factor = 10
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}	
+		}
+		add_opinion_modifier = { target = FROM modifier = HUN_invited_to_faction }
+		FROM = {
+			add_to_faction = ROOT
+			country_event = { hours = 8 id = hungary_flavor.7 }
+		}		
+		add_ai_strategy = {
+			type = alliance
+			id = "HUN"
+			value = 200
+		}
+	}
+	
+	option = {
+		name = hungary_flavor_pol.1.b
+		ai_chance = {
+			factor = 60
+		}
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.8 }
+		}
+	}
+}
+
+# Austria-Hungary demands Krakow and Galicia (event for POL)
+country_event = {
+	id = hungary_flavor_pol.2
+	title = hungary_flavor_pol.2.t
+	desc = hungary_flavor_pol.2.d
+	picture = GFX_report_event_ahu_old
+	
+	is_triggered_only = yes
+	
+	#Cede the territories in question
+	option = {
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}	
+			modifier = {
+				factor = 1.5
+				FROM = {
+					ic_ratio = { 
+						tag = ROOT 
+						ratio > 0.8
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					ic_ratio = { 
+						tag = ROOT 
+						ratio > 1.5
+					}
+				}
+			}		
+			modifier = {
+				factor = 10
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					has_country_flag = HUN_realism
+					NOT = { has_army_manpower = { size > 399999 } }
+				}
+			}
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 499999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 599999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 699999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 799999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 899999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 999999 } } }
+		}
+		name = hungary_flavor_pol.2.a
+		FROM = { country_event = { hours = 4 id = hungary_flavor.39 } }
+	}
+	
+	#Refuse the demand
+	option = {
+		ai_chance = {
+			factor = 80
+		}
+		name = hungary_flavor_pol.2.b
+		FROM = { country_event = { hours = 4 id = hungary_flavor.40 } }
+	}
+}
+
+
+# Polish-Hungarian intelligence exchange
+country_event = {
+	id = hungary_flavor_pol.3
+	title = hungary_flavor_pol.3.t
+	desc = hungary_flavor_pol.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#Cede the territories in question
+	option = {
+		name = hungary_flavor_pol.3.a
+		add_political_power = 50
+		add_opinion_modifier = { target = FROM modifier = HUN_polish_hungarian_intelligence_exchange_opinion }
+		reverse_add_opinion_modifier = { target = FROM modifier = HUN_polish_hungarian_intelligence_exchange_opinion }
+	}
+}
+
+
+
+# Hungary supports our northern claims
+country_event = {
+	id = hungary_flavor_pol.4
+	title = hungary_flavor_pol.4.t
+	desc = hungary_flavor_pol.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#[Root.GetFactionName] is our salvation.
+	option = {
+		name = hungary_flavor_pol.4.a
+		add_political_power = 25
+		add_opinion_modifier = { target = FROM modifier = HUN_supported_claims }
+	}
+}

@@ -1,0 +1,169 @@
+﻿####################################
+# Hungarian Flavor Election Events #
+####################################
+
+add_namespace = hungary_flavor_elections
+
+# Election of 1939
+country_event = {
+	id = hungary_flavor_elections.1
+	title = hungary_flavor_elections.1.t
+	desc = hungary_flavor_elections.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = HUN
+		date > 1939.1.1
+		date < 1940.1.1
+		has_completed_focus = HUN_dismantle_the_monarchy
+	}
+	
+	#Keep the current Prime Minister
+	option = {
+		name = hungary_flavor_elections.1.a
+		hidden_effect = { set_country_flag = HUN_president_kept }
+	}
+	
+	#Elect Pál Teleki (NEP)
+	option = {
+		name = hungary_flavor_elections.1.b
+		trigger = { NOT = { has_country_flag = HUN_teleki_president } }
+		hidden_effect = { 
+			clear_hungarian_president_flags = yes
+			set_country_flag = HUN_teleki_president
+			create_politician_pal_teleki = yes 
+		}
+	}
+	
+	#Elect István Bethlen (NEP)
+	option = {
+		name = hungary_flavor_elections.1.c
+		trigger = { NOT = { has_country_flag = HUN_bethlen_president } }
+		hidden_effect = { 
+			clear_hungarian_president_flags = yes
+			set_country_flag = HUN_bethlen_president
+			create_politician_istvan_bethlen = yes 
+		}
+	}
+	
+	#Elect the Independent Smallholder's candidate
+	option = {
+		name = hungary_flavor_elections.1.e
+		set_politics = {
+			ruling_party = democratic
+		}
+		hidden_effect = { clear_hungarian_president_flags = yes }
+	}
+}
+
+# Election of 1943
+country_event = {
+	id = hungary_flavor_elections.2
+	title = hungary_flavor_elections.2.t
+	desc = hungary_flavor_elections.2.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = HUN
+		date > 1943.1.1
+		date < 1944.1.1
+		has_completed_focus = HUN_dismantle_the_monarchy
+	}
+	
+	#Keep the current Prime Minister
+	option = {
+		name = hungary_flavor_elections.2.a
+		trigger = { NOT = { has_country_flag = HUN_president_kept } }
+		hidden_effect = { set_country_flag = HUN_president_kept }
+	}
+	
+	#Elect László Bárdossy (NEP)
+	option = {
+		name = hungary_flavor_elections.2.b
+		trigger = { NOT = { has_country_flag = HUN_bardossy_president } }
+		hidden_effect = { 
+			clear_hungarian_president_flags = yes
+			set_country_flag = HUN_bardossy_president
+			create_politician_laszlo_bardossy = yes 
+		}
+	}
+	
+	#Elect Miklós Kállay (NEP)
+	option = {
+		name = hungary_flavor_elections.2.c
+		trigger = { NOT = { has_country_flag = HUN_kallay_president } }
+		hidden_effect = { 
+			clear_hungarian_president_flags = yes
+			set_country_flag = HUN_kallay_president
+			create_politician_miklos_kallay = yes 
+		}
+	}
+	
+	#Elect the Independent Smallholder's candidate
+	option = {
+		name = hungary_flavor_elections.2.e
+		set_politics = {
+			ruling_party = democratic
+		}
+		hidden_effect = { clear_hungarian_president_flags = yes }
+	}
+}
+
+# Election of 1947
+country_event = {
+	id = hungary_flavor_elections.3
+	title = hungary_flavor_elections.3.t
+	desc = hungary_flavor_elections.3.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = HUN
+		date > 1947.1.1
+		date < 1948.1.1
+		has_completed_focus = HUN_dismantle_the_monarchy
+	}
+	
+	#Keep the current Prime Minister
+	option = {
+		name = hungary_flavor_elections.3.a
+		trigger = { NOT = { has_country_flag = HUN_president_kept } }
+		hidden_effect = { set_country_flag = HUN_president_kept }
+	}
+	
+	#Elect László Bárdossy (NEP)
+	option = {
+		name = hungary_flavor_elections.3.b
+		trigger = { NOT = { has_country_flag = HUN_bardossy_president } }
+		hidden_effect = { 
+			clear_hungarian_president_flags = yes
+			set_country_flag = HUN_bardossy_president
+			create_politician_laszlo_bardossy = yes 
+		}
+	}
+	
+	#Elect Miklós Kállay (NEP)
+	option = {
+		name = hungary_flavor_elections.3.c
+		trigger = { NOT = { has_country_flag = HUN_kallay_president } }
+		hidden_effect = { 
+			clear_hungarian_president_flags = yes
+			set_country_flag = HUN_kallay_president
+			create_politician_miklos_kallay = yes 
+		}
+	}
+	
+	#Elect the Independent Smallholder's candidate
+	option = {
+		name = hungary_flavor_elections.3.e
+		set_politics = {
+			ruling_party = democratic
+		}
+		hidden_effect = { clear_hungarian_president_flags = yes }
+	}
+}

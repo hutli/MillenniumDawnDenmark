@@ -1,0 +1,36 @@
+﻿l_russian:
+ HUN_destroyer_1:0 "Tátra Class"
+ HUN_destroyer_2:0 "Kajmán Class"
+ HUN_destroyer_3:0 "Csikós Class"
+ HUN_destroyer_4:0 "Huszár Class"
+ 
+ HUN_light_cruiser_1:0 "Novara Class"
+ HUN_light_cruiser_2:0 "Zenta Class"
+ HUN_light_cruiser_3:0 "Báthori Class"
+ HUN_light_cruiser_4:0 "Zombor Class"
+ 
+ HUN_heavy_cruiser_1:0 "Sankt Georg Class"
+ HUN_heavy_cruiser_2:0 "Rákóczi Class"
+ HUN_heavy_cruiser_3:0 "Budapest Class"
+ HUN_heavy_cruiser_4:0 "Hadik Class"
+ 
+ HUN_battle_cruiser_1:0 "Projekt VI Schlachtkreuzer"
+ HUN_battle_cruiser_2:0 "Radetzky Class"
+ 
+ HUN_battleship_1:0 "Tegetthoff Class"
+ HUN_battleship_2:0 "Ersatz Monarch Class"
+ HUN_battleship_3:0 "Hunyadi Class"
+ HUN_battleship_4:0 "Kinizsi Class"
+ 
+ HUN_SH_battleship_1:0 "Szent István Class"
+ HUN_SH_battleship_2:0 "Szent László Class"
+ 
+ HUN_carrier_1:0 "Carpathia Class"
+ HUN_carrier_2:0 "Pannónia Class"
+ HUN_carrier_3:0 "Tomori Class"
+ HUN_carrier_4:0 "Esterházy Class"
+ 
+ HUN_submarine_1:0 "Balin Class"
+ HUN_submarine_2:0 "Csuka Class"
+ HUN_submarine_3:0 "Süllö Class"
+ HUN_submarine_4:0 "Harcsa Class"

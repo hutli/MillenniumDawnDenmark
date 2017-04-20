@@ -1,0 +1,244 @@
+﻿
+add_namespace = hungary_flavor_eng
+
+
+################
+#UNITED KINGDOM#
+################
+
+# Hungary seeks entry into the Allies
+country_event = {
+	id = hungary_flavor_eng.1
+	title = hungary_flavor_eng.1.t
+	desc = hungary_flavor_eng.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#Accept.
+	option = {
+		name = hungary_flavor_eng.1.a
+		ai_chance = {
+			factor = 80
+		}
+		add_to_faction = FROM
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.34 }
+		}
+	}
+	
+	#Decline
+	option = {
+		name = hungary_flavor_eng.1.b
+		ai_chance = {
+			factor = 20		
+			modifier = {
+				factor = 0
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}
+		}
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.35 }
+		}
+	}
+}
+
+# Danubian Conference arbitrated by Hungary
+country_event = {
+	id = hungary_flavor_eng.2
+	title = hungary_flavor_eng.2.t
+	desc = hungary_flavor_eng.2.d
+	picture = GFX_report_event_HUN_danube
+	
+	is_triggered_only = yes
+	
+	#Let us hope for the best.
+	option = {
+		name = hungary_flavor_eng.2.a
+		custom_effect_tooltip = HUN_danubian_conference_tt
+	}
+}
+
+
+# Hungary wants to switch sides
+country_event = {
+	id = hungary_flavor_eng.3
+	title = hungary_flavor_eng.3.t
+	desc = hungary_flavor_eng.3.d
+	picture = GFX_report_event_HUN_capitulation
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		HUN = { NOT = { has_country_flag = HUN_ferenc_szalasi_is_ruler } }
+	}
+	
+	#We'll support their attempts
+	option = {
+		name = hungary_flavor_eng.3.a
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 2
+				FROM = { has_government = neutrality }
+			}	
+			modifier = {
+				factor = 100
+				FROM = { has_government = democratic }
+			}	
+		}
+		custom_effect_tooltip = hungary_flavor_eng.3.tt
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.82 }
+		}
+	}
+	
+	#They will be liberated by force
+	option = {
+		name = hungary_flavor_eng.3.b
+		ai_chance = {
+			factor = 20
+		}
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.84 }
+		}
+	}
+}
+
+
+# [From.GetName] asks for peace
+country_event = {
+	id = hungary_flavor_eng.4
+	title = hungary_flavor_eng.4.t
+	desc = hungary_flavor_eng.4.d
+	picture = GFX_report_event_HUN_capitulation
+	
+	is_triggered_only = yes
+	
+	#Fair enough. We have other things to worry about.
+	option = {
+		name = hungary_flavor_eng.4.a
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 10
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}	
+			modifier = {
+				factor = 2
+				has_war_with = GER
+			}	
+			modifier = {
+				factor = 2
+				has_war_with = SOV
+			}		
+			modifier = {
+				factor = 2
+				has_war_with = FRA
+			}		
+			modifier = {
+				factor = 2
+				has_war_with = USA
+			}	
+			modifier = {
+				factor = 2
+				has_war_with = JAP
+			}	
+		}
+		white_peace = FROM
+		add_ai_strategy = {
+			type = ignore
+			id = "HUN"
+			value = 200
+		}
+		every_country = {
+			limit = { is_in_faction_with = ROOT }
+			white_peace = FROM	
+			add_ai_strategy = {
+				type = ignore
+				id = "HUN"
+				value = 200
+			}
+		}
+		if = {
+			limit = { HUN = { any_owned_state = { NOT = { has_state_flag = HUN_claimed_by_HUN } } } }
+			custom_effect_tooltip = HUN_will_get_all_non_claimed_territory
+			hidden_effect = { get_all_non_claimed_territory_from_hungary = yes }
+		}
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.121 }
+		}
+	}
+	
+	#We will not let them get away with this.
+	option = {
+		name = hungary_flavor_eng.4.b
+		ai_chance = {
+			factor = 70
+		}
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.122 }
+		}
+	}
+}
+
+
+# [From.GetName] offers their help against Romania
+country_event = {
+	id = hungary_flavor_eng.5
+	title = hungary_flavor_eng.5.t
+	desc = hungary_flavor_eng.5.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	is_triggered_only = yes
+	
+	#We can use all the help we can get.
+	option = {
+		name = hungary_flavor_eng.5.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 10
+				FROM = { is_in_faction_with = ROOT }
+			}	
+			modifier = {
+				factor = 2
+				FROM = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		FROM = {
+			if = { limit = { NOT = { owns_state = 83 } } add_state_claim = 83 }			#Grisana
+			if = { limit = { NOT = { owns_state = 84 } } add_state_claim = 84 }			#Transylvania
+			if = { limit = { NOT = { owns_state = 76 } } add_state_claim = 76 }			#North Transylvania	
+			if = { limit = { NOT = { owns_state = 752 } } add_state_claim = 752 }		#Maramaros
+			if = { limit = { NOT = { owns_state = 753 } } add_state_claim = 753 }		#Northern Partium
+			declare_war_on = { target = ROM type = puppet_wargoal_focus }
+		}
+		add_to_faction = FROM
+	}
+	
+	#We won't make deals with the devil.
+	option = {
+		name = hungary_flavor_eng.5.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				FROM = {
+					OR = {
+						has_cosmetic_tag = HUN_AHU
+						has_cosmetic_tag = HUN_DNF
+					}
+				}
+			}
+		}
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.128 }
+		}
+	}
+}

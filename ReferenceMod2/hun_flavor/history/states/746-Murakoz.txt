@@ -1,0 +1,21 @@
+
+state={
+	id=746
+	name="STATE_746" # Muraköz
+	manpower = 90000
+	
+	state_category = rural
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = YUG
+		add_claim_by = HUN
+	}
+
+	provinces={
+		6672 
+	}
+}

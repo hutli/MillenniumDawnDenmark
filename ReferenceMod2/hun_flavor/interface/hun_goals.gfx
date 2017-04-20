@@ -1,0 +1,147 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_goal_german_general_staff"
+		texturefile = "gfx/interface/goals/goal_rhineland.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_allies_agreement"
+		texturefile = "gfx/interface/goals/goal_generic_allies_agreement.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_communist_unity"
+		texturefile = "gfx/interface/goals/goal_generic_communist_unity.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_visegrad_group_old"
+		texturefile = "gfx/interface/goals/goal_visegrad_group_old.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_austria_hungary"
+		texturefile = "gfx/interface/goals/ww1_nationalfocus_austriahungary.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_demand_banat"
+		texturefile = "gfx/interface/goals/goal_demand_banat.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_demand_slovakia"
+		texturefile = "gfx/interface/goals/goal_demand_slovakia.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_demand_transylvania"
+		texturefile = "gfx/interface/goals/goal_demand_transylvania.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_hun_aus_alliance"
+		texturefile = "gfx/interface/goals/goal_hun_aus_alliance.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_hun_bul_alliance"
+		texturefile = "gfx/interface/goals/goal_hun_bul_alliance.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_hun_pol_alliance"
+		texturefile = "gfx/interface/goals/goal_hun_pol_alliance.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_hun_revisionism"
+		texturefile = "gfx/interface/goals/goal_hun_revisionism.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_hun_tur_alliance"
+		texturefile = "gfx/interface/goals/goal_hun_tur_alliance.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_hun_yug_alliance"
+		texturefile = "gfx/interface/goals/goal_hun_yug_alliance.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_hun_yug_eternal_friendship"
+		texturefile = "gfx/interface/goals/goal_hun_yug_eternal_friendship.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_iron_and_steel_hungary"
+		texturefile = "gfx/interface/goals/goal_iron_and_steel_hungary.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_kadar_regime"
+		texturefile = "gfx/interface/goals/goal_kadar_regime.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_rakosi_regime"
+		texturefile = "gfx/interface/goals/goal_rakosi_regime.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_szalasi_regime"
+		texturefile = "gfx/interface/goals/goal_szalasi_regime.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_visegrad_group"
+		texturefile = "gfx/interface/goals/goal_visegrad_group.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_war_aganist_fascism"
+		texturefile = "gfx/interface/goals/goal_war_aganist_fascism.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_zsilinszky_regime"
+		texturefile = "gfx/interface/goals/goal_zsilinszky_regime.dds"				
+	}	
+
+	SpriteType = {
+		name = "GFX_goal_demand_galicia"
+		texturefile = "gfx/interface/goals/goal_demand_galicia.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_demand_italian_provinces"
+		texturefile = "gfx/interface/goals/goal_demand_italian_provinces.dds"				
+	}	
+
+	SpriteType = {
+		name = "GFX_goal_merge_with_czechoslovakia"
+		texturefile = "gfx/interface/goals/goal_merge_with_czechoslovakia.dds"				
+	}	
+
+	SpriteType = {
+		name = "GFX_goal_the_bucovina_question"
+		texturefile = "gfx/interface/goals/goal_the_bucovina_question.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_the_burgenland_referendum"
+		texturefile = "gfx/interface/goals/goal_the_burgenland_referendum.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_partition_yugoslavia"
+		texturefile = "gfx/interface/goals/goal_partition_yugoslavia.dds"				
+	}
+
+	SpriteType = {
+		name = "GFX_goal_the_rise_of_hungarism"
+		texturefile = "gfx/interface/goals/goal_the_rise_of_hungarism.dds"				
+	}
+}

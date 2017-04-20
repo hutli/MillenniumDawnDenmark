@@ -1,0 +1,346 @@
+﻿
+add_namespace = hungary_flavor_rom
+
+
+#########
+#ROMANIA#
+#########
+
+# Hungary demands Translyvania (event for ROM)
+country_event = {
+	id = hungary_flavor_rom.1
+	title = hungary_flavor_rom.1.t
+	desc = hungary_flavor_rom.1.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	is_triggered_only = yes
+	
+	#Cede Transylvania
+	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					ic_ratio = { 
+						tag = ROOT 
+						ratio > 1.5
+					}
+				}
+			}		
+			modifier = {
+				factor = 20
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					has_country_flag = HUN_realism
+					NOT = { has_army_manpower = { size > 499999 } }
+				}
+			}	
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 599999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 699999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 799999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 899999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 999999 } } }	
+		}
+		name = hungary_flavor_rom.1.a
+		FROM = { country_event = { hours = 4 id = hungary_flavor.21 } }
+	}
+	
+	#Refuse
+	option = {
+		name = hungary_flavor_rom.1.b
+		ai_chance = {
+			factor = 80
+		}
+		FROM = { country_event = { hours = 4 id = hungary_flavor.22 } }
+	}
+	
+	#We will issue a counterdemand!
+	option = {
+		name = hungary_flavor_rom.1.c
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 20
+				has_government = fascism
+			}	
+		}
+		add_state_claim = 154	#Alföld
+		if = {
+			limit = { FROM = { owns_state = 744 } } #Pancevo
+			add_state_claim = 744	#Pancevo
+		}
+		FROM = { 
+			add_opinion_modifier = { target = ROOT modifier = HUN_demanded_territory }
+			country_event = { hours = 4 id = hungary_flavor.20 } 
+		}
+	}
+}
+
+# Austria-Hungary demands Bucovina (event for ROM)
+country_event = {
+	id = hungary_flavor_rom.2
+	title = hungary_flavor_rom.2.t
+	desc = hungary_flavor_rom.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#Cede Bucovina
+	option = {
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 2
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					ic_ratio = { 
+						tag = ROOT 
+						ratio > 1.5
+					}
+				}
+			}		
+			modifier = {
+				factor = 10
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 299999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 399999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 499999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 599999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 699999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 799999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 899999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 999999 } } }
+		}
+		name = hungary_flavor_rom.2.a
+		FROM = { country_event = { hours = 4 id = hungary_flavor.41 } }
+	}
+	
+	#Refuse
+	option = {
+		ai_chance = {
+			factor = 40
+		}
+		name = hungary_flavor_rom.2.b
+		FROM = { country_event = { hours = 4 id = hungary_flavor.42 } }
+	}
+}
+
+
+# [From.GetName] threatens war for Banat
+country_event = {
+	id = hungary_flavor_rom.3
+	title = hungary_flavor_rom.3.t
+	desc = hungary_flavor_rom.3.d
+	picture = GFX_report_event_banat
+	
+	is_triggered_only = yes
+	
+	#Withdraw the troops from Banat
+	option = {
+		name = hungary_flavor_rom.3.a
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					ic_ratio = { 
+						tag = ROOT 
+						ratio > 1.5
+					}
+				}
+			}		
+			modifier = {
+				factor = 10
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 499999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 599999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 699999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 799999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 899999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 999999 } } }
+		}
+		effect_tooltip = { 
+			FROM = { transfer_state = 82 }	#Banat
+		}
+		FROM = { country_event = { hours = 4 id = hungary_flavor.86 } }
+	}
+	
+	#We'll defend it if we have to
+	option = {
+		name = hungary_flavor_rom.3.b
+		ai_chance = {
+			factor = 70
+		}
+		FROM = { country_event = { hours = 4 id = hungary_flavor.87 } }
+	}
+}
+
+
+
+# [From.GetName] backs down
+country_event = {
+	id = hungary_flavor_rom.4
+	title = hungary_flavor_rom.4.t
+	desc = hungary_flavor_rom.4.d
+	picture = GFX_report_event_banat
+	
+	is_triggered_only = yes
+	
+	#It was an empty threat, as expected
+	option = {
+		name = hungary_flavor_rom.4.a
+		effect_tooltip = { HUN = { add_named_threat = { threat = -1 name = HUN_backed_down_from_banat } } }
+	}
+}
+
+
+
+# Reawakening the Little Entente
+country_event = {
+	id = hungary_flavor_rom.5
+	title = hungary_flavor_rom.5.t
+	desc = {
+		text = hungary_flavor_rom.5.d
+		trigger = { 
+			HUN = { has_cosmetic_tag = HUN_AHU }
+		}
+	}
+	desc = {
+		text = hungary_flavor_rom.5.d_2
+		trigger = { 
+			NOT = { HUN = { has_cosmetic_tag = HUN_AHU } }
+		}
+	}
+	picture = GFX_report_event_little_entente
+	
+	is_triggered_only = yes
+	
+	#We will stand against this outrage together
+	option = {
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 1.5
+				has_opinion = { target = CZE value > 49 }
+			}
+			modifier = {
+				factor = 1.5
+				has_opinion = { target = CZE value > 24 }
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					AND = { 
+						has_government = neutrality
+						CZE = { has_government = neutrality }
+					}
+					AND = { 
+						has_government = democratic
+						CZE = { has_government = democratic }
+					}
+					AND = { 
+						has_government = fascism
+						CZE = { has_government = fascism }
+					}
+					AND = { 
+						has_government = communism
+						CZE = { has_government = communism }
+					}
+				}
+			}	
+			modifier = {
+				factor = 1.25
+				AND = {
+					has_government = neutrality
+					CZE = { NOT = { has_government = neutrality } }
+				}
+			}		
+		}
+		name = hungary_flavor_rom.5.a
+		custom_effect_tooltip = hungary_flavor_rom.5.tt
+		hidden_effect = { 
+			CZE = { set_country_flag = little_entente_ROM_plus } 
+			if = { 
+				limit = { CZE = { OR = { has_country_flag = little_entente_CZE_plus has_country_flag = little_entente_CZE_minus } } }
+				CZE = { country_event = { hours = 4 id = hungary_flavor_cze.6 } }
+			}
+		}
+	}
+	
+	#Tell them to leave us out of their petty alliance
+	option = {
+		ai_chance = {
+			factor = 60	
+		}
+		name = hungary_flavor_rom.5.b
+		hidden_effect = { 
+			CZE = { set_country_flag = little_entente_ROM_minus } 
+			if = { 
+				limit = { CZE = { OR = { has_country_flag = little_entente_CZE_plus has_country_flag = little_entente_CZE_minus } } }
+				CZE = { country_event = { hours = 4 id = hungary_flavor_cze.6 } }
+			}
+		}
+	}
+}
+# [From.GetName] refuses demands
+country_event = {
+	id = hungary_flavor_rom.6
+	title = hungary_flavor_rom.6.t
+	desc = hungary_flavor_rom.6.d
+	picture = GFX_report_event_HUN_alfold_to_romania
+	
+	is_triggered_only = yes
+	
+	#We will wash that land clean with their soldiers' blood.
+	option = {
+		name = hungary_flavor.6.a
+		create_wargoal = {
+			type = take_state_focus
+			target = HUN
+			generator = { 154 }
+		}
+	}
+}
+# [From.GetName] yields
+country_event = {
+	id = hungary_flavor_rom.7
+	title = hungary_flavor_rom.7.t
+	desc = hungary_flavor_rom.7.d
+	picture = GFX_report_event_HUN_alfold_to_romania
+	
+	is_triggered_only = yes
+	
+	#Glory to Romania!
+	option = {
+		name = hungary_flavor.7.a
+		transfer_state = 154 #Alföld
+		if = {
+			limit = { HUN = { owns_state = 744 } }	#Pancevo
+			transfer_state = 744 #Pancevo
+		}
+	}
+}

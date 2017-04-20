@@ -1,0 +1,190 @@
+opinion_modifiers = {
+
+	HUN_leaning_democratic = {
+		value = 20
+	}
+	
+	HUN_leaning_communist = {
+		value = 20
+	}
+	
+	HUN_drawing_towards_germany = {
+		value = 50
+	}
+	
+	HUN_strengthened_ties = {
+		value = 100
+	}
+	
+	HUN_invited_to_faction = {
+		value = 20
+	}
+	
+	HUN_demanded_territory = {
+		value = -20
+	}
+	
+	HUN_betrayed_promises = {
+		value = -15
+	}
+	
+	HUN_italian_treaty = {
+		value = 20
+	}
+	
+	HUN_revoked_territorial_claims = {
+		value = 30
+	}
+	
+	HUN_democratic_trade_focus_opinion = {
+		value = 15
+	}
+	
+	HUN_democratic_trade_focus_neg_opinion = {
+		value = -15
+	}
+	
+	HUN_steel_trade_opinion = {
+		value = 20
+	}
+	
+	HUN_polish_hungarian_intelligence_exchange_opinion = {
+		value = 30
+	}
+	
+	HUN_imperialist_government = {
+		value = 40
+	}
+	
+	HUN_arpad_line = {
+		value = -20
+	}
+	
+	HUN_disallowed_referendum = {
+		value = -20
+	}
+	
+	HUN_everlasting_friendship = {
+		value = 40
+	}
+	
+	HUN_territorial_settlement = {
+		value = 15
+	}
+	
+	HUN_territorial_dispute = {
+		value = -15
+	}
+	
+	HUN_sold_out_to_italy = {
+		value = -30
+	}
+	
+	HUN_license_trade_opinion = {
+		value = 10
+	}
+	
+	HUN_burgas_project = {
+		value = 15
+	}
+	
+	HUN_troop_exchange = {
+		value = 20
+	}
+	
+	HUN_supported_claims = {
+		value = 20
+	}
+	
+	HUN_supported_polish_claims_neg = {
+		value = -20
+	}
+	
+	HUN_disobeyed_trianon_restrictions = {
+		value = -15
+	}
+	
+	HUN_opinion_leaning_westward = {
+		value = 25
+	}
+	
+	HUN_given_territory = {
+		value = 10
+	}
+	
+	HUN_given_territory1 = {
+		value = 10
+	}
+	
+	HUN_given_territory2 = {
+		value = 20
+	}
+	
+	HUN_given_territory3 = {
+		value = 30
+	}
+	
+	HUN_given_territory4 = {
+		value = 40
+	}
+	
+	HUN_given_territory5 = {
+		value = 50
+	}
+	
+	HUN_forced_referendum = {
+		value = -30
+	}
+	
+	HUN_denied_ljubjana = {
+		value = -20
+	}
+	
+	HUN_western_trade_opening_opinion = {
+		value = 25
+	}
+	
+	HUN_western_trade_opening_neg_opinion = {
+		value = -10
+	}
+	
+	HUN_connections_in_moscow = {
+		value = 25
+	}
+	
+	HUN_swing_politics_opinion = {
+		value = 20
+	}
+	
+	#TRADE
+	
+	HUN_democratic_trade_focus = {
+		trade = yes
+		value = 40
+	}
+	
+	HUN_democratic_trade_focus_neg = {
+		trade = yes
+		value = -40
+	}
+	
+	HUN_steel_trade = {
+		trade = yes
+		value = 20
+	}
+	
+	HUN_license_trade = {
+		trade = yes
+		value = 20
+	}
+	
+	HUN_visegrad_economic_circle = {
+		trade = yes
+		value = 400
+	}
+	
+	HUN_western_trade_opening = {
+		trade = yes
+		value = 25
+	}
+}

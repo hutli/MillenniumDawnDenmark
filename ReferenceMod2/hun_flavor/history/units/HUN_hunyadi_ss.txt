@@ -1,0 +1,17 @@
+﻿units = {
+	##### Hunyadi SS #####
+	division= {	
+		name = "SS Hunyadi (1st Hungarian)"
+		location = 375
+		division_template = "SS-Division"
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "SS Hungaria (2nd Hungarian)"
+		location = 375
+		division_template = "SS-Division"
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.9
+	}
+}

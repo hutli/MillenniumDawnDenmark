@@ -1,0 +1,19 @@
+state={
+	id=755
+	name="STATE_755"
+	manpower = 344300
+	
+	state_category = rural
+	
+	history =
+	{
+		owner = ITA
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = YUG
+		add_core_of = ITA
+	}
+	provinces={
+		599 6626 11595 	}
+	}

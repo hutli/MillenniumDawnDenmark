@@ -1,0 +1,7400 @@
+﻿#################################################
+# Hungarian Flavor Territory Integration Events #
+#################################################
+
+add_namespace = hungary_flavor_territory
+
+######################
+#TRANSYLVANIAN REGION#
+######################
+
+# Integration of Transylvania
+country_event = {
+	id = hungary_flavor_territory.1
+	title = hungary_flavor_territory.1.t
+	desc = hungary_flavor_territory.1.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		has_country_flag = HUN_can_integrate
+		NOT = { has_country_flag = HUN_transylvania_integration_off }
+		NOT = { has_country_flag = HUN_transylvania_integration_on  }
+		tag = HUN
+		OR = {
+			AND = {
+				owns_state = 82		#Banat
+				NOT = { 82 = { is_core_of = ROOT } }	#Banat
+			}
+			AND = {
+				owns_state = 83		#Southern Partium
+				NOT = { 83 = { is_core_of = ROOT } }	#Southern Partium
+			}
+			AND = {
+				owns_state = 84		#Transylvania
+				NOT = { 84 = { is_core_of = ROOT } }	#Transylvania
+			}
+			AND = {
+				owns_state = 752		#Maramaros
+				NOT = { 752 = { is_core_of = ROOT } }	#Maramaros
+			}
+			AND = {
+				owns_state = 753		#Northern Partium
+				NOT = { 753 = { is_core_of = ROOT } }	#Northern Partium
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	#Integrate
+	option = {
+		name = hungary_flavor_territory.1.a
+		custom_effect_tooltip = HUN_transylvania_will_be_gradually_integrated
+		hidden_effect = { 
+			set_country_flag = HUN_transylvania_integration_on 
+			if = {
+				limit = { owns_state = 82 }		#Banat
+				82 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 82		#Banat
+			}
+			if = {
+				limit = { owns_state = 83 }		#Southern Partium
+				83 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 83		#Southern Partium
+			}
+			if = {
+				limit = { owns_state = 84 }		#Transylvania
+				84 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 84		#Transylvania
+			}
+			if = {
+				limit = { owns_state = 752 }	#Maramaros
+				752 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 752		#Maramaros
+			}
+			if = {
+				limit = { owns_state = 753 }	#Northern Partium
+				753 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 753		#Northern Partium
+			}
+		}
+	}
+	
+	#Don't integrate
+	option = {
+		name = hungary_flavor_territory.1.b
+		custom_effect_tooltip = HUN_transylvania_will_remain_a_territory
+		hidden_effect = { set_country_flag = HUN_transylvania_integration_off }
+	}
+	
+	#Decide later
+	option = {
+		name = hungary_flavor_territory.1.c
+		custom_effect_tooltip = HUN_will_get_this_event_again
+		hidden_effect = { country_event = { months = 6 id = hungary_flavor_territory.1 } }
+	}
+}
+
+# Resistance to integration in the Transylvanian region
+country_event = {
+	id = hungary_flavor_territory.2
+	title = hungary_flavor_territory.2.t
+	desc = hungary_flavor_territory.2.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = HUN_transylvania_integration_on
+		OR = {
+			82 = { has_state_flag = HUN_is_being_integrated }		#Banat
+			83 = { has_state_flag = HUN_is_being_integrated }		#Southern Partium
+			84 = { has_state_flag = HUN_is_being_integrated }		#Transylvania
+			752 = { has_state_flag = HUN_is_being_integrated }		#Maramaros
+			753 = { has_state_flag = HUN_is_being_integrated }		#Northern Partium
+		}
+		NOT = { has_idea = HUN_suppressed_resistance_in_transylvania }
+		NOT = { has_idea = HUN_resistance_to_integration_in_transylvania }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 0.85
+			82 = { has_state_flag = HUN_is_being_integrated }	#Banat
+		}
+		modifier = {
+			factor = 0.85
+			83 = { has_state_flag = HUN_is_being_integrated }	#Southern Partium
+		}
+		modifier = {
+			factor = 0.85
+			84 = { has_state_flag = HUN_is_being_integrated }	#Transylvania
+		}
+		modifier = {
+			factor = 0.85
+			752 = { has_state_flag = HUN_is_being_integrated }	#Maramaros
+		}
+		modifier = {
+			factor = 0.85
+			753 = { has_state_flag = HUN_is_being_integrated }	#Northern partium
+		}
+	}
+	
+	#We will have to deal with this.
+	option = {
+		name = hungary_flavor_territory.2.a
+		trigger = {
+			has_political_power > 24
+			has_manpower > 1249
+		}
+		add_timed_idea = { idea = HUN_suppressed_resistance_in_transylvania days = 365 }
+		if = {
+			limit = { 82 = { has_state_flag = HUN_is_being_integrated } }	#Banat
+			add_manpower = -250
+			add_political_power = -5
+			82 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Banat
+		}
+		if = {
+			limit = { 83 = { has_state_flag = HUN_is_being_integrated } }	#Southern Partium
+			add_manpower = -250
+			add_political_power = -5
+			83 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Southern Partium
+		}
+		if = {
+			limit = { 84 = { has_state_flag = HUN_is_being_integrated } }	#Transylvania
+			add_manpower = -250
+			add_political_power = -5
+			84 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Transylvania
+		}
+		if = {
+			limit = { 752 = { has_state_flag = HUN_is_being_integrated } }	#Maramaros
+			add_manpower = -250
+			add_political_power = -5
+			752 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Maramaros
+		}
+		if = {
+			limit = { 753 = { has_state_flag = HUN_is_being_integrated } }	#Northern Partium
+			add_manpower = -250
+			add_political_power = -5
+			753 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Northern Partium
+		}
+	}
+	
+	#Let this run its course.
+	option = {
+		name = hungary_flavor_territory.2.b
+		add_timed_idea = { idea = HUN_resistance_to_integration_in_transylvania days = 182 }
+		custom_effect_tooltip = HUN_integration_in_transylvania_will_slow_down
+	}
+}
+
+#######
+#BANAT#
+#######
+
+# Acquisition of Banat
+country_event = {
+	id = hungary_flavor_territory.10
+	title = hungary_flavor_territory.10.t
+	desc = hungary_flavor_territory.10.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 82		#Banat
+		82 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_transylvania_integration_on
+		NOT = { 82 = { has_state_flag = HUN_is_being_integrated } }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will start the integration process.
+	option = {
+		name = hungary_flavor_territory.10.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 82		#Banat
+		hidden_effect = { 82 = { set_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.10.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 82 = { set_state_flag = HUN_integration_abandoned } }		#Banat
+	}
+}
+
+# Banat lost
+country_event = {
+	id = hungary_flavor_territory.11
+	title = hungary_flavor_territory.11.t
+	desc = hungary_flavor_territory.11.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 82 }		#Banat
+		has_country_flag = HUN_transylvania_integration_on
+		82 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.11.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 82 		#Banat
+		hidden_effect = { 82 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Banat integrated
+country_event = {
+	id = hungary_flavor_territory.12
+	title = hungary_flavor_territory.12.t
+	desc = hungary_flavor_territory.12.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 82		#Banat
+		has_country_flag = HUN_transylvania_integration_on
+		82 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_02
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.2
+			has_idea = HUN_resistance_to_integration_in_transylvania
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.12.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 82 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Banat
+country_event = {
+	id = hungary_flavor_territory.13
+	title = hungary_flavor_territory.13.t
+	desc = hungary_flavor_territory.13.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 82		#Banat
+		has_country_flag = HUN_transylvania_integration_on
+		82 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_transylvanian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_transylvania
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.13.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		ROM = { transfer_state = 82 }	#Banat
+		remove_state_core = 82			#Banat
+		hidden_effect = { 82 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.13.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_transylvanian_rebels days = 100 }
+		82 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Banat
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.13.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 82		#Banat
+		hidden_effect = { 
+			82 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+##################
+#SOUTHERN PARTIUM#
+##################
+
+# Acquisition of Southern Partium
+country_event = {
+	id = hungary_flavor_territory.20
+	title = hungary_flavor_territory.20.t
+	desc = hungary_flavor_territory.20.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 83		#Southern Partium
+		83 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_transylvania_integration_on
+		NOT = { 83 = { has_state_flag = HUN_is_being_integrated } }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.20.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 83		#Southern Partium
+		hidden_effect = { 83 = { set_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.20.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 83 = { set_state_flag = HUN_integration_abandoned } }		#Southern Partium
+	}
+}
+
+# Southern Partium lost
+country_event = {
+	id = hungary_flavor_territory.21
+	title = hungary_flavor_territory.21.t
+	desc = hungary_flavor_territory.21.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 83 }		#Southern Partium
+		has_country_flag = HUN_transylvania_integration_on
+		83 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.21.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 83 		#Southern Partium
+		hidden_effect = { 83 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Southern Partium integrated
+country_event = {
+	id = hungary_flavor_territory.22
+	title = hungary_flavor_territory.22.t
+	desc = hungary_flavor_territory.22.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 83		#Southern Partium
+		has_country_flag = HUN_transylvania_integration_on
+		83 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_02
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.2
+			has_idea = HUN_resistance_to_integration_in_transylvania
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.22.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 83 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Southern Partium
+country_event = {
+	id = hungary_flavor_territory.23
+	title = hungary_flavor_territory.23.t
+	desc = hungary_flavor_territory.23.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 83		#Southern Partium
+		has_country_flag = HUN_transylvania_integration_on
+		83 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_transylvanian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_transylvania
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.23.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		ROM = { transfer_state = 83 }	#Southern Partium
+		remove_state_core = 83			#Southern Partium
+		hidden_effect = { 83 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.23.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_transylvanian_rebels days = 100 }
+		83 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Southern Partium
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.23.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 83		#Southern Partium
+		hidden_effect = { 
+			83 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+##############
+#TRANSYLVANIA#
+##############
+
+# Acquisition of Transylvania
+country_event = {
+	id = hungary_flavor_territory.30
+	title = hungary_flavor_territory.30.t
+	desc = hungary_flavor_territory.30.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 84 	#Transylvania
+		84 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_transylvania_integration_on
+		NOT = { 84 = { has_state_flag = HUN_is_being_integrated } }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.30.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 84		#Transylvania
+		hidden_effect = { 84 = { set_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.30.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 84 = { set_state_flag = HUN_integration_abandoned } }		#Transylvania
+	}
+}
+
+# Transylvania lost
+country_event = {
+	id = hungary_flavor_territory.31
+	title = hungary_flavor_territory.31.t
+	desc = hungary_flavor_territory.31.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 84 } 	#Transylvania
+		has_country_flag = HUN_transylvania_integration_on
+		84 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.31.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 84 		#Transylvania
+		hidden_effect = { 84 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Transylvania integrated
+country_event = {
+	id = hungary_flavor_territory.32
+	title = hungary_flavor_territory.32.t
+	desc = hungary_flavor_territory.32.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 84		#Transylvania
+		has_country_flag = HUN_transylvania_integration_on
+		84 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_02
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.2
+			has_idea = HUN_resistance_to_integration_in_transylvania
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.32.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 84 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Transylvania
+country_event = {
+	id = hungary_flavor_territory.33
+	title = hungary_flavor_territory.33.t
+	desc = hungary_flavor_territory.33.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 84		#Transylvania
+		has_country_flag = HUN_transylvania_integration_on
+		84 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_transylvanian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_transylvania
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.33.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		ROM = { transfer_state = 84 }	#Transylvania
+		remove_state_core = 84			#Transylvania
+		hidden_effect = { 84 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.33.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_transylvanian_rebels days = 100 }
+		84 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Transylvania
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.33.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 84		#Transylvania
+		hidden_effect = { 
+			84 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+###########
+#MARAMAROS#
+###########
+
+# Acquisition of Maramaros
+country_event = {
+	id = hungary_flavor_territory.40
+	title = hungary_flavor_territory.40.t
+	desc = hungary_flavor_territory.40.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 752 	#Maramaros
+		752 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_transylvania_integration_on
+		NOT = { 752 = { has_state_flag = HUN_is_being_integrated } }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.40.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 752		#Maramaros
+		hidden_effect = { 752 = { set_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.40.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 752 = { set_state_flag = HUN_integration_abandoned } }		#Maramaros
+	}
+}
+
+# Maramaros lost
+country_event = {
+	id = hungary_flavor_territory.41
+	title = hungary_flavor_territory.41.t
+	desc = hungary_flavor_territory.41.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 752 } 	#Maramaros
+		has_country_flag = HUN_transylvania_integration_on
+		752 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.41.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 752 		#Maramaros
+		hidden_effect = { 752 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Maramaros integrated
+country_event = {
+	id = hungary_flavor_territory.42
+	title = hungary_flavor_territory.42.t
+	desc = hungary_flavor_territory.42.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 752		#Maramaros
+		has_country_flag = HUN_transylvania_integration_on
+		752 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_02
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.2
+			has_idea = HUN_resistance_to_integration_in_transylvania
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.42.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 752 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Maramaros
+country_event = {
+	id = hungary_flavor_territory.43
+	title = hungary_flavor_territory.43.t
+	desc = hungary_flavor_territory.43.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 752		#Maramaros
+		has_country_flag = HUN_transylvania_integration_on
+		752 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_transylvanian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_transylvania
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.43.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		ROM = { transfer_state = 752 }	#Maramaros
+		remove_state_core = 752			#Maramaros
+		hidden_effect = { 752 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.43.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_transylvanian_rebels days = 100 }
+		752 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Maramaros
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.43.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 752		#Maramaros
+		hidden_effect = { 
+			752 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+##################
+#NORTHERN PARTIUM#
+##################
+
+# Acquisition of Northern Partium
+country_event = {
+	id = hungary_flavor_territory.50
+	title = hungary_flavor_territory.50.t
+	desc = hungary_flavor_territory.50.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 753 	#Northern Partium
+		753 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_transylvania_integration_on
+		NOT = { 753 = { has_state_flag = HUN_is_being_integrated } }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.50.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 753		#Northern Partium
+		hidden_effect = { 753 = { set_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.50.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 753 = { set_state_flag = HUN_integration_abandoned } }		#Northern Partium
+	}
+}
+
+# Northern Partium lost
+country_event = {
+	id = hungary_flavor_territory.51
+	title = hungary_flavor_territory.51.t
+	desc = hungary_flavor_territory.51.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 753 } 	#Northern Partium
+		has_country_flag = HUN_transylvania_integration_on
+		753 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.51.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 753 		#Northern Partium
+		hidden_effect = { 753 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Northern Partium integrated
+country_event = {
+	id = hungary_flavor_territory.52
+	title = hungary_flavor_territory.52.t
+	desc = hungary_flavor_territory.52.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 753		#Northern Partium
+		has_country_flag = HUN_transylvania_integration_on
+		753 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_02
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.2
+			has_idea = HUN_resistance_to_integration_in_transylvania
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.52.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 753 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Northern Partium
+country_event = {
+	id = hungary_flavor_territory.53
+	title = hungary_flavor_territory.53.t
+	desc = hungary_flavor_territory.53.d
+	picture = GFX_report_event_HUN_transylvania
+	
+	trigger = {
+		tag = HUN
+		owns_state = 753		#Northern Partium
+		has_country_flag = HUN_transylvania_integration_on
+		753 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_transylvanian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_transylvania
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.53.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		ROM = { transfer_state = 753 }	#Northern Partium
+		remove_state_core = 753			#Northern Partium
+		hidden_effect = { 753 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.53.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_transylvanian_rebels days = 100 }
+		753 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Northern Partium
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.53.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 753		#Northern Partium
+		hidden_effect = { 
+			753 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+##################
+#SLOVAKIAN REGION#
+##################
+
+# Integration of Slovakia
+country_event = {
+	id = hungary_flavor_territory.101
+	title = hungary_flavor_territory.101.t
+	desc = hungary_flavor_territory.101.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		has_country_flag = HUN_can_integrate
+		NOT = { has_country_flag = HUN_slovakia_integration_off }
+		NOT = { has_country_flag = HUN_slovakia_integration_on  }
+		tag = HUN
+		OR = {
+			AND = {
+				owns_state = 70		#Western Slovakia
+				NOT = { 70 = { is_core_of = ROOT } }	#Western Slovakia
+			}
+			AND = {
+				owns_state = 71		#Eastern Slovakia
+				NOT = { 71 = { is_core_of = ROOT } }	#Eastern Slovakia
+			}
+			AND = {
+				owns_state = 73		#Carpathian Ruthenia
+				NOT = { 73 = { is_core_of = ROOT } }	#Carpathian Ruthenia
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	#Integrate
+	option = {
+		name = hungary_flavor_territory.101.a
+		custom_effect_tooltip = HUN_slovakia_will_be_gradually_integrated
+		hidden_effect = { 
+			set_country_flag = HUN_slovakia_integration_on 
+			if = {
+				limit = { owns_state = 70 }		#Western Slovakia
+				70 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 70		#Western Slovakia
+			}
+			if = {
+				limit = { owns_state = 71 }		#Eastern Slovakia
+				71 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 71		#Eastern Slovakia
+			}
+			if = {
+				limit = { owns_state = 73 }		#Carpathian Ruthenia
+				73 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 73		#Carpathian Ruthenia
+			}
+		}
+	}
+	
+	#Don't integrate
+	option = {
+		name = hungary_flavor_territory.101.b
+		custom_effect_tooltip = HUN_slovakia_will_remain_a_territory
+		hidden_effect = { set_country_flag = HUN_slovakia_integration_off }
+	}
+	
+	#Decide later
+	option = {
+		name = hungary_flavor_territory.101.c
+		custom_effect_tooltip = HUN_will_get_this_event_again
+		hidden_effect = { country_event = { months = 6 id = hungary_flavor_territory.101 } }
+	}
+}
+
+# Resistance to integration in the Slovakian region
+country_event = {
+	id = hungary_flavor_territory.102
+	title = hungary_flavor_territory.102.t
+	desc = hungary_flavor_territory.102.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = HUN_slovakia_integration_on
+		OR = {
+			70 = { has_state_flag = HUN_is_being_integrated }		#Western Slovakia
+			71 = { has_state_flag = HUN_is_being_integrated }		#Eastern Slovakia
+			73 = { has_state_flag = HUN_is_being_integrated }		#Carpathian Ruthenia
+		}
+		NOT = { has_idea = HUN_suppressed_resistance_in_slovakia }
+		NOT = { has_idea = HUN_resistance_to_integration_in_slovakia }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 0.85
+			70 = { has_state_flag = HUN_is_being_integrated }	#Western Slovakia
+		}
+		modifier = {
+			factor = 0.85
+			71 = { has_state_flag = HUN_is_being_integrated }	#Eastern Slovakia
+		}
+		modifier = {
+			factor = 0.85
+			73 = { has_state_flag = HUN_is_being_integrated }	#Carpathian Ruthenia
+		}
+	}
+	
+	#We will have to deal with this.
+	option = {
+		name = hungary_flavor_territory.102.a
+		trigger = {
+			has_political_power > 24
+			has_manpower > 1249
+		}
+		add_timed_idea = { idea = HUN_suppressed_resistance_in_slovakia days = 365 }
+		if = {
+			limit = { 70 = { has_state_flag = HUN_is_being_integrated } }	#Western Slovakia
+			add_manpower = -250
+			add_political_power = -5
+			70 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Western Slovakia
+		}
+		if = {
+			limit = { 71 = { has_state_flag = HUN_is_being_integrated } }	#Eastern Slovakia
+			add_manpower = -250
+			add_political_power = -5
+			71 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Eastern Slovakia
+		}
+		if = {
+			limit = { 73 = { has_state_flag = HUN_is_being_integrated } }	#Carpathian Ruthenia
+			add_manpower = -250
+			add_political_power = -5
+			73 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Carpathian Ruthenia
+		}
+	}
+	
+	#Let this run its course.
+	option = {
+		name = hungary_flavor_territory.102.b
+		add_timed_idea = { idea = HUN_resistance_to_integration_in_slovakia days = 182 }
+		custom_effect_tooltip = HUN_integration_in_slovakia_will_slow_down
+	}
+}
+
+##################
+#WESTERN SLOVAKIA#
+##################
+
+# Acquisition of Western Slovakia
+country_event = {
+	id = hungary_flavor_territory.110
+	title = hungary_flavor_territory.110.t
+	desc = hungary_flavor_territory.110.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 70 	#Western Slovakia
+		70 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_slovakia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.110.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 70		#Western Slovakia
+		70 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.110.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 70 = { set_state_flag = HUN_integration_abandoned } }		#Western Slovakia
+	}
+}
+
+# Western Slovakia lost
+country_event = {
+	id = hungary_flavor_territory.111
+	title = hungary_flavor_territory.111.t
+	desc = hungary_flavor_territory.111.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 70 } 	#Western Slovakia
+		has_country_flag = HUN_slovakia_integration_on
+		70 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.111.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 70 		#Western Slovakia
+		70 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Western Slovakia integrated
+country_event = {
+	id = hungary_flavor_territory.112
+	title = hungary_flavor_territory.112.t
+	desc = hungary_flavor_territory.112.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 70		#Western Slovakia
+		has_country_flag = HUN_slovakia_integration_on
+		70 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.112.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 70 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Western Slovakia
+country_event = {
+	id = hungary_flavor_territory.113
+	title = hungary_flavor_territory.113.t
+	desc = hungary_flavor_territory.113.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 70		#Western Slovakia
+		has_country_flag = HUN_slovakia_integration_on
+		70 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_slovakian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_slovakia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.113.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		SLO = { transfer_state = 70 }	#Western Slovakia
+		remove_state_core = 70			#Western Slovakia
+		hidden_effect = { 70 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.113.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_slovakian_rebels days = 100 }
+		70 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Western Slovakia
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.113.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 70		#Western Slovakia
+		hidden_effect = { 
+			70 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+##################
+#EASTERN SLOVAKIA#
+##################
+
+# Acquisition of Eastern Slovakia
+country_event = {
+	id = hungary_flavor_territory.120
+	title = hungary_flavor_territory.120.t
+	desc = hungary_flavor_territory.120.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 71 	#Eastern Slovakia
+		71 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_slovakia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.120.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 71		#Eastern Slovakia
+		71 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.120.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 71 = { set_state_flag = HUN_integration_abandoned } }		#Eastern Slovakia
+	}
+}
+
+# Eastern Slovakia lost
+country_event = {
+	id = hungary_flavor_territory.121
+	title = hungary_flavor_territory.121.t
+	desc = hungary_flavor_territory.121.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 71 } 	#Eastern Slovakia
+		has_country_flag = HUN_slovakia_integration_on
+		71 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.121.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 71 		#Eastern Slovakia
+		71 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Eastern Slovakia integrated
+country_event = {
+	id = hungary_flavor_territory.122
+	title = hungary_flavor_territory.122.t
+	desc = hungary_flavor_territory.122.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 71		#Eastern Slovakia
+		has_country_flag = HUN_slovakia_integration_on
+		71 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.122.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 71 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Eastern Slovakia
+country_event = {
+	id = hungary_flavor_territory.123
+	title = hungary_flavor_territory.123.t
+	desc = hungary_flavor_territory.123.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 71		#Eastern Slovakia
+		has_country_flag = HUN_slovakia_integration_on
+		71 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_slovakian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_slovakia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.123.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		SLO = { transfer_state = 71 }	#Eastern Slovakia
+		remove_state_core = 71			#Eastern Slovakia
+		hidden_effect = { 71 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.123.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_slovakian_rebels days = 100 }
+		71 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Eastern Slovakia
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.123.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 71		#Eastern Slovakia
+		hidden_effect = { 
+			71 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+#####################
+#CARPATHIAN RUTHENIA#
+#####################
+
+# Acquisition of Carpathian Ruthenia
+country_event = {
+	id = hungary_flavor_territory.130
+	title = hungary_flavor_territory.130.t
+	desc = hungary_flavor_territory.130.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 73 	#Carpathian Ruthenia
+		73 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_slovakia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.130.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 73		#Carpathian Ruthenia
+		73 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.130.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 73 = { set_state_flag = HUN_integration_abandoned } }		#Carpathian Ruthenia
+	}
+}
+
+# Carpathian Ruthenia lost
+country_event = {
+	id = hungary_flavor_territory.131
+	title = hungary_flavor_territory.131.t
+	desc = hungary_flavor_territory.131.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 73 } 	#Carpathian Ruthenia
+		has_country_flag = HUN_slovakia_integration_on
+		73 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.131.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 73 		#Carpathian Ruthenia
+		73 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Carpathian Ruthenia integrated
+country_event = {
+	id = hungary_flavor_territory.132
+	title = hungary_flavor_territory.132.t
+	desc = hungary_flavor_territory.132.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 73		#Carpathian Ruthenia
+		has_country_flag = HUN_slovakia_integration_on
+		73 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.132.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 73 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Carpathian Ruthenia
+country_event = {
+	id = hungary_flavor_territory.133
+	title = hungary_flavor_territory.133.t
+	desc = hungary_flavor_territory.133.d
+	picture = GFX_report_event_HUN_southern_slovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 73		#Carpathian Ruthenia
+		has_country_flag = HUN_slovakia_integration_on
+		73 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_slovakian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_slovakia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.133.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		SLO = { transfer_state = 73 }	#Carpathian Ruthenia
+		remove_state_core = 73			#Carpathian Ruthenia
+		hidden_effect = { 73 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.133.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_slovakian_rebels days = 100 }
+		73 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Carpathian Ruthenia
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.133.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 73		#Carpathian Ruthenia
+		hidden_effect = { 
+			73 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+#################
+#CROATIAN REGION#
+#################
+
+# Integration of Croatia
+country_event = {
+	id = hungary_flavor_territory.201
+	title = hungary_flavor_territory.201.t
+	desc = hungary_flavor_territory.201.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		has_country_flag = HUN_can_integrate
+		NOT = { has_country_flag = HUN_croatia_integration_off }
+		NOT = { has_country_flag = HUN_croatia_integration_on  }
+		tag = HUN
+		OR = {
+			AND = {
+				owns_state = 109		#Slavonia
+				NOT = { 109 = { is_core_of = ROOT } }	#Slavonia
+			}
+			AND = {
+				owns_state = 747		#Fiume
+				NOT = { 747 = { is_core_of = ROOT } }	#Fiume
+			}
+			AND = {
+				owns_state = 749		#Croatia
+				NOT = { 749 = { is_core_of = ROOT } }	#Croatia
+			}
+			AND = {
+				is_ahu = yes
+				owns_state = 103		#Dalmatia
+				NOT = { 103 = { is_core_of = ROOT } }	#Dalmatia
+			}
+			AND = {
+				is_ahu = yes
+				owns_state = 754		#Kotor
+				NOT = { 754 = { is_core_of = ROOT } }	#Kotor
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	#Integrate
+	option = {
+		name = hungary_flavor_territory.201.a
+		custom_effect_tooltip = HUN_croatia_will_be_gradually_integrated
+		hidden_effect = { 
+			set_country_flag = HUN_croatia_integration_on 
+			if = {
+				limit = { owns_state = 109 }		#Slavonia
+				109 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 109		#Slavonia
+			}
+			if = {
+				limit = { owns_state = 747 }		#Fiume
+				747 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 747		#Fiume
+			}
+			if = {
+				limit = { owns_state = 749 }		#Croatia
+				749 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 749		#Croatia
+			}
+			if = {
+				limit = { owns_state = 759 }		#Pag
+				754 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 759		#Pag
+			}
+			if = {
+				limit = {
+					owns_state = 163	#Zara
+					is_ahu = yes
+				}
+				163 = { set_state_flag = HUN_is_being_integrated }
+				add_state_core = 163		#Zara
+			}
+			if = {
+				limit = {
+					owns_state = 103	#Dalmatia
+					is_ahu = yes
+				}
+				103 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 103		#Dalmatia
+			}
+			if = {
+				limit = {
+					owns_state = 754	#Kotor
+					is_ahu = yes
+				}
+				754 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 754		#Kotor
+			}
+		}
+	}
+	
+	#Don't integrate
+	option = {
+		name = hungary_flavor_territory.201.b
+		custom_effect_tooltip = HUN_croatia_will_remain_a_territory
+		hidden_effect = { set_country_flag = HUN_croatia_integration_off }
+	}
+	
+	#Decide later
+	option = {
+		name = hungary_flavor_territory.201.c
+		custom_effect_tooltip = HUN_will_get_this_event_again
+		hidden_effect = { country_event = { months = 6 id = hungary_flavor_territory.201 } }
+	}
+}
+
+# Resistance to integration in the Croatian region
+country_event = {
+	id = hungary_flavor_territory.202
+	title = hungary_flavor_territory.202.t
+	desc = hungary_flavor_territory.202.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = HUN_croatia_integration_on
+		OR = {
+			109 = { has_state_flag = HUN_is_being_integrated }		#Slavonia
+			747 = { has_state_flag = HUN_is_being_integrated }		#Fiume
+			749 = { has_state_flag = HUN_is_being_integrated }		#Croatia
+			103 = { has_state_flag = HUN_is_being_integrated }		#Dalmatia
+			754 = { has_state_flag = HUN_is_being_integrated }		#Kotor
+			759 = { has_state_flag = HUN_is_being_integrated }		#Pag
+		}
+		NOT = { has_idea = HUN_suppressed_resistance_in_croatia }
+		NOT = { has_idea = HUN_resistance_to_integration_in_croatia }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 0.85
+			109 = { has_state_flag = HUN_is_being_integrated }	#Slavonia
+		}
+		modifier = {
+			factor = 0.85
+			747 = { has_state_flag = HUN_is_being_integrated }	#Fiume
+		}
+		modifier = {
+			factor = 0.85
+			749 = { has_state_flag = HUN_is_being_integrated }	#Croatia
+		}
+		modifier = {
+			factor = 0.85
+			103 = { has_state_flag = HUN_is_being_integrated }	#Dalmatia
+		}
+		modifier = {
+			factor = 0.85
+			754 = { has_state_flag = HUN_is_being_integrated }	#Kotor
+		}
+		modifier = {
+			factor = 0.85
+			759 = { has_state_flag = HUN_is_being_integrated }	#Pag
+		}
+	}
+	
+	#We will have to deal with this.
+	option = {
+		name = hungary_flavor_territory.202.a
+		trigger = {
+			has_political_power > 24
+			has_manpower > 1249
+		}
+		add_timed_idea = { idea = HUN_suppressed_resistance_in_croatia days = 365 }
+		if = {
+			limit = { 109 = { has_state_flag = HUN_is_being_integrated } }	#Slavonia
+			add_manpower = -250
+			add_political_power = -5
+			109 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Slavonia
+		}
+		if = {
+			limit = { 747 = { has_state_flag = HUN_is_being_integrated } }	#Fiume
+			add_manpower = -250
+			add_political_power = -5
+			747 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Fiume
+		}
+		if = {
+			limit = { 749 = { has_state_flag = HUN_is_being_integrated } }	#Croatia
+			add_manpower = -250
+			add_political_power = -5
+			749 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Croatia
+		}
+		if = {
+			limit = { 103 = { has_state_flag = HUN_is_being_integrated } }	#Dalmatia
+			add_manpower = -250
+			add_political_power = -5
+			103 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Dalmatia
+		}
+		if = {
+			limit = { 754 = { has_state_flag = HUN_is_being_integrated } }	#Kotor
+			add_manpower = -250
+			add_political_power = -5
+			754 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Kotor
+		}
+		if = {
+			limit = { 759 = { has_state_flag = HUN_is_being_integrated } }	#Pag
+			add_manpower = -250
+			add_political_power = -5
+			759 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Pag
+		}
+	}
+	
+	#Let this run its course.
+	option = {
+		name = hungary_flavor_territory.202.b
+		add_timed_idea = { idea = HUN_resistance_to_integration_in_croatia days = 182 }
+		custom_effect_tooltip = HUN_integration_in_croatia_will_slow_down
+	}
+}
+
+##########
+#SLAVONIA#
+##########
+
+# Acquisition of Slavonia
+country_event = {
+	id = hungary_flavor_territory.210
+	title = hungary_flavor_territory.210.t
+	desc = hungary_flavor_territory.210.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 109 	#Slavonia
+		109 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_croatia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.210.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 109		#Slavonia
+		109 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.210.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 109 = { set_state_flag = HUN_integration_abandoned } }		#Slavonia
+	}
+}
+
+# Slavonia lost
+country_event = {
+	id = hungary_flavor_territory.211
+	title = hungary_flavor_territory.211.t
+	desc = hungary_flavor_territory.211.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 109 } 	#Slavonia
+		has_country_flag = HUN_croatia_integration_on
+		109 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.211.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 109 		#Slavonia
+		109 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Slavonia integrated
+country_event = {
+	id = hungary_flavor_territory.212
+	title = hungary_flavor_territory.212.t
+	desc = hungary_flavor_territory.212.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 109		#Slavonia
+		has_country_flag = HUN_croatia_integration_on
+		109 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.212.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 109 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Slavonia
+country_event = {
+	id = hungary_flavor_territory.213
+	title = hungary_flavor_territory.213.t
+	desc = hungary_flavor_territory.213.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 109		#Slavonia
+		has_country_flag = HUN_croatia_integration_on
+		109 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_croatian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_croatia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.213.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		CRO = { transfer_state = 109 }	#Slavonia
+		remove_state_core = 109			#Slavonia
+		hidden_effect = { 109 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.213.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_croatian_rebels days = 100 }
+		109 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Slavonia
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.213.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 109		#Slavonia
+		hidden_effect = { 
+			109 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+#######
+#FIUME#
+#######
+
+# Acquisition of Fiume
+country_event = {
+	id = hungary_flavor_territory.220
+	title = hungary_flavor_territory.220.t
+	desc = hungary_flavor_territory.220.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 747 	#Fiume
+		747 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_croatia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.220.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 747		#Fiume
+		747 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.220.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 747 = { set_state_flag = HUN_integration_abandoned } }		#Fiume
+	}
+}
+
+# Fiume lost
+country_event = {
+	id = hungary_flavor_territory.221
+	title = hungary_flavor_territory.221.t
+	desc = hungary_flavor_territory.221.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 747 } 	#Fiume
+		has_country_flag = HUN_croatia_integration_on
+		747 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.221.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 747 		#Fiume
+		747 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Fiume integrated
+country_event = {
+	id = hungary_flavor_territory.222
+	title = hungary_flavor_territory.222.t
+	desc = hungary_flavor_territory.222.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 747		#Fiume
+		has_country_flag = HUN_croatia_integration_on
+		747 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.222.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 747 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Fiume
+country_event = {
+	id = hungary_flavor_territory.223
+	title = hungary_flavor_territory.223.t
+	desc = hungary_flavor_territory.223.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 747		#Fiume
+		has_country_flag = HUN_croatia_integration_on
+		747 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_croatian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_croatia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.223.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		CRO = { transfer_state = 747 }	#Fiume
+		remove_state_core = 747			#Fiume
+		hidden_effect = { 747 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.223.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_croatian_rebels days = 100 }
+		747 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Fiume
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.223.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 747		#Fiume
+		hidden_effect = { 
+			747 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+#########
+#CROATIA#
+#########
+
+# Acquisition of Croatia
+country_event = {
+	id = hungary_flavor_territory.230
+	title = hungary_flavor_territory.230.t
+	desc = hungary_flavor_territory.230.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 749 	#Croatia
+		749 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_croatia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.230.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 749		#Croatia
+		749 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.230.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 749 = { set_state_flag = HUN_integration_abandoned } }		#Croatia
+	}
+}
+
+# Croatia lost
+country_event = {
+	id = hungary_flavor_territory.231
+	title = hungary_flavor_territory.231.t
+	desc = hungary_flavor_territory.231.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 749 } 	#Croatia
+		has_country_flag = HUN_croatia_integration_on
+		749 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.231.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 749 		#Croatia
+		749 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Croatia integrated
+country_event = {
+	id = hungary_flavor_territory.232
+	title = hungary_flavor_territory.232.t
+	desc = hungary_flavor_territory.232.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 749		#Croatia
+		has_country_flag = HUN_croatia_integration_on
+		749 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.232.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 749 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Croatia
+country_event = {
+	id = hungary_flavor_territory.233
+	title = hungary_flavor_territory.233.t
+	desc = hungary_flavor_territory.233.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 749		#Croatia
+		has_country_flag = HUN_croatia_integration_on
+		749 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_croatian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_croatia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.233.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		CRO = { transfer_state = 749 }	#Croatia
+		remove_state_core = 749			#Croatia
+		hidden_effect = { 749 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.233.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_croatian_rebels days = 100 }
+		749 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Croatia
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.233.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 749		#Croatia
+		hidden_effect = { 
+			749 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+##########
+#DALMATIA#
+##########
+
+# Acquisition of Dalmatia
+country_event = {
+	id = hungary_flavor_territory.240
+	title = hungary_flavor_territory.240.t
+	desc = hungary_flavor_territory.240.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		is_ahu = yes
+		owns_state = 103 	#Dalmatia
+		owns_state = 163 	#Zara
+		103 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_croatia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.240.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 103		#Dalmatia
+		add_state_core = 163		#Zara
+		103 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.240.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 103 = { set_state_flag = HUN_integration_abandoned } }		#Dalmatia
+	}
+}
+
+# Dalmatia lost
+country_event = {
+	id = hungary_flavor_territory.241
+	title = hungary_flavor_territory.241.t
+	desc = hungary_flavor_territory.241.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 103 } 	#Dalmatia
+		NOT = { owns_state = 163 } 	#Zara
+		has_country_flag = HUN_croatia_integration_on
+		103 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.241.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 103 		#Dalmatia
+		remove_state_core = 163 		#Zara
+		103 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Dalmatia integrated
+country_event = {
+	id = hungary_flavor_territory.242
+	title = hungary_flavor_territory.242.t
+	desc = hungary_flavor_territory.242.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 103		#Dalmatia
+		owns_state = 163		#Zara
+		has_country_flag = HUN_croatia_integration_on
+		103 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.242.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 103 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Dalmatia
+country_event = {
+	id = hungary_flavor_territory.243
+	title = hungary_flavor_territory.243.t
+	desc = hungary_flavor_territory.243.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 103		#Dalmatia
+		owns_state = 163		#Zara
+		has_country_flag = HUN_croatia_integration_on
+		103 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_croatian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_croatia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.243.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		CRO = { transfer_state = 103 }	#Dalmatia
+		CRO = { transfer_state = 163 }	#Zara
+		remove_state_core = 103			#Dalmatia
+		remove_state_core = 163			#Zara
+		hidden_effect = { 103 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.243.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_croatian_rebels days = 100 }
+		103 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Dalmatia
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.243.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 103		#Dalmatia
+		remove_state_core = 163		#Zara
+		hidden_effect = { 
+			103 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+#######
+#KOTOR#
+#######
+
+# Acquisition of Kotor
+country_event = {
+	id = hungary_flavor_territory.250
+	title = hungary_flavor_territory.250.t
+	desc = hungary_flavor_territory.250.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		is_ahu = yes
+		owns_state = 754 	#Kotor
+		754 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_croatia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.250.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 754		#Kotor
+		754 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.250.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 754 = { set_state_flag = HUN_integration_abandoned } }		#Kotor
+	}
+}
+
+# Kotor lost
+country_event = {
+	id = hungary_flavor_territory.251
+	title = hungary_flavor_territory.251.t
+	desc = hungary_flavor_territory.251.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 754 } 	#Kotor
+		has_country_flag = HUN_croatia_integration_on
+		754 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.251.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 754 		#Kotor
+		754 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Kotor integrated
+country_event = {
+	id = hungary_flavor_territory.252
+	title = hungary_flavor_territory.252.t
+	desc = hungary_flavor_territory.252.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 754		#Kotor
+		has_country_flag = HUN_croatia_integration_on
+		754 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.252.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 754 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Kotor
+country_event = {
+	id = hungary_flavor_territory.253
+	title = hungary_flavor_territory.253.t
+	desc = hungary_flavor_territory.253.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 754		#Kotor
+		has_country_flag = HUN_croatia_integration_on
+		754 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_croatian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_croatia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.253.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		MNT = { transfer_state = 754 }	#Kotor
+		remove_state_core = 754			#Kotor
+		hidden_effect = { 754 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.253.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_croatian_rebels days = 100 }
+		754 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Kotor
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.253.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 754		#Kotor
+		hidden_effect = { 
+			754 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+#####
+#PAG#
+#####
+
+# Acquisition of Pag
+country_event = {
+	id = hungary_flavor_territory.260
+	title = hungary_flavor_territory.260.t
+	desc = hungary_flavor_territory.260.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 759 	#Pag
+		759 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_croatia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.260.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 759		#Pag
+		759 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.260.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 759 = { set_state_flag = HUN_integration_abandoned } }		#Pag
+	}
+}
+
+# Pag lost
+country_event = {
+	id = hungary_flavor_territory.261
+	title = hungary_flavor_territory.261.t
+	desc = hungary_flavor_territory.261.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 759 } 	#Pag
+		has_country_flag = HUN_croatia_integration_on
+		759 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.261.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 759 		#Pag
+		759 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Pag integrated
+country_event = {
+	id = hungary_flavor_territory.262
+	title = hungary_flavor_territory.262.t
+	desc = hungary_flavor_territory.262.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 759		#Pag
+		has_country_flag = HUN_croatia_integration_on
+		759 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.262.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 759 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Pag
+country_event = {
+	id = hungary_flavor_territory.263
+	title = hungary_flavor_territory.263.t
+	desc = hungary_flavor_territory.263.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 759		#Pag
+		has_country_flag = HUN_croatia_integration_on
+		759 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_croatian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_croatia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.263.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		MNT = { transfer_state = 759 }	#Pag
+		remove_state_core = 759			#Pag
+		hidden_effect = { 759 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.263.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_croatian_rebels days = 100 }
+		759 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Pag
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.263.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 759		#Pag
+		hidden_effect = { 
+			759 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+##################
+#VOJVODINA REGION#
+##################
+
+# Integration of Vojvodina
+country_event = {
+	id = hungary_flavor_territory.301
+	title = hungary_flavor_territory.301.t
+	desc = hungary_flavor_territory.301.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		has_country_flag = HUN_can_integrate
+		NOT = { has_country_flag = HUN_vojvodina_integration_off }
+		NOT = { has_country_flag = HUN_vojvodina_integration_on  }
+		tag = HUN
+		OR = {
+			AND = {
+				owns_state = 744		#Pancevo
+				NOT = { 744 = { is_core_of = ROOT } }	#Pancevo
+			}
+			AND = {
+				owns_state = 745		#Ruma
+				NOT = { 745 = { is_core_of = ROOT } }	#Ruma
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	#Integrate
+	option = {
+		name = hungary_flavor_territory.301.a
+		custom_effect_tooltip = HUN_vojvodina_will_be_gradually_integrated
+		hidden_effect = { 
+			set_country_flag = HUN_vojvodina_integration_on 
+			if = {
+				limit = { owns_state = 744 }		#Pancevo
+				744 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 744		#Pancevo
+			}
+			if = {
+				limit = { owns_state = 745 }		#Ruma
+				745 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 745		#Ruma
+			}
+		}
+	}
+	
+	#Don't integrate
+	option = {
+		name = hungary_flavor_territory.301.b
+		custom_effect_tooltip = HUN_vojvodina_will_remain_a_territory
+		hidden_effect = { set_country_flag = HUN_vojvodina_integration_off }
+	}
+	
+	#Decide later
+	option = {
+		name = hungary_flavor_territory.301.c
+		custom_effect_tooltip = HUN_will_get_this_event_again
+		hidden_effect = { country_event = { months = 6 id = hungary_flavor_territory.301 } }
+	}
+}
+
+# Resistance to integration in the Vojvodina region
+country_event = {
+	id = hungary_flavor_territory.302
+	title = hungary_flavor_territory.302.t
+	desc = hungary_flavor_territory.302.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = HUN_vojvodina_integration_on
+		OR = {
+			744 = { has_state_flag = HUN_is_being_integrated }		#Pancevo
+			745 = { has_state_flag = HUN_is_being_integrated }		#Ruma
+		}
+		NOT = { has_idea = HUN_suppressed_resistance_in_vojvodina }
+		NOT = { has_idea = HUN_resistance_to_integration_in_vojvodina }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 0.85
+			744 = { has_state_flag = HUN_is_being_integrated }	#Pancevo
+		}
+		modifier = {
+			factor = 0.85
+			745 = { has_state_flag = HUN_is_being_integrated }	#Ruma
+		}
+	}
+	
+	#We will have to deal with this.
+	option = {
+		name = hungary_flavor_territory.302.a
+		trigger = {
+			has_political_power > 24
+			has_manpower > 1249
+		}
+		add_timed_idea = { idea = HUN_suppressed_resistance_in_vojvodina days = 365 }
+		if = {
+			limit = { 744 = { has_state_flag = HUN_is_being_integrated } }	#Pancevo
+			add_manpower = -250
+			add_political_power = -5
+			744 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Pancevo
+		}
+		if = {
+			limit = { 745 = { has_state_flag = HUN_is_being_integrated } }	#Ruma
+			add_manpower = -250
+			add_political_power = -5
+			745 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Ruma
+		}
+	}
+	
+	#Let this run its course.
+	option = {
+		name = hungary_flavor_territory.302.b
+		add_timed_idea = { idea = HUN_resistance_to_integration_in_vojvodina days = 182 }
+		custom_effect_tooltip = HUN_integration_in_vojvodina_will_slow_down
+	}
+}
+
+# Acquisition of Pancevo
+country_event = {
+	id = hungary_flavor_territory.310
+	title = hungary_flavor_territory.310.t
+	desc = hungary_flavor_territory.310.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 744 	#Pancevo
+		744 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_vojvodina_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.310.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 744		#Pancevo
+		744 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.310.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 744 = { set_state_flag = HUN_integration_abandoned } }		#Pancevo
+	}
+}
+
+# Pancevo lost
+country_event = {
+	id = hungary_flavor_territory.311
+	title = hungary_flavor_territory.311.t
+	desc = hungary_flavor_territory.311.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 744 } 	#Pancevo
+		has_country_flag = HUN_vojvodina_integration_on
+		744 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.311.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 744 		#Pancevo
+		744 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Pancevo integrated
+country_event = {
+	id = hungary_flavor_territory.312
+	title = hungary_flavor_territory.312.t
+	desc = hungary_flavor_territory.312.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 744		#Pancevo
+		has_country_flag = HUN_vojvodina_integration_on
+		744 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.312.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 744 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Pancevo
+country_event = {
+	id = hungary_flavor_territory.313
+	title = hungary_flavor_territory.313.t
+	desc = hungary_flavor_territory.313.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 744		#Pancevo
+		has_country_flag = HUN_vojvodina_integration_on
+		744 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_vojvodina_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_vojvodina
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.313.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		SER = { transfer_state = 744 }	#Pancevo
+		remove_state_core = 744			#Pancevo
+		hidden_effect = { 744 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.313.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_vojvodina_rebels days = 100 }
+		744 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Pancevo
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.313.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 744		#Pancevo
+		hidden_effect = { 
+			744 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+# Acquisition of Ruma
+country_event = {
+	id = hungary_flavor_territory.320
+	title = hungary_flavor_territory.320.t
+	desc = hungary_flavor_territory.320.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 745 	#Ruma
+		745 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_vojvodina_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.320.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 745		#Ruma
+		745 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.320.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 745 = { set_state_flag = HUN_integration_abandoned } }		#Ruma
+	}
+}
+
+# Ruma lost
+country_event = {
+	id = hungary_flavor_territory.321
+	title = hungary_flavor_territory.321.t
+	desc = hungary_flavor_territory.321.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 745 } 	#Ruma
+		has_country_flag = HUN_vojvodina_integration_on
+		745 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.321.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 745 		#Ruma
+		745 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Ruma integrated
+country_event = {
+	id = hungary_flavor_territory.322
+	title = hungary_flavor_territory.322.t
+	desc = hungary_flavor_territory.322.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 745		#Ruma
+		has_country_flag = HUN_vojvodina_integration_on
+		745 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.322.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 745 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Ruma
+country_event = {
+	id = hungary_flavor_territory.323
+	title = hungary_flavor_territory.323.t
+	desc = hungary_flavor_territory.323.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		tag = HUN
+		owns_state = 745		#Ruma
+		has_country_flag = HUN_vojvodina_integration_on
+		745 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_vojvodina_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_vojvodina
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.323.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		SER = { transfer_state = 745 }	#Ruma
+		remove_state_core = 745			#Ruma
+		hidden_effect = { 745 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.323.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_vojvodina_rebels days = 100 }
+		745 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Ruma
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.323.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 745		#Ruma
+		hidden_effect = { 
+			745 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+###################
+#BURGANLAND REGION#
+###################
+
+# Integration of Burgenland
+country_event = {
+	id = hungary_flavor_territory.401
+	title = hungary_flavor_territory.401.t
+	desc = hungary_flavor_territory.401.d
+	picture = GFX_report_event_HUN_burgenland
+	
+	trigger = {
+		has_country_flag = HUN_can_integrate
+		NOT = { has_country_flag = HUN_burgenland_integration_off }
+		NOT = { has_country_flag = HUN_burgenland_integration_on  }
+		tag = HUN
+		owns_state = 743		#Burgenland
+		NOT = { 743 = { is_core_of = ROOT } }	#Burgenland
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	#Integrate
+	option = {
+		name = hungary_flavor_territory.401.a
+		custom_effect_tooltip = HUN_burgenland_will_be_gradually_integrated
+		hidden_effect = { 
+			set_country_flag = HUN_burgenland_integration_on 
+			if = {
+				limit = { owns_state = 743 }		#Burgenland
+				743 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 743		#Burgenland
+			}
+		}
+	}
+	
+	#Don't integrate
+	option = {
+		name = hungary_flavor_territory.401.b
+		custom_effect_tooltip = HUN_burgenland_will_remain_a_territory
+		hidden_effect = { set_country_flag = HUN_burgenland_integration_off }
+	}
+	
+	#Decide later
+	option = {
+		name = hungary_flavor_territory.401.c
+		custom_effect_tooltip = HUN_will_get_this_event_again
+		hidden_effect = { country_event = { months = 6 id = hungary_flavor_territory.401 } }
+	}
+}
+
+# Resistance to integration in the Burgenland region
+country_event = {
+	id = hungary_flavor_territory.402
+	title = hungary_flavor_territory.402.t
+	desc = hungary_flavor_territory.402.d
+	picture = GFX_report_event_HUN_burgenland
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = HUN_burgenland_integration_on
+		743 = { has_state_flag = HUN_is_being_integrated }		#Burgenland
+		NOT = { has_idea = HUN_suppressed_resistance_in_burgenland }
+		NOT = { has_idea = HUN_resistance_to_integration_in_burgenland }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 0.85
+			743 = { has_state_flag = HUN_is_being_integrated }	#Burgenland
+		}
+	}
+	
+	#We will have to deal with this.
+	option = {
+		name = hungary_flavor_territory.402.a
+		trigger = {
+			has_political_power > 24
+			has_manpower > 1249
+		}
+		add_timed_idea = { idea = HUN_suppressed_resistance_in_burgenland days = 365 }
+		if = {
+			limit = { 743 = { has_state_flag = HUN_is_being_integrated } }	#Burgenland
+			add_manpower = -250
+			add_political_power = -5
+			743 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Burgenland
+		}
+	}
+	
+	#Let this run its course.
+	option = {
+		name = hungary_flavor_territory.402.b
+		add_timed_idea = { idea = HUN_resistance_to_integration_in_burgenland days = 182 }
+		custom_effect_tooltip = HUN_integration_in_burgenland_will_slow_down
+	}
+}
+
+############
+#BURGENLAND#
+############
+
+# Acquisition of Burgenland
+country_event = {
+	id = hungary_flavor_territory.410
+	title = hungary_flavor_territory.410.t
+	desc = hungary_flavor_territory.410.d
+	picture = GFX_report_event_HUN_burgenland
+	
+	trigger = {
+		tag = HUN
+		owns_state = 743 	#Burgenland
+		743 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_burgenland_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.410.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 743		#Burgenland
+		743 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.410.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 743 = { set_state_flag = HUN_integration_abandoned } }		#Burgenland
+	}
+}
+
+# Burgenland lost
+country_event = {
+	id = hungary_flavor_territory.411
+	title = hungary_flavor_territory.411.t
+	desc = hungary_flavor_territory.411.d
+	picture = GFX_report_event_HUN_burgenland
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 743 } 	#Burgenland
+		has_country_flag = HUN_burgenland_integration_on
+		743 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.411.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 743 		#Burgenland
+		743 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Burgenland integrated
+country_event = {
+	id = hungary_flavor_territory.412
+	title = hungary_flavor_territory.412.t
+	desc = hungary_flavor_territory.412.d
+	picture = GFX_report_event_HUN_burgenland
+	
+	trigger = {
+		tag = HUN
+		owns_state = 743		#Burgenland
+		has_country_flag = HUN_burgenland_integration_on
+		743 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.412.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 743 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Burgenland
+country_event = {
+	id = hungary_flavor_territory.413
+	title = hungary_flavor_territory.413.t
+	desc = hungary_flavor_territory.413.d
+	picture = GFX_report_event_HUN_burgenland
+	
+	trigger = {
+		tag = HUN
+		owns_state = 743		#Burgenland
+		has_country_flag = HUN_burgenland_integration_on
+		743 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_burgenland_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_burgenland
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.413.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		AUS = { transfer_state = 743 }	#Burgenland
+		remove_state_core = 743			#Burgenland
+		hidden_effect = { 743 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.413.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_burgenland_rebels days = 100 }
+		743 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Burgenland
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.413.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 743		#Burgenland
+		hidden_effect = { 
+			743 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+#################
+#BOHEMIAN REGION#
+#################
+
+# Integration of the Bohemian region
+country_event = {
+	id = hungary_flavor_territory.501
+	title = hungary_flavor_territory.501.t
+	desc = hungary_flavor_territory.501.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		has_country_flag = HUN_can_integrate
+		NOT = { has_country_flag = HUN_bohemia_integration_off }
+		NOT = { has_country_flag = HUN_bohemia_integration_on  }
+		tag = HUN
+		OR = {
+			has_cosmetic_tag = HUN_AHU
+			has_cosmetic_tag = HUN_DNF
+		}
+		OR = {
+			AND = {
+				owns_state = 9		#Bohemia
+				NOT = { 9 = { is_core_of = ROOT } }	#Bohemia
+			}
+			AND = {
+				owns_state = 69		#Sudetenland
+				NOT = { 69 = { is_core_of = ROOT } }	#Sudetenland
+			}
+			AND = {
+				owns_state = 74		#Eastern Sudetenland
+				NOT = { 74 = { is_core_of = ROOT } }	#Eastern Sudetenland
+			}
+			AND = {
+				owns_state = 75		#Moravia
+				NOT = { 75 = { is_core_of = ROOT } }	#Moravia
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	#Integrate
+	option = {
+		name = hungary_flavor_territory.501.a
+		custom_effect_tooltip = HUN_bohemia_will_be_gradually_integrated
+		hidden_effect = { 
+			set_country_flag = HUN_bohemia_integration_on 
+			if = {
+				limit = { owns_state = 9 }		#Bohemia
+				9 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 9		#Bohemia
+			}
+			if = {
+				limit = { owns_state = 69 }		#Sudetenland
+				69 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 69		#Sudetenland
+			}
+			if = {
+				limit = { owns_state = 74 }		#Eastern Sudetenland
+				74 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 74		#Eastern Sudetenland
+			}
+			if = {
+				limit = { owns_state = 75 }	#Moravia
+				75 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 75		#Moravia
+			}
+		}
+	}
+	
+	#Don't integrate
+	option = {
+		name = hungary_flavor_territory.501.b
+		custom_effect_tooltip = HUN_bohemia_will_remain_a_territory
+		hidden_effect = { set_country_flag = HUN_bohemia_integration_off }
+	}
+	
+	#Decide later
+	option = {
+		name = hungary_flavor_territory.501.c
+		custom_effect_tooltip = HUN_will_get_this_event_again
+		hidden_effect = { country_event = { months = 6 id = hungary_flavor_territory.501 } }
+	}
+}
+
+# Resistance to integration in the Bohemian region
+country_event = {
+	id = hungary_flavor_territory.502
+	title = hungary_flavor_territory.502.t
+	desc = hungary_flavor_territory.502.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = HUN_bohemia_integration_on
+		OR = {
+			9 = { has_state_flag = HUN_is_being_integrated }		#Bohemia
+			69 = { has_state_flag = HUN_is_being_integrated }		#Sudetenland
+			74 = { has_state_flag = HUN_is_being_integrated }		#Eastern Sudetenland
+			75 = { has_state_flag = HUN_is_being_integrated }		#Moravia
+		}
+		NOT = { has_idea = HUN_suppressed_resistance_in_bohemia }
+		NOT = { has_idea = HUN_resistance_to_integration_in_bohemia }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 0.85
+			9 = { has_state_flag = HUN_is_being_integrated }	#Bohemia
+		}
+		modifier = {
+			factor = 0.85
+			69 = { has_state_flag = HUN_is_being_integrated }	#Sudetenland
+		}
+		modifier = {
+			factor = 0.85
+			74 = { has_state_flag = HUN_is_being_integrated }	#Eastern Sudetenland
+		}
+		modifier = {
+			factor = 0.85
+			75 = { has_state_flag = HUN_is_being_integrated }	#Moravia
+		}
+	}
+	
+	#We will have to deal with this.
+	option = {
+		name = hungary_flavor_territory.502.a
+		trigger = {
+			has_political_power > 24
+			has_manpower > 1249
+		}
+		add_timed_idea = { idea = HUN_suppressed_resistance_in_bohemia days = 365 }
+		if = {
+			limit = { 9 = { has_state_flag = HUN_is_being_integrated } }	#Bohemia
+			add_manpower = -250
+			add_political_power = -5
+			9 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Bohemia
+		}
+		if = {
+			limit = { 69 = { has_state_flag = HUN_is_being_integrated } }	#Sudetenland
+			add_manpower = -250
+			add_political_power = -5
+			69 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Sudetenland
+		}
+		if = {
+			limit = { 74 = { has_state_flag = HUN_is_being_integrated } }	#Eastern Sudetenland
+			add_manpower = -250
+			add_political_power = -5
+			74 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Eastern Sudetenland
+		}
+		if = {
+			limit = { 75 = { has_state_flag = HUN_is_being_integrated } }	#Moravia
+			add_manpower = -250
+			add_political_power = -5
+			75 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Moravia
+		}
+	}
+	
+	#Let this run its course.
+	option = {
+		name = hungary_flavor_territory.502.b
+		add_timed_idea = { idea = HUN_resistance_to_integration_in_bohemia days = 182 }
+		custom_effect_tooltip = HUN_integration_in_bohemia_will_slow_down
+	}
+}
+
+#########
+#BOHEMIA#
+#########
+
+# Acquisition of Bohemia
+country_event = {
+	id = hungary_flavor_territory.510
+	title = hungary_flavor_territory.510.t
+	desc = hungary_flavor_territory.510.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 9 	#Bohemia
+		9 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_bohemia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.510.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 9		#Bohemia
+		9 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.510.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 9 = { set_state_flag = HUN_integration_abandoned } }		#Bohemia
+	}
+}
+
+# Bohemia lost
+country_event = {
+	id = hungary_flavor_territory.511
+	title = hungary_flavor_territory.511.t
+	desc = hungary_flavor_territory.511.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 9 } 	#Bohemia
+		has_country_flag = HUN_bohemia_integration_on
+		9 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.511.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 9 		#Bohemia
+		9 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Bohemia integrated
+country_event = {
+	id = hungary_flavor_territory.512
+	title = hungary_flavor_territory.512.t
+	desc = hungary_flavor_territory.512.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 9		#Bohemia
+		has_country_flag = HUN_bohemia_integration_on
+		9 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.512.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 9 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Bohemia
+country_event = {
+	id = hungary_flavor_territory.513
+	title = hungary_flavor_territory.513.t
+	desc = hungary_flavor_territory.513.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 9		#Bohemia
+		has_country_flag = HUN_bohemia_integration_on
+		9 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_bohemian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_bohemia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.513.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		CZE = { transfer_state = 9 }	#Bohemia
+		remove_state_core = 9			#Bohemia
+		hidden_effect = { 9 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.513.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_bohemian_rebels days = 100 }
+		9 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Bohemia
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.513.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 9		#Bohemia
+		hidden_effect = { 
+			9 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+#############
+#SUDETENLAND#
+#############
+
+# Acquisition of Sudetenland
+country_event = {
+	id = hungary_flavor_territory.520
+	title = hungary_flavor_territory.520.t
+	desc = hungary_flavor_territory.520.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 69 	#Sudetenland
+		69 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_bohemia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.520.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 69		#Sudetenland
+		69 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.510.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 69 = { set_state_flag = HUN_integration_abandoned } }		#Sudetenland
+	}
+}
+
+# Sudetenland lost
+country_event = {
+	id = hungary_flavor_territory.521
+	title = hungary_flavor_territory.521.t
+	desc = hungary_flavor_territory.521.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 69 } 	#Sudetenland
+		has_country_flag = HUN_bohemia_integration_on
+		69 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.521.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 69 		#Sudetenland
+		69 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Sudetenland integrated
+country_event = {
+	id = hungary_flavor_territory.522
+	title = hungary_flavor_territory.522.t
+	desc = hungary_flavor_territory.522.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 69		#Sudetenland
+		has_country_flag = HUN_bohemia_integration_on
+		69 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.522.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 69 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Sudetenland
+country_event = {
+	id = hungary_flavor_territory.523
+	title = hungary_flavor_territory.523.t
+	desc = hungary_flavor_territory.523.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 69		#Sudetenland
+		has_country_flag = HUN_bohemia_integration_on
+		69 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_bohemian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_bohemia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.523.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		CZE = { transfer_state = 69 }	#Sudetenland
+		remove_state_core = 69			#Sudetenland
+		hidden_effect = { 69 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.523.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_bohemian_rebels days = 100 }
+		69 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Sudetenland
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.523.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 69		#Sudetenland
+		hidden_effect = { 
+			69 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+#####################
+#EASTERN SUDETENLAND#
+#####################
+
+# Acquisition of Eastern Sudetenland
+country_event = {
+	id = hungary_flavor_territory.530
+	title = hungary_flavor_territory.530.t
+	desc = hungary_flavor_territory.530.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 74 	#Eastern Sudetenland
+		74 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_bohemia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.530.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 74		#Eastern Sudetenland
+		74 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.530.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 74 = { set_state_flag = HUN_integration_abandoned } }		#Eastern Sudetenland
+	}
+}
+
+# Eastern Sudetenland lost
+country_event = {
+	id = hungary_flavor_territory.531
+	title = hungary_flavor_territory.531.t
+	desc = hungary_flavor_territory.531.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 74 } 	#Eastern Sudetenland
+		has_country_flag = HUN_bohemia_integration_on
+		74 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.531.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 74 		#Eastern Sudetenland
+		74 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Eastern Sudetenland integrated
+country_event = {
+	id = hungary_flavor_territory.532
+	title = hungary_flavor_territory.532.t
+	desc = hungary_flavor_territory.532.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 74		#Eastern Sudetenland
+		has_country_flag = HUN_bohemia_integration_on
+		74 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.532.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 74 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Eastern Sudetenland
+country_event = {
+	id = hungary_flavor_territory.533
+	title = hungary_flavor_territory.533.t
+	desc = hungary_flavor_territory.533.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 74		#Eastern Sudetenland
+		has_country_flag = HUN_bohemia_integration_on
+		74 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_bohemian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_bohemia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.533.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		CZE = { transfer_state = 74 }	#Eastern Sudetenland
+		remove_state_core = 74			#Eastern Sudetenland
+		hidden_effect = { 74 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.533.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_bohemian_rebels days = 100 }
+		74 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Eastern Sudetenland
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.533.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 74		#Eastern Sudetenland
+		hidden_effect = { 
+			74 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+#########
+#MORAVIA#
+#########
+
+# Acquisition of Moravia
+country_event = {
+	id = hungary_flavor_territory.540
+	title = hungary_flavor_territory.540.t
+	desc = hungary_flavor_territory.540.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 75 	#Moravia
+		75 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_bohemia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.540.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 75		#Moravia
+		75 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.540.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 75 = { set_state_flag = HUN_integration_abandoned } }		#Moravia
+	}
+}
+
+# Moravia lost
+country_event = {
+	id = hungary_flavor_territory.541
+	title = hungary_flavor_territory.541.t
+	desc = hungary_flavor_territory.541.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 75 } 	#Moravia
+		has_country_flag = HUN_bohemia_integration_on
+		75 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.541.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 75 		#Moravia
+		75 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Moravia integrated
+country_event = {
+	id = hungary_flavor_territory.542
+	title = hungary_flavor_territory.542.t
+	desc = hungary_flavor_territory.542.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 75		#Moravia
+		has_country_flag = HUN_bohemia_integration_on
+		75 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.542.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 75 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Moravia
+country_event = {
+	id = hungary_flavor_territory.543
+	title = hungary_flavor_territory.543.t
+	desc = hungary_flavor_territory.543.d
+	picture = GFX_report_event_HUN_czechoslovakia
+	
+	trigger = {
+		tag = HUN
+		owns_state = 75		#Moravia
+		has_country_flag = HUN_bohemia_integration_on
+		75 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_bohemian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_bohemia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.543.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		CZE = { transfer_state = 75 }	#Moravia
+		remove_state_core = 75			#Moravia
+		hidden_effect = { 75 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.543.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_bohemian_rebels days = 100 }
+		75 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Moravia
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.543.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 75		#Moravia
+		hidden_effect = { 
+			75 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+##########################
+#GALICIA-LODOMERIA REGION#
+##########################
+
+# Integration of the Galicia-Lodomeria region
+country_event = {
+	id = hungary_flavor_territory.601
+	title = hungary_flavor_territory.601.t
+	desc = hungary_flavor_territory.601.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		has_country_flag = HUN_can_integrate
+		NOT = { has_country_flag = HUN_galicia_lodomeria_integration_off }
+		NOT = { has_country_flag = HUN_galicia_lodomeria_integration_on  }
+		tag = HUN
+		OR = {
+			has_cosmetic_tag = HUN_AHU
+			has_cosmetic_tag = HUN_DNF
+		}
+		OR = {
+			AND = {
+				owns_state = 72		#Zalozie
+				NOT = { 72 = { is_core_of = ROOT } }	#Zalozie
+			}
+			AND = {
+				owns_state = 88		#Krakow
+				NOT = { 88 = { is_core_of = ROOT } }	#Krakow
+			}
+			AND = {
+				owns_state = 89		#Stanoslawow
+				NOT = { 89 = { is_core_of = ROOT } }	#Stanoslawow
+			}
+			AND = {
+				owns_state = 91		#Lwow
+				NOT = { 91 = { is_core_of = ROOT } }	#Lwow
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	#Integrate
+	option = {
+		name = hungary_flavor_territory.601.a
+		custom_effect_tooltip = HUN_galicia_lodomeria_will_be_gradually_integrated
+		hidden_effect = { 
+			set_country_flag = HUN_galicia_lodomeria_integration_on 
+			if = {
+				limit = { owns_state = 72 }		#Zalozie
+				72 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 72		#Zalozie
+			}
+			if = {
+				limit = { owns_state = 88 }		#Krakow
+				88 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 88		#Krakow
+			}
+			if = {
+				limit = { owns_state = 89 }		#Stanoslawow
+				89 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 89		#Stanoslawow
+			}
+			if = {
+				limit = { owns_state = 91 }	#Lwow
+				91 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 91		#Lwow
+			}
+		}
+	}
+	
+	#Don't integrate
+	option = {
+		name = hungary_flavor_territory.601.b
+		custom_effect_tooltip = HUN_galicia_lodomeria_will_remain_a_territory
+		hidden_effect = { set_country_flag = HUN_galicia_lodomeria_integration_off }
+	}
+	
+	#Decide later
+	option = {
+		name = hungary_flavor_territory.601.c
+		custom_effect_tooltip = HUN_will_get_this_event_again
+		hidden_effect = { country_event = { months = 6 id = hungary_flavor_territory.601 } }
+	}
+}
+
+# Resistance to integration in the Galicia-Lodomeria region
+country_event = {
+	id = hungary_flavor_territory.602
+	title = hungary_flavor_territory.602.t
+	desc = hungary_flavor_territory.602.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		OR = {
+			72 = { has_state_flag = HUN_is_being_integrated }		#Zalozie
+			88 = { has_state_flag = HUN_is_being_integrated }		#Krakow
+			89 = { has_state_flag = HUN_is_being_integrated }		#Stanoslawow
+			91 = { has_state_flag = HUN_is_being_integrated }		#Lwow
+		}
+		NOT = { has_idea = HUN_suppressed_resistance_in_galicia_lodomeria }
+		NOT = { has_idea = HUN_resistance_to_integration_in_galicia_lodomeria }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 0.85
+			72 = { has_state_flag = HUN_is_being_integrated }	#Zalozie
+		}
+		modifier = {
+			factor = 0.85
+			88 = { has_state_flag = HUN_is_being_integrated }	#Krakow
+		}
+		modifier = {
+			factor = 0.85
+			89 = { has_state_flag = HUN_is_being_integrated }	#Stanoslawow
+		}
+		modifier = {
+			factor = 0.85
+			91 = { has_state_flag = HUN_is_being_integrated }	#Lwow
+		}
+	}
+	
+	#We will have to deal with this.
+	option = {
+		name = hungary_flavor_territory.602.a
+		trigger = {
+			has_political_power > 24
+			has_manpower > 1249
+		}
+		add_timed_idea = { idea = HUN_suppressed_resistance_in_galicia_lodomeria days = 365 }
+		if = {
+			limit = { 72 = { has_state_flag = HUN_is_being_integrated } }	#Zalozie
+			add_manpower = -250
+			add_political_power = -5
+			72 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Zalozie
+		}
+		if = {
+			limit = { 88 = { has_state_flag = HUN_is_being_integrated } }	#Krakow
+			add_manpower = -250
+			add_political_power = -5
+			88 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Krakow
+		}
+		if = {
+			limit = { 89 = { has_state_flag = HUN_is_being_integrated } }	#Stanoslawow
+			add_manpower = -250
+			add_political_power = -5
+			89 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Stanoslawow
+		}
+		if = {
+			limit = { 91 = { has_state_flag = HUN_is_being_integrated } }	#Lwow
+			add_manpower = -250
+			add_political_power = -5
+			91 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Lwow
+		}
+	}
+	
+	#Let this run its course.
+	option = {
+		name = hungary_flavor_territory.602.b
+		add_timed_idea = { idea = HUN_resistance_to_integration_in_galicia_lodomeria days = 182 }
+		custom_effect_tooltip = HUN_integration_in_galicia_lodomeria_will_slow_down
+	}
+}
+
+
+#########
+#ZALOZIE#
+#########
+
+# Acquisition of Zalozie
+country_event = {
+	id = hungary_flavor_territory.610
+	title = hungary_flavor_territory.610.t
+	desc = hungary_flavor_territory.610.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 72 	#Zalozie
+		72 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.610.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 72		#Zalozie
+		72 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.610.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 72 = { set_state_flag = HUN_integration_abandoned } }		#Zalozie
+	}
+}
+
+# Zalozie lost
+country_event = {
+	id = hungary_flavor_territory.611
+	title = hungary_flavor_territory.611.t
+	desc = hungary_flavor_territory.611.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 72 } 	#Zalozie
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		72 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.611.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 72 		#Zalozie
+		72 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Zalozie integrated
+country_event = {
+	id = hungary_flavor_territory.612
+	title = hungary_flavor_territory.612.t
+	desc = hungary_flavor_territory.612.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 72		#Zalozie
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		72 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.612.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 72 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Zalozie
+country_event = {
+	id = hungary_flavor_territory.613
+	title = hungary_flavor_territory.613.t
+	desc = hungary_flavor_territory.613.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 72		#Zalozie
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		72 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_galicia_lodomeria_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_galicia_lodomeria
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.613.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		POL = { transfer_state = 72 }	#Zalozie
+		remove_state_core = 72			#Zalozie
+		hidden_effect = { 72 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.613.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_galicia_lodomeria_rebels days = 100 }
+		72 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Zalozie
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.613.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 72		#Zalozie
+		hidden_effect = { 
+			72 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+########
+#KRAKOW#
+########
+
+# Acquisition of Krakow
+country_event = {
+	id = hungary_flavor_territory.620
+	title = hungary_flavor_territory.620.t
+	desc = hungary_flavor_territory.620.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 88 	#Krakow
+		88 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.620.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 88		#Krakow
+		88 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.620.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 88 = { set_state_flag = HUN_integration_abandoned } }		#Krakow
+	}
+}
+
+# Krakow lost
+country_event = {
+	id = hungary_flavor_territory.621
+	title = hungary_flavor_territory.621.t
+	desc = hungary_flavor_territory.621.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 88 } 	#Krakow
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		88 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.621.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 88 		#Krakow
+		88 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Krakow integrated
+country_event = {
+	id = hungary_flavor_territory.622
+	title = hungary_flavor_territory.622.t
+	desc = hungary_flavor_territory.622.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 88		#Krakow
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		88 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.622.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 88 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Krakow
+country_event = {
+	id = hungary_flavor_territory.623
+	title = hungary_flavor_territory.623.t
+	desc = hungary_flavor_territory.623.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 88		#Krakow
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		88 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_galicia_lodomeria_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_galicia_lodomeria
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.623.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		POL = { transfer_state = 88 }	#Krakow
+		remove_state_core = 88			#Krakow
+		hidden_effect = { 88 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.623.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_galicia_lodomeria_rebels days = 100 }
+		88 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Krakow
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.623.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 88		#Krakow
+		hidden_effect = { 
+			88 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+#############
+#STANISLAWOW#
+#############
+
+# Acquisition of Stanislawow
+country_event = {
+	id = hungary_flavor_territory.630
+	title = hungary_flavor_territory.630.t
+	desc = hungary_flavor_territory.630.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 89 	#Stanislawow
+		89 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.630.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 89		#Stanislawow
+		89 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.630.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 89 = { set_state_flag = HUN_integration_abandoned } }		#Stanislawow
+	}
+}
+
+# Stanislawow lost
+country_event = {
+	id = hungary_flavor_territory.631
+	title = hungary_flavor_territory.631.t
+	desc = hungary_flavor_territory.631.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 89 } 	#Stanislawow
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		89 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.631.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 89 		#Stanislawow
+		89 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Stanislawow integrated
+country_event = {
+	id = hungary_flavor_territory.632
+	title = hungary_flavor_territory.632.t
+	desc = hungary_flavor_territory.632.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 89		#Stanislawow
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		89 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.632.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 89 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Stanislawow
+country_event = {
+	id = hungary_flavor_territory.633
+	title = hungary_flavor_territory.633.t
+	desc = hungary_flavor_territory.633.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 89		#Stanislawow
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		89 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_galicia_lodomeria_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_galicia_lodomeria
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.633.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		UKR = { transfer_state = 89 }	#Stanislawow
+		remove_state_core = 89			#Stanislawow
+		hidden_effect = { 89 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.633.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_galicia_lodomeria_rebels days = 100 }
+		89 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Stanislawow
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.633.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 89		#Stanislawow
+		hidden_effect = { 
+			89 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+######
+#LWOW#
+######
+
+# Acquisition of Lwow
+country_event = {
+	id = hungary_flavor_territory.640
+	title = hungary_flavor_territory.640.t
+	desc = hungary_flavor_territory.640.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 91 	#Lwow
+		91 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.640.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 91		#Lwow
+		91 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.640.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 91 = { set_state_flag = HUN_integration_abandoned } }		#Lwow
+	}
+}
+
+# Lwow lost
+country_event = {
+	id = hungary_flavor_territory.641
+	title = hungary_flavor_territory.641.t
+	desc = hungary_flavor_territory.641.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 91 } 	#Lwow
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		91 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.641.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 91 		#Lwow
+		91 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Lwow integrated
+country_event = {
+	id = hungary_flavor_territory.642
+	title = hungary_flavor_territory.642.t
+	desc = hungary_flavor_territory.642.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 91		#Lwow
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		91 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.642.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 91 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Lwow
+country_event = {
+	id = hungary_flavor_territory.643
+	title = hungary_flavor_territory.643.t
+	desc = hungary_flavor_territory.643.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 91		#Lwow
+		has_country_flag = HUN_galicia_lodomeria_integration_on
+		91 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_galicia_lodomeria_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_galicia_lodomeria
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.643.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		UKR = { transfer_state = 91 }	#Lwow
+		remove_state_core = 91			#Lwow
+		hidden_effect = { 91 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.643.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_galicia_lodomeria_rebels days = 100 }
+		91 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Lwow
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.643.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 91		#Lwow
+		hidden_effect = { 
+			91 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+#################
+#SLOVENIA REGION#
+#################
+
+# Integration of the Slovenia region
+country_event = {
+	id = hungary_flavor_territory.701
+	title = hungary_flavor_territory.701.t
+	desc = hungary_flavor_territory.701.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		has_country_flag = HUN_can_integrate
+		NOT = { has_country_flag = HUN_slovenia_integration_off }
+		NOT = { has_country_flag = HUN_slovenia_integration_on  }
+		tag = HUN
+		OR = {
+			has_cosmetic_tag = HUN_AHU
+			has_cosmetic_tag = HUN_DNF
+		}
+		OR = {
+			AND = {
+				owns_state = 102		#Slovenia
+				NOT = { 102 = { is_core_of = ROOT } }	#Slovenia
+			}
+			AND = {
+				owns_state = 751		#Ljubljana
+				NOT = { 751 = { is_core_of = ROOT } }	#Ljubljana
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	#Integrate
+	option = {
+		name = hungary_flavor_territory.701.a
+		custom_effect_tooltip = HUN_slovenia_will_be_gradually_integrated
+		hidden_effect = { 
+			set_country_flag = HUN_slovenia_integration_on 
+			if = {
+				limit = { owns_state = 102 }		#Slovenia
+				102 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 102		#Slovenia
+			}
+			if = {
+				limit = { owns_state = 751 }		#Ljubljana
+				751 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 751		#Ljubljana
+			}
+		}
+	}
+	
+	#Don't integrate
+	option = {
+		name = hungary_flavor_territory.701.b
+		custom_effect_tooltip = HUN_slovenia_will_remain_a_territory
+		hidden_effect = { set_country_flag = HUN_slovenia_integration_off }
+	}
+	
+	#Decide later
+	option = {
+		name = hungary_flavor_territory.701.c
+		custom_effect_tooltip = HUN_will_get_this_event_again
+		hidden_effect = { country_event = { months = 6 id = hungary_flavor_territory.701 } }
+	}
+}
+
+# Resistance to integration in the Slovenia region
+country_event = {
+	id = hungary_flavor_territory.702
+	title = hungary_flavor_territory.702.t
+	desc = hungary_flavor_territory.702.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = HUN_slovenia_integration_on
+		OR = {
+			102 = { has_state_flag = HUN_is_being_integrated }		#Slovenia
+			751 = { has_state_flag = HUN_is_being_integrated }		#Ljubljana
+		}
+		NOT = { has_idea = HUN_suppressed_resistance_in_slovenia }
+		NOT = { has_idea = HUN_resistance_to_integration_in_slovenia }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 0.85
+			102 = { has_state_flag = HUN_is_being_integrated }	#Slovenia
+		}
+		modifier = {
+			factor = 0.85
+			751 = { has_state_flag = HUN_is_being_integrated }	#Ljubljana
+		}
+	}
+	
+	#We will have to deal with this.
+	option = {
+		name = hungary_flavor_territory.702.a
+		trigger = {
+			has_political_power > 24
+			has_manpower > 1249
+		}
+		add_timed_idea = { idea = HUN_suppressed_resistance_in_slovenia days = 365 }
+		if = {
+			limit = { 102 = { has_state_flag = HUN_is_being_integrated } }	#Slovenia
+			add_manpower = -250
+			add_political_power = -5
+			102 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Slovenia
+		}
+		if = {
+			limit = { 751 = { has_state_flag = HUN_is_being_integrated } }	#Ljubljana
+			add_manpower = -250
+			add_political_power = -5
+			751 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Ljubljana
+		}
+	}
+	
+	#Let this run its course.
+	option = {
+		name = hungary_flavor_territory.702.b
+		add_timed_idea = { idea = HUN_resistance_to_integration_in_slovenia days = 182 }
+		custom_effect_tooltip = HUN_integration_in_slovenia_will_slow_down
+	}
+}
+
+##########
+#SLOVENIA#
+##########
+
+# Acquisition of Slovenia
+country_event = {
+	id = hungary_flavor_territory.710
+	title = hungary_flavor_territory.710.t
+	desc = hungary_flavor_territory.710.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 102 	#Slovenia
+		102 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_slovenia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.710.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 102		#Slovenia
+		102 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.710.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 102 = { set_state_flag = HUN_integration_abandoned } }		#Slovenia
+	}
+}
+
+# Slovenia lost
+country_event = {
+	id = hungary_flavor_territory.711
+	title = hungary_flavor_territory.711.t
+	desc = hungary_flavor_territory.711.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 102 } 	#Slovenia
+		has_country_flag = HUN_slovenia_integration_on
+		102 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.711.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 102 		#Slovenia
+		102 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Slovenia integrated
+country_event = {
+	id = hungary_flavor_territory.712
+	title = hungary_flavor_territory.712.t
+	desc = hungary_flavor_territory.712.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 102		#Slovenia
+		has_country_flag = HUN_slovenia_integration_on
+		102 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.712.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 102 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Slovenia
+country_event = {
+	id = hungary_flavor_territory.713
+	title = hungary_flavor_territory.713.t
+	desc = hungary_flavor_territory.713.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 102		#Slovenia
+		has_country_flag = HUN_slovenia_integration_on
+		102 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_slovenian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_slovenia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.713.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		YUG = { transfer_state = 102 }	#Slovenia
+		remove_state_core = 102			#Slovenia
+		hidden_effect = { 102 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.713.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_slovenian_rebels days = 100 }
+		102 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Slovenia
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.713.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 102		#Slovenia
+		hidden_effect = { 
+			102 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+###########
+#LJUBLJANA#
+###########
+
+# Acquisition of Ljubljana
+country_event = {
+	id = hungary_flavor_territory.720
+	title = hungary_flavor_territory.720.t
+	desc = hungary_flavor_territory.720.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 751 	#Ljubljana
+		751 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_slovenia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.720.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 751		#Ljubljana
+		751 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.720.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 751 = { set_state_flag = HUN_integration_abandoned } }		#Ljubljana
+	}
+}
+
+# Ljubljana lost
+country_event = {
+	id = hungary_flavor_territory.721
+	title = hungary_flavor_territory.721.t
+	desc = hungary_flavor_territory.721.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 751 } 	#Ljubljana
+		has_country_flag = HUN_slovenia_integration_on
+		751 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.721.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 751 		#Ljubljana
+		751 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Ljubljana integrated
+country_event = {
+	id = hungary_flavor_territory.722
+	title = hungary_flavor_territory.722.t
+	desc = hungary_flavor_territory.722.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 751		#Ljubljana
+		has_country_flag = HUN_slovenia_integration_on
+		751 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.722.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 751 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Ljubljana
+country_event = {
+	id = hungary_flavor_territory.723
+	title = hungary_flavor_territory.723.t
+	desc = hungary_flavor_territory.723.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 751		#Ljubljana
+		has_country_flag = HUN_slovenia_integration_on
+		751 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_slovenian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_slovenia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.723.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		YUG = { transfer_state = 751 }	#Ljubljana
+		remove_state_core = 751			#Ljubljana
+		hidden_effect = { 751 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.723.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_slovenian_rebels days = 100 }
+		751 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Ljubljana
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.723.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 751		#Ljubljana
+		hidden_effect = { 
+			751 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+#############################
+#ISTRIA & SOUTH TIROL REGION#
+#############################
+
+# Integration of the Istria & South Tirol region
+country_event = {
+	id = hungary_flavor_territory.801
+	title = hungary_flavor_territory.801.t
+	desc = hungary_flavor_territory.801.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		has_country_flag = HUN_can_integrate
+		NOT = { has_country_flag = HUN_istria_south_tirol_integration_off }
+		NOT = { has_country_flag = HUN_istria_south_tirol_integration_on  }
+		tag = HUN
+		OR = {
+			has_cosmetic_tag = HUN_AHU
+			has_cosmetic_tag = HUN_DNF
+		}
+		OR = {
+			AND = {
+				owns_state = 39		#South Tirol
+				NOT = { 39 = { is_core_of = ROOT } }	#South Tirol
+			}
+			AND = {
+				owns_state = 736		#Istria
+				NOT = { 736 = { is_core_of = ROOT } }	#Istria
+			}
+			AND = {
+				owns_state = 755		#Gorizia
+				NOT = { 755 = { is_core_of = ROOT } }	#Gorizia
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	#Integrate
+	option = {
+		name = hungary_flavor_territory.801.a
+		custom_effect_tooltip = HUN_istria_south_tirol_will_be_gradually_integrated
+		hidden_effect = { 
+			set_country_flag = HUN_istria_south_tirol_integration_on 
+			if = {
+				limit = { owns_state = 39 }		#South Tirol
+				39 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 39		#South Tirol
+			}
+			if = {
+				limit = { owns_state = 736 }		#Istria
+				736 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 736		#Istria
+			}
+			if = {
+				limit = { owns_state = 755 }		#Gorizia
+				755 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 755		#Gorizia
+			}
+		}
+	}
+	
+	#Don't integrate
+	option = {
+		name = hungary_flavor_territory.801.b
+		custom_effect_tooltip = HUN_istria_south_tirol_will_remain_a_territory
+		hidden_effect = { set_country_flag = HUN_istria_south_tirol_integration_off }
+	}
+	
+	#Decide later
+	option = {
+		name = hungary_flavor_territory.801.c
+		custom_effect_tooltip = HUN_will_get_this_event_again
+		hidden_effect = { country_event = { months = 6 id = hungary_flavor_territory.801 } }
+	}
+}
+
+# Resistance to integration in the Istria & South Tirol region
+country_event = {
+	id = hungary_flavor_territory.802
+	title = hungary_flavor_territory.802.t
+	desc = hungary_flavor_territory.802.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = HUN_istria_south_tirol_integration_on
+		OR = {
+			39 = { has_state_flag = HUN_is_being_integrated }		#South Tirol
+			736 = { has_state_flag = HUN_is_being_integrated }		#Istria
+			755 = { has_state_flag = HUN_is_being_integrated }		#Gorizia
+		}
+		NOT = { has_idea = HUN_suppressed_resistance_in_istria_south_tirol }
+		NOT = { has_idea = HUN_resistance_to_integration_in_istria_south_tirol }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 0.85
+			39 = { has_state_flag = HUN_is_being_integrated }	#South Tirol
+		}
+		modifier = {
+			factor = 0.85
+			736 = { has_state_flag = HUN_is_being_integrated }	#Istria
+		}
+		modifier = {
+			factor = 0.85
+			755 = { has_state_flag = HUN_is_being_integrated }	#Gorizia
+		}
+	}
+	
+	#We will have to deal with this.
+	option = {
+		name = hungary_flavor_territory.802.a
+		trigger = {
+			has_political_power > 24
+			has_manpower > 1249
+		}
+		add_timed_idea = { idea = HUN_suppressed_resistance_in_istria_south_tirol days = 365 }
+		if = {
+			limit = { 39 = { has_state_flag = HUN_is_being_integrated } }	#South Tirol
+			add_manpower = -250
+			add_political_power = -5
+			39 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#South Tirol
+		}
+		if = {
+			limit = { 736 = { has_state_flag = HUN_is_being_integrated } }	#Istria
+			add_manpower = -250
+			add_political_power = -5
+			736 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Istria
+		}
+		if = {
+			limit = { 755 = { has_state_flag = HUN_is_being_integrated } }	#Gorizia
+			add_manpower = -250
+			add_political_power = -5
+			755 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Gorizia
+		}
+	}
+	
+	#Let this run its course.
+	option = {
+		name = hungary_flavor_territory.802.b
+		add_timed_idea = { idea = HUN_resistance_to_integration_in_istria_south_tirol days = 182 }
+		custom_effect_tooltip = HUN_integration_in_istria_south_tirol_will_slow_down
+	}
+}
+
+#############
+#SOUTH TIROL#
+#############
+
+# Acquisition of South Tirol
+country_event = {
+	id = hungary_flavor_territory.810
+	title = hungary_flavor_territory.810.t
+	desc = hungary_flavor_territory.810.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 39 	#South Tirol
+		39 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_istria_south_tirol_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.810.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 39		#South Tirol
+		39 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.810.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 39 = { set_state_flag = HUN_integration_abandoned } }		#South Tirol
+	}
+}
+
+# South Tirol lost
+country_event = {
+	id = hungary_flavor_territory.811
+	title = hungary_flavor_territory.811.t
+	desc = hungary_flavor_territory.811.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 39 } 	#South Tirol
+		has_country_flag = HUN_istria_south_tirol_integration_on
+		39 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.811.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 39 		#South Tirol
+		39 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# South Tirol integrated
+country_event = {
+	id = hungary_flavor_territory.812
+	title = hungary_flavor_territory.812.t
+	desc = hungary_flavor_territory.812.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 39		#South Tirol
+		has_country_flag = HUN_istria_south_tirol_integration_on
+		39 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.812.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 39 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in South Tirol
+country_event = {
+	id = hungary_flavor_territory.813
+	title = hungary_flavor_territory.813.t
+	desc = hungary_flavor_territory.813.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 39		#South Tirol
+		has_country_flag = HUN_istria_south_tirol_integration_on
+		39 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_istria_south_tirol_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_istria_south_tirol
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.813.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		ITA = { transfer_state = 39 }	#South Tirol
+		remove_state_core = 39			#South Tirol
+		hidden_effect = { 39 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.813.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_istria_south_tirol_rebels days = 100 }
+		39 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#South Tirol
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.813.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 39		#South Tirol
+		hidden_effect = { 
+			39 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+########
+#ISTRIA#
+########
+
+# Acquisition of Istria
+country_event = {
+	id = hungary_flavor_territory.820
+	title = hungary_flavor_territory.820.t
+	desc = hungary_flavor_territory.820.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 736 	#Istria
+		736 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_istria_south_tirol_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.820.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 736		#Istria
+		736 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.820.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 736 = { set_state_flag = HUN_integration_abandoned } }		#Istria
+	}
+}
+
+# Istria lost
+country_event = {
+	id = hungary_flavor_territory.821
+	title = hungary_flavor_territory.821.t
+	desc = hungary_flavor_territory.821.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 736 } 	#Istria
+		has_country_flag = HUN_istria_south_tirol_integration_on
+		736 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.821.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 736 		#Istria
+		736 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Istria integrated
+country_event = {
+	id = hungary_flavor_territory.822
+	title = hungary_flavor_territory.822.t
+	desc = hungary_flavor_territory.822.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 736		#Istria
+		has_country_flag = HUN_istria_south_tirol_integration_on
+		736 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.822.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 736 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Istria
+country_event = {
+	id = hungary_flavor_territory.823
+	title = hungary_flavor_territory.823.t
+	desc = hungary_flavor_territory.823.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 736		#Istria
+		has_country_flag = HUN_istria_south_tirol_integration_on
+		736 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_istria_south_tirol_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_istria_south_tirol
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.823.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		ITA = { transfer_state = 736 }	#Istria
+		remove_state_core = 736			#Istria
+		hidden_effect = { 736 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.823.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_istria_south_tirol_rebels days = 100 }
+		736 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Istria
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.823.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 736		#Istria
+		hidden_effect = { 
+			736 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+
+#########
+#GORIZIA#
+#########
+
+# Acquisition of Gorizia
+country_event = {
+	id = hungary_flavor_territory.830
+	title = hungary_flavor_territory.830.t
+	desc = hungary_flavor_territory.830.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 755 	#Gorizia
+		755 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_istria_south_tirol_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.830.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 755		#Gorizia
+		755 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.830.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 755 = { set_state_flag = HUN_integration_abandoned } }		#Gorizia
+	}
+}
+
+# Gorizia lost
+country_event = {
+	id = hungary_flavor_territory.831
+	title = hungary_flavor_territory.831.t
+	desc = hungary_flavor_territory.831.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 755 } 	#Gorizia
+		has_country_flag = HUN_istria_south_tirol_integration_on
+		755 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.831.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 755 		#Gorizia
+		755 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Gorizia integrated
+country_event = {
+	id = hungary_flavor_territory.832
+	title = hungary_flavor_territory.832.t
+	desc = hungary_flavor_territory.832.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 755		#Gorizia
+		has_country_flag = HUN_istria_south_tirol_integration_on
+		755 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.832.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 755 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Gorizia
+country_event = {
+	id = hungary_flavor_territory.833
+	title = hungary_flavor_territory.833.t
+	desc = hungary_flavor_territory.833.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 755		#Gorizia
+		has_country_flag = HUN_istria_south_tirol_integration_on
+		755 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_istria_south_tirol_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_istria_south_tirol
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.833.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		ITA = { transfer_state = 755 }	#Gorizia
+		remove_state_core = 755			#Gorizia
+		hidden_effect = { 755 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.833.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_istria_south_tirol_rebels days = 100 }
+		755 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Gorizia
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.833.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 755		#Gorizia
+		hidden_effect = { 
+			755 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}
+
+################
+#BOSNIAN REGION#
+################
+
+# Integration of Bosnia
+country_event = {
+	id = hungary_flavor_territory.901
+	title = hungary_flavor_territory.901.t
+	desc = hungary_flavor_territory.901.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		has_country_flag = HUN_can_integrate
+		NOT = { has_country_flag = HUN_bosnia_integration_off }
+		NOT = { has_country_flag = HUN_bosnia_integration_on  }
+		tag = HUN
+		is_ahu = yes
+		owns_state = 104		#Bosnia
+		NOT = { 104 = { is_core_of = ROOT } }	#Bosnia
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	#Integrate
+	option = {
+		name = hungary_flavor_territory.901.a
+		custom_effect_tooltip = HUN_bosnia_will_be_gradually_integrated
+		hidden_effect = { 
+			set_country_flag = HUN_bosnia_integration_on 
+			if = {
+				limit = { owns_state = 104 }		#Bosnia
+				104 = { set_state_flag = HUN_is_being_integrated }
+				add_05_conscription_resistance = yes
+				add_state_core = 104		#Bosnia
+			}
+		}
+	}
+	
+	#Don't integrate
+	option = {
+		name = hungary_flavor_territory.901.b
+		custom_effect_tooltip = HUN_bosnia_will_remain_a_territory
+		hidden_effect = { set_country_flag = HUN_bosnia_integration_off }
+	}
+	
+	#Decide later
+	option = {
+		name = hungary_flavor_territory.901.c
+		custom_effect_tooltip = HUN_will_get_this_event_again
+		hidden_effect = { country_event = { months = 6 id = hungary_flavor_territory.901 } }
+	}
+}
+
+# Resistance to integration in the Bosnian region
+country_event = {
+	id = hungary_flavor_territory.902
+	title = hungary_flavor_territory.902.t
+	desc = hungary_flavor_territory.902.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = HUN_bosnia_integration_on
+		104 = { has_state_flag = HUN_is_being_integrated }		#Bosnia
+		NOT = { has_idea = HUN_suppressed_resistance_in_bosnia }
+		NOT = { has_idea = HUN_resistance_to_integration_in_bosnia }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 0.85
+			104 = { has_state_flag = HUN_is_being_integrated }	#Bosnia
+		}
+	}
+	
+	#We will have to deal with this.
+	option = {
+		name = hungary_flavor_territory.902.a
+		trigger = {
+			has_political_power > 24
+			has_manpower > 1249
+		}
+		add_timed_idea = { idea = HUN_suppressed_resistance_in_bosnia days = 365 }
+		if = {
+			limit = { 104 = { has_state_flag = HUN_is_being_integrated } }	#Bosnia
+			add_manpower = -250
+			add_political_power = -5
+			104 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Bosnia
+		}
+	}
+	
+	#Let this run its course.
+	option = {
+		name = hungary_flavor_territory.902.b
+		add_timed_idea = { idea = HUN_resistance_to_integration_in_bosnia days = 182 }
+		custom_effect_tooltip = HUN_integration_in_bosnia_will_slow_down
+	}
+}
+
+########
+#BOSNIA#
+########
+
+# Acquisition of Bosnia
+country_event = {
+	id = hungary_flavor_territory.910
+	title = hungary_flavor_territory.910.t
+	desc = hungary_flavor_territory.910.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		is_ahu = yes
+		owns_state = 104 	#Bosnia
+		104 = {
+			NOT = { is_core_of = ROOT }
+			NOT = { has_state_flag = HUN_is_being_integrated }
+			NOT = { has_state_flag = HUN_integration_abandoned }
+		}
+		has_country_flag = HUN_bosnia_integration_on
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.910.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_start
+		add_05_conscription_resistance = yes
+		add_state_core = 104		#Bosnia
+		104 = { set_state_flag = HUN_is_being_integrated }
+	}
+	
+	#The state is fine as it is.
+	option = {
+		name = hungary_flavor_territory.910.b
+		custom_effect_tooltip = HUN_state_will_not_be_integrated
+		hidden_effect = { 104 = { set_state_flag = HUN_integration_abandoned } }		#Bosnia
+	}
+}
+
+# Bosnia lost
+country_event = {
+	id = hungary_flavor_territory.911
+	title = hungary_flavor_territory.911.t
+	desc = hungary_flavor_territory.911.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		NOT = { owns_state = 104 } 	#Bosnia
+		has_country_flag = HUN_bosnia_integration_on
+		104 = { has_state_flag = HUN_is_being_integrated }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	#We will take it back eventually.
+	option = {
+		name = hungary_flavor_territory.911.a
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 104 		#Bosnia
+		104 = { clr_state_flag = HUN_is_being_integrated }
+	}
+}
+
+# Bosnia integrated
+country_event = {
+	id = hungary_flavor_territory.912
+	title = hungary_flavor_territory.912.t
+	desc = hungary_flavor_territory.912.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 104		#Bosnia
+		has_country_flag = HUN_bosnia_integration_on
+		104 = { has_state_flag = HUN_is_being_integrated }	
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_integration_bonus_01
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = HUN_integration_bonus_02
+		}
+	}
+	
+	#Excellent.
+	option = {
+		name = hungary_flavor_territory.912.a
+		remove_05_conscription_resistance = yes
+		hidden_effect = { 104 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+}
+
+# Rebellion in Bosnia
+country_event = {
+	id = hungary_flavor_territory.913
+	title = hungary_flavor_territory.913.t
+	desc = hungary_flavor_territory.913.d
+	picture = GFX_report_event_HUN_ahu_old
+	
+	trigger = {
+		tag = HUN
+		owns_state = 104		#Bosnia
+		has_country_flag = HUN_bosnia_integration_on
+		104 = { has_state_flag = HUN_is_being_integrated }
+		NOT = { has_idea = HUN_cracking_down_on_bosnian_rebels }
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 0.75
+			has_idea = HUN_suppressed_resistance_in_bosnia
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_01
+		}
+		modifier = {
+			factor = 0.75
+			has_country_flag = HUN_suppression_bonus_02
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_country_flag = HUN_integration_bonus_02
+				has_country_flag = HUN_integration_bonus_01
+			}
+		}
+	}
+	
+	#Let them go.
+	option = {
+		name = hungary_flavor_territory.913.a
+		add_political_power = 25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		YUG = { transfer_state = 104 }	#Bosnia
+		remove_state_core = 104			#Bosnia
+		hidden_effect = { 104 = { clr_state_flag = HUN_is_being_integrated } }
+	}
+	
+	#Fight the rebels
+	option = {
+		name = hungary_flavor_territory.913.b
+		custom_effect_tooltip = HUN_integration_of_the_state_will_continue
+		random_list = { 
+			25 = { add_manpower = -1600 } 
+			25 = { add_manpower = -800 } 
+			25 = { add_manpower = -400 } 
+			25 = { add_manpower = -200 } 
+		}
+		add_timed_idea = { idea = HUN_cracking_down_on_bosnian_rebels days = 100 }
+		104 = { custom_effect_tooltip = HUN_resistance_will_be_suppressed }	#Bosnia
+	}
+	
+	#Negotiate with the rebels
+	option = {
+		name = hungary_flavor_territory.913.c
+		add_political_power = -25
+		custom_effect_tooltip = HUN_integration_of_the_state_will_stop
+		remove_05_conscription_resistance = yes
+		remove_state_core = 104		#Bosnia
+		hidden_effect = { 
+			104 = { 
+				clr_state_flag = HUN_is_being_integrated 
+				set_state_flag = HUN_integration_abandoned
+			} 
+		}
+	}
+}

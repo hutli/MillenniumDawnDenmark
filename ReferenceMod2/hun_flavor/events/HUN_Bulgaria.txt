@@ -1,0 +1,80 @@
+﻿
+add_namespace = hungary_flavor_bul
+
+##########
+#BULGARIA#
+##########
+
+# Hungarian Alliance (event for Bulgaria upon faction invite)
+country_event = {
+	id = hungary_flavor_bul.1
+	title = hungary_flavor_bul.1.t
+	desc = hungary_flavor_bul.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#Accept
+	option = {
+		name = hungary_flavor_bul.1.a
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 1.5
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}		
+			modifier = {
+				factor = 5
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}
+		}
+		
+		add_state_claim = 106	#Macedonia
+		add_state_claim = 77	#Dobrudja
+		add_opinion_modifier = { target = FROM modifier = HUN_invited_to_faction }
+		FROM = {
+			add_to_faction = ROOT
+			country_event = { hours = 8 id = hungary_flavor.10 }
+		}	
+		add_ai_strategy = {
+			type = alliance
+			id = "HUN"
+			value = 200
+		}
+	}
+	
+	#Decline
+	option = {
+		name = hungary_flavor_bul.1.b
+		ai_chance = {
+			factor = 40
+		}
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.11 }
+		}
+	}
+}
+
+# Burgas Industrial Development Project
+country_event = {
+	id = hungary_flavor_bul.2
+	title = hungary_flavor_bul.2.t
+	desc = hungary_flavor_bul.2.d
+	picture = GFX_report_event_HUN_burgas
+	
+	is_triggered_only = yes
+	
+	#Help is always welcome
+	option = {
+		name = hungary_flavor_bul.2.a
+		add_opinion_modifier = { target = FROM modifier = HUN_burgas_project }
+		211 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}

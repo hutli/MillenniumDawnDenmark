@@ -1,0 +1,18 @@
+state={
+	id=757
+	name="STATE_757"
+	manpower = 425300
+	
+	state_category = rural
+	
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = YUG
+	}
+	provinces={
+		6913 6940 9849 9874 	}
+	}

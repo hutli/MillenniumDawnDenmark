@@ -1,0 +1,25 @@
+﻿division_template = {
+	name = "Székely hegyivadász"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+        mountaineers = { x = 0 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	##### I. Székely hegyivadász hadosztály #####
+	division= {	
+		name = "I. Székely hegyivadász hadosztály"
+		location = 9660
+		division_template = "Székely hegyivadász"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.9
+
+	}
+}

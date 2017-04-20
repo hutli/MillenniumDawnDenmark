@@ -1,0 +1,64 @@
+﻿HUN_AHU = {
+	fleet_names_template = FLEET_NAME_HUN_AHU
+	submarine = {
+		prefix = "SM"
+		generic = { "U-Boot" }
+		unique = {
+			"U-1" "U-2" "U-3" "U-4" "U-5" "U-6" "U-7" "U-8" "U-9" "U-10" 
+			"U-11" "U-12" "U-13" "U-14" "U-15" "U-16" "U-17" "U-18" "U-19" "U-20" 
+			"U-21" "U-22" "U-23" "U-24" "U-25" "U-26" "U-27" "U-28" "U-29" "U-30"
+		}
+	}	
+	destroyer = {
+		prefix = "SMS"
+		generic = { "Zerstörer" }
+		unique = {
+		        "Tátra" "Triglav" "Orjen" "Lika" "Csepel" "Balaton" "Csikós" "Reka" 
+                        "Velebit" "Dinara" "Pandúr" "Turul" "Scharfschütze" "Uskoke"                                                  "Wildfang" "Streiter" "Ulan" "Huszár" "Hajdú" "Magnet" "Satellit"
+                        "Trabant" "Planet" "Blitz" "Komet" "Meteor" "Alk" "Kormoran" "Molch"
+                        "Echse" "Polyp" "Krake" "Phönix" "Skorpion" "Hydra" "Triton"                                                  "Delphin" "Narwal" "Hai" "Möwe" "Schwalbe" "Pinguin" "Drache"                                                 "Greif" "Anaconda" "Alligator" "Krokodil" "Wal" "Seehund" "Kaiman"
+		}
+	}
+	light_cruiser = {
+		prefix = "SMS"
+		generic = { "Leichter Kreuzer" }
+		unique = {
+		        "Esztergom" "Székelyudvarhely" "Visegrád" "Nógrád" "Komárom"                                                  "Hajdú" " Csongrád" "Eger" "Veszprém" "Szigetvár" "Ungvár"                                                    "Eperjes" "Zsolna" "Szolnok" "Tatbánya" " Tokaj" "Marosvásárhely"                                             "Nándorfehérvár" "Brassó" "Temesvár" "Zombor" "Villány" 
+                        "Kecskemét" "Novara" "Helgoland" "Saida" "Admiral Sapun" "Aspern"                                             "Zenta"		
+		}
+	}
+	heavy_cruiser = {
+		prefix = "SMS"
+		generic = { "Schwerer Kreuzer" }
+		unique = {
+		        "Budapest" "Györ" "Szeged" "Arad" "Pécs" "Miskolc" "Kolozsvár"                                                "Újvidék" " Sopron" "Szombathely" "Pozsony" "Kassa" "Besztercebánya"                                          "Eszék" "Munkács" "Szent György" "Kaiser Karl VI." 
+                        "Kaiserin u. Königin Maria Theresa" "Kaiser Franz Joseph" 
+                        "Kaiserin Elisabeth"		
+		}
+	}
+	battle_cruiser = {
+		prefix = "SMS"
+		generic = { "Schlachtkreuzer" }
+		unique = {
+		        "Kossuth" "Széchenyi" "Thököly Imre" "Rákóczi" "Bethlen" "Zrínyi"                                             "Dobó" "Klapka" "Bem" "Radetzky"		
+		}
+	}
+	battleship = {
+		prefix = "SMS"
+		generic = { "Schlachtschiff" }
+		unique = {
+		         "Szent István" "Szent László" "Hunyadi" 
+                         "Hunyadi Mátyás" "Árpád" "Nagy Lajos" "Zsigmond" "IV. Béla"
+                         "Prinz Eugen" "Tegetthoff" Viribus Unitis" "Babenberg"		
+		}
+	}	
+	carrier = {
+		prefix = "SMS"
+		generic = { "Flugzeugträger" }
+		unique = {
+		        "Don Juan d'Austria" "Pannónia" "Erdély" "Felvidék" "Vajdaság"                                                "Alföld" "Kárpátalja" "Carpathia" "Erz. Ferdinand Max" 
+                        "Erz. Friedrich" "Erzh. Karl"		
+		}
+	}
+}
+

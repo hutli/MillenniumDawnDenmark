@@ -1,0 +1,632 @@
+﻿
+add_namespace = hungary_flavor_gen
+
+#########
+#GENERIC#
+#########
+
+
+# The Danubian Coalition (Alliance with ENG and HUN for Central-Eastern European countries)
+country_event = {
+	id = hungary_flavor_gen.2
+	title = hungary_flavor_gen.2.t
+	desc = hungary_flavor_gen.2.d
+	picture = GFX_report_event_HUN_danube
+	
+	is_triggered_only = yes
+	
+	#Accept
+	option = {
+		name = hungary_flavor_gen.2.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.9
+				has_government = fascism
+			}
+			modifier = {
+				factor = 1.2
+				has_government = neutrality
+			}
+			modifier = {
+				factor = 1.5
+				has_government = democratic
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = { target = HUN value > 9 }
+				NOT = { has_opinion = { target = HUN value > 19 } }
+			}
+			modifier = {
+				factor = 1.2
+				has_opinion = { target = HUN value > 19 }
+				NOT = { has_opinion = { target = HUN value > 29 } }
+			}
+			modifier = {
+				factor = 1.3
+				has_opinion = { target = HUN value > 29 }
+				NOT = { has_opinion = { target = HUN value > 39 } }
+			}
+			modifier = {
+				factor = 1.4
+				has_opinion = { target = HUN value > 39 }
+				NOT = { has_opinion = { target = HUN value > 49 } }
+			}
+			modifier = {
+				factor = 1.5
+				has_opinion = { target = HUN value > 49 }
+			}
+			modifier = {
+				factor = 1.2
+				has_opinion = { target = ENG value > 19 }
+			}						
+		}
+		ENG = { add_to_faction = ROOT }
+		add_ai_strategy = {
+			type = alliance
+			id = "ENG"
+			value = 200
+		}
+		set_country_flag = HUN_danubian_coalition_member
+	}
+	
+	#Decline
+	option = {
+		ai_chance = {
+			factor = 50			
+			modifier = {
+				factor = 2
+				FROM = { has_country_flag = HUN_realism }
+			}						
+		}
+		name = hungary_flavor_gen.2.b
+	}
+}
+
+# Imperialist coup in Czechoslovakia
+country_event = {
+	id = hungary_flavor_gen.3
+	title = hungary_flavor_gen.3.t
+	desc = hungary_flavor_gen.3.d
+	picture = GFX_report_event_crowd_in_prague
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_flavor_gen.3.a
+		trigger = {
+			OR = {
+				has_cosmetic_tag = HUN_AHU
+				has_cosmetic_tag = HUN_DNF
+			}
+		}
+		hidden_effect = { add_badboy_flag = yes }	#AHU is pretty obviously responsible, which earns them a badboy flag
+		if = {
+			limit = { NOT = { has_war_with = ENG} }
+			ENG = { country_event = { hours = 4 id = hungary_flavor_gen.4 } }
+		}
+	}
+	
+	option = {
+		name = hungary_flavor_gen.3.b
+		trigger = {
+			NOT = { has_cosmetic_tag = HUN_AHU }
+			NOT = { has_cosmetic_tag = HUN_DNF }
+		}
+	}
+}
+
+# Hungarian/Austro-Hungarian expansion (intervention event for allies - UK mostly)
+country_event = {
+	id = hungary_flavor_gen.4
+	title = hungary_flavor_gen.4.t
+	desc = hungary_flavor_gen.4.d
+	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes
+	
+	#We have to intervene
+	option = {
+		name = hungary_flavor_gen.4.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1
+				FROM = { has_country_flag = badboy1 }
+				FROM = { NOT = { has_country_flag = badboy2 } }
+			}
+			modifier = {
+				factor = 2
+				FROM = { has_country_flag = badboy2 }
+				FROM = { NOT = { has_country_flag = badboy3 } }
+			}
+			modifier = {
+				factor = 4
+				FROM = { has_country_flag = badboy3 }
+				FROM = { NOT = { has_country_flag = badboy4 } }
+			}
+			modifier = {
+				factor = 8
+				FROM = { has_country_flag = badboy4 }
+				FROM = { NOT = { has_country_flag = badboy5 } }
+			}
+			modifier = {
+				factor = 16
+				FROM = { has_country_flag = badboy5 }
+				FROM = { NOT = { has_country_flag = badboy6 } }
+			}
+			modifier = {
+				factor = 32
+				FROM = { has_country_flag = badboy6 }
+				FROM = { NOT = { has_country_flag = badboy7 } }
+			}
+			modifier = {
+				factor = 64
+				FROM = { has_country_flag = badboy7 }
+				FROM = { NOT = { has_country_flag = badboy8 } }
+			}
+			modifier = {
+				factor = 128
+				FROM = { has_country_flag = badboy8 }
+				FROM = { NOT = { has_country_flag = badboy9 } }
+			}
+			modifier = {
+				factor = 256
+				FROM = { has_country_flag = badboy9 }
+				FROM = { NOT = { has_country_flag = badboy10 } }
+			}
+			modifier = {
+				factor = 512
+				FROM = { has_country_flag = badboy10 }
+				FROM = { NOT = { has_country_flag = badboy11 } }
+			}
+		}
+		if = { 
+			limit = { has_country_flag = decree_against_hungary }
+			declare_war_on = { target = FROM type = puppet_wargoal_focus }
+			news_event = { hours = 4 id = hun_news.6 }
+		}
+		if = {
+			limit = { NOT = { has_country_flag = decree_against_hungary } }
+			#create_wargoal = {
+			#	type = puppet_wargoal_focus
+			#	target = FROM
+			#} 
+			news_event = { hours = 4 id = hun_news.5 }
+			set_country_flag = decree_against_hungary
+		}
+	}
+	
+	#They'll stop eventually
+	option = {
+		name = hungary_flavor_gen.4.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}	
+			modifier = {
+				factor = 0
+				has_country_flag = decree_against_hungary
+			}						
+		}
+	}
+}
+
+# The Visegrád Group (Hungarian democratic alliance)
+country_event = {
+	id = hungary_flavor_gen.5
+	title = hungary_flavor_gen.5.t
+	desc = hungary_flavor_gen.5.d
+	picture = GFX_report_event_HUN_visegrad_group
+	
+	is_triggered_only = yes
+	
+	#Accept
+	option = {
+		name = hungary_flavor_gen.5.a
+		ai_chance = {
+			factor = 40		
+			modifier = {
+				factor = 2
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}	
+			modifier = {
+				factor = 0.2
+				is_in_faction = yes
+			}
+			modifier = {
+				factor = 0.9
+				has_government = fascism
+			}
+			modifier = {
+				factor = 3
+				OR = {
+					tag = CZE
+					tag = POL
+				}
+			}
+			modifier = {
+				factor = 1.2
+				AND = {
+					OR = {
+						tag = LIT
+						tag = LAT
+						tag = EST
+					}
+					POL = { has_country_flag = HUN_visegrad_group_member }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_government = democratic
+			}
+			modifier = {
+				factor = 1.2
+				has_government = neutrality
+			}
+			modifier = {
+				factor = 1.5
+				has_opinion = { target = HUN value > 49 }
+			}						
+			modifier = {
+				factor = 1.4
+				has_opinion = { target = HUN value > 39 }
+				NOT = { has_opinion = { target = HUN value > 49 } }
+			}
+			modifier = {
+				factor = 1.3
+				has_opinion = { target = HUN value > 29 }
+				NOT = { has_opinion = { target = HUN value > 39 } }
+			}
+			modifier = {
+				factor = 1.2
+				has_opinion = { target = HUN value > 19 }
+				NOT = { has_opinion = { target = HUN value > 29 } }
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = { target = HUN value > 9 }
+				NOT = { has_opinion = { target = HUN value > 19 } }
+			}
+		}
+		custom_effect_tooltip = HUN_will_be_invited_into_visegrad_group
+		set_country_flag = HUN_visegrad_group_member
+		add_ai_strategy = {
+			type = alliance
+			id = "HUN"
+			value = 200
+		}
+		
+		#Foundation is handled by an event on the Hungarian side
+		if = { 
+			limit = { tag = CZE } 
+			HUN = { set_country_flag = HUN_visegrad_group_CZE_plus } 
+			if = {  
+				limit = { HUN = {  OR = { has_country_flag = HUN_visegrad_group_POL_minus has_country_flag = HUN_visegrad_group_POL_plus } } }
+				HUN = { country_event = { hours = 4 id = hungary_flavor.100 } }
+			}
+		}
+		if = { 
+			limit = { tag = POL } 
+			HUN = { set_country_flag = HUN_visegrad_group_POL_plus }
+			if = {  
+				limit = { HUN = { OR = { has_country_flag = HUN_visegrad_group_CZE_minus has_country_flag = HUN_visegrad_group_CZE_plus } } }
+				HUN = { country_event = { hours = 4 id = hungary_flavor.100 } }
+			}
+		}
+		
+		#Baltic expansion is handled by a different event
+		if = { 
+			limit = { tag = LIT } 
+			HUN = { set_country_flag = HUN_visegrad_group_LIT_plus } 
+			if = {  
+				limit = {
+					HUN = { 
+						AND = {
+							OR = { has_country_flag = HUN_visegrad_group_LAT_minus has_country_flag = HUN_visegrad_group_LAT_plus }
+							OR = { has_country_flag = HUN_visegrad_group_EST_minus has_country_flag = HUN_visegrad_group_EST_plus }
+						}
+					}
+				}
+				HUN = { country_event = { hours = 4 id = hungary_flavor.101 } }
+			}
+		}
+		if = { 
+			limit = { tag = LAT } 
+			HUN = { set_country_flag = HUN_visegrad_group_LAT_plus } 
+			if = {  
+				limit = {
+					HUN = { 
+						AND = {
+							OR = { has_country_flag = HUN_visegrad_group_LIT_minus has_country_flag = HUN_visegrad_group_LIT_plus }
+							OR = { has_country_flag = HUN_visegrad_group_EST_minus has_country_flag = HUN_visegrad_group_EST_plus }
+						}
+					}
+				}
+				HUN = { country_event = { hours = 4 id = hungary_flavor.101 } }
+			}
+		}
+		if = { 
+			limit = { tag = EST } 
+			HUN = { set_country_flag = HUN_visegrad_group_EST_plus } 
+			if = {  
+				limit = {
+					HUN = { 
+						AND = {
+							OR = { has_country_flag = HUN_visegrad_group_LIT_minus has_country_flag = HUN_visegrad_group_LIT_plus }
+							OR = { has_country_flag = HUN_visegrad_group_LAT_minus has_country_flag = HUN_visegrad_group_LAT_plus }
+						}
+					}
+				}
+				HUN = { country_event = { hours = 4 id = hungary_flavor.101 } }
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = LIT
+					tag = LAT
+					tag = EST
+				}
+			}
+			every_country = {
+				limit = {
+					is_faction_leader = yes
+					has_country_flag = HUN_visegrad_group_member
+					NOT = { tag = ROOT }
+				}
+				add_to_faction = ROOT
+			}
+			#Baltic expansion can happen after the economic circle has already been established
+			if = {
+				limit = { has_global_flag = HUN_visegrad_economic_circle_present }
+				set_country_flag = HUN_visegrad_economic_circle_resolved
+				every_country = {
+					limit = { 
+						NOT = { tag = ROOT }
+						has_country_flag = HUN_visegrad_group_member 
+					}
+					add_opinion_modifier = { target = ROOT modifier = HUN_visegrad_economic_circle }
+					reverse_add_opinion_modifier = { target = ROOT modifier = HUN_visegrad_economic_circle }
+				}
+			}
+			
+		}
+	}
+	
+	#Decline
+	option = {
+		ai_chance = {
+			factor = 60						
+		}
+		name = hungary_flavor_gen.5.b
+		#Foundation is handled by an event on the Hungarian side
+		if = { 
+			limit = { tag = CZE } 
+			HUN = { set_country_flag = HUN_visegrad_group_CZE_minus } 
+			if = {  
+				limit = { HUN = { OR = { has_country_flag = HUN_visegrad_group_POL_minus has_country_flag = HUN_visegrad_group_POL_plus } } }
+				HUN = { country_event = { hours = 4 id = hungary_flavor.100 } }
+			}
+		}
+		if = { 
+			limit = { tag = POL } 
+			HUN = { set_country_flag = HUN_visegrad_group_POL_minus }
+			if = {  
+				limit = { HUN = { OR = { has_country_flag = HUN_visegrad_group_CZE_minus has_country_flag = HUN_visegrad_group_CZE_plus } } }
+				HUN = { country_event = { hours = 4 id = hungary_flavor.100 } }
+			}
+		}	
+		
+		#Baltic expansion is handled by a different event
+		if = { 
+			limit = { tag = LIT } 
+			HUN = { set_country_flag = HUN_visegrad_group_LIT_minus } 
+			if = {  
+				limit = {
+					HUN = { 
+						AND = {
+							OR = { has_country_flag = HUN_visegrad_group_LAT_minus has_country_flag = HUN_visegrad_group_LAT_plus }
+							OR = { has_country_flag = HUN_visegrad_group_EST_minus has_country_flag = HUN_visegrad_group_EST_plus }
+						}
+					}
+				}
+				HUN = { country_event = { hours = 4 id = hungary_flavor.101 } }
+			}
+		}
+		if = { 
+			limit = { tag = LAT } 
+			HUN = { set_country_flag = HUN_visegrad_group_LAT_minus } 
+			if = {  
+				limit = {
+					HUN = { 
+						AND = {
+							OR = { has_country_flag = HUN_visegrad_group_LIT_minus has_country_flag = HUN_visegrad_group_LIT_plus }
+							OR = { has_country_flag = HUN_visegrad_group_EST_minus has_country_flag = HUN_visegrad_group_EST_plus }
+						}
+					}
+				}
+				HUN = { country_event = { hours = 4 id = hungary_flavor.101 } }
+			}
+		}
+		if = { 
+			limit = { tag = EST } 
+			HUN = { set_country_flag = HUN_visegrad_group_EST_minus } 
+			if = {  
+				limit = {
+					HUN = { 
+						AND = {
+							OR = { has_country_flag = HUN_visegrad_group_LIT_minus has_country_flag = HUN_visegrad_group_LIT_plus }
+							OR = { has_country_flag = HUN_visegrad_group_LAT_minus has_country_flag = HUN_visegrad_group_LAT_plus }
+						}
+					}
+				}
+				HUN = { country_event = { hours = 4 id = hungary_flavor.101 } }
+			}
+		}
+	}
+}
+
+# The Visegrád Economic Circle (event upon formation of the circle)
+country_event = {
+	id = hungary_flavor_gen.6
+	title = hungary_flavor_gen.6.t
+	desc = hungary_flavor_gen.6.d
+	picture = GFX_report_event_HUN_visegrad_group
+	
+	is_triggered_only = yes
+	
+	#This will benefit us all.
+	option = {
+		name = hungary_flavor_gen.6.a
+		hidden_effect = {
+			set_country_flag = HUN_visegrad_economic_circle_resolved
+		}
+		every_country = { 
+			limit = { 
+				NOT = { tag = ROOT }
+				has_country_flag = HUN_visegrad_group_member 
+			}
+			add_opinion_modifier = { target = ROOT modifier = HUN_visegrad_economic_circle }
+		}
+	}
+}
+
+# Visegrád Group membership (event upon conventional invitation)
+country_event = {
+	id = hungary_flavor_gen.7
+	title = hungary_flavor_gen.7.t
+	desc = hungary_flavor_gen.7.d
+	picture = GFX_report_event_HUN_visegrad_group
+	
+	is_triggered_only = yes #on_actions.txt
+	
+	#This will benefit us all.
+	option = {
+		name = hungary_flavor_gen.7.a
+		hidden_effect = {
+			set_country_flag = HUN_visegrad_group_member
+		}
+		if = {
+			limit = { has_global_flag = HUN_visegrad_economic_circle_present }
+			every_country = {
+				limit = { 
+					NOT = { tag = ROOT }
+					has_country_flag = HUN_visegrad_group_member 
+				}
+				add_opinion_modifier = { target = ROOT modifier = HUN_visegrad_economic_circle }
+				reverse_add_opinion_modifier = { target = ROOT modifier = HUN_visegrad_economic_circle }
+			}
+			hidden_effect = {
+				set_country_flag = HUN_visegrad_economic_circle_resolved
+				every_country = {
+					limit = { 
+						NOT = { tag = ROOT }
+						has_country_flag = HUN_visegrad_group_member 
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = "ROOT"
+						value = 200
+					}
+				}
+			}
+		}
+		if = { 
+			limit = { has_global_flag = HUN_visegrad_technology_circle_present } 
+			add_to_tech_sharing_group = visegrad_research
+		}
+	}
+}
+
+# Leaving the Visegrád Group (event after conventionally leaving the faction)
+country_event = {
+	id = hungary_flavor_gen.8
+	title = hungary_flavor_gen.8.t
+	desc = hungary_flavor_gen.8.d
+	picture = GFX_report_event_HUN_visegrad_group
+	
+	is_triggered_only = yes #on_actions.txt
+	
+	#We must put this behind us.
+	option = {
+		name = hungary_flavor_gen.8.a
+		hidden_effect = {
+			clr_country_flag = HUN_visegrad_group_member
+			clr_country_flag = HUN_visegrad_economic_circle_resolved
+		}
+		every_country = {
+			limit = { 
+				NOT = { tag = ROOT }
+				has_country_flag = HUN_visegrad_group_member 
+			}
+			remove_opinion_modifier = { target = ROOT modifier = HUN_visegrad_economic_circle }
+			country_event = { days = 1 id = hungary_flavor_gen.9 }
+		}
+		if = { 
+			limit = { is_in_tech_sharing_group = visegrad_research }
+			remove_from_tech_sharing_group = visegrad_research
+		}
+		if = { 
+			limit = { has_idea = visegrad_military_council }
+			remove_ideas = visegrad_military_council
+		}
+	}
+}
+
+# [From.GetName] Leaves the Visegrád Group (Event for all other group members when somebody leaves)
+country_event = {
+	id = hungary_flavor_gen.9
+	title = hungary_flavor_gen.9.t
+	desc = hungary_flavor_gen.9.d
+	picture = GFX_report_event_HUN_visegrad_group
+	
+	is_triggered_only = yes
+	
+	#We are sad to see them go
+	option = {
+		name = hungary_flavor_gen.9.a
+		if = {
+			limit = { has_global_flag = HUN_visegrad_economic_circle_present }
+			FROM = { remove_opinion_modifier = { target = ROOT modifier = HUN_visegrad_economic_circle } }
+		}
+	}
+}
+
+# The Visegrád Technology Circle (event upon formation of the circle)
+country_event = {
+	id = hungary_flavor_gen.10
+	title = hungary_flavor_gen.10.t
+	desc = hungary_flavor_gen.10.d
+	picture = GFX_report_event_HUN_visegrad_group
+	
+	is_triggered_only = yes
+	
+	#Together, for science!
+	option = {
+		name = hungary_flavor_gen.10.a
+		add_to_tech_sharing_group = visegrad_research
+	}
+}
+
+# The Visegrád Military Council (event upon formation of the council)
+country_event = {
+	id = hungary_flavor_gen.11
+	title = hungary_flavor_gen.11.t
+	desc = hungary_flavor_gen.11.d
+	picture = GFX_report_event_HUN_visegrad_group
+	
+	is_triggered_only = yes
+	
+	#Security is in our common interest.
+	option = {
+		name = hungary_flavor_gen.11.a
+		add_ideas = visegrad_military_council
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id=105
+	name="STATE_105"
+	manpower = 418130
+	
+	state_category = rural
+	
+	resources={
+		chromium=36
+		aluminium=112
+	}
+
+	history={
+		owner = YUG
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = YUG
+	}
+
+	provinces={
+		937 3922 9821 11858 13206 
+	}
+}

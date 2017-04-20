@@ -1,0 +1,26 @@
+﻿
+division_template = {
+	name = "Ejtöernyösök"
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+        paratrooper = { x = 0 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	##### Saint Ladislaus division #####
+	division= {	
+		name = "Szent László hadosztály"
+		location = 9660
+		division_template = "Ejtöernyösök"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.9
+
+	}
+}

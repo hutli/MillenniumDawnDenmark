@@ -1,0 +1,188 @@
+﻿capital = 43
+
+oob = "HUN_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	
+	gw_artillery = 1
+	interwar_antiair = 1
+	
+	early_fighter = 1
+	CAS1 = 1
+	
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+}
+
+set_party_name = { ideology = neutrality long_name = HUN_nemzeti_egyseg_part_long name = HUN_nemzeti_egyseg_part }
+set_country_flag = HUN_rakosi_leader_of_com
+set_country_flag = HUN_realism
+add_ideas = { trianon_restrictions }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 producer = HUN }
+
+if = { limit = { has_cosmetic_tag = HUN_AHU } drop_cosmetic_tag = yes }
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 23
+		}
+
+		fascism = {
+			popularity = 3
+		}
+		
+		communism = {
+			popularity = 5
+		}
+		
+		neutrality = {
+			popularity = 69
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1935.3.31"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_politician_miklos_horthy = yes
+
+create_politician_ferenc_szalasi = yes
+
+create_politician_matyas_rakosi = yes
+
+create_politician_endre_bajcsy_zsilinszky = yes
+
+create_military_geza_lakatos = yes
+
+create_military_ivan_hindy = yes
+
+create_military_bela_miklos = yes
+
+create_military_gabor_faragho = yes
+
+create_military_laszlo_dezso = yes
+
+create_military_gusztav_jany = yes
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "HUN_1939"
+	set_technology = {
+		fighter1 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		gwtank = 1
+		basic_light_tank = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		tech_engineers = 1
+		tech_mountaineers = 1
+		motorised_infantry = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+	
+	
+	add_ideas = {
+		HUN_tihamer_fabinyi
+
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		
+		#concerns
+		ganz_villamossagi_gyar
+		feg
+	}
+	remove_ideas = { trianon_restrictions }
+	
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 7
+			}
+
+			fascism = {
+				popularity = 21
+			}
+			
+			communism = {
+				popularity = 2
+			}
+			
+			neutrality = {
+				popularity = 70
+			}
+		}
+		
+		ruling_party = neutrality
+		last_election = "1939.5.29"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	
+	#unlock_national_focus = HUN_revisionism
+	complete_national_focus = HUN_agricultural_modernisation
+	complete_national_focus = HUN_revisionism
+	complete_national_focus = HUN_revisionist_education
+	complete_national_focus = HUN_draw_closer_to_germany
+	complete_national_focus = HUN_industrial_effort
+	complete_national_focus = HUN_budapest_industrial_district
+	complete_national_focus = HUN_transdanubian_construction_grants
+	complete_national_focus = HUN_the_gyori_program
+	complete_national_focus = HUN_aviation_effort
+	complete_national_focus = HUN_army_effort
+	complete_national_focus = HUN_maintain_conservative_government
+	complete_national_focus = HUN_military_science_division
+	complete_national_focus = HUN_the_debrecen_industrial_concern
+	complete_national_focus = HUN_advanced_infantry_divisions
+	complete_national_focus = HUN_motorization_effort
+	complete_national_focus = HUN_project_toldi
+}

@@ -1,0 +1,295 @@
+﻿
+add_namespace = hungary_flavor_ita
+
+
+#######
+#ITALY#
+#######
+
+# Ljubljana for Adriatic ports (event for ITA)
+country_event = {
+	id = hungary_flavor_ita.1
+	title = hungary_flavor_ita.1.t
+	desc = {
+		text = hungary_flavor_ita.1.d_fiume
+		trigger = { has_country_flag = HUN_hungary_wants_fiume }
+	}
+	desc = {
+		text = hungary_flavor_ita.1.d_zara
+		trigger = { has_country_flag = HUN_hungary_wants_zara }
+	}
+	desc = {
+		text = hungary_flavor_ita.1.d_both
+		trigger = { has_country_flag = HUN_hungary_wants_zara_and_fiume }
+	}
+	picture = GFX_report_event_yugoslavian_partition
+	
+	is_triggered_only = yes
+	
+	#Accept
+	option = {
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}
+			modifier = {
+				factor = 2
+				has_opinion = { target = FROM value > 50 }
+			}
+			modifier = {
+				factor = 2
+				has_opinion = { target = FROM value > 100 }
+			}				
+			modifier = {
+				factor = 4
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}		
+		}
+		name = hungary_flavor_ita.1.a		
+		add_named_threat = { threat = 1 name = HUN_annexed_slovenia_threat }
+		transfer_state = 751	#Ljubljana
+		if = {
+			limit = { has_country_flag = HUN_hungary_wants_zara_and_fiume }
+			effect_tooltip = {
+				FROM = {
+					transfer_state = 163	#Zara
+					transfer_state = 747	#Fiume
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = HUN_hungary_wants_zara }
+			effect_tooltip = { FROM = { transfer_state = 163 } }	#Zara 
+		}
+		if = {
+			limit = { has_country_flag = HUN_hungary_wants_fiume }
+			effect_tooltip = { FROM = { transfer_state = 747 } }	#Fiume 
+		}
+		hidden_effect = {
+			FROM = { country_event = { hours = 4 id = hungary_flavor_partition.19 } }
+		}
+	}
+	#Decline
+	option = {
+		name = hungary_flavor_ita.1.b
+		ai_chance = {
+			factor = 50	
+			modifier = {
+				factor = 2
+				has_country_flag = HUN_hungary_wants_zara_and_fiume
+			}	
+		}
+		FROM = { country_event = { hours = 4 id = hungary_flavor_partition.20 } }
+		hidden_effect = { 
+			set_country_flag = refused_slovenia_for_zara
+		}
+	}
+}
+
+# Hungarian deal
+country_event = {
+	id = hungary_flavor_ita.2
+	title = hungary_flavor_ita.2.t
+	desc = hungary_flavor_ita.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#Accept
+	option = {
+		ai_chance = {
+			factor = 80	
+			modifier = {
+				factor = 2
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}
+			modifier = {
+				factor = 1.2
+				has_global_flag = HUN_ITA_negotiation_military_support
+			}
+			modifier = {
+				factor = 1.4
+				has_global_flag = HUN_ITA_negotiation_political_support
+			}
+			modifier = {
+				factor = 0.8
+				has_global_flag = HUN_ITA_negotiation_fiume_plus
+			}
+			modifier = {
+				factor = 0.8
+				has_global_flag = HUN_ITA_negotiation_zara_plus
+			}
+			modifier = {
+				factor = 0.6
+				has_global_flag = HUN_ITA_negotiation_istria_plus
+			}
+		}
+		name = hungary_flavor_ita.2.a
+		custom_effect_tooltip = HUN_hungarys_conditions_colon
+		effect_tooltip = {
+			if = {
+				limit = { has_global_flag = HUN_ITA_negotiation_non_aggression_pact }
+				diplomatic_relation = { country = HUN relation = non_aggression_pact }
+			}
+			if = {
+				limit = { has_global_flag = HUN_ITA_negotiation_military_support }
+				HUN = { send_equipment = { target = ROOT type = infantry_equipment amount = 10000 } }
+			}
+			if = {
+				limit = { has_global_flag = HUN_ITA_negotiation_political_support }
+				HUN = { add_timed_idea = { idea = supporting_italy days = 548 } }
+				ROOT = { add_timed_idea = { idea = support_from_hungary days = 548 } }
+			}
+			if = {
+				limit = { has_global_flag = HUN_ITA_negotiation_fiume_plus }
+				HUN = { transfer_state = 747 }	#Fiume
+			}
+			if = {
+				limit = { has_global_flag = HUN_ITA_negotiation_zara_plus }
+				HUN = { transfer_state = 163 }	#Zara
+			}
+			if = {
+				limit = { has_global_flag = HUN_ITA_negotiation_istria_plus }
+				HUN = { transfer_state = 736 }	#Istria
+			}
+		}
+		FROM = { country_event = { hours = 4 id = hungary_flavor.27 } }
+	}
+	#Decline
+	option = {
+		name = hungary_flavor_ita.2.b
+		ai_chance = {
+			factor = 20		
+		}
+		FROM = { country_event = { hours = 4 id = hungary_flavor.28 } }
+	}
+}
+
+# Austria-Hungary demands their former territories
+country_event = {
+	id = hungary_flavor_ita.5
+	title = hungary_flavor_ita.5.t
+	desc = hungary_flavor_ita.5.d
+	picture = GFX_report_event_ahu_old
+	
+	is_triggered_only = yes
+	
+	#Yes.
+	option = {
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.5
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}		
+			modifier = {
+				factor = 10
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					has_country_flag = HUN_realism
+					NOT = { has_army_manpower = { size > 499999 } }
+				}
+			}
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 599999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 699999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 799999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 899999 } } }
+			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 999999 } } }	
+		}
+		name = hungary_flavor_ita.5.a
+		FROM = { country_event = { hours = 4 id = hungary_flavor.64 } }
+		
+		effect_tooltip = {
+			diplomatic_relation = { country = FROM relation = non_aggression_pact }
+			FROM = {
+				transfer_state = 736		#Istria
+				transfer_state = 39			#South Tyrol
+				transfer_state = 163		#Zara
+				transfer_state = 747		#Fiume
+				transfer_state = 755		#Primorska
+			}
+			transfer_state = 182		#Crete
+			transfer_state = 185		#Epirus	
+		}	
+	}
+	#We will not become the lapdogs of the Monarchy.
+	option = {
+		name = hungary_flavor_ita.5.b
+		ai_chance = {
+			factor = 80		
+		}
+		FROM = { country_event = { hours = 4 id = hungary_flavor.65 } }
+	}
+}
+
+# Fruits of the Yugoslavian partition
+country_event = {
+	id = hungary_flavor_ita.6
+	title = hungary_flavor_ita.6.t
+	desc = hungary_flavor_ita.6.d
+	picture = GFX_report_event_yugoslavian_partition
+	
+	trigger = {
+		has_country_flag = HUN_received_territory_during_partition
+		owns_state = 749	#Croatia
+		owns_state = 103	#Dalmatia
+		HUN = { 
+			exists = yes
+			is_faction_leader = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	#Propose an alliance.
+	option = {
+		name = hungary_flavor_ita.6.a
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 2
+				owns_state = 751 #Ljubljana
+			}		
+			modifier = {
+				factor = 2
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}	
+		}
+		HUN = { country_event = { hours = 4 id = hungary_flavor.105 } }	
+		add_ai_strategy = {
+			type = alliance
+			id = "HUN"
+			value = 200
+		}
+	}
+	#We will keep the distance.
+	option = {
+		name = hungary_flavor_ita.6.b
+		ai_chance = {
+			factor = 40		
+		}
+	}
+}
+
+# Germany cedes Ljubljana
+country_event = {
+	id = hungary_flavor_ita.7
+	title = hungary_flavor_ita.7.t
+	desc = hungary_flavor_ita.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#As expected
+	option = {
+		name = hungary_flavor_ita.7.a
+		transfer_state = 751	#Ljubjana
+	}
+}

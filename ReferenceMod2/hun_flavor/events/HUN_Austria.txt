@@ -1,0 +1,127 @@
+﻿
+add_namespace = hungary_flavor_aus
+
+#########
+#AUSTRIA#
+#########
+
+# Hungarian Alliance (event for Austria upon faction invite)
+country_event = {
+	id = hungary_flavor_aus.1
+	title = hungary_flavor_aus.1.t
+	desc = hungary_flavor_aus.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#Accept
+	option = {
+		name = hungary_flavor_aus.1.a
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 1.5
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}			
+			modifier = {
+				factor = 10
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}			
+		}
+		FROM = {
+			add_to_faction = ROOT
+			country_event = { hours = 8 id = hungary_flavor.4 }
+		}		
+		add_ai_strategy = {
+			type = alliance
+			id = "HUN"
+			value = 200
+		}
+	}
+	
+	#Decline
+	option = {
+		name = hungary_flavor_aus.1.b
+		ai_chance = {
+			factor = 60
+		}
+		FROM = {
+			country_event = { hours = 6 id = hungary_flavor.5 }
+		}
+	}
+}
+
+# Hungary presses for Burgenland Referendum
+country_event = {
+	id = hungary_flavor_aus.2
+	title = hungary_flavor_aus.2.t
+	desc = hungary_flavor_aus.2.d
+	picture = GFX_report_event_HUN_burgenland
+	
+	is_triggered_only = yes
+	
+	#Allow the referendum.
+	option = {
+		name = hungary_flavor_aus.2.a
+		ai_chance = {
+			factor = 70		
+		}
+		FROM = { country_event = { hours = 8 id = hungary_flavor.45 } }
+		effect_tooltip = {
+			random_list = { 
+				90 = { 
+					transfer_state = 743 #Burgenland 
+					add_state_core = 743 #Burgenland
+				} 
+				10 = { } 
+			}
+		}
+	}
+	
+	#Never
+	option = {
+		name = hungary_flavor_aus.2.b
+		ai_chance = {
+			factor = 30		
+			modifier = {
+				factor = 0
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}
+		}
+		FROM = { country_event = { hours = 6 id = hungary_flavor.46 } }
+	}
+}
+
+# Hungary offers Slovenia for Burgenland
+country_event = {
+	id = hungary_flavor_aus.3
+	title = hungary_flavor_aus.3.t
+	desc = hungary_flavor_aus.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#Accept
+	option = {
+		name = hungary_flavor_aus.3.a
+		ai_chance = {
+			factor = 95		
+		}
+		FROM = { country_event = { hours = 8 id = hungary_flavor.48 } }
+		transfer_state = 102	#Slovenia
+	}
+	
+	#Decline
+	option = {
+		name = hungary_flavor_aus.3.b
+		ai_chance = {
+			factor = 5		
+			modifier = {
+				factor = 4
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}
+		}
+		FROM = { country_event = { hours = 6 id = hungary_flavor.49 } }
+		hidden_effect = { set_country_flag = refused_slovenia_for_burgenland }
+	}
+}

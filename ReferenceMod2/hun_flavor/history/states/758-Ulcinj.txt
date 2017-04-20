@@ -1,0 +1,21 @@
+state={
+	id=758
+	name="STATE_758"
+	manpower = 87660
+	
+	state_category = rural
+	
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+			9809 = {
+				naval_base = 1
+			}				
+		}
+		add_core_of = YUG
+	}
+	provinces={
+		9809 	}
+	}

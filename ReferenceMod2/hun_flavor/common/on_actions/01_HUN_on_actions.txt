@@ -1,0 +1,60 @@
+on_actions = {
+	on_new_term_election = {
+		random_events = {
+			100 = hungary_flavor_elections.1
+			100 = hungary_flavor_elections.2
+			100 = hungary_flavor_elections.3
+		}
+	}
+	#PREV is war target
+	on_declare_war = {
+		effect = {
+
+			## Hungarian war
+			if = {
+				limit = {
+					OR = {
+						PREV = { tag = HUN }
+						ROOT = { tag = HUN }
+					}
+					HUN = { NOT = { has_country_flag = HUN_had_war } }
+					HUN = { exists = yes }
+				}
+				HUN = { set_country_flag = HUN_had_war }
+			}
+		}
+	}
+	
+	on_leave_faction = {
+		effect = {
+			if = { limit = { has_country_flag = HUN_visegrad_group_member } 
+				country_event = { hours = 6 id = hungary_flavor_gen.8 }
+			}
+		}
+	}
+	
+	on_join_faction = {
+		effect = {
+			if = { limit = { FROM = { has_country_flag = HUN_visegrad_group_member } }
+				country_event = { hours = 6 id = hungary_flavor_gen.7 }
+			}
+		}
+	}
+	
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = { HUN = { has_war = yes } }
+				HUN = { set_country_flag = HUN_had_war }
+			}
+		}
+	}
+	
+	#Not run on a specific country.
+	on_startup = {
+		effect = {
+			HUN = { country_event = { id = hungary_flavor.1 } }
+		}
+	}
+}

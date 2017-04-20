@@ -1,0 +1,14 @@
+spriteTypes = {	
+
+	### Austria-Hungary Ships ###
+
+	#SpriteType = {	
+	#	name = "GFX_HUN_early_battleship_medium"
+	#	texturefile = "gfx/interface/technologies/ahu_early_battleship.dds"
+	#}
+
+	#SpriteType = {	
+	#	name = "GFX_HUN_early_destroyer_medium"
+	#	texturefile = "gfx/interface/technologies/ahu_early_destroyer.dds"
+	#}
+}

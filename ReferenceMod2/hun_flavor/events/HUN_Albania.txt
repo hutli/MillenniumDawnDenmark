@@ -1,0 +1,50 @@
+﻿
+add_namespace = hungary_flavor_alb
+
+
+#########
+#ALBANIA#
+#########
+
+# [From.GetAdjective] generosity
+country_event = {
+	id = hungary_flavor_alb.1
+	title = hungary_flavor_alb.1.t
+	desc = hungary_flavor_alb.1.d
+	picture = GFX_report_event_HUN_albania
+	
+	is_triggered_only = yes
+	
+	#Their cause is just, we will join them.
+	option = {
+		name = hungary_flavor_alb.1.a
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 2
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}	
+			modifier = {
+				factor = 2
+				has_government = fascism
+			}	
+		}
+		FROM = {
+			effect_tooltip = { add_to_faction = ROOT }
+			country_event = { days = 1 id = hungary_flavor.103 }
+		}	
+		add_ai_strategy = {
+			type = alliance
+			id = "HUN"
+			value = 200
+		}
+	}
+	
+	#Quietly accept the land, but don't align ourselves with them.
+	option = {
+		name = hungary_flavor_alb.1.b
+		ai_chance = {
+			factor = 40
+		}
+	}
+}

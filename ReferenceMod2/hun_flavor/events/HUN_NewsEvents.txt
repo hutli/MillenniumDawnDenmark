@@ -1,0 +1,430 @@
+﻿###########################
+# Hungarian News Events
+###########################
+
+add_namespace = hun_news
+
+# The partition of Yugoslavia
+news_event = {
+	id = hun_news.1
+	title = hun_news.1.t
+	desc = hun_news.1.d
+	picture = GFX_news_event_009
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = HUN_end_of_yugoslavian_partition
+			if = { 
+				limit = { YUG = { exists = no } }
+				annex_country = { target = YUG transfer_troops = no }
+			}
+		}
+	}
+	
+	#The new borders look nice.
+	option = {
+		name = hun_news.1.a
+		trigger = {
+			OR = {
+				tag = HUN
+				is_in_faction_with = HUN
+				has_country_flag = HUN_received_territory_during_partition
+				AND = {
+					tag = SER
+					is_puppet_of = HUN
+				}
+				AND = {
+					tag = BUL
+					owns_state = 106 	#Macedonia
+				}
+				AND = {
+					tag = ALB
+					owns_state = 105	#Montenegro
+				}
+				AND = {
+					tag = ITA
+					OR = {
+						owns_state = 105	#Montenegro
+						owns_state = 751	#Ljubljana
+						owns_state = 103	#Dalmatia
+					}
+				}
+				AND = {
+					tag = AUS
+					owns_state = 102	#Slovenia
+				}
+			}
+		}
+		if = {
+			limit = { tag = HUN }
+			every_country = {
+				limit = { has_country_flag = HUN_received_territory_during_partition5 }
+				add_opinion_modifier = { target = ROOT modifier = HUN_given_territory5 }
+			}
+			every_country = {
+				limit = { has_country_flag = HUN_received_territory_during_partition4 }
+				add_opinion_modifier = { target = ROOT modifier = HUN_given_territory4 }
+			}
+			every_country = {
+				limit = { has_country_flag = HUN_received_territory_during_partition3 }
+				add_opinion_modifier = { target = ROOT modifier = HUN_given_territory3 }
+			}
+			every_country = {
+				limit = { has_country_flag = HUN_received_territory_during_partition2 }
+				add_opinion_modifier = { target = ROOT modifier = HUN_given_territory2 }
+			}
+			every_country = {
+				limit = { has_country_flag = HUN_received_territory_during_partition1 }
+				add_opinion_modifier = { target = ROOT modifier = HUN_given_territory1 }
+			}
+		}
+	}
+	#The peace of Europe is in danger!
+	option = {
+		name = hun_news.1.b
+		trigger = { 		
+			NOT = { is_in_faction_with = HUN }
+			OR = {
+				AND = {
+					ENG = { 
+						is_faction_leader = yes
+						has_government = democratic 
+					}
+					is_in_faction_with = ENG
+				}
+				tag = YUG
+				tag = ROM
+				tag = GRE				
+			}
+		}
+	}
+	#Amazing, how quickly countries appear, and vanish.
+	option = {
+		name = hun_news.1.c
+		trigger = {
+			NOT = { 
+				tag = HUN
+				is_puppet_of = HUN
+				is_in_faction_with = HUN 
+				has_country_flag = HUN_received_territory_during_partition
+			}
+		}
+	}
+}
+
+# The Little Entente
+news_event = {
+	id = hun_news.2
+	title = hun_news.2.t
+	desc = {
+		text = hun_news.2.d
+		trigger = { 
+			HUN = { has_cosmetic_tag = HUN_AHU }
+		}
+	}
+	desc = {
+		text = hun_news.2.d_2
+		trigger = { 
+			NOT = { HUN = { has_cosmetic_tag = HUN_AHU } }
+		}
+	}
+	picture = GFX_news_event_HUN_little_entente
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	#Damn them all to hell.
+	option = {
+		name = hun_news.2.a
+		trigger = {
+			OR = {
+				tag = HUN
+				is_in_faction_with = HUN
+				is_puppet_of = HUN
+			}
+		}
+	}
+	#Hurrah!
+	option = {
+		name = hun_news.2.b
+		trigger = {
+			OR = {
+				tag = CZE
+				is_in_faction_with = CZE
+				is_puppet_of = CZE
+			}
+		}
+	}
+	#This will surely temper tensions in the region.
+	option = {
+		name = hun_news.2.c
+		trigger = {
+			NOT = { 
+				tag = HUN
+				is_puppet_of = HUN
+				is_in_faction_with = HUN 
+				
+				tag = CZE
+				is_in_faction_with = CZE
+				is_puppet_of = CZE
+			}
+		}
+	}
+}
+
+# End of the Little Entente
+news_event = {
+	id = hun_news.3
+	title = hun_news.3.t
+	desc = {
+		text = hun_news.3.d
+		trigger = { 
+			HUN = { has_cosmetic_tag = HUN_AHU }
+		}
+	}
+	desc = {
+		text = hun_news.3.d_2
+		trigger = { 
+			NOT = { HUN = { has_cosmetic_tag = HUN_AHU } }
+		}
+	}
+	picture = GFX_news_event_HUN_little_entente
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	#Their weak coalition crumbles.
+	option = {
+		name = hun_news.3.a
+		trigger = {
+			NOT = { tag = CZE }
+			OR = {
+				tag = HUN
+				is_in_faction_with = HUN	
+				is_puppet_of = HUN
+			}
+		}
+	}
+	#Inaction will be our undoing.
+	option = {
+		name = hun_news.3.b
+		trigger = {
+			NOT = { tag = HUN }
+			OR = {
+				tag = CZE
+				is_in_faction_with = CZE
+				is_puppet_of = CZE
+			}
+		}
+	}
+	#Looks like this alliance was not meant to be.
+	option = {
+		name = hun_news.3.c
+		trigger = {
+			NOT = { 
+				tag = HUN
+				is_puppet_of = HUN
+				is_in_faction_with = HUN 
+				
+				tag = CZE
+				is_in_faction_with = CZE
+				is_puppet_of = CZE
+			}
+		}
+	}
+}
+
+# The Visegrád Group
+news_event = {
+	id = hun_news.4
+	title = hun_news.4.t
+	desc = {
+		text = hun_news.4.d_both
+		trigger = { 
+			HUN = { 
+				has_country_flag = HUN_visegrad_group_POL_plus
+				has_country_flag = HUN_visegrad_group_CZE_plus
+			}
+		}
+	}
+	desc = {
+		text = hun_news.4.d_POL
+		trigger = { 
+			HUN = { 
+				has_country_flag = HUN_visegrad_group_POL_plus
+				has_country_flag = HUN_visegrad_group_CZE_minus
+			}
+		}
+	}
+	desc = {
+		text = hun_news.4.d_CZE
+		trigger = { 
+			HUN = { 
+				has_country_flag = HUN_visegrad_group_POL_minus
+				has_country_flag = HUN_visegrad_group_CZE_plus
+			}
+		}
+	}
+	picture = GFX_news_event_generic_read_write
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	#Let us hope for lasting cooperation
+	option = {
+		name = hun_news.4.a
+		trigger = {
+			OR = {
+				tag = HUN
+				is_in_faction_with = HUN
+			}
+		}
+	}
+	#We are wise to stay out of this
+	option = {
+		name = hun_news.4.b
+		trigger = {
+			OR = {
+				AND = {
+					tag = CZE
+					NOT = { is_in_faction_with = HUN }
+				}
+				AND = {
+					tag = POL
+					NOT = { is_in_faction_with = HUN }
+				}
+			}
+		}
+	}
+	#This is mildly interesting
+	option = {
+		name = hun_news.4.c
+		trigger = {
+			NOT = { 
+				tag = HUN
+				tag = CZE
+				tag = POL
+			}
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+	#Maybe this will stabilize the region
+	option = {
+		name = hun_news.4.e
+		trigger = {
+			NOT = { 
+				tag = HUN
+				tag = CZE
+				tag = POL
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+	}
+}
+
+# British decree against Hungarian/Austro-Hungarian expansion
+news_event = {
+	id = hun_news.5
+	title = hun_news.5.t
+	desc = hun_news.5.d
+	picture = GFX_news_event_churchill_degaulle
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	#Let them try
+	option = {
+		name = hun_news.5.a
+		trigger = {
+			OR = {
+				tag = HUN
+				is_in_faction_with = HUN
+			}
+		}
+	}
+	
+	#We must not condone the violation of the peace of Europe
+	option = {
+		name = hun_news.5.b
+		trigger = {
+			OR = {
+				tag = FROM
+				is_in_faction_with = FROM
+			}
+		}
+	}
+	
+	#Will this be enough to stop them?
+	option = {
+		name = hun_news.5.c
+		trigger = {
+			NOT = {
+				tag = HUN
+				is_in_faction_with = HUN
+				tag = FROM
+				is_in_faction_with = FROM
+			}
+		}
+	}
+}
+
+# United Kingdom goes to war to stop Hungarian/Austro-Hungarian expansion
+news_event = {
+	id = hun_news.6
+	title = hun_news.6.t
+	desc = hun_news.6.d
+	picture = GFX_news_event_churchill_degaulle
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	#We will welcome them with machine guns.
+	option = {
+		name = hun_news.6.a
+		trigger = {
+			OR = {
+				tag = HUN
+				is_in_faction_with = HUN
+			}
+		}
+	}
+	
+	#To arms!
+	option = {
+		name = hun_news.6.b
+		trigger = {
+			OR = {
+				tag = FROM
+				is_in_faction_with = FROM
+			}
+		}
+	}
+	
+	#War it is then.
+	option = {
+		name = hun_news.6.c
+		trigger = {
+			NOT = {
+				tag = HUN
+				is_in_faction_with = HUN
+				tag = FROM
+				is_in_faction_with = FROM
+			}
+		}
+	}
+}
