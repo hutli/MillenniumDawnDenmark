@@ -9,6 +9,62 @@ focus_tree = {
 			original_tag = DEN
 	    }
     }
+
+    @diplomatic_focus_zero = 0
+	@diplomatic_focus_one = 1
+	@diplomatic_focus_two = 2
+	@diplomatic_focus_three = 3
+	@diplomatic_focus_four = 4
+	@diplomatic_focus_five = 5
+	@diplomatic_focus_six = 6
+	
+	@between_diplomatic_and_industry_foci= 7
+	
+	@industry_focus_zero = 8
+	@industry_focus_one = 9
+	@industry_focus_two = 10
+	@industry_focus_three = 11
+	@industry_focus_four = 12
+	@industry_focus_five = 13
+	@industry_focus_six = 14
+	@industry_focus_seven = 15
+	@industry_focus_eight = 16
+	
+	@between_industry_and_ideology_foci = 17
+	
+	@ideology_focus_zero = 18
+	@ideology_focus_one = 19
+	@ideology_focus_two = 20
+	@ideology_focus_three = 21
+	@ideology_focus_four = 22 
+	@ideology_focus_five = 23
+	@ideology_focus_six = 24 
+	@ideology_focus_seven = 25
+	@ideology_focus_eight = 26
+	@ideology_focus_nine = 27
+	@ideology_focus_ten = 28
+	@ideology_focus_eleven = 29
+	@ideology_focus_twelve = 30
+	@ideology_focus_thirteen = 31
+	@ideology_focus_fourteen = 32
+	@ideology_focus_fiftheen = 33
+	@ideology_focus_sixteen = 34
+	@ideology_focus_seventeen = 35
+	@ideology_focus_eighteen = 36
+	
+	@between_ideology_and_military_foci = 37
+	
+	@military_focus_zero = 38
+	@military_focus_one = 39
+	@military_focus_two = 40
+	@military_focus_three = 41
+	@military_focus_four = 42
+	@military_focus_five = 43
+	@military_focus_six = 44
+	@military_focus_seven = 45
+	@military_focus_eight = 46
+	
+	##DIPLOMATIC FOCUS##
 	
 	focus = {
 		id = DEN_political_focus
@@ -23,6 +79,142 @@ focus_tree = {
 		
 		ai_will_do = {
 		    factor = 10
+		}
+	}
+
+	focus = {
+		id = DEN_scandinavian_focus
+		icon = improve_relation
+		x = @diplomatic_focus_two
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_political_focus
+		}
+
+		mutually_exclusive = {
+		    focus = DEN_global_focus
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_global_focus
+		icon = national_unity
+		x = @diplomatic_focus_four
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_political_focus
+		}
+		
+		mutually_exclusive = {
+		    focus = DEN_scandinavian_focus
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_commit_to_the_north
+		icon = destroy_establishment
+		x = @diplomatic_focus_two
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_scandinavian_focus
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_way_of_the_sword
+		icon = entente
+		x = @diplomatic_focus_one
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_commit_to_the_north
+		}
+		
+		mutually_exclusive = {
+		    focus = DEN_way_of_the_pen
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_way_of_the_pen
+		icon = tripartite_pact
+		x = @diplomatic_focus_three
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_commit_to_the_north
+		}
+
+		mutually_exclusive = {
+		    focus = DEN_way_of_the_sword
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_for_queen_and_country
+		icon = home_defense
+		x = @diplomatic_focus_one
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_way_of_the_sword
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 	}
 }
