@@ -112,25 +112,13 @@ units = {
 		location = 3260
 		start_experience_factor = 0.3
 	}
-
-	##### NAVAL UNITS #####
-	navy = {				
-		name = "Den Danske Flåde"			
-		base = 6287
-		location = 6287  # Copenhagen
-		ship = { name = "HDMS Rota" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }			
-		ship = { name = "HDMS Bellona" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }		
-		ship = { name = "HDMS Flora" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }
-		ship = { name = "HDMS Daphne" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }
-		ship = { name = "HDMS Dryaden" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }
-	}
 }
 air_wings = {
 	800 = {
 		#F-16AM MLU
 		jet_multirole_equipment_3 = {
 			owner = "DEN" 
-			amount = 62
+			amount = 35
 		}
 
 	}
@@ -138,7 +126,7 @@ air_wings = {
 		#Challenger 604 MPA
 		jet_mpa_equipment_4 = {
 			owner = "DEN" 
-			amount = 3
+			amount = 4
 		}
 	}
 }

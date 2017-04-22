@@ -1,0 +1,44 @@
+ideas = {
+
+	country = {
+
+		DEN_surpressing_the_donemark_movement = {
+			allowed = {
+				always = no
+			}
+
+			picture = EU_member2
+
+			modifier = {
+			    political_power_gain = -0.25
+			    industrial_capacity_factory = -0.15
+			    research_time_factor = -0.1
+			    conscription_factor = -0.2
+			}
+		}
+	
+		DEN_queen_margrethe_ii = {
+			allowed = {
+				original_tag = DEN
+			}
+
+			picture = british_exceptionalism
+			
+			modifier = {
+				unity_factor = 0.05
+			}
+		}
+
+		DEN_eu_election = {
+			allowed = {
+				always = no
+			}
+
+			picture = EU_sanctions
+
+			modifier = {
+				political_power_gain = -0.25
+			}
+		}
+	}
+}

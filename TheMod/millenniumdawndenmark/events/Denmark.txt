@@ -1,0 +1,191 @@
+﻿add_namespace = denmark
+
+#Demand Subjugation to Minors
+country_event = {
+	id = denmark.1
+	title = denmark.1.t
+	desc = denmark.1.d
+	picture = GFX_report_event_political_deal2
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+	    name = denmark.1.o1
+		DEN = { country_event = denmark.2 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = { #Refuse
+	    name = denmark.1.o2
+		add_opinion_modifier = {
+			target = DEN
+			modifier = outrageous_demands
+		}
+		DEN =  { country_event = denmark.3 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				tag = ICE
+				factor = 0
+			}
+		}
+	}
+}
+
+#Minor accepted to be annexed
+country_event = {
+	id = denmark.2
+	title = denmark.2.t
+	desc = denmark.2.d
+	picture = GFX_report_event_political_deal2
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = denmark.2.o1
+	    annex_country = { target = FROM transfer_troops = no }
+	}
+}
+#Minor refused to be annexed
+country_event = {
+	id = denmark.3
+	title = denmark.3.t
+	desc = denmark.3.d
+	picture = GFX_report_event_war
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = denmark.3.o1
+	    create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = refused_to_be_annexed
+		}
+	}
+}
+
+#Invitation to Kalmar Union
+country_event = {
+	id = denmark.4
+	title = denmark.4.t
+	desc = denmark.4.d
+	picture = GFX_report_event_political_deal2
+	
+	is_triggered_only = yes
+	
+	option = {	#Accept
+		name = denmark.4.o1
+		DEN = { add_to_faction = ROOT }
+		set_country_flag = seeks_danish_alliance
+		IF = {
+			limit = {
+				has_country_flag = seek_NATO_membership
+			}
+
+			ROOT = { set_country_flag = left_NATO }
+		}
+		DEN = { country_event = diplomatic_response.1 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_neutral = yes
+			}
+			modifier = {
+				factor = 0
+				is_in_faction = yes
+			}
+		}
+	}
+	
+	option = {	#Decline
+		name = denmark.4.o2
+		DEN = { country_event = diplomatic_response.2 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					tag = NOR
+					tag = SWE
+					tag = FIN
+				}
+			}
+		}
+	}
+}
+
+#Attempt to Join [Faction]
+country_event = {
+	id = denmark.5
+	title = denmark.5.t
+	desc = denmark.5.d
+	picture = GFX_report_event_political_deal2
+	
+	is_triggered_only = yes
+	
+	option = {	#Accept
+		name = denmark.5.o1
+		add_to_faction = DEN
+		DEN = { country_event = diplomatic_response.1 }
+		ai_chance = { factor = 90 }
+	}
+	
+	option = {	#Decline
+		name = denmark.5.o2
+		DEN = { country_event = diplomatic_response.2 }
+		ai_chance = { factor = 10 }
+	}
+}
+
+#The people of Denmark wants to leave the EU
+country_event = {
+	id = denmark.6
+	title = denmark.6.t
+	desc = denmark.6.d
+	picture = GFX_report_event_political_deal2
+	
+	is_triggered_only = yes
+	
+	option = {	#Surpress the movement
+		name = denmark.6.o1
+		add_political_power = -200
+		decrease_stability_by_2 = yes
+		add_national_unity = -0.1
+		add_timed_idea = { idea = DEN_surpressing_the_donemark_movement days = 550 }
+	}
+
+	option = {	#Hold the election
+		name = denmark.6.o2
+		add_ideas = DEN_eu_election
+	}
+}
+
+#Donemark event
+country_event = {
+	id = denmark.7
+	title = denmark.7.t
+	desc = denmark.7.d
+	picture = GFX_report_event_political_deal2
+	
+	trigger = {
+		has_idea = DEN_eu_election
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = denmark.7.o1
+		remove_ideas = DEN_eu_election
+		remove_ideas = idea_eu_member
+	}
+}

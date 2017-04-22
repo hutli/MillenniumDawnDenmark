@@ -1,0 +1,21 @@
+seek_danish_alliance = {
+	enable = {
+		NOT = { tag = DEN }
+		has_country_flag = seeks_danish_alliance
+	}
+	
+	abort = {
+		NOT = { has_country_flag = seeks_danish_alliance }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "DEN"
+		value = 50
+	}
+	ai_strategy = {
+		type = alliance
+		id = "DEN"
+		value = 125
+	}
+}

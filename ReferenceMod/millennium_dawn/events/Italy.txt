@@ -337,7 +337,7 @@ country_event = {
 	option = {	#Accept
 		name = italy.11.o1
 		ITA = { add_to_faction = ROOT }
-		set_country_flag = seeks_italian_alliance
+		set_country_flag = seeks_danish_alliance
 		ITA = { country_event = diplomatic_response.1 }
 		ai_chance = {
 			factor = 50

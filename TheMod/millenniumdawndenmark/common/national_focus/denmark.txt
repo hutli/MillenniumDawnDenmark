@@ -69,7 +69,7 @@ focus_tree = {
 	focus = {
 		id = DEN_political_focus
 		icon = demand_territory
-		x = @diplomatic_focus_three
+		x = @ideology_focus_nine
 		y = 0
 		cost = 10
 		
@@ -85,7 +85,7 @@ focus_tree = {
 	focus = {
 		id = DEN_scandinavian_focus
 		icon = improve_relation
-		x = @diplomatic_focus_two
+		x = @ideology_focus_eight
 		y = 1
 		cost = 10
 		
@@ -109,7 +109,7 @@ focus_tree = {
 	focus = {
 		id = DEN_global_focus
 		icon = national_unity
-		x = @diplomatic_focus_four
+		x = @ideology_focus_ten
 		y = 1
 		cost = 10
 		
@@ -133,7 +133,7 @@ focus_tree = {
 	focus = {
 		id = DEN_commit_to_the_north
 		icon = destroy_establishment
-		x = @diplomatic_focus_two
+		x = @ideology_focus_five
 		y = 2
 		cost = 10
 		
@@ -141,6 +141,17 @@ focus_tree = {
 		    focus = DEN_scandinavian_focus
 		}
 		
+		completion_reward = {
+			DEN = { country_event = denmark.6 }
+			random_country = {
+				limit = {
+					is_in_faction_with = DEN
+					is_faction_leader = yes
+				}
+				remove_from_faction = DEN
+			}
+		}
+
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -153,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = DEN_way_of_the_sword
 		icon = entente
-		x = @diplomatic_focus_one
+		x = @ideology_focus_five
 		y = 3
 		cost = 10
 		
@@ -177,7 +188,7 @@ focus_tree = {
 	focus = {
 		id = DEN_way_of_the_pen
 		icon = tripartite_pact
-		x = @diplomatic_focus_three
+		x = @ideology_focus_eight
 		y = 3
 		cost = 10
 		
@@ -187,6 +198,74 @@ focus_tree = {
 
 		mutually_exclusive = {
 		    focus = DEN_way_of_the_sword
+		}
+		
+		completion_reward = {
+		    NOR = {
+		    	add_opinion_modifier = {
+			    	target = DEN
+			    	modifier = declaration_of_friendship
+			    }
+		    }
+
+		    SWE = {
+		    	add_opinion_modifier = {
+			    	target = DEN
+			    	modifier = declaration_of_friendship
+			    }
+		    }
+
+		    FIN = {
+		    	add_opinion_modifier = {
+			    	target = DEN
+			    	modifier = declaration_of_friendship
+			    }
+		    }
+
+		    DEN = {
+		    	add_opinion_modifier = {
+			    	target = NOR
+			    	modifier = declaration_of_friendship
+			    }
+		    }
+
+			DEN = {
+		    	add_opinion_modifier = {
+			    	target = SWE
+			    	modifier = declaration_of_friendship
+			    }
+		    }
+
+			DEN = {
+		    	add_opinion_modifier = {
+			    	target = FIN
+			    	modifier = declaration_of_friendship
+			    }
+		    }
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_reclaim_iceland
+		icon = tripartite_pact
+		x = @ideology_focus_eight
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_way_of_the_pen
+		}
+
+		completion_reward = {
+			ICE = { country_event = denmark.1 }
 		}
 		
 		ai_will_do = {
@@ -200,13 +279,153 @@ focus_tree = {
 
 	focus = {
 		id = DEN_for_queen_and_country
-		icon = home_defense
-		x = @diplomatic_focus_one
+		icon = monarchy
+		x = @ideology_focus_six
 		y = 4
 		cost = 10
 		
 		prerequisite = {
 		    focus = DEN_way_of_the_sword
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_denmark_for_danes
+		icon = political_pressure
+		x = @ideology_focus_four
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_way_of_the_sword
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_power_to_hizb_ut_Tahrir
+		icon = align_to_pakistan
+		x = @ideology_focus_two
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_way_of_the_sword
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_stronger_scandia
+		icon = tripartite_pact
+		x = @ideology_focus_eight
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_reclaim_iceland
+		}
+
+		completion_reward = {
+			create_faction = DEN_kalmar_union
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_invite_norway
+		icon = tripartite_pact
+		x = @ideology_focus_nine
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_stronger_scandia
+		}
+
+		completion_reward = {
+			NOR = { country_event = denmark.4 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_invite_sweden
+		icon = tripartite_pact
+		x = @ideology_focus_seven
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_stronger_scandia
+		}
+
+		completion_reward = {
+			SWE = { country_event = denmark.4 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_invite_finland
+		icon = tripartite_pact
+		x = @ideology_focus_eight
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+			focus = DEN_invite_norway
+		}
+
+		prerequisite = {
+	    	focus = DEN_invite_sweden
+		}
+
+		completion_reward = {
+			FIN = { country_event = denmark.4 }
 		}
 		
 		ai_will_do = {
