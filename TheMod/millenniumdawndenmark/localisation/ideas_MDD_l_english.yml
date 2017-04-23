@@ -1,7 +1,11 @@
 ﻿l_english:
  DEN_surpressing_the_donemark_movement:0 "Surpressing the 'Donemark' movement"
  DEN_surpressing_the_donemark_movement_desc:0 ""
- DEN_queen_margrethe_ii:0 "Queen Margrethe II"
- DEN_queen_margrethe_ii_desc:0 ""
+ DEN_queen_margrethe_pre_election:0 "Queen Margrethe II"
+ DEN_queen_margrethe_pre_election_desc:0 "Margrethe Alexandrine Þórhildur Ingrid, Hendes Majestæt Dronningen, blev Danmarks Dronning i 1972. H.M. Dronning Margrethe 2. er født den 16. april 1940 på Amalienborg som datter af Kong Frederik 9. (død 1972) og Dronning Ingrid, født Prinsesse af Sverige (død 2000)"
+ DEN_queen_margrethe_post_election:0 "Queen Margrethe II"
+ DEN_queen_margrethe_post_election_desc:0 "Margrethe Alexandrine Þórhildur Ingrid, Hendes Majestæt Dronningen, blev Danmarks Dronning i 1972. H.M. Dronning Margrethe 2. er født den 16. april 1940 på Amalienborg som datter af Kong Frederik 9. (død 1972) og Dronning Ingrid, født Prinsesse af Sverige (død 2000)"
  DEN_eu_election:0 "EU election"
  DEN_eu_election_desc:0 ""
+ DEN_constitutional_election:0 "Constitutional Election"
+ DEN_constitutional_election_desc:0 ""

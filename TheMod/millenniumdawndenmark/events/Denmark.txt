@@ -189,3 +189,49 @@ country_event = {
 		remove_ideas = idea_eu_member
 	}
 }
+
+#Constitutional election
+country_event = {
+	id = denmark.8
+	title = denmark.8.t
+	desc = denmark.8.d
+	picture = GFX_report_event_political_deal2
+	
+	is_triggered_only = yes
+
+	option = {	#Hold the election
+		name = denmark.8.o1
+		add_ideas = DEN_constitutional_election
+	}
+}
+
+#Political active queen
+country_event = {
+	id = denmark.9
+	title = denmark.9.t
+	desc = denmark.9.d
+	picture = GFX_report_event_political_deal2
+	
+	trigger = {
+		has_idea = DEN_constitutional_election
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = denmark.9.o1
+		remove_ideas = DEN_constitutional_election
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.1
+		}
+		hidden_effect = {
+			remove_ideas = DEN_queen_margrethe_pre_election
+			add_ideas = DEN_queen_margrethe_post_election
+		}
+	}
+}

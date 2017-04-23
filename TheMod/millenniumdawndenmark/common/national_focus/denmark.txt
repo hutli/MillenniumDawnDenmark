@@ -162,6 +162,221 @@ focus_tree = {
 	}
 
 	focus = {
+		id = DEN_big_brother
+		icon = align_to_america
+		x = @ideology_focus_ten
+		y = 3
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = DEN_war_brothers
+			focus = DEN_stronger_eu
+			focus = DEN_russian_friend
+			focus = DEN_go_with_china
+		}
+
+		prerequisite = {
+		    focus = DEN_global_focus
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_war_brothers
+		icon = align_to_britain
+		x = @ideology_focus_twelve
+		y = 3
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = DEN_big_brother
+			focus = DEN_stronger_eu
+			focus = DEN_russian_friend
+			focus = DEN_go_with_china
+		}
+
+		prerequisite = {
+		    focus = DEN_global_focus
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_stronger_eu
+		icon = align_to_europe
+		x = @ideology_focus_fourteen
+		y = 3
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = DEN_big_brother
+			focus = DEN_war_brothers
+			focus = DEN_russian_friend
+			focus = DEN_go_with_china
+		}
+
+		prerequisite = {
+		    focus = DEN_global_focus
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_russian_friend
+		icon = align_to_russia
+		x = @ideology_focus_sixteen
+		y = 3
+		cost = 10
+
+		mutually_exclusive = {
+			focus = DEN_big_brother
+			focus = DEN_war_brothers
+			focus = DEN_stronger_eu
+			focus = DEN_go_with_china
+		}
+		
+		prerequisite = {
+		    focus = DEN_global_focus
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_go_with_china
+		icon = align_to_china
+		x = @ideology_focus_eighteen
+		y = 3
+		cost = 10
+
+		mutually_exclusive = {
+			focus = DEN_big_brother
+			focus = DEN_war_brothers
+			focus = DEN_stronger_eu
+			focus = DEN_russian_friend
+		}
+		
+		prerequisite = {
+		    focus = DEN_global_focus
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_pet_nsa_collaboration
+		icon = intelligence_exchange
+		x = @ideology_focus_ten
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_big_brother
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_british_intlligence
+		icon = intelligence_exchange
+		x = @ideology_focus_twelve
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_war_brothers
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_get_the_euro
+		icon = industry_democratic
+		x = @ideology_focus_fourteen
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_stronger_eu
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_request_slesvig_holsten
+		icon = territory_or_war
+		x = @ideology_focus_fourteen
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_get_the_euro
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
 		id = DEN_way_of_the_sword
 		icon = entente
 		x = @ideology_focus_five
@@ -284,8 +499,71 @@ focus_tree = {
 		y = 4
 		cost = 10
 		
+		mutually_exclusive = {
+		    focus = DEN_denmark_for_danes
+		    focus = DEN_power_to_hizb_ut_Tahrir
+		}
+
 		prerequisite = {
 		    focus = DEN_way_of_the_sword
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_rewrite_the_constitution
+		icon = monarchy
+		x = @ideology_focus_six
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_for_queen_and_country
+		}
+
+		completion_reward = {
+			ROOT = { country_event = denmark.8 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_restore_the_empire
+		icon = monarchy
+		x = @ideology_focus_six
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_rewrite_the_constitution
+		}
+
+		available = {
+			has_government = monarchy
+		}
+
+		completion_reward = {
+			add_state_claim = 58
+			add_state_claim = 100
+			add_state_claim = 110
+			add_state_claim = 138
+			add_state_claim = 140
+			add_state_claim = 142
+			add_state_claim = 143
 		}
 		
 		ai_will_do = {
@@ -304,6 +582,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		
+		mutually_exclusive = {
+		    focus = DEN_for_queen_and_country
+		    focus = DEN_power_to_hizb_ut_Tahrir
+		}
+
 		prerequisite = {
 		    focus = DEN_way_of_the_sword
 		}
@@ -323,6 +606,12 @@ focus_tree = {
 		x = @ideology_focus_two
 		y = 4
 		cost = 10
+
+		mutually_exclusive = {
+		    focus = DEN_for_queen_and_country
+		    focus = DEN_denmark_for_danes
+		}
+
 		
 		prerequisite = {
 		    focus = DEN_way_of_the_sword

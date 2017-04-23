@@ -17,12 +17,26 @@ ideas = {
 			}
 		}
 	
-		DEN_queen_margrethe_ii = {
+		DEN_queen_margrethe_pre_election = {
 			allowed = {
 				original_tag = DEN
 			}
 
-			picture = british_exceptionalism
+			picture = DEN_queen_margrethe
+			
+			modifier = {
+				unity_factor = 0.05
+			}
+		}
+
+		DEN_queen_margrethe_post_election = {
+			allowed = {
+				original_tag = DEN
+			}
+
+			picture = DEN_queen_margrethe
+			
+			traits = { monarchist_politician }
 			
 			modifier = {
 				unity_factor = 0.05
@@ -34,7 +48,19 @@ ideas = {
 				always = no
 			}
 
-			picture = EU_sanctions
+			picture = eu_sanctions
+
+			modifier = {
+				political_power_gain = -0.25
+			}
+		}
+
+		DEN_constitutional_election = {
+			allowed = {
+				always = no
+			}
+
+			picture = eu_sanctions
 
 			modifier = {
 				political_power_gain = -0.25

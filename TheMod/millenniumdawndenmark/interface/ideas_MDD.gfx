@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_DEN_queen_margrethe"
+		texturefile = "gfx/interface/ideas/DEN/DEN_queen_margrethe.dds"
+	}
+}

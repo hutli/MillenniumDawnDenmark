@@ -102,7 +102,7 @@ set_technology = {
 add_ideas = {
 	population_growth_stagnation
 	idea_eu_member
-	DEN_queen_margrethe_ii
+	DEN_queen_margrethe_pre_election
 }
 
 set_politics = {
@@ -112,28 +112,28 @@ set_politics = {
 			popularity = 0
 		}
 		nationalist = {
-			popularity = 9
-		}
-		reactionary = {
-			popularity = 0
-		}
-		conservative = {
 			popularity = 12
 		}
+		reactionary = {
+			popularity = 7 #Not correct value
+		}
+		conservative = {
+			popularity = 9
+		}
 		market_liberal = {
-			popularity = 0
+			popularity = 8 #Not correct value
 		}
 		social_liberal = {
-			popularity = 8
+			popularity = 31
 		}
 		social_democrat = {
-			popularity = 36
+			popularity = 29
 		}
 		progressive = {
-			popularity = 3
+			popularity = 1
 		}
 		democratic_socialist = {
-			popularity = 32
+			popularity = 3
 		}
 		communist = {
 			popularity = 0
