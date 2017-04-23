@@ -227,11 +227,86 @@ country_event = {
 		remove_ideas = DEN_constitutional_election
 		add_popularity = {
 			ideology = monarchist
-			popularity = 0.1
+			popularity = 0.15
 		}
 		hidden_effect = {
 			remove_ideas = DEN_queen_margrethe_pre_election
 			add_ideas = DEN_queen_margrethe_post_election
 		}
+	}
+}
+
+#Islamist Immigration Event 1
+country_event = {
+	id = denmark.10
+	title = denmark.10.t
+	desc = denmark.10.d
+	picture = GFX_report_event_intifada
+	
+	trigger = {
+		has_idea = DEN_migrants_from_the_middle_east_encouraged_pre_islamist
+	}
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = denmark.10.o1
+		increase_stability_by_2 = yes
+		add_popularity = {
+			ideology = islamist
+			popularity = -0.08
+		}
+	}
+
+	option = {
+		name = denmark.10.o2
+		decrease_stability_by_3 = yes
+		add_national_unity = -0.02
+		add_popularity = {
+			ideology = islamist
+			popularity = 0.08
+		}
+	}
+
+	option = {
+		name = denmark.10.o3
+		decrease_stability_by_1 = yes
+	}
+}
+
+#Islamist Immigration Complete
+country_event = {
+	id = denmark.11
+	title = denmark.11.t
+	desc = denmark.11.d
+	picture = GFX_report_event_intifada
+	
+	trigger = {
+		has_idea = DEN_migrants_from_the_middle_east_encouraged_pre_islamist
+		has_government = islamist
+	}
+
+	option = {
+		name = denmark.11.o1
+		hidden_effect = {
+			remove_ideas = DEN_migrants_from_the_middle_east_encouraged_pre_islamist
+			add_ideas = DEN_migrants_from_the_middle_east_encouraged_post_islamist
+		}
+	}
+
+	option = {
+		name = denmark.11.o2
+		decrease_stability_by_1 = yes
+		remove_ideas = DEN_migrants_from_the_middle_east_encouraged_pre_islamist
+		add_ideas = DEN_migrants_from_the_middle_east
+	}
+
+	option = {
+		name = denmark.11.o3
+		increase_stability_by_2 = yes
+		add_national_unity = 0.02
+		remove_ideas = DEN_migrants_from_the_middle_east_encouraged_pre_islamist
 	}
 }

@@ -51,18 +51,22 @@ focus_tree = {
 	@ideology_focus_sixteen = 34
 	@ideology_focus_seventeen = 35
 	@ideology_focus_eighteen = 36
+	@ideology_focus_nineteen = 37
+	@ideology_focus_twenty = 38
+	@ideology_focus_twentyone = 39
+	@ideology_focus_twentytwo = 40
+
+	@between_ideology_and_military_foci = 41
 	
-	@between_ideology_and_military_foci = 37
-	
-	@military_focus_zero = 38
-	@military_focus_one = 39
-	@military_focus_two = 40
-	@military_focus_three = 41
-	@military_focus_four = 42
-	@military_focus_five = 43
-	@military_focus_six = 44
-	@military_focus_seven = 45
-	@military_focus_eight = 46
+	@military_focus_zero = 42
+	@military_focus_one = 43
+	@military_focus_two = 44
+	@military_focus_three = 45
+	@military_focus_four = 46
+	@military_focus_five = 47
+	@military_focus_six = 48
+	@military_focus_seven = 49
+	@military_focus_eight = 50
 	
 	##DIPLOMATIC FOCUS##
 	
@@ -133,7 +137,7 @@ focus_tree = {
 	focus = {
 		id = DEN_commit_to_the_north
 		icon = destroy_establishment
-		x = @ideology_focus_five
+		x = @ideology_focus_eight
 		y = 2
 		cost = 10
 		
@@ -164,7 +168,7 @@ focus_tree = {
 	focus = {
 		id = DEN_big_brother
 		icon = align_to_america
-		x = @ideology_focus_ten
+		x = @ideology_focus_fourteen
 		y = 3
 		cost = 10
 		
@@ -191,7 +195,7 @@ focus_tree = {
 	focus = {
 		id = DEN_war_brothers
 		icon = align_to_britain
-		x = @ideology_focus_twelve
+		x = @ideology_focus_sixteen
 		y = 3
 		cost = 10
 		
@@ -218,7 +222,7 @@ focus_tree = {
 	focus = {
 		id = DEN_stronger_eu
 		icon = align_to_europe
-		x = @ideology_focus_fourteen
+		x = @ideology_focus_eighteen
 		y = 3
 		cost = 10
 		
@@ -245,7 +249,7 @@ focus_tree = {
 	focus = {
 		id = DEN_russian_friend
 		icon = align_to_russia
-		x = @ideology_focus_sixteen
+		x = @ideology_focus_twenty
 		y = 3
 		cost = 10
 
@@ -272,7 +276,7 @@ focus_tree = {
 	focus = {
 		id = DEN_go_with_china
 		icon = align_to_china
-		x = @ideology_focus_eighteen
+		x = @ideology_focus_twentytwo
 		y = 3
 		cost = 10
 
@@ -299,7 +303,7 @@ focus_tree = {
 	focus = {
 		id = DEN_pet_nsa_collaboration
 		icon = intelligence_exchange
-		x = @ideology_focus_ten
+		x = @ideology_focus_fourteen
 		y = 4
 		cost = 10
 		
@@ -317,9 +321,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_british_intlligence
+		id = DEN_british_intelligence
 		icon = intelligence_exchange
-		x = @ideology_focus_twelve
+		x = @ideology_focus_sixteen
 		y = 4
 		cost = 10
 		
@@ -339,7 +343,7 @@ focus_tree = {
 	focus = {
 		id = DEN_get_the_euro
 		icon = industry_democratic
-		x = @ideology_focus_fourteen
+		x = @ideology_focus_eighteen
 		y = 4
 		cost = 10
 		
@@ -359,7 +363,7 @@ focus_tree = {
 	focus = {
 		id = DEN_request_slesvig_holsten
 		icon = territory_or_war
-		x = @ideology_focus_fourteen
+		x = @ideology_focus_eighteen
 		y = 5
 		cost = 10
 		
@@ -379,7 +383,7 @@ focus_tree = {
 	focus = {
 		id = DEN_way_of_the_sword
 		icon = entente
-		x = @ideology_focus_five
+		x = @ideology_focus_three
 		y = 3
 		cost = 10
 		
@@ -389,6 +393,10 @@ focus_tree = {
 		
 		mutually_exclusive = {
 		    focus = DEN_way_of_the_pen
+		}
+
+		completion_reward = {
+			add_ideas = DEN_danish_supremacy
 		}
 
 		ai_will_do = {
@@ -403,7 +411,7 @@ focus_tree = {
 	focus = {
 		id = DEN_way_of_the_pen
 		icon = tripartite_pact
-		x = @ideology_focus_eight
+		x = @ideology_focus_eleven
 		y = 3
 		cost = 10
 		
@@ -471,7 +479,7 @@ focus_tree = {
 	focus = {
 		id = DEN_reclaim_iceland
 		icon = tripartite_pact
-		x = @ideology_focus_eight
+		x = @ideology_focus_eleven
 		y = 4
 		cost = 10
 		
@@ -495,11 +503,12 @@ focus_tree = {
 	focus = {
 		id = DEN_for_queen_and_country
 		icon = monarchy
-		x = @ideology_focus_six
+		x = @ideology_focus_eight
 		y = 4
 		cost = 10
 		
 		mutually_exclusive = {
+			focus = DEN_workers_of_the_world_unite
 		    focus = DEN_denmark_for_danes
 		    focus = DEN_power_to_hizb_ut_Tahrir
 		}
@@ -520,7 +529,7 @@ focus_tree = {
 	focus = {
 		id = DEN_rewrite_the_constitution
 		icon = monarchy
-		x = @ideology_focus_six
+		x = @ideology_focus_eight
 		y = 5
 		cost = 10
 		
@@ -544,7 +553,7 @@ focus_tree = {
 	focus = {
 		id = DEN_restore_the_empire
 		icon = monarchy
-		x = @ideology_focus_six
+		x = @ideology_focus_eight
 		y = 6
 		cost = 10
 		
@@ -552,8 +561,13 @@ focus_tree = {
 		    focus = DEN_rewrite_the_constitution
 		}
 
+		mutually_exclusive = {
+			focus = DEN_danish_stronghold
+			focus = DEN_the_path_of_our_forefarthers
+		}
+
 		available = {
-			has_government = monarchy
+			has_government = monarchist
 		}
 
 		completion_reward = {
@@ -576,13 +590,101 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_denmark_for_danes
-		icon = political_pressure
-		x = @ideology_focus_four
+		id = DEN_danish_stronghold
+		icon = military_fort
+		x = @ideology_focus_five
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_rewrite_the_constitution
+		    focus = DEN_danmarks_kommunistiske_parti
+		    focus = DEN_support_the_established
+		    focus = DEN_all_for_the_country
+		}
+
+		mutually_exclusive = {
+			focus = DEN_restore_the_empire
+			focus = DEN_the_path_of_our_forefarthers
+		}
+
+		available = {
+			has_government = monarchist
+			has_government = communist
+			has_government = fascist
+			has_government = nationalist
+		}
+
+		completion_reward = {
+			#Jutland
+			if = {
+				limit = { 99 = { is_owned_by = ROOT } }
+				99 = {
+					add_building_construction = {
+						type = bunker
+						province = 332
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11254
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = 399
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = 3206
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = 316
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+
+			#Sjælland
+			if = {
+				limit = { 37 = { is_owned_by = ROOT } }
+				37 = {
+					add_building_construction = {
+						type = bunker
+						province = 6287
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_workers_of_the_world_unite
+		icon = communism2
+		x = @ideology_focus_six
 		y = 4
 		cost = 10
 		
 		mutually_exclusive = {
+			focus = DEN_denmark_for_danes
 		    focus = DEN_for_queen_and_country
 		    focus = DEN_power_to_hizb_ut_Tahrir
 		}
@@ -601,18 +703,38 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_power_to_hizb_ut_Tahrir
-		icon = align_to_pakistan
-		x = @ideology_focus_two
-		y = 4
+		id = DEN_danmarks_kommunistiske_parti
+		icon = communism2
+		x = @ideology_focus_six
+		y = 5
 		cost = 10
 
+		prerequisite = {
+		    focus = DEN_workers_of_the_world_unite
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_denmark_for_danes
+		icon = fascism2
+		x = @ideology_focus_three
+		y = 4
+		cost = 10
+		
 		mutually_exclusive = {
+			focus = DEN_workers_of_the_world_unite
 		    focus = DEN_for_queen_and_country
-		    focus = DEN_denmark_for_danes
+		    focus = DEN_power_to_hizb_ut_Tahrir
 		}
 
-		
 		prerequisite = {
 		    focus = DEN_way_of_the_sword
 		}
@@ -627,9 +749,200 @@ focus_tree = {
 	}
 
 	focus = {
+		id = DEN_support_the_established
+		icon = fascism2
+		x = @ideology_focus_four
+		y = 5
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = DEN_all_for_the_country
+		}
+
+		prerequisite = {
+		    focus = DEN_denmark_for_danes
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_all_for_the_country
+		icon = fascism2
+		x = @ideology_focus_two
+		y = 5
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = DEN_support_the_established
+		}
+
+		prerequisite = {
+		    focus = DEN_denmark_for_danes
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_the_path_of_our_forefarthers
+		icon = fascism2
+		x = @ideology_focus_two
+		y = 6
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = DEN_danish_stronghold
+			focus = DEN_restore_the_empire
+		}
+
+		prerequisite = {
+		    focus = DEN_denmark_for_danes
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_power_to_hizb_ut_Tahrir
+		icon = align_to_pakistan
+		x = @ideology_focus_zero
+		y = 4
+		cost = 10
+
+		mutually_exclusive = {
+			focus = DEN_workers_of_the_world_unite
+		    focus = DEN_for_queen_and_country
+		    focus = DEN_denmark_for_danes
+		}
+		
+		prerequisite = {
+		    focus = DEN_way_of_the_sword
+		}
+
+		completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+  					target = JOR
+	  				modifier = recent_actions_positive
+	  			}
+  			}
+  			JOR = {
+				add_opinion_modifier = {
+  					target = ROOT
+	  				modifier = recent_actions_positive
+	  			}
+  			}
+  			add_ideas = DEN_migrants_from_the_middle_east_encouraged_pre_islamist
+			add_popularity = {
+				ideology = islamist
+				popularity = 0.10
+			}
+  		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_sharia_law
+		icon = align_to_pakistan
+		x = @ideology_focus_zero
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_power_to_hizb_ut_Tahrir
+		}
+
+		available = {
+			has_government = islamist
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_northern_islamic_stronghold
+		icon = align_to_pakistan
+		x = @ideology_focus_zero
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_sharia_law
+		}
+
+		available = {
+			has_government = islamist
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_purge_the_heretics 
+		icon = align_to_pakistan
+		x = @ideology_focus_zero
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_northern_islamic_stronghold
+		}
+
+		available = {
+			has_government = islamist
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
 		id = DEN_stronger_scandia
 		icon = tripartite_pact
-		x = @ideology_focus_eight
+		x = @ideology_focus_eleven
 		y = 5
 		cost = 10
 		
@@ -653,7 +966,7 @@ focus_tree = {
 	focus = {
 		id = DEN_invite_norway
 		icon = tripartite_pact
-		x = @ideology_focus_nine
+		x = @ideology_focus_twelve
 		y = 6
 		cost = 10
 		
@@ -677,7 +990,7 @@ focus_tree = {
 	focus = {
 		id = DEN_invite_sweden
 		icon = tripartite_pact
-		x = @ideology_focus_seven
+		x = @ideology_focus_ten
 		y = 6
 		cost = 10
 		
@@ -701,7 +1014,7 @@ focus_tree = {
 	focus = {
 		id = DEN_invite_finland
 		icon = tripartite_pact
-		x = @ideology_focus_eight
+		x = @ideology_focus_eleven
 		y = 7
 		cost = 10
 		

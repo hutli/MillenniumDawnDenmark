@@ -152,8 +152,12 @@ create_country_leader = {
 	picture = "Portrait_DEN_Poul_Nyrup_Rasmussen.dds"
 	expire = "2050.1.1"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
+}
+
+create_country_leader = {
+	name = "HKH Margrethe II"
+	desc = "POLITICIAN_DEN_HKH_MARGRETHE_II_DESC"
+	picture = "Portrait_DEN_HKH_Margrethe_II.dds"
+	expire = "2050.1.1"
+	ideology = absolute_monarchist
 }
