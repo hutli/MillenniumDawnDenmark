@@ -204,5 +204,35 @@ ideas = {
   				decryption = 2
 			}
 		}
+
+		DEN_idea_word_policing = {
+			allowed = {
+				always = no
+			}
+
+			picture = neutrality_idea
+
+			removal_cost = -1
+
+			modifier = {
+  				unity_factor = -0.05
+  				research_time_factor = -0.1
+			}
+		}
+
+		DEN_idea_social_justice = {
+			allowed = {
+				always = no
+			}
+
+			picture = neutrality_idea
+
+			removal_cost = -1
+
+			modifier = {
+  				unity_factor = -0.05
+   				progressive_drift = 0.05
+			}
+		}
 	}
 }

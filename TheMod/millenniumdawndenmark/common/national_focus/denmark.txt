@@ -55,18 +55,20 @@ focus_tree = {
 	@ideology_focus_twenty = 38
 	@ideology_focus_twentyone = 39
 	@ideology_focus_twentytwo = 40
+	@ideology_focus_twentythree = 41
+	@ideology_focus_twentyfour = 42
 
-	@between_ideology_and_military_foci = 41
+	@between_ideology_and_military_foci = 43
 	
-	@military_focus_zero = 42
-	@military_focus_one = 43
-	@military_focus_two = 44
-	@military_focus_three = 45
-	@military_focus_four = 46
-	@military_focus_five = 47
-	@military_focus_six = 48
-	@military_focus_seven = 49
-	@military_focus_eight = 50
+	@military_focus_zero = 44
+	@military_focus_one = 45
+	@military_focus_two = 46
+	@military_focus_three = 47
+	@military_focus_four = 48
+	@military_focus_five = 49
+	@military_focus_six = 50
+	@military_focus_seven = 51
+	@military_focus_eight = 52
 	
 	##DIPLOMATIC FOCUS##
 	
@@ -249,7 +251,7 @@ focus_tree = {
 	focus = {
 		id = DEN_russian_friend
 		icon = align_to_russia
-		x = @ideology_focus_twenty
+		x = @ideology_focus_twentyone
 		y = 3
 		cost = 10
 
@@ -274,9 +276,57 @@ focus_tree = {
 	}
 
 	focus = {
+		id = DEN_the_new_world
+		icon = align_to_russia
+		x = @ideology_focus_twenty
+		y = 4
+		cost = 10
+
+		mutually_exclusive = {
+			focus = DEN_together_for_the_people
+		}
+		
+		prerequisite = {
+		    focus = DEN_russian_friend
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_together_for_the_people
+		icon = align_to_russia
+		x = @ideology_focus_twentytwo
+		y = 4
+		cost = 10
+
+		mutually_exclusive = {
+			focus = DEN_the_new_world
+		}
+		
+		prerequisite = {
+		    focus = DEN_russian_friend
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
 		id = DEN_go_with_china
 		icon = align_to_china
-		x = @ideology_focus_twentytwo
+		x = @ideology_focus_twentyfour
 		y = 3
 		cost = 10
 
@@ -310,6 +360,34 @@ focus_tree = {
 		prerequisite = {
 		    focus = DEN_big_brother
 		}
+
+		completion_reward = {
+			add_ideas = DEN_idea_nsa_pet_collaboration
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_social_justice
+		icon = intelligence_exchange
+		x = @ideology_focus_fourteen
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_pet_nsa_collaboration
+		}
+
+		completion_reward = {
+			add_ideas = DEN_idea_social_justice
+		}
 		
 		ai_will_do = {
 			factor = 10
@@ -318,9 +396,54 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+	}
 
+	focus = {
+		id = DEN_word_policing
+		icon = intelligence_exchange
+		x = @ideology_focus_fourteen
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_social_justice
+		}
+
+		available = {
+			has_government = progressive
+		}
+		
 		completion_reward = {
-			add_ideas = DEN_idea_nsa_pet_collaboration
+			increase_stability_by_5 = yes
+			add_ideas = DEN_idea_word_policing
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_pronoun_laws
+		icon = intelligence_exchange
+		x = @ideology_focus_fourteen
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_word_policing
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 	}
 
@@ -377,6 +500,27 @@ focus_tree = {
 		
 		prerequisite = {
 		    focus = DEN_get_the_euro
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_the_scandinavian_model
+		icon = democracy
+		x = @ideology_focus_seventeen
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		    focus = DEN_request_slesvig_holsten
+		    focus = DEN_british_intelligence
 		}
 		
 		ai_will_do = {
