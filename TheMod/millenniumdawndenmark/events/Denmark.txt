@@ -156,7 +156,6 @@ country_event = {
 		name = denmark.6.o1
 		add_political_power = -200
 		decrease_stability_by_2 = yes
-		add_national_unity = -0.1
 		add_timed_idea = { idea = DEN_surpressing_the_donemark_movement days = 550 }
 	}
 
@@ -290,10 +289,8 @@ country_event = {
 
 	option = {
 		name = denmark.11.o1
-		hidden_effect = {
-			remove_ideas = DEN_migrants_from_the_middle_east_encouraged_pre_islamist
-			add_ideas = DEN_migrants_from_the_middle_east_encouraged_post_islamist
-		}
+		remove_ideas = DEN_migrants_from_the_middle_east_encouraged_pre_islamist
+		add_ideas = DEN_migrants_from_the_middle_east_encouraged_post_islamist
 	}
 
 	option = {

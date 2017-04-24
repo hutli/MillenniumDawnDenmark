@@ -16,6 +16,7 @@ ideas = {
 			    industrial_capacity_factory = -0.15
 			    research_time_factor = -0.1
 			    conscription_factor = -0.2
+			    unity_weekly = -0.001
 			}
 		}
 	
@@ -89,11 +90,12 @@ ideas = {
 			modifier = {
    				consumer_goods_factor = -0.2
 				conversion_cost_civ_to_mil_factor= -0.2
+				production_speed_industrial_complex_factor = -0.2
+
 				conversion_cost_mil_to_civ_factor= 0.2
 				production_speed_arms_factory_factor = 0.1
 				production_speed_bunker_factor = 0.1
 				production_speed_anti_air_building_factor = 0.1
-				production_speed_industrial_complex_factor = -0.2
 				production_speed_naval_base_factor = 0.1
 				production_speed_dockyard_factor = 0.1
 				production_speed_coastal_bunker_factor = 0.1
@@ -112,11 +114,13 @@ ideas = {
 
 			picture = sunni_faith
 			
+			removal_cost = -1
+
 			modifier = {
 				islamist_drift = 0.05
 				MONTHLY_POPULATION = 0.06
 				consumer_goods_factor = 0.1
-				political_power_gain = 0.05
+				political_power_gain = -0.05
 				unity_factor = -0.15
 			}
 		}
@@ -128,11 +132,12 @@ ideas = {
 
 			picture = sunni_faith
 			
+			removal_cost = -1
+
 			modifier = {
 				islamist_drift = 0.05
 				MONTHLY_POPULATION = 0.06
 				consumer_goods_factor = 0.05
-				political_power_gain = 0.05
 				unity_factor = -0.15
 			}
 		}
@@ -144,10 +149,59 @@ ideas = {
 
 			picture = sunni_faith
 			
+			removal_cost = -1
+
 			modifier = {
 				islamist_drift = 0.01
 				MONTHLY_POPULATION = 0.02
 				consumer_goods_factor = 0.01
+			}
+		}
+
+		DEN_sharia_law = {
+			allowed = {
+				always = no
+			}
+
+			picture = sunni_faith
+			
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.15
+				research_time_factor = -0.1
+				unity_factor = -0.05
+			    political_power_gain = 0.5
+			}
+		}
+
+		DEN_idea_nsa_pet_collaboration = {
+			allowed = {
+				always = no
+			}
+
+			picture = neutrality_idea
+
+			removal_cost = -1
+
+			modifier = {
+				encryption = 1
+  				decryption = 2
+			}
+		}
+
+		DEN_idea_british_intelligence = {
+			allowed = {
+				always = no
+			}
+
+			picture = neutrality_idea
+
+			removal_cost = -1
+
+			modifier = {
+				encryption = 1
+  				decryption = 2
 			}
 		}
 	}

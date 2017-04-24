@@ -318,6 +318,10 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+
+		completion_reward = {
+			add_ideas = DEN_idea_nsa_pet_collaboration
+		}
 	}
 
 	focus = {
@@ -337,6 +341,10 @@ focus_tree = {
 				factor = 0
 				is_historical_focus_on = yes
 			}
+		}
+
+		completion_reward = {
+			add_ideas = DEN_idea_british_intelligence
 		}
 	}
 
@@ -868,7 +876,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_sharia_law
+		id = DEN_northern_islamic_stronghold
 		icon = align_to_pakistan
 		x = @ideology_focus_zero
 		y = 5
@@ -882,6 +890,58 @@ focus_tree = {
 			has_government = islamist
 		}
 		
+		completion_reward = {
+			#Jutland
+			if = {
+				limit = { 99 = { is_owned_by = ROOT } }
+				99 = {
+					add_building_construction = {
+						type = bunker
+						province = 332
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11254
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = 399
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = 3206
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = 316
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+
+			#Sjælland
+			if = {
+				limit = { 37 = { is_owned_by = ROOT } }
+				37 = {
+					add_building_construction = {
+						type = bunker
+						province = 6287
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
+
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -892,18 +952,24 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_northern_islamic_stronghold
+		id = DEN_sharia_law
 		icon = align_to_pakistan
 		x = @ideology_focus_zero
 		y = 6
 		cost = 10
 		
 		prerequisite = {
-		    focus = DEN_sharia_law
+		    focus = DEN_northern_islamic_stronghold
 		}
 
 		available = {
 			has_government = islamist
+			NOT = { has_idea = population_growth_explosion }
+		}
+		
+		completion_reward = {
+			lower_birth_rate = yes
+			add_ideas = DEN_sharia_law
 		}
 		
 		ai_will_do = {
@@ -923,13 +989,89 @@ focus_tree = {
 		cost = 10
 		
 		prerequisite = {
-		    focus = DEN_northern_islamic_stronghold
+		    focus = DEN_sharia_law
 		}
 
 		available = {
 			has_government = islamist
 		}
 		
+		completion_reward = {
+			add_ideas = idea_focus_generic_jihad
+			#Trigger the global news event.
+			news_event = news.2
+			#If the faction is not ideal, leave it.
+			if = {
+				limit = {
+					is_in_faction = yes
+					is_faction_leader = no
+					any_country = {
+						is_in_faction_with = ROOT
+						OR = {
+							NOT = { has_government = islamist }
+							islamist < 0.25
+						}
+					}
+				}
+				random_country = {
+					limit = {
+						is_in_faction_with = ROOT
+						is_faction_leader = yes
+					}
+					remove_from_faction = ROOT
+				}
+			}
+			#Everybody should hate them; except for Islamists of their confession
+			if = {
+				limit = { 
+					OR = {
+						has_country_flag = sunni_islam 
+						AND = {	#The rare case of Ibadi or Bug.
+							NOT = { has_country_flag = sunni_islam }
+							NOT = { has_country_flag = shia_islam }
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							has_country_flag = shia_islam
+							NOT = { has_government = islamist }
+						}
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = terrorist_menace
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = terrorist_menace_trade
+					}
+				}
+			}
+			if = {
+				limit = { 
+					has_country_flag = shia_islam 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							has_country_flag = sunni_islam
+							NOT = { has_government = islamist }
+						}
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = terrorist_menace
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = terrorist_menace_trade
+					}
+				}
+			}
+		}
+
 		ai_will_do = {
 			factor = 10
 			modifier = {
