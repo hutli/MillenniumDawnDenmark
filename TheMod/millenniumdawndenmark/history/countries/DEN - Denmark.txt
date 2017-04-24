@@ -161,3 +161,35 @@ create_country_leader = {
 	expire = "2050.1.1"
 	ideology = absolute_monarchist
 }
+
+create_country_leader = {
+	name = "Anders Fogh Rasmussen"
+	desc = "ANDERS_FOGH_RASMUSSEN_DESC"
+	picture = "Portrait_DEN_Anders_Fogh_Rasmussen.dds"
+	expire = "2050.1.1"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Pia Kjærsgaard"
+	desc = "PIA_KJÆRSGAARD_DESC"
+	picture = "Portrait_DEN_Pia_Kjaersgaard.dds"
+	expire = "2050.1.1"
+	ideology = proto_fascist
+}
+
+create_country_leader = {
+	name = "Bendt Bendtsen"
+	desc = "BENDT_BENDTSEN_DESC"
+	picture = "Portrait_DEN_Bendt_Bendtsen.dds"
+	expire = "2050.1.1"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Mogens Glistrup"
+	desc = "MOGENS_GLISTRUP_DESC"
+	picture = "Portrait_DEN_Mogens_Glistrup.dds"
+	expire = "2050.1.1"
+	ideology = green
+}
