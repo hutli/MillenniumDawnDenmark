@@ -167,7 +167,7 @@ create_country_leader = {
 	desc = "ANDERS_FOGH_RASMUSSEN_DESC"
 	picture = "Portrait_DEN_Anders_Fogh_Rasmussen.dds"
 	expire = "2050.1.1"
-	ideology = fiscal_conservative
+	ideology = centrist
 }
 
 create_country_leader = {
@@ -192,4 +192,20 @@ create_country_leader = {
 	picture = "Portrait_DEN_Mogens_Glistrup.dds"
 	expire = "2050.1.1"
 	ideology = green
+}
+
+create_country_leader = {
+	name = "Mogens Glistrup"
+	desc = "MOGENS_GLISTRUP_DESC"
+	picture = "Portrait_DEN_Mogens_Glistrup.dds"
+	expire = "2050.1.1"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Fadi Abdullatif"
+	desc = "FADI_ABDULLATIF_DESC"
+	picture = "Portrait_DEN_Fadi_Abdullatif.dds"
+    expire = "2050.1.1"
+	ideology = islamic_authoritarian
 }
