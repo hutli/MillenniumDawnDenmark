@@ -118,11 +118,16 @@ units = {
 		name = "Den Danske Flåde"			
 		base = 6287
 		location = 6287  # Copenhagen
-		ship = { name = "HDMS Rota" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }			
-		ship = { name = "HDMS Bellona" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }		
-		ship = { name = "HDMS Flora" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }
-		ship = { name = "HDMS Daphne" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }
-		ship = { name = "HDMS Dryaden" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }
+		ship = { name = "HDMS Narhvalen" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }			
+		ship = { name = "HDMS Nordkaperen" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DEN } } }		
+		ship = { name = "HDMS Springeren" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DEN } } }
+		ship = { name = "HDMS Sælen" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DEN } } }
+		ship = { name = "HDMS Tumleren" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DEN } } }
+		ship = { name = "HDMS Glenten" definition = submarine equipment = { light_cruiser_2 = { amount = 1 owner = DEN } } }
+		ship = { name = "HDMS Gribben" definition = submarine equipment = { light_cruiser_2 = { amount = 1 owner = DEN } } }
+		ship = { name = "HDMS Ravnen" definition = submarine equipment = { light_cruiser_2 = { amount = 1 owner = DEN } } }
+		ship = { name = "HDMS Skaden" definition = submarine equipment = { light_cruiser_2 = { amount = 1 owner = DEN } } }
+		ship = { name = "HDMS Viben" definition = submarine equipment = { light_cruiser_2 = { amount = 1 owner = DEN } } }
 	}
 }
 air_wings = {
