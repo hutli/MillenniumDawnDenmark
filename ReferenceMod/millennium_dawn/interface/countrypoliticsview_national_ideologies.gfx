@@ -1,0 +1,123 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_ideology_ENG_reactionary_group"
+		texturefile = "gfx/interface/ideologies/ENG/ukip.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ENG_conservative_group"
+		texturefile = "gfx/interface/ideologies/ENG/tories.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ENG_market_liberal_group"
+		texturefile = "gfx/interface/ideologies/ENG/liberal_democrats.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ENG_social_democrat_group"
+		texturefile = "gfx/interface/ideologies/ENG/labour.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_fascist_group"
+		texturefile = "gfx/interface/ideologies/GER/dritter_weg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_nationalist_group"
+		texturefile = "gfx/interface/ideologies/GER/npd.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_monarchist_group"
+		texturefile = "gfx/interface/ideologies/GER/hohenzollern.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_reactionary_group"
+		texturefile = "gfx/interface/ideologies/GER/afd.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_conservative_group"
+		texturefile = "gfx/interface/ideologies/GER/union.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_market_liberal_group"
+		texturefile = "gfx/interface/ideologies/GER/fdp.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_social_liberal_group"
+		texturefile = "gfx/interface/ideologies/GER/piraten.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_social_democrat_group"
+		texturefile = "gfx/interface/ideologies/GER/spd.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_progressive_group"
+		texturefile = "gfx/interface/ideologies/GER/gruene.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_democratic_socialist_group"
+		texturefile = "gfx/interface/ideologies/GER/die_linke.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_communist_group"
+		texturefile = "gfx/interface/ideologies/GER/dkp.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PRC_communist_group"
+		texturefile = "gfx/interface/ideologies/PRC/CCP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SOV_reactionary_group"
+		texturefile = "gfx/interface/ideologies/SOV/united_russia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SOV_communist_group"
+		texturefile = "gfx/interface/ideologies/SOV/CPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_USA_reactionary_group"
+		texturefile = "gfx/interface/ideologies/USA/constitution.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_USA_conservative_group"
+		texturefile = "gfx/interface/ideologies/USA/republicans.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_USA_market_liberal_group"
+		texturefile = "gfx/interface/ideologies/USA/libertarians.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_USA_social_liberal_group"
+		texturefile = "gfx/interface/ideologies/USA/democrats.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_USA_progressive_group"
+		texturefile = "gfx/interface/ideologies/USA/greens.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_USA_communist_group"
+		texturefile = "gfx/interface/ideologies/USA/communists.dds"
+	}
+	
+}

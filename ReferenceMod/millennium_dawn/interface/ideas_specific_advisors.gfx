@@ -1,0 +1,187 @@
+spriteTypes = {
+
+	##	Germany		##
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_alexander_dobrindt"
+		texturefile = "gfx/interface/ideas/GER/advisors/alexander_dobrindt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_alexander_gauland"
+		texturefile = "gfx/interface/ideas/GER/advisors/alexander_gauland.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_GER_angela_merkel"
+		texturefile = "gfx/interface/ideas/GER/advisors/angela_merkel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_anton_hofreiter"
+		texturefile = "gfx/interface/ideas/GER/advisors/anton_hofreiter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_brigitte_zypries"
+		texturefile = "gfx/interface/ideas/GER/advisors/brigitte_zypries.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_frank_franz"
+		texturefile = "gfx/interface/ideas/GER/advisors/frank_franz.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_frank_haun"
+		texturefile = "gfx/interface/ideas/GER/advisors/frank_haun.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_frank_walter_steinmeier"
+		texturefile = "gfx/interface/ideas/GER/advisors/frank_walter_steinmeier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_gerd_mueller"
+		texturefile = "gfx/interface/ideas/GER/advisors/gerd_mueller.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_hans_peter_brenner"
+		texturefile = "gfx/interface/ideas/GER/advisors/hans_peter_brenner.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_heiko_maas"
+		texturefile = "gfx/interface/ideas/GER/advisors/heiko_maas.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_heinrich_hiesinger"
+		texturefile = "gfx/interface/ideas/GER/advisors/heinrich_hiesinger.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_horst_seehofer"
+		texturefile = "gfx/interface/ideas/GER/advisors/horst_seehofer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_karl_theodor_zu_guttenberg"
+		texturefile = "gfx/interface/ideas/GER/advisors/karl_theodor_zu_guttenberg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_katja_kipping"
+		texturefile = "gfx/interface/ideas/GER/advisors/katja_kipping.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_kristos_thingilouthis"
+		texturefile = "gfx/interface/ideas/GER/advisors/kristos_thingilouthis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_lutz_bachmann"
+		texturefile = "gfx/interface/ideas/GER/advisors/lutz_bachmann.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_maybritt_illner"
+		texturefile = "gfx/interface/ideas/GER/advisors/maybritt_illner.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_sigmar_gabriel"
+		texturefile = "gfx/interface/ideas/GER/advisors/sigmar_gabriel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_sophie_princess_of_prussia"
+		texturefile = "gfx/interface/ideas/GER/advisors/sophie_princess_of_prussia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_sven_lau"
+		texturefile = "gfx/interface/ideas/GER/advisors/sven_lau.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_thomas_de_maiziere"
+		texturefile = "gfx/interface/ideas/GER/advisors/thomas_de_maiziere.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_thomas_oppermann"
+		texturefile = "gfx/interface/ideas/GER/advisors/thomas_oppermann.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_ursula_von_der_leyen"
+		texturefile = "gfx/interface/ideas/GER/advisors/ursula_von_der_leyen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_volker_wieker"
+		texturefile = "gfx/interface/ideas/GER/advisors/volker_wieker.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_wolfgang_kubicki"
+		texturefile = "gfx/interface/ideas/GER/advisors/wolfgang_kubicki.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_GER_wolfgang_schaeuble"
+		texturefile = "gfx/interface/ideas/GER/advisors/wolfgang_schaeuble.dds"
+	}
+	
+	##	United States	##
+
+	spriteType = {
+		name = "GFX_idea_advisor_USA_ann_coulter"
+		texturefile = "gfx/interface/ideas/USA/advisors/ann_coulter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_USA_bill_maher"
+		texturefile = "gfx/interface/ideas/USA/advisors/bill_maher.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_USA_bill_o_reilly"
+		texturefile = "gfx/interface/ideas/USA/advisors/bill_o_reilly.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_USA_david_duke"
+		texturefile = "gfx/interface/ideas/USA/advisors/david_duke.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_USA_donald_rumsfeld"
+		texturefile = "gfx/interface/ideas/USA/advisors/donald_rumsfeld.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_USA_joe_biden"
+		texturefile = "gfx/interface/ideas/USA/advisors/joe_biden.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_USA_john_bachtell"
+		texturefile = "gfx/interface/ideas/USA/advisors/john_bachtell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_USA_nicholas_sarwark"
+		texturefile = "gfx/interface/ideas/USA/advisors/nicholas_sarwark.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_USA_ralph_nader"
+		texturefile = "gfx/interface/ideas/USA/advisors/ralph_nader.dds"
+	}
+	
+}

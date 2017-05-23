@@ -1,0 +1,219 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_PRC_gen3_light_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen3_light.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_modern_gen3_light_medium"
+		texturefile = "gfx/interface/technologies/PRC_modern_gen3_light.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen4_light_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen4_light.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen6_light_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen6_light.dds"
+		alwaystransparent = yes
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_PRC_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRC_infantry_equipment_0.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_PRC_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRC_infantry1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRC_infantry2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRC_infantry3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_future_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRC_infantry4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRC_future_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRC_infantry5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_future_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry/PRC_infantry6.dds"
+	}
+
+	
+	SpriteType = {
+		name = "GFX_PRC_gen1_ifv_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen1_ifv.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_gen2_ifv_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen2_ifv.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_modern_gen2_ifv_medium"
+		texturefile = "gfx/interface/technologies/PRC_modern_gen2_ifv.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_gen3_ifv_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen3_ifv.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_gen4_ifv_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen4_ifv.dds"
+		alwaystransparent = yes
+
+
+	}
+
+
+	SpriteType = {
+		name = "GFX_PRC_gen1_apc_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen1_apc.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_gen2_apc_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen2_apc.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_gen3_apc_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen3_apc.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_modern_gen3_apc_medium"
+		texturefile = "gfx/interface/technologies/PRC_modern_gen3_apc.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_gen4_apc_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen4_apc.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_PRC_gen5_apc_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen5_apc.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen2_multirole_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen2_multirole.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen3_multirole_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen3_multirole.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen4_multirole_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen4_multirole.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen4.5_multirole_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen4.5_multirole.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen5_multirole_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen5_multirole.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_modern_gen5_multirole_medium"
+		texturefile = "gfx/interface/technologies/PRC_modern_gen5_multirole.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_future_gen5_multirole_medium"
+		texturefile = "gfx/interface/technologies/PRC_future_gen5_multirole.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen6_multirole_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen6_multirole.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen1_mbt_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen1_mbt.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen2_mbt_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen2_mbt.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen3_mbt_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen3_mbt.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_modern_gen3_mbt_medium"
+		texturefile = "gfx/interface/technologies/PRC_modern_gen3_mbt.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_advanced_gen3_mbt_medium"
+		texturefile = "gfx/interface/technologies/PRC_advanced_gen3_mbt.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen4_mbt_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen4_mbt.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen5_mbt_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen5_mbt.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_gen6_mbt_medium"
+		texturefile = "gfx/interface/technologies/PRC_gen6_mbt.dds"
+		alwaystransparent = yes
+	}
+}
