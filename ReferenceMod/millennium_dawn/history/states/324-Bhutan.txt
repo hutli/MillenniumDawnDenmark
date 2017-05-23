@@ -4,20 +4,14 @@ state={
 	name="STATE_324"
 	manpower = 741919
 	
-	
-	state_category = pastoral
-	
-	resources={
-		tungsten=2
-		steel=4
-		chromium=1
-	}
+	state_category = town
 
 	history={
 		owner = BHU
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2 
+			industrial_complex = 3
+			arms_factory = 1
 		}
 		victory_points = {
 			8010 3 

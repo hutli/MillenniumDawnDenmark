@@ -2,11 +2,11 @@ state={
 	id=842
 	name="STATE_842"
 	resources = {
-		oil=40
+		oil=148
 	}
 	history = {
 		owner = ANG
-		
+		add_core_of = ANG
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1

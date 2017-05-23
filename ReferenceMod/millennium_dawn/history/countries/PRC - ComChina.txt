@@ -105,6 +105,7 @@ add_ideas = {
 	idea_PRC_chinese_socialism
 	idea_united_nations_security_council_member
 	nuclear_power_idea
+	free_trade
 }
 
 give_guarantee = PRK
@@ -137,20 +138,19 @@ add_opinion_modifier = {
 }
 
 set_politics = {
-
 	parties = {
-		islamist = { popularity = 0 }
-		nationalist = { popularity = 0 }
-		reactionary = { popularity = 0 }
-		conservative = { popularity = 0 }
-		market_liberal = { popularity = 5 }
-		social_liberal = { popularity = 10 }
-		social_democrat = { popularity = 5 }
-		progressive = { popularity = 5 }
-		democratic_socialist = { popularity = 5 }
-		communist = { popularity = 70 }
+		fascist = { popularity = 0.2 }
+		nationalist = { popularity = 0.2 }
+		monarchist = { popularity = 1.1 }
+		reactionary = { popularity = 0.5 }
+		conservative = { popularity = 8.95 }
+		market_liberal = { popularity = 9.65 }
+		social_liberal = { popularity = 7.1 }
+		social_democrat = { popularity = 12.3 }
+		progressive = { popularity = 2.05 }
+		democratic_socialist = { popularity = 9.55 }
+		communist = { popularity = 48.4 }
 	}
-	
 	ruling_party = communist
 	last_election = "1997.1.1"
 	election_frequency = 48
@@ -159,148 +159,174 @@ set_politics = {
 
 create_country_leader = {
 	name = "Jiang Zemin"
-	picture = "Portrait_PRC_Jiang_Zemin.dds"
+	picture = "Jiang_Zemin.dds"
 	ideology = maoist
 }
 
 create_country_leader = {
 	name = "Ding Shisun"
-	picture = "Portrait_PRC_Ding_Shisun.dds"
+	picture = "Ding_Shisun.dds"
 	ideology = moderate
 }
 
 create_country_leader = {
 	name = "Cheng Siwei"
-	picture = "Portrait_PRC_Cheng_Siwei.dds"
+	picture = "Cheng_Siwei.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Jiang Zhenghua"
-	picture = "Portrait_PRC_Jiang_Zhenghua.dds"
+	picture = "Jiang_Zhenghua.dds"
 	ideology = progressive_ideology
 }
 
 create_country_leader = {
 	name = "He Luli"
-	picture = "Portrait_PRC_He_Luli.dds"
+	picture = "He_Luli.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
 	name = "Xu Jialu"
-	picture = "Portrait_PRC_Xu_Jialu.dds"
 	ideology = social_democrat_ideology
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Chen Bingde"
-	picture = "Portrait_PRC_general_Chen_Bingde.dds"
+	picture = "generals/Chen_Bingde.dds"
 	skill = 3
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Liu Zuocheng"
-	picture = "Portrait_PRC_general_Liu_Zuocheng.dds"
+	picture = "generals/Liu_Zuocheng.dds"
 	skill = 2
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Guo Boxiong"
-	picture = "Portrait_PRC_general_Guo_Boxiong.dds"
-	skill = 2
+	picture = "generals/Guo_Boxiong.dds"
+	skill = 1
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Cao Gangchuan"
-	picture = "Portrait_PRC_general_Cao_Gangchuan.dds"
-	skill = 2
+	picture = "generals/Cao_Gangchuan.dds"
+	skill = 1
 }
 
 create_corps_commander = {
 	name = "Liang Guanglie"
-	picture = "Portrait_PRC_general_Liang_Guanglie.dds"
-	skill = 1
+	picture = "generals/Liang_Guanglie.dds"
+	skill = 3
+}
+
+#Gao Xiaoyan is a former icon of both Chinese women and the Chinese military.
+#She was disgraced in 2012 - possible future event?
+create_corps_commander = {
+	name = "Gao Xiaoyan"
+	picture = "generals/Gao_Xiaoyan.dds"
+	skill = 3
 }
 
 create_corps_commander = {
 	name = "Xu Caihou"
-	picture = "Portrait_PRC_general_Xu_Caihou.dds"
-	skill = 1
+	picture = "generals/Xu_Caihou.dds"
+	skill = 2
 }
 
 create_corps_commander = {
 	name = "Chang Wanquan"
-	picture = "Portrait_PRC_general_Chang_Wanquan.dds"
-	skill = 1
+	picture = "generals/Chang_Wanquan.dds"
+	skill = 2
 }
 
 create_corps_commander = {
 	name = "Fang Fenghui"
-	picture = "Portrait_PRC_general_Fang_Fenghui.dds"
+	picture = "generals/Fang_Fenghui.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Li Xianyu"
+	picture = "generals/Li_Xianyu.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Fan Changlong"
+	picture = "generals/Fan_Changlong.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Wei Fenghe"
+	picture = "generals/Wei_Fenghe.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Wang Ning"
+	picture = "generals/Wang_Ning.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Liu Yuejun"
-	picture = "Portrait_PRC_general_Liu_Yuejun.dds"
+	picture = "generals/Liu_Yuejun.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Qu Jiangguo"
-	picture = "Portrait_PRC_general_Qi_Jiangguo.dds"
+	picture = "generals/Qi_Jiangguo.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Wang Jiaocheng"
-	picture = "Portrait_PRC_general_Wang_Jiaocheng.dds"
+	picture = "generals/Wang_Jiaocheng.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Zhang Shibo"
-	picture = "Portrait_PRC_general_Zhang_Shibo.dds"
+	picture = "generals/Zhang_Shibo.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Zhao Zongqi"
-	picture = "Portrait_PRC_general_Zhao_Zongqi.dds"
+	picture = "generals/Zhao_Zongqi.dds"
 	skill = 1
 }
 
 create_navy_leader = {
 	name = "Sun Jianguo"
-		picture = "Portrait_PRC_admiral_Sun_Jianguo.dds"
-	traits = { }
+	picture = "admirals/Sun_Jianguo.dds"
 	skill = 2
 }
 
 create_navy_leader = {
 	name = "Wu Shengli"
-		picture = "Portrait_PRC_admiral_Wu_Shengli.dds"
-	traits = { }
+	picture = "admirals/Wu_Shengli.dds"
 	skill = 1
 }
 
 create_navy_leader = {
 	name = "Yao Zhilou"
-		picture = "Portrait_PRC_admiral_Yao_Zhilou.dds"
-	traits = { }
+	picture = "admirals/Yao_Zhilou.dds"
 	skill = 1
 }
 
 create_navy_leader = {
 	name = "Yuan Yubai"
-		picture = "Portrait_PRC_admiral_Yuan_Yubai.dds"
-	traits = { }
+	picture = "admirals/Yuan_Yubai.dds"
 	skill = 1
 }
 
 2002.1.1 = {
-	
 	complete_national_focus = socialism_with_chinese_characteristics
 	complete_national_focus = PRC_economic_revitalization
 	complete_national_focus = PRC_political_reform
@@ -317,87 +343,45 @@ create_navy_leader = {
 	complete_national_focus = PRC_naval_rearmament
 }
 
-2010.1.1 = {
-	create_country_leader = {
-		name = "Xi Jinping"
-		desc = "POLITICIAN_PRC_XI_JINPING_DESC"
-		picture = "Portrait_PRC_Xi_Jinping.dds"
-		expire = "2020.1.1"
-		ideology = maoist
-		
-		traits = {
-		
-		}
-	}
-
-
-create_country_leader = {
-	name = "Zhang Baowen"
-	desc = "POLITICIAN_PRC_ZHANG_BAOWEN_DESC"
-	picture = "Portrait_PRC_Zhang_Baowen.dds"
-	expire = "2020.1.1"
-	ideology = moderate
-	
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "Chen Changzhi"
-	desc = "POLITICIAN_PRC_CHEN_CHANGZHI_DESC"
-	picture = "Portrait_PRC_Chen_Changzhi.dds"
-	expire = "2020.1.1"
-	ideology = libertarian
-	
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "Chen Zhu"
-	desc = "POLITICIAN_PRC_CHEN_ZHU_DESC"
-	picture = "Portrait_PRC_Chen_Zhu.dds"
-	expire = "2020.1.1"
-	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "Wan Exiang"
-	desc = "POLITICIAN_PRC_WAN_EXIANG_DESC"
-	picture = "Portrait_PRC_Wan_Exiang.dds"
-	expire = "2020.1.1"
-	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "Yan Junqi"
-	desc = "POLITICIAN_PRC_YAN_JUNQI_DESC"
-	picture = "Portrait_PRC_Yan_Junqi.dds"
-	expire = "2020.1.1"
-	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
-}
-
+2008.1.1 = {
 	complete_national_focus = PRC_northern_infrastructure
 	complete_national_focus = PRC_northern_industry
 	complete_national_focus = PRC_western_infrastructure
 	complete_national_focus = PRC_armor_design_and_production
 	complete_national_focus = PRC_modern_attack_aircraft
 	complete_national_focus = PRC_littoral_defense
+}
 
+2010.1.1 = {
+	create_country_leader = {
+		name = "Xi Jinping"
+		picture = "Xi_Jinping.dds"
+		ideology = maoist
+	}
+	create_country_leader = {
+		name = "Zhang Baowen"
+		picture = "Zhang_Baowen.dds"
+		ideology = moderate
+	}
+	create_country_leader = {
+		name = "Chen Changzhi"
+		picture = "Chen_Changzhi.dds"
+		ideology = libertarian
+	}
+	create_country_leader = {
+		name = "Chen Zhu"
+		picture = "Chen_Zhu.dds"
+		ideology = progressive_ideology
+	}
+	create_country_leader = {
+		name = "Wan Exiang"
+		picture = "Wan_Exiang.dds"
+		ideology = democratic_socialist_ideology
+	}
+	create_country_leader = {
+		name = "Yan Junqi"
+		ideology = social_democrat_ideology
+	}
 }
 
 

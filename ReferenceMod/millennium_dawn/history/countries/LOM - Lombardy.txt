@@ -116,24 +116,6 @@ set_politics = {
 	elections_allowed = yes
 }
 
-#create_country_leader = {
-#	name = ""
-#	desc = "POLITICIAN_LOM_DESC"
-#	picture = "Portrait_LOM.dds"
-#	expire = "2005.1.1"
-#	ideology = 
-#	traits = {
-#	    }
-#   }
-#create_country_leader = {
-#	name = ""
-#	desc = "POLITICIAN_LOM_DESC"
-#	picture = "Portrait_LOM.dds"
-#	expire = "2005.1.1"
-#	ideology = 
-#	traits = {
-#	    }
-#   }
 
 2015.1.1 = {
 
@@ -164,24 +146,3 @@ set_politics = {
 	    election_frequency = 60
 	    elections_allowed = yes
 	}
-
-#create_country_leader = {
-#	name = ""
-#	desc = "POLITICIAN_LOM_DESC"
-#	picture = "Portrait_LOM.dds"
-#	expire = "2050.1.1"
-#	ideology = 
-#	traits = {
-#	    }
-#   }
-#
-#create_country_leader = {
-#	name = ""
-#	desc = "POLITICIAN_LOM_DESC"
-#	picture = "Portrait_LOM.dds"
-#	expire = "2050.1.1"
-#	ideology = 
-#	traits = {
-#	    }
-#   }
-}

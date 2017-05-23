@@ -3,6 +3,7 @@ ideas = {
 	country = {
 	
 		austrian_neutrality = {
+			picture = austrian_neutrality
 			
 			allowed = {
 				always = no

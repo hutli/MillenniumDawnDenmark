@@ -131,12 +131,12 @@ set_politics = {
 
 create_country_leader = {
 	name = "Yahya Jammeh"
-	picture = "Portrait_GAM_Yahya_Jammeh.dds"
+	picture = "Yahya_Jammeh.dds"
 	ideology = autocrat
 }
 create_country_leader = {
 	name = "Adama Barrow"
-	picture = "Portrait_GAM_Adama_Barrow.dds"
+	picture = "Adama_Barrow.dds"
 	ideology = social_democrat_ideology
 }
 

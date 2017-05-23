@@ -4,9 +4,7 @@ state={
 	name="STATE_305"
 	manpower = 16700200
 	resources={
-		oil=13
-		steel=4
-		tungsten=3
+		oil=55
 	}
 	
 	state_category = city
@@ -14,13 +12,12 @@ state={
 	history={
 		owner = ECU
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
+			industrial_complex = 5
 			arms_factory = 1
-			industrial_complex = 4
-			air_base = 1
-			8252 = {
-				naval_base = 4
-			}
+			dockyard = 1
+			air_base = 2
+			8252 = { naval_base = 3 }
 		}
 		add_core_of = ECU
 		victory_points = {

@@ -125,26 +125,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Sangay Ngedup"
-	desc = "POLITICIAN_BHU_SANGAY_NGEDUP_DESC"
-	picture = "Portrait_BHU_Sangay_Ngedup.dds"
-	expire = "2020.1.1"
+	picture = "Sangay_Ngedup.dds"
 	ideology = constitutional_monarchist
-	
-	traits = {
-	
-	}
 }
 
 2016.1.1 = {
 	create_country_leader = {
 		name = "Tshering Tobgay"
-		desc = "POLITICIAN_BHU_TSHERING_TOBGAY_DESC"
-		picture = "Portrait_BHU_Tshering_Tobgay.dds"
-		expire = "2020.1.1"
-		ideology = autocrat
-		
-		traits = {
-		
-		}
+		picture = "Tshering_Tobgay.dds"
+		ideology = constitutional_monarchist
 	}
 }

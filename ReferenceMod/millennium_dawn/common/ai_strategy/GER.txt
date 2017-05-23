@@ -11,11 +11,11 @@ seek_german_alliance = {
 	ai_strategy = {
 		type = befriend
 		id = "GER"
-		value = 50
+		value = 150
 	}
 	ai_strategy = {
 		type = alliance
 		id = "GER"
-		value = 125
+		value = 150
 	}
 }

@@ -5,23 +5,25 @@ state={
 	manpower = 5444440
 
 	state_category = pastoral
+	
+	resources = {
+		oil = 2
+	}
 
 	history={
 		owner = YEM
+		add_core_of = YEM
 		victory_points = {
 			5074 1 
 		}
 		buildings = {
 			infrastructure = 3
 			air_base = 4
-			5074 = {
-				naval_base = 3
-			}
-			8000 = {
-				naval_base = 1
-			}
+			industrial_complex = 1
+			arms_factory = 1
+			5074 = { naval_base = 3 }
+			8000 = { naval_base = 1 }
 		}
-		add_core_of = YEM
 	}
 
 	provinces={

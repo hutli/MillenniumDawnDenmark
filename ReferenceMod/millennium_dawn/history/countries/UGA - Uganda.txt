@@ -130,135 +130,84 @@ set_politics = {
 
 create_country_leader = {
 	name = "Yoweri Museveni"
-	picture = "Portrait_UGA_Yoweri_Museveni.dds"
-	expire = "2020.1.1"
+	picture = "Yoweri_Museveni.dds"
 	ideology = national_democrat
-	
-	traits = {
-	
-	}
 }
-
 create_country_leader = {
 	name = "Paul Ssemogerere"
-	picture = "Portrait_UGA_Paul_Ssemogerere.dds"
-	expire = "2020.1.1"
+	picture = "Paul_Ssemogerere.dds"
 	ideology = christian_democrat
-	
-	traits = {
-	
-	}
 }
-
 create_country_leader = {
 	name = "Kibirige Mayanja"
-	picture = "Portrait_UGA_Kibirige_Mayanja.dds"
-	expire = "2020.1.1"
+	picture = "Kibirige_Mayanja.dds"
 	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
 }
-
 create_country_leader = {
 	name = "Kizza Besigye"
-	picture = "Portrait_UGA_Kizza_Besigye.dds"
-	expire = "2020.1.1"
+	picture = "Kizza_Besigye.dds"
 	ideology = liberalist
-	
-	traits = {
-	
-	}
 }
-
 create_country_leader = {
 	name = "Jaberi Bidandi Ssali"
-	picture = "Portrait_UGA_Jaberi_Bidandi_Ssali.dds"
-	expire = "2020.1.1"
+	picture = "Jaberi_B_Ssali.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
 }
-
 create_country_leader = {
 	name = "Ken Lukyamuzi"
-	picture = "Portrait_UGA_Ken_Lukyamuzi.dds"
-	expire = "2020.1.1"
+	picture = "Ken_Lukyamuzi.dds"
 	ideology = oligarchist
-	
-	traits = {
-	
-	}
 }
-
 create_country_leader = {
 	name = "Miria Obote"
-	picture = "Portrait_UGA_Miria_Obote.dds"
-	expire = "2020.1.1"
+	picture = "Miria_Obote.dds"
 	ideology = marxist
-	
-	traits = {
-	
-	}
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Katumba Wamala"
-	picture = "Portrait_UGA_general_Katumba_Wamala.dds"
-	skill = 2
-	}
-
+	picture = "generals/Katumba_Wamala.dds"
+	skill = 1
+}
 create_corps_commander = {
 	name = "Patrick Kankiriho"
-	picture = "Portrait_UGA_general_Patrick_Kankiriho.dds"
+	picture = "generals/Patrick_Kankiriho.dds"
 	skill = 2
-	}
-
+}
 create_corps_commander = {
 	name = "Nathan Mugisha"
-	picture = "Portrait_UGA_general_Nathan_Mugisha.dds"
+	picture = "generals/Nathan_Mugisha.dds"
 	skill = 1
-	}
+}
 
 2016.2.18 = {
-	
 	set_politics = {
-
-	parties = {
-		nationalist = {
-			popularity = 70
+		parties = {
+			nationalist = {
+				popularity = 70
+			}
+			conservative = {
+				popularity = 11
+			}
+			social_liberal = {
+				popularity = 18
+			}
+			progressive = {
+				popularity = 0
+			}
+			communist = {
+				popularity = 1
+			}
 		}
-		conservative = {
-			popularity = 11
-		}
-		social_liberal = {
-			popularity = 18
-		}
-		progressive = {
-			popularity = 0
-		}
-		communist = {
-			popularity = 1
-		}
-	}
-	
-	ruling_party = nationalist
-	last_election = "2016.2.18"
-	election_frequency = 60
-	elections_allowed = yes
+		ruling_party = nationalist
+		last_election = "2016.2.18"
+		election_frequency = 60
+		elections_allowed = yes
 	}
 
 	create_country_leader = {
-	name = "Olara Otunnu"
-	picture = "Portrait_UGA_Olara_Otunnu.dds"
-	expire = "2020.1.1"
-	ideology = marxist
-	
-	traits = {
-	
+		name = "Olara Otunnu"
+		picture = "Olara_Otunnu.dds"
+		ideology = marxist
 	}
-}
 }

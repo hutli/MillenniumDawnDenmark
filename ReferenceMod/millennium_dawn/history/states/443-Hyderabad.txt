@@ -5,18 +5,21 @@ state={
 	manpower = 46887000
 	
 	state_category = large_city
+	
+	resources = {
+		steel = 4
+	}
 
 	history={
 		owner = PAK
-		victory_points = {
-			3456 3 
-		}
+		add_core_of = PAK
+		victory_points = { 3456 3 }
 		buildings = {
-			infrastructure = 8
-			industrial_complex = 6
-			3456 = {
-				naval_base = 4
-			}
+			infrastructure = 7
+			industrial_complex = 4
+			dockyard = 1
+			air_base = 3
+			3456 = { naval_base = 4 }
 		}
 
 	}

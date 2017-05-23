@@ -4,12 +4,9 @@ state={
 	provinces={
 		4941 
 	}
-	resources = {
-		chromium = 9
-		steel = 23
-	}
 	history = {
 		owner = DRC
+		add_core_of = DRC
 		buildings = {
 			infrastructure = 1
 		}

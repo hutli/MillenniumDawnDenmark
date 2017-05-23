@@ -4,10 +4,11 @@ state={
 	
 	history = {
 		owner = BKF
-		
+		add_core_of = BKF
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
+			arms_factory = 1
 		}
 	}
 	

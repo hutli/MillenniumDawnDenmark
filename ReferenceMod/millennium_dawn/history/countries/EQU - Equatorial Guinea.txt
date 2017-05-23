@@ -140,5 +140,5 @@ set_politics = {
 create_country_leader = {
 	name = "Teodoro Obiang"
 	ideology = autocrat
-	picture = "Portrait_EQU_Teodoro_Obiang.dds"
+	picture = "Teodoro_Obiang.dds"
 }

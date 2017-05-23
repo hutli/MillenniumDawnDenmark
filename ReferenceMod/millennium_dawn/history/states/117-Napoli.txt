@@ -4,10 +4,11 @@ state={
 	name="STATE_117" # Campania
 	manpower = 6233611
 	
-	state_category = city
+	state_category = town
+	
 	resources={
-		aluminium=16
-		steel = 24
+		oil = 2
+		steel = 6
 	}
 
 	history={
@@ -17,7 +18,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
 			industrial_complex = 2
 			air_base = 3
 			819 = {
@@ -25,12 +25,6 @@ state={
 			}
 		}
 		add_core_of = ITA
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-				industrial_complex = 3
-			}
-		}
 	}
 
 	provinces={

@@ -151,35 +151,19 @@ set_politics = {
 	}
 }
 
-
-
 2000.1.1 = {
-
-
-     create_country_leader = {
-	name = "Alija Izetbegović"
-	ideology = centrist
-	picture = "Portrait_BOS_Alija_Izetbegovic.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	create_country_leader = {
+		name = "Alija Izetbegović"
+		ideology = centrist
+		picture = "Alija_Izetbegovic.dds"
+	}
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Bakir Izetbegović"
-	ideology = liberalist
-	picture = "Portrait_BOS_Bakir_Izetbegovic.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Bakir Izetbegović"
+		ideology = liberalist
+		picture = "Bakir_Izetbegovic.dds"
+	}
 }
 

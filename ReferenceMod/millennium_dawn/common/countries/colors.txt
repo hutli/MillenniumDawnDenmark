@@ -987,6 +987,10 @@ VNT = {
     color = rgb { 54  167  156 }
 	color_ui = rgb { 54  167  156 }
 }
+NEG = {
+	color = rgb { 121 119 206 }
+	color_ui = rgb { 121 119 206 }
+}
 
 D01 = {
 	color = rgb { 200 100 31 }

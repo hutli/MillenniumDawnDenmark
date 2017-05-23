@@ -2,21 +2,16 @@
 state={
 	id=272
 	name="STATE_272"
-	resources={
-		steel=2
-		oil=1
-		rubber=2
-	}
 
 	history={
 		owner = SEN
+		add_core_of = SEN
 		victory_points = {
 			4948 5 
 		}
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			air_base = 4
+			infrastructure = 2
+			air_base = 1
 		}
 	}
 

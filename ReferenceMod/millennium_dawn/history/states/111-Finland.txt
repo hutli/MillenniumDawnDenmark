@@ -3,32 +3,26 @@ state={
 	id=111
 	name="STATE_111" # Uusimaa
 	manpower = 3670190
-	resources={
-		steel=21
-		chromium=5
-	}
 	
 	state_category = city
 	
+	resources = {
+		steel = 26
+	}
+	
 	history={
 		owner = FIN
-		victory_points = {
-			11105 15 
-		}
-		victory_points = {
-			3083 1 
-		}
-		victory_points = {
-			3137 1 
-		}
+		victory_points = { 11105 15 }
+		victory_points = { 3083 1 }
+		victory_points = { 3137 1 }
 		buildings = {
-			infrastructure = 6
-			arms_factory = 3
-			industrial_complex = 2
+			infrastructure = 7
+			industrial_complex = 4
+			arms_factory = 1
 			dockyard = 1
-			air_base = 5
+			air_base = 6
 			11105 = {
-				naval_base = 5
+				naval_base = 6
 				coastal_bunker = 2
 			}
 			3083 = {

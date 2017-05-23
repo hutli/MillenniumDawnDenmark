@@ -4,10 +4,11 @@ state={
 	manpower = 1915600
 	
 	state_category = city
-	resources={
-		steel=95
+	
+	resources = {
+		steel = 88
 	}
-
+	
 	history={
 		owner = FRA
 		victory_points = { 678 3 }
@@ -15,9 +16,8 @@ state={
 		victory_points = { 9559 3 }
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 3
-			arms_factory = 1
-			air_base = 5
+			air_base = 4
+			industrial_complex = 1
 		}
 		add_core_of = FRA
 	}

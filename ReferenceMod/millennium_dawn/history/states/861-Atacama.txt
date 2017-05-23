@@ -1,16 +1,13 @@
 state={
 	id=861
 	name="STATE_861"
-	resources = {
-		steel = 6
-		chromium = 5
-	}
 	history = {
 		owner = CHL
 		add_claim_by = BOL
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+			air_base = 1
 		}
 	}
 	provinces={

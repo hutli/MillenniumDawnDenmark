@@ -4,13 +4,16 @@ state={
 	name="STATE_416"
 	manpower = 4159739
 	state_category = town
+	
+	resources = {
+		chromium = 8
+	}
 
 	history={
 		owner = PER
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 3
-			arms_factory = 1
+			infrastructure = 5
+			industrial_complex = 1
 			air_base = 2
 		}
 		victory_points = {

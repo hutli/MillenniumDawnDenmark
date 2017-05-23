@@ -4,20 +4,21 @@ state={
 	name="STATE_294"
 	manpower = 4300000
 	
-	state_category = rural
+	state_category = large_town
 	
 	resources={
-		oil=14
-		steel=1
-		chromium=1
+		aluminium=8
+		chromium=13
+		oil=101
 	}
 
 	history={
 		owner = OMA
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 5
 			arms_factory = 1
-			industrial_complex = 1
+			dockyard = 1
 			air_base = 4 
 			10760 = {
 				naval_base = 3

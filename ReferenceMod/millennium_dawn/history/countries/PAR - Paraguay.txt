@@ -142,34 +142,17 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Luis Ángel González Macchi"
 	ideology = counter_progressive_democrat
-	picture = "Portrait_PAR_Luis_angel.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Luis_Angel.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Horacio Cartes"
-	ideology = counter_progressive_democrat
-	picture = "Portrait_PAR_Horacio_Cartes.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Horacio Cartes"
+		ideology = counter_progressive_democrat
+		picture = "Horacio_Cartes.dds"
+	}
 }
 

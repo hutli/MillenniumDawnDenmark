@@ -4,10 +4,6 @@ state={
 	name="STATE_565" # Bodaybo
 	manpower = 195325
 	state_category = wasteland
-	resources={
-		steel=32
-		chromium=12
-	}
 
 	history={
 		owner = SOV

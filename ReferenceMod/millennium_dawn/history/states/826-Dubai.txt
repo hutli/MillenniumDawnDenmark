@@ -2,13 +2,18 @@ state={
 	id=826
 	name="STATE_826"
 	resources = {
-		oil=125
+		aluminium=204
+		oil=223
+		steel=1
 	}
 	history = {
 		owner = UAE
+		add_core_of = UAE
 		buildings = {
 			infrastructure = 8
-			industrial_complex = 7
+			industrial_complex = 9
+			arms_factory = 1
+			dockyard = 1
 			air_base = 4
 			7960 = { naval_base = 5 }
 		}
@@ -20,5 +25,5 @@ state={
 	manpower=4300000
 	buildings_max_level_factor=1.000
 	
-	state_category = city
+	state_category = metropolis
 }

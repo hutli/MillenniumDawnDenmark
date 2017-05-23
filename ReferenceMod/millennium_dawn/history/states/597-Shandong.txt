@@ -3,12 +3,12 @@ state=
 	id=597
 	name="STATE_597"
 	manpower = 97333900
-	state_category = city
+	state_category = large_city
 	
 	resources = {
-		oil = 1
-		steel = 4
-		aluminium = 11
+		aluminium=60
+		oil=25
+		steel = 120
 	}
 	
 	history=
@@ -23,8 +23,9 @@ state=
 			10000 5 
 		}
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 3
+			infrastructure = 8
+			industrial_complex = 6
+			dockyard = 4
 			air_base = 5
 			10000 = {
 				naval_base = 5

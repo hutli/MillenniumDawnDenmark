@@ -102,35 +102,14 @@ add_ideas = {
 }
 
 set_politics = {
-
 	parties = {
-		reactionary = {
-			popularity = 93
-		}
-		conservative = {
-			popularity = 1
-		}
-		market_liberal = {
-			popularity = 1
-		}
-		social_liberal = {
-			popularity = 1
-		}
-		social_democrat = {
-			popularity = 1
-		}
-		progressive = {
-			popularity = 1
-		}
-		democratic_socialist = {
-			popularity = 1
-		}
-		communist = {
-			popularity = 1
-		}
+		reactionary = { popularity = 5 }
+		conservative = { popularity = 25 }
+		social_democrat = { popularity = 40 }
+		progressive = { popularity = 20 }
+		democratic_socialist = { popularity = 10 }
 	}
-	
-	ruling_party = reactionary
+	ruling_party = social_democrat
 	last_election = "1998.9.20"
 	election_frequency = 48
 	elections_allowed = yes
@@ -140,19 +119,17 @@ set_politics = {
 2000.1.1 = {
 	create_country_leader = {
 		name = "Gianfranco Terenzi"
-		ideology = counter_progressive_democrat
-		picture = "Portrait_SAM_Gianfranco_Terenzi.dds"
+		ideology = social_democrat_ideology
+		picture = "Gianfranco_Terenzi.dds"
     }
 }
 
-2002.1.1 = {
-	add_ideas = the_euro
-}
+2002.1.1 = { add_ideas = the_euro }
 
 2015.1.1 = {
 	create_country_leader = {
 		name = "Massimo Andrea Ugolini"
-		ideology = counter_progressive_democrat
-		picture = "Portrait_SAM_Massimo_Andrea.dds"
+		ideology = social_democrat_ideology
+		picture = "Massimo_A_Ugolini.dds"
     }
 }

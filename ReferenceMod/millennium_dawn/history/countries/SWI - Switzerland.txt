@@ -107,7 +107,7 @@ add_ideas = {
 	limited_conscription
 }
 
-diplomatic_relation = { country = LIC relation = non_aggression_pact }
+give_guarantee = LIC
 
 set_politics = {
 
@@ -152,25 +152,25 @@ set_politics = {
 
 create_country_leader = {
 	name = "Adolf Ogi"
-	picture = "Portrait_SWI_Adolf_Ogi.dds"
+	picture = "Adolf_Ogi.dds"
 	ideology = counter_progressive_democrat
 }
 
 create_country_leader = {
 	name = "Johann Schneider-Ammann"
-	picture = "Portrait_SWI_Johann_Schneider_Ammann.dds"
+	picture = "Johann_Schneider_Ammann.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Doris Leuthard"
-	picture = "Portrait_SWI_Doris_Leuthard.dds"
+	picture = "Doris_Leuthard.dds"
 	ideology = liberalist
 }
 
 create_country_leader = {
 	name = "Moritz Leuenberger"
-	picture = "Portrait_SWI_Moritz_Leuenberger.dds"
+	picture = "Moritz_Leuenberger.dds"
 	ideology = social_democrat_ideology
 }
 

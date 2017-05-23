@@ -98,10 +98,16 @@ set_politics = {
 
 	parties = {
 		conservative = {
-			popularity = 38
+			popularity = 34
+		}
+		market_liberal = {
+			popularity = 4
 		}
 		social_liberal = {
-			popularity = 62
+			popularity = 59
+		}
+		progressive = {
+			popularity = 3
 		}
 	}
 	ruling_party = social_liberal
@@ -109,33 +115,20 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-2015.1.1 = {
-create_country_leader = {
-	name = "Jerry Brown"
-	desc = "POLITICIAN_CAL_JERRY_BROWN_DESC"
-	picture = "Portrait_CAL_Jerry_Brown.dds"
-	expire = "2050.1.1"
-	ideology = liberalist
-	traits = {
-	    }
-    }
-}
-
 create_country_leader = {
 	name = "Gray Davis"
-	desc = "POLITICIAN_CAL_GRAY_DAVIS_DESC"
-	picture = "Portrait_CAL_Gray_Davis.dds"
-	expire = "2003.1.1"
+	picture = "Gray_Davis.dds"
 	ideology = liberalist
-	traits = {
-	}
 }
 create_country_leader = {
 	name = "Arnold Schwarzenegger"
-	desc = "POLITICIAN_CAL_ARNOLD_SCHWARZENEGGER_DESC"
-	picture = "Portrait_CAL_Arnold_Schwarzenegger.dds"
-	expire = "2011.1.1"
-	ideology = gaullist
-	traits = {
-	}
+	picture = "Arnold_Schwarzenegger.dds"
+	ideology = fiscal_conservative
+}
+2015.1.1 = {
+	create_country_leader = {
+		name = "Jerry Brown"
+		picture = "Jerry_Brown.dds"
+		ideology = liberalist
+    }
 }

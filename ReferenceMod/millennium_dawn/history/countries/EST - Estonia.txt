@@ -48,6 +48,10 @@ set_technology = {
 	antitank1 = 1
 	interwar_antiair = 1
 	
+	corvette1 = 1
+	corvette2 = 1
+	frigate1 = 1
+	frigate2 = 1
 	destroyer1 = 1
 	destroyer2 = 1
 	light_cruiser1 = 1
@@ -138,13 +142,13 @@ set_politics = {
 
 create_country_leader = {
 	name = "Mart Laar"
-	picture = "Portrait_EST_Mart_Laar.dds"
+	picture = "Mart_Laar.dds"
 	ideology = christian_democrat
 }
 
 create_country_leader = {
 	name = "Taavi Rõivas"
-	picture = "Portrait_EST_Taavi_Roivas.dds"
+	picture = "Taavi_Roivas.dds"
 	ideology = libertarian
 }
 
@@ -159,6 +163,9 @@ create_country_leader = {
 }
 
 2016.1.1 = {
+
+	oob = "EST_2016"
+
 	set_politics = {
 
 		parties = {

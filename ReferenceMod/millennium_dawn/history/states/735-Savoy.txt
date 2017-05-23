@@ -2,7 +2,7 @@ state={
 	id=735
 	name="STATE_735"
 
-	state_category = town
+	state_category = rural
 
 	history={
 		owner = FRA
@@ -14,7 +14,7 @@ state={
 			9909 5 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 1
 			9909 = {
 				naval_base = 2

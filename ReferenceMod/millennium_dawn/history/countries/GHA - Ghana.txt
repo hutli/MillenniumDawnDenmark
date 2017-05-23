@@ -146,14 +146,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Jerry Rawlings"
-	picture = "Portrait_GHA_Jerry_Rawlings.dds"
+	picture = "Jerry_Rawlings.dds"
 	ideology = social_democrat_ideology
 }
 
 2001.7.1 = {
 	create_country_leader = {
 		name = "John Agyekum Kufuor"
-		picture = "Portrait_GHA_John_Agyekum_Kufuor.dds"
+		picture = "John_A_Kufuor.dds"
 		ideology = constitutionalist
 	}
 }
@@ -161,7 +161,7 @@ create_country_leader = {
 2009.7.1 = {
 	create_country_leader = {
 		name = "John Atta Mills"
-		picture = "Portrait_GHA_John_Atta_Mills.dds"
+		picture = "John_A_Mills.dds"
 		ideology = social_democrat_ideology
 		expire = "2012.7.24"
 	}
@@ -170,7 +170,7 @@ create_country_leader = {
 2012.7.24 = {
 	create_country_leader = {
 		name = "John Dramani Mahama"
-		picture = "Portrait_GHA_John_Dramani_Mahama.dds"
+		picture = "John_D_Mahama.dds"
 		ideology = social_democrat_ideology
 	}
 }
@@ -178,7 +178,7 @@ create_country_leader = {
 2017.1.7 = {
 	create_country_leader = {
 		name = "Nana Addo Dankwa Akufo-Addo"
-		picture = "Portrait_GHA_Nana_Addo_Dankwa_Akufo-Addo.dds"
+		picture = "Nana_Addo-Addo.dds"
 		ideology = constitutionalist
 	}
 }

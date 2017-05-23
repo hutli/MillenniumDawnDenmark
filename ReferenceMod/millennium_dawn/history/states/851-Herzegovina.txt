@@ -6,10 +6,9 @@ state={
 	}
 	history = {
 		owner = BOS
-		
+		add_core_of = BOS
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
 		}
 	}
 	manpower=310000

@@ -4,12 +4,8 @@ state={
 	name="STATE_172"
 	manpower = 2794880
 	
-	state_category = city
+	state_category = rural
 	
-	resources={
-		steel=12
-	}
-
 	history={
 		owner = SPR
 		victory_points = {
@@ -17,9 +13,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 2
-			industrial_complex = 4
-			air_base = 1
+			industrial_complex = 2
+			air_base = 2
 			740 = {
 				naval_base = 1
 			}

@@ -5,12 +5,17 @@ state={
 	manpower = 2447156
 	
 	state_category = rural
+	
+	resources = {
+		chromium = 15
+		oil=2
+		steel = 5
+	}
 
 	history={
 		owner = TUR
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 			air_base = 4
 		}
 		add_core_of = TUR

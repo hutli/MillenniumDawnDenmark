@@ -3,7 +3,7 @@ state={
 	name="STATE_771"
 	history = {
 		owner = SEN
-		
+		add_core_of = SEN
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

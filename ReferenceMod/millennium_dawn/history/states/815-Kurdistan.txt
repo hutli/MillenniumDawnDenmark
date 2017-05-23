@@ -3,10 +3,7 @@ state={
 	name="STATE_815"
 	
 	resources = {
-		oil=23
-		steel=9
-		chromium=6
-		aluminium=5
+		oil=28
 	}
 	
 	history = {
@@ -17,14 +14,12 @@ state={
 		
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 3
-			arms_factory = 1
-			air_base = 6
+			industrial_complex = 1
+			air_base = 2
 		}
 		
 		2015.5.1 = {
 			owner = KUR
-			
 			buildings = {
 				10804 = { bunker = 1 }
 				10811 = { bunker = 1 }

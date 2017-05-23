@@ -108,18 +108,10 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		islamist = {
-			popularity = 31
-		}
-		nationalist = {
-			popularity = 20
-		}
-		reactionary = {
-			popularity = 39
-		}
-		conservative = {
-			popularity = 10
-		}
+		islamist = { popularity = 31 }
+		nationalist = { popularity = 20 }
+		reactionary = { popularity = 39 }
+		conservative = { popularity = 10 }
 	}
 	
 	ruling_party = reactionary
@@ -130,14 +122,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Abdiqasim Salad Hassan"
-	picture = "Portrait_SOM_Abdiqasim_Salad_Hassan.dds"
+	picture = "Abdiqasim_S_Hassan.dds"
 	ideology = counter_progressive_democrat
 }
 
 2016.1.1 = {
 	create_country_leader = {
-	name = "Hassan Sheikh Mohamud"
-	picture = "Portrait_SOM_Hassan_Sheikh_Mohamud.dds"
-	ideology = counter_progressive_democrat
+		name = "Hassan Sheikh Mohamud"
+		picture = "Hassan_S_Mohamud.dds"
+		ideology = counter_progressive_democrat
 	}
 }

@@ -137,80 +137,69 @@ set_politics = {
 
 create_country_leader = {
 	name = "Emile Lahoud"
-	picture = "Portrait_LEB_Emile_Lahoud.dds"
+	picture = "Emile_Lahoud.dds"
 	ideology = autocrat
 }
 
 create_country_leader = {
 	name = "Michel Aoun"
-	picture = "Portrait_LEB_Michel_Aoun.dds"
+	picture = "Michel_Aoun.dds"
 	ideology = moderate
 }
 
 create_country_leader = {
 	name = "Samir Geagea"
-	picture = "Portrait_LEB_Samir_Geagea.dds"
+	picture = "Samir_Geagea.dds"
 	ideology = counter_progressive_democrat
 }
 
 create_country_leader = {
 	name = "Hassan Nasrallah"
-	picture = "Portrait_LEB_Hassan_Nasrallah.dds"
+	picture = "Hassan_Nasrallah.dds"
 	ideology = islamic_authoritarian
 } 
 
 create_country_leader = {
 	name = "Sitrida Geagea"
-	picture = "Portrait_LEB_Sitrida_Geagea.dds"
+	picture = "Sitrida_Geagea.dds"
 	ideology = libertarian
 }
 
 
 create_country_leader = {
 	name = "Assad Hardan"
-	picture = "Portrait_LEB_Assad_Hardan.dds"
+	picture = "Assad_Hardan.dds"
 	ideology = national_socialist
 }
 
 
 create_country_leader = {
 	name = "Walid Jumblatt"
-	picture = "Portrait_LEB_Walid_Jumblatt.dds"
+	picture = "Walid_Jumblatt.dds"
 	ideology = green
 }
 
-
 create_country_leader = {
-	name = "Julia Shihab IV"
-	picture = "Portrait_LEB_Juilia.dds"
+	name = "Julia IV"
+	picture = "Julia_IV.dds"
 	ideology = absolute_monarchist
 }
 
 create_country_leader = {
 	name = "Nabih Berri"
-	picture = "Portrait_LEB_Nabih_Berri.dds"
+	picture = "Nabih_Berri.dds"
 	ideology = social_democrat_ideology
 }
 
-
 create_country_leader = {
 	name = "Hanna Gharib"
-	picture = "Portrait_LEB_Hanna_Gharib.dds"
+	picture = "Hanna_Gharib.dds"
 	ideology = marxist
 }
-
-
-create_country_leader = {
-	name = "Nabih Berri"                      
-	picture = "Portrait_LEB_Nabih_Berri.dds"
-	ideology = fiscal_conservative
-}
- 
  
 create_corps_commander = { 
 	name = "Jean Kahwaji" 
-	picture = "Portrait_LEB_Jean_Kahwaji.dds"
-	traits = {} 
+	picture = "generals/Jean_Kahwaji.dds"
 	skill = 1
 }
 

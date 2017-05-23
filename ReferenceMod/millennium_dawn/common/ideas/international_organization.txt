@@ -2,8 +2,9 @@ ideas = {
 	country = {
 		###		United Nations		###
 		idea_united_nations_security_council_member = {
+			picture = united_nations_gold
+		
 			allowed = { always = no }
-			
 			removal_cost = -1
 			
 			modifier = {
@@ -15,8 +16,9 @@ ideas = {
 			}
 		}
 		idea_united_nations_NP_security_council_member = {
+			picture = united_nations_green
+		
 			allowed = { always = no }
-			
 			removal_cost = -1
 			
 			modifier = {
@@ -36,8 +38,9 @@ ideas = {
 		}
 		###		European Union		###
 		idea_eu_member = {
+			picture = EU_member
+		
 			allowed = { always = no }
-			
 			removal_cost = -1
 			
 			modifier = {
@@ -47,8 +50,9 @@ ideas = {
 			}
 		}
 		the_euro = {
+			picture = the_euro
+		
 			allowed = { always = no }
-			
 			removal_cost = -1
 			
 			modifier = {
@@ -57,8 +61,9 @@ ideas = {
 			}
 		}
 		idea_eu_sanctions = {
+			picture = trade
+		
 			allowed = { always = no }
-			
 			removal_cost = -1
 			
 			modifier = {
@@ -79,6 +84,7 @@ ideas = {
 		}
 		###		Commonwealth		###
 		commonwealth_of_nations_member = {
+			picture = commonwealth_member
 			allowed = {
 				always = no
 			}
@@ -89,6 +95,7 @@ ideas = {
 		}
 		###		Arab League			###
 		arab_league_member = {
+			picture = arab_league
 			allowed = {
 				always = no
 			}

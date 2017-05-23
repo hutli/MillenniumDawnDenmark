@@ -6,6 +6,10 @@ state=
 	
 	state_category = enclave
 	
+	resources = {
+		tungsten = 1
+	}
+	
 	history = {	
 		owner = SOV
 		buildings = {

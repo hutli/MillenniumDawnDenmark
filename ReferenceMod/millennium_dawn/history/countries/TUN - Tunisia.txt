@@ -134,226 +134,136 @@ set_politics = {
 	elections_allowed = no
 }
 
-2000.1.1 = {
-	
-	create_country_leader = {
+create_country_leader = {
 	name = "Zine El Abidine Ben Ali"
-	picture = "Portrait_TUN_Zine_Ben_Ali.dds"
-	expire = "2020.1.1"
+	picture = "Zine_Ben_Ali.dds"
 	ideology = oligarchist
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
+}
+create_country_leader = {
 	name = "Mohemed Belhaj Amor"
-	picture = "Portrait_TUN_Mohemed_Amor.dds"
-	expire = "2020.1.1"
+	picture = "Mohemed_Amor.dds"
 	ideology = national_democrat
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
+}
+create_country_leader = {
 	name = "Mohamed Ali Khalfallah"
-	expire = "2020.1.1"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
+}
+create_country_leader = {
 	name = "Ahmed Brahim"
-	picture = "Portrait_TUN_Ahmed_Brahim.dds"
-	expire = "2020.1.1"
+	picture = "Ahmed_Brahim.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
+}
+create_country_leader = {
 	name = "Mohamed Beji"
-	picture = "Portrait_TUN_Mohamed_Beji.dds"
-	expire = "2020.1.1"
+	picture = "Mohamed_Beji.dds"
 	ideology = liberalist
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
+}
+create_country_leader = {
 	name = "Moncef Marzouki"
-	picture = "Portrait_TUN_Moncef_Marzouki.dds"
-	expire = "2020.1.1"
+	picture = "Moncef_Marzouki.dds"
 	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
+}
+create_country_leader = {
 	name = "Ali Laarayedh"
-	picture = "Portrait_TUN_Ali_Laarayedh.dds"
-	expire = "2020.1.1"
+	picture = "Ali_Laarayedh.dds"
 	ideology = islamic_republican
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
+}
+create_country_leader = {
 	name = "Slim Riahi"
-	picture = "Portrait_TUN_Slim_Riahi.dds"
-	expire = "2020.1.1"
+	picture = "Slim_Riahi.dds"
 	ideology = libertarian
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
+}
+create_country_leader = {
 	name = "Hamma Hammami"
-	picture = "Portrait_TUN_Hamma_Hammami.dds"
-	expire = "2020.1.1"
+	picture = "Hamma_Hammami.dds"
 	ideology = marxist
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
+}
+create_country_leader = {
 	name = "Yassine Brahim"
-	picture = "Portrait_TUN_Yasine_Brahim.dds"
-	expire = "2020.1.1"
+	picture = "Yasine_Brahim.dds"
 	ideology = constitutionalist
-	
-	traits = {
-	
-	}
-	}
+}
 
-	create_corps_commander = {
+create_corps_commander = {
 	name = "Rachid Ammar"
-	picture = "Portrait_TUN_general_Rachid_Ammar.dds"
+	picture = "generals/Rachid_Ammar.dds"
 	skill = 2
-	}
-
-	create_corps_commander = {
+}
+create_corps_commander = {
 	name = "Ismail Fathali"
-	picture = "Portrait_TUN_general_Ismail_Fathali.dds"
+	picture = "generals/Ismail_Fathali.dds"
 	skill = 1
-	}
-
 }
 
 2011.1.14 = {
-	
 	set_party_name = {
 		ideology = social_liberal
 		long_name = TUN_social_liberal_party_Nidaa_Tounes
 		name = TUN_social_liberal_party_Nidaa_Tounes
 	}
-
 	set_party_name = {
 		ideology = social_democrat
 		long_name = TUN_social_demcrat_party_Current_long
 		name = TUN_social_demcrat_party_Current
 	}
-
 	set_party_name = {
 		ideology = reactionary
 		long_name = TUN_reactionary_party_IND_long
 		name = TUN_reactionary_party_IND
 	}
 }
-
 2016.1.1 = {
-	
 	set_politics = {
-
-	parties = {
-		islamist = {
-			popularity = 32
+		parties = {
+			islamist = {
+				popularity = 32
+			}
+			nationalist = {
+				popularity = 0
+			}
+			reactionary = {
+				popularity = 0
+			}
+			conservative = {
+				popularity = 5
+			}
+			market_liberal = {
+				popularity = 9
+			}
+			social_liberal = {
+				popularity = 40
+			}
+			social_democrat = {
+				popularity = 2
+			}
+			progressive = {
+				popularity = 5
+			}
+			democratic_socialist = {
+				popularity = 0
+			}
+			communist = {
+				popularity = 7
+			}
 		}
-		nationalist = {
-			popularity = 0
-		}
-		reactionary = {
-			popularity = 0
-		}
-		conservative = {
-			popularity = 5
-		}
-		market_liberal = {
-			popularity = 9
-		}
-		social_liberal = {
-			popularity = 40
-		}
-		social_democrat = {
-			popularity = 2
-		}
-		progressive = {
-			popularity = 5
-		}
-		democratic_socialist = {
-			popularity = 0
-		}
-		communist = {
-			popularity = 7
-		}
+		ruling_party = social_liberal
+		last_election = "2014.12.21"
+		election_frequency = 60
+		elections_allowed = yes
 	}
-	
-	ruling_party = social_liberal
-	last_election = "2014.12.21"
-	election_frequency = 60
-	elections_allowed = yes
-	}
-
 	create_country_leader = {
-	name = "Beji Caid Essebi"
-	picture = "Portrait_TUN_Beji_Essebi.dds"
-	expire = "2020.1.1"
-	ideology = liberalist
-	
-	traits = {
-	
+		name = "Beji Caid Essebi"
+		picture = "Beji_Essebi.dds"
+		ideology = liberalist
 	}
-	}
-
 	create_country_leader = {
-	name = "Kamel Morjane"
-	picture = "Portrait_TUN_Kamel_Morjane.dds"
-	expire = "2020.1.1"
-	ideology = counter_progressive_democrat
-	
-	traits = {
-	
+		name = "Kamel Morjane"
+		picture = "Kamel_Morjane.dds"
+		ideology = counter_progressive_democrat
 	}
-	}
-
 	create_country_leader = {
-	name = "Mohamed Abbou"
-	picture = "Portrait_TUN_Mohamed_Abbou.dds"
-	expire = "2020.1.1"
-	ideology = social_democrat_ideology
-	
-	traits = {
-	
+		name = "Mohamed Abbou"
+		picture = "Mohamed_Abbou.dds"
+		ideology = social_democrat_ideology
 	}
-	}
-
 }

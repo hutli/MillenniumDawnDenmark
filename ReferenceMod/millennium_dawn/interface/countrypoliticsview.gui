@@ -499,7 +499,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
-		size = { width=500 height=540 }
+		size = { width=750 height=800 }
 		show_sound = open_sub_window
 		
 		background = {
@@ -509,7 +509,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "title"
-			position = { x = 0 y = 4 }
+			position = { x = 200 y = 4 }
 			font = "hoi_20b"
 			text = "Economic Laws"
 			maxWidth = 450
@@ -518,22 +518,23 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "switch"
-			position = { x = 0 y = 26 }
+			position = { x = 200 y = 26 }
 			font = "hoi_18b"
 			text = "Switch out Henschel"
 			maxWidth = 450
 			maxHeight = 20
 			format = center
 		}
+		#ADVISORS
 		containerWindowType = {
 			name = "ideas"
 			position = { x = 0 y = 50 }
-			size = { width=500 height=100%% }	
+			size = { width=750 height=100%% }	
 			
 			containerWindowType = {
 				name = "grid"
 				position = { x = 0 y = 0 }
-				size = { width=500 height=-4 }
+				size = { width=750 height=-4 }
 				verticalScrollbar = "right_vertical_slider"
 				margin = { top = 4 bottom = 12}	
 
@@ -551,9 +552,9 @@ guiTypes = {
 				gridBoxType = {
 					name = "box"
 					position = { x = 10 y = 10 }
-					size = { width = 500 height = 1 }
-					slotsize = { width = 231 height = 75 }
-					max_slots_horizontal = 2
+					size = { width = 750 height = 1 }
+					slotsize = { width = 230 height = 75 }
+					max_slots_horizontal = 3
 					add_horizontal = yes
 					format = "UPPER_LEFT"
 				}

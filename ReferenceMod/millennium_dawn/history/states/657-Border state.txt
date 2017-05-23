@@ -3,9 +3,6 @@ state={
 	id=657
 	name="STATE_657" # Birobidzhan
 	manpower = 368380
-	resources={
-		steel=24
-	}
 
 
 	state_category = pastoral

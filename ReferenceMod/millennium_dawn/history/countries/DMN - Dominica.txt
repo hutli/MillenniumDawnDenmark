@@ -135,26 +135,26 @@ set_politics = {
 
 create_country_leader = {
 	name = "Pierre Charles"
-	picture = "Portrait_DMN_Pierre_Charles.dds"
+	picture = "Pierre_Charles.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Eugenia Charles"
-	picture = "Portrait_DMN_Eugenia_Charles.dds"
+	picture = "Eugenia_Charles.dds"
 	ideology = fiscal_conservative
 }
 
 create_country_leader = {
 	name = "Ezekiel Bazil"
-	picture = "Portrait_DMN_Ezekiel_Bazil.dds"
+	picture = "Ezekiel_Bazil.dds"
 	ideology = libertarian
 }
 
 2004.1.1 = {
 	create_country_leader = {
 		name = "Roosevelt Skerrit"
-		picture = "Portrait_DMN_Roosevelt_Skerrit.dds"
+		picture = "Roosevelt_Skerrit.dds"
 		ideology = social_democrat_ideology
 	}
 }
@@ -162,7 +162,7 @@ create_country_leader = {
 2005.1.1 = {
 	create_country_leader = {
 		name = "Michael Astaphin"
-		picture = "Portrait_DMN_Michael_Astaphin.dds"
+		picture = "Michael_Astaphin.dds"
 		ideology = fiscal_conservative
 	}
 }

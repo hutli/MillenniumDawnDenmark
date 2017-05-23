@@ -143,112 +143,69 @@ set_politics = {
 2000.1.1 = {
 
 	create_country_leader = {
-	name = "Than Shwe"
-	desc = "POLITICIAN_MYA_THAN_SHWE_DESC"
-	picture = "Portrait_MYA_Than_Shwe.dds"
-	expire = "2020.1.1"
-	ideology = autocrat
-	
-		traits = {
-	
-		}
+		name = "Than Shwe"
+		picture = "Than_Shwe.dds"
+		ideology = autocrat
 	}
 
 	create_country_leader = {
-	name = "Aung San Suu Kyi"
-	desc = "POLITICIAN_MYA_AUNG_SAN_SUU_KYI_DESC"
-	picture = "Portrait_MYA_Aung_San_Suu_Kyi.dds"
-	expire = "2020.1.1"
-	ideology = liberalist
+		name = "Aung San Suu Kyi"
+		picture = "Aung_San_Suu_Kyi.dds"
+		ideology = liberalist
+	}
 	
-		traits = {
-	
-		}
+	create_country_leader = {
+		name = "Kyaw Swar Soe"
+		picture = "Kyaw_Swar_Soe.dds"
+		ideology = social_democrat_ideology
 	}
 
 	create_country_leader = {
-	name = "U Than Tin"
-	desc = "POLITICIAN_MYA_U_THAN_TIN_DESC"
-	expire = "2020.1.1"
-	ideology = maoist
-	
-		traits = {
-	
-		}
-	}
-	
-	create_country_leader = {
-	name = "Kyaw Swar Soe"
-	desc = "POLITICIAN_MYA_KYAW_SWAR_SOE_DESC"
-	picture = "Portrait_MYA_Kyaw_Swar_Soe.dds"
-	expire = "2020.1.1"
-	ideology = social_democrat_ideology
-	
-		traits = {
-	
-		}
+		name = "Khin Maung Swe"
+		picture = "Khin_Maung_Swe.dds"
+		ideology = progressive_ideology
 	}
 
 	create_country_leader = {
-	name = "Khin Maung Swe"
-	desc = "POLITICIAN_MYA_KHIN_MAUNG_SWE_DESC"
-	picture = "Portrait_MYA_Khin_Maung_Swe.dds"
-	expire = "2020.1.1"
-	ideology = progressive_ideology
-	
-		traits = {
-	
-		}
-	}
-
-	create_country_leader = {
-	name = "Thein Sein"
-	desc = "POLITICIAN_MYA_THEIN_SEIN_DESC"
-	picture = "Portrait_MYA_Thein_Sein.dds"
-	expire = "2020.1.1"
-	ideology = constitutionalist
-	
-		traits = {
-	
-		}
+		name = "Thein Sein"
+		picture = "Thein_Sein.dds"
+		ideology = constitutionalist
 	}
 
 	create_corps_commander = {
-	name = "Maung Aye"
-	picture = "Portrait_MYA_general_Maung_Aye.dds"
-	skill = 1
+		name = "Sein Win"
+		picture = "generals/Sein_Win.dds"
+		skill = 2
 	}
 
 	create_corps_commander = {
-	name = "Min Aung Hlaing"
-	picture = "Portrait_MYA_general_Min_Aung_Hlaing.dds"
-	skill = 1
+		name = "Maung Aye"
+		picture = "generals/Maung_Aye.dds"
+		skill = 1
 	}
 
 	create_corps_commander = {
-	name = "Sein Win"
-	picture = "Portrait_MYA_general_Sein_Win.dds"
-	skill = 1
+		name = "Min Aung Hlaing"
+		picture = "generals/Min_Aung_Hlaing.dds"
+		skill = 1
 	}
 
 	create_corps_commander = {
-	name = "Soe Win"
-	picture = "Portrait_MYA_general_Soe_Win.dds"
-	skill = 1
+		name = "Soe Win"
+		picture = "generals/Soe_Win.dds"
+		skill = 1
 	}
 
 	create_navy_leader = {
-	name = "Thura Thet Swe"
-		picture = "Portrait_MYA_admiral_Thura_Thet_Swe.dds"
-	traits = { }
-	skill = 1
+		name = "Thura Thet Swe"
+		picture = "admirals/Thura_Thet_Swe.dds"
+		skill = 1
 	}
 
 	create_navy_leader = {
-	name = "Tin Aung San"
-		picture = "Portrait_MYA_admiral_Tin_Aung_San.dds"
-	traits = { }
-	skill = 1
+		name = "Tin Aung San"
+		picture = "admirals/Tin_Aung_San.dds"
+		skill = 1
 	}
 
 }

@@ -4,12 +4,6 @@ state=
 	name="STATE_550"
 	manpower = 6306800
 	
-	resources = {
-		steel=15
-		aluminium=9
-		chromium=4
-	}
-	
 	state_category = town
 	
 	history=
@@ -23,9 +17,10 @@ state=
 			industrial_complex = 3
 			arms_factory = 1
 			air_base = 3
-			12766 = {
-				naval_base = 3
-			}
+			12766 = { naval_base = 3 }
+			12723 = { bunker = 2 }
+			12766 = { bunker = 3 }
+			8043 = { bunker = 2 }
 		}
 	}
 	provinces={

@@ -2,6 +2,10 @@
 state={
 	id=64
 	name="STATE_64"
+	
+	resources = {
+		steel = 115
+	}
 
 	history={
 		owner = GER
@@ -13,10 +17,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 10
-			arms_factory = 3
-			industrial_complex = 5
 			air_base = 6
-
+			industrial_complex = 3
+			arms_factory = 2
 		}
 		add_core_of = GER
 

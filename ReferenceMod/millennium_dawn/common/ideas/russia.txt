@@ -3,10 +3,10 @@ ideas = {
 	country = {
 		
 		SOV_corrupt_oligarchy = {
+			picture = disjointed_government
+		
 			allowed = { always = no }
-			
 			allowed_civil_war = { always = yes }
-			
 			removal_cost = -1
 			
 			modifier = {
@@ -16,10 +16,10 @@ ideas = {
 		}
 		
 		idea_SOV_oligarchic_republic = {
+			picture = army_of_aggression
+		
 			allowed = { always = no }
-			
 			allowed_civil_war = { always = yes }
-			
 			removal_cost = -1
 			
 			modifier = {
@@ -29,10 +29,10 @@ ideas = {
 		}
 		
 		idea_SOV_putinism = {
+			picture = victors_of_ww1
+		
 			allowed = { always = no }
-			
 			allowed_civil_war = { always = yes }
-			
 			removal_cost = -1
 			
 			modifier = {

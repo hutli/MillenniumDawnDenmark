@@ -3,6 +3,8 @@ ideas = {
 	country = {
 	
 		swiss_political_system = {
+		
+			picture = swiss_political_system
 			
 			allowed = {
 				original_tag = SWI

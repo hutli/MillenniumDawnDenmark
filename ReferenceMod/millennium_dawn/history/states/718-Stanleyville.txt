@@ -2,19 +2,12 @@
 state={
 	id=718
 	name="STATE_718"
-	resources={
-		tungsten=15.000
-		chromium=59.000
-		aluminium=41.000
-		steel=78.000
-	}
-
+	
 	history={
 		owner = DRC
+		add_core_of = DRC
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-
+			infrastructure = 1
 		}
 		victory_points = {
 			1950 5 

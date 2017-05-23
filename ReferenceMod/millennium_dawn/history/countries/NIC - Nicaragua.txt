@@ -141,35 +141,16 @@ set_politics = {
 	elections_allowed = yes
 }
 
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Arnoldo Alemán"
 	ideology = counter_progressive_democrat
-	picture = "Portrait_NIC_Arnoldo_Aleman.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Arnoldo_Aleman.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Daniel Ortega"
-	ideology = counter_progressive_democrat
-	picture = "Portrait_NIC_Daniel_Ortega.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Daniel Ortega"
+		ideology = counter_progressive_democrat
+		picture = "Daniel_Ortega.dds"
+	}
 }
-
-
-

@@ -125,55 +125,52 @@ set_politics = {
 
 create_country_leader = {
 	name = "Charles Taylor"
-	picture = "Portrait_LIB_Charles_Taylor.dds"
+	picture = "Charles_Taylor.dds"
 	ideology = counter_progressive_democrat
 }
 	
 2016.1.1 = {
 	set_politics = {
-
-	parties = {
-		
-		islamist = {
-			popularity = 1
+		parties = {
+			islamist = {
+				popularity = 1
+			}
+			nationalist = {
+				popularity = 1
+			}
+			reactionary = {
+				popularity = 2
+			}
+			conservative = {
+				popularity = 25
+			}
+			market_liberal = {
+				popularity = 6
+			}
+			social_liberal = {
+				popularity = 30
+			}
+			social_democrat = {
+				popularity = 5
+			}
+			progressive = {
+				popularity = 10
+			}
+			democratic_socialist = {
+				popularity = 10
+			}
+			communist = {
+				popularity = 10
+			}
 		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 25
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 30
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
-		}
-	}
-	
-	ruling_party = social_liberal
-	last_election = "2011.11.1"
-	election_frequency = 60
-	elections_allowed = yes
+		ruling_party = social_liberal
+		last_election = "2011.11.1"
+		election_frequency = 60
+		elections_allowed = yes
 	}
 	create_country_leader = {
 		name = "Ellen Johnson Sirleaf"
-		picture = "Portrait_LIB_Ellen_Johnson_Sirleaf.dds"
+		picture = "Ellen_Johnson_Sirleaf.dds"
 		ideology = centrist
 	}
 }

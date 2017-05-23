@@ -110,24 +110,16 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		reactionary = {
-			popularity = 3
-		}
-		conservative = {
-			popularity = 36
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_democrat = {
-			popularity = 42
-		}
-		progressive = {
-			popularity = 8
-		}
-		democratic_socialist = {
-			popularity = 5
-		}
+		social_democrat = { popularity = 40.9 }		#SPD
+		conservative = { popularity = 35.3 }		#CDU + CSU + Graue
+		progressive = { popularity = 6.7 }			#Grüne
+		market_liberal = { popularity = 6.2 }		#FDP
+		democratic_socialist = { popularity = 5.1 }	#PDS
+		reactionary = { popularity = 2.8 }			#Republikaner + ProDM + BFB
+		nationalist = { popularity = 1.4 }			#DVU + NPD
+		social_liberal = { popularity = 0.4 }		#Tierschutzpartei + ÖDP
+		communist = { popularity = 0.05 }			#DKP + MLPD
+		fascist = {	popularity = 0.01 }				#Several completely insignifant groups
 	}
 	
 	ruling_party = social_democrat
@@ -148,87 +140,157 @@ add_opinion_modifier = {
 
 create_country_leader = {
 	name = "Pierre Vogel"
-	picture = "Portrait_GER_Pierre_Vogel.dds"
+	picture = "Pierre_Vogel.dds"
 	ideology = islamic_authoritarian
 }
 
 create_country_leader = {
 	name = "Klaus Armstroff"
-	picture = "Portrait_GER_Klaus_Armstroff.dds"
+	picture = "Klaus_Armstroff.dds"
 	ideology = national_socialist
 }
 
 create_country_leader = {
 	name = "Udo Pastörs"
-	picture = "Portrait_GER_Udo_Pastors.dds"
+	picture = "Udo_Pastors.dds"
 	ideology = national_democrat
 }
 
 create_country_leader = {
 	name = "Georg Friedrich I"
-	picture = "Portrait_GER_Georg_Friedrich.dds"
+	picture = "Georg_Friedrich.dds"
 	ideology = absolute_monarchist
 }
 
 create_country_leader = {
 	name = "Ronald Schill"
-	picture = "Portrait_GER_Ronald_Schill.dds"
+	picture = "Ronald_Schill.dds"
 	ideology = counter_progressive_democrat
 }
 
 create_country_leader = {
 	name = "Angela Merkel"
-	picture = "Portrait_GER_Angela_Merkel.dds"
+	picture = "Angela_Merkel.dds"
 	ideology = christian_democrat
 }
 
 create_country_leader = {
 	name = "Wolfgang Gerhardt"
-	picture = "Portrait_GER_Wolfgang_Gerhardt.dds"
+	picture = "Wolfgang_Gerhardt.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Patrick Schiffer"
-	picture = "Portrait_GER_Patrick_Schiffer.dds"
+	picture = "Patrick_Schiffer.dds"
 	ideology = liberalist
 }
 
 create_country_leader = {
 	name = "Gerhard Schröder"
-	picture = "Portrait_GER_Gerhard_Schroeder.dds"
+	picture = "Gerhard_Schroeder.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Joschka Fischer"
-	picture = "Portrait_GER_Joschka_Fischer.dds"
+	picture = "Joschka_Fischer.dds"
 	ideology = green
 }
 
 create_country_leader = {
 	name = "Gregor Gysi"
-	picture = "Portrait_GER_Gregor_Gysi.dds"
+	picture = "Gregor_Gysi.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
 	name = "Patrik Köbele"
-	picture = "Portrait_GER_Patrik_Koebele.dds"
+	picture = "Patrik_Koebele.dds"
 	ideology = marxist
+}
+
+create_field_marshal = {
+	name = "Volker Wieker"
+	picture = "generals/Volker_Wieker.dds"
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "Wolfgang Schneiderhan"
+	picture = "generals/Wolfgang_Schneiderhan.dds"
+	skill = 2
+}
+
+create_field_marshal = {
+	name = "Hans-Peter von Kirchbach"
+	picture = "generals/Hans_Peter_von_Kirchbach.dds"
+	skill = 1
 }
 
 create_corps_commander = {
 	name = "Klaus Reinhardt"
-	picture = "Portrait_GER_general_Klaus_Reinhardt.dds"
-	traits = {}
+	picture = "generals/Klaus_Reinhardt.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Karl-Heinz Lather"
+	picture = "generals/Karl_Heinz_Lather.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Joachim Spiering"
+	picture = "generals/Joachim_Spiering.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Rainer Schuwirth"
+	picture = "generals/Rainer_Schuwirth.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Dieter Stöckmann"
-	picture = "Portrait_GER_general_Dieter_Stockmann.dds"
-	traits = {}
+	picture = "generals/Dieter_Stockmann.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Hans-Lothar Domröse"
+	picture = "generals/Hans_Lothar_Domrose.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Werner Freers"
+	picture = "generals/Werner_Freers.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Egon Ramms"
+	picture = "generals/Egon_Ramms.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Wolf-Dieter Langheld"
+	picture = "generals/Wolf_Dieter_Langheld.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Manfred Nielson"
+	picture = "admirals/Manfred_Nielson.dds"
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Rainer Feist"
+	picture = "admirals/Rainer_Feist.dds"
 	skill = 1
 }
 
@@ -292,21 +354,40 @@ create_corps_commander = {
 	}
 }
 
-2009.1.1 = {
-	set_party_name = {
-		ideology = reactionary
-		long_name = GER_reactionary_party_AfD_long
-		name = GER_reactionary_party_AfD
-	}
+2007.1.1 = {
 	set_party_name = {
 		ideology = democratic_socialist
 		long_name = GER_democratic_socialist_party_DieLinke_long
 		name = GER_democratic_socialist_party_DieLinke
 	}
+}
+
+2009.1.1 = {
+	create_country_leader = {
+		name = "Frank-Walter Steinmeier"
+		picture = "Frank_Walter_Steinmeier.dds"
+		ideology = social_democrat_ideology
+	}
+}
+
+2009.2.1 = {
+	set_party_name = {
+		ideology = reactionary
+		long_name = GER_reactionary_party_AfD_long
+		name = GER_reactionary_party_AfD
+	}
 	create_country_leader = {
 		name = "Bernd Lucke"
-		picture = "Portrait_GER_Bernd_Lucke.dds"
+		picture = "Bernd_Lucke.dds"
 		ideology = oligarchist
+	}
+}
+
+2009.11.13 = {
+	create_country_leader = {
+		name = "Sigmar Gabriel"
+		picture = "Sigmar_Gabriel.dds"
+		ideology = social_democrat_ideology
 	}
 }
 
@@ -316,61 +397,62 @@ create_corps_commander = {
 	}
 }
 
-2013.1.1 = {
-	create_corps_commander = {
-		name = "Volker Wieker"
-		picture = "Portrait_GER_general_Volker_Wieker.dds"
-		traits = {}
-		skill = 2
-	}
-	create_corps_commander = {
-		name = "Hans-Lothar Domröse"
-		picture = "Portrait_GER_general_Hans_Lothar_Domrose.dds"
-		traits = {}
-		skill = 1
-	}
-	create_navy_leader = {
-		name = "Manfred Nielson"
-		picture = "Portrait_GER_admiral_Manfred_Nielson.dds"
-		traits = {}
-		skill = 2
+2011.1.1 = {
+	create_country_leader = {
+		name = "Christian Lindner"
+		picture = "Christian_Lindner.dds"
+		ideology = libertarian
 	}
 }
 
-2014.1.1 = {
+2013.1.1 = {
+	create_country_leader = {
+		name = "Peer Steinbrück"
+		picture = "Peer_Steinbruck.dds"
+		ideology = social_democrat_ideology
+	}
+}
+
+2013.9.23 = {
 	create_country_leader = {
 		name = "Frauke Petry"
-		picture = "Portrait_GER_Frauke_Petry.dds"
+		picture = "Frauke_Petry.dds"
 		ideology = counter_progressive_democrat
 	}
 	set_politics = {
 		last_election = "2013.9.22"
 		elections_allowed = yes
 		parties = {
-			conservative = {
-				popularity = 42
-			}
-			social_democrat = {
-				popularity = 25
-			}
-			reactionary = {
-				popularity = 11
-			}
-			progressive = {
-				popularity = 8
-			}
-			democratic_socialist = {
-				popularity = 8
-			}
-			market_liberal = {
-				popularity = 4
-			}
-			nationalist = {
-				popularity = 3
-			}
-			social_liberal = {
-				popularity = 1
-			}
+			conservative = { popularity = 42.6 }		#CDU + CSU + Freie Wähler + Rentner
+			social_democrat = { popularity = 25.7 }		#SPD
+			democratic_socialist = { popularity = 8.6 }	#Linke
+			progressive = { popularity = 8.4 }			#Grüne
+			market_liberal = { popularity = 4.8 }		#FDP
+			reactionary = { popularity = 4.8 }			#AfD + Republikaner + Volksabstimmung
+			social_liberal = { popularity = 2.8 }		#Piraten + Tierschutzpartei + ÖDP
+			nationalist = { popularity = 1.3 }			#NPD + Rechte
+			fascist = { popularity = 0.2 }				#pro Deutschland + BGD
+			communist = { popularity = 0.1 }			#MLPD + DKP
 		}
+	}
+}
+
+2014.1.1 = { 
+	add_popularity = { ideology = reactionary popularity = 0.01 }
+}
+
+2015.1.1 = { 
+	add_popularity = { ideology = reactionary popularity = 0.02 }
+}
+
+2016.1.1 = { 
+	add_popularity = { ideology = reactionary popularity = 0.03 }
+}
+
+2017.1.26 = {
+	create_country_leader = {
+		name = "Martin Schulz"
+		picture = "Martin_Schulz.dds"
+		ideology = social_democrat_ideology
 	}
 }

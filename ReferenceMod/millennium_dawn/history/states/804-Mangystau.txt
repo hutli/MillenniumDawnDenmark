@@ -1,14 +1,19 @@
 state={
 	id=804
 	name="STATE_804"
+	
+	resources = {
+		chromium=8
+		oil=20
+	}
+	
 	history = {
 		owner = KZH
-		
+		add_core_of = KZH
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
-			arms_factory = 1
+			infrastructure = 3
 			air_base = 4
+			industrial_complex = 1
 		}
 	}
 	provinces={

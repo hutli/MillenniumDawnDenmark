@@ -121,33 +121,20 @@ set_politics = {
 	election_frequency = 24
 	elections_allowed = yes
 }
-2012.1.1 = {
-create_country_leader = {
-	name = "Rosario Crocetta"
-	desc = "POLITICIAN_SIY_ROSARIO_CROCETTA_DESC"
-	picture = "Portrait_SIY_Rosario_Crocetta.dds"
-	expire = "2050.1.1"
-	ideology = democratic_socialist_ideology
-	traits = {
-	    }
-    }
-}
-
 create_country_leader = {
 	name = "Carlo of Bourbon-Two Sicilies"
-	desc = "POLITICIAN_SIY_CARLO_BORBONE_DESC"
-	picture = "Portrait_SIY_Carlo_Borbone.dds"
-	expire = "2050.1.1"
+	picture = "Carlo_Borbone.dds"
 	ideology = absolute_monarchist
-	traits = {
-	}
 }
 create_country_leader = {
 	name = "Angelo Capodicasa"
-	desc = "POLITICIAN_SIY_ANGELO_CAPODICASA_DESC"
-	picture = "Portrait_SIY_Angelo_Capodicasa.dds"
-	expire = "2002.1.1"
+	picture = "Angelo_Capodicasa.dds"
 	ideology = democratic_socialist_ideology
-	traits = {
-	}
+}
+2012.1.1 = {
+	create_country_leader = {
+		name = "Rosario Crocetta"
+		picture = "Rosario_Crocetta.dds"
+		ideology = democratic_socialist_ideology
+    }
 }

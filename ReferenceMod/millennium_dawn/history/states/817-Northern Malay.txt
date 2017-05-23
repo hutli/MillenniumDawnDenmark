@@ -1,9 +1,16 @@
 state={
 	id=817
 	name="STATE_817"
+	
+	resources = {
+		rubber=75
+		oil=21
+		steel=10
+	}
+	
 	history = { 
 		owner = MAY
-		
+		add_core_of = MAY
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 5
@@ -12,12 +19,7 @@ state={
 			7342 = { naval_base = 3 }
 		}
 	}
-	resources = {
-		rubber=175
-		steel=5
-		chromium=5
-		oil=50
-	}
+	
 	provinces={
 		1291 1348 1364 1376 4310 4355 4384 7329 7342 10227 12144 12199 12215 
 	}

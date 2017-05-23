@@ -4,22 +4,20 @@ state={
 	name="STATE_143"
 	manpower = 440000
 	
-	state_category = rural
+	state_category = town
 	
 	resources = {
-		oil=25
+		aluminium=36
+		oil=10
 	}
 
 	history={
 		owner = NOR
 		buildings = {
 			infrastructure = 4
-			arms_factory = 0
-			industrial_complex = 1
 			air_base = 2
 			3022 = {
-				naval_base = 3
-				coastal_bunker = 2
+				naval_base = 1
 			}
 		}
 		victory_points = {

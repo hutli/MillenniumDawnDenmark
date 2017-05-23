@@ -38,7 +38,6 @@ set_technology = {
 	
 	gen1_mbt = 1
 	gen2_mbt = 1
-	gen3_mbt = 1
 	gen3_light = 1
 	gen1_ifv = 1
 	gen1_apc = 1
@@ -63,6 +62,11 @@ set_technology = {
 	carrier_nuclear_reactor = 1
 	submarine_nuclear_reactor = 1
 	cold_war_ship_design = 1
+	frigate1 = 1
+	frigate2 = 1
+	frigate3 = 1
+	corvette1 = 1
+	corvette2 = 1
 	
 	gen2_attack = 1
 	gen3_attack = 1
@@ -121,10 +125,10 @@ set_politics = {
 			popularity = 9
 		}
 		market_liberal = {
-			popularity = 8 #Not correct value
+			popularity = 31
 		}
 		social_liberal = {
-			popularity = 31
+			popularity = 8 #Not correct value
 		}
 		social_democrat = {
 			popularity = 29
@@ -149,7 +153,7 @@ set_politics = {
 create_country_leader = {
 	name = "Poul Nyrup Rasmussen"
 	desc = "POLITICIAN_DEN_POUL_NYRUP_RASMUSSEN_DESC"
-	picture = "Portrait_DEN_Poul_Nyrup_Rasmussen.dds"
+	picture = "Poul_Nyrup_Rasmussen.dds"
 	expire = "2050.1.1"
 	ideology = social_democrat_ideology
 }
@@ -167,7 +171,7 @@ create_country_leader = {
 	desc = "ANDERS_FOGH_RASMUSSEN_DESC"
 	picture = "Portrait_DEN_Anders_Fogh_Rasmussen.dds"
 	expire = "2050.1.1"
-	ideology = centrist
+	ideology = libertarian
 }
 
 create_country_leader = {

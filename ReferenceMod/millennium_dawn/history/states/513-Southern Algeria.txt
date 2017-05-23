@@ -7,17 +7,15 @@ state={
 	state_category = pastoral
 	
 	resources={
-		steel=1
-		tungsten=1
-		chromium=2
-		oil=21
+		oil=2
+		steel = 6
 	}
 
 	history={
 		owner = ALG
+		add_core_of = ALG
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 2
 			air_base = 2
 		}
 	}

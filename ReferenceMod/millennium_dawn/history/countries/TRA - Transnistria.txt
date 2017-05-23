@@ -140,32 +140,16 @@ set_politics = {
 	elections_allowed = yes
 }
 
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Ígor Smirnov"
 	ideology = marxist
-	picture = "Portrait_TRA_igor_Smirnov.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Igor_Smirnov.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Yevgeny Shevchuk"
-	ideology = marxist
-	picture = "Portrait_TRA_Yevgeny_Shevchuk.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Yevgeny Shevchuk"
+		ideology = marxist
+		picture = "Yevgeny_Shevchuk.dds"
+	}
 }

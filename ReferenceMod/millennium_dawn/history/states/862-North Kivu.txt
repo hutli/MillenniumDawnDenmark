@@ -2,16 +2,14 @@ state={
 	id=862
 	name="STATE_862"
 	resources={
-		steel=43.000
-		chromium=30.000
-		tungsten=20.000
+		tungsten = 4
 	}
 
 	history={
 		owner = DRC
+		add_core_of = DRC
 		buildings = {
 			infrastructure = 1
-
 		}
 		victory_points = {
 			1181 1 

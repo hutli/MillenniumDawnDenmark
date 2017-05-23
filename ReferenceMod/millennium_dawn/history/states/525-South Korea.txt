@@ -2,19 +2,19 @@
 state={
 	id=525
 	name="STATE_525"
-	resources={
-		steel=21.000
-		chromium=3.000
-		aluminium=2.000
+	
+	resources = {
+		steel = 254
 	}
-
+	
 	history={
 		owner = KOR
 		buildings = {
-			infrastructure = 9
-			industrial_complex = 7
-			arms_factory = 3
-			dockyard = 2
+			infrastructure = 10
+			air_base = 10
+			industrial_complex = 10
+			arms_factory = 2
+			dockyard = 1
 			anti_air_building = 4
 			7125 = { bunker = 5 }
 		}

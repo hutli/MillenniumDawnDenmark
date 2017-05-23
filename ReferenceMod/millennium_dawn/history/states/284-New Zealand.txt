@@ -6,12 +6,17 @@ state={
 	
 	state_category = city
 	
+	resources = {
+		oil = 4
+	}
+	
 	history={
 		owner = NZL
 		buildings = {
 			infrastructure = 6
-			arms_factory = 2
-			industrial_complex = 4
+			industrial_complex = 5
+			dockyard = 1
+			arms_factory = 1
 			air_base = 4
 			4543 = {
 				naval_base = 3

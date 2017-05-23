@@ -121,21 +121,18 @@ set_politics = {
 
 create_country_leader = {
 	name = "Luc Van den Brande"
-	desc = "POLITICIAN_FLN_LUC_BRANDE_DESC"
-	picture = "Portrait_FLN_Luc_Brande.dds"
-	expire = "2005.1.1"
-	ideology = gaullist
-	traits = {
-	}
+	picture = "Luc_Brande.dds"
+	ideology = fiscal_conservative
 }
 create_country_leader = {
 	name = "Karel De Gutch"
-	desc = "POLITICIAN_FLN_KAREL_GUTCH_DESC"
-	picture = "Portrait_FLN_Karel_Gutch.dds"
-	expire = "2005.1.1"
+	picture = "Karel_Gutch.dds"
 	ideology = liberalist
-	traits = {
-	}
+}
+create_country_leader = {
+	name = "Liesbeth Homans"
+	picture = "Liesbeth_Homans.dds"
+	ideology = national_democrat
 }
 
 2009.1.1 = {
@@ -147,49 +144,22 @@ create_country_leader = {
 }
 	
 2012.1.1 = {
-
     set_politics = {
-
 	    parties = {
-		    nationalist = {
-			    popularity = 37
-		    }
-	    	conservative = {
-		    	popularity = 21
-		    }
-		    social_liberal = {
-		        popularity = 16
-		    }
-		    communist = {
-		        popularity = 16
-		    }
-			progressive = {
-			    popularity = 10
-			}
-			
+		    nationalist = { popularity = 37 }
+	    	conservative = { popularity = 21 }
+		    social_liberal = { popularity = 16 }
+		    communist = { popularity = 16 }
+			progressive = { popularity = 10 }
 	    }    
 	    ruling_party = nationalist
 	    last_election = "2013.1.1"
 	    election_frequency = 60
 	    elections_allowed = yes
 	}
-
-create_country_leader = {
-	name = "Liesbeth Homans"
-	desc = "POLITICIAN_FLN_LIESBETH_HOMANS_DESC"
-	picture = "Portrait_FLN_Liesbeth_Homans.dds"
-	expire = "2050.1.1"
-	ideology = national_democrat
-	traits = {
-	    }
-    }
-create_country_leader = {
-	name = "Kris Peeters"
-	desc = "POLITICIAN_FLN_KRIS_PEETERS_DESC"
-	picture = "Portrait_FLN_Kris_Peeters.dds"
-	expire = "2050.1.1"
-	ideology = liberalist
-	traits = {
-	    }
-    }
+	create_country_leader = {
+		name = "Kris Peeters"
+		picture = "Kris_Peeters.dds"
+		ideology = liberalist
+	}
 }

@@ -6,8 +6,8 @@ state={
 	state_category = pastoral
 	
 	resources = {
-		steel = 6
-		chromium = 1
+		aluminium=400
+		steel = 18
 	}
 
 	history={
@@ -15,8 +15,8 @@ state={
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 2
 		}
 	}
 

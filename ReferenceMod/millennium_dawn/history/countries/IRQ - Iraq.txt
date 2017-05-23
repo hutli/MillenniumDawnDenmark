@@ -138,7 +138,7 @@ set_politics = {
 create_country_leader = {
 	name = "Saddam Hussein"
 	ideology = autocrat
-	picture = "Portrait_IRQ_Saddam_Hussein.dds"
+	picture = "Saddam_Hussein.dds"
 	expire = "2004.1.1"
 	
 	traits = {}
@@ -147,82 +147,55 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ra'ad I"
 	ideology = absolute_monarchist
-	picture = "Portrait_IRQ_Raad_The_First.dds"
-	expire = "2020.1.1"
-	
-	traits = {}
+	picture = "Raad.dds"
 }
 
 create_country_leader = {
 	name = "Muqtada al-Sadr"
 	ideology = counter_progressive_democrat
-	picture = "Portrait_IRQ_Muqtada_al_Sadr.dds"
-	expire = "2020.1.1"
-	
-	traits = {}
+	picture = "Muqtada_al_Sadr.dds"
 }
 
 create_country_leader = {
 	name = "Ibrahim al-Jaafari"
 	ideology = right_wing_conservative
-	picture = "Portrait_IRQ_Ibrahim_al_Jaafari.dds"
-	expire = "2020.1.1"
-	
-	traits = {}
+	picture = "Ibrahim_al_Jaafari.dds"
 }
 
 create_country_leader = {
 	name = "Adnan Pachachi"
 	ideology = libertarian
-	picture = "Portrait_IRQ_Adnan_Pachachi.dds"
-	expire = "2020.1.1"
-	
-	traits = {}
+	picture = "Adnan_Pachachi.dds"
 }
 
 create_country_leader = {
 	name = "Ahmed Chalabi"
 	ideology = centrist
-	picture = "Portrait_IRQ_Ahmed_Chalabi.dds"
-	expire = "2020.1.1"
-	
-	traits = {}
+	picture = "Ahmed_Chalabi.dds"
 }
 
 create_country_leader = {
 	name = "Naseer al-Chaderchi"
 	ideology = social_democrat_ideology
 	picture = ""
-	expire = "2020.1.1"
-	
-	traits = {}
 }
 
 create_country_leader = {
 	name = "Ayad Allawi"
 	ideology = progressive_ideology
-	picture = "Portrait_IRQ_Ayad_Allawi.dds"
-	expire = "2020.1.1"
-	
-	traits = {}
+	picture = "Ayad_Allawi.dds"
 }
 
 create_country_leader = {
 	name = "Hamid Majid Mousa"
 	ideology = marxist
-	picture = "Portrait_IRQ_Hamid_Majid_Mousa.dds"
-	expire = "2020.1.1"
-	
-	traits = {}
+	picture = "Hamid_Majid_Mousa.dds"
 }
 
 create_country_leader = {
 	name = "Mohammad Baqir al-Hakim"
 	ideology = islamic_authoritarian
-	picture = "Portrait_IRQ_Mohammad_Baqir_al_Hakim.dds"
-	expire = "2003.1.1"
-	
-	traits = {}
+	picture = "Mohammad_Baqir_al_Hakim.dds"
 }
 
 2004.1.1 = {
@@ -256,7 +229,7 @@ create_country_leader = {
 	create_country_leader = {
 		name = "Fuad Masum"
 		ideology = fiscal_conservative
-		picture = "Portrait_IRQ_Fuad_Masum.dds"
+		picture = "Fuad_Masum.dds"
 		expire = "2020.1.1"
 	}
 }
@@ -267,10 +240,7 @@ create_country_leader = {
     create_country_leader = {
 	    name = "Abdul Aziz al-Hakim"
 	    ideology = islamic_authoritarian
-	    picture = "Portrait_IRQ_Abdul_Aziz_al_Hakim.dds"
-	    expire = "2009.1.1"
-	
-	    traits = {}
+	    picture = "Abdul_Aziz_al_Hakim.dds"
     }
 }
 
@@ -278,13 +248,8 @@ create_country_leader = {
     create_country_leader = {
 	    name = "Ammar al-Hakim"
 	    ideology = islamic_authoritarian
-	    picture = "Portrait_IRQ_Ammar_al_Hakim.dds"
-	    expire = "2020.1.1"
-	
-	    traits = {}
+	    picture = "Ammar_al_Hakim.dds"
     }
 }
 
-2016.5.1 = {
-	oob = "IRQ_2016"
-}
+2016.5.1 = { oob = "IRQ_2016" }

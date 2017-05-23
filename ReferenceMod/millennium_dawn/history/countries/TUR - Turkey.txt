@@ -136,14 +136,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Bulent Ecevit"
-	picture = "Portrait_TUR_Bulent_Ecevit_Davos.dds"
+	picture = "Bulent_Ecevit.dds"
 	ideology = social_democrat_ideology
 	expire = "2006.1.1"
 }
 
 create_country_leader = {
 	name = "Recep Erdogan"
-	picture = "Portrait_TUR_Recep_Tayyip_Erdogan.dds"
+	picture = "Recep_Tayyip_Erdogan.dds"
 	ideology = right_wing_conservative
 	expire = "2020.1.1"
 }
@@ -168,7 +168,7 @@ create_country_leader = {
 	
 	create_country_leader = {
 		name = "Kemal Kilicdaroglu"
-		picture = "Portrait_TUR_Kemal_Kilicdaroglu.dds"
+		picture = "Kemal_Kilicdaroglu.dds"
 		ideology = social_democrat_ideology
 		expire = "2003.1.1"
 	}

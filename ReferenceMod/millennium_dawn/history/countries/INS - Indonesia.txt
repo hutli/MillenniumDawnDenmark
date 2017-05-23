@@ -126,160 +126,103 @@ set_politics = {
 
 create_country_leader = {
 	name = "Abdurrahman Wahid"
-	desc = "POLITICIAN_IDO_ABDURRAHMAN_WAHID_DESC"
-	picture = "Portrait_IDO_Abdurrahman_Wahid.dds"
-	expire = "2020.1.1"
+	picture = "Abdurrahman_Wahid.dds"
 	ideology = national_democrat
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Megawati Sukarnoputri"
-	desc = "POLITICIAN_IDO_MEGAWATI_SUKARNOPUTRI_DESC"
-	picture = "Portrait_IDO_Megawati_Sukarnoputri.dds"
-	expire = "2015.1.1"
+	picture = "Megawati_Sukarnoputri.dds"
 	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Prabowo Subianto Djojohadikusumo"
-	desc = "POLITICIAN_IDO_PRABOWO_SUBIANTO_DESC"
-	picture = "Portrait_IDO_Prabowo_Subianto.dds"
-	expire = "2020.1.1"
+	picture = "Prabowo_Subianto.dds"
 	ideology = libertarian
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Wiranto"
-	desc = "POLITICIAN_IDO_WIRANTO_DESC"
-	picture = "Portrait_IDO_Wiranto.dds"
-	expire = "2020.1.1"
+	picture = "Wiranto.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Akbar Tandjung"
-	desc = "POLITICIAN_IDO_AKBAR_TANDJUNG_DESC"
-	picture = "Portrait_IDO_Akbar_Tandjung.dds"
-	expire = "2015.1.1"
+	picture = "Akbar_Tandjung.dds"
 	ideology = fiscal_conservative
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Susilo Bambang Yudhoyono"
-	desc = "POLITICIAN_IDO_SUSILO_BAMBANG_YUDHOYONO_DESC"
-	picture = "Portrait_IDO_Susilo_Bambang_Yudhoyono.dds"
-	expire = "2020.1.1"
+	picture = "Susilo_B_Yudhoyono.dds"
 	ideology = liberalist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Nur Mahmudi Ismail"
-	desc = "POLITICIAN_IDO_NUR_MAHMUDI_ISMAIL_DESC"
-	picture = "Portrait_IDO_Nur_Mahmudi_Ismail.dds"
-	expire = "2020.1.1"
+	picture = "NM_Ismail.dds"
 	ideology = oligarchist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Malem Sambat Kaban"
-	desc = "POLITICIAN_IDO_MALEM_SAMBAT_KABAN_DESC"
-	picture = "Portrait_IDO_Malem_Sambat_Kaban.dds"
-	expire = "2020.1.1"
+	picture = "Malem_S_Kaban.dds"
 	ideology = islamic_republican
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "HR Hartono"
-	desc = "POLITICIAN_IDO_HR_HARTONO_DESC"
-	picture = "Portrait_IDO_HR_Hartono.dds"
-	expire = "2020.1.1"
+	picture = "HR_Hartono.dds"
 	ideology = rexist
-	
-	traits = {
-	
-	}
 }
 
 create_corps_commander = {
 	name = "Bambang Darmono"
-	picture = "Portrait_IDO_general_Bambang_Darmono.dds"
-	skill = 1
+	picture = "generals/Bambang_Darmono.dds"
+	skill = 2
 }
 
 create_corps_commander = {
 	name = "Gatot Numantyo"
-	picture = "Portrait_IDO_general_Gatot_Nurmantyo.dds"
+	picture = "generals/Gatot_Nurmantyo.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Jenderal Mulyono"
-	picture = "Portrait_IDO_general_Jenderal_Mulyono.dds"
+	picture = "generals/Jenderal_Mulyono.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Moeldoko"
-	picture = "Portrait_IDO_general_Moeldoko.dds"
-	skill = 2
+	picture = "generals/Moeldoko.dds"
+	skill = 1
 }
 
 create_corps_commander = {
 	name = "Muhammad Munir"
-	picture = "Portrait_IDO_general_Muhammad_Munir.dds"
-	skill = 2
+	picture = "generals/Muhammad_Munir.dds"
+	skill = 1
 }
 
 create_navy_leader = {
 	name = "Ade Supandi"
-	picture = "Portrait_IDO_admiral_Ade_Supandi.dds"
-	traits = { }
+	picture = "admirals/Ade_Supandi.dds"
 	skill = 2
 }
 
 create_navy_leader = {
 	name = "Marsetio"
-	picture = "Portrait_IDO_admiral_Marsetio.dds"
-	traits = { }
-	skill = 2
+	picture = "admirals/Marsetio.dds"
+	skill = 1
 }
 
 create_navy_leader = {
 	name = "Soeparno"
-	picture = "Portrait_IDO_admiral_Soeparno.dds"
-	traits = { }
+	picture = "admirals/Soeparno.dds"
 	skill = 1
 }
 
@@ -309,7 +252,7 @@ create_navy_leader = {
 create_country_leader = {
 	name = "Joko Widodo"
 	desc = "POLITICIAN_IDO_JOKO_WIDODO_DESC"
-	picture = "Portrait_IDO_Joko_Widodo.dds"
+	picture = "Joko_Widodo.dds"
 	expire = "2020.1.1"
 	ideology = progressive_ideology
 	
@@ -321,7 +264,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Aburizal Bakrie"
 	desc = "POLITICIAN_IDO_ABURIZAL_BAKRIE_DESC"
-	picture = "Portrait_IDO_Aburizal_Bakrie.dds"
+	picture = "Aburizal_Bakrie.dds"
 	expire = "2020.1.1"
 	ideology = fiscal_conservative
 	

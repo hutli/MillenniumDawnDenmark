@@ -97,6 +97,11 @@ set_technology = {
 	excavation1 = 1
 }
 
+add_opinion_modifier = {
+	target = ISR
+	modifier = death_to_israel
+}
+
 set_country_flag = dominant_religion_islam
 set_country_flag = shia_islam
 
@@ -156,123 +161,67 @@ set_politics = {
 create_country_leader = {
 	name = "Hafez al-Assad"
 	ideology = autocrat
-	picture = "Portrait_SYR_Hafez_Al_Assad.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Hafez_Al_Assad.dds"
 }
 
 create_country_leader = {
 	name = "Mired I"
 	ideology = absolute_monarchist
-	picture = "Portrait_SYR_Mired_The_First.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Mired_The_First.dds"
 }
 
 create_country_leader = {
 	name = "Ali Haidar"
 	ideology = counter_progressive_democrat
-	picture = "Portrait_SYR_Ali_Haidar.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Ali_Haidar.dds"
 }
 
 create_country_leader = {
 	name = "Anas al-Abdah"
 	ideology = libertarian
-	picture = "Portrait_SYR_Anas_al_Abdah.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Anas_al_Abdah.dds"
 }
 
 create_country_leader = {
 	name = "Hassan Abdul Azim"
 	ideology = centrist
-	picture = "Portrait_SYR_Hassan_abdul_Azim.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Hassan_Abdul_Azim.dds"
 }
 
 create_country_leader = {
 	name = "Riad al-Turk"
 	ideology = social_democrat_ideology
-	picture = "Portrait_SYR_Riad_al_Turk.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Riad_al_Turk.dds"
 }
 
 create_country_leader = {
 	name = "Farid Ghadry"
 	ideology = progressive_ideology
-	picture = "Portrait_SYR_Farid_Ghadry.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Farid_Ghadry.dds"
 }
 
 create_country_leader = {
 	name = "Ibrahim Makhous"
 	ideology = democratic_socialist_ideology
-	picture = "Portrait_SYR_Ibrahim_Makhous.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Ibrahim_Makhous.dds"
 }
 
 create_country_leader = {
 	name = "Wisal Farha Bakdash"
 	ideology = leninist
-	picture = ""
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Ali Sadreddine Al-Bayanouni"
 	ideology = islamic_republican
-	picture = "Portrait_SYR_Ali_Sadreddine_al_Bayanouni.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Ali_S_al_Bayanouni.dds"
 }
 
 2000.7.17 = {
     create_country_leader = {
 	    name = "Bashar al-Assad"
 	    ideology = autocrat
-	    picture = "Portrait_SYR_Bashar_Al_Assad.dds"
-	    expire = "2020.1.1"
-	 
-	    traits = {
-	
-	    }
+	    picture = "Bashar_Al_Assad.dds"
     }
 }
 

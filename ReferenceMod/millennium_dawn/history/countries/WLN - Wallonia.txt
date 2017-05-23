@@ -125,21 +125,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Jean-Claude Van Cauwenberghe"
-	desc = "POLITICIAN_WLN_JEAN_CAUWENBERGHE_DESC"
-	picture = "Portrait_WLN_Jean_Cauwenberghe.dds"
-	expire = "2005.1.1"
+	picture = "Jean_Cauwenberghe.dds"
 	ideology = democratic_socialist_ideology
-	traits = {
-	}
 }
+
 create_country_leader = {
 	name = "Serge Jubla"
-	desc = "POLITICIAN_WLN_SERGE_KUBLA_DESC"
-	picture = "Portrait_WLN_Serge_Kubla.dds"
-	expire = "2005.1.1"
+	picture = "Serge_Kubla.dds"
 	ideology = liberalist
-	traits = {
-	}
 }
 
 2009.1.1 = {
@@ -166,9 +159,7 @@ create_country_leader = {
 }
 	
 2012.1.1 = {
-
     set_politics = {
-
 	    parties = {
 		    nationalist = {
 			    popularity = 8
@@ -195,23 +186,14 @@ create_country_leader = {
 	    election_frequency = 60
 	    elections_allowed = yes
 	}
-
-create_country_leader = {
-	name = "Rudy Demotte"
-	desc = "POLITICIAN_WLN_RUDY_DEMOTTE_DESC"
-	picture = "Portrait_WLN_Rudy_Demotte.dds"
-	expire = "2050.1.1"
-	ideology = democratic_socialist_ideology
-	traits = {
-	    }
-    }
-create_country_leader = {
-	name = "Willy Borsus"
-	desc = "POLITICIAN_WLN_KRIS_BORSUS_DESC"
-	picture = "Portrait_WLN_Willy_Borsus.dds"
-	expire = "2050.1.1"
-	ideology = liberalist
-	traits = {
-	    }
-    }
+	create_country_leader = {
+		name = "Rudy Demotte"
+		picture = "Rudy_Demotte.dds"
+		ideology = democratic_socialist_ideology
+	}
+	create_country_leader = {
+		name = "Willy Borsus"
+		picture = "Willy_Borsus.dds"
+		ideology = liberalist
+	}
 }

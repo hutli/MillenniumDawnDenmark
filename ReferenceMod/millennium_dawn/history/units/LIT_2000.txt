@@ -6,7 +6,7 @@
 		infantry = { x = 0 y = 1 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
 	}
 }
 division_template = {
@@ -71,4 +71,19 @@ units = {
 		start_experience_factor = 0.3
 	}
 	
+	navy = {
+		name = "Lietuvos karines juru pajegos"
+		base = 6314
+		location = 6314
+
+		ship = {
+			name = "F11 „Zemaitis”"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = LIT }}}
+			
+		ship = {
+			name = "F12 „Aukstaitis”"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = LIT }}}
+	}
 }

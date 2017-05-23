@@ -2,16 +2,18 @@ state={
 	id=781
 	name="STATE_781"
 	
+	resources = {
+		tungsten=77
+	}
+	
 	history = {
 		owner = RWA
-		
+		add_core_of = RWA
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 3
 			arms_factory = 1
 		}
-		add_core_of = RWA
-		
 		victory_points = { 9962 1 }
 	}
 	

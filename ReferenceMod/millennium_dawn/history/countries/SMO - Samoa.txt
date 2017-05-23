@@ -6,8 +6,6 @@ set_research_slots = 4
 set_convoys = 500
 set_national_unity = 0.75
 
-set_country_flag = starting_stability_high
-
 set_country_flag = country_language_english
 
 set_technology = {
@@ -103,40 +101,34 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
 		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
+			popularity = 85
 		}
 		social_liberal = {
-			popularity = 25
+			popularity = 1
 		}
 		social_democrat = {
-			popularity = 5
+			popularity = 2
 		}
 		progressive = {
 			popularity = 10
 		}
 		democratic_socialist = {
-			popularity = 10
+			popularity = 1
 		}
 		communist = {
-			popularity = 10
+			popularity = 1
 		}
 	}
 	
 	ruling_party = conservative
-	last_election = "1997.1.1"
+	last_election = "1998.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Tuilaepa Aiono Sailele Malielegaoi"
+	picture = "Tuilaepa_AS_Malielegaoi.dds"
+	ideology = right_wing_conservative
 }

@@ -1,59 +1,90 @@
-﻿
-division_template = {
-	name = "Infantry Brigade"
+﻿division_template = {
+	name = "Piechota"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
 	}
 }
 division_template = {
-	name = "Podhale Brigade"
+	name = "Brygada P.Gorskiej"
 	
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
 		mountaineers = { x = 0 y = 2 }
-		mechanized = { x = 0 y = 3 }
+		mountaineers = { x = 0 y = 3 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
 	}
 }
 division_template = {
-	name = "Motorized Brigade"
+	name = "Zmotoryzowana"
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
 		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
 	}
 }
 division_template = {
-	name = "Mechanized Brigade"
+	name = "Zmechanizowana"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		mechanized = { x = 0 y = 3 }
+		modern_armor = { x = 0 y = 0 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4}
 	}
 }
 division_template = {
-	name = "Special Forces Brigade"
+	name = "Kawaleria Pancerna"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4}
+	}
+}
+division_template = {
+	name = "Sily Specjalne"
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
@@ -67,11 +98,11 @@ division_template = {
 		engineer = { x = 0 y = 1 }
 		recon = { x = 0 y = 2 }
 		artillery = { x = 0 y = 3 }
-		military_police = { x = 0 y = 4 }
+		anti_tank = { x = 0 y = 4 }
 	}
 }
 division_template = {
-	name = "Marine Brigade"
+	name = "Piechota Morska"
 	
 	regiments = {
 		marine = { x = 0 y = 0 }
@@ -83,10 +114,11 @@ division_template = {
 		field_hospital = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
 	}
 }
 division_template = {
-	name = "Air Cavalry Brigade"
+	name = "Kawaleria Powietrzna"
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
@@ -98,40 +130,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		modern_armor = { x = 0 y = 1 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		engineer = { x = 0 y = 2 }
-	}
-	
-	priority = 2
-}
-division_template = {
-	name = "Armored Cavalry Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Airborne Brigade"
+	name = "Powietrzno-Desantowa"
 	
 	regiments = {
 		paratrooper = { x = 0 y = 0 }
@@ -144,192 +143,267 @@ division_template = {
 		engineer = { x = 0 y = 1 }
 		recon = { x = 0 y = 2 }
 	}
-	
 	priority = 2
 }
 division_template = {
-	name = "Artillery Regiment"
+	name = "Pluk Altylerii"
 	
 	regiments = {
 		artillery_brigade = { x = 0 y = 0 }
 		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+
 	}
 	support = {
-		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 	}
-	
 	priority = 0
 }
 division_template = {
-	name = "Anti-Air Regiment"
+	name = "P.Lot"
 	
 	regiments = {
 		anti_air_brigade = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		anti_air_brigade = { x = 0 y = 2 }
+		anti_air_brigade = { x = 0 y = 3 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }
 	}
-	
 	priority = 0
 }
 division_template = {
-	name = "Recon Regiment"
+	name = "Zwiad"
 	
 	regiments = {
-		cavalry = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 	}
-	
 	priority = 0
 }
 
 units = {
 	division = {
-		name = "Polish Marines"
+		name = "Piechota Morska"
 		location = 362		#Danzig
-		division_template = "Marine Brigade"
+		division_template = "Piechota Morska"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Polish Special Forces"
+		name = "Komandosi"
 		location = 3544		#Warsaw
-		division_template = "Special Forces Brigade"
-		start_experience_factor = 0.6
+		division_template = "Sily Specjalne"
+		start_experience_factor = 0.75
 	}
 	division = {
 		name = "6th Airborne Brigade"
 		location = 9427		#Krakow
-		division_template = "Airborne Brigade"
+		division_template = "Powietrzno-Desantowa"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "21st Podhale Rifles"
 		location = 6499		#Rzeszow
-		division_template = "Podhale Brigade"
+		division_template = "Zmechanizowana"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "25th Air Cavalry Brigade"
 		location = 3482		#Tomaszow Mazowiecki
-		division_template = "Air Cavalry Brigade"
+		division_template = "Kawaleria Powietrzna"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "10th Armored Cavalry Brigade"
 		location = 6595		#Świętoszów
-		division_template = "Armored Cavalry Brigade"
+		division_template = "Kawaleria Pancerna"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "34th Armored Cavalry Brigade"
 		location = 3438		#Zagan
-		division_template = "Armored Cavalry Brigade"
+		division_template = "Kawaleria Pancerna"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "17th Mechanized Brigade"
 		location = 11478	#Międzyrzecz
-		division_template = "Mechanized Brigade"
+		division_template = "Zmechanizowana"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "23rd Artillery Regiment"
 		location = 11517	#Bolesławiec
-		division_template = "Artillery Regiment"
+		division_template = "Pluk Altylerii"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "4th Anti-aircraft Regiment"
 		location = 444		#Czerwieńsk
-		division_template = "Anti-Air Regiment"
+		division_template = "P.Lot"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "2nd 'Legion' Mechanized Brigade"
 		location = 9277		#Złocieniec
-		division_template = "Mechanized Brigade"
+		division_template = "Zmechanizowana"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "7th Coastal Defence Brigade"
 		location = 11372	#Słupsk
-		division_template = "Motorized Brigade"
+		division_template = "Zmechanizowana"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "12th Mechanized Brigade"
 		location = 6282		#Szczecin
-		division_template = "Mechanized Brigade"
+		division_template = "Zmechanizowana"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "5th Artillery Regiment"
 		location = 11517	#Sulechów
-		division_template = "Artillery Regiment"
+		division_template = "Pluk Altylerii"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "8th Anti-aircraft Regiment"
 		location = 9361		#Koszalin
-		division_template = "Anti-Air Regiment"
+		division_template = "P.Lot"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "1st 'Warsaw' Armored Brigade"
 		location = 3544		#Warsaw
-		division_template = "Armored Brigade"
+		division_template = "Kawaleria Pancerna"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "9th Armored Cavalry Brigade"
 		location = 6402		#Braniewo
-		division_template = "Armored Cavalry Brigade"
+		division_template = "Kawaleria Pancerna"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "15th Mechanized Brigade"
 		location = 9372		#Giżycko
-		division_template = "Mechanized Brigade"
+		division_template = "Zmechanizowana"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "20th Mechanized Brigade"
 		location = 9398		#Bartoszyce
-		division_template = "Mechanized Brigade"
+		division_template = "Zmechanizowana"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "11th Artillery Regiment"
 		location = 266		#Węgorzewo
-		division_template = "Artillery Regiment"
+		division_template = "Pluk Altylerii"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "15th Anti-aircraft Regiment"
 		location = 9327		#Goldap
-		division_template = "Anti-Air Regiment"
+		division_template = "P.Lot"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "2nd Recon Regiment"
 		location = 6580		#Hrubieszów
-		division_template = "Recon Regiment"
+		division_template = "Zwiad"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "9th Recon Regiment"
 		location = 3351		#Lidzbark Warmiński
-		division_template = "Recon Regiment"
+		division_template = "Zwiad"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "18th Recon Regiment"
 		location = 11301	#Bialystok
-		division_template = "Recon Regiment"
+		division_template = "Zwiad"
 		start_experience_factor = 0.3
 	}
+	
+### NAVY OOB ###
+
+	navy = {
+		name = "3 Flotylla Okretow"
+		base = 362
+		location = 362
+
+		ship = {
+			name = "ORP Gen. K. Pulaski"
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Gen. T. Kosciuszko"
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Orzel"
+			definition = submarine
+			equipment = { submarine_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Bielik"
+			definition = submarine
+			equipment = { submarine_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Kondor"
+			definition = submarine
+			equipment = { submarine_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Sokol"
+			definition = submarine
+			equipment = { submarine_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Sep"
+			definition = submarine
+			equipment = { submarine_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Kaszub"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Orkan"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Piorun"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Grom"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Kormoran"
+			definition = corvette
+			equipment = { corvette_2 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Flaming"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Mewa"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = POL }}}
+		ship = {
+			name = "ORP Czajka"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = POL }}}
+	}
+	
 }
 
 ### Air OOB ###
@@ -370,5 +444,33 @@ air_wings = {
 			owner = "POL" 
 			amount = 18
 		}
+	}
+	63 = {
+		#PLZ M28 Bryza
+		jet_mpa_equipment_2 = {
+			owner = "POL" 
+			amount = 8
+		}
+	}
+	10 = {
+		#C-295M,C-130E
+		transport_plane_equipment_1 = {
+			owner = "POL" 
+			amount = 21
+		}
+	}
+}
+
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "POL"
+		}
+		requested_factories = 4
+		progress = 0.1
+		efficiency = 100
+		amount = 210000
 	}
 }

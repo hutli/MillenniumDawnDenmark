@@ -135,20 +135,20 @@ set_politics = {
 
 create_country_leader = {
 	name = "António Guterres"
-	picture = "Portrait_POR_Antonio_Guterres.dds"
+	picture = "Antonio_Guterres.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Duarte III. Pio de Bragança"
-	picture = "Portrait_POR_Duarte_Pio.dds"
+	name = "Duarte III Pio de Bragança"
+	picture = "Duarte_Pio.dds"
 	ideology = absolute_monarchist
 }
 
 2014.9.1 = {
 	create_country_leader = {
 		name = "António Costa"
-		picture = "Portrait_POR_Antonio_Costa.dds"
+		picture = "Antonio_Costa.dds"
 		ideology = social_democrat_ideology
 	}
 }

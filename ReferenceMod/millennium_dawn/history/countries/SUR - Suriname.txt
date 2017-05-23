@@ -143,33 +143,16 @@ set_politics = {
 	elections_allowed = no
 }
 
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Ronald Venetiaan"
 	ideology = centrist
-	picture = "Portrait_SUR_Ronald_Venetiaan.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Ronald_Venetiaan.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Dési Bouterse"
-	ideology = liberalist
-	picture = "Portrait_SUR_Desi_Bouterse.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Dési Bouterse"
+		ideology = liberalist
+		picture = "Desi_Bouterse.dds"
+	}
 }
-

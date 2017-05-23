@@ -144,13 +144,8 @@ set_politics = {
 
 create_country_leader = {
 	name = "Muhammad Rafiq Tarar"
-	picture = "Picture_PKS_Muhammad_Rafiq_Tarar.dds"
-	expire = "2020.1.1"
+	picture = "Muhammad_R_Tarar.dds"
 	ideology = islamic_republican
-	
-	traits = {
-	
-	}
 }
 
 2015.1.1 = {

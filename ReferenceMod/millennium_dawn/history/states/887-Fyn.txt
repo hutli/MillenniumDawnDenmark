@@ -8,8 +8,9 @@ state={
 		owner = DEN
 		add_core_of = DEN
 		buildings = {
-			infrastructure = 4
+			infrastructure = 9
 			industrial_complex = 1
+			air_base = 2
 			3325 = {
 				naval_base = 3
 			}

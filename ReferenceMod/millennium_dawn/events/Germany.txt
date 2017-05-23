@@ -129,7 +129,7 @@ country_event = {
 		set_country_flag = helmut_kohl_returns_to_politics
 		create_country_leader = {
 			name = "Helmut Kohl"
-			picture = "Portrait_GER_Helmut_Kohl.dds"
+			picture = "Helmut_Kohl.dds"
 			ideology = fiscal_conservative
 		}
 		hidden_effect = { 

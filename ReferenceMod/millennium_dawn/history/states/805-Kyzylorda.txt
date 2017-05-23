@@ -3,6 +3,11 @@ state={
 	name="STATE_805"
 	history = {
 		owner = KZH
+		add_core_of = KZH
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
 	}
 	provinces={
 		4578 4581 4636 4638 7486 10353 10366 12471 

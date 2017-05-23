@@ -103,16 +103,14 @@ add_ideas = {
 }
 
 set_politics = {
-
 	parties = {
-		progressive = {
-			popularity = 40
-		}
-		social_liberal = {
-			popularity = 60
-		}
+		nationalist = { popularity = 2 }
+		democratic_socialist = { popularity = 3 }
+		progressive = { popularity = 40 }
+		social_liberal = { popularity = 45 }
+		conservative = { popularity = 9 }
+		reactionary = { popularity = 1 }
 	}
-	
 	ruling_party = social_liberal
 	last_election = "1997.1.1"
 	election_frequency = 48
@@ -121,15 +119,15 @@ set_politics = {
 
 create_country_leader = {
 	name = "Omar Bongo"
-	picture = "Portrait_GAB_Omar_Bongo.dds"
+	picture = "Omar_Bongo.dds"
 	ideology = centrist
 	expire = "2009.6.8"
 }
 
 2009.6.8 = {
 	create_country_leader = {
-	name = "Ali Bongo Ondimba"
-	picture = "Portrait_GAB_Ali_Bongo_Ondimba.dds"
-	ideology = liberalist
+		name = "Ali Bongo Ondimba"
+		picture = "Ali_B_Ondimba.dds"
+		ideology = liberalist
 	}
 }

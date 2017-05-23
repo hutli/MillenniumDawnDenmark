@@ -4,81 +4,43 @@
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 0 }
 	}
 }
 division_template = {
-	name = "Armored Brigade"
+	name = "Tactical Support Brigade"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		modern_armor = { x = 0 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
+		anti_air
 	}
-}
-division_template = {
-	name = "Paratrooper Brigade"
-	
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
-}
-division_template = {
-	name = "Mountain Brigade"
-	
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Marine Brigade"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
 }
 
 units = {
 	
 	division = {
-		name = "4th Infantry"
+		name = "4th Infantry Regiment"
 		division_template = "Infantry Brigade"
 		location = 9894
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "5th Infantry"
+		name = "5th Infantry Regiment"
 		division_template = "Infantry Brigade"
 		location = 6799
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "6th Infantry"
+		name = "6th Infantry Regiment"
 		division_template = "Infantry Brigade"
 		location = 6983
 		start_experience_factor = 0.3
@@ -86,11 +48,22 @@ units = {
 	
 	division = {
 		name = "Tactical Support Brigade"
-		division_template = "Infantry Brigade"
+		division_template = "Tactical Support Brigade"
 		location = 11899
 		start_experience_factor = 0.3
 	}
 	
 }
 
-### Air OOB ### - No combat air force as of 2016.
+### Air OOB ###
+
+air_wings = {
+	104 = {
+		#J-22
+		jet_attack_equipment_2 = {
+			owner = "BOS" 
+			amount = 7
+		}
+
+	}
+}

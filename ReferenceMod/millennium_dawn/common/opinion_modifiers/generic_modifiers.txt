@@ -22,6 +22,14 @@ opinion_modifiers = {
 		value = -5
 	}
 
+	ideological_enemy = {
+		value = -50
+	}
+	
+	attacks_on_our_economy = {
+		value = -25
+	}
+	
 	loyal_to_our_enemy = {
 		value = -40
 	}

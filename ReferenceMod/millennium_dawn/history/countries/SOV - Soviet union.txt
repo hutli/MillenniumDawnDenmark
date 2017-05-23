@@ -159,169 +159,136 @@ give_guarantee = TRA
 
 create_country_leader = {
 	name = "Vladimir Putin"
-	picture = "Portrait_SOV_Vladimir_Putin.dds"
+	picture = "Vladimir_Putin.dds"
 	ideology = counter_progressive_democrat
-	
 	traits = {
 		popular_figurehead
 	}
 }
-
 create_country_leader = {
 	name = "Gennady Zyuganov"
-	picture = "Portrait_SOV_Gennady_Zyuganov.dds"
+	picture = "Gennady_Zyuganov.dds"
 	ideology = stalinist
 }
-
 create_country_leader = {
 	name = "Nicholas Romanov"
-	picture = "Portrait_SOV_Nicholas_Romanov.dds"
+	picture = "Nicholas_Romanov.dds"
 	ideology = absolute_monarchist
 }
-
 create_country_leader = {
 	name = "Sergey Kiriyenko"
-	picture = "Portrait_SOV_Sergey_Kiriyenko.dds"
+	picture = "Sergey_Kiriyenko.dds"
 	ideology = fiscal_conservative
 }
-
 create_country_leader = {
 	name = "Grigory Yavlinski"
-	picture = "Portrait_SOV_Grigory_Yavlinski.dds"
+	picture = "Grigory_Yavlinski.dds"
 	ideology = liberalist
 }
-
 create_country_leader = {
 	name = "Alexei Navalny"
-	picture = "Portrait_SOV_Alexei_Navalny.dds"
+	picture = "Alexei_Navalny.dds"
 	ideology = progressive_ideology
 }
-
 create_country_leader = {
 	name = "Mikhail Kasyanov"
-	picture = "Portrait_SOV_Mikhail_Kasyanov.dds"
+	picture = "Mikhail_Kasyanov.dds"
 	ideology = libertarian
 }
-
 create_country_leader = {
 	name = "Gennady Semigin"
-	picture = "Portrait_SOV_Gennady_Semigin.dds"
+	picture = "Gennady_Semigin.dds"
 	ideology = democratic_socialist_ideology
 }
-
 create_country_leader = {
 	name = "Sergei Mironov"
-	picture = "Portrait_SOV_Sergei_Mironov.dds"
+	picture = "Sergei_Mironov.dds"
 	ideology = social_democrat_ideology
 }
-
-
 create_country_leader = {
 	name = "Vladimir Zhirinovsky"
-	picture = "Portrait_SOV_Vladimir_Zhirinovsky.dds"
+	picture = "Vladimir_Zhirinovsky.dds"
 	ideology = proto_fascist
 }
-
-
 create_country_leader = {
 	name = "Andrey Savelyev"
-	picture = "Portrait_SOV_Andrey_Savelyev.dds"
+	picture = "Andrey_Savelyev.dds"
 	ideology = national_socialist
-	
-	traits = {
-		popular_figurehead
-	}
 }
 
 create_field_marshal = {
 	name = "Igor Sergeyev"
-	picture = "Portrait_SOV_general_Igor_Sergeyev.dds"
+	picture = "generals/Igor_Sergeyev.dds"
 	skill = 1
 	traits = { old_guard }
 }
 
 create_corps_commander = {
-	name = "Anatoly Antonov"
-	picture = "Portrait_SOV_general_Anatoly_Antonov.dds"
-	skill = 1
+	name = "Sergey Shoygu"
+	picture = "generals/Sergey_Shoygu.dds"
+	skill = 4
+	traits = { trickster urban_assault_specialist }
 }
-
 create_corps_commander = {
 	name = "Igor Sergun"
-	picture = "Portrait_SOV_general_Igor_Sergun.dds"
+	picture = "generals/Igor_Sergun.dds"
 	skill = 2
 }
-
+create_corps_commander = {
+	name = "Anatoly Antonov"
+	picture = "generals/Anatoly_Antonov.dds"
+	skill = 1
+}
 create_corps_commander = {
 	name = "Pavel Grachev"
-	picture = "Portrait_SOV_general_Pavel_Grachev.dds"
+	picture = "generals/Pavel_Grachev.dds"
 	skill = 1
-	traits = {
-		old_guard
-	}
+	traits = { old_guard }
 }
-
-create_corps_commander = {
-	name = "Sergey Shoygu"
-	picture = "Portrait_SOV_general_Sergey_Shoygu.dds"
-	skill = 4
-	traits = {
-		trickster
-		urban_assault_specialist
-	}
-}
-
 create_corps_commander = {
 	name = "Valery Gerasimov"
-	picture = "Portrait_SOV_general_Valery_Gerasimov.dds"
+	picture = "generals/Valery_Gerasimov.dds"
 	skill = 1
 }
-
 create_corps_commander = {
 	name = "Oleg Salyukov"
-	picture = "Portrait_SOV_general_Oleg_Salyukov.dds"
+	picture = "generals/Oleg_Salyukov.dds"
 	skill = 1
 }
-
 create_corps_commander = {
 	name = "Andrey Kartapolov"
-	picture = "Portrait_SOV_general_Andrey_Kartapolov.dds"
+	picture = "generals/Andrey_Kartapolov.dds"
 	skill = 1
 }
-
 create_corps_commander = {
 	name = "Vladimir Zarudnitsky"
-	picture = "Portrait_SOV_general_Vladimir_Zarudnitsky.dds"
+	picture = "generals/Vladimir_Zarudnitsky.dds"
 	skill = 1
 }
-
 create_corps_commander = {
 	name = "Sergei Surovikin"
-	picture = "Portrait_SOV_general_Sergei_Surovikin.dds"
+	picture = "generals/Sergei_Surovikin.dds"
 	skill = 1
 }
-
 create_corps_commander = {
 	name = "Vladimir Bakin"
-	picture = "Portrait_SOV_general_Vladimir_Bakin.dds"
+	picture = "generals/Vladimir_Bakin.dds"
 	skill = 1
 }
 
 create_navy_leader = {
 	name = "Vladimir Korolev"
-	picture = "Portrait_SOV_admiral_Vladimir_Korolev.dds"
+	picture = "admirals/Vladimir_Korolev.dds"
 	skill = 1
 }
-
 create_navy_leader = {
 	name = "Viktor Chirkov"
-	picture = "Portrait_SOV_admiral_Viktor_Cherkov.dds"
+	picture = "admirals/Viktor_Cherkov.dds"
 	skill = 1
 }
-
 create_navy_leader = {
 	name = "Vladimir Vysotskiy"
-	picture = "Portrait_SOV_admiral_Vladimir_Vysotskiy.dds"
+	picture = "admirals/Vladimir_Vysotskiy.dds"
 	skill = 1
 }
 
@@ -407,17 +374,13 @@ create_navy_leader = {
 
 	create_country_leader = {
 		name = "Emilia Slabunova"
-		desc = "POLITICIAN_SOV_EMILIA_SLABUNOVA_DESC"
-		picture = "Portrait_SOV_Emilia_Slabunova.dds"
-		expire = "2050.1.1"
+		picture = "Emilia_Slabunova.dds"
 		ideology = liberalist
 	}
 
 	create_country_leader = {
 		name = "Boris Titov"
-		desc = "POLITICIAN_SOV_BORIS_TITOV_DESC"
-		picture = "Portrait_SOV_Boris_Titov.dds"
-		expire = "2050.1.1"
+		picture = "Boris_Titov.dds"
 		ideology = fiscal_conservative
 	}
 }

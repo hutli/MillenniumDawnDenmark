@@ -5,11 +5,16 @@ state={
 	manpower = 6932860
 	
 	state_category = rural
+	
+	resources = {
+		chromium = 4
+	}
 
 	history={
 		owner = AFG
 		buildings = {
 			infrastructure = 2
+			air_base = 1
 		}
 		victory_points = {
 			4893 1 

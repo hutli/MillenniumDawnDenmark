@@ -5,12 +5,15 @@ state={
 	manpower = 1008903
 	
 	state_category = town
+	
+	resources = {
+		tungsten=5
+	}
 
 	history={
 		owner = SPR
 		buildings = {
-			industrial_complex = 2
-			infrastructure = 6
+			infrastructure = 5
 		}
 		add_core_of = SPR
 	}

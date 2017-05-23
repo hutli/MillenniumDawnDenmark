@@ -3,12 +3,12 @@ state={
 	name="STATE_757"
 	
 	resources = {
-		rubber = 2
-		oil = 3
+		oil = 1
 	}
 	
 	history = {
 		owner = COG
+		add_core_of = COG
 	}
 	
 	provinces={

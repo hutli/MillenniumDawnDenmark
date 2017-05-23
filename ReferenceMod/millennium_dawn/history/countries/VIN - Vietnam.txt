@@ -1,6 +1,6 @@
 ﻿capital = 671
 
-oob = "VTN_2000"
+oob = "VIN_2000"
 
 set_research_slots = 4
 set_convoys = 500
@@ -151,80 +151,55 @@ set_politics = {
 2000.1.1 = {
 	create_country_leader = {
 		name = "Tran Duc Luong"
-		desc = "POLITICIAN_VTN_TRAN_DUN_LUONG_DESC"
-		picture = "Portrait_VTN_Tran_Duc_Luong.dds"
-		expire = "2006.6.27"
+		picture = "Tran_Duc_Luong.dds"
 		ideology = leninist
-		
-		traits = {
-		
-		}
 	}
 
 	create_country_leader = {
 		name = "Thadeus Nguyen Van Ly"
-		desc = "POLITICIAN_VTN_THADEUS_NGUYEN_VAN_LY_DESC"
-		picture = "Portrait_VTN_Thadeus_Nguyen_Van_Ly.dds"
-		expire = "2011.7.25"
+		picture = "Nguyen_Thien_Nhan.dds"
 		ideology = liberalist
-		
-		traits = {
-		
-		}
 	}
 
 	create_country_leader = {
 		name = "Pham The Duyet"
-		desc = "POLITICIAN_VTN_PHAM_THE_DUYET_DESC"
-		picture = "Portrait_VTN_Pham_The_Duyet"
-		expire = "2011.7.25"
+		picture = "Pham_The_Duyet"
 		ideology = national_democrat
-		
-		traits = {
-		
-		}
 	}
 
 	create_country_leader = {
 		name = "Do Hoang Diem"
-		desc = "POLITICIAN_VTN_DO_HUANG_DIEM_DESC"
-		picture = "Portrait_VTN_Do_Hoang_Diem"
-		expire = "2020.1.1"
+		picture = "Do_Hoang_Diem"
 		ideology = constitutionalist
-		
-		traits = {
-		
-		}
+	}
+
+	create_corps_commander = {
+		name = "Phan Van Giang"
+		picture = "generals/Phan_Van_Giang.dds"
+		skill = 2
 	}
 
 	create_corps_commander = {
 		name = "Do Ba Ty"
-		picture = "Portrait_VTN_general_Do_Ba_Ty.dds"
+		picture = "generals/Do_Ba_Ty.dds"
 		skill = 1
 	}
 
 	create_corps_commander = {
 		name = "Ngo Xuan Lich"
-		picture = "Portrait_VTN_general_Ngo_Xuan_Lich.dds"
+		picture = "generals/Ngo_Xuan_Lich.dds"
 		skill = 1
 	}
 
 	create_corps_commander = {
-		name = "Phan Van Giang"
-		picture = "Portrait_VTN_general_Phan_Van_Giang.dds"
-		skill = 2
-	}
-
-	create_corps_commander = {
 		name = "Phung Quang Thanh"
-		picture = "Portrait_VTN_general_Phung_Quang_Thanh.dds"
+		picture = "generals/Phung_Quang_Thanh.dds"
 		skill = 1
 	}
 
 	create_navy_leader = {
 		name = "Pham Hoai Nam"
-			picture = "Portrait_VTN_admiral_Pham_Hoai_Nam.dds"
-		traits = { }
+		picture = "admirals/Pham_Hoai_Nam.dds"
 		skill = 2
 	}
 
@@ -233,66 +208,35 @@ set_politics = {
 2006.6.27 = {
 	create_country_leader = {
 		name = "Nguyen Minh Triet"
-		desc = "POLITICIAN_VTN_NGUYEN_MINH_TRIET_DESC"
-		picture = "Portrait_VTN_Nguyen_Minh_Triet.dds"
-		expire = "2011.7.25"
+		picture = "Nguyen_Minh_Triet.dds"
 		ideology = leninist
-		
-		traits = {
-		
-		}
 	}
-
 }
 
 2011.7.25 = {
 	create_country_leader = {
 		name = "Truong Tan Sang"
-		desc = "POLITICIAN_VTN_TRUONG_TAN_SANG_DESC"
-		picture = "Portrait_VTN_Truong_Tan_Sang.dds"
-		expire = "2016.4.2"
+		picture = "Truong_Tan_Sang.dds"
 		ideology = leninist
-		
-		traits = {
-		
-		}
 	}
 
 	create_country_leader = {
 		name = "Vi Duc Hoi"
-		desc = "POLITICIAN_VTN_VI_DUC_HOI_DESC"
-		picture = "Portrait_VTN_Vi_Duc_Hoi.dds"
-		expire = "2016.4.2"
+		picture = "Vi_Duc_Hoi.dds"
 		ideology = liberalist
-		
-		traits = {
-		
-		}
 	}
 
 	create_country_leader = {
 		name = "Nguyen Thien Nhan"
-		desc = "POLITICIAN_VTN_Nguyen_Thien_Nhan_DESC"
-		picture = "Portrait_VTN_Nguyen_Thien_Nhan.dds"
-		expire = "2016.4.2"
+		picture = "Nguyen_Thien_Nhan.dds"
 		ideology = national_democrat
-		
-		traits = {
-		
-		}
 	}
 }
 
 2016.4.2 = {
 	create_country_leader = {
 		name = "Tran Dai Quang"
-		desc = "POLITICIAN_VTN_TRAN_DAI_QUANG_DESC"
-		picture = "Portrait_VTN_Tran_Dai_Quang.dds"
-		expire = "2020.1.1"
+		picture = "Tran_Dai_Quang.dds"
 		ideology = leninist
-		
-		traits = {
-		
-		}
 	}
 }

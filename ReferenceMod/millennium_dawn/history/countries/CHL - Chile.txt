@@ -140,32 +140,20 @@ set_politics = {
 
 create_country_leader = {
 	name = "Eduardo Frei Ruiz-Tagle"
-	desc = "POLITICIAN_CHL_EDUARDO_FREI_RUIZ_TAGLE_DESC"
-	picture = "Portrait_CHL_Ecuardo_Frei_Ruiz_Tagle.dds"
-	expire = "2000.3.11"
+	picture = "Ecuardo_Frei_Ruiz_Tagle.dds"
 	ideology = christian_democrat
 }
 
 create_country_leader = {
 	name = "Ricardo Lagos"
-	desc = "POLTICIAN_CHL_RICARDO_LAGOS_DESC"
-	picture = "Portrait_CHL_Ricardo_Lagos.dds"
-	expire = "2006.3.11"
+	picture = "Ricardo_Lagos.dds"
 	ideology = liberalist
-	
-	traits = {
-	}
 }
 	
 create_country_leader = {
 	name = "Michelle Bachelet"
-	desc = "POLITICIAN_CHL_MICHELLE_BACHELET_DESC"
-	picture = "Portrait_CHL_Michelle_Bachelet.dds"
-	expire = "2020.1.1"
+	picture = "Michelle_Bachelet.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	}
 }
 
 2006.3.11 = {
@@ -184,18 +172,18 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Iván González López"
-	picture = "Portrait_CHL_Ivan_Lopez.dds"
+	picture = "generals/Ivan_Lopez.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Ricardo Martínez Menanteau"
-	picture = "Portrait_CHL_Ricardo_Menanteau.dds"
+	picture = "generals/Ricardo_Menanteau.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Guido Montini Gómez"
-	picture = "Portrait_CHL_Guido_Gomez.dds"
+	picture = "generals/Guido_Gomez.dds"
 	skill = 1
 }

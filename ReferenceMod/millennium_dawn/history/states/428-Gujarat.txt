@@ -4,31 +4,25 @@ state={
 	name="STATE_428"
 	manpower = 74590200
 	
-	
 	state_category = city
+	
 	resources={
-		oil=11
-		steel=3
-		tungsten=1
-		aluminium=1
+		oil=8
+		steel=46
 	}
 
 	history={
 		owner = RAJ
+		add_core_of = RAJ
 		victory_points = {
 			9975 1 
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 1
-			dockyard = 1
+			industrial_complex = 7
+			arms_factory = 2
 			9975 = {
 				naval_base = 2
-			}
-		}
-		2016.1.1 = {
-			buildings = {
-				arms_factory = 3
 			}
 		}
 	}

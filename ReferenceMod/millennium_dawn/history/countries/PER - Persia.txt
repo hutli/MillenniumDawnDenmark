@@ -96,6 +96,11 @@ set_technology = {
 	excavation1 = 1
 }
 
+add_opinion_modifier = {
+	target = ISR
+	modifier = death_to_israel
+}
+
 set_country_flag = dominant_religion_islam
 set_country_flag = shia_islam
 
@@ -165,98 +170,53 @@ set_politics = {
 create_country_leader = {
 	name = "Ali Khoumeini"
 	ideology = islamic_authoritarian
-	picture = "Portrait_PER_Ali_Khoumeni.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Ali_Khoumeni.dds"
 }
 
 create_country_leader = {
 	name = "Mohsen Pezeshkpour"
 	ideology = proto_fascist
-	picture = "Portrait_PER_Mohsen_Pezeshkpour.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Mohsen_Pezeshkpour.dds"
 }
 
 create_country_leader = {
 	name = "Reza Pahlavi"
 	ideology = absolute_monarchist
-	picture = "Portrait_PER_Reza_Pahlavi.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Reza_Pahlavi.dds"
 }
 
 create_country_leader = {
 	name = "Roozbeh Farahanipour"
 	ideology = counter_progressive_democrat
-	picture = "Portrait_PER_Roozbeh_Farahanipour.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Roozbeh_Farahanipour.dds"
 }
 
 create_country_leader = {
 	name = "Ebrahim Yazdi"
 	ideology = constitutionalist
-	picture = "Portrait_PER_Ebrahim_Yazdi.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Ebrahim_Yazdi.dds"
 }
 
 create_country_leader = {
 	name = "Habibollah Asgaroladi"
 	ideology = libertarian
-	picture = "Portrait_PER_Habibollah_Asgaroladi.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Habibollah_Asgaroladi.dds"
 }
 
 create_country_leader = {
 	name = "Hadi Khamenei"
 	ideology = moderate
-	picture = "Portrait_PER_Hadi_Khamenei.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Hadi_Khamenei.dds"
 }
 
 create_country_leader = {
 	name = "Hossein Kamali"
 	ideology = social_democrat_ideology
-	picture = "Portrait_PER_Hossein_Kamali.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Hossein_Kamali.dds"
 }
 
 create_country_leader = {
 	name = "Mansoor Hekmat"
 	ideology = marxist
-	picture = "Portrait_PER_Mansoor_Hekmat.dds"
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Mansoor_Hekmat.dds"
 }

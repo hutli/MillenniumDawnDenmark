@@ -139,6 +139,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Mansur Selum"
-	picture = "Portrait_KUR_Mansur_Selum.dds"
+	picture = "Mansur_Selum.dds"
 	ideology = fiscal_conservative
 }

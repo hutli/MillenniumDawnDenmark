@@ -140,36 +140,16 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-
-
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Mireya Moscoso"
 	ideology = centrist
-	picture = "Portrait_PAN_MIREYA.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Mireya_Moscoso.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Juan Carlos Varela"
-	ideology = liberalist
-	picture = "Portrait_PAN_JUAN_CARLOS.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Juan Carlos Varela"
+		ideology = liberalist
+		picture = "Juan_C_Varela.dds"
+	}
 }

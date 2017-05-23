@@ -128,13 +128,13 @@ set_politics = {
 }
 create_country_leader = {
 	name = "Ludwig Chibirov"
-	picture = "Portrait_SOS_Ludwig_Chibirov.dds"
+	picture = "Ludwig_Chibirov.dds"
 	ideology = counter_progressive_democrat
 }
 2012.4.19 = {
 	create_country_leader = {
 		name = "Leonid Tibilov"
-		picture = "Portrait_SOS_Leonid_Tibilov.dds"
+		picture = "Leonid_Tibilov.dds"
 		ideology = counter_progressive_democrat
 	}
 }

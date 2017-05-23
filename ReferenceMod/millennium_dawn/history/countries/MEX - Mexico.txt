@@ -143,126 +143,116 @@ add_opinion_modifier = {
 create_country_leader = {
 	name = "Maximilian von Götzen-Iturbide"
 	ideology = absolute_monarchist
-	picture = "Portrait_MEX_Maximilian.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
+	picture = "Maximilian.dds"
 }
 
 create_country_leader = {
 	name = "Ernesto Zedillo"
 	ideology = libertarian
-	picture = "Portrait_MEX_Ernesto_Zedillo.dds"
-	expire = "2010.7.2"
-	
-	traits = {}
+	picture = "Ernesto_Zedillo.dds"
 }
 
 create_country_leader = {
 	name = "Diego Fernandez de Cevallos"
 	ideology = right_wing_conservative
-	picture = "Portrait_MEX_Diego_Fernandez_de_Cevallos.dds"
-	expire = "2010.7.2"
-	
-	traits = {}
+	picture = "Diego_Fernandez_de_Cevallos.dds"
 }
 
 create_country_leader = {
 	name = "Cuauhtemoc Cardenas Solorzano"
 	ideology = social_democrat_ideology
-	picture = "Portrait_MEX_Cuauhtemoc_Cardenas_Solorzano.dds"
-	expire = "2010.7.2"
-	
-	traits = {}
+	picture = "Cuauhtemoc_Cardenas_Solorzano.dds"
 }
 
 create_country_leader = {
 	name = "Cecilia Soto Gonzalez"
 	ideology = progressive_ideology
-	picture = "Portrait_MEX_Cecilia_Soto_Gonzalez.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
+	picture = "Cecilia_Soto_Gonzalez.dds"
 }
 
 create_corps_commander = {
-	name = "Carlos Antonio Rodriguez"
-	picture = "Portrait_MEX_general_Carlos_Antonio_Rodriguez_Munguia.dds"
+	name = "Carlos A. R. Munguia"
+	picture = "generals/Carlos_AR_Munguia.dds"
 	skill = 1
-	}
+}
 
 create_corps_commander = {
 	name = "Daniel Velasco Ramirez"
-	picture = "Portrait_MEX_general_Daniel_Velasco_Ramirez.dds"
+	picture = "generals/Daniel_Velasco_Ramirez.dds"
 	skill = 1
-	}
+}
 
 create_corps_commander = {
 	name = "Enrique Cervantes Aguirre"
-	picture = "Portrait_MEX_general_Enrique_Cervantes_Aguirre.dds"
+	picture = "generals/Enrique_Cervantes_Aguirre.dds"
 	skill = 1
-	}
+}
 
 create_corps_commander = {
 	name = "Gerardo Clemente Vega Garcia"
-	picture = "Portrait_MEX_general_Gerardo_Clemente_Vega_Garcia.dds"
+	picture = "generals/Gerardo_CV_Garcia.dds"
 	skill = 1
-	}
+}
 
 create_corps_commander = {
 	name = "Gilberto Hernandez Andreu"
-	picture = "Portrait_MEX_general_Gilberto_Hernandez_Andreu.dds"
+	picture = "generals/Gilberto_Hernandez_Andreu.dds"
 	skill = 1
-	}
+}
+
 create_corps_commander = {
-	name = "Guillermo Galvan Galvan"
-	picture = "Portrait_MEX_general_Guillermo_Galvan.dds"
+	name = "Guillermo Galvan"
+	picture = "generals/Guillermo_Galvan.dds"
 	skill = 1
-	}
+}
+
 create_corps_commander = {
 	name = "Juan Rios Cantu"
-	picture = "Portrait_MEX_general_Juan_Rios_Cantu.dds"
+	picture = "generals/Juan_Rios_Cantu.dds"
 	skill = 1
-	}
+}
+
 create_corps_commander = {
 	name = "Roble Arturo Granados Gallardo"
-	picture = "Portrait_MEX_general_Roble_Arturo_Granados_Gallardo.dds"
+	picture = "generals/Roble_AG_Gallardo.dds"
 	skill = 1
-	}
+}
+
 create_corps_commander = {
 	name = "Salvador Cienfuegos Zepeda"
-	picture = "Portrait_MEX_general_Salvador_Cienfuegos_Zepeda.dds"
-        traits = { desert_fox }
-	skill = 2
-	}
+	picture = "generals/Salvador_Cienfuegos_Zepeda.dds"
+	skill = 1
+}
 
 create_corps_commander = {
 	name = "Tomas Angeles Dauahare"
-	picture = "Portrait_MEX_general_Tomas_Angeles_Dauahare.dds"
+	picture = "generals/Tomas_Angeles_Dauahare.dds"
 	skill = 1
-	}
+}
 
 create_navy_leader = {
 	name = "Jose Ramon Lorenzo"
-	picture = "Portrait_MEX_admiral_Jose_Ramon_Lorenzo_Franco.dds"
+	picture = "admirals/Jose_Ramon_Lorenzo_Franco.dds"
 	skill = 1
-	}
+}
 
 create_navy_leader = {
 	name = "Marco Antonio Peyrot Gonzalez"
-	picture = "Portrait_MEX_admiral_Marco_Antonio_Peyrot_Gonzalez.dds"
+	picture = "admirals/Marco_Antonio_Peyrot_Gonzalez.dds"
 	skill = 1
-	}
+}
+
 create_navy_leader = {
 	name = "Mariano Francisco Saynez Mendoza"
-	picture = "Portrait_MEX_admiral_Mariano_Francisco_Saynez_Mendoza.dds"
+	picture = "admirals/Mariano_Francisco_Saynez_Mendoza.dds"
 	skill = 1
-	}
+}
+
 create_navy_leader = {
 	name = "Vidal Francisco Soberon Sanz"
-	picture = "Portrait_MEX_admiral_Vidal_Francisco_Soberon_Sanz.dds"
+	picture = "admirals/Vidal_Francisco_Soberon_Sanz.dds"
 	skill = 1
-	}
+}
 
 2000.7.2 = {
 set_politics = {
@@ -275,7 +265,7 @@ set_politics = {
 
     create_country_leader = {
 	name = "Vicente Fox"
-	picture = "Portrait_MEX_Vicente_Fox.dds"
+	picture = "Vicente_Fox.dds"
 	expire = "2050.1.1"
 	ideology = gaullist
 		
@@ -285,7 +275,7 @@ set_politics = {
 create_country_leader = {
 	name = "Cuauhtemoc Cardenas Solorzano"
 	ideology = social_democrat_ideology
-	picture = "Portrait_MEX_Cuauhtemoc_Cardenas_Solorzano.dds"
+	picture = "Cuauhtemoc_Cardenas_Solorzano.dds"
 	expire = "2050.7.2"
 	
 	traits = {}
@@ -293,7 +283,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Francisco Labastida Ochoa"
-	picture = "Portrait_MEX_Francisco_Labastida_Ochoa.dds"
+	picture = "Francisco_Labastida_Ochoa.dds"
 	expire = "2050.1.1"
 	ideology = libertarian
 		
@@ -302,86 +292,55 @@ create_country_leader = {
 }
 
 2006.7.2 = { 
-set_politics = {
-             ruling_party = conservative
-	last_election = "2006.6.2"
-	election_frequency = 72
-	elections_allowed = yes
-		
+	set_politics = {
+		ruling_party = conservative
+		last_election = "2006.6.2"
+		election_frequency = 72
+		elections_allowed = yes
 	}
     create_country_leader = {
 	name = "Felipe Calderón"
-	picture = "Portrait_MEX_Felipe_Calderon.dds"
-	expire = "2050.1.1"
+	picture = "Felipe_Calderon.dds"
 	ideology = gaullist
-		
-	traits = {}
 }
 
 create_country_leader = {
 	name = "Roberto Madrazo"
 	ideology = social_democrat_ideology
-	picture = "Portrait_MEX_Roberto_Madrazo.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
+	picture = "Roberto_Madrazo.dds"
  }
 
 create_country_leader = {
 	name = "Andres Manuel Lopez Obrador"
-	picture = "Portrait_MEX_Andres_Manuel_Lopez_Obrador.dds"
-	expire = "2050.1.1"
+	picture = "Andres_Manuel_Lopez_Obrador.dds"
 	ideology = liberalist
-		
-	traits = {}
     }
 }
 
-2012.7.2 = { 
-set_party_name = {
+2012.7.2 = {
+	set_party_name = {
 		ideology = democratic_socialist
 		long_name = MEX_democratic_socialist_party_NA_long
 		name = MEX_democratic_socialist_party_NA
 	}
-set_politics = {
-             ruling_party = market_liberal
-	last_election = "2012.6.2"
-	election_frequency = 72
-	elections_allowed = yes
-		
+	set_politics = {
+		ruling_party = market_liberal
+		last_election = "2012.6.2"
+		election_frequency = 72
+		elections_allowed = yes
 	}
-
-    create_country_leader = {
-	name = "Enrique Peña Nieto"
-	picture = "Portrait_MEX_Enrique_Pena_Nieto.dds"
-	expire = "2050.1.1"
-	ideology = libertarian
-		
-	traits = {}
+	create_country_leader = {
+		name = "Josefina Vasquez Mota"
+		ideology = right_wing_conservative
+		picture = "Josefina_Vasquez_Mota.dds"
+	}
+	create_country_leader = {
+		name = "Andres Manuel Lopez Obrador"
+		picture = "Andres_Manuel_Lopez_Obrador.dds"
+		ideology = liberalist
+	}
 }
-
-create_country_leader = {
-	name = "Josefina Vasquez Mota"
-	ideology = right_wing_conservative
-	picture = "Portrait_MEX_Josefina_Vasquez_Mota.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
- }
-
-create_country_leader = {
-	name = "Andres Manuel Lopez Obrador"
-	picture = "Portrait_MEX_Andres_Manuel_Lopez_Obrador.dds"
-	expire = "2050.1.1"
-	ideology = liberalist
-		
-	traits = {}
-    }
-}
-
 2016.1.1 = {
-
-  
 	set_politics = {
 
 		parties = {
@@ -414,35 +373,6 @@ create_country_leader = {
 	create_country_leader = {
 		name = "Enrique Peña Nieto"
 		ideology = libertarian
-		picture = "Portrait_MEX_Enrique_Pena_Nieto.dds"
-		expire = "2050.1.1"
-		
-		traits = {}
+		picture = "Enrique_Pena_Nieto.dds"
 	}
-
-	create_country_leader = {
-	name = "Josefina Vasquez Mota"
-	ideology = right_wing_conservative
-	picture = "Portrait_MEX_Josefina_Vasquez_Mota.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
- }
-
-create_country_leader = {
-	name = "Andres Manuel Lopez Obrador"
-	picture = "Portrait_MEX_Andres_Manuel_Lopez_Obrador.dds"
-	expire = "2050.1.1"
-	ideology = liberalist
-		
-	traits = {}
-    }
-create_country_leader = {
-	name = "Gabriel Quadri de la Torre"
-	picture = "Portrait_MEX_Gabriel_Quadri_de_la_Torre.dds"
-	expire = "2050.1.1"
-	ideology = social_democrat_ideology
-		
-	traits = {}
-    }
 }

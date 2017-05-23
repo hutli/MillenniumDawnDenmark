@@ -3,16 +3,15 @@ state={
 	name="STATE_760"
 	
 	resources = {
-		rubber = 15
 		oil = 1
 	}
 	
 	history = {
 		owner = COG
-		
+		add_core_of = COG
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			industrial_complex = 1
 		}
 	}
 	

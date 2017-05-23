@@ -48,6 +48,10 @@ set_technology = {
 	antitank1 = 1
 	interwar_antiair = 1
 	
+	corvette1 = 1
+	corvette2 = 1
+	frigate1 = 1
+	frigate2 = 1
 	destroyer1 = 1
 	destroyer2 = 1
 	light_cruiser1 = 1
@@ -133,29 +137,24 @@ set_politics = {
 	elections_allowed = yes
 }
 
-2002.1.1 = {
-	add_ideas = the_euro
-}
-
-2004.1.1 = {
-	add_ideas = {
-		idea_eu_member
-	}
-}
+2002.1.1 = { add_ideas = the_euro }
+2004.1.1 = { add_ideas = idea_eu_member }
 
 create_country_leader = {
 	name = "Andris Šķēle"
-	picture = "Portrait_LAT_Andris_Skele.dds"
+	picture = "Andris_Skele.dds"
 	ideology = fiscal_conservative
 }
 
 create_country_leader = {
 	name = "Māris Kučinskis"
-	picture = "Portrait_LAT_Maris_Kucinskis.dds"
+	picture = "Maris_Kucinskis.dds"
 	ideology = green
 }
 
 2016.1.1 = {
+
+	oob = "LAT_2016"
 
 	set_politics = {
 

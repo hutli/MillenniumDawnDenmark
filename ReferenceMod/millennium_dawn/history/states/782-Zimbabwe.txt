@@ -2,10 +2,14 @@ state={
 	id=782
 	name="STATE_782"
 	
+	resources = {
+		chromium = 28
+	}
+	
 	history = {
 		owner = ZIM
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 3
 			arms_factory = 1
 			air_base = 1

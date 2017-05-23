@@ -2,18 +2,17 @@
 state={
 	id=65
 	name="STATE_65"
-	resources={
-		steel=71
-		aluminium=7
-		chromium=2
+	
+	resources = {
+		steel = 6
 	}
-
+	
 	history={
 		owner = GER
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 4
-			arms_factory = 1
+			industrial_complex = 2
+			air_base = 2
 		}
 		victory_points = {
 			514 5 

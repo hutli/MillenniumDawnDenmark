@@ -143,21 +143,20 @@ set_politics = {
 	elections_allowed = yes
 }
 
-2000.1.1 = {
-	create_country_leader = {
-		name = "Konstantinos Stefanópulos"
-		ideology = centrist
-		picture = "Portrait_GRE_Konstantinos_Stefanopulos.dds"
-		expire = "2050.7.2"
-		traits = {}
-	}
-	create_country_leader = {
-		name = "Constantine II"
-		picture = "Portrait_GRE_Constantine_II.dds"
-		ideology = absolute_monarchist
-		expire = "2050.1.1"
-		traits = {}
-	}
+create_country_leader = {
+	name = "Konstantinos Stefanópulos"
+	ideology = centrist
+	picture = "Konstantinos_Stefanopulos.dds"
+}
+create_country_leader = {
+	name = "Constantine II"
+	picture = "Constantine_II.dds"
+	ideology = absolute_monarchist
+}
+create_country_leader = {
+	name = "Alexis Tsipras"
+	ideology = democratic_socialist_ideology
+	picture = "Alexis_Tsipras.dds"
 }
 
 2002.1.1 = {
@@ -168,33 +167,17 @@ set_politics = {
 	create_country_leader = {
 		name = "Prokopis Pavlopoulos"
 		ideology = liberalist
-		picture = "Portrait_GRE_Prokopis_Pavlopoulos.dds"
-		expire = "2050.7.2"
-		traits = {}
+		picture = "Prokopis_Pavlopoulos.dds"
 	}
-	
 	set_politics = {
-
 		parties = {
-			fascist = {
-				popularity = 7
-			}
-			conservative = {
-				popularity = 30
-			}
-			market_liberal = {
-				popularity = 5
-			}
-			social_liberal = {
-				popularity = 5
-			}
-			democratic_socialist = {
-				popularity = 32
-			}
-			communist = {
-				popularity = 10
-			}
+			fascist = { popularity = 7 }
+			nationalist = { popularity = 1 }
+			conservative = { popularity = 30 }
+			market_liberal = { popularity = 5 }
+			social_liberal = { popularity = 5 }
+			democratic_socialist = { popularity = 32 }
+			communist = { popularity = 9 }
 		}
 	}
-
 }

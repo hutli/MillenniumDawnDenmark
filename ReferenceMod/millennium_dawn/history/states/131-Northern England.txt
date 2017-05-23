@@ -5,9 +5,10 @@ state={
 	manpower = 2128860
 	
 	state_category = city
+	
 	resources={
-		steel=60
-		aluminium=8
+		oil=13
+		steel = 23
 	}
 
 	history={
@@ -18,8 +19,7 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
-			dockyard = 1
-			air_base = 6
+			air_base = 5
 			351 = {
 				naval_base = 6
 			}
@@ -28,12 +28,6 @@ state={
 			}
 		}
 		add_core_of = ENG
-		1939.1.1 = {
-			buildings = {
-				dockyard = 5
-				industrial_complex = 2
-			}
-		}
 	}
 
 	provinces={

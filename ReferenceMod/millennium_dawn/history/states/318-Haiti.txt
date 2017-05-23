@@ -5,19 +5,13 @@ state=
 	manpower = 9980000
 	
 	state_category = town
-	
-	resources={
-		
-		chromium=3
-
-	}
 	history=
 	{
 		owner = HAI
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
+			industrial_complex = 3
 			arms_factory = 1
-			industrial_complex = 2 
 			air_base = 1
 			4641 = {
 				naval_base = 3

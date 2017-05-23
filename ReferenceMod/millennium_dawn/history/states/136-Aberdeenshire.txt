@@ -6,9 +6,8 @@ state={
 	
 	state_category = town
 	resources={
-		tungsten=6
-		aluminium=4
-		oil=60
+		oil=12
+		steel = 30
 	}
 
 	history={
@@ -16,7 +15,6 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
-			dockyard = 1
 			air_base = 4
 		}
 		add_core_of = ENG

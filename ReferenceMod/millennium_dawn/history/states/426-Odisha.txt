@@ -4,26 +4,19 @@ state={
 	name="STATE_426" # Orissa
 	manpower = 62520121
 	
-	state_category = town
+	state_category = city
 	
 	resources={
-		steel=51
-		chromium=36
-		aluminium=2
+		chromium = 300
 	}
 
 	history={
 		owner = RAJ
+		add_core_of = RAJ
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 4
 			arms_factory = 1
-			dockyard = 2
-		}
-		2016.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
 		}
 	}
 

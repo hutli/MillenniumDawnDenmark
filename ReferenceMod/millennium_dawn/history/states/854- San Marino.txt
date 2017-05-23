@@ -9,12 +9,12 @@ state={
 	history={
 		owner = SAM
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			industrial_complex = 1
 		}
 		add_core_of = SAM
-		
 		victory_points = { 13207 1 }
 	}
-
+	
 	provinces={ 13207 }
 }

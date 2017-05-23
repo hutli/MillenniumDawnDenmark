@@ -134,75 +134,45 @@ set_politics = {
 
 create_country_leader = {
 	name = "Auguste-Célestin Gongarad Nkoua"
-	picture = "Portrait_COG_Auguste_Nkoua.dds"
-	expire = "2020.1.1"
+	picture = "Auguste_Nkoua.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Denis Sassou-Nguesso"
-	picture = "Portrait_COG_Denis_Nguesso.dds"
-	expire = "2020.1.1"
+	picture = "Denis_Nguesso.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Joseph Kignoumbi Kia Mboungou"
-	picture = "Portrait_COG_Joseph_Mboungou.dds"
-	expire = "2020.1.1"
+	picture = "Joseph_Mboungou.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Guy Brice Parfait Kolélas"
-	picture = "Portrait_COG_Guy_Kolelas.dds"
-	expire = "2020.1.1"
+	picture = "Guy_Kolelas.dds"
 	ideology = liberalist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "André Milongo"
-	picture = "Portrait_COG_Andre_Milongo.dds"
-	expire = "2020.1.1"
+	picture = "Andre_Milongo.dds"
 	ideology = constitutionalist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Jean-Pierre Thystère Tchicaya"
-	picture = "Portrait_COG_Jean_Tchicaya.dds"
-	expire = "2020.1.1"
+	picture = "Jean_Tchicaya.dds"
 	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_corps_commander = {
 	name = "Guy Blanchard Okoi"
-	picture = "Portrait_COG_general_Guy_Okoi.dds"
+	picture = "generals/Guy_Okoi.dds"
 	skill = 1
-	}
+}
 
 2009.7.12 = {
 	
@@ -234,7 +204,7 @@ create_corps_commander = {
 
 	create_country_leader = {
 		name = "Pascal Tsaty-Mabiala"
-		picture = "Portrait_COG_Pascal_Mabiala.dds"
+		picture = "Pascal_Mabiala.dds"
 		expire = "2020.1.1"
 		ideology = social_democrat_ideology
 		

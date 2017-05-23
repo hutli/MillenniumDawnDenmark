@@ -131,14 +131,12 @@ set_politics = {
 
 create_country_leader = {
 	name = "King Abdullah"
-	picture = "Portrait_SAU_King_Abdullah.dds"
+	picture = "King_Abdullah.dds"
 	ideology = absolute_monarchist
-	expire = "2015.1.1"
 }
 
 2013.12.11 = {
 	create_faction = peninsula_shield_force
-	
 	add_to_faction = SAU
 	add_to_faction = KUW
 	add_to_faction = OMA
@@ -150,8 +148,7 @@ create_country_leader = {
 2015.1.23 = {
 	create_country_leader = {
 		name = "King Salman"
-		picture = "Portrait_SAU_King_Salman.dds"
+		picture = "King_Salman.dds"
 		ideology = absolute_monarchist
-		expire = "2050.1.1"
 	}
 }

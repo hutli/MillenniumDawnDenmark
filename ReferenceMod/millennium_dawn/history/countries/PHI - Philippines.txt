@@ -141,193 +141,142 @@ set_politics = {
 
 create_country_leader = {
 	name = "Joseph Estrada"
-	picture = "Portrait_PHI_Joseph_Estrada.dds"
+	picture = "Joseph_Estrada.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
 	name = "Jose de Venecia Jr."
-	picture = "Portrait_PHI_Jose_Venecia.dds"
+	picture = "Jose_Venecia.dds"
 	ideology = christian_democrat
 }
 
 create_country_leader = {
 	name = "Raul Roco"
-	picture = "Portrait_PHI_Raul_Roco.dds"
+	picture = "Raul_Roco.dds"
 	ideology = progressive_ideology
 }
 
 create_country_leader = {
 	name = "Alfredo Lim"
-	picture = "Portrait_PHI_Alfredo_Lim.dds"
+	picture = "Alfredo_Lim.dds"
 	ideology = moderate
 }
 
 create_country_leader = {
 	name = "Edgardo Angara"
-	picture = "Portrait_PHI_Edgardo_Angara.dds"
+	picture = "Edgardo_Angara.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Rodrigo Duterte"
-	picture = "Portrait_PHI_Rodrigo_Duterte.dds"
+	picture = "Rodrigo_Duterte.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Eduardo Cojuangco Jr."
-	picture = "Portrait_PHI_Eduardo_Cojuangco.dds"
+	picture = "Eduardo_Cojuangco.dds"
 	ideology = national_democrat
 }
 
 create_country_leader = {
 	name = "Murad Ibrahim"
-	picture = "Portrait_PHI_Murad_Ibrahim.dds"
+	picture = "Murad_Ibrahim.dds"
 	ideology = islamic_republican
 }
 
 create_country_leader = {
 	name = "Satur Ocampo"
-	picture = "Portrait_PHI_Satur_Ocampo.dds"
+	picture = "Satur_Ocampo.dds"
 	ideology = marxist
 }
 
 create_corps_commander = {
 	name = "Eduardo Ano"
-	picture = "Portrait_PHI_general_Eduardo_Ano.dds"
-	skill = 1
+	picture = "generals/Eduardo_Ano.dds"
+	skill = 2
 }
 
 create_corps_commander = {
 	name = "Mayoralgo Dela Cruz"
-	picture = "Portrait_PHI_general_Mayoralgo_Dela_Cruz.dds"
+	picture = "generals/Mayoralgo_Dela_Cruz.dds"
 	skill = 2
 }
 
 create_corps_commander = {
 	name = "Rey Guerrero"
-	picture = "Portrait_PHI_general_Rey_Guerrero.dds"
+	picture = "generals/Rey_Guerrero.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Ricardo Visaya"
-	picture = "Portrait_PHI_general_Ricardo_Visaya.dds"
-	skill = 2
+	picture = "generals/Ricardo_Visaya.dds"
+	skill = 1
 }
 
 create_corps_commander = {
 	name = "Romeo Gan"
-	picture = "Portrait_PHI_general_Romeo_Gan.dds"
+	picture = "generals/Romeo_Gan.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Romeo Tanalgo"
-	picture = "Portrait_PHI_general_Romeo_Tanalgo.dds"
-	skill = 2
+	picture = "generals/Romeo_Tanalgo.dds"
+	skill = 1
 }
 
 create_navy_leader = {
 	name = "Caeser Taccad"
-		picture = "Portrait_PHI_admiral_Caeser_Taccad.dds"
-	traits = { }
+	picture = "admirals/Caeser_Taccad.dds"
 	skill = 3
 }
 
 create_navy_leader = {
 	name = "Jesus Millan"
-		picture = "Portrait_PHI_admiral_Jesus_Millan.dds"
-	traits = { }
+	picture = "admirals/Jesus_Millan.dds"
 	skill = 1
 }
 
 2010.1.1 = {
-
-create_country_leader = {
-	name = "Benigno Aquino III"
-	desc = "POLITICIAN_PHI_BENIGNO_AQUINO_III_DESC"
-	picture = "Portrait_PHI_Benigno_Aquino_III.dds"
-	expire = "2020.1.1"
-	ideology = liberalist
-	
-	traits = {
-	
+	create_country_leader = {
+		name = "Benigno Aquino III"
+		picture = "Benigno_Aquino_III.dds"
+		ideology = liberalist
 	}
-}
-
-create_country_leader = {
-	name = "Manny Villar"
-	desc = "POLITICIAN_PHI_MANNY_VILLAR_DESC"
-	picture = "Portrait_PHI_Manny_Villar.dds"
-	expire = "2020.1.1"
-	ideology = national_democrat
-	
-	traits = {
-	
+	create_country_leader = {
+		name = "Manny Villar"
+		picture = "Manny_Villar.dds"
+		ideology = national_democrat
 	}
-}
-
-create_country_leader = {
-	name = "Gilbert Teodoro"
-	desc = "POLITICIAN_PHI_GILBERT_TEODORO_DESC"
-	picture = "Portrait_PHI_Gilbert_Teodoro.dds"
-	expire = "2020.1.1"
-	ideology = christian_democrat
-	
-	traits = {
-	
+	create_country_leader = {
+		name = "Gilbert Teodoro"
+		picture = "Gilbert_Teodoro.dds"
+		ideology = christian_democrat
 	}
-}
-
-
 }
 
 2013.5.13 = {
-
-set_politics = {
-
-	parties = {
-	islamist = {
-	popularity = 0
+	set_politics = {
+		parties = {
+			islamist = { popularity = 3 }
+			fascist = { popularity = 2 }
+			nationalist = { popularity = 10 }
+			reactionary = { popularity = 5 }
+			conservative = { popularity = 25 }
+			market_liberal = { popularity = 10 }
+			social_liberal = { popularity = 25 }
+			social_democrat = { popularity = 5 }
+			progressive = { popularity = 5 }
+			democratic_socialist = { popularity = 5 }
+			communist = { popularity = 5 }
+		}
+		ruling_party = social_liberal
+		last_election = "2013.5.13"
+		election_frequency = 36
+		elections_allowed = yes
 	}
-	fascist = {
-	popularity = 0
-	}
-	nationalist = {
-	popularity = 25
-	}
-	reactionary = {
-	popularity = 5
-	}
-	conservative = {
-	popularity = 25
-	}
-	market_liberal = {
-	popularity = 10
-	}
-	social_liberal = {
-	popularity = 15
-	}
-	social_democrat = {
-	popularity = 5
-	}
-	progressive = {
-	popularity = 5
-	}
-	democratic_socialist = {
-	popularity = 5
-	}
-	communist = {
-	popularity = 5
-	}
-	}
-	
-	ruling_party = social_liberal
-	last_election = "2013.5.13"
-	election_frequency = 36
-	elections_allowed = yes
-}
-
 }

@@ -123,16 +123,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Mathieu Kerekou"
-	desc = "POLITICIAN_BEN_MATHIEU_KEREKOU_DESC"
-	picture = "Portrait_BEN_Mathieu_Kerekou.dds"
+	picture = "Mathieu_Kerekou.dds"
 	ideology = liberalist	
 }
 
 2006.4.6 = {
 	create_country_leader = {
 		name = "Thomas Boni Yayi"
-		desc = "POLITICIAN_BEN_THOMAS_BONI_YAYI_DESC"
-		picture = "Portrait_BEN_Thomas_Boni_Yayi.dds"
+		picture = "Thomas_Boni_Yayi.dds"
 		ideology = liberalist
 	}
 }
@@ -140,7 +138,7 @@ create_country_leader = {
 2016.1.1 = {
 	create_country_leader = {
 		name = "Patrice Talon"
-		picture = "Portrait_BEN_Thomas_Patrice_Talon.dds"
+		picture = "Thomas_Patrice_Talon.dds"
 		ideology = liberalist
 	}
 }

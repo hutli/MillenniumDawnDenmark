@@ -6,20 +6,18 @@ state={
 	
 	state_category = city
 	
-	resources={
-		rubber=71
-		steel=12
-		chromium=8
-		tungsten=2
+	resources = {
+		steel = 1
 	}
-
+	
 	history={
 		owner = CMB
+		add_core_of = CMB
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 4
-			dockyard = 2
-			arms_factory = 1
+			arms_factory = 2
+			dockyard = 1
 			air_base = 2
 		}
 		victory_points = { 4639 5 }

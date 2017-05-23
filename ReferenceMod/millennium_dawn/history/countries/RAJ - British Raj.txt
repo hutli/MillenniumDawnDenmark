@@ -154,14 +154,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Atal B. Vajpayee"
-	picture = "Portrait_RAJ_Atal_Bihari_Vajpayee.dds"
+	picture = "Atal_Bihari_Vajpayee.dds"
 	ideology = liberalist
 }
 
 2014.5.1 = {
 	create_country_leader = {
 		name = "Narendra Modi"
-		picture = "Portrait_RAJ_Narendra_Modi.dds"
+		picture = "Narendra_Modi.dds"
 		ideology = fiscal_conservative
 	}
 	set_politics = {

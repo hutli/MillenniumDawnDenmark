@@ -105,40 +105,18 @@ add_ideas = {
 }
 
 set_politics = {
-
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
-		}
+		islamist = { popularity = 0.1 }
+		nationalist = { popularity = 1 }
+		reactionary = { popularity = 2 }
+		conservative = { popularity = 30.9 }
+		market_liberal = { popularity = 6 }
+		social_liberal = { popularity = 25 }
+		social_democrat = { popularity = 5 }
+		progressive = { popularity = 10 }
+		democratic_socialist = { popularity = 16 }
+		communist = { popularity = 4 }
 	}
-	
 	ruling_party = social_liberal
 	last_election = "1999.12.10"
 	election_frequency = 48
@@ -151,15 +129,34 @@ add_opinion_modifier = {
 }
 
 create_country_leader = {
+	name = "Alejandro Biondini"
+	picture = "Alejandro_Biondini.dds"
+	ideology = national_socialist
+}
+create_country_leader = {
+	name = "Mauricio Macri"
+	picture = "Mauricio_Macri.dds"
+	ideology = fiscal_conservative
+}
+create_country_leader = {
 	name = "Fernando de la Rua"
-	desc = "POLITICIAN_ARG_FERNANDO_DE_LA_RUA_DESC"
-	picture = "Portrait_ARG_Fernando_de_la_Rua.dds"
-	expire = "2020.1.1"
+	picture = "Fernando_de_la_Rua.dds"
 	ideology = centrist
-	
-	traits = {
-	
-	}
+}
+create_country_leader = {
+	name = "Margarita Stolbizer"
+	picture = "Margarita_Stolbizer.dds"
+	ideology = social_democrat_ideology
+}
+create_country_leader = {
+	name = "Antonio Bonfatti"
+	picture = "Antonio_Bonfatti.dds"
+	ideology = democratic_socialist_ideology
+}
+create_country_leader = {
+	name = "Jorge Altamira"
+	picture = "Jorge_Altamira.dds"
+	ideology = marxist
 }
 
 2016.1.1 = {
@@ -168,83 +165,21 @@ create_country_leader = {
 		last_election = "2015.12.10"
 		elections_allowed = yes
 	}
-
-	create_country_leader = {
-		name = "Mauricio Macri"
-		desc = "POLITICIAN_ARG_MAURICIO_MACRI_DESC"
-		picture = "Portrait_ARG_MAURICIO_MACRI.dds"
-		expire = "2020.1.1"
-		ideology = fiscal_conservative
-		
-		traits = {
-		
-		}
-	}
-
-	create_country_leader = {
-		name = "Alejandro Biondini"
-		desc = "POLITICIAN_ARG_ALEJANDRO_BIONDINI_DESC"
-		picture = "Portrait_ARG_ALEJANDRO_BIONDINI.dds"
-		expire = "2020.1.1"
-		ideology = national_socialist
-		
-		traits = {
-		}
-	}
-
-	create_country_leader = {
-		name = "Margarita Stolbizer"
-		desc = "POLITICIAN_ARG_MARGARITA_STOLBIZER_DESC"
-		picture = "Portrait_ARG_MARGARITA_STOLBIZER.dds"
-		expire = "2020.1.1"
-		ideology = social_democrat_ideology
-		
-		traits = {
-		}
-	}
-
 	create_country_leader = {
 		name = "Elisa Carrió"
-		desc = "POLITICIAN_ARG_ELISA_CARRIO_DESC"
-		picture = "Portrait_ARG_ELISA_CARRIO.dds"
-		expire = "2020.1.1"
+		picture = "Elisa_Carrio.dds"
 		ideology = liberalist
-		
-		traits = {
-		}
-	}
-
-	create_country_leader = {
-		name = "Antonio Bonfatti"
-		desc = "POLITICIAN_ARG_ANTONIO_BONFATTI_CARRIO_DESC"
-		picture = "Portrait_ARG_ANTONIO_BONFATTI.dds"
-		expire = "2020.1.1"
-		ideology = democratic_socialist_ideology
-		
-		traits = {
-		}
-	}
-
-	create_country_leader = {
-		name = "Jorge Altamira"
-		desc = "POLITICIAN_ARG_JORGE_ALTAMIRA_CARRIO_DESC"
-		picture = "Portrait_ARG_JORGE_ALTAMIRA.dds"
-		expire = "2020.1.1"
-		ideology = marxist
-		
-		traits = {
-		}
 	}
 }
 
 create_corps_commander = {
 	name = "Santiago Ferreyra"
-	picture = "Portrait_ARG_Santiago_Ferreyra.dds"
-	skill = 1
+	picture = "generals/Santiago_Ferreyra.dds"
+	skill = 2
 }
 
 create_corps_commander = {
 	name = "Joaquín Estrada"
-	picture = "Portrait_ARG_Joaquin_Estrada.dds"
+	picture = "generals/Joaquin_Estrada.dds"
 	skill = 1
 }

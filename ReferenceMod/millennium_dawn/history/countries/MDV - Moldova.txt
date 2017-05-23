@@ -142,34 +142,16 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Petru Lucinschi"
 	ideology = centrist
-	picture = "Portrait_MDV_Petru_Lucinschi.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Petru_Lucinschi.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Nicolae Timofti"
-	ideology = liberalist
-	picture = "Portrait_MDV_Nicolae_Timofti.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Nicolae Timofti"
+		ideology = liberalist
+		picture = "Nicolae_Timofti.dds"
+	}
 }

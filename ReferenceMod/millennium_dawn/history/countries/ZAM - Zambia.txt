@@ -161,37 +161,37 @@ set_politics = {
 	
 create_country_leader = {
 	name = "Frederick Chiluba"
-	picture = "Portrait_ZAM_Frederick_Chiluba.dds"
+	picture = "Frederick_Chiluba.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Hakainde Hichilema"
-	picture = "Portrait_ZAM_Hakainde_Hichilema.dds"
+	picture = "Hakainde_Hichilema.dds"
 	ideology = liberalist
 }
 
 create_country_leader = {
 	name = "Michael Sata"
-	picture = "Portrait_ZAM_Michael_Sata.dds"
+	picture = "Michael_Sata.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
 	name = "Elias Chipimo Jr."
-	picture = "Portrait_ZAM_Elias_Chipimo.dds"
+	picture = "Elias_Chipimo.dds"
 	ideology = fiscal_conservative
 }
 
 create_country_leader = {
 	name = "Godfrey Miyanda"
-	picture = "Portrait_ZAM_Godfrey_Miyanda.dds"
+	picture = "Godfrey_Miyanda.dds"
 	ideology = counter_progressive_democrat
 }
 
 create_corps_commander = {
 	name = "Nathan Mulenga"
-	picture = "Portrait_ZAM_general_Nathan_Mulenga.dds"
+	picture = "generals/Nathan_Mulenga.dds"
 	skill = 2
 }
 
@@ -250,46 +250,25 @@ create_corps_commander = {
 	}
 
 	create_country_leader = {
-	name = "Rupiah Banda"
-	desc = "POLITICIAN_ZAM_RUPIAH_BANDA_DESC"
-	picture = "Portrait_ZAM_Rupiah_Banda.dds"
-	expire = "2020.1.1"
-	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
+		name = "Rupiah Banda"
+		picture = "Rupiah_Banda.dds"
+		ideology = social_democrat_ideology
 	}
 
 }
 
 2014.10.29 = {
-	
 	create_country_leader = {
-	name = "Guy Scott"
-	desc = "POLITICIAN_ZAM_GUY_SCOTT_DESC"
-	picture = "Portrait_ZAM_Guy_Scott.dds"
-	expire = "2020.1.1"
-	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
+		name = "Guy Scott"
+		picture = "Guy_Scott.dds"
+		ideology = democratic_socialist_ideology
 	}
-	}
-
 }
 
 2015.1.25 = {
-	
 	create_country_leader = {
-	name = "Edgar Lungu"
-	desc = "POLITICIAN_ZAM_EDGAR_LUNGU_DESC"
-	picture = "Portrait_ZAM_Edgar_Lungu.dds"
-	expire = "2020.1.1"
-	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-	}
+		name = "Edgar Lungu"
+		picture = "Edgar_Lungu.dds"
+		ideology = democratic_socialist_ideology
 	}
 }

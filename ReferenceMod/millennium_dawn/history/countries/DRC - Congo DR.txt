@@ -137,12 +137,12 @@ set_politics = {
 create_country_leader = {
 	name = "Laurent-Désiré Kabila"
 	ideology = democratic_socialist_ideology
-	picture = "Portrait_DRC_Laurent.dds"
+	picture = "Laurent_Desire_Kabila.dds"
 }
 2015.1.1 = {
 	create_country_leader = {
 		name = "Joseph Kabila"
 		ideology = democratic_socialist_ideology
-		picture = "Portrait_DRC_Joseph.dds"
+		picture = "Joseph_Kabila.dds"
 	}
 }

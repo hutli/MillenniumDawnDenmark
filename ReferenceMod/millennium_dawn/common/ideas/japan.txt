@@ -3,6 +3,8 @@ ideas = {
 	country = {
 	
 		idea_JAP_emperor_akihito = {
+		
+			picture = emperor_akihito
 			
 			allowed = {
 				original_tag = JAP
@@ -15,7 +17,9 @@ ideas = {
 		}
 		
 		JAP_democratic_interventionism = {
-			picture = generic_democratic_drift_bonus
+		
+			picture = volunteer_expedition_bonus
+			
 			allowed = {
 				always = no
 			}
@@ -28,7 +32,9 @@ ideas = {
 		}
 		
 		JAP_democratic_militia = {
-			picture = generic_infantry_bonus
+		
+			picture = manpower_bonus
+			
 			allowed = {
 				always = no
 			}
@@ -38,7 +44,9 @@ ideas = {
 		}
 		
 		JAP_fortress_japan_idea = {
-			picture = generic_wall_line
+		
+			picture = fortification2
+			
 			allowed = {
 				always = no
 			}
@@ -47,13 +55,15 @@ ideas = {
 				drift_defence_factor = 0.1
 				army_morale_factor = 0.1
 				unity_weekly = 0.001
-				production_speed_bunker_factor = 0.3
-				production_speed_coastal_bunker_factor = 0.3
+				production_speed_bunker_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
 			}
 		}
 		
 		JAP_imperial_allegiance = {
-			picture = generic_monarchy_drift_bonus
+		
+			picture = imperial_glory
+			
 			allowed = {
 				always = no
 			}
@@ -63,7 +73,9 @@ ideas = {
 		}
 		
 		JAP_protect_our_ideology = {
-			picture = generic_democratic_drift_bonus
+		
+			picture = national_mobilization
+			
 			allowed = {
 				always = no
 			}
@@ -74,7 +86,9 @@ ideas = {
 		}
 		
 		JAP_vanguards_of_democracy = {
-			picture = generic_morale_bonus
+		
+			picture = morale_bonus
+			
 			allowed = {
 				always = no
 			}
@@ -84,7 +98,9 @@ ideas = {
 		}
 	
 		japanese_article_9 = {
-			picture = article_9
+		
+			picture = japanese_article_9
+			
 			allowed = {
 				always = no
 			}
@@ -97,7 +113,9 @@ ideas = {
 		}
 	
 		japanese_article_9_adapted = {
-			picture = article_9
+		
+			picture = japanese_article_9
+			
 			allowed = {
 				always = no
 			}
@@ -109,7 +127,9 @@ ideas = {
 		}
 	
 		japanese_supremacy = {
-			picture = generic_fascism_drift_bonus
+		
+			picture = warrior_traditions
+			
 			allowed = {
 				always = no
 			}

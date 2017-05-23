@@ -4,18 +4,13 @@ state={
 	name="STATE_582" # Magnitogorsk
 	manpower = 1044991
 	
-	state_category = rural
+	state_category = pastoral
 	
-	resources={
-		steel=72
-		oil=12
-	}
-
+	
 	history={
 		owner = SOV
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 3
 		}
 		add_core_of = SOV
 	}

@@ -5,12 +5,15 @@ state={
 	manpower = 1343760
 	
 	state_category = large_town
+	
+	resources = {
+		tungsten = 11
+	}
 
 	history={
 		owner = SPR
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 4
 			arms_factory = 1
 		}
 		victory_points = {

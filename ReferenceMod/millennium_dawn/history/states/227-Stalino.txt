@@ -1,18 +1,21 @@
 
 state={
 	id=227
-	name="STATE_227"
+	name="STATE_227" #Donietzk
 	manpower = 3850500
 	
-	state_category = city
+	state_category = large_town
+	
+	resources = {
+		steel = 23
+	}
 
 	history={
 		owner = UKR
 		buildings = {
-			infrastructure = 7
-			industrial_complex = 5
-			arms_factory = 3
-			dockyard = 1
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
 			air_base = 4
 			3421 = { 
 				bunker = 3 

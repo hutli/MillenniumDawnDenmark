@@ -7,19 +7,17 @@ state={
 	state_category = large_city
 	
 	resources={
-		steel=28
-		chromium=56
-		aluminium=48
-		oil=13
+		chromium=1050
+		aluminium=47
+		steel=15
 	}
 
 	history={
 		owner = SAF
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 6
-			arms_factory = 3
-			air_base = 3
+			infrastructure = 5
+			industrial_complex = 2
+			air_base = 4
 		}
 		victory_points = {
 			10400 10

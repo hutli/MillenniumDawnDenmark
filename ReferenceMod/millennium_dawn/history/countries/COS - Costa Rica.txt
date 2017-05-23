@@ -141,35 +141,16 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Miguel Ángel Rodríguez Echeverría"
 	ideology = counter_progressive_democrat
-	picture = "Portrait_COS_ECHEVERRIA.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Miguel_Echevarria.dds"
 }
-
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Luis Guillermo Solís"
-	ideology = counter_progressive_democrat
-	picture = "Portrait_COS_LUIS_Guillermo.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Luis Guillermo Solís"
+		ideology = counter_progressive_democrat
+		picture = "Luis_Solis.dds"
+	}
 }
 

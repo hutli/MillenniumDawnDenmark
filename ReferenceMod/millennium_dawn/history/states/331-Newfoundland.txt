@@ -5,14 +5,18 @@ state={
 	manpower = 479000
 	
 	state_category = rural
+	
+	resources = {
+		oil = 15
+		steel = 12
+	}
 
 	history={
 		owner = CAN
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 			12505 = {
-				naval_base = 1
+				naval_base = 2
 			}
 		}
 		add_core_of = CAN

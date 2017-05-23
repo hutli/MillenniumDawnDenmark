@@ -144,7 +144,7 @@ set_politics = {
 create_country_leader = {
 	name = "Abdelaziz Buteflika"
 	ideology = democratic_socialist_ideology
-	picture = "Portrait_ALG_Abd_al_Aziz_Bouteflika.dds"
+	picture = "Abdelaziz_Bouteflika.dds"
 }
 
 create_equipment_variant = {

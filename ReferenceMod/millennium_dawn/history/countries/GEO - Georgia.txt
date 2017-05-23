@@ -129,14 +129,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Eduard Shevardnadze"
-	picture = "Portrait_GEO_Eduard_Shevardnadze.dds"
+	picture = "Eduard_Shevardnadze.dds"
 	ideology = liberalist
 }
 
 2003.1.1 = {
 	create_country_leader = {
 		name = "Giorgi Margvelashvili"
-		picture = "Portrait_GEO_Giorgi_Margvelashvili.dds"
+		picture = "Giorgi_Margvelashvili.dds"
 		ideology = liberalist
 	}
 }

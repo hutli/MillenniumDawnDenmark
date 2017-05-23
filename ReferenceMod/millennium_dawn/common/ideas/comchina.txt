@@ -3,6 +3,7 @@ ideas = {
 	country = {
 		
 		idea_PRC_chinese_socialism = {
+			picture = communist_china
 			
 			allowed = { always = no }
 			
@@ -18,6 +19,7 @@ ideas = {
 		}
 		
 		idea_PRC_one_child_policy = {
+			picture = risk_of_famine
 			
 			allowed = { always = no }
 			
@@ -36,9 +38,9 @@ ideas = {
 		}
 
 		idea_focus_PRC_china_dream = {
-			allowed = { always = no }
+			picture = scw_intervention_rep
 			
-			picture = prc_china_dream
+			allowed = { always = no }
 			removal_cost = -1
 			
 			modifier = {
@@ -60,11 +62,10 @@ ideas = {
 		}
 
 		idea_focus_PRC_serve_people = {
-			allowed = { always = no }
+			picture = intel_bonus
 			
-			picture = prc_lei_feng
+			allowed = { always = no }
 			removal_cost = -1
-
 
 			modifier = {
 			conscription = 0.01  
@@ -73,9 +74,9 @@ ideas = {
 		}
 
 		idea_focus_PRC_democracy = {
-			allowed = { always = no }
+			picture = democracy
 			
-			picture = generic_democratic_drift_bonus
+			allowed = { always = no }
 			removal_cost = -1
 			
 			modifier = {
@@ -89,7 +90,7 @@ ideas = {
 		idea_focus_PRC_new_republic = {
 			allowed = { always = no }
 			
-			picture = prc_new_republic
+			picture = volunteer_expedition_bonus
 			removal_cost = -1
 			
 			modifier = {
@@ -102,9 +103,9 @@ ideas = {
 		}
 
 		idea_focus_PRC_restored_republic = {
-			allowed = { always = no }
+			picture = national_mobilization
 			
-			picture = goal_align_to_taiwan
+			allowed = { always = no }
 			removal_cost = -1
 			
 			modifier = {
@@ -117,45 +118,46 @@ ideas = {
 
 		idea_focus_PRC_core_interests = {
 			allowed = { always = no }
-		
+			
+			picture = general_staff
 			removal_cost = -1
 
-
 			modifier = {
-			justify_war_goal_time = -0.05
+				justify_war_goal_time = -0.05
 			}
 		}
 
 		idea_focus_PRC_educational_exchanges = {
-			allowed = { always = no }
+			picture = research_bonus
 		
+			allowed = { always = no }
 			removal_cost = -1
-
-
+			
 			modifier = {
-			research_time_factor = -0.02
+				research_time_factor = -0.02
 			}
 		}
 
 		idea_focus_PRC_economic_liberalization = {
-			allowed = { always = no }
+			picture = production_bonus
 		
+			allowed = { always = no }
 			removal_cost = -1
 
 			modifier = {
-				production_speed_buildings_factor = 0.02
-				production_speed_industrial_complex_factor = 0.02
+				production_speed_buildings_factor = 0.05
 			}
 		}
 
 		idea_focus_PRC_free_markets = {
-			allowed = { always = no }
+			picture = consumer_goods
 		
+			allowed = { always = no }
 			removal_cost = -1
 
 			modifier = {
-			local_resources_factor = 0.05
-			industrial_capacity_factory = 0.02
+				local_resources_factor = 0.05
+				industrial_capacity_factory = 0.02
 			}
 		}
 		

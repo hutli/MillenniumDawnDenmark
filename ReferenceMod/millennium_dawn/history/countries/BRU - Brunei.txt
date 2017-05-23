@@ -106,7 +106,16 @@ set_politics = {
 
 	parties = {
 		monarchist = {
-			popularity = 100
+			popularity = 57
+		}
+		islamist = {
+			popularity = 19
+		}
+		conservative = {
+			popularity = 18
+		}
+		democratic_socialist = {
+			popularity = 6
 		}
 	}
 	
@@ -118,6 +127,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Sultan Hassanal Bolkiah"
-	picture = "Portrait_BRU_Hassanal_Bolkiah.dds"
+	picture = "Hassanal_Bolkiah.dds"
 	ideology = absolute_monarchist
 }

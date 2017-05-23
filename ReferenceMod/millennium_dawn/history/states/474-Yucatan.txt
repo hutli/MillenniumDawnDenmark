@@ -4,17 +4,16 @@ state={
 	name="STATE_474"
 	manpower = 1080000
 	
-	state_category = rural
+	state_category = pastoral
 	
 	resources = {
-		oil=46
+		rubber = 2
 	}
 
 	history={
 		owner = MEX
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 1
 			air_base = 1
 			4904 = {
 				naval_base = 2

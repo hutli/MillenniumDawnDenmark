@@ -142,35 +142,18 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Julio María Sanguinetti"
 	ideology = centrist
-	picture = "Portrait_URG_Julio.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Julio_M_Sanguinetti.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Tabaré Vázquez"
-	ideology = liberalist
-	picture = "Portrait_URG_Tabare.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Tabaré Vázquez"
+		ideology = liberalist
+		picture = "Tabare_Vazquez.dds"
+	}
 }
 
 

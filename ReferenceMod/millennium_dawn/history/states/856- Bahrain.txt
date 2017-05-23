@@ -5,20 +5,25 @@ state={
 	manpower = 807131
 	
 	state_category = city
+	
+	resources = {
+		aluminium=93
+		oil=6
+	}
 
 	history={
 		owner = BAH
+		add_core_of = BAH
 		buildings = {
-			infrastructure = 7
-			industrial_complex = 5
-			arms_factory = 1
+			infrastructure = 9
+			industrial_complex = 4
+			arms_factory = 2
 			air_base = 2
 			13204 = {
 				naval_base = 3
 			}
 		}
 		victory_points = { 13204 3 }
-		add_core_of = BAH
 	}
 
 	provinces={

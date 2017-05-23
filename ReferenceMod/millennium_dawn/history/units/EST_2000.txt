@@ -83,4 +83,16 @@ units = {
 		division_template = "Armored Regiment"
 		start_experience_factor = 0.3
 	}
+	
+	navy = {
+		name = "Eesti Merevägi"
+		base = 3152
+		location = 3152
+
+		ship = {
+			name = "Admiral Pitka"
+			definition = frigate
+			equipment = { frigate_1 = { amount = 1 owner = EST }}}
+			
+	}
 }

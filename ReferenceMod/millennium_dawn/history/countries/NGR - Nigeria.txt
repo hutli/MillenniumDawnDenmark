@@ -106,43 +106,19 @@ add_ideas = {
 }
 
 set_politics = {
-
 	parties = {
-		islamist = {
-		popularity = 2
-		}
-		fascist = {
-		popularity = 0
-		}
-		nationalist = {
-		popularity = 2
-		}
-		reactionary = {
-		popularity = 20
-		}
-		conservative = {
-		popularity = 49
-		}
-		market_liberal = {
-		popularity = 0
-		}
-		social_liberal = {
-		popularity = 3
-		}
-		social_democrat = {
-		popularity = 3
-		}
-		progressive = {
-		popularity = 15
-		}
-		democratic_socialist = {
-		popularity = 0
-		}
-		communist = {
-		popularity = 6
-		}
+		islamist = { popularity = 2 }
+		fascist = { popularity = 0 }
+		nationalist = { popularity = 2 }
+		reactionary = { popularity = 20 }
+		conservative = { popularity = 49 }
+		market_liberal = { popularity = 0 }
+		social_liberal = { popularity = 3 }
+		social_democrat = { popularity = 3 }
+		progressive = { popularity = 15 }
+		democratic_socialist = { popularity = 0 }
+		communist = { popularity = 6 }
 	}
-	
 	ruling_party = conservative
 	last_election = "1999.2.20"
 	election_frequency = 48
@@ -150,156 +126,129 @@ set_politics = {
 }
 
 create_country_leader = {
-name = "Goodluck Jonathan"
-desc = "POLITICIAN_NGR_GOODLUCK_JONATHAN_DESC"
-picture = "Portrait_NGR_Goodluck_Jonathan.dds"
-expire = "2020.1.1"
-ideology = constitutionalist
-
-traits = {
-
-}
+	name = "Goodluck Jonathan"
+	picture = "Goodluck_Jonathan.dds"
+	ideology = constitutionalist
 }
 
 create_country_leader = {
-name = "Muhammadu Buhari"
-desc = "POLITICIAN_NGR_MUHAMMADU_BUHARI_DESC"
-picture = "Portrait_NGR_Muhammadu_Buhari.dds"
-expire = "2020.1.1"
-ideology = moderate
-
-traits = {
-
-}
+	name = "Muhammadu Buhari"
+	picture = "Muhammadu_Buhari.dds"
+	ideology = moderate
 }
 
 create_country_leader = {
-name = "Okey Nwosu"
-desc = "POLITICIAN_NGR_OKEY_NWOSU_DESC"
-picture = "Portrait_NGR_Okey_Nwosu.dds"
-expire = "2020.1.1"
-ideology = oligarchist
-
-traits = {
-
-}
+	name = "Okey Nwosu"
+	picture = "Okey_Nwosu.dds"
+	ideology = oligarchist
 }
 
 create_country_leader = {
-name = "Adebisi Akande"
-desc = "POLITICIAN_NGR_ADEBISIS_ANKANDE_DESC"
-picture = "Portrait_NGR_Adebisi_Akande.dds"
-expire = "2020.1.1"
-ideology = libertarian
-
-traits = {
-
-}
+	name = "Adebisi Akande"
+	picture = "Adebisi_Akande.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
-name = "Joseph Avazi"
-ideology = progressive_ideology
+	name = "Joseph Avazi"
+	picture = "Joseph_Avazi.dds"
+	ideology = progressive_ideology
 }
 
 create_country_leader = {
 	name = "Segun Sango"
-	picture = "Portrait_NGR_Segun_Sango.dds"
+	picture = "Segun_Sango.dds"
 	ideology = marxist
 }
 
 create_country_leader = {
 	name = "Alhaji Abdulkadir Abdulsalam"
-	picture = "Portrait_NGR_Alhaji_Abdulkadir_Abdulsalam.dds"
+	picture = "Alhaji_A_Abdulsalam.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Tanko Yinusa"
-	picture = "Portrait_NGR_Tanko_Yinusa.dds"
+	picture = "Tanko_Yinusa.dds"
 	ideology = national_democrat
 }
 
 create_country_leader = {
 	name = "Abubakar Shekau"
-	picture = "Portrait_NGR_Abubakar_Shekau.dds"
+	picture = "Abubakar_Shekau.dds"
 	ideology = islamic_authoritarian
 }
 
 create_corps_commander = {
-	name = "Abayomi Olonisakin"
-	picture = "Portrait_NGR_general_Abayomi_Olonisakin.dds"
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Abdulrahman Bello Dambazau"
-	picture = "Portrait_NGR_general_Abdulrahman_Bello_Dambazau.dds"
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Alexander Ogomudia"
-	picture = "Portrait_NGR_general_Alexander_Ogomudia.dds"
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Andrew Azazi"
-	picture = "Portrait_NGR_general_Andrew_Azazi.dds"
-	skill = 1
-}
-
-create_corps_commander = {
 	name = "Kenneth Minimah"
-	picture = "Portrait_NGR_general_Kenneth_Minimah.dds"
+	picture = "generals/Kenneth_Minimah.dds"
 	skill = 2
 }
 
 create_corps_commander = {
 	name = "Martin Luther Agwai"
-	picture = "Portrait_NGR_general_Martin_Luther_Agwai.dds"
+	picture = "generals/Martin_Luther_Agwai.dds"
 	skill = 2
 }
 
 create_corps_commander = {
-	name = "Turker Yusuf Buratai"
-	picture = "Portrait_NGR_general_Turker_Yusuf_Buratai.dds"
+	name = "Abayomi Olonisakin"
+	picture = "generals/Abayomi_Olonisakin.dds"
 	skill = 1
 }
 
-create_navy_leader = {
-	name = "D.J. Ezeoba"
-	picture = "Portrait_NGR_admiral_D.J._Ezeoba.dds"
+create_corps_commander = {
+	name = "Abdulrahman Bello Dambazau"
+	picture = "generals/Abdulrahman_B_Dambazau.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Alexander Ogomudia"
+	picture = "generals/Alexander_Ogomudia.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Andrew Azazi"
+	picture = "generals/Andrew_Azazi.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Turker Yusuf Buratai"
+	picture = "generals/Turker_Yusuf_Buratai.dds"
 	skill = 1
 }
 
 create_navy_leader = {
 	name = "Ibok-Ete Ekwe Ibas"
-	picture = "Portrait_NGR_admiral_Ibok-Ete_Ekwe_Ibas.dds"
+	picture = "admirals/Ibok_Ete_Ekwe_Ibas.dds"
 	skill = 2
 }
 
 create_navy_leader = {
-	name = "Ishaya Ibrahim"
-	picture = "Portrait_NGR_admiral_Ishaya_Ibrahim.dds"
+	name = "D. J. Ezeoba"
+	picture = "admirals/DJ_Ezeoba.dds"
 	skill = 1
 }
 
 create_navy_leader = {
-	name = "U.O. Jibrin"
-	picture = "Portrait_NGR_admiral_U.O._Jibrin.dds"
+	name = "Ishaya Ibrahim"
+	picture = "admirals/.dds"
 	skill = 1
 }
 
-2014.1.1 = {
-	set_country_flag = starting_stability_low
+create_navy_leader = {
+	name = "U. O. Jibrin"
+	picture = "admirals/UO_Jibrin.dds"
+	skill = 1
 }
 
+2014.1.1 = { set_country_flag = starting_stability_low }
+
 2015.3.28 = {
-	
 	set_politics = {
-	
 		parties = {
 			islamist = { popularity = 18 }
 			fascist = { popularity = 4 }
@@ -313,7 +262,6 @@ create_navy_leader = {
 			democratic_socialist = { popularity = 0 }
 			communist = { popularity = 0 }
 		}
-		
 		ruling_party = social_liberal
 		last_election = "2015.3.28"
 		election_frequency = 48

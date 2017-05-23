@@ -108,21 +108,14 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		social_liberal = {
-			popularity = 47
-		}
-		social_democrat = {
-			popularity = 43
-		}
-		democratic_socialist = {
-			popularity = 4.5
-		}
-		conservative = {
-			popularity = 3.75
-		}
-		market_liberal = {
-			popularity = 1.75
-		}
+		social_liberal = { popularity = 46.9 }
+		social_democrat = { popularity = 42.8 }
+		democratic_socialist = { popularity = 4.5 }
+		conservative = { popularity = 3.75 }
+		market_liberal = { popularity = 1.75 }
+		nationalist = { popularity = 0.1 }
+		progressive = { popularity = 0.1 }
+		communist = { popularity = 0.1 }
 	}
 	
 	ruling_party = social_liberal
@@ -133,20 +126,20 @@ set_politics = {
 
 create_country_leader = {
 	name = "Lester Bird"
-	picture = "Portrait_ANT_Lester_Bird.dds"
+	picture = "Lester_Bird.dds"
 	ideology = liberalist
 }
 
 create_country_leader = {
 	name = "Baldwin Spencer"
-	picture = "Portrait_ANT_Baldwin_Spencer.dds"
+	picture = "Baldwin_Spencer.dds"
 	ideology = social_democrat_ideology
 }
 
 2010.1.1 = {
 	create_country_leader = {
 		name = "Gaston Alphonso Browne"
-		picture = "Portrait_ANT_Gaston_Alphonso_Browne.dds"
+		picture = "Gaston_Alphonso_Browne.dds"
 		ideology = liberalist
 	}
 }

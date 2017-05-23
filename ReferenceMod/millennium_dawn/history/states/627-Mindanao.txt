@@ -5,11 +5,18 @@ state={
 	manpower = 6496508
 	
 	state_category = rural
+	
+	resources = {
+		chromium = 4
+		rubber = 13
+		oil = 1
+	}
 
 	history={
 		owner = PHI
 		buildings = {
 			infrastructure = 3
+			air_base = 1
 			4241 = {
 				naval_base = 1
 			}

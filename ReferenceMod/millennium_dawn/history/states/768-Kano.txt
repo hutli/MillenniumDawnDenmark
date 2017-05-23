@@ -1,12 +1,15 @@
 state={
 	id=768
 	name="STATE_768"
+	resources = {
+		oil=1
+	}
 	history = {
 		owner = NGR
-		
+		add_core_of = NGR
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			air_base = 1
 		}
 	}
 	provinces={

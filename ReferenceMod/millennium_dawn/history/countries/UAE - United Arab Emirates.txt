@@ -130,6 +130,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Khalifa bin Zayed"
-	picture = "Portrait_UAE_Khalifa_Bin_Zayed.dds"
+	picture = "Khalifa_Bin_Zayed.dds"
 	ideology = absolute_monarchist
 }

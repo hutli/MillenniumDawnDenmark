@@ -1,28 +1,32 @@
 state={
 	id=85
-	name="STATE_85"
-	manpower = 1055100
+	name="STATE_85" #Gdansk
+	manpower = 2765100
 	
 	state_category = city
+	
+	resources = {
+		oil=2
+		steel=5
+	}
+	
 	history={
 		owner = POL
-		victory_points = {
-			362 10
-		}
+		victory_points = { 362 15 }
+		victory_points = { 3295 5 }
 		buildings = {
-			infrastructure = 6
-			arms_factory = 2
-			industrial_complex = 1
+			infrastructure = 7
+			industrial_complex = 2
 			dockyard = 2
 			air_base = 3
 			362 = {
-				naval_base = 5
+				naval_base = 6
 			}
 		}
 		add_core_of = POL
 	}
 
 	provinces={
-		279 334 362 389 3295 3324 9263 
+		334 362 389 3295 3324 9263 3380
 	}
 }

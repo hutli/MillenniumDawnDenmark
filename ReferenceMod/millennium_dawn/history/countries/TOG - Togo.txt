@@ -105,7 +105,16 @@ set_politics = {
 
 	parties = {
 		reactionary = {
-			popularity = 100
+			popularity = 40
+		}
+		social_liberal = {
+			popularity = 30
+		}
+		conservative = {
+			popularity = 20
+		}
+		communist = {
+			popularity = 10
 		}
 	}
 	
@@ -117,57 +126,34 @@ set_politics = {
 
 create_country_leader = {
 	name = "Gnassingbé Eyandéma"
-	picture = "Portrait_TOG_Gnassingbe_Eyandema.dds"
+	picture = "Gnassingbe_Eyandema.dds"
 	ideology = counter_progressive_democrat
-	}
+}
+create_country_leader = {
+	name = "Faure Gnassingbe"
+	picture = "Faure_Gnassingbe.dds"
+	ideology = moderate
+}
 	
 2016.1.1 = {
-
 	set_politics = {
-	
 		parties = {
-			islamist = {
-				popularity = 1
-			}
-			nationalist = {
-				popularity = 1
-			}
 			reactionary = {
-				popularity = 2
+				popularity = 25
+			}
+			social_liberal = {
+				popularity = 40
 			}
 			conservative = {
 				popularity = 25
-			}
-			market_liberal = {
-				popularity = 6
-			}
-			social_liberal = {
-				popularity = 30
-			}
-			social_democrat = {
-				popularity = 5
-			}
-			progressive = {
-				popularity = 10
-			}
-			democratic_socialist = {
-				popularity = 10
 			}
 			communist = {
 				popularity = 10
 			}
 		}
-	
 		ruling_party = social_liberal
 		last_election = "2015.4.25"
 		election_frequency = 60
 		elections_allowed = yes
-	
-	}
-	
-	create_country_leader = {
-		name = "Faure Gnassingbe"
-		picture = "Portrait_TOG_Faure_Gnassingbe.dds"
-		ideology = moderate
 	}
 }

@@ -7,16 +7,16 @@ state={
 	state_category = pastoral
 	
 	resources = {
-		oil = 46
+		oil = 182
 	}
 
 	history={
 		owner = VEN
+		add_core_of = VEN
 		buildings = {
 			infrastructure = 1
-
+			air_base = 1
 		}
-		add_core_of = VEN
 	}
 
 	provinces={

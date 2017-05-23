@@ -3,8 +3,8 @@ state={
 	name="STATE_463"
 
 	resources = {
-		oil=270
-		steel=20
+		oil = 208
+		steel = 3
 	}
 	
 	history={
@@ -12,11 +12,11 @@ state={
 		buildings = {
 			infrastructure = 2
 			air_base = 4
+			industrial_complex = 1
+			dockyard = 1
 			13091 = {
 				naval_base = 1
-
 			}
-
 		}
 		add_core_of = USA
 		add_core_of = ALA

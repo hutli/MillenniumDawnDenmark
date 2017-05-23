@@ -96,18 +96,13 @@ set_technology = {
 
 set_politics = {
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		monarchist = {
-			popularity = 75
-		}
-		progressive = {
-			popularity = 9
-		}
-		communist = {
-			popularity = 15
-		}
+		islamist = { popularity = 1 }
+		monarchist = { popularity = 65 }
+		conservative = { popularity = 5 }
+		market_liberal = { popularity = 1 }
+		social_liberal = { popularity = 4 }
+		progressive = { popularity = 9 }
+		communist = { popularity = 15 }
 	}
 	
 	ruling_party = monarchist
@@ -119,5 +114,5 @@ set_politics = {
 create_country_leader = {
 	name = "Tenzin Gyatso"
 	ideology = absolute_monarchist
-	picture = "Portrait_TIB_Tenzin_Gyatso.dds"
+	picture = "Tenzin_Gyatso.dds"
 }

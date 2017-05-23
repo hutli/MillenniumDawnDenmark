@@ -7,17 +7,17 @@ state={
 	state_category = large_town
 	
 	resources={
-		chromium=13
-		steel=5
-		tungsten=3
-		oil=2
+		chromium=2
+		steel=1
 	}
 
 	history={
 		owner = BOT
+		add_core_of = BOT
 		buildings = {
-			infrastructure = 5
+			infrastructure = 4
 			industrial_complex = 3
+			arms_factory = 1
 			air_base = 1
 		}
 		victory_points = { 8214 3 }

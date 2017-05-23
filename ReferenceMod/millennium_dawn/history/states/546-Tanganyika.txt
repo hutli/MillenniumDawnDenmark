@@ -4,10 +4,7 @@ state={
 	name="STATE_546"
 	
 	resources = {
-		oil=25
-		tungsten=9
-		chromium=7
-		steel=41
+		steel = 2
 	}
 
 	history={
@@ -17,16 +14,11 @@ state={
 		victory_points = { 10932 1 }	#Mwanza
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 7
+			industrial_complex = 5
 			arms_factory = 2
 			air_base = 1
-			2196 = {
-				naval_base = 2
-
-			}
-
+			2196 = { naval_base = 2 }
 		}
-
 	}
 
 	provinces={

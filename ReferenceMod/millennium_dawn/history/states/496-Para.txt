@@ -7,19 +7,19 @@ state={
 	state_category = rural
 	
 	resources={
-		steel=13
-		chromium=2
+		aluminium = 9
+		oil = 35
+		steel = 12
 	}
 
 	history={
 		owner = BRA
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 3
-			arms_factory = 1
-			dockyard = 1
+			industrial_complex = 1
+			air_base = 2
 			11002 = {
-				naval_base = 1
+				naval_base = 2
 			}
 		}
 		add_core_of = BRA

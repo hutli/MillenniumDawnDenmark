@@ -146,184 +146,97 @@ set_politics = {
 	election_frequency = 60
 	elections_allowed = yes
 }
-
-2000.1.1 = {
 	
-	create_country_leader = {
+create_country_leader = {
 	name = "Daniel Arap Moi"
-	desc = "POLITICIAN_KEN_DANIEL_ARAP_MOI_DESC"
-	picture = "Portrait_KEN_Daniel_Arap_Moi.dds"
-	expire = "2020.1.1"
+	picture = "Daniel_Arap_Moi.dds"
 	ideology = right_wing_conservative
-	
-	traits = {
-	
-	}
-	}
+}
 
 #	create_country_leader = {
 #	name = "Mwai Kibaki"
-#	desc = "POLITICIAN_KEN_MWAI_KIBAKI_DESC"
-#	picture = "Portrait_KEN_Mwai_Kibaki.dds"
-#	expire = "2020.1.1"
+#	picture = "Mwai_Kibaki.dds"
 #	ideology = right_wing_conservative
-#	
-#	traits = {
-#	
-#	}
 #	}
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Michael Wamalwa"
-	desc = "POLITICIAN_KEN_MICHAEL_WAMALWA_DESC"
-	picture = "Portrait_KEN_Michael_Wamalwa.dds"
-	expire = "2020.1.1"
+	picture = "Michael_Wamalwa.dds"
 	ideology = moderate
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
-	name = "Mwandawiro Mghanga"
-	desc = "POLITICIAN_KEN_MWANDAWIRO_MGHANGA_DESC"
-	picture = "Portrait_KEN_Mwandawiro_Mghanga.dds"
-	expire = "2020.1.1"
-	ideology = marxist
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
-	name = "Katama Mkangi"
-	desc = "POLITICIAN_KEN_MWANDAWIRO_MGHANGA_DESC"
-	expire = "2020.1.1"
-	ideology = libertarian
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
-	name = "Moses Wetangula"
-	desc = "POLITICIAN_KEN_MOSES_WETANGULA_DESC"
-	picture = "Portrait_KEN_Moses_Wetangula.dds"
-	expire = "2020.1.1"
-	ideology = liberalist
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
-	name = "Raila Odinga"
-	desc = "POLITICIAN_KEN_RAILA_ODINGA_DESC"
-	picture = "Portrait_KEN_Raila_Odinga.dds"
-	expire = "2020.1.1"
-	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
-	name = "Uhuru Kenyatta"
-	desc = "POLITICIAN_KEN_UHURU_KENYATTA_DESC"
-	picture = "Portrait_KEN_Uhuru_Kenyatta.dds"
-	expire = "2020.1.1"
-	ideology = counter_progressive_democrat
-	
-	traits = {
-	
-	}
-	}
-
-	create_country_leader = {
-	name = "Musalia Mudavadi"
-	desc = "POLITICIAN_KEN_MUSALIA_MUDAVADI_DESC"
-	picture = "Portrait_KEN_Musalia_Mudavadi.dds"
-	expire = "2020.1.1"
-	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
-	}
-
-	create_corps_commander = {
-	name = "Samson Mwathethe"
-	picture = "Portrait_KEN_general_Samson_Mwathethe.dds"
-	skill = 1
-	}
-
-	create_corps_commander = {
-	name = "Leonard Ngondi"
-	picture = "Portrait_KEN_general_Leonard_Ngondi.dds"
-	skill = 1
-	}
-
-	create_navy_leader = {
-	name = "Levi Mghalu"
-		picture = "Portrait_KEN_admiral_Levi_Mghalu.dds"
-	traits = { }
-	skill = 1
-	}
-
-
 }
 
+create_country_leader = {
+	name = "Mwandawiro Mghanga"
+	picture = "Mwandawiro_Mghanga.dds"
+	ideology = marxist
+}
 
+create_country_leader = {
+	name = "Katama Mkangi"
+	picture = "Katama_Mkangi.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Moses Wetangula"
+	picture = "Moses_Wetangula.dds"
+	ideology = liberalist
+}
+
+create_country_leader = {
+	name = "Raila Odinga"
+	picture = "Raila_Odinga.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Uhuru Kenyatta"
+	picture = "Uhuru_Kenyatta.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "Musalia Mudavadi"
+	picture = "Musalia_Mudavadi.dds"
+	ideology = progressive_ideology
+}
+
+create_corps_commander = {
+	name = "Samson Mwathethe"
+	picture = "generals/Samson_Mwathethe.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Leonard Ngondi"
+	picture = "generals/Leonard_Ngondi.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Levi Mghalu"
+	picture = "admirals/Levi_Mghalu.dds"
+	skill = 1
+}
 
 2013.3.4 = {
-	
 	set_politics = {
-
-	parties = {
-	islamist = {
-	popularity = 0
+		parties = {
+			islamist = { popularity = 0 }
+			fascist = { popularity = 0 }
+			nationalist = { popularity = 5 }
+			reactionary = { popularity = 40 }
+			conservative = { popularity = 5 }
+			market_liberal = { popularity = 0 }
+			social_liberal = { popularity = 20 }
+			social_democrat = { popularity = 25 }
+			progressive = { popularity = 5 }
+			democratic_socialist = { popularity = 0 }
+			communist = { popularity = 0 }
+		}
+		ruling_party = reactionary
+		last_election = "2013.3.4"
+		election_frequency = 60
+		elections_allowed = yes
 	}
-	fascist = {
-	popularity = 0
-	}
-	nationalist = {
-	popularity = 5
-	}
-	reactionary = {
-	popularity = 40
-	}
-	conservative = {
-	popularity = 5
-	}
-	market_liberal = {
-	popularity = 0
-	}
-	social_liberal = {
-	popularity = 20
-	}
-	social_democrat = {
-	popularity = 25
-	}
-	progressive = {
-	popularity = 5
-	}
-	democratic_socialist = {
-	popularity = 0
-	}
-	communist = {
-	popularity = 0
-	}
-	}
-	
-	ruling_party = reactionary
-	last_election = "2013.3.4"
-	election_frequency = 60
-	elections_allowed = yes
-}
-
 }

@@ -49,6 +49,8 @@ set_technology = {
 	antitank1 = 1
 	interwar_antiair = 1
 	
+	corvette1 = 1
+	corvette2 = 1
 	destroyer1 = 1
 	destroyer2 = 1
 	light_cruiser1 = 1
@@ -57,6 +59,7 @@ set_technology = {
 	missile_cruiser2 = 1
 	carrier1 = 1
 	carrier2 = 1
+	frigate1 = 1
 	submarine1 = 1
 	submarine2 = 1
 	destroyer_improved_engines = 1
@@ -137,43 +140,43 @@ set_politics = {
 
 create_country_leader = {
 	name = "Abdelhay Bakkali Tahiri"
-	picture = "Portrait_BEL_Abdelhay_Bakkali_Tahiri.dds"
+	picture = "Abdelhay_Bakkali_Tahiri.dds"
 	ideology = islamic_authoritarian
 }
 create_country_leader = {
 	name = "Bart De Wever"
-	picture = "Portrait_BEL_Bart_De_Wever.dds"
+	picture = "Bart_De_Wever.dds"
 	ideology = national_democrat
 }
 create_country_leader = {
 	name = "Albert II of Belgium"
-	picture = "Portrait_BEL_Albert.dds"
+	picture = "Albert.dds"
 	ideology = absolute_monarchist	
 }
 create_country_leader = {
 	name = "Yves Leterme"
-	picture = "Portrait_BEL_Yves_Leterme.dds"
+	picture = "Yves_Leterme.dds"
 	ideology = christian_democrat
 }
 create_country_leader = {
 	name = "Guy Verhofstadt"
-	picture = "Portrait_BEL_Guy_Verhofstadt.dds"
+	picture = "Guy_Verhofstadt.dds"
 	ideology = libertarian 
 }
 create_country_leader = {
 	name = "Elio Di Rupo"
-	picture = "Portrait_BEL_Elio_Di_Rupo.dds"
+	picture = "Elio_Di_Rupo.dds"
 	ideology = social_democrat_ideology
 }
 create_country_leader = {
 	name = "Peter Mertens"
-	picture = "Portrait_BEL_Peter_Mertens.dds"
+	picture = "Peter_Mertens.dds"
 	ideology = marxist
 }
 
 create_corps_commander = {
 	name = "Jean-Marie Jockin"
-	picture = "Portrait_BEL_general_Jean-Marie_Jockin.dds"
+	picture = "generals/Jean_Marie_Jockin.dds"
 	skill = 2
 }
 
@@ -186,63 +189,45 @@ create_corps_commander = {
 
 2008.12.30 = {
 	create_country_leader = {
-		name = "Herman Van Rompuy"
-		picture = "Portrait_BEL_Herman_Van_Rompuy.dds"
-		ideology = christian_democrat
-	}
-}
-
-2009.11.25 = {
-	create_country_leader = {
-		name = "Yves Leterme"
-		picture = "Portrait_BEL_Yves_Leterme.dds"
+		name = "Herman van Rompuy"
+		picture = "Herman_Van_Rompuy.dds"
 		ideology = christian_democrat
 	}
 }
 
 2011.12.6 = {
-	set_politics = {
-		ruling_party = social_democrat
-		elections_allowed = yes
-	}
-
+	set_politics = { ruling_party = social_democrat elections_allowed = yes }
 	create_navy_leader = {
 		name = "Georges Heeren"
-		picture = "Portrait_BEL_general_Georges_Heeren.dds"
+		picture = "admirals/Georges_Heeren.dds"
 		skill = 2
 	}
 }
 
-2013.1.1 {
+2013.1.1 = {
 	create_country_leader = {
 		name = "Philippe I of Belgium"
-		picture = "Portrait_BEL_Philippe.dds"
+		picture = "Philippe.dds"
 		ideology = absolute_monarchist
 	}
 	
 	create_corps_commander = {
 		name = "Philippe I of Belgium"
-		picture = "Portrait_BEL_general_Philippe.dds"
+		picture = "generals/Philippe.dds"
 		skill = 1
 	}
 	
 	create_navy_leader = {
 		name = "M. Hoffmans"
-		picture = "Portrait_BEL_general_M_Hoffmans.dds"
+		picture = "M_Hoffmans.dds"
 		skill = 1
 	}
 }
 
-#	create_country_leader = {
-#		name = "Clemens Scholzen"
-#		picture = "Portrait_BEL_Clemens_Scholzen.dds"
-#		ideology = christian_democrat
-#	}
-
 2014.1.1 = {
 	create_country_leader = {
 		name = "Charles Michel"
-		picture = "Portrait_BEL_Charles_Michel.dds"
+		picture = "Charles_Michel.dds"
 		ideology = libertarian
 	}
 	
@@ -253,38 +238,32 @@ create_corps_commander = {
 
 	create_country_leader = {
 		name = "Tom Van Grieken"
-		picture = "Portrait_BEL_Tom_Van_Grieken.dds"
+		picture = "Tom_van_Grieken.dds"
 		ideology = national_democrat
 	}
 
 	create_country_leader = {
 		name = "Paul Magnette"
-		picture = "Portrait_BEL_Paul_Magnette.dds"
+		picture = "Paul_Magnette.dds"
 		ideology = social_democrat_ideology
 	}
 }
 
-2015.1.1 {
+2015.1.1 = {
 	create_country_leader = {
 		name = "Patrick Dupriez"
-		picture = "Portrait_BEL_Patrick_Dupriez.dds"
+		picture = "Patrick_Dupriez.dds"
 		ideology = green
 	}
 	
 	create_country_leader = {
 		name = "John Crombez"
-		picture = "Portrait_BEL_John_Crombez.dds"
+		picture = "John_Crombez.dds"
 		ideology = democratic_socialist_ideology
 	}
 }
 
-2016.1.1 {
-
-#	create_country_leader = {
-#		name = "Alexander Miesen"
-#		picture = "Portrait_BEL_Alexander_Miesen.dds"
-#		ideology = libertarian
-#	}
+2016.1.1 = {
 	
 	set_politics = {
 	
@@ -325,26 +304,20 @@ create_corps_commander = {
 	
 	}
 	
-	create_country_leader = {
-		name = "Charles Michel"
-		picture = "Portrait_BEL_Charles_Michel.dds"
-		ideology = libertarian
-	}
-	
 	create_corps_commander = {
 		name = "Jean-Paul Dekonick"
-		picture = "Portrait_BEL_general_Jean-Paul_Dekonick.dds"
+		picture = "generals/Jean_Paul_Dekonick.dds"
 		skill = 2
 	}
 	create_corps_commander = {
 		name = "Marc Compernol"
-		picture = "Portrait_BEL_general_Marc_Compernol.dds"
+		picture = "generals/Marc_Compernol.dds"
 		skill = 1
 	}
 
 	create_navy_leader = {
 		name = "Wim Robberecht"
-		picture = "Portrait_BEL_general_Wim_Robberecht.dds"
+		picture = "admirals/Wim_Robberecht.dds"
 		skill = 1
 	}
 }

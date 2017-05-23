@@ -126,64 +126,54 @@ set_politics = {
 create_country_leader = {
 	name = "Yasser Arafat"
 	ideology = social_democrat_ideology
-	picture = "Portrait_PAL_Yasser_Arafat.dds"
-	expire = "2005.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Yasser_Arafat.dds"
 }
 
 create_country_leader = {
 	name = "Ahmed Yassin"
 	ideology = islamic_authoritarian
-	picture = "Portrait_PAL_Ahmed_Yassin.dds"
-	expire = "2005.1.1"
-	
-	traits = {
-	
-	}
+	picture = "Ahmed_Yassin.dds"
 }
 
 create_country_leader = {
 	name = "Rami Hamdallah"
 	ideology = centrist 
-	picture = "Portrait_PAL_Rami_Hamdallah.dds"
+	picture = "Rami_Hamdallah.dds"
 }
 
 create_country_leader = {
 	name = "Basel Ghattas"
 	ideology = autocrat
-	picture = "Portrait_PAL_Basel_Ghattas.dds"
+	picture = "Basel_Ghattas.dds"
 }
 
 create_country_leader = {
 	name = "Eyad el-Refa'ai"
 	ideology = right_wing_conservative
-	picture = "Portrait_PAL_Eyad_el-Refa'ai.dds"
+	picture = "Eyad_el_Refaai.dds"
 }
 
 create_country_leader = {
 	name = "Munib al-Masrii"
 	ideology = counter_progressive_democrat
-	picture = "Portrait_PAL_Munib_al-Masrii.dds"
+	picture = "Munib_al_Masrii.dds"
 }
 
 create_country_leader = {
 	name = "Omar Hamad"
 	ideology = libertarian
-	picture = "Portrait_PAL_Omer_Hamad.dds"
+	picture = "Omar_Hamad.dds"
 }
 
 2005.7.17 = {
     create_country_leader = {
 	    name = "Mahmoud Abbas"
 	    ideology = social_democrat_ideology
-	    picture = "Portrait_PAL_Mahmoud_Abbas.dds"
+	    picture = "Mahmoud_Abbas.dds"
     }
 	create_country_leader = {
 		name = "Khaled Meshaal"
 	    ideology = islamic_authoritarian
-	    picture = "Portrait_PAL_Khaled_Meshaal.dds"
+	    picture = "Khaled_Meshaal.dds"
 	}
 }

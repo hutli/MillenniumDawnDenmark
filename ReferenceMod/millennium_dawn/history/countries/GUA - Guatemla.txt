@@ -141,40 +141,18 @@ set_politics = {
 	last_election = "1997.1.1"
 	election_frequency = 48
 	elections_allowed = yes
-     
-
 }
-
-
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Alonso Portillo"
 	ideology = counter_progressive_democrat
-	picture = "Portrait_GUA_Alonso_Portillo.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Alonso_Portillo.dds"
 }
-
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Jimmy Morales"
-	ideology = counter_progressive_democrat
-	picture = "Portrait_GUA_Jimmy_Morales.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Jimmy Morales"
+		ideology = counter_progressive_democrat
+		picture = "Jimmy_Morales.dds"
+	}
 }
 
 

@@ -96,33 +96,18 @@ set_technology = {
 
 2014.1.1 = {
 	create_country_leader = {
-
 		name = "Francesco Pigliaru"
-		desc = "POLITICIAN_SRD_FRANCESCO_PIGLIARU_DESC"
-		picture = "Portrait_SRD_Francesco_Pigliaru.dds"
-		expire = "2050.1.1"
+		picture = "Francesco_Pigliaru.dds"
 		ideology = social_democrat_ideology
-		
-		traits = {
-	
-		}
     }
 }
 set_politics = {
 
 	parties = {
-		nationalist = {
-			popularity = 3
-		}
-		conservative = {
-			popularity = 42
-		}
-		social_democrat = {
-			popularity = 45
-		}
-		progressive = {
-			popularity = 10
-		}
+		nationalist = { popularity = 3 }
+		conservative = { popularity = 42 }
+		social_democrat = { popularity = 45 }
+		progressive = { popularity = 10 }
 	}
 	
 	ruling_party = social_democrat

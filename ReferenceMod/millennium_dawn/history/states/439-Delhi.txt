@@ -4,29 +4,23 @@ state={
 	name="STATE_439"
 	manpower = 95936800
 	
-	resources = {
-		steel=49
-		aluminium=9
-	}
-	
 	state_category = megalopolis
+	
+	resources = {
+		steel = 95
+	}
 	
 	history={
 		owner = RAJ
+		add_core_of = RAJ
 		buildings = {
 			infrastructure = 9
-			industrial_complex = 5
-			arms_factory = 2
 			air_base = 4
+			industrial_complex = 12
+			arms_factory = 4
 		}
 		victory_points = {
 			2086 15 
-		}
-		2016.1.1 = {
-			buildings = {
-				industrial_complex = 10
-				arms_factory = 5
-			}
 		}
 	}
 

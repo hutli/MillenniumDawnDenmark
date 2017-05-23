@@ -118,13 +118,13 @@ set_politics = {
 create_country_leader = {
 	name = "John Paul II"
 	ideology = pope
-	picture = "Portrait_HLS_John_Paul_2.dds"
+	picture = "John_Paul_2.dds"
 }
 
 create_country_leader = {
 	name = "Tanto"
 	ideology = islamic_republican
-	picture = "Portrait_HLS_Holy_See.dds"
+	picture = "Holy_See.dds"
 }
 
 2002.1.1 = {
@@ -135,7 +135,7 @@ create_country_leader = {
 	create_country_leader = {
 		name = "Benedict XVI"
 		ideology = pope
-		picture = "Portrait_HLS_Benedict_16.dds"
+		picture = "Benedict_16.dds"
 	}
 }
 
@@ -143,6 +143,6 @@ create_country_leader = {
 	create_country_leader = {
 		name = "Francis"
 		ideology = pope
-		picture = "Portrait_HLS_Francis_1.dds"
+		picture = "Francis_1.dds"
 	}
 }

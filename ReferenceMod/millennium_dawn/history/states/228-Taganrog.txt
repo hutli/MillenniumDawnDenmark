@@ -4,7 +4,11 @@ state={
 	name="STATE_228" # Voroshilovgrad
 	manpower = 2167411
 	
-	state_category = town
+	state_category = rural
+	
+	resources = {
+		steel = 17
+	}
 
 	history={
 		owner = UKR
@@ -12,8 +16,9 @@ state={
 			9461 5
 		}
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 2
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
 			6519 = { bunker = 5 }
 			523 = { bunker = 5 }
 			547 = { bunker = 5 }

@@ -142,33 +142,17 @@ set_politics = {
 	elections_allowed = yes
 }
 
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Leonel Fernández"
 	ideology = centrist
-	picture = "Portrait_DOM_Leonel_Fernandez.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Leonel_Fernandez.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Danilo Medina"
-	ideology = liberalist
-	picture = "Portrait_DOM_Danilo_Medina.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Danilo Medina"
+		ideology = liberalist
+		picture = "Danilo_Medina.dds"
+	}
 }
 

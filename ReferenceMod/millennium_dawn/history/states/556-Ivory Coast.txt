@@ -5,10 +5,9 @@ state={
 
 	history={
 		owner = IVO
-		
+		add_core_of = IVO
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
+			infrastructure = 3
 		}
 	}
 

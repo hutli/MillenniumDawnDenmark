@@ -142,33 +142,16 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Boris Trajkovski"
 	ideology = centrist
-	picture = "Portrait_MAC_Boris_Trajkovski.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Boris_Trajkovski.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Gjorge Ivanov"
-	ideology = liberalist
-	picture = "Portrait_MAC_Gjorge_Ivanov.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Gjorge Ivanov"
+		ideology = liberalist
+		picture = "Gjorge_Ivanov.dds"
+	}
 }

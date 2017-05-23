@@ -2,18 +2,23 @@
 state={
 	id=500
 	name="STATE_500"
+	
+	resources = {
+		aluminium = 69
+		oil = 50
+		steel = 102
+	}
 
 	history={
 		owner = BRA
 		buildings = {
 			infrastructure = 6
-			arms_factory = 4
-			industrial_complex = 6
-			dockyard = 4
 			air_base = 7
+			industrial_complex = 11
+			arms_factory = 3
+			dockyard = 2
 			10980 = {
 				naval_base = 7
-
 			}
 
 		}

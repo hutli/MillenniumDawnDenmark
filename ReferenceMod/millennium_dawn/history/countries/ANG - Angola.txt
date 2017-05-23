@@ -135,56 +135,34 @@ set_politics = {
 
 create_country_leader = {
 	name = "José Eduardo dos Santos"
-	desc = "POLITICIAN_ANG_JOSÉ_EDUARDO_DOS_SANTOS_DESC"
-	picture = "Portrait_ANG_Jose_Eduardo_dos_Santos.dds"
-	expire = "2020.1.1"
-	ideology = social_democrat_ideology 
-	
-	traits = {
-	
-	}
+	picture = "Jose_Eduardo_dos_Santos.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Jonas Savimbi"
-	desc = "POLITICIAN_ANG_JONAS_SAVIMBI_DESC"
-	picture = "Portrait_ANG_Jonas_Savimbi.dds"
-	expire = "2002.2.22"
+	picture = "Jonas_Savimbi.dds"
 	ideology = fiscal_conservative
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Holden Roberto"
-	desc = "POLITICIAN_ANG_HOLDEN_ROBERTO_DESC"
-	picture = "Portrait_ANG_Holden_Roberto.dds"
-	expire = "2007.8.2"
+	picture = "Holden_Roberto.dds"
 	ideology = national_democrat
-	
-	traits = {
-	
-	}
 }
 
 2002.2.22 = {
 	create_country_leader = {
-	name = "Isaías Samakuva"
-	desc = "POLITICIAN_ANG_ISAÍAS_SAMAKUVA_DESC"
-	picture = "Portrait_ANG_Isaias_Samakuva.dds"
-	expire = "2020.1.1"
-	ideology = fiscal_conservative
+		name = "Isaías Samakuva"
+		picture = "Isaias_Samakuva.dds"
+		ideology = fiscal_conservative
 	}
 }
 
 2007.8.2 = {
 	create_country_leader = {
-	name = "Ngola Kabangu"
-	desc = "POLITICIAN_ANG_NGOLA_KABANGU_DESC"
-	picture = "Portrait_ANG_Ngola_Kabangu.dds"
-	expire = "2020.1.1"
-	ideology = national_democrat
+		name = "Ngola Kabangu"
+		picture = "Ngola_Kabangu.dds"
+		ideology = national_democrat
 	}
 }

@@ -138,30 +138,18 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-2000.1.1 = {
-    create_country_leader = {
+create_country_leader = {
 	name = "Milan Kučan"
 	ideology = centrist
-	picture = "Portrait_SLV_Milan_Kucan.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
+	picture = "Milan_Kucan.dds"
+}
 
-    }
-}
-2004.1.1 = {
-	add_ideas = {
-		idea_eu_member
-	}
-}
+2004.1.1 = { add_ideas = { idea_eu_member } }
+
 2015.1.1 = {
-  create_country_leader = {
-	name = "Borut Pahor"
-	ideology = liberalist
-	picture = "Portrait_SLV_Borut_Pahor.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
+	create_country_leader = {
+		name = "Borut Pahor"
+		ideology = liberalist
+		picture = "Borut_Pahor.dds"
     }
 }

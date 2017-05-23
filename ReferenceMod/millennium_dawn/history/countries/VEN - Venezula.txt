@@ -189,27 +189,16 @@ set_politics = {
 
 create_country_leader = {
 	name = "Hugo Chavez"
-	desc = "POLITICS_Hugo_Chavez_DESC"
-	picture = "gfx/leaders/VEN/Portrait_VEN_Hugo_Chavez.dds"
-	expire = "2013.1.1"
+	picture = "gfx/leaders/VEN/Hugo_Chavez.dds"
 	ideology = democratic_socialist_ideology
-	traits = {
-		
-	}
 }
 
 2013.1.1 = {
 
 	create_country_leader = {
 		name = "Nicolas Maduro"
-		desc = "POLITICIAN_VEN_Nicolas_Maduro_DESC"
-		picture = "Portrait_VEN_Nicolas_Maduro.dds"
-		expire = "2050.1.1"
+		picture = "Nicolas_Maduro.dds"
 		ideology = democratic_socialist_ideology
-		
-		traits = {
-		
-		}
 	}
 
 }

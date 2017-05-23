@@ -144,7 +144,7 @@ set_politics = {
 
 create_country_leader = {
 	name = "Laurent Gbagbo"
-	picture = "Portrait_IVO_Laurent_Gbagbo.dds"
+	picture = "Laurent_Gbagbo.dds"
 	ideology = democratic_socialist_ideology
 	expire = "2011.4.11"
 }
@@ -152,7 +152,7 @@ create_country_leader = {
 2010.12.4 = {
 	create_country_leader = {
 		name = "Alassane Ouattara"
-		picture = "Portrait_IVO_Alassane_Ouattara.dds"
+		picture = "Alassane_Ouattara.dds"
 		ideology = liberalist
 	}
 }

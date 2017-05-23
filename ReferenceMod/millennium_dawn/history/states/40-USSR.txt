@@ -4,7 +4,11 @@ state={
 	name="STATE_40" # Barnaul
 	manpower = 2819755
 	
-	state_category = large_town
+	state_category = town
+	
+	resources = {
+		tungsten=10
+	}
 
 	history={
 		owner = SOV
@@ -13,11 +17,6 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-			}
-		}
 	}
 
 	provinces={

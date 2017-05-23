@@ -96,31 +96,17 @@ set_technology = {
 }
 
 1999.1.1 = {
-create_country_leader = {
-
-    name = "Alex Salmond"
-	desc = "POLITICIAN_SCO_ALEX_SALMOND_DESC"
-	picture = "Portrait_SCO_Alex_Salmond.dds"
-	expire = "2015.1.1"
-	ideology = christian_democrat
-	
-	traits = {
-	
-	  }
+	create_country_leader = {
+		name = "Alex Salmond"
+		picture = "Alex_Salmond.dds"
+		ideology = christian_democrat
     }
 }
 2015.1.1 = {
-create_country_leader = {
-
-    name = "Nicola Sturgeon"
-	desc = "POLITICIAN_SCO_NICOLA_STURGEON_DESC"
-	picture = "Portrait_SCO_Nicola_Sturgeon.dds"
-	expire = "2050.1.1"
-	ideology = christian_democrat
-	
-	traits = {
-	
-	  }
+	create_country_leader = {
+		name = "Nicola Sturgeon"
+		picture = "Nicola_Sturgeon.dds"
+		ideology = christian_democrat
     }
 }
 set_politics = {

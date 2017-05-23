@@ -125,49 +125,49 @@ set_politics = {
 
 create_country_leader = {
 	name = "Edward Fenech Adami"
-	picture = "Portrait_MLT_Edward_Fenech_Adami.dds"
+	picture = "Edward_Fenech_Adami.dds"
 	ideology = christian_democrat
 }
 
 create_country_leader = {
 	name = "Alfred Sant"
-	picture = "Portrait_MLT_Alfred_Sant.dds"
+	picture = "Alfred_Sant.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Henry Vassallo"
-	picture = "Portrait_MLT_Henry_Vassallo.dds"
+	picture = "Harry_Vassallo.dds"
 	ideology = green
 }
 
 create_country_leader = {
 	name = "Marlene Farrugia"
-	picture = "Portrait_MLT_Marlene_Farrugia.dds"
+	picture = "Marlene_Farrugia.dds"
 	ideology = centrist
 }
 
 create_country_leader = {
 	name = "Josie Muscat"
-	picture = "Portrait_MLT_Josie_Muscat.dds"
+	picture = "Josie_Muscat.dds"
 	ideology = national_democrat
 }
 
 create_country_leader = {
 	name = "Norman Lowell"
-	picture = "Portrait_MLT_Norman_Lowell.dds"
+	picture = "Norman_Lowell.dds"
 	ideology = fascist_ideology
 }
 
 create_country_leader = {
 	name = "Victor Degiovanni"
-	picture = "Portrait_MLT_Victor_Degiovanni.dds"
+	picture = "Victor_Degiovanni.dds"
 	ideology = marxist
 }
 
 create_country_leader = {
 	name = "Mohammed Elsadi"
-	picture = "Portrait_MLT_Mohammed_Elsadi.dds"
+	picture = "Mohammed_Elsadi.dds"
 	ideology = islamic_republican
 }
 
@@ -195,19 +195,19 @@ create_country_leader = {
 	
 	create_country_leader = {
 		name = "Simon Busuttil"
-		picture = "Portrait_MLT_Simon_Busuttil.dds"
+		picture = "Simon_Busuttil.dds"
 		ideology = christian_democrat
 	}
 
 	create_country_leader = {
 		name = "Joseph Muscat"
-		picture = "Portrait_MLT_Joseph_Muscat.dds"
+		picture = "Joseph_Muscat.dds"
 		ideology = social_democrat_ideology
 	}
 
 	create_country_leader = {
 		name = "Arnold Cassola"
-		picture = "Portrait_MLT_Arnold_Cassola.dds"
+		picture = "Arnold_Cassola.dds"
 		ideology = green
 	}
 

@@ -139,33 +139,3 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-
-2000.1.1 = {
-
-
-     create_country_leader = {
-	name = "Ígor Smirnov"
-	ideology = marxist
-	picture = "Portrait_TRA_igor_Smirnov.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-}
-
-2015.1.1 = {
-
-  create_country_leader = {
-	name = "Yevgeny Shevchuk"
-	ideology = marxist
-	picture = "Portrait_TRA_Yevgeny_Shevchuk.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
-}

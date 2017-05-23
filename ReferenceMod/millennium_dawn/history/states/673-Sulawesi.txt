@@ -3,7 +3,8 @@ state={
 	name="STATE_673"
 	manpower = 15620200
 	resources={
-		rubber=52
+		rubber = 9
+		oil = 3
 	}
 
 	state_category = town
@@ -19,6 +20,7 @@ state={
 
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 3
 			air_base = 4
 			10153 = {
 				naval_base = 3

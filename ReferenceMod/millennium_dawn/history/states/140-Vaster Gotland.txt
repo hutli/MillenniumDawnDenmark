@@ -5,10 +5,9 @@ state={
 	manpower = 1952773
 	state_category = city
 	
-	resources={
-		steel=10
+	resources = {
+		steel = 4
 	}
-
 
 	history={
 		owner = SWE
@@ -20,10 +19,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
 			industrial_complex = 1
-			dockyard = 1
-			air_base = 1
+			air_base = 2
 			383 = {
 				naval_base = 5
 				coastal_bunker = 5

@@ -6,13 +6,9 @@ state={
 		owner = CAN
 		buildings = {
 			infrastructure = 1
-
 			1869 = {
 				naval_base = 1
-
 			}
-
-
 		}
 		add_core_of = CAN
 		add_core_of = CAS

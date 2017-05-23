@@ -145,14 +145,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Josefa Iloilo"
-	picture = "Portrait_FIJ_Josefa_Iloilo.dds"
+	picture = "Josefa_Iloilo.dds"
 	ideology = constitutionalist 
 }
 
 2016.1.1 = {
 	create_country_leader = {
-	name = "George Konrote"
-	picture = "Portrait_FIJ_George_Konrote.dds"
-	ideology = constitutionalist 
+		name = "George Konrote"
+		picture = "George_Konrote.dds"
+		ideology = constitutionalist
 	}
 }

@@ -4,10 +4,11 @@ state={
 	
 	history = {
 		owner = MRT
-		
+		add_core_of = MRT
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
 		}
 		victory_points = { 5034 3 }
 	}

@@ -127,3 +127,28 @@ country_event = {
 		update_stability = yes
 	}
 }
+
+#Make sure stability is capped
+country_event = {
+	id = stability_event.4
+	hidden = yes
+	
+	trigger = {
+		has_country_flag = {
+			flag = national_stability
+			value > 100
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		clr_country_flag = national_stability
+		set_country_flag = {
+			flag = national_stability
+			value = 100
+		}
+	}
+}

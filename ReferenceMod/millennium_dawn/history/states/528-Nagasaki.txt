@@ -4,8 +4,9 @@ state={
 	name="STATE_528" # Kyushu
 	manpower = 14131995
 	state_category = large_city
-	resources={
-		chromium=88
+	
+	resources = {
+		steel = 190
 	}
 
 	history={
@@ -14,14 +15,10 @@ state={
 		buildings = {
 			infrastructure = 7
 			air_base = 3
-			dockyard = 3
-			arms_factory = 2
-			industrial_complex = 8
-			9950 = {
-				naval_base = 6
-
-			}
-
+			industrial_complex = 7
+			arms_factory = 1
+			dockyard = 1
+			9950 = { naval_base = 6 }
 		}
 		victory_points = {
 			1025 10 
@@ -31,12 +28,6 @@ state={
 		}
 		victory_points = {
 			9950 5
-		}
-		1939.1.1 = {
-			buildings = {
-				dockyard = 4
-				industrial_complex = 3
-			}
 		}
 
 	}

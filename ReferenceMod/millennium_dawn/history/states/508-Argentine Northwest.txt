@@ -5,6 +5,10 @@ state={
 	manpower = 1781311
 	
 	state_category = pastoral
+	
+	resources = {
+		aluminium=1
+	}
 
 	history={
 		owner = ARG

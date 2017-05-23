@@ -142,34 +142,16 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Gustavo Noboa"
 	ideology = centrist
-	picture = "Portrait_ECU_GUSTAVO_NOBOA.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Gustavo_Noboa.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Rafael Correa"
-	ideology = liberalist
-	picture = "Portrait_ECU_RAFAEL_CORREA.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
+	create_country_leader = {
+		name = "Rafael Correa"
+		ideology = liberalist
+		picture = "Rafael_Correa.dds"
     }
-
-
 }

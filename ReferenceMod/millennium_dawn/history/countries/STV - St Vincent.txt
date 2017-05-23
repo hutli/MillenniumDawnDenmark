@@ -122,20 +122,20 @@ set_politics = {
 
 create_country_leader = {
 	name = "Ralph Gonsalves"
-	picture = "Portrait_STV_Ralph_Gonsalves.dds"
+	picture = "Ralph_Gonsalves.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
 	name = "James Fitz-Allen Mitchell"
-	picture = "Portrait_STV_James_Fitz_Allen_Mitchell.dds"
+	picture = "James_FA_Mitchell.dds"
 	ideology = fiscal_conservative
 }
 
 2000.6.1 = {
 	create_country_leader = {
 		name = "Arnhim Ulric Eustace"
-		picture = "Portrait_STV_Arnhim_Ulric_Eustace.dds"
+		picture = "Arnhim_U_Eustace.dds"
 		ideology = fiscal_conservative
 	}
 }

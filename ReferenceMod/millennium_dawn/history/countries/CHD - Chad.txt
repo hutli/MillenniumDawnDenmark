@@ -135,7 +135,5 @@ set_politics = {
 create_country_leader = {
 	name = "Idriss Déby"
 	ideology = oligarchist
-	picture = "Portrait_CHD_Idriss_Deby.dds"
-
-	traits = {}
+	picture = "Idriss_Deby.dds"
 }

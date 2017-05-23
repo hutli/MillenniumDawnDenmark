@@ -4,12 +4,14 @@
 	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 		field_hospital = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -17,31 +19,10 @@ division_template = {
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		mechanized = { x = 0 y = 3 }
-		mechanized = { x = 0 y = 4 }
+		paratrooper = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-	}
-	
-	priority = 2
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		modern_armor = { x = 0 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
 	}
 	
 	priority = 2
@@ -55,6 +36,18 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Artillery Regiment"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 	}
 }
 
@@ -69,14 +62,14 @@ units = {
 	
 	division = {
 		name = "61st Mechanized Brigade"
-		location = 949
+		location = 9783
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
 		name = "68th Special Forces Brigade"
-		location = 949
+		location = 3796
 		division_template = "Special Forces Brigade"
 		start_experience_factor = 0.3
 	}
@@ -84,6 +77,12 @@ units = {
 	division = {
 		name = "4th Artillery Regiment"
 		location = 949
+		division_template = "Artillery Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Support Brigade"
+		location = 6923
 		division_template = "Artillery Regiment"
 		start_experience_factor = 0.3
 	}
@@ -96,7 +95,7 @@ air_wings = {
 		#MiG-29A - Downgrade if 80s equipment gets added
 		jet_multirole_equipment_3 = {
 			owner = "BUL" 
-			amount = 15
+			amount = 7
 		}
 
 	}
@@ -104,7 +103,7 @@ air_wings = {
 		#MiG-21Bis - 70s but downgraded for gameplay variety
 		jet_multirole_equipment_1 = {
 			owner = "BUL" 
-			amount = 3
+			amount = 12
 		}
 
 	}
@@ -112,7 +111,7 @@ air_wings = {
 		#Su-25K
 		jet_attack_equipment_2 = {
 			owner = "BUL" 
-			amount = 14
+			amount = 5
 		}
 	}
 }

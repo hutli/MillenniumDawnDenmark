@@ -7,6 +7,11 @@ state={
 	manpower=3419399
 	buildings_max_level_factor=1.000
 	
+	resources = {
+		tungsten=1
+		steel = 8
+	}
+	
 	history = {
 		owner = PRK
 		add_core_of = PRK

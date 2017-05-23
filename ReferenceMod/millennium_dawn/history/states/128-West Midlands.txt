@@ -5,27 +5,19 @@ state={
 	manpower = 5185235
 	
 	state_category = metropolis
-	resources={
-		steel=48
-	}
 
 	history={
 		owner = ENG
 		buildings = {
 			infrastructure = 8
-			industrial_complex = 2
+			industrial_complex = 1
+			arms_factory = 1
 			air_base = 6
 		}
 		victory_points = {
 			9297 25
 		}
 		add_core_of = ENG
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-				industrial_complex = 4
-			}
-		}
 	}
 
 	provinces={

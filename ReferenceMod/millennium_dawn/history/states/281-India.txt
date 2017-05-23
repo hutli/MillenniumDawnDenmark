@@ -4,14 +4,18 @@ state={
 	name="STATE_281"
 	manpower=344300
 	
-	state_category = small_island
+	state_category = rural
+	
+	resources = {
+		rubber = 1
+	}
 
 	history={
 		owner = MLD
 		add_core_of = MLD
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
+			industrial_complex = 3
 			4967 = { naval_base = 1 }
 		}
 		victory_points = { 4967 1 }

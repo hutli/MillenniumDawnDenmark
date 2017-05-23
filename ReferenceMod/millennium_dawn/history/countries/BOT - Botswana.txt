@@ -129,152 +129,91 @@ set_politics = {
 	elections_allowed = yes
 }
 
-2000.1.1 = {
-
 create_country_leader = {
 	name = "Festus Mogae"
-	desc = "POLITICIAN_BOT_FESTUS_MOGAE_DESC"
-	picture = "Portrait_BOT_Festus_Mogae.dds"
-	expire = "2020.1.1"
+	picture = "Festus_Mogae.dds"
 	ideology = christian_democrat
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Otsweletse Moupo"
-	picture = "Portrait_BOT_Otsweletse_Moupo.dds"
-	expire = "2020.1.1"
+	picture = "Otsweletse_Moupo.dds"
 	ideology = moderate
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Michael Dingake"
-	picture = "Portrait_BOT_Michael_Dingake.dds"
-	expire = "2020.1.1"
+	picture = "Michael_Dingake.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Ephraim Setshwaelo"
-	picture = "Portrait_BOT_Ephraim_Setshwaelo.dds"
-	expire = "2020.1.1"
+	picture = "Ephraim_Setshwaelo.dds"
 	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Themba Joina"
-	picture = "Portrait_BOT_Themba_Joina.dds"
-	expire = "2020.1.1"
+	picture = "Themba_Joina.dds"
 	ideology = marxist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Mostlatsi Molapisi"
-	picture = "Portrait_BOT_Motlatsi_Molapisi.dds"
-	expire = "2020.1.1"
+	picture = "Motlatsi_Molapisi.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_corps_commander = {
 	name = "Placid Segokgo"
-	picture = "Portrait_BOT_general_Placid_Segokgo.dds"
+	picture = "generals/Placid_Segokgo.dds"
 	skill = 1
-	}
+}
 
 create_corps_commander = {
 	name = "Tebogo Masire"
-	picture = "Portrait_BOT_general_Tebogo_Masire.dds"
+	picture = "generals/Tebogo_Masire.dds"
 	skill = 1
-	}
-
 }
-
 
 2016.1.1 = {
-
-set_politics = {
-
-	parties = {
-		conservative = {
-			popularity = 46
+	set_politics = {
+		parties = {
+			conservative = {
+				popularity = 46
+			}
+			social_liberal = {
+				popularity = 30
+			}
+			social_democrat = {
+				popularity = 21
+			}
+			progressive = {
+				popularity = 3
+			}
+			communist = {
+				popularity = 0
+			}
 		}
-		social_liberal = {
-			popularity = 30
-		}
-		social_democrat = {
-			popularity = 21
-		}
-		progressive = {
-			popularity = 3
-		}
-		communist = {
-			popularity = 0
-		}
+		ruling_party = conservative
+		last_election = "2014.10.16"
+		election_frequency = 60
+		elections_allowed = yes
 	}
-	
-	ruling_party = conservative
-	last_election = "2014.10.16"
-	election_frequency = 60
-	elections_allowed = yes
-}
-	
-create_country_leader = {
-	name = "Ian Khama"
-	desc = "POLITICIAN_BOT_IAN_KHAMA_DESC"
-	picture = "Portrait_BOT_Ian_Khama.dds"
-	expire = "2020.1.1"
-	ideology = fiscal_conservative
-	
-	traits = {
-	
+	create_country_leader = {
+		name = "Ian Khama"
+		picture = "Ian_Khama.dds"
+		ideology = fiscal_conservative
 	}
-}
-
-create_country_leader = {
-	name = "Duma Boko"
-	desc = "POLITICIAN_BOT_DUMA_BOKO_DESC"
-	picture = "Portrait_BOT_Duma_Boko.dds"
-	expire = "2020.1.1"
-	ideology = liberalist
-	
-	traits = {
-	
+	create_country_leader = {
+		name = "Duma Boko"
+		picture = "Duma_Boko.dds"
+		ideology = liberalist
 	}
-}
-
-create_country_leader = {
-	name = "Dumelang Saleshando"
-	desc = "POLITICIAN_BOT_DUMELANG_SALESHANDO_DESC"
-	picture = "Portrait_BOT_Dumelang_Saleshando.dds"
-	expire = "2020.1.1"
-	ideology = social_democrat_ideology
-	
-	traits = {
-	
+	create_country_leader = {
+		name = "Dumelang Saleshando"
+		picture = "Dumelang_Saleshando.dds"
+		ideology = social_democrat_ideology
 	}
-}
-
 }

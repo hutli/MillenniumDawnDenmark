@@ -3,19 +3,13 @@ state={
 	id=699
 	name="STATE_699"
 	
-	resources = {
-		oil = 15
-		steel = 1
-	}
 
 	history={
 		owner = MOR
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			8038 = {
-				naval_base = 1
-			}
+			air_base = 1
+			8038 = { naval_base = 1 }
 		}
 		add_core_of = MOR
 		add_core_of = WSH

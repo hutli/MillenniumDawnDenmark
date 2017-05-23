@@ -2,15 +2,18 @@
 state={
 	id=472
 	name="STATE_472"
+	
+	resources = {
+		tungsten = 144
+		steel = 4
+	}
 
 	history={
 		owner = CAN
 		buildings = {
 			infrastructure = 1
-
 		}
 		add_core_of = CAN
-
 	}
 
 	provinces={

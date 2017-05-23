@@ -104,6 +104,7 @@ set_technology = {
 
 add_ideas = {
 	population_growth_rapid
+	commonwealth_of_nations_member
 }
 
 set_country_flag = dominant_religion_islam
@@ -137,11 +138,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Sheikh Hasina"
-	desc = "POLITICIAN_BNG_SHEIKH_HASINA_DESC"
-	picture = "Portrait_BNG_Sheikh_Hasina.dds"
-	expire = "2020.1.1"
+	picture = "Sheikh_Hasina.dds"
 	ideology = social_democrat_ideology
-	traits = {
-	
-	}
 }

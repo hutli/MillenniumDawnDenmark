@@ -2,10 +2,10 @@
 state={
 	id=527
 	name="STATE_527"
+	
 	resources={
-		steel=7.000
-		tungsten=1.000
-		chromium=2.000
+		tungsten = 5
+		steel = 17
 	}
 
 	history={
@@ -13,7 +13,8 @@ state={
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 5
-			arms_factory = 5
+			arms_factory = 2
+			dockyard = 2
 			12040 = { bunker = 5 }
 			9981 = { bunker = 5 }
 			4052 = { naval_base = 6 }

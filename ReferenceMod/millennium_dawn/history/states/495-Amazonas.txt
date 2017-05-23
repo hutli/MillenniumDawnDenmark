@@ -4,19 +4,14 @@ state={
 	name="STATE_495"
 	manpower = 14179900
 	
-	state_category = pastoral
+	state_category = rural
 	
-	resources={
-		aluminium=15
-		steel=41
-		rubber=3
-	}
-
 	history={
 		owner = BRA
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
+			arms_factory = 1
 			air_base = 2
 		}
 		victory_points = { 10934 20 } #Manaus

@@ -4,8 +4,12 @@ state={
 	provinces={
 		4473 12434 
 	}
+	resources = {
+		oil = 4
+	}
 	history = {
 		owner = AZR
+		add_core_of = AZR
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

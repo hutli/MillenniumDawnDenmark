@@ -9,16 +9,10 @@ state={
 	history={
 		owner = UKR
 		buildings = {
-			infrastructure = 5
-			dockyard = 1
-			air_base = 2
+			infrastructure = 3
+			air_base = 1
 		}
 		add_core_of = UKR
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-			}
-		}
 	}
 
 	provinces={

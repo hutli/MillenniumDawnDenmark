@@ -110,28 +110,14 @@ add_ideas = {
 }
 
 set_politics = {
-
 	parties = {
-		conservative = {
-			popularity = 32
-		}
-		market_liberal = {
-			popularity = 8
-		}
-		social_liberal = {
-			popularity = 38
-		}
-		social_democrat = {
-			popularity = 13
-		}
-		progressive = {
-			popularity = 2
-		}
-		democratic_socialist = {
-			popularity = 7
-		}
+		conservative = { popularity = 32 }
+		market_liberal = { popularity = 8 }
+		social_liberal = { popularity = 38 }
+		social_democrat = { popularity = 13 }
+		progressive = { popularity = 2 }
+		democratic_socialist = { popularity = 7 }
 	}
-	
 	ruling_party = social_liberal
 	last_election = "1997.6.2"
 	election_frequency = 48
@@ -175,91 +161,85 @@ add_opinion_modifier = {
 
 create_country_leader = {
 	name = "John McGuire"
-	picture = "Portrait_CAN_John_McGuire.dds"
+	picture = "John_McGuire.dds"
 	ideology = islamic_authoritarian
 }
 
 create_country_leader = {
 	name = "Andrew I of Windsor"
-	picture = "Portrait_CAN_Andrew.dds"
+	picture = "Andrew.dds"
 	ideology = absolute_monarchist
 }
 
 create_country_leader = {
 	name = "Stockwell Day" #Conservative
-	picture = "Portrait_CAN_Stockwell_Day.dds"
+	picture = "Stockwell_Day.dds"
 	ideology = fiscal_conservative
 }
 
 create_country_leader = {
-	name = "Lauren Southern"
-	picture = "Portrait_CAN_Lauren_Southern.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
 	name = "Jean Chretien" #Liberal
-	picture = "Portrait_CAN_Jean_Chretien.dds"
+	picture = "Jean_Chretien.dds"
 	ideology = liberalist
 }
 
 create_country_leader = {
 	name = "Joan Russow" #Green
-	picture = "Portrait_CAN_Joan_Russow.dds"
+	picture = "Joan_Russow.dds"
 	ideology = green
 }
 
 create_country_leader = {
 	name = "Alexa McDonough" #NPD
-	picture = "Portrait_CAN_Alexa_McDonough.dds"
+	picture = "Alexa_McDonough.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Barry Weisleder" 
-	picture = "Portrait_CAN_Barry_Weisleder.dds"
+	picture = "Barry_Weisleder.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
 	name = "Ricardo Duchesne" 
-	picture = "Portrait_CAN_Ricardo_Duchesne.dds"
+	picture = "Ricardo_Duchesne.dds"
 	ideology = national_democrat
 }
 
 create_country_leader = {
 	name = "Don Andrews" 
-	picture = "Portrait_CAN_Don_Andrews.dds"
+	picture = "Don_Andrews.dds"
 	ideology = national_socialist
 }
 
 create_country_leader = {
 	name = "Miguel Figueroa" 
-	picture = "Portrait_CAN_Miguel_Figueroa.dds"
+	picture = "Miguel_Figueroa.dds"
 	ideology = marxist
 }
 
 create_corps_commander = {
 	name = "J. C. G. Juneau"
-	picture = "Portrait_CAN_general_JCG_Juneau.dds"
-	skill = 1
+	picture = "generals/JCG_Juneau.dds"
+	skill = 2
 }
 
 create_corps_commander = {
 	name = "Jean-Marc Lanthier"
-	picture = "Portrait_CAN_general_Jean_Marc_Lanthier.dds"
+	picture = "generals/Jean_Marc_Lanthier.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Rob Roy MacKenzie"
-	picture = "Portrait_CAN_general_Rob_Roy_MacKenzie.dds"
+	picture = "generals/Rob_Roy_MacKenzie.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Paul Wynnyk"
-	picture = "Portrait_CAN_general_Paul_Wynnyk.dds"
+	picture = "generals/Paul_Wynnyk.dds"
 	skill = 1
 }
 
@@ -272,66 +252,41 @@ create_corps_commander = {
 }
 
 2015.11.1 = {
-	
 	set_politics = {
-		
 		parties = {
-		
-			social_liberal = {
-				popularity = 40
-			}
-			
-			conservative = {
-				popularity = 33
-			}
-			
-			market_liberal = {
-				popularity = 1
-			}
-			
-			social_democrat = {
-				popularity = 21
-			}
-			
-			progressive = {
-				popularity = 5
-			}
-		
+			fascist = { popularity = 0.1 }
+			nationalist = { popularity = 0.1 }
+			social_liberal = { popularity = 39.7 }
+			conservative = { popularity = 33.3 }
+			market_liberal = { popularity = 1 }
+			social_democrat = { popularity = 20.7 }
+			progressive = { popularity = 4.8 }
+			communist = { popularity = 0.3 }
 		}
-		
 		last_election = "2015.10.19"
 		elections_allowed = yes
-		
 	}
-	
 }
 
 2016.1.1 = {
 	create_country_leader = {
 		name = "Justin Trudeau"
-		picture = "Portrait_CAN_Justin_Trudeau.dds"
+		picture = "Justin_Trudeau.dds"
 		ideology = moderate
-		expire = "2050.1.1"
 	}
-	
 	create_country_leader = {
 		name = "Stephen Harper"
-		picture = "Portrait_CAN_Stephen_Harper.dds"
+		picture = "Stephen_Harper.dds"
 		ideology = fiscal_conservative
-		expire = "2050.1.1"
 	}
-	
 	create_country_leader = {
 		name = "Elizabeth May"
-		picture = "Portrait_CAN_Elizabeth_May.dds"
+		picture = "Elizabeth_May.dds"
 		ideology = green
-		expire = "2050.1.1"
 	}
-	
 	create_country_leader = {
 		name = "Thomas Mulcair"
-		picture = "Portrait_CAN_Thomas_Mulcair.dds"
+		picture = "Thomas_Mulcair.dds"
 		ideology = social_democrat_ideology
-		expire = "2050.1.1"
 	}
 }

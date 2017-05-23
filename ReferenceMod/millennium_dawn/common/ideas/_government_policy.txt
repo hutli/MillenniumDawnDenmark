@@ -13,10 +13,11 @@ ideas = {
 			}
 			
 			modifier = {
-				unity_factor = -0.05
-				consumer_goods_factor = -0.1
-				industrial_capacity_factory = -0.2
-				research_time_factor = -0.08
+				unity_weekly = -0.002
+				political_power_factor = 0.3
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.1
+				research_time_factor = -0.07
 			}
 			
 			cancel_if_invalid = no
@@ -31,9 +32,12 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
-				industrial_capacity_factory = -0.05
-				research_time_factor = -0.05
+				unity_weekly = -0.001
+				political_power_factor = 0.2
+				monthly_population = 0.01
+				consumer_goods_factor = -0.01
+				industrial_capacity_factory = 0.05
+				research_time_factor = -0.03
 			}
 			
 			cancel_if_invalid = no
@@ -48,8 +52,10 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.1
-				research_time_factor = -0.02
+				political_power_factor = 0.1
+				monthly_population = 0.02
+				consumer_goods_factor = 0.01
+				research_time_factor = 0.01
 			}
 			
 			default = yes
@@ -65,10 +71,10 @@ ideas = {
 			}
 			
 			modifier = {
-				unity_factor = 0.05
-				consumer_goods_factor = 0.05
-				industrial_capacity_factory = 0.25
-				research_time_factor = 0.01
+				unity_weekly = 0.001
+				monthly_population = 0.03
+				consumer_goods_factor = 0.03
+				research_time_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -85,10 +91,12 @@ ideas = {
 			}
 			
 			modifier = {
-				unity_factor = 0.1
-				consumer_goods_factor = 0.1
-				industrial_capacity_factory = 0.4
-				research_time_factor = 0.04
+				unity_weekly = 0.002
+				political_power_factor = -0.1
+				monthly_population = 0.04
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+				research_time_factor = 0.09
 			}
 			
 			cancel_if_invalid = no

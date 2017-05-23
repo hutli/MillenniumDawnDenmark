@@ -4,10 +4,6 @@ state={
 	name="STATE_397"
 	manpower = 137203
 	state_category = pastoral
-	
-	resources = {
-		oil = 13
-	}
 
 	history={
 		owner = SOV

@@ -3,9 +3,10 @@ ideas = {
 	country = {
 		
 		population_growth_explosion = {
+		
+			picture = population_explosion
 			
 			allowed = { always = no }
-			
 			allowed_civil_war = { always = yes }
 			
 			modifier = { 
@@ -17,8 +18,9 @@ ideas = {
 		
 		population_growth_rapid = {
 			
-			allowed = { always = no }
+			picture = population_rapid_growth
 			
+			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
 			modifier = { 
@@ -30,8 +32,9 @@ ideas = {
 		
 		population_growth_steady = {
 			
-			allowed = { always = no }
+			picture = population_growth
 			
+			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
 			modifier = {
@@ -42,8 +45,9 @@ ideas = {
 		
 		population_growth_stagnation = {
 			
-			allowed = { always = no }
+			picture = population_stagnation
 			
+			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
 			modifier = { 
@@ -55,8 +59,9 @@ ideas = {
 		
 		population_growth_decline = {
 			
-			allowed = { always = no }
+			picture = population_decline
 			
+			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
 			modifier = { 

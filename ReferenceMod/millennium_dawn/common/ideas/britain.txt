@@ -3,6 +3,7 @@ ideas = {
 	country = {
 	
 		ENG_queen_elizabeth_2 = {
+			picture = queen_elizabeth_2
 			allowed = {
 				original_tag = ENG
 			}
@@ -11,6 +12,7 @@ ideas = {
 			}
 		}
 		ENG_king_charles_3 = {
+			picture = king_charles_3
 			allowed = {
 				always = no
 			}
@@ -19,6 +21,7 @@ ideas = {
 			}
 		}
 		ENG_king_william_5 = {
+			picture = king_william_5
 			allowed = {
 				always = no
 			}
@@ -28,7 +31,7 @@ ideas = {
 		}
 		
 		ENG_expanded_NHS = {
-			picture = export_focus
+			picture = NHS
 			allowed = {
 				always = no
 			}
@@ -50,7 +53,7 @@ ideas = {
 		}
 		
 		ENG_workforce_deal_with_ireland = {
-			picture = generic_infantry_bonus
+			picture = construction
 			allowed = {
 				always = no
 			}
@@ -71,7 +74,7 @@ ideas = {
 		}
 		
 		ENG_individual_freedoms = {
-			picture = generic_democratic_drift_bonus
+			picture = democracy
 			allowed = {
 				always = no
 			}
@@ -81,7 +84,7 @@ ideas = {
 		}
 		
 		ENG_CCTV_systems = {
-			picture = generic_intel_bonus
+			picture = prisoners
 			allowed = {
 				always = no
 			}
@@ -102,7 +105,7 @@ ideas = {
 		}
 		
 		ENG_benevolent_monarchy_idea = {
-			picture = generic_monarchy_drift_bonus
+			picture = monarchy
 			allowed = {
 				always = no
 			}
@@ -135,7 +138,7 @@ ideas = {
 		}
 		
 		ENG_internet_surveillance_idea = {
-			picture = generic_intel_bonus
+			picture = intel_bonus
 			allowed = {
 				always = no
 			}
@@ -146,7 +149,7 @@ ideas = {
 		}
 		
 		ENG_nationalism_idea = {
-			picture = generic_fascism_drift_bonus
+			picture = fascism3
 			allowed = {
 				always = no
 			}
@@ -157,7 +160,7 @@ ideas = {
 		}
 		
 		ENG_broken_the_banks = {
-			picture = generic_communism_drift_bonus
+			picture = communism4
 			allowed = {
 				always = no
 			}
@@ -169,7 +172,7 @@ ideas = {
 		}
 		
 		ENG_persecuted_lobbyists = {
-			picture = generic_communism_drift_bonus
+			picture = communism6
 			allowed = {
 				always = no
 			}
@@ -180,7 +183,7 @@ ideas = {
 		}
 		
 		ENG_royal_office_of_employment_idea = {
-			picture = generic_volunteer_expedition_bonus
+			picture = volunteer_expedition_bonus
 			allowed = {
 				always = no
 			}
@@ -191,7 +194,7 @@ ideas = {
 		}
 		
 		ENG_national_militarism_idea = {
-			picture = generic_infantry_bonus
+			picture = infantry_bonus
 			allowed = {
 				always = no
 			}
@@ -203,7 +206,7 @@ ideas = {
 		}
 		
 		ENG_school_for_strategic_warfare_idea = {
-			picture = generic_morale_bonus
+			picture = motorized_focus
 			allowed = {
 				always = no
 			}
@@ -213,7 +216,7 @@ ideas = {
 		}
 		
 		ENG_ground_support_planes_idea = {
-			picture = generic_air_bonus
+			picture = air_support
 			allowed = {
 				always = no
 			}
@@ -228,7 +231,7 @@ ideas = {
 		}
 		
 		ENG_naval_support_planes_idea = {
-			picture = generic_air_bonus
+			picture = air_bonus
 			allowed = {
 				always = no
 			}
@@ -243,7 +246,7 @@ ideas = {
 		}
 		
 		ENG_diplomatic_sovereignity_idea = {
-			picture = generic_spy_political
+			picture = spy_political
 			allowed = {
 				always = no
 			}
@@ -254,7 +257,7 @@ ideas = {
 		}
 		
 		ENG_defensive_constructions_idea = {
-			picture = generic_wall_line
+			picture = fortification2
 			allowed = {
 				always = no
 			}
@@ -265,7 +268,7 @@ ideas = {
 		}
 		
 		ENG_industrial_development_program_idea = {
-			picture = generic_industrial_concern_1
+			picture = political_power_bonus
 			allowed = {
 				always = no
 			}
@@ -277,7 +280,7 @@ ideas = {
 		}
 		
 		ENG_universal_employment_idea = {
-			picture = generic_industrial_concern_1
+			picture = victors_of_ww1
 			allowed = {
 				always = no
 			}
@@ -287,7 +290,7 @@ ideas = {
 		}
 		
 		ENG_royal_industrial_construction = {
-			picture = generic_industrial_concern_1
+			picture = production_bonus
 			allowed = {
 				always = no
 			}
@@ -297,7 +300,7 @@ ideas = {
 		}
 		
 		ENG_revolutionary_committee = {
-			picture = generic_communism_drift_bonus
+			picture = communism7
 			allowed = {
 				always = no
 			}
@@ -309,7 +312,7 @@ ideas = {
 		}
 		
 		ENG_royal_military_construction = {
-			picture = generic_industrial_concern_1
+			picture = monarchy
 			allowed = {
 				always = no
 			}
@@ -319,7 +322,7 @@ ideas = {
 		}
 		
 		ENG_multiethnic_army = {
-			picture = generic_infantry_bonus
+			picture = fascism2
 			allowed = {
 				always = no
 			}
@@ -331,7 +334,7 @@ ideas = {
 		}
 		
 		ENG_modern_slavery = {
-			picture = generic_fascism_drift_bonus
+			picture = fascism
 			allowed = {
 				always = no
 			}
@@ -344,7 +347,7 @@ ideas = {
 		}
 		
 		ENG_army_of_quality_idea = {
-			picture = generic_infantry_bonus
+			picture = general_staff
 			allowed = {
 				always = no
 			}
@@ -355,7 +358,7 @@ ideas = {
 		}
 		
 		ENG_army_of_quantity_idea = {
-			picture = generic_morale_bonus
+			picture = manpower_bonus
 			allowed = {
 				always = no
 			}
@@ -365,7 +368,7 @@ ideas = {
 		}
 		
 		ENG_small_ship_project = {
-			picture = generic_navy_bonus
+			picture = liberty_ships
 			allowed = {
 				always = no
 			}
@@ -382,7 +385,7 @@ ideas = {
 		}
 		
 		ENG_large_ship_project = {
-			picture = generic_navy_bonus
+			picture = navy_bonus
 			allowed = {
 				always = no
 			}
@@ -399,7 +402,7 @@ ideas = {
 		}
 		
 		ENG_secret_police = {
-			picture = generic_intel_bonus
+			picture = spy_coup
 			allowed = {
 				always = no
 			}
@@ -410,7 +413,7 @@ ideas = {
 		}
 		
 		ENG_the_great_throne = {
-			picture = generic_monarchy_drift_bonus
+			picture = monarchy
 			allowed = {
 				always = no
 			}
@@ -422,7 +425,7 @@ ideas = {
 		}
 		
 		ENG_jingoism_idea = {
-			picture = generic_fascism_drift_bonus
+			picture = fascism3
 			allowed = {
 				always = no
 			}
@@ -434,7 +437,7 @@ ideas = {
 		}
 		
 		ENG_royal_army_idea = {
-			picture = generic_pp_unity_bonus
+			picture = national_mobilization
 			allowed = {
 				always = no
 			}
@@ -444,7 +447,7 @@ ideas = {
 		}
 		
 		ENG_rule_the_waves = {
-			picture = generic_navy_bonus
+			picture = escort_effort
 			allowed = {
 				always = no
 			}

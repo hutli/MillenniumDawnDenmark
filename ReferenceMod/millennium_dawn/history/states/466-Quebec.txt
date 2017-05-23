@@ -1,8 +1,10 @@
 state={
 	id=466
 	name="STATE_466"
+	
 	resources={
-		aluminium=4.000
+		aluminium = 200
+		steel = 20
 	}
 	
 	state_category = town
@@ -10,12 +12,11 @@ state={
 	history={
 		owner = CAN
 		buildings = {
-			infrastructure = 1
-			air_base = 2
+			infrastructure = 4
+			air_base = 3
 			3691 = {
 				naval_base = 1
 			}
-
 		}
 		add_core_of = CAN
 		add_core_of = QUE

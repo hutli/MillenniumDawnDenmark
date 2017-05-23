@@ -7,16 +7,16 @@ state={
 	state_category = town
 	
 	resources={
-		steel=40
-		oil=10
-		aluminium=16
+		tungsten=40
+		oil=6
+		steel=3
 	}
 
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 6
+			industrial_complex = 2
 			air_base = 6
 		}
 		add_core_of = USA

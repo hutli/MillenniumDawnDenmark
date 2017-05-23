@@ -137,160 +137,125 @@ set_politics = {
 
 create_country_leader = {
 	name = "Husni Mubarak"
-	picture = "Portrait_EGY_Husni_Mubarak.dds"
+	picture = "Husni_Mubarak.dds"
 	ideology = autocrat
 }
-
 create_country_leader = {
 	name = "Abdel Fattah as Sisi"
-	picture = "Portrait_EGY_Abdel_Fattah_as_Sisi.dds"
+	picture = "Abdel_Fattah_as_Sisi.dds"
 	ideology = fiscal_conservative
 }
-
 create_country_leader = {
 	name = "Younes Makhioun"
-	picture = "Portrait_EGY_Younes_Makhioun.dds"
+	picture = "Younes_Makhioun.dds"
 	ideology = counter_progressive_democrat
 }
-
 create_country_leader = {
 	name = "Ahmed Shafik"
-	picture = "Portrait_EGY_Ahmed_Shafik.dds"
+	picture = "Ahmed_Shafik.dds"
 	ideology = moderate
 }
-
 create_country_leader = {
 	name = "Mohamed Morsi"
-	picture = "Portrait_EGY_Mohamed_Morsi.dds"
+	picture = "Mohamed_Morsi.dds"
 	ideology = islamic_authoritarian
-} 
-
+}
 create_country_leader = {
 	name = "Mariam Milad"
-	picture = "Portrait_EGY_Mariam_Milad.dds"
+	picture = "Mariam_Milad.dds"
 	ideology = libertarian
 }
-
 create_country_leader = {
 	name = " Adly Mahmoud Mansour"
-	picture = "Portrait_EGY_Adly_Mansour.dds"
+	picture = "Adly_Mansour.dds"
 	ideology = social_democrat_ideology
 }
-
 create_country_leader = {
 	name = "Ahmed Fuad Farouk II"
-	picture = "Portrait_EGY_Fuad_Farouk.dds"
+	picture = "Fuad_Farouk.dds"
 	ideology = absolute_monarchist                              
 }
-
 create_country_leader = {
 	name = "Mortada Mansour"
-	picture = "Portrait_EGY_Mortada_Mansour.dds"
+	picture = "Mortada_Mansour.dds"
 	ideology = national_socialist
 }
-
 create_country_leader = {
 	name = "Syed Abdel Aal"
-	picture = "Portrait_EGY_Syed_Abdel_Aal.dds"
+	picture = "Syed_Abd_El-Ghani.dds"
 	ideology = green
 }
-
 create_country_leader = {
 	name = "Salah Adli"
-	picture = "Portrait_EGY_Salah_Adli.dds"
+	picture = "Salah_Adli.dds"
 	ideology = marxist
 }
-
 create_country_leader = {
 	name = "Syed Abd El-Ghani"
-	picture = "Portrait_EGY_Syed_Abd_El-Ghani.dds"
+	picture = "Syed_Abd_El-Ghani.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_corps_commander = { 
 	name = "Mahmoud Hejazi"
-	picture = "Portrait_EGY_Mahmoud_Hejazi.dds"
-	traits = {} 
-	skill = 1
-}
-
-
-create_corps_commander = { 
-	name = "Mohamed Tantawi"
-	picture = "Portrait_EGY_Tantawi.dds"
-	traits = {} 
-	skill = 1
-}
-
-
-create_corps_commander = { 
-	name = "Ahmed Mohamed"
-	picture = "Portrait_EGY_Ahmed_Mohamed.dds"
-	traits = {} 
+	picture = "generals/Mahmoud_Hejazi.dds"
 	skill = 2
 }
-
+create_corps_commander = { 
+	name = "Mohamed Tantawi"
+	picture = "generals/Mohamed_Tantawi.dds"
+	skill = 1
+}
+create_corps_commander = { 
+	name = "Ahmed Mohamed"
+	picture = "generals/Ahmed_Mohamed.dds"
+	skill = 1
+}
 create_corps_commander = { 
 	name = "Sedki Sobhi" 
-	picture = "Portrait_EGY_Sedki_Sobhi.dds"
-	traits = {} 
+	picture = "generals/Sedki_Sobhi.dds"
 	skill = 1
 }
-
 create_corps_commander = { 
 	name = "Mohamed Samir" 
-	picture = "Portrait_EGY_Mohamed_Samir.dds"
-	traits = {} 
+	picture = "generals/Mohamed_Samir.dds"
 	skill = 1
 }
-
 create_corps_commander = { 
 	name = "Osama al-Jamal" 
-	picture = "Portrait_EGY_Osama_al-Jamal.dds"
-	traits = {} 
+	picture = "generals/Osama_Al_Jamal.dds"
 	skill = 1
 }
-
 create_corps_commander = { 
 	name = "Younes el-Masri" 
-	picture = "Portrait_EGY_Younes_el-Masri.dds"
-	traits = {} 
+	picture = "generals/Younes_el-Masri.dds"
 	skill = 1
 }
 
 create_navy_leader = { 
 	name = "Ahmed Hassan Saeed" 
-	picture = "Portrait_EGY_Ahmed_Saeed.dds"
-	traits = {} 
-	skill = 1
+	picture = "admirals/Ahmed_H_Saeed"
+	skill = 2
 }
-
 create_navy_leader = { 
 	name = "Mohamed Abdel Aziz"  
-	picture = "Portrait_EGY_Mohamed_Abdel_Aziz.dds" 
-	traits = {} 
+	picture = "admirals/Mohamed_Abdel_Aziz"
 	skill = 1
 }
-
 create_navy_leader = { 
 	name = "Osama El-Gendi"  
-	picture = "Portrait_EGY_Osama_El-Gendi.dds" 
-	traits = {} 
+	picture = "admirals/Osama_El_Gendi"
 	skill = 1
 }
-
 create_navy_leader = { 
 	name = "Osama Raba'ai"
-	picture = "Portrait_EGY_Osama_Raba'ai.dds"
-	traits = {} 
+	picture = "admirals/Osama_Raba_ai"
 	skill = 1
 }
-
 create_navy_leader = { 
 	name = "Mohab Mamish"  
-	picture = "Portrait_EGY_Mohab_Mamish.dds" 
-	traits = {} 
-	skill = 
+	picture = "admirals/Mohab_Mamish" 
+	skill = 1
 }
 
 2014.1.1 = {

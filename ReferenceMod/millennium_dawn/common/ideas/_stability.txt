@@ -3,6 +3,8 @@ ideas = {
 	country = {
 		
 		stability_1 = {
+			picture = stability1
+		
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
@@ -22,6 +24,8 @@ ideas = {
 		}
 		
 		stability_2 = {
+			picture = stability2
+			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
@@ -41,6 +45,8 @@ ideas = {
 		}
 		
 		stability_3 = {
+			picture = stability3
+			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
@@ -60,6 +66,8 @@ ideas = {
 		}
 		
 		stability_4 = {
+			picture = stability4
+			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
@@ -79,6 +87,8 @@ ideas = {
 		}
 		
 		stability_5 = {
+			picture = stability5
+			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
@@ -98,6 +108,8 @@ ideas = {
 		}
 		
 		stability_6 = {
+			picture = stability6
+			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
@@ -117,6 +129,8 @@ ideas = {
 		}
 		
 		stability_7 = {
+			picture = stability7
+			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			

@@ -4,10 +4,6 @@ state={
 	name="STATE_562" # Okhotsk
 	manpower = 321453
 	state_category = wasteland
-	
-	resources = {
-		oil=1
-	}
 
 	history={
 		owner = SOV

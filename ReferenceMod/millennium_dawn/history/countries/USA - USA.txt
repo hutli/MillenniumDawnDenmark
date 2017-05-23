@@ -247,175 +247,213 @@ give_guarantee = CHI
 
 create_country_leader = {
 	name = "Bill Clinton"
-	picture = "Portrait_USA_Bill_Clinton.dds"
+	picture = "Bill_Clinton.dds"
 	ideology = liberalist
 }
 
 create_country_leader = {
 	name = "George W. Bush"
-	picture = "Portrait_USA_George_W_Bush.dds"
+	picture = "George_W_Bush.dds"
 	ideology = fiscal_conservative
 }
 
 create_country_leader = {
 	name = "Harry Browne"
-	picture = "Portrait_USA_Harry_Browne.dds"
+	picture = "Harry_Browne.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Ralph Nader"
-	picture = "Portrait_USA_Ralph_Nader.dds"
+	picture = "Ralph_Nader.dds"
 	ideology = green
 }
 
 create_country_leader = {
 	name = "John Bachtell"
-	picture = "Portrait_USA_John_Bachtell.dds"
+	picture = "John_Bachtell.dds"
 	ideology = marxist
 }
 
 create_country_leader = {
 	name = "The Grand Council"
-	picture = "Portrait_USA_The_Grand_Council.dds"
+	picture = "Grand_Council.dds"
 	ideology = absolute_monarchist
 }
 
 #create_country_leader = {
 #	name = "Patrick Buchanan"
-#	picture = "Portrait_USA_Patrick_Buchanan.dds"
+#	picture = "Patrick_Buchanan.dds"
 #	ideology = social_democrat_ideology
 #}
 
 create_country_leader = {
 	name = "Howard Phillips"
-	picture = "Portrait_USA_Howard_Phillips.dds"
+	picture = "Howard_Phillips.dds"
 	ideology = oligarchist
 }
 
 create_country_leader = {
 	name = "David McReynolds"
-	picture = "Portrait_USA_David_McReynolds.dds"
+	picture = "David_McReynolds.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
 	name = "Richard Spencer"
-	picture = "Portrait_USA_Richard_Spencer.dds"
+	picture = "Richard_Spencer.dds"
 	ideology = proto_fascist
 }
 
 create_country_leader = {
 	name = "Matthias Koehl"
-	picture = "Portrait_USA_Matt_Koehl.dds"
+	picture = "Matt_Koehl.dds"
 	ideology = national_socialist
 }
 
 create_field_marshal = {
 	name = "Colin Powell"
-	picture = "Portrait_USA_general_Colin_Powell.dds"
-	traits = { thorough_planner defensive_doctrine }
+	picture = "generals/Colin_Powell.dds"
+	traits = { 
+		old_guard
+		thorough_planner
+		defensive_doctrine
+	}
 	skill = 4
 }
-
 create_field_marshal = {
 	name = "James N. Mattis"
-	picture = "Portrait_USA_general_James_Mattis.dds"
-	traits = { mad_dog }
+	picture = "generals/James_Mattis.dds"
+	traits = { 
+		old_guard 
+		mad_dog 
+	}
 	skill = 3
 }
-
+create_field_marshal = {
+	name = "John G. Coburn"
+	picture = "generals/John_G_Coburn.dds"
+	traits = { offensive_doctrine }
+	skill = 2
+}
 create_field_marshal = {
 	name = "Eric K. Shinseki"
-	picture = "Portrait_USA_general_Eric_K_Shinseki.dds"
+	picture = "generals/Eric_K_Shinseki.dds"
+	traits = { logistics_wizard }
 	skill = 1
 }
-
 create_field_marshal = {
 	name = "Dennis Reimer"
-	picture = "Portrait_USA_general_Dennis_Reimer.dds"
+	picture = "generals/Dennis_Reimer.dds"
+	traits = { defensive_doctrine }
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "John M. Keane"
-	picture = "Portrait_USA_general_Jack_Keane.dds"
+	picture = "generals/Jack_Keane.dds"
 	traits = { urban_assault_specialist }
 	skill = 3
 }
-
-create_corps_commander = {
-	name = "John G. Coburn"
-	picture = "Portrait_USA_general_John_G_Coburn.dds"
-	skill = 3
-}
-
 create_corps_commander = {
 	name = "Thomas A. Schwartz"
-	picture = "Portrait_USA_general_Thomas_A_Schwartz.dds"
+	picture = "generals/Thomas_A_Schwartz.dds"
 	traits = { desert_fox }
 	skill = 2
 }
-
+create_corps_commander = {
+	name = "Lori J. Robinson"
+	picture = "generals/Lori_J_Robinson.dds"
+	traits = { commando }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Erik Kurilla"
+	picture = "generals/Erik_Kurilla.dds"
+	traits = { winter_specialist }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Robert B. Abrams"
+	picture = "generals/Robert_B_Abrams.dds"
+	skill = 2
+}
+create_corps_commander = {
+	name = "Joseph L. Votel"
+	picture = "generals/Joseph_L_Votel.dds"
+	skill = 2
+}
 create_corps_commander = {
 	name = "John N. Abrams"
-	picture = "Portrait_USA_general_John_N_Abrams.dds"
+	picture = "generals/John_N_Abrams.dds"
 	traits = { urban_assault_specialist }
 	skill = 1
 }
-
 create_corps_commander = {
 	name = "Thomas D. Waldhauser"
-	picture = "Portrait_USA_general_Thomas_D_Waldhauser.dds"
+	picture = "generals/Thomas_D_Waldhauser.dds"
+	traits = { commando }
 	skill = 1
 }
-
+create_corps_commander = {
+	name = "Andrew P. Poppas"
+	picture = "generals/Andrew_P_Poppas.dds"
+	traits = { hill_fighter }
+	skill = 1
+}
 create_corps_commander = {
 	name = "John W. Hendrix"
-	picture = "Portrait_USA_general_John_W_Hendrix.dds"
+	picture = "generals/John_W_Hendrix.dds"
+	traits = { trickster }
 	skill = 1
 }
-
 create_corps_commander = {
 	name = "Kurt W. Tidd"
-	picture = "Portrait_USA_general_Kurt_W_Tidd.dds"
+	picture = "generals/Kurt_W_Tidd.dds"
+	traits = { swamp_fox }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Joseph M. Martin"
+	picture = "generals/Joseph_M_Martin.dds"
+	skill = 1
+}
+create_corps_commander = {
+	name = "Christopher G. Cavoli"
+	picture = "generals/Christopher_G_Cavoli.dds"
 	skill = 1
 }
 
 create_navy_leader = {
 	name = "James O. Ellis"
-	picture = "Portrait_USA_admiral_James_O_Ellis.dds"
+	picture = "admirals/James_O_Ellis.dds"
 	skill = 2
 }
-
 create_navy_leader = {
 	name = "Dennis C. Blair"
-	picture = "Portrait_USA_admiral_Dennis_C_Blair.dds"
+	picture = "admirals/Dennis_C_Blair.dds"
 	skill = 2
 }
-
 create_navy_leader = {
 	name = "Vernon E. Clark"
-	picture = "Portrait_USA_admiral_Vernon_E_Clark.dds"
+	picture = "admirals/Vernon_E_Clark.dds"
 	skill = 1
 }
-
 create_navy_leader = {
 	name = "Thomas B. Fargo"
-	picture = "Portrait_USA_admiral_Thomas_B_Fargo.dds"
+	picture = "admirals/Thomas_B_Fargo.dds"
 	skill = 1
 }
-
 create_navy_leader = {
 	name = "Charles S. Abbot"
-	picture = "Portrait_USA_admiral_Charles_S_Abbot.dds"
+	picture = "admirals/Charles_S_Abbot.dds"
 	skill = 1
 }
 
 2000.7.1 = {
 	create_corps_commander = {
 		name = "William F. Kernan"
-		picture = "Portrait_USA_general_William_F_Kernan.dds"
+		picture = "generals/William_F_Kernan.dds"
 		skill = 1
 	}
 }
@@ -477,13 +515,6 @@ create_navy_leader = {
 	set_country_flag = usa_bush_victory_2004
 }
 
-2008.1.1 = {
-	create_corps_commander = {
-		name = "Lori J. Robinson"
-		picture = "Portrait_USA_general_Lori_J_Robinson.dds"
-		skill = 2
-	}
-}
 
 2008.11.6 = {
 	set_country_flag = usa_obama_victory_2008
@@ -492,12 +523,12 @@ create_navy_leader = {
 2009.1.1 = {
 	create_country_leader = {
 		name = "Mitt Romney"
-		picture = "Portrait_USA_Mitt_Romney.dds"
+		picture = "Mitt_Romney.dds"
 		ideology = constitutionalist
 	}
 	create_country_leader = {
 		name = "Barack Obama"
-		picture = "Portrait_USA_Barack_Obama.dds"
+		picture = "Barack_Obama.dds"
 		ideology = liberalist
 	}
 	set_politics = {
@@ -519,52 +550,29 @@ create_navy_leader = {
 		elections_allowed = yes
 		
 		parties = {
-			social_liberal = {
-				popularity = 46
-			}
-			conservative = {
-				popularity = 44
-			}
-			market_liberal = {
-				popularity = 7
-			}
-			progressive = {
-				popularity = 3
-			}
-			reactionary = {
-				popularity = 1
-			}
+			social_liberal = { popularity = 46 }
+			conservative = { popularity = 44 }
+			market_liberal = { popularity = 7 }
+			progressive = { popularity = 3 }
+			reactionary = { popularity = 1 }
 		}
 	}
 	create_country_leader = {
 		name = "Gary Johnson"
-		picture = "Portrait_USA_Gary_Johnson.dds"
+		picture = "Gary_Johnson.dds"
 		ideology = libertarian
 	}
 	create_country_leader = {
 		name = "Jill Stein"
-		picture = "Portrait_USA_Jill_Stein.dds"
+		picture = "Jill_Stein.dds"
 		ideology = green
-	}
-}
-
-2015.1.1 = {
-	create_corps_commander = {
-		name = "Robert B. Abrams"
-		picture = "Portrait_USA_general_Robert_B_Abrams.dds"
-		skill = 2
-	}
-	create_corps_commander = {
-		name = "Joseph L. Votel"
-		picture = "Portrait_USA_general_Joseph_L_Votel.dds"
-		skill = 1
 	}
 }
 
 2015.12.1 = {
 	create_country_leader = {
 		name = "Donald Trump"
-		picture = "Portrait_USA_Donald_Trump.dds"
+		picture = "Donald_Trump.dds"
 		ideology = right_wing_conservative
 		
 		traits = {
@@ -603,7 +611,7 @@ create_navy_leader = {
 	}
 	create_country_leader = {
 		name = "Bernie Sanders"
-		picture = "Portrait_USA_Bernie_Sanders.dds"
+		picture = "Bernie_Sanders.dds"
 		ideology = liberalist
 	}
 }

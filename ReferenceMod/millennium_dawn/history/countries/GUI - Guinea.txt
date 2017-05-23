@@ -130,32 +130,32 @@ set_politics = {
 
 create_country_leader = {
 	name = "Lansana Conté"
-	picture = "Portrait_GUI_Lansana_Conte.dds"
+	picture = "Lansana_Conte.dds"
 	ideology = counter_progressive_democrat
 }
 	
 2008.12.22 = {
 	create_country_leader = {
 		name = "Moussa Dadis Camara"
-		picture = "Portrait_GUI_Moussa_Dadis_Camara.dds"
+		picture = "Moussa_Dadis_Camara.dds"
 		ideology = social_democrat_ideology
 	}
 	set_politics = {
 		ruling_party = social_democrat
+		elections_allowed = yes
 	}
 }
 2009.12.3 = {
 	create_country_leader = {
 		name = "Sékouba Konaté"
-		picture = "Portrait_GUI_Sekouba_Konate.dds"
+		picture = "Sekouba_Konate.dds"
 		ideology = social_democrat_ideology
 	}
 }
-	
 2010.12.21 = {
 	create_country_leader = {
 		name = "Alpha Condé"
-		picture = "Portrait_GUI_Alpha_Conde.dds"
+		picture = "Alpha_Conde.dds"
 		ideology = social_democrat_ideology
 	}
 	set_politics = {

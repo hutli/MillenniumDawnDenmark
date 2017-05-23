@@ -5,14 +5,19 @@ state={
 	manpower = 1315450
 	
 	state_category = rural
-
-	history={
+	
+	resources = {
+		chromium=20
+		steel=5
+	}
+	
+	history = {
 		owner = KZH
-		buildings = {
-			infrastructure = 4
-
-		}
 		add_core_of = KZH
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
 	}
 
 	provinces={

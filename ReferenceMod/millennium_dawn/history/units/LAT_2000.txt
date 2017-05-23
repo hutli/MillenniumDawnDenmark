@@ -86,4 +86,25 @@ units = {
 		start_experience_factor = 0.3
 	}
 	
+	navy = {
+		name = "Latvijas Juras Speki"
+		base = 9340
+		location = 9340
+
+		ship = {
+			name = "Viesturs"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = LAT }}}
+			
+		ship = {
+			name = "Imanta"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = LAT }}}
+
+		ship = {
+			name = "Namejs"
+			definition = corvette
+			equipment = { corvette_1 = { amount = 1 owner = LAT }}}
+	}
+	
 }

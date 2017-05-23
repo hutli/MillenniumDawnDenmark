@@ -97,15 +97,12 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		conservative = {
-		    popularity = 60
-	    }
-	    social_democrat = {
-		    popularity = 32
-		}
-		progressive = {
-		    popularity = 8
-		}  
+		conservative = { popularity = 56 }
+	    social_democrat = { popularity = 31 }
+		progressive = { popularity = 8 }  
+		market_liberal = { popularity = 3 }
+		social_liberal = { popularity = 2 }
+		nationalist = { popularity = 1 }
 	}
 	ruling_party = conservative
 	last_election = "1999.1.1"
@@ -115,54 +112,34 @@ set_politics = {
 
 create_country_leader = {
 	name = "Franz von Wittelsbach"
-	desc = "POLITICIAN_BAV_FRANZ_WITTELSBACH_DESC"
-	picture = "Portrait_BAV_Franz_Wittelsbach.dds"
-	expire = "2050.1.1"
+	picture = "Franz_Wittelsbach.dds"
 	ideology = absolute_monarchist
-	traits = {
-	}
 }
 create_country_leader = {
 	name = "Edmund Stoiber"
-	desc = "POLITICIAN_BAV_EDMUND_STOIBER_DESC"
-	picture = "Portrait_BAV_Edmund_Stoiber.dds"
-	expire = "2005.1.1"
-	ideology = gaullist
-	traits = {
-	}
+	picture = "Edmund_Stoiber.dds"
+	ideology = right_wing_conservative
 }
 	
 2012.1.1 = {
 
     set_politics = {
-
 	    parties = {
-		    conservative = {
-			    popularity = 56
-		    }
-	    	social_democrat = {
-		    	popularity = 24
-		    }
-		    progressive = {
-		        popularity = 10
-		    }
-		    social_liberal = {
-		        popularity = 10
-		    }
+		    conservative = { popularity = 53 }
+	    	social_democrat = { popularity = 29 }
+		    progressive = { popularity = 8 }
+		    social_liberal = { popularity = 7 }
+			market_liberal = { popularity = 3 }
+			nationalist = { popularity = 1 }
 	    }    
 	    ruling_party = conservative
 	    last_election = "2013.1.1"
 	    election_frequency = 60
 	    elections_allowed = yes
 	}
-
-create_country_leader = {
-	name = "Horst Seehofer"
-	desc = "POLITICIAN_BAV_HORST_SEEHOFER_DESC"
-	picture = "Portrait_BAV_Horst_Seehofer.dds"
-	expire = "2050.1.1"
-	ideology = gaullist
-	traits = {
-	    }
+	create_country_leader = {
+		name = "Horst Seehofer"
+		picture = "Horst_Seehofer.dds"
+		ideology = right_wing_conservative
     }
 }

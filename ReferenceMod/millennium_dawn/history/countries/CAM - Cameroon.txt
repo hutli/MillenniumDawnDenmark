@@ -146,6 +146,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Paul Biya"
-	picture = "Portrait_CAM_Paul_Biya.dds"
+	picture = "Paul_Biya.dds"
 	ideology = democratic_socialist_ideology
 }

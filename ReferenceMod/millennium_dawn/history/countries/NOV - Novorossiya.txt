@@ -132,13 +132,15 @@ set_politics = {
 
 create_country_leader = {
 	name = "Aleksandar Zakharchenko"
-	picture = "Portrait_NOV_Aleksandar_Zakharchenko.dds"
+	picture = "Aleksandar_Zakharchenko.dds"
 	ideology = counter_progressive_democrat
-	expire = "2050.1.1"
-	
-	traits = {
-		defensive_strategist
-	}
+	traits = { defensive_strategist }
+}
+
+create_corps_commander = {
+	name = "Aleksandar Zakharchenko"
+	picture = "generals/Aleksandar_Zakharchenko.dds"
+	skill = 3
 }
 
 2014.4.1 = {

@@ -4,11 +4,6 @@ state={
 	name="STATE_213"
 	manpower = 836672
 	state_category = rural
-	resources={
-		oil=65
-		steel=10
-		chromium=7
-	}
 
 	history={
 		owner = SOV
@@ -17,8 +12,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
+			air_base = 2
+			industrial_complex = 1
 			dockyard = 1
-			air_base = 4
 			3134 = {
 				naval_base = 4
 				coastal_bunker = 1

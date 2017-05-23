@@ -26,14 +26,8 @@ country_event = {
 		add_political_power = 10
 		create_country_leader = {
 	        name = "Simon Crean"
-            desc = "POLITICIAN_AST_SIMON_CREAN_DESC"
-	        picture = "Portrait_AST_Simon_Crean.dds"
-	        expire = "2050.1.1"
+	        picture = "Simon_Crean.dds"
 	        ideology = social_democrat_ideology
-		
-	        traits = {
-		
-		    }
 	    }
 		add_popularity = {
 			ideology = social_democrat
@@ -69,7 +63,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Simon Crean"
             desc = "POLITICIAN_AST_SIMON_CREAN_DESC"
-	        picture = "Portrait_AST_Simon_Crean.dds"
+	        picture = "Simon_Crean.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -91,7 +85,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Kim Beazley"
             desc = "POLITICIAN_AST_KIM_BEAZLEY_DESC"
-	        picture = "Portrait_AST_Kim_Beazley.dds"
+	        picture = "Kim_Beazley.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -129,7 +123,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Mark Latham"
             desc = "POLITICIAN_AST_MARK_LATHAM_DESC"
-	        picture = "Portrait_AST_Mark_Latham.dds"
+	        picture = "Mark_Latham.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -156,7 +150,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Kim Beazley"
             desc = "POLITICIAN_AST_KIM_BEAZLEY_DESC"
-	        picture = "Portrait_AST_Kim_Beazley.dds"
+	        picture = "Kim_Beazley.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -201,7 +195,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Kim Beazley"
             desc = "POLITICIAN_AST_KIM_BEAZLEY_DESC"
-	        picture = "Portrait_AST_Kim_Beazley.dds"
+	        picture = "Kim_Beazley.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -245,7 +239,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Mark Latham"
             desc = "POLITICIAN_AST_MARK_LATHAM_DESC"
-	        picture = "Portrait_AST_Mark_Latham.dds"
+	        picture = "Mark_Latham.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -283,7 +277,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Kevin Rudd"
             desc = "POLITICIAN_AST_KEVIN_RUDD_DESC"
-	        picture = "Portrait_AST_Kevin_Rudd.dds"
+	        picture = "Kevin_Rudd.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -309,7 +303,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Kim Beazley"
             desc = "POLITICIAN_AST_KIM_BEAZLEY_DESC"
-	        picture = "Portrait_AST_Kim_Beazley.dds"
+	        picture = "Kim_Beazley.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -351,7 +345,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Kevin Rudd"
             desc = "POLITICIAN_AST_KEVIN_RUDD_DESC"
-	        picture = "Portrait_AST_Kevin_Rudd.dds"
+	        picture = "Kevin_Rudd.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -374,7 +368,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Julia Gillard"
             desc = "POLITICIAN_AST_JULIA_GILLARD_DESC"
-	        picture = "Portrait_AST_Julia_Gillard.dds"
+	        picture = "Julia_Gillard.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -418,7 +412,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Kevin Rudd"
             desc = "POLITICIAN_AST_KEVIN_RUDD_DESC"
-	        picture = "Portrait_AST_Kevin_Rudd.dds"
+	        picture = "Kevin_Rudd.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -469,7 +463,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Bill Shorten"
             desc = "POLITICIAN_AST_BILL_SHORTEN_DESC"
-	        picture = "Portrait_AST_Bill_Shorten.dds"
+	        picture = "Bill_Shorten.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -523,7 +517,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Simon Crean"
             desc = "POLITICIAN_AST_SIMON_CREAN_DESC"
-	        picture = "Portrait_AST_Simon_Crean.dds"
+	        picture = "Simon_Crean.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -574,7 +568,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Kevin Rudd"
             desc = "POLITICIAN_AST_KEVIN_RUDD_DESC"
-	        picture = "Portrait_AST_Kevin_Rudd.dds"
+	        picture = "Kevin_Rudd.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -630,7 +624,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Bill Shorten"
             desc = "POLITICIAN_AST_BILL_SHORTEN_DESC"
-	        picture = "Portrait_AST_Bill_Shorten.dds"
+	        picture = "Bill_Shorten.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -656,7 +650,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Anthony Albanese"
             desc = ""
-	        picture = "Portrait_AST_Anthony_Albanese.dds"
+	        picture = "Anthony_Albanese.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -697,7 +691,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Bill Shorten"
             desc = "POLITICIAN_AST_BILL_SHORTEN_DESC"
-	        picture = "Portrait_AST_Bill_Shorten.dds"
+	        picture = "Bill_Shorten.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -723,7 +717,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Anthony Albanese"
             desc = ""
-	        picture = "Portrait_AST_Anthony_Albanese.dds"
+	        picture = "Anthony_Albanese.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -749,7 +743,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Tanya Plibersek"
             desc = ""
-	        picture = "Portrait_AST_Tanya_Plibersek.dds"
+	        picture = "Tanya_Plibersek.dds"
 	        expire = "2050.1.1"
 	        ideology = social_democrat_ideology
 		
@@ -790,7 +784,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Peter Costello"
             desc = ""
-	        picture = "Portrait_AST_Peter_Costello.dds"
+	        picture = "Peter_Costello.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -812,7 +806,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Robert Hill"
             desc = ""
-	        picture = "Portrait_AST_Robert_Hill.dds"
+	        picture = "Robert_Hill.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -853,7 +847,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Julie Bishop"
             desc = ""
-	        picture = "Portrait_AST_Julie_Bishop.dds"
+	        picture = "Julie_Bishop.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -894,7 +888,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Brendan Nelson"
             desc = "POLITICIAN_AST_BRENDON_NELSON_DESC"
-	        picture = "Portrait_AST_Brendan_Nelson.dds"
+	        picture = "Brendan_Nelson.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -920,7 +914,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Malcom Turnbull"
             desc = "POLITICIAN_AST_MALCOM_TURNBULL_DESC"
-	        picture = "Portrait_AST_Malcom_Turnbull.dds"
+	        picture = "Malcom_Turnbull.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -962,7 +956,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Brendan Nelson"
             desc = "POLITICIAN_AST_BRENDON_NELSON_DESC"
-	        picture = "Portrait_AST_Brendan_Nelson.dds"
+	        picture = "Brendan_Nelson.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -984,7 +978,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Malcom Turnbull"
             desc = "POLITICIAN_AST_MALCOM_TURNBULL_DESC"
-	        picture = "Portrait_AST_Malcom_Turnbull.dds"
+	        picture = "Malcom_Turnbull.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -1010,7 +1004,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Julie Bishop"
             desc = ""
-	        picture = "Portrait_AST_Julie_Bishop.dds"
+	        picture = "Julie_Bishop.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -1048,7 +1042,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Tony Abbott"
             desc = "POLITICIAN_AST_TONY_ABBOTT_DESC"
-	        picture = "Portrait_AST_Tony_Abbott.dds"
+	        picture = "Tony_Abbott.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -1074,7 +1068,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Malcom Turnbull"
             desc = "POLITICIAN_AST_MALCOM_TURNBULL_DESC"
-	        picture = "Portrait_AST_Malcom_Turnbull.dds"
+	        picture = "Malcom_Turnbull.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -1100,7 +1094,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Joe Hockey"
             desc = ""
-	        picture = "Portrait_AST_Joe_Hockey.dds"
+	        picture = "Joe_Hockey.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -1142,7 +1136,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Tony Abbott"
             desc = "POLITICIAN_AST_TONY_ABBOTT_DESC"
-	        picture = "Portrait_AST_Tony_Abbott.dds"
+	        picture = "Tony_Abbott.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -1165,7 +1159,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Malcom Turnbull"
             desc = "POLITICIAN_AST_MALCOM_TURNBULL_DESC"
-	        picture = "Portrait_AST_Malcom_Turnbull.dds"
+	        picture = "Malcom_Turnbull.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -1204,7 +1198,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Malcom Turnbull"
             desc = "POLITICIAN_AST_MALCOM_TURNBULL_DESC"
-	        picture = "Portrait_AST_Malcom_Turnbull.dds"
+	        picture = "Malcom_Turnbull.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -1251,7 +1245,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Tony Abbott"
             desc = "POLITICIAN_AST_TONY_ABBOTT_DESC"
-	        picture = "Portrait_AST_Tony_Abbott.dds"
+	        picture = "Tony_Abbott.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -1273,7 +1267,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Malcom Turnbull"
             desc = "POLITICIAN_AST_MALCOM_TURNBULL_DESC"
-	        picture = "Portrait_AST_Malcom_Turnbull.dds"
+	        picture = "Malcom_Turnbull.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -1299,7 +1293,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Julie Bishop"
             desc = ""
-	        picture = "Portrait_AST_Julie_Bishop.dds"
+	        picture = "Julie_Bishop.dds"
 	        expire = "2050.1.1"
 	        ideology = libertarian
 		
@@ -1337,7 +1331,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Christine Milne"
             desc = "POLITICIAN_AST_CHRISTINE_MILNE_DESC"
-	        picture = "Portrait_AST_Christine_Milne.dds"
+	        picture = "Christine_Milne.dds"
 	        expire = "2050.1.1"
 	        ideology = green
 		
@@ -1360,7 +1354,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Adam Bandt"
             desc = ""
-	        picture = "Portrait_AST_Adam_Bandt.dds"
+	        picture = "Adam_Bandt.dds"
 	        expire = "2050.1.1"
 	        ideology = green
 		
@@ -1396,7 +1390,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Richard Di Natale"
             desc = "POLITICIAN_AST_RICHARD_DI_NATALE_DESC"
-	        picture = "Portrait_AST_Richard_Di_Natale.dds"
+	        picture = "Richard_Di_Natale.dds"
 	        expire = "2050.1.1"
 	        ideology = green
 		
@@ -1418,7 +1412,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Larissa Waters"
             desc = ""
-	        picture = "Portrait_AST_Larissa_Waters.dds"
+	        picture = "Larissa_Waters.dds"
 	        expire = "2050.1.1"
 	        ideology = green
 		
@@ -1440,7 +1434,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Scott Ludlam"
             desc = ""
-	        picture = "Portrait_AST_Scott_Ludlam.dds"
+	        picture = "Scott_Ludlam.dds"
 	        expire = "2050.1.1"
 	        ideology = green
 		
@@ -1462,7 +1456,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Adam Bandt"
             desc = ""
-	        picture = "Portrait_AST_Adam_Bandt.dds"
+	        picture = "Adam_Bandt.dds"
 	        expire = "2050.1.1"
 	        ideology = green
 		
@@ -1497,7 +1491,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Richard Di Natale"
             desc = "POLITICIAN_AST_RICHARD_DI_NATALE_DESC"
-	        picture = "Portrait_AST_Richard_Di_Natale.dds"
+	        picture = "Richard_Di_Natale.dds"
 	        expire = "2050.1.1"
 	        ideology = green
 		
@@ -1515,7 +1509,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Larissa Waters"
             desc = ""
-	        picture = "Portrait_AST_Larissa_Waters.dds"
+	        picture = "Larissa_Waters.dds"
 	        expire = "2050.1.1"
 	        ideology = green
 		
@@ -1532,7 +1526,7 @@ country_event = {
 		}
 		create_country_leader = {
 	        name = "Scott Ludlam"
-	        picture = "Portrait_AST_Scott_Ludlam.dds"
+	        picture = "Scott_Ludlam.dds"
 	        ideology = green
 	    }
 	}
@@ -1544,7 +1538,7 @@ country_event = {
 		}
 		create_country_leader = {
 	        name = "Christine Milne"
-	        picture = "Portrait_AST_Christine_Milne.dds"
+	        picture = "Christine_Milne.dds"
 	        ideology = green
 	    }
 	}

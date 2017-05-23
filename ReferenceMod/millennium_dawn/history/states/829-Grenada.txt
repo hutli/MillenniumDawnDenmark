@@ -3,9 +3,11 @@ state={
 	name="STATE_829"
 	history = {
 		owner = GND
+		add_core_of = GND
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
+			11106 = { naval_base = 1 }
 		}
 		victory_points = { 11106 1 }
 	}

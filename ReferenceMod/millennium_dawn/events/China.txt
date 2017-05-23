@@ -1115,7 +1115,7 @@ country_event = {
 		create_country_leader = {
 				name = "Wu Bangguo"
 				desc = "POLITICIAN_PRC_WU_BANGGUO_DESC"
-				picture = "Portrait_PRC_Wu_Bangguo.dds"
+				picture = "Wu_Bangguo.dds"
 				expire = "2050.1.1"
 				ideology = maoist
 				
@@ -1168,7 +1168,7 @@ country_event = {
 		create_country_leader = {
 				name = "Hu Jintao"
 				desc = "POLITICIAN_PRC_HU_JINTAO_DESC"
-				picture = "Portrait_PRC_Hu_Jintao.dds"
+				picture = "Hu_Jintao.dds"
 				expire = "2050.1.1"
 				ideology = maoist
 				
@@ -1226,7 +1226,7 @@ country_event = {
 		create_country_leader = {
 				name = "Xi Jinping"
 				desc = "POLITICIAN_PRC_XI_JINPING_DESC"
-				picture = "Portrait_PRC_Xi_Jinping.dds"
+				picture = "Xi_Jinping.dds"
 				expire = "2050.1.1"
 				ideology = maoist
 				
@@ -1316,7 +1316,7 @@ country_event = {
 		create_country_leader = {
 				name = "Wu Bangguo"
 				desc = "POLITICIAN_PRC_WU_BANGGUO_DESC"
-				picture = "Portrait_PRC_Wu_Bangguo.dds"
+				picture = "Wu_Bangguo.dds"
 				expire = "2050.1.1"
 				ideology = maoist
 				
@@ -1350,7 +1350,7 @@ country_event = {
 		create_country_leader = {
 				name = "Li Keqiang"
 				desc = "POLITICIAN_PRC_LI_KEQIANG_DESC"
-				picture = "Portrait_PRC_Li_Keqiang.dds"
+				picture = "Li_Keqiang.dds"
 				expire = "2050.1.1"
 				ideology = maoist
 				
@@ -1410,7 +1410,7 @@ country_event = {
 		create_country_leader = {
 				name = "Xi Jinping"
 				desc = "POLITICIAN_PRC_XI_JINPING_DESC"
-				picture = "Portrait_PRC_Xi_Jinping.dds"
+				picture = "Xi_Jinping.dds"
 				expire = "2050.1.1"
 				ideology = maoist
 				

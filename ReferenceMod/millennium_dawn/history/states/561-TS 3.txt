@@ -4,12 +4,12 @@ state={
 	name="STATE_561" # Amur
 	manpower = 830103
 	
-	state_category = pastoral
+	state_category = wasteland
 
 	history={
 		owner = SOV
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 		}
 		add_core_of = SOV
 	}

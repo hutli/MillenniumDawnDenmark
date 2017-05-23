@@ -4,8 +4,7 @@ state={
 	name="STATE_680"
 	
 	resources = {
-		oil = 11
-		steel = 1
+		oil = 2
 	}
 
 	history={
@@ -14,7 +13,7 @@ state={
 		victory_points = { 2013 2 }	#Deir-Az-Zur
 		buildings = {
 			infrastructure = 1
-			air_base = 6
+			air_base = 2
 		}
 		add_core_of = SYR
 		

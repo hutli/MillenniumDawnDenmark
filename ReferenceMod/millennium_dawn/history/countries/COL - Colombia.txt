@@ -140,35 +140,13 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-
-
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Andrés Pastrana"
 	ideology = centrist
-	picture = "Portrait_COL_ANDRES_PRA.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Andres_Pra.dds"
 }
-
-2015.1.1 = {
-
-  create_country_leader = {
+create_country_leader = {
 	name = "Juan Manuel Santos"
 	ideology = liberalist
-	picture = "Portrait_COL_MANUEL_SANTOS.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	picture = "Juan_Manuel_Santos.dds"
 }

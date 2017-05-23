@@ -5,13 +5,11 @@ state={
 
 	history={
 		owner = UZB
-		
+		add_core_of = UZB
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
 			industrial_complex = 1
 		}
-		add_core_of = UZB
-
 	}
 
 	provinces={

@@ -118,43 +118,32 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Abu Bakr al-Baghdadi"
-	picture = "Portrait_ISS_Abu_Bakr.dds"
-	expire = "2020.1.1"
+	picture = "Abu_Bakr.dds"
 	ideology = islamic_authoritarian
-	
-	traits = {
-	
-	}
 }
 
 create_corps_commander = {
 	name = "Abu Nabil al-Anbari of Salahuddin"
-	picture = "Portrait_ISS_general_Abu_Nabil.dds"
+	picture = "generals/Abu_Nabil.dds"
 	skill = 2
 	traits = { desert_fox }
 }
 
 create_corps_commander = {
 	name = "Omar al-Shishani"
-	picture = "Portrait_ISS_general_Omar_al_Shishani.dds"
+	picture = "generals/Omar_al_Shishani.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Rustam Aselderov"
-	picture = "Portrait_ISS_general_Rustam_Aselderov.dds"
+	picture = "generals/Rustam_Aselderov.dds"
 	skill = 1
 }
 
 2015.6.1 = {
-	declare_war_on = {
-		target = IRQ
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = SYR
-		type = annex_everything
-	}
+	declare_war_on = { target = IRQ type = annex_everything }
+	declare_war_on = { target = SYR type = annex_everything }
 }
 
 2016.5.1 = {

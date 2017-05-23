@@ -3,18 +3,18 @@ state={
 	id=82
 	name="STATE_82"
 	manpower = 1141500
-	resources={
-		aluminium=6
-	}
 	
-	state_category = rural
+	state_category = pastoral
+	
+	resources = {
+		steel = 2
+	}
 
 	history={
 		owner = ROM
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 2
-			air_base = 2
+			infrastructure = 2
+			air_base = 1
 		}
 		add_core_of = ROM
 	}

@@ -103,26 +103,13 @@ add_ideas = {
 }
 
 set_politics = {
-
 	parties = {
-		reactionary = {
-			popularity = 30
-		}
-		conservative = {
-			popularity = 40
-		}
-		market_liberal = {
-			popularity = 15
-		}
-		progressive = {
-			popularity = 3
-		}
-		democratic_socialist = {
-			popularity = 2
-		}
-		communist = {
-			popularity = 10
-		}
+		reactionary = { popularity = 30 }
+		conservative = { popularity = 40 }
+		market_liberal = { popularity = 15 }
+		progressive = { popularity = 3 }
+		democratic_socialist = { popularity = 2 }
+		communist = { popularity = 10 }
 	}
 	
 	ruling_party = conservative
@@ -130,14 +117,9 @@ set_politics = {
 	election_frequency = 60
 	elections_allowed = yes
 }
+
 create_country_leader = {
 	name = "Robert Kocharyan"
-	desc = "POLITICIAN_ARM_ROBERT_KOCHARYAN_DESC"
-	picture = "Portrait_ARM_Robert_Kocharyan.dds"
-	expire = "2020.1.1"
+	picture = "Robert_Kocharyan.dds"
 	ideology = fiscal_conservative
-	
-	traits = {
-	
-	}
 }

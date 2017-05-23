@@ -130,64 +130,46 @@ set_politics = {
 
 create_country_leader = {
 	name = "Salva Kiir Mayardit"
-	picture = "Portrait_SSD_Salva_Kiir.dds"
-	expire = "2020.1.1"
+	picture = "Salva_Kiir.dds"
 	ideology = counter_progressive_democrat
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Dr. Lam Akol"
-	picture = "Portrait_SSD_Lam_Akol.dds"
-	expire = "2020.1.1"
+	picture = "Lam_Akol.dds"
 	ideology = liberalist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Federico Awi Vuni"
-	picture = "Portrait_SSD_Federico_Awi_Vuni.dds"
-	expire = "2020.1.1"
+	picture = "Federico_Awi_Vuni.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Toby Maduot"
-	picture = "Portrait_SSD_Toby_Maduot.dds"
-	expire = "2020.1.1"
+	picture = "Toby_Maduot.dds"
 	ideology = national_democrat
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Joseph Wol Modesto"
-	expire = "2020.1.1"
 	ideology = leninist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Simon Achien Majur"
-	expire = "2020.1.1"
 	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
+}
+
+create_corps_commander = {
+	name = "Dom Deng"
+	picture = "generals/Dom_Deng"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Paul Malong"
+	picture = "generals/Paul_Malong"
+	skill = 1
 }

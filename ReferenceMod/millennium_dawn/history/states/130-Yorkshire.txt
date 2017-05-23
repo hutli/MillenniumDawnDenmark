@@ -4,11 +4,10 @@ state={
 	name="STATE_130"
 	manpower = 5562495
 	
-	state_category = metropolis
+	state_category = large_city
 	
 	resources={
-		steel=75
-		oil=2
+		oil=9
 	}
 
 	history={
@@ -21,8 +20,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 2
-			industrial_complex = 5
+			industrial_complex = 1
+			arms_factory = 1
 			air_base = 10
 			11297 = {
 				naval_base = 5

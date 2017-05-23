@@ -1,7 +1,9 @@
 leader_traits = {
 	
 	brutal_dictator = {
+		sprite = 4
 		random = no
+		
 		political_power_factor = 0.4
 		unity_factor = -0.2
 		
@@ -11,8 +13,11 @@ leader_traits = {
 	}
 	
 	dictator = {
+		sprite = 4
 		random = no
+		
 		political_power_factor = 0.25
+		unity_factor = -0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -20,7 +25,9 @@ leader_traits = {
 	}
 
 	inexperienced_administrator = {
-		political_power_factor = -0.1
+		sprite = 2
+		
+		political_power_factor = -0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -28,6 +35,8 @@ leader_traits = {
 	}
 
 	inexperienced_imperialist = {
+		sprite = 28
+		
 		political_power_factor = -0.3
 		unity_factor = 0.05
 		justify_war_goal_time = -0.25
@@ -36,8 +45,21 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	warmonger = {
+		sprite = 26
+		
+		political_power_factor = -0.05
+		justify_war_goal_time = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	popular_figurehead = {
+		sprite = 30
+		
 		unity_factor = 0.1
 		
 		ai_will_do = {
@@ -45,8 +67,28 @@ leader_traits = {
 		}
 	}
 	
+	public_moderator = {
+		sprite = 30
+		
+		unity_weekly = 0.001
+		reactionary_drift = 0.01
+		conservative_drift = 0.01
+		market_liberal_drift = 0.01
+		social_liberal_drift = 0.01
+		social_democrat_drift = 0.01
+		progressive_drift = 0.01
+		democratic_socialist_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	silent_workhorse = {
+		sprite = 2
+		
 		political_power_factor = 0.1
+		drift_defence_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -54,7 +96,166 @@ leader_traits = {
 	}
 
 	staunch_constitutionalist = {
-		drift_defence_factor = 0.5
+		sprite = 4
+		
+		drift_defence_factor = 0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	backroom_backstabber = {
+		sprite = 3
+		
+		political_power_factor = 0.05
+		drift_defence_factor = 0.05
+		trade_opinion_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	smooth_talking_charmer = {
+		sprite = 2
+		random = yes
+		
+		trade_opinion_factor = 0.2
+		political_power_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ideological_crusader = {
+		sprite = 3
+		random = yes
+		
+		opinion_gain_monthly_same_ideology_factor = 1.75
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	prince_of_terror = {
+		sprite = 11
+		
+		enemy_partisan_effect = -0.25
+		foreign_subversive_activites = -0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	compassionate_gentleman = {
+		sprite = 3
+		random = yes
+		
+		opinion_gain_monthly_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	road_builder = {
+		sprite = 21
+		random = yes
+		
+		production_speed_infrastructure_factor = 0.25
+		production_speed_naval_base_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	captain_of_industry = {
+		sprite = 6
+		random = yes
+		
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.05
+		production_speed_synthetic_refinery_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	war_industrialist = {
+		sprite = 6
+		random = yes
+		
+		production_speed_arms_factory_factor = 0.05
+		production_speed_dockyard_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	fortification_engineer = {
+		sprite = 20
+		random = yes
+		
+		production_speed_bunker_factor = 0.15
+		production_speed_coastal_bunker_factor = 0.15
+		production_speed_anti_air_building_factor = 0.4
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	armaments_organizer = {
+		sprite = 19
+		random = yes
+		
+		conversion_cost_civ_to_mil_factor= -0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	quartermaster_general = {
+		sprite = 19
+		random = yes
+		
+		production_speed_air_base_factor = 0.15
+		production_speed_naval_base_factor = 0.15
+		production_speed_rocket_site_factor = 0.15
+		production_speed_radar_station_factor = 0.15
+		production_speed_nuclear_reactor_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_strategist = {
+		sprite = 18
+	
+		army_attack_factor = 0.3
+		army_defence_factor = -0.4
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_strategist = {
+		sprite = 20
+	
+		max_dig_in = 5
+		army_attack_factor = -0.4
+		army_defence_factor = 0.25
+		ai_focus_defense_factor = 0.5
 		
 		ai_will_do = {
 			factor = 1

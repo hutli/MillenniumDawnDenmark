@@ -5,8 +5,9 @@ state={
 	manpower = 17570000
 	
 	state_category = megalopolis
-	resources={
-		steel=28
+	
+	resources = {
+		steel = 145
 	}
 
 	history={
@@ -16,9 +17,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 1
-			industrial_complex = 4
 			air_base = 10
+			industrial_complex = 11
+			arms_factory = 2
 		}
 		add_core_of = SOV
 	}

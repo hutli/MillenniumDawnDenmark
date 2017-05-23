@@ -7,11 +7,9 @@ state={
 	state_category = megalopolis
 	
 	resources={
-		rubber=211
-		oil=36
-		chromium=19
-		tungsten=5
-		steel=48
+		rubber = 175
+		oil = 10
+		steel = 15
 	}
 
 	history={
@@ -22,11 +20,11 @@ state={
 		victory_points = { 7223 3 } #Semarang
 
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 10
-			arms_factory = 3
-			dockyard = 3
-			air_base = 3
+			infrastructure = 10
+			industrial_complex = 14
+			arms_factory = 2
+			dockyard = 4
+			air_base = 10
 			7381 = { naval_base = 6 }
 			4608 = { naval_base = 3 }
 		}

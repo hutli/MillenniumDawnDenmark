@@ -144,104 +144,104 @@ set_politics = {
 
 create_country_leader = {
 	name = "Emil Constantinescu"
-	picture = "Portrait_ROM_Emil_Constantinescu.dds"
+	picture = "Emil_Constantinescu.dds"
 	ideology = moderate
 }
 
 create_country_leader = {
 	name = "Michael I"
-	picture = "Portrait_ROM_Michael_I.dds"
+	picture = "Michael_I.dds"
 	ideology = absolute_monarchist
 }
 
 create_country_leader = {
 	name = "Ion Iliescu"
-	picture = "Portrait_ROM_Ion_Iliescu.dds"
+	picture = "Ion_Iliescu.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Petre Roman"
-	picture = "Portrait_ROM_Petre_Roman.dds"
+	picture = "Petre_Roman.dds"
 	ideology = christian_democrat
 }
 
 create_country_leader = {
 	name = "Corneliu Vadim Tudor"
-	picture = "Portrait_ROM_Corneliu_Vadim_Tudor.dds"
+	picture = "Corneliu_V_Tudor.dds"
 	ideology = proto_fascist
 }
 
 create_country_leader = {
 	name = "Adrian Paunescu"
-	picture = "Portrait_ROM_Adrian_Paunescu.dds"
+	picture = "Adrian_Paunescu.dds"
 	ideology = marxist
 }
 
 create_country_leader = {
 	name = "Traian Basescu"
-	picture = "Portrait_ROM_Traian_Basescu.dds"
+	picture = "Traian_Basescu.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Danut Pop"
-	picture = "Portrait_ROM_Danut_Pop.dds"
+	picture = "Danut_Pop.dds"
 	ideology = green
 }
 
 create_country_leader = {
 	name = "Dan Diaconescu"
-	picture = "Portrait_ROM_Dan_Diaconescu.dds"
+	picture = "Dan_Diaconescu.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_corps_commander = {
-	name = "Nicolae Ciuca"
-	picture = "Portrait_ROM_general_Nicolae_Ciuca.dds"
-	skill = 1
+	name = "Scarlat Dmitru"
+	picture = "generals/.dds"
+	skill = 2
 }
 
 create_corps_commander = {
-	name = "Scarlat Dmitru"
-	picture = "Portrait_ROM_general_Scarlat_Dmitru.dds"
+	name = "Nicolae Ciuca"
+	picture = "generals/.dds"
 	skill = 2
 }
 
 create_corps_commander = {
 	name = "Botea Marian"
-	picture = "Portrait_ROM_general_Botea_Marian.dds"
-	skill = 1
+	picture = "generals/Botea_Marian.dds"
+	skill = 2
 }
 
 create_corps_commander = {
 	name = "Petrica-Lucian Foca"
-	picture = "Portrait_ROM_general_Petrica-Lucian_Foca.dds"
+	picture = "generals/Petrica_Lucian_Foca.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Eugen Badalan"
-	picture = "Portrait_ROM_general_Eugen_Badalan.dds"
+	picture = "generals/Eugen_Badalan.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Ioan Manci"
-	picture = "Portrait_ROM_general_Ioan_Manci.dds"
+	picture = "generals/Ioan_Manci.dds"
 	skill = 1
 }
 
 create_navy_leader = {
 	name = "Gheorghe Marin"
-	picture = "Portrait_ROM_Gheorghe_Marin.dds"
-	skill = 1
+	picture = "admirals/Gheorghe_Marin.dds"
+	skill = 2
 }
 
 create_navy_leader = {
 	name = "Alexandru Mirsu"
-	picture = "Portrait_ROM_admiral_Alexandru_Mirsu.dds"
-	skill = 2
+	picture = "admirals/Alexandru_Mirsu.dds"
+	skill = 1
 }
 
 2007.1.1 = {
@@ -266,38 +266,38 @@ create_navy_leader = {
 				popularity = 0
 			}
 			nationalist = {
-				popularity = 1
+				popularity = 0
 			}
 			monarchist = {
 				popularity = 1
 			}
 			reactionary = {
-				popularity = 1
+				popularity = 3
 			}
 			conservative = {
-				popularity = 17
-			}
-			market_liberal = {
-				popularity = 0
-			}
-			social_liberal = {
-				popularity = 23
-			}
-			social_democrat = {
-				popularity = 40
-			}
-			progressive = {
 				popularity = 2
 			}
+			market_liberal = {
+				popularity = 25
+			}
+			social_liberal = {
+				popularity = 20
+			}
+			social_democrat = {
+				popularity = 35
+			}
+			progressive = {
+				popularity = 1
+			}
 			democratic_socialist = {
-				popularity = 15
+				popularity = 8
 			}
 			communist = {
 				popularity = 0
 			}
 		}
 		
-		ruling_party = social_democrat
+		ruling_party = market_liberal
 		last_election = "2012.12.9"
 		election_frequency = 48
 		elections_allowed = yes
@@ -305,20 +305,26 @@ create_navy_leader = {
 
 	create_country_leader = {
 		name = "Victor Ponta"
-		picture = "Portrait_ROM_Victor_Ponta.dds"
+		picture = "Victor_Ponta.dds"
 		ideology = social_democrat_ideology
 	}
 
 	create_country_leader = {
 		name = "Vasile Blaga"
-		picture = "Portrait_ROM_Vasile_Blaga.dds"
+		picture = "Vasile_Blaga.dds"
 		ideology = fiscal_conservative
 	}
 
 	create_country_leader = {
 		name = "Crin Antonescu"
-		picture = "Portrait_ROM_Crin_Antonescu.dds"
+		picture = "Crin_Antonescu.dds"
 		ideology = moderate
+	}
+
+	create_country_leader = {
+		name = "Klaus Ioannis"
+		picture = "Klaus_Ioannis.dds"
+		ideology = libertarian
 	}
 }
 

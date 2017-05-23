@@ -2,22 +2,23 @@
 state={
 	id=274
 	name="STATE_274"
+	
+	resources = {
+		aluminium = 8
+		rubber = 7
+		oil = 6
+	}
 
 	history={
 		owner = GHA
-		victory_points = {
-			10862 1 
-		}
+		add_core_of = GHA
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
-			10862 = {
-				naval_base = 2
-
-			}
-
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
 		}
-
+		victory_points = { 10862 1 }
 	}
 
 	provinces={

@@ -5,6 +5,10 @@ state={
 	manpower = 4775000
 	
 	state_category = city
+	
+	resources = {
+		steel = 5
+	}
 
 	history={
 		owner = FRA
@@ -13,8 +17,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 1
+			dockyard = 1
 			air_base = 2
 
 		}

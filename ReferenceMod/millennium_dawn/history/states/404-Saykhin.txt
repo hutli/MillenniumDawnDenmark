@@ -4,20 +4,16 @@ state={
 	name="STATE_404"
 	
 	resources = {
-		oil=12
-		steel=9
-		chromium=3
+		oil=15
+		steel=3
 	}
-
-	history={
+	history = {
 		owner = KZH
-		buildings = {
-			infrastructure = 1
-			air_base = 4
-
-		}
 		add_core_of = KZH
-
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
 	}
 
 	provinces={

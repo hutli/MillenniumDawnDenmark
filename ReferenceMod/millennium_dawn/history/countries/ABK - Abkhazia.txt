@@ -100,15 +100,11 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		social_democrat = {
-			popularity = 84
-		}
-		conservative = {
-			popularity = 10
-		}
-		reactionary = {
-			popularity = 6
-		}	
+		social_democrat = { popularity = 67 }
+		conservative = { popularity = 23 }
+		reactionary = { popularity = 6 }	
+		nationalist = { popularity = 2 }
+		progressive = { popularity = 2 }
 	}
 	
 	ruling_party = social_democrat
@@ -119,25 +115,40 @@ set_politics = {
 
 create_country_leader = {
 	name = "Vladislav Ardzinba"
-	picture = "Portrait_ABK_Vladislav_Ardzinba.dds"
+	picture = "Vladislav_Ardzinba.dds"
 	ideology = social_democrat_ideology
+}
+
+create_field_marshal = {
+	name = "Vladimir Arshba"
+	picture = "generals/Vladimir_Arshba.dds"
+	skill = 1
+}
+
+create_corps_commander = {	#passed away November 26, 2008
+	name = "Sultan Sosnaliev"
+	picture = "generals/Sultan_Sosnaliyev.dds"
+	skill = 1
+}
+
+2008.1.1 = {
+	create_field_marshal = {
+		name = "Anatoly Khrulyov"
+		picture = "generals/Anatoly_Khrulyov.dds"
+		skill = 1
+	}
 }
 
 2015.1.1 = {
 	set_politics = {
 		parties = {
-			social_democrat = {
-				popularity = 50
-			}
-			conservative = {
-				popularity = 36
-			}
-			reactionary = {
-				popularity = 10
-			}
-			communist = {
-				popularity = 4
-			}
+			social_democrat = { popularity = 49 }
+			conservative = { popularity = 35 }
+			reactionary = { popularity = 9 }
+			communist = { popularity = 4 }
+			nationalist = { popularity = 1 }
+			social_liberal = { popularity = 1 }
+			progressive = { popularity = 1 }
 		}
 		ruling_party = social_democrat
 		elections_allowed = yes
@@ -146,7 +157,7 @@ create_country_leader = {
 	
 	create_country_leader = {
 		name = "Raul Khajimba"
-		picture = "Portrait_ABK_Paul_Khajimba.dds"
+		picture = "Raul_Khajimba.dds"
 		ideology = social_democrat_ideology
 	}
 }

@@ -60,6 +60,7 @@ focus_tree = {
 	@air_tree_left = 54
 	@air_tree_center = 55
 	@air_tree_right = 56
+	@air_tree_very_far_right = 58
 	
 	focus = {
 		id = generic_industrial_focus
@@ -1058,6 +1059,53 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = generic_air_bases_2
+		icon = air_production
+		x = @air_tree_very_far_right
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = generic_air_bases_1
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
 		id = generic_military_industry_2
 		icon = industry_military
 		x = @industrial_tree_very_far_left
@@ -1188,6 +1236,13 @@ focus_tree = {
 			focus = generic_demographic_studies
 		}
 		
+		available = {
+			NOT = { has_government = social_democrat }
+			NOT = { has_government = progressive }
+			NOT = { has_government = democratic_socialist }
+			NOT = { has_government = communist }
+		}
+		
 		mutually_exclusive = {
 			focus = generic_female_workforce
 		}
@@ -1236,6 +1291,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = generic_secure_national_unity
+		}
+		
+		available = {
+			NOT = { has_government = islamist }
 		}
 		
 		mutually_exclusive = {
@@ -2687,7 +2746,7 @@ focus_tree = {
 	focus = {
 		id = generic_air_doctrine_1
 		icon = air_doctrine
-		x = @air_tree_center
+		x = @air_tree_left
 		y = 4
 		cost = 10
 		
@@ -2698,10 +2757,31 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.3
+				bonus = 0.25
 				uses = 2
 				category = air_doctrine
 			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = generic_air_safety_reforms
+		icon = bombs
+		x = @air_tree_right
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = generic_air_force_military_school
+		}
+		
+		completion_reward = {
+			air_experience = 5
+			add_ideas = generic_air_force_safety_reforms
 		}
 		
 		ai_will_do = {
@@ -3533,53 +3613,6 @@ focus_tree = {
 				bonus = 0.3
 				uses = 2
 				category = air_doctrine
-			}
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	focus = {
-		id = generic_air_bases_2
-		icon = air_production
-		x = @air_tree_right
-		y = 5
-		cost = 10
-		
-		prerequisite = {
-			focus = generic_air_doctrine_1
-		}
-		
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
 			}
 		}
 		

@@ -2,13 +2,14 @@
 state={
 	id=617
 	name="STATE_617" # Urumqi
-	manpower = 6000000
+	manpower = 5900250
 	
 	state_category = town
 	
 	resources = {
-		steel=25
-		oil=9
+		aluminium=400
+		oil=90
+		steel = 5
 	}
 
 	history={
@@ -17,9 +18,9 @@ state={
 		add_core_of = PRC
 		add_core_of = SIK
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
+			infrastructure = 2
 			industrial_complex = 3
+			arms_factory = 1
 		}
 		victory_points = {
 			4709 3 

@@ -6,6 +6,9 @@ state={
 	
 	state_category = megalopolis
 	
+	resources = {
+		steel = 22
+	}
 
 	history={
 		owner = FRA
@@ -14,8 +17,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 9
-			arms_factory = 2
-			industrial_complex = 8
+			industrial_complex = 10
+			arms_factory = 6
+			rubber_factory = 1
 			anti_air_building = 3
 			air_base = 8
 		}

@@ -5,10 +5,6 @@ state={
 	manpower = 85580
 	
 	state_category = enclave
-	
-	resources = {
-		steel=1
-	}
 
 	history={
 		owner = AND

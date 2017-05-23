@@ -2,18 +2,15 @@
 state={
 	id=551
 	name="STATE_551"
-	resources={
-		oil=9.000
-		steel=21.000
-	}
-
+	
 	history={
 		owner = SUD
+		add_core_of = SUD
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 6
+			industrial_complex = 5
 			arms_factory = 1
-			dockyard = 2
+			dockyard = 1
 			air_base = 2
 			12725 = {
 				naval_base = 3

@@ -144,33 +144,16 @@ set_politics = {
 	elections_allowed = no
 }
 
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Bharrat Jagdeo"
 	ideology = centrist
-	picture = "Portrait_GUY_Bharrat_Jagdeo.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Bharrat_Jagdeo.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "David Granger"
-	ideology = liberalist
-	picture = "Portrait_GUY_David_Granger.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "David Granger"
+		ideology = liberalist
+		picture = "David_Granger.dds"
+	}
 }

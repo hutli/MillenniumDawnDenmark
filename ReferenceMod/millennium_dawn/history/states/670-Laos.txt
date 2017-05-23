@@ -2,13 +2,19 @@
 state={
 	id=670
 	name="STATE_670"
+	
+	resources = {
+		rubber = 7
+		steel = 1
+	}
 
 	history={
 		owner = LAO
+		add_core_of = LAO
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 5
-			arms_factory = 2
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
 			air_base = 4
 		}
 		victory_points = { 1464 5 }

@@ -4,12 +4,16 @@ state={
 	name="STATE_356" # Kastamonu
 	manpower = 1560589
 	state_category = rural
+	
+	resources = {
+		steel = 1
+	}
 
 	history={
 		owner = TUR
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			air_base = 1
 			6995 = {
 				naval_base = 1
 			}

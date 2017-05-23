@@ -48,8 +48,13 @@ set_technology = {
 	antitank1 = 1
 	interwar_antiair = 1
 	
+	corvette1 = 1
+	corvette2 = 1
+	frigate1 = 1
+	frigate2 = 1
 	destroyer1 = 1
 	destroyer2 = 1
+	destroyer3 = 1
 	light_cruiser1 = 1
 	light_cruiser2 = 1
 	missile_cruiser1 = 1
@@ -61,7 +66,9 @@ set_technology = {
 	destroyer_improved_engines = 1
 	destroyer_advanced_engines = 1
 	carrier_nuclear_reactor = 1
+	carrier_advanced_ramp_system = 1
 	submarine_nuclear_reactor = 1
+	submarine_cold_war_torpedo = 1
 	cold_war_ship_design = 1
 	
 	gen2_attack = 1
@@ -69,7 +76,6 @@ set_technology = {
 	gen2_multirole = 1
 	gen3_multirole = 1
 	gen4_multirole = 1
-	
 	gen2_mpa = 1
 	gen3_mpa = 1
 	gen4_mpa = 1
@@ -105,32 +111,19 @@ add_ideas = {
 }
 
 set_politics = {
-
+	
 	parties = {
-		reactionary = {
-			popularity = 1
-		}
-		conservative = {
-			popularity = 21
-		}
-		market_liberal = {
-			popularity = 2
-		}
-		social_liberal = {
-			popularity = 10
-		}
-		social_democrat = {
-			popularity = 40
-		}
-		progressive = {
-			popularity = 14
-		}
-		democratic_socialist = {
-			popularity = 11
-		}
-		communist = {
-			popularity = 1
-		}
+		social_democrat = { popularity = 34 }		#SLD
+		conservative = { popularity = 25 }			#AWS/PIS
+		progressive = { popularity = 5 }			#UW
+		social_liberal = { popularity = 9 }			#PO
+		democratic_socialist = { popularity = 9 }	#PSL
+		market_liberal = { popularity = 2 }			#Wolnosc
+		reactionary = { popularity = 8 }			#LPR
+		communist = { popularity = 7 }				#Samoobrona
+		nationalist = { popularity = 0.5 }
+		fascist = { popularity = 0.3 }
+		monarchist = { popularity = 0.2 }
 	}
 	
 	ruling_party = social_democrat
@@ -154,111 +147,154 @@ add_opinion_modifier = {
 	modifier = visegrad_group
 }
 
-set_party_name = {
-		ideology = monarchist
-		long_name = Polski_Ruch_Monarchistyczny
-		name = PRM
+2004.1.1 = {
+	add_ideas = { idea_eu_member }
+}
+
+2008.1.1 = {
+	add_ideas = { volunteer_only }
+}
+
+create_country_leader = {
+	name = "Waldemar Pawlak"
+	picture = "Waldemar_Pawlak.dds"
+	ideology = democratic_socialist_ideology
+	expire = "2050.1.1"
 }
 
 create_country_leader = {
 	name = "Boleslaw Tejkowski"
-	picture = "Portrait_POL_Boleslaw_Tejkowski.dds"
-	ideology = national_democrat
-	expire = "2012.1.1"
+	picture = "Boleslaw_Tejkowski.dds"
+	ideology = national_socialist
+	expire = "2050.1.1"
 }
 
 create_country_leader = {
-	name = "Alexander von Meissen"
-	picture = "Portrait_POL_Alexander_von_Meissen.dds"
+	name = "Regent Leszek Wierzchowski"
+	picture = "Leszek_Wierzchowski.dds"
 	ideology = absolute_monarchist
 	expire = "2050.1.1"
 }
 
 create_country_leader = {
 	name = "Witold Balazak"
-	picture = "Portrait_POL_Witold_Balazak.dds"
+	picture = "Witold_Balazak.dds"
 	ideology = counter_progressive_democrat
-
 	expire = "2015.1.1"
 }
 
 create_country_leader = {
 	name = "Jaroslaw Kaczynski"
-	picture = "Portrait_POL_Jaroslaw_Kaczynski.dds"
+	picture = "Jaroslaw_Kaczynski.dds"
 	ideology = fiscal_conservative
 	expire = "2015.1.1"
 }
 
 create_country_leader = {
 	name = "Bronislaw Komorowski"
-	picture = "Portrait_POL_Bronislaw_Komorowski.dds"
+	picture = "Bronislaw_Komorowski.dds"
 	ideology = liberalist
 	expire = "2050.1.1"
 }
 
 create_country_leader = {
 	name = "Janusz Korwin-Mikke"
-	picture = "Portrait_POL_Janusz_Korwin.dds"
+	picture = "Janusz_Korwin.dds"
 	ideology = libertarian
 	expire = "2050.1.1"
 }
 
 create_country_leader = {
 	name = "Bronislaw Geremek"
-	picture = "Portrait_POL_Bronislaw_Geremek.dds"
+	picture = "Bronislaw_Geremek.dds"
 	ideology = green
 	expire = "2001.1.1"
 }
 
 create_country_leader = {
 	name = "Marian Krzaklewski"
-	picture = "Portrait_POL_Marian_Krzaklewski.dds"
+	picture = "Marian_Krzaklewski.dds"
 	ideology = fiscal_conservative
 	expire = "2050.1.1"
 }
 
 create_country_leader = {
 	name = "Aleksander Kwasniewski"
-	picture = "Portrait_POL_Aleksander_Kwasniewski.dds"
+	picture = "Aleksander_Kwasniewski.dds"
 	ideology = social_democrat_ideology
 	expire = "2050.1.1"
 }
 
 create_country_leader = {
-	name = "Adrian Zandberg"
-	picture = "Portrait_POL_Adrian_Zandberg.dds"
-	ideology = democratic_socialist_ideology
-	expire = "2050.1.1"
+	name = "Andrzej Lepper"
+	picture = "Andrzej_Lepper.dds"
+	ideology = marxist
+	expire = "2015.1.1"
 }
 
 create_country_leader = {
-	name = "Andrzej Lepper"
-	picture = "Portrait_POL_Andrzej_Lepper.dds"
-	ideology = marxist
+	name = "Marian Kowalski"
+	picture = "Marian_Kowalski.dds"
+	ideology = national_democrat
 	expire = "2050.1.1"
 }
 
-create_corps_commander = {
-	name = "Mieczyslaw Bieniek"
-	picture = "Portrait_POL_Mieczyslaw_Bieniek.dds"
+###generals### 
+
+create_field_marshal = {
+	name = "Marek Tomaszycki"
+	picture = "generals/Marek_Tomaszycki.dds"
 	skill = 2
 }
-
-create_corps_commander = {
-	name = "Mieczyslaw Cieniuch"
-	picture = "Portrait_POL_Mieczyslaw_Cieniuch.dds"
-	skill = 1
-}
-
-create_corps_commander = {
+create_field_marshal = {
 	name = "Czeslaw Piatas"
-	picture = "Portrait_POL_Czeslaw_Piatas.dds"
+	picture = "generals/Czeslaw_Piatas.dds"
+	traits = { thorough_planner }
 	skill = 1
 }
 
+create_corps_commander = {
+	name = "Franciszek Gagor"
+	picture = "generals/Franciszek_Gagor.dds"
+	traits = { panzer_leader }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Mieczyslaw Bieniek"
+	picture = "generals/Mieczyslaw_Bieniek.dds"
+	traits = { ranger }
+	skill = 1
+}
 create_corps_commander = {
 	name = "Mieczyslaw Gocul"
-	picture = "Portrait_POL_Mieczyslaw_Gocul.dds"
+	picture = "generals/Mieczyslaw_Gocul.dds"
+	skill = 1
+}
+create_corps_commander = {
+	name = "Bronislaw Kwiatkowski"
+	picture = "generals/Bronislaw_Kwiatkowski.dds"
+	skill = 1
+}
+create_corps_commander = {
+	name = "Mieczyslaw Cieniuch"
+	picture = "generals/Mieczyslaw_Cieniuch.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Roman Krzyżelewski"
+	picture = "admirals/Roman_Krzyzelewski.dds"
+	traits = { fly_swatter }
+	skill = 2
+}
+create_navy_leader = {
+	name = "Andrzej Korweta"
+	picture = "admirals/Andrzej_Korweta.dds"
+	skill = 1
+}
+create_navy_leader = {
+	name = "Tomasz Mathera"
+	picture = "admirals/Tomasz_Mathera.dds"
 	skill = 1
 }
 
@@ -277,22 +313,6 @@ create_corps_commander = {
 	}
 }
 
-2004.1.1 = {
-	add_ideas = { idea_eu_member }
-}
-
-2008.1.1 = {
-	add_ideas = { volunteer_only }
-}
-
-2012.1.1 = {
-	set_party_name = {
-		ideology = nationalist
-		long_name = POL_nationalist_party_RN_long
-		name = POL_nationalist_party_RN
-	}
-}
-
 2015.1.1 = {
 	set_party_name = {
 		ideology = reactionary
@@ -300,21 +320,14 @@ create_corps_commander = {
 		name = POL_reactionary_party_Kukiz
 	}
 	set_party_name = {
-		ideology = democratic_socialist
-		long_name = POL_democratic_socialist_party_RAZEM_long
-		name = POL_democratic_socialist_party_RAZEM
-	}
-	set_party_name = {
 		ideology = progressive
 		long_name = POL_progressive_party_Nowoczesna_long
 		name = POL_progressive_party_Nowoczesna
 	}
-
-	create_country_leader = {
-		name = "Marian Kowalski"
-		picture = "Portrait_POL_Marian_Kowalski.dds"
-		ideology = national_democrat
-		expire = "2050.1.1"
+	set_party_name = {
+	ideology = communist
+	long_name = POL_communist_party_RAZEM_long
+	name =  POL_communist_party_RAZEM
 	}
 		
 	create_country_leader = {
@@ -335,46 +348,38 @@ create_corps_commander = {
 		name = "Pawel Kukiz"
 		picture = "Portrait_POL_Pawel_Kukiz.dds"
 		ideology = counter_progressive_democrat
-
+		expire = "2050.1.1"
+	}
+	create_country_leader = {
+		name = "Adrian Zandberg"
+		picture = "Portrait_POL_Adrian_Zandberg.dds"
+		ideology = marxist
 		expire = "2050.1.1"
 	}
 }
 
 2015.11.1 = {
 	
+	oob = "POL_2016"
+	
 	set_politics = {
 	
 		parties = {
-		
-			nationalist = {
-				popularity = 2
-			}
-		
-			reactionary = {
-				popularity = 9
-			}
-		
-			conservative = {
-				popularity = 43
-			}
-			
-			social_liberal = {
-				popularity = 34
-			}
-			
-			progressive = {
-				popularity = 9
-			}
-			
-			democratic_socialist = {
-				popularity = 3
-			}
-			
+			conservative = { popularity = 37 }
+			social_liberal = { popularity = 24 }
+			reactionary = { popularity = 9 }
+			progressive = { popularity = 7.5 }
+			democratic_socialist = { popularity = 5 }
+			market_liberal = { popularity = 5 }
+			social_democrat = { popularity = 7 }
+			nationalist = { popularity = 2 }
+			communist = { popularity = 3 }
+			fascist = { popularity = 0.3 }
+			monarchist = { popularity = 0.2 }
 		}
 		ruling_party = conservative
 		last_election = "2015.10.25"
 		elections_allowed = yes
 		
 	}
-	
 }

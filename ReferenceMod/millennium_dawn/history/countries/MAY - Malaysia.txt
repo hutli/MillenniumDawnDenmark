@@ -106,7 +106,6 @@ set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
 
 set_politics = {
-
 	parties = {
 		islamist = {
 		popularity = 5
@@ -139,160 +138,88 @@ set_politics = {
 		popularity = 0
 		}
 	}
-
-ruling_party = conservative
-last_election = "1999.11.29"
-election_frequency = 48
-elections_allowed = yes
+	ruling_party = conservative
+	last_election = "1999.11.29"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
-2000.1.1 = {
 create_country_leader = {
 	name = "Mohd Nasir Hashim"
-	desc = "POLITICIAN_MAY_MOHD_NASIR_HASHIM_DESC"
-	picture = "Portrait_MAY_Mohd_Nasir_Hashim.dds"
-	expire = "2020.1.1"
+	picture = "Mohd_Nasir_Hashim.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Syed Husin Ketuai"
-	desc = "POLITICIAN_MAY_SYED_HUSIN_KETUAI_DESC"
-	picture = "Portrait_MAY_Syed_Husin_Ketuai.dds"
-	expire = "2020.1.1"
+	picture = "Syed_Husin_Ketuai.dds"
 	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Mahathir Mohamad"
-	desc = "POLITICIAN_MAY_MAHTHIR_MOHAMAD_DESC"
-	picture = "Portrait_MAY_Mahathir_Mohamad.dds"
-	expire = "2020.1.1"
-	ideology = gaullist
-	
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "Mahathir Mohamad"
-	desc = "POLITICIAN_MAY_MAHTHIR_MOHAMAD_DESC"
-	picture = "Portrait_MAY_Mahathir_Mohamad.dds"
-	expire = "2020.1.1"
-	ideology = gaullist
-	
-	traits = {
-	
-	}
+	picture = "Mahathir_Mohamad.dds"
+	ideology = fiscal_conservative
 }
 
 create_country_leader = {
 	name = "Abdul Taib Mahmud"
-	desc = "POLITICIAN_MAY_ABDUL_TAIB_MAHMUD_DESC"
-	picture = "Portrait_MAY_Abdul_Taib_Mahmud.dds"
-	expire = "2020.1.1"
+	picture = "Abdul_Taib_Mahmud.dds"
 	ideology = counter_progressive_democrat
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Fadzil Noor"
-	desc = "POLITICIAN_MAY_FADZIL_NOOR_DESC"
-	picture = "Portrait_MAY_Fadzil_Noor.dds"
-	expire = "2020.1.1"
+	picture = "Fadzil_Noor.dds"
 	ideology = islamic_republican
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Lim Kit Siang"
-	desc = "POLITICIAN_MAY_LIM_KIT_SIANG_DESC"
-	picture = "Portrait_MAY_Lim_Kit_Siang.dds"
-	expire = "2020.1.1"
+	picture = "Lim_Kit_Siang.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Wan Azizah Wan Ismail"
-	desc = "POLITICIAN_MAY_WAN_AZIZAH_WAN_ISMAIL_DESC"
-	picture = "Portrait_MAY_Wan_Azizah_Wan_Ismail.dds"
-	expire = "2020.1.1"
+	picture = "Wan_Azizah_Wan_Ismail.dds"
 	ideology = liberalist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Lim Keng Yaik"
-	desc = "POLITICIAN_MAY_LIM_KENG_YAIK_DESC"
-	picture = "Portrait_MAY_Lim_Keng_Yaik.dds"
-	expire = "2020.1.1"
+	picture = "Lim_Keng_Yaik.dds"
 	ideology = libertarian
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Joseph Kurup"
-	desc = "POLITICIAN_MAY_JOSEPH_KURUP_DESC"
-	picture = "Portrait_MAY_Joseph_Kurup.dds"
-	expire = "2020.1.1"
+	picture = "Joseph_Kurup.dds"
 	ideology = national_democrat
-	
-	traits = {
-	
-	}
 }
 
 create_corps_commander = {
 	name = "Zulkifeli Mohd Zin"
-	picture = "Portrait_MAY_general_Zulkifeli_Mohd_Zin.dds"
+	picture = "Zulkifeli_Mohd_Zin.dds"
 	skill = 2
 }
 
 create_corps_commander = {
 	name = "Raja Mohamed Affandi Raja Mohamed Noor"
-	picture = "Portrait_MAY_general_Raja_Mohamed.dds"
+	picture = "Raja_Mohamed.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Zulkifi Zainal Abidin"
-	picture = "Portrait_MAY_general_Zulkifi_Zainal_Abidin.dds"
+	picture = "Zulkifli_Zainal_Abidin.dds"
 	skill = 1
 }
-
 
 create_navy_leader = {
 	name = "Dato Anuwi"
-		picture = "Portrait_MAY_admiral_Dato_Anuwi.dds"
-	traits = { }
+	picture = "admirals/Dato_Anuwi.dds"
 	skill = 1
-}
-
 }
 
 2013.5.5 = {
@@ -345,7 +272,7 @@ create_navy_leader = {
 create_country_leader = {
 	name = "Najib Razak"
 	desc = "POLITICIAN_MAY_NAJIB_RAZAK_DESC"
-	picture = "Portrait_MAY_Najib_Razak.dds"
+	picture = "Najib_Razak.dds"
 	expire = "2020.1.1"
 	ideology = fiscal_conservative
 	
@@ -357,7 +284,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Adenan Satem"
 	desc = "POLITICIAN_MAY_ADENAN_SATEM_DESC"
-	picture = "Portrait_MAY_Adenan_Saten.dds"
+	picture = "Adenan_Saten.dds"
 	expire = "2020.1.1"
 	ideology = counter_progressive_democrat
 	
@@ -369,7 +296,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Abdul Hadi Awang"
 	desc = "POLITICIAN_MAY_ABDUL_HADI_AWANG_DESC"
-	picture = "Portrait_MAY_Abdul_Hadi_Awang.dds"
+	picture = "Abdul_Hadi_Awang.dds"
 	expire = "2020.1.1"
 	ideology = islamic_republican
 	
@@ -381,7 +308,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mah Siew Keong"
 	desc = "POLITICIAN_MAY_MAH_SIEW_KEONG_DESC"
-	picture = "Portrait_MAY_Mah_Siew_Keong.dds"
+	picture = "Mah_Siew_Keong.dds"
 	expire = "2020.1.1"
 	ideology = libertarian
 	

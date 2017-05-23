@@ -103,6 +103,7 @@ give_guarantee = AND
 add_ideas = {
 	population_growth_stagnation
 	idea_eu_member
+	catalonia_separatism
 }
 
 set_politics = {
@@ -148,139 +149,114 @@ set_politics = {
 
 create_country_leader = {
 	name = "Juan Carlos I"
-	picture = "Portrait_SPR_Juan_Carlos_I.dds"
+	picture = "Juan_Carlos_I.dds"
 	ideology = absolute_monarchist
 }
 
 create_country_leader = {
 	name = "José María Aznar"
-	picture = "Portrait_SPR_Jose_Maria_Aznar.dds"
+	picture = "Jose_Maria_Aznar.dds"
 	ideology = fiscal_conservative
 }
 
 create_country_leader = {
 	name = "José Luís Rodríguez Zapatero"
-	picture = "Portrait_SPR_Jose_Luis_Rodriguez_Zapatero.dds"
+	picture = "Jose_LR_Zapatero.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Gaspar LLamazares"
-	picture = "Portrait_SPR_Gaspar_Llamazares.dds"
+	picture = "Gaspar_Llamazares.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
 	name = "Rosa Díez"
-	picture = "Portrait_SPR_Rosa_Diez.dds"
+	picture = "Rosa_Diez.dds"
 	ideology = liberalist
 }
 
 create_country_leader = {
 	name = "Carmelo Suárez"
-	picture = "Portrait_SPR_Carmelo_Suarez.dds"
+	picture = "Carmelo_Suarez.dds"
 	ideology = stalinist
 }
 
 create_country_leader = {
 	name = "Javier Garisoain"
-	picture = "Portrait_SPR_Javier_Garisoain.dds"
+	picture = "Javier_Garisoain.dds"
 	ideology = counter_progressive_democrat
 }
-
 create_corps_commander = {
 	name = "Jaime Domínguez Buj"
-	picture = "Portrait_SPR_general_Jaime_Dominguez_Buj.dds"
+	picture = "generals/Jaime_D_Buj.dds"
 	skill = 2
 }
-
 create_corps_commander = {
 	name = "José Julio Rodríguez Fernández"
-	picture = "Portrait_SPR_general_Jose_Julio_Rodriguez_Fernandez.dds"
-	skill = 2
+	picture = "generals/Jose_JR_Fernandez.dds"
+	skill = 1
 }
-
 create_corps_commander = {
 	name = "Alfredo Ramirez"
-	picture = "Portrait_SPR_general_Alfredo_ramirez.dds"
-	skill = 2
+	picture = "generals/Alfredo_Ramirez.dds"
+	skill = 1
 }
-
 create_corps_commander = {
 	name = "Bernardo Alvarez"
-	picture = "Portrait_SPR_general_Bernardo_Alvarez.dds"
+	picture = "generals/Bernardo_Alvarez.dds"
 	skill = 1
 }
-
 create_corps_commander = {
 	name = "Fernando Gutierrez"
-	picture = "Portrait_SPR_general_Fernando_Gutierrez.dds"
+	picture = "generals/Fernando_Gutierrez.dds"
 	skill = 1
 }
-
 create_corps_commander = {
 	name = "Miguel Alcañiz"
-	picture = "Portrait_SPR_general_Miguel_alcaniz.dds"
+	picture = "generals/Miguel_Alcaniz.dds"
 	skill = 1
 }
-
 create_corps_commander = {
 	name = "Pedro Pitarch"
-	picture = "Portrait_SPR_general_Pedro_pitarch.dds"
+	picture = "generals/Pedro_Pitarch.dds"
 	skill = 1
 }
-
 create_corps_commander = {
 	name = "Santiago Camarero"
-	picture = "Portrait_SPR_general_Santiago_camarero.dds"
+	picture = "generals/Santiago_Camarero.dds"
 	skill = 1
 }
-
-#create_navy_leader = {
-#	name = "Felipe VI"
-#	picture = "Portrait_SPR_admiral_Felipe_vi.dds"
-#	skill = 2
-#}
 
 create_navy_leader = {
 	name = "Jaime Muñoz"
-	picture = "Portrait_SPR_admiral_Jaime_munoz.dds"
+	picture = "admirals/Jaime_Munoz.dds"
 	skill = 1
 }
-
 create_navy_leader = {
 	name = "Jose Antonio Ruesta"
-	picture = "Portrait_SPR_admiral_Jose_antonio_ruesta.dds"
+	picture = "admirals/Jose_A_Ruesta.dds"
 	skill = 1
 }
-
-
 
 2014.7.1 = {
 	create_country_leader = {
 		name = "Felipe VI"
-		picture = "Portrait_SPR_Felipe_VI.dds"
+		picture = "Felipe_VI.dds"
 		ideology = absolute_monarchist
 	}
 }
 
 2015.12.1 = {
-oob = "SPR_2016"
-	
+	oob = "SPR_2016"
 	set_politics = {
-
 		parties = {
-			islamist = {
-				popularity = 0
-			}
 			fascist = {
 				popularity = 1
 			}
 			nationalist = {
 				popularity = 1
-			}
-			reactionary = {
-				popularity = 0
 			}
 			conservative = {
 				popularity = 38
@@ -300,9 +276,6 @@ oob = "SPR_2016"
 			democratic_socialist = {
 				popularity = 2
 			}
-			communist = {
-				popularity = 0
-			}
 		}
 		
 		ruling_party = conservative
@@ -313,43 +286,43 @@ oob = "SPR_2016"
 
 	create_country_leader = {
 		name = "Mariano Rajoy"
-		picture = "Portrait_SPR_Mariano_Rajoy.dds"
+		picture = "Mariano_Rajoy.dds"
 		ideology = fiscal_conservative
 	}
 
 	create_country_leader = {
 		name = "Pablo Iglesias"
-		picture = "Portrait_SPR_Pablo_Iglesias.dds"
+		picture = "Pablo_Iglesias.dds"
 		ideology = progressive_ideology
 	}
 
 	create_country_leader = {
 		name = "Pedro Sánchez"
-		picture = "Portrait_SPR_Pedro_Sanchez.dds"
+		picture = "Pedro_Sanchez.dds"
 		ideology = social_democrat_ideology
 	}
 
 	create_country_leader = {
 		name = "Alberto Garzón"
-		picture = "Portrait_SPR_Alberto_Garzon.dds"
+		picture = "Alberto_Garzon.dds"
 		ideology = democratic_socialist_ideology
 	}
 
 	create_country_leader = {
 		name = "Albert Rivera"
-		picture = "Portrait_SPR_Albert_Rivera.dds"
+		picture = "Albert_Rivera.dds"
 		ideology = libertarian
 	}
 
 	create_country_leader = {
 		name = "Santiago Abascal"
-		picture = "Portrait_SPR_Santiago_Abascal.dds"
+		picture = "Santiago_Abascal.dds"
 		ideology = proto_fascist
 	}
 
 	create_country_leader = {
 		name = "Andrés Herzog"
-		picture = "Portrait_SPR_Andres_Herzog.dds"
+		picture = "Andres_Herzog.dds"
 		ideology = liberalist
 	}
 }

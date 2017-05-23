@@ -7,30 +7,22 @@ state={
 	state_category = megalopolis
 	
 	resources={
-		oil=100
-		aluminium=14
+		oil = 120
+		steel = 130
 	}
 
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 6
+			infrastructure = 9
+			industrial_complex = 15
 			arms_factory = 2
-			industrial_complex = 6
-			dockyard = 2
+			dockyard = 3
 			air_base = 10
-			1562 = {
-				naval_base = 10
-			}
-			9671 = {
-				naval_base = 4
-			}
-			9814 = {
-				naval_base = 5
-			}
-			610 = {
-				naval_base = 1
-			}
+			1562 = { naval_base = 10 }
+			9671 = { naval_base = 4 }
+			9814 = { naval_base = 5 }
+			610 = { naval_base = 1 }
 		}
 		add_core_of = USA
 		add_core_of = CAL
@@ -45,11 +37,6 @@ state={
 		}
 		victory_points = {
 			9713 1 
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 7
-			}
 		}
 	}
 

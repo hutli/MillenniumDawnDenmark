@@ -5,8 +5,7 @@ state={
 		owner = AFG
 		add_core_of = AFG
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 1
 		}
 	}
 	provinces={

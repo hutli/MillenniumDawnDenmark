@@ -2,31 +2,24 @@
 state={
 	id=59
 	name="STATE_59"
+	
 	resources={
-		oil=4.000
+		oil = 1
+		steel = 6
 	}
 
 	history={
 		owner = GER
-		victory_points = {
-			3326 5 
-		}
-		victory_points = {
-			6377 10 
-		}
+		add_core_of = GER
+		victory_points = { 3326 5 }
+		victory_points = { 6377 10 }
 		buildings = {
 			infrastructure = 7
-			arms_factory = 1
 			industrial_complex = 3
+			arms_factory = 1
 			dockyard = 1
-			6325 = {
-				naval_base = 1
-
-			}
-
+			6325 = { naval_base = 1 }
 		}
-		add_core_of = GER
-
 	}
 
 	provinces={

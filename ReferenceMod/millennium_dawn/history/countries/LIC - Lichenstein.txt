@@ -101,6 +101,8 @@ add_ideas = {
 	neutrality_idea
 }
 
+set_country_flag = seeks_swiss_alliance
+
 set_politics = {
 
 	parties = {
@@ -128,9 +130,7 @@ set_politics = {
     create_country_leader = {
 		name = "Mario Frick"
 		ideology = fiscal_conservative
-		picture = "Portrait_LIC_Mario_Frick.dds"
-		expire = "2050.7.2"
-		traits = {}
+		picture = "Mario_Frick.dds"
     }
 }
 
@@ -138,9 +138,7 @@ set_politics = {
 	create_country_leader = {
 		name = "Adrian Hasler"
 		ideology = fiscal_conservative
-		picture = "Portrait_LIC_Adrian_Hasler.dds"
-		expire = "2050.7.2"
-		traits = {}
+		picture = "Adrian_Hasler.dds"
     }
 }
 

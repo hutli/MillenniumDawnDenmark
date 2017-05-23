@@ -134,6 +134,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Ismail Omar Guelleh"
-	picture = "Portrait_DJI_Ismail_Omar_Guelleh.dds"
+	picture = "Ismail_Omar_Guelleh.dds"
 	ideology = social_democrat_ideology
 }

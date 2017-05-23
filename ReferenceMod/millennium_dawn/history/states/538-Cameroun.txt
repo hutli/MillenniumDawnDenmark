@@ -7,19 +7,14 @@ state={
 	state_category = rural
 	
 	resources = {
-		steel=14
-		chromium=47
-		tungsten=9
-		aluminium=15
-		rubber=9
-		oil=2
+		tungsten=56
 	}	
 
 	history={
 		owner = DRC
+		add_core_of = DRC
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 1
 		}
 	}
 

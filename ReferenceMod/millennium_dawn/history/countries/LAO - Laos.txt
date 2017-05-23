@@ -131,37 +131,22 @@ set_politics = {
 	elections_allowed = no
 }
 
-2000.1.1 = {
-	create_country_leader = {
+create_country_leader = {
 	name = "Khamtay Siphandone"
-	desc = "POLITICIAN_LAO_KHAMTAY_SIPHANDONE_DESC"
-	picture = "Portrait_LAO_Khamtay_Siphandone.dds"
-	expire = "2020.1.1"
+	picture = "Khamtay_Siphandone.dds"
 	ideology = maoist
-	
-		traits = {
-	
-		}
-	}
-
-	create_corps_commander = {
+}
+create_corps_commander = {
 	name = "Douangchay Phichit"
-	picture = "Portrait_LAO_general_Douangchay_Phichit.dds"
+	picture = "generals/Douangchay_Phichit.dds"
 	skill = 1
-	}
 }
 
 
 2016.1.22 = {
 	create_country_leader = {
-	name = "Bounnhang Vorachith"
-	desc = "POLITICIAN_LAO_BOUNNHANG_VORACHITH_DESC"
-	picture = "Portrait_LAO_Bounnhang_Vorachith.dds"
-	expire = "2020.1.1"
-	ideology = maoist
-	
-		traits = {
-	
-		}
+		name = "Bounnhang Vorachith"
+		picture = "Bounnhang_Vorachith.dds"
+		ideology = maoist
 	}
 }

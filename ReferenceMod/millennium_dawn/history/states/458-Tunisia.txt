@@ -5,27 +5,22 @@ state={
 	manpower = 8282940
 	state_category = city
 	resources={
-		steel=8
-		oil=2
-		chromium=1
+		oil = 3
 	}
 
 	history={
 		owner = TUN
-		victory_points = {
-			11969 10 
-		}
-		victory_points = {
-			9994 1 
-		}
+		add_core_of = TUN
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 5
-			arms_factory = 2
+			industrial_complex = 3
+			arms_factory = 1
 			dockyard = 1
 			air_base = 8
 			9994 = { naval_base = 8 }
 		}
+		victory_points = { 11969 10 }
+		victory_points = { 9994 1 }
 	}
 
 	provinces={

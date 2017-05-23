@@ -2085,13 +2085,8 @@ focus_tree = {
 				set_party_name = { ideology = fascist long_name = ITA_fascist_party_ROME_long name = ITA_fascist_party_ROME }
 			    create_country_leader = {
 			        name = "Roman Senate"
-			        desc = "POLITICIAN_ITA_ROMAN_SENATE_DESC"
-			        picture = "Portrait_ITA_Roman_Senate.dds"
-			        expire = "2050.1.1"
+			        picture = "SPQR.dds"
 			        ideology = fascist_ideology
-			        traits = {
-			
-			        }
 		        }
 				add_popularity = {
 			        ideology = fascist
@@ -5449,7 +5444,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 10 
+			factor = 20
 		}
 	}
 	
@@ -5580,7 +5575,11 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 10 
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 	}
 	
@@ -5729,7 +5728,7 @@ focus_tree = {
             	create_country_leader = {
 	            	name = "Beppe Grillo"
 	            	desc = "POLITICIAN_ITA_BEPPE_GRILLO_DESC"
-	            	picture = "Portrait_ITA_Beppe_Grillo.dds"
+	            	picture = "Beppe_Grillo.dds"
 	            	expire = "2020.1.1"
 	            	ideology = counter_progressive_democrat
 		
@@ -5741,7 +5740,7 @@ focus_tree = {
 	            create_country_leader = {
 	                name = "Giorgia Meloni"
 	                desc = "POLITICIAN_ITA_GIORGIA_MELONI_DESC"
-	                picture = "Portrait_ITA_Giorgia_Meloni.dds"
+	                picture = "Giorgia_Meloni.dds"
 	                expire = "2020.1.1"
 	                ideology = proto_fascist
 	
@@ -5753,7 +5752,7 @@ focus_tree = {
 	            create_country_leader = {
 		            name = "Simone di Stefano"
 		            desc = "POLITICIAN_ITA_SIMONE_DI_STEFANO_DESC"
-		            picture = "Portrait_ITA_Simone_di_Stefano.dds"
+		            picture = "Simone_di_Stefano.dds"
 		            expire = "2020.1.1"
 		            ideology = fascist_ideology
 		
@@ -5807,7 +5806,7 @@ focus_tree = {
 			    create_country_leader = {
 	                name = "Matteo Renzi"
 	                desc = "POLITICIAN_ITA_MATTEO_RENZI_DESC"
-					picture = "Portrait_ITA_Matteo_Renzi.dds"
+					picture = "Matteo_Renzi.dds"
 	                expire = "2020.1.1"
 	                ideology = social_democrat_ideology
 	
@@ -5818,7 +5817,7 @@ focus_tree = {
                 create_country_leader = {
 	     	        name = "Angelo Bonelli"
 		            desc = "POLITICIAN_ITA_ANGELO_BONELLI_DESC"
-		            picture = "Portrait_ITA_Angelo_Bonelli.dds"
+		            picture = "Angelo_Bonelli.dds"
 		            expire = "2020.1.1"
 		            ideology = green
 		
@@ -5829,7 +5828,7 @@ focus_tree = {
                 create_country_leader = {
     	            name = "Nichi Vendola"
 	                desc = "POLITICIAN_ITA_NICHI_VENDOLA_DESC"
-	                picture = "Portrait_ITA_Nichi_Vendola.dds"
+	                picture = "Nichi_Vendola.dds"
 	                expire = "2020.1.1"
 	                ideology = democratic_socialist_ideology
 	            	
@@ -5840,7 +5839,7 @@ focus_tree = {
                 create_country_leader = {
 		            name = "Angelino Alfano"
 	                desc = "POLITICIAN_ITA_ANGELINO_ALFANO_DESC"
-		            picture = "Portrait_ITA_Angelino_Aldano.dds"
+		            picture = "Angelino_Aldano.dds"
 	                expire = "2020.1.1"
 	                ideology = liberalist
 		

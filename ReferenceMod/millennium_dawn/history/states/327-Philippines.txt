@@ -5,13 +5,19 @@ state=
 	manpower = 51548684
 	
 	state_category = megalopolis
+	
+	resources = {
+		rubber = 11
+		oil = 1
+	}
+	
 	history=
 	{
 		owner = PHI
 		buildings = {
 			infrastructure = 8
 			arms_factory = 2
-			industrial_complex = 7
+			industrial_complex = 8
 			air_base = 8
 			10265 = {
 				naval_base = 7

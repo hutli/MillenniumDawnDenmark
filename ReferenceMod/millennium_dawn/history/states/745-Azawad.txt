@@ -4,7 +4,7 @@ state={
 	
 	history = {
 		owner = MAL
-		
+		add_core_of = MAL
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -17,5 +17,5 @@ state={
 	manpower=5150504
 	buildings_max_level_factor=1.000
 	
-	state_category = town
+	state_category = rural
 }

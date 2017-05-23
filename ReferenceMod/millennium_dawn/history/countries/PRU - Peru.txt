@@ -128,159 +128,104 @@ set_politics = {
 
 create_country_leader = {
 	name = "Alberto Fujimori"
-	desc = "POLITICIAN_PRU_ALBERTO_FUJIMORI_DESC"
-	picture = "Portrait_PRU_Alberto_Fujimori.dds"
-	expire = "2011.7.28"
+	picture = "Alberto_Fujimori.dds"
 	ideology = counter_progressive_democrat
-	
-	traits = {
-	}
 }
 
 create_country_leader = {
 	name = "Valentín Paniagua"
-	desc = "POLITICIAN_VALENTIN_PANIAGUA_DESC"
-	picture = "Portrait_PRU_Valentin_Paniagua.dds"
-	expire = "2001.7.28"
+	picture = "Valentin_Paniagua.dds"
 	ideology = national_democrat
-	
-	traits = {
-	}
 }
 
 create_country_leader = {
 	name = "Alejandro Toledo"
-	desc = "POLITICIAN_PRU_ALEJANDRO_TOLEDO_DESC"
-	picture = "Portrait_PRU_Alejandro_Toledo.dds"
-	expire = "2006.7.28"
+	picture = "Alejandro_Toledo.dds"
 	ideology = libertarian
-	
-	traits = {
-	}
 }
 
 create_country_leader = {
 	name = "Alan Garcia"
-	desc = "POLITICIAN_PRU_ALAN_GARCIA_DESC"
-	picture = "Portrait_PRU_Alan_Garcia.dds"
-	expire = "2011.7.28"
+	picture = "Alan_Garcia.dds"
 	ideology = christian_democrat
-	
-	traits = {
-	}
 }
 
 create_country_leader = {
 	name = "Ollanta Humala"
-	desc = "POLITICIAN_PRU_OLLANTA_HUMALA_DESC"
-	picture = "Portrait_PRU_Ollanta_Humala.dds"
-	expire = "2050.1.1"
+	picture = "Ollanta_Humala.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	}
 }
 
 create_country_leader = {
 	name = "Martín Mayta"
-	desc = "POLITICIAN_PRU_MARTIN_MATYA_DESC"
-	picture = "Portrait_PRU_Martin_Matya.dds"
-	expire = "2030.1.1"
+	picture = "Martin_Matya.dds"
 	ideology = national_socialist
-	
-	traits = {
-	}
-}
-
-2011.7.28 = {
-	create_country_leader = {
-		name = "Keiko Fujimori"
-		desc = "POLITICIAN_PRU_KEIKO_FUJIMORI_DESC"
-		picture = "Portrait_PRU_Keiko_Fujimori.dds"
-		expire = "2050.1.1"
-		ideology = counter_progressive_democrat
-		
-		traits = {
-		}
-	}
-}
-
-2016.1.1 = {
-set_politics = {
-	parties = {		
-		nationalist = {
-			popularity = 7
-		}
-		reactionary = {
-			popularity = 40
-		}
-		conservative = {
-			popularity = 6
-		}
-		market_liberal = {
-			popularity = 28
-		}
-		social_liberal = {
-			popularity = 19
-		}
-	}
-	
-	ruling_party = democratic_socialist
-	last_election = 2011.7.28
-	elections_allowed = yes
-}
-
-create_country_leader = {
-	name = "Pedro Kuczynski"
-	desc = "POLITICIAN_PRU_PEDRO_KUCZYNSKI_DESC"
-	picture = "Portrait_PRU_Pedro_Kuczynski.dds"
-	expire = "2030.1.1"
-	ideology = libertarian
-	
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Alfredo Barnechea"
-	desc = "POLITICIAN_PRU_ALFREDO_BARNECHEA_DESC"
-	picture = "Portrait_PRU_Alfredo_Barnechea.dds"
-	expire = "2030.1.1"
-	ideology = national_democrat
-	
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Veronika Mendoza"
-	desc = "POLITICIAN_PRU_VERONIKA_MENDOZA_DESC"
-	picture = "Portrait_PRU_Veronika_Mendoza.dds"
-	expire = "2046.1.1"
-	ideology = liberalist
-	
-	traits = {
-	}
-}
 }
 
 create_country_leader = {
 	name = "Abimael Guzman"
-	desc = "POLITICIAN_PRU_ABIMAEL_GUZMAN_DESC"
-	picture = "Portrait_PRU_Abimael_Guzman.dds"
-	expire = "2025.1.1"
+	picture = "Abimael_Guzman.dds"
 	ideology = maoist
 }
 
 create_corps_commander = {
 	name = "Victor Carrera"
-	picture = "Portrait_PRU_Victoria_Carrera.dds"
+	picture = "generals/Victoria_Carrera.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Cesar Salcedo"
-	picture = "Portrait_PRU_Cesar_Salcedo.dds"
+	picture = "generals/Cesar_Salcedo.dds"
 	skill = 1
+}
+
+2011.7.28 = {
+	create_country_leader = {
+		name = "Keiko Fujimori"
+		picture = "Keiko_Fujimori.dds"
+		ideology = counter_progressive_democrat
+	}
+}
+
+2016.1.1 = {
+	set_politics = {
+		parties = {		
+			nationalist = {
+				popularity = 7
+			}
+			reactionary = {
+				popularity = 40
+			}
+			conservative = {
+				popularity = 6
+			}
+			market_liberal = {
+				popularity = 28
+			}
+			social_liberal = {
+				popularity = 19
+			}
+		}
+		
+		ruling_party = democratic_socialist
+		last_election = 2011.7.28
+		elections_allowed = yes
+	}
+	create_country_leader = {
+		name = "Pedro Kuczynski"
+		picture = "Pedro_Kuczynski.dds"
+		ideology = libertarian
+	}
+	create_country_leader = {
+		name = "Alfredo Barnechea"
+		picture = "Alfredo_Barnechea.dds"
+		ideology = national_democrat
+	}
+	create_country_leader = {
+		name = "Veronika Mendoza"
+		picture = "Veronika_Mendoza.dds"
+		ideology = liberalist
+	}
 }
 

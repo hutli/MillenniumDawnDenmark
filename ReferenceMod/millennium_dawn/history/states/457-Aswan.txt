@@ -5,21 +5,18 @@ state=
 	manpower = 1372194
 	
 	resources = {
-		oil=31
+		oil=43
 	}
 	
 	state_category = pastoral
 	
 	history = {
 		owner = EGY
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			dockyard = 1
-			air_base = 2
-		}
-
 		add_core_of = EGY
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+		}
 	}
 	provinces={
 		1080 4068 4910 5069 7156 9957 10126 12002 12889 

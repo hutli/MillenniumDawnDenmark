@@ -8,8 +8,10 @@ state=
 	
 	history={
 		owner = CRO
+		add_core_of = CRO
 		buildings = {
 			infrastructure = 5
+			industrial_complex = 1
 			dockyard = 1
 			3943 = {
 				naval_base = 1

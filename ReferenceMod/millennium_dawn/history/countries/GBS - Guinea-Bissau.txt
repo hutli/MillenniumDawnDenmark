@@ -108,15 +108,11 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		reactionary = {
-			popularity = 5
-		}
-		social_liberal = {
-			popularity = 23
-		}
-		nationalist = {
-			popularity = 72
-		}
+		reactionary = { popularity = 5 }
+		progressive = { popularity = 11 }
+		social_liberal = { popularity = 23 }
+		market_liberal = { popularity = 1 }
+		nationalist = { popularity = 60 }
 	}
 	
 	ruling_party = nationalist
@@ -127,14 +123,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Kumba Iala"
-	picture = "Portrait_GBS_Kumba_Iala.dds"
+	picture = "Kumba_Iala.dds"
 	ideology = autocrat
 }
 	
 2003.9.14 = {
 	create_country_leader = {
 		name = "Verissomo Correia Seabra"
-		picture = "Portrait_GBS_Verissomo_Correia_Seabra.dds"
+		picture = "Verissomo_C_Seabra.dds"
 		ideology = national_democrat
 	}
 }

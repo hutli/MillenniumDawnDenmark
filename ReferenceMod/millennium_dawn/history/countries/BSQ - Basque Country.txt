@@ -118,43 +118,23 @@ set_politics = {
 
 create_country_leader = {
 	name = "Juan José Ibarretxe"
-	desc = "POLITICIAN_BSQ_JUAN_JOSE_DESC"
-	picture = "Portrait_BSQ_Juan_Jose.dds"
-	expire = "2005.1.1"
+	picture = "Juan_Jose.dds"
 	ideology = gaullist
-	traits = {
-	}
 }
 create_country_leader = {
 	name = "Jaime Mayor Oreja"
-	desc = "POLITICIAN_BSQ_JAIME_MAYOR_DESC"
-	picture = "Portrait_BSQ_Jaime_Mayor.dds"
-	expire = "2005.1.1"
+	picture = "Jaime_Mayor.dds"
 	ideology = marxist
-	traits = {
-	}
 }
 	
 2012.1.1 = {
-
     set_politics = {
-
 	    parties = {
-		    conservative = {
-			    popularity = 39
-		    }
-	    	democratic_socialist = {
-		    	popularity = 15
-		    }
-		    nationalist = {
-		        popularity = 22
-		    }
-		    social_liberal = {
-		        popularity = 3
-		    }
-		    communist = { 
-		        popularity = 21
-		    }
+		    conservative = { popularity = 39 }
+	    	democratic_socialist = { popularity = 15 }
+		    nationalist = { popularity = 22 }
+		    social_liberal = { popularity = 3 }
+		    communist = { popularity = 21 }
 	    }    
 	    ruling_party = conservative
 	    last_election = "1999.1.1"
@@ -162,23 +142,14 @@ create_country_leader = {
 	    elections_allowed = yes
 	}
 
-create_country_leader = {
-	name = "Iñigo Urkullu"
-	desc = "POLITICIAN_BSQ_INIGO_URKULLU_DESC"
-	picture = "Portrait_BSQ_Inigo_Urkullu.dds"
-	expire = "2050.1.1"
-	ideology = gaullist
-	traits = {
-	    }
+	create_country_leader = {
+		name = "Iñigo Urkullu"
+		picture = "Inigo_Urkullu.dds"
+		ideology = gaullist
     }
-
-create_country_leader = {
-	name = "Maddalen Iriarte"
-	desc = "POLITICIAN_BSQ_MADDALEN_IRIARTE_DESC"
-	picture = "Portrait_BSQ_Maddalen_Iriarte.dds"
-	expire = "2050.1.1"
-	ideology = national_democrat
-	traits = {
-	    }
+	create_country_leader = {
+		name = "Maddalen Iriarte"
+		picture = "Maddalen_Iriarte.dds"
+		ideology = national_democrat
     }
 }

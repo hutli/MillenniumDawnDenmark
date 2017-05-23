@@ -135,7 +135,7 @@ set_politics = {
 
 create_country_leader = {
 	name = "Thomas Klestil"
-	picture = "Portrait_AUS_Thomas_Klestil.dds"
+	picture = "Thomas_Klestil.dds"
 	ideology = social_democrat_ideology
 }
 
@@ -146,7 +146,7 @@ create_country_leader = {
 2016.1.1 = {
 	create_country_leader = {
 		name = "Christian Kern"
-		picture = "Portrait_AUS_Christian_Kern.dds"
+		picture = "Christian_Kern.dds"
 		ideology = social_democrat_ideology
 	}
 }

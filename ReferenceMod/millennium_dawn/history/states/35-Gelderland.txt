@@ -2,13 +2,18 @@
 state={
 	id=35
 	name="STATE_35"
+	
+	resources = {
+		steel = 9
+	}
 
 	history={
 		owner = HOL
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 6
-			air_base = 4
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 3
 			9498 = {
 				naval_base = 5
 			}

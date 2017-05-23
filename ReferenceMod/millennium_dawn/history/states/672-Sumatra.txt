@@ -3,14 +3,13 @@ state={
 	name="STATE_672"
 	manpower = 52254900
 	
-	state_category = large_town
+	state_category = large_city
 	
 	resources={
-		rubber=268
-		oil=24
-		aluminium=49
-		tungsten=14
-		chromium=9
+		aluminium = 13
+		rubber = 132
+		oil = 49
+		steel = 13
 	}
 
 
@@ -18,18 +17,13 @@ state={
 	{
 		owner = INS
 		add_core_of = INS
-		
-		victory_points = {
-			4652 1 
-		}
-		
-		victory_points = {
-			12268 1 
-		}
+		victory_points = { 4652 1 }
+		victory_points = { 12268 1 }
 
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 5
+			industrial_complex = 7
+			arms_factory = 3
 			air_base = 1
 			dockyard = 1
 			4652 = {

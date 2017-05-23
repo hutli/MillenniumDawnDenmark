@@ -2,33 +2,25 @@
 state={
 	id=42
 	name="STATE_42"
-	resources={
-		steel=89.000
-		aluminium=19.000
+	
+	resources = {
+		steel = 24
 	}
-
+	
 	history={
 		owner = GER
-		victory_points = {
-			3558 3 
-		}
-		victory_points = {
-			11435 1 
-		}
-		victory_points = {
-			11531 3 
-		}
-		victory_points = {
-			11560 5 
-		}
+		add_core_of = GER
+		victory_points = { 3558 3 }
+		victory_points = { 11435 1 }
+		victory_points = { 11531 3 }
+		victory_points = { 11560 5 }
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 3
+			industrial_complex = 1
+			arms_factory = 1
 			air_base = 2
-
+			rubber_factory = 1
 		}
-		add_core_of = GER
-
 	}
 
 	provinces={

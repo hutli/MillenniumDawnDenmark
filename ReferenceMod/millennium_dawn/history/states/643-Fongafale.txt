@@ -10,6 +10,7 @@ state={
 		add_core_of = KIR
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 			13056 = {
 				naval_base = 1
 			}

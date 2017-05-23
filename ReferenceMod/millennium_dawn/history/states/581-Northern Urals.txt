@@ -4,13 +4,8 @@ state={
 	name="STATE_581"
 	manpower = 48831
 	
-	state_category = pastoral
+	state_category = wasteland
 	
-	resources={
-		chromium = 14
-		aluminium = 9
-		oil = 43
-	}
 
 	history={
 		owner = SOV

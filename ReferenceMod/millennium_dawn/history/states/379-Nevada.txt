@@ -7,16 +7,16 @@ state={
 	state_category = rural
 	
 	resources={
-		steel=136
-		tungsten=62
-		aluminium=44
+		oil=6
+		steel=2
 	}
 
 	history={
 		owner = USA
 		buildings = {
 			infrastructure = 4
-			air_base = 10
+			air_base = 9
+			industrial_complex = 1
 		}
 		add_core_of = USA
 	}

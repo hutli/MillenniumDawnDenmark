@@ -4,13 +4,19 @@ state={
 	name="STATE_499"
 	manpower = 15233900
 	
-	state_category = large_town
+	state_category = town
+	
+	resources = {
+		chromium=32
+		oil = 35
+	}
 
 	history={
 		owner = BRA
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
+			industrial_complex = 1
+			arms_factory = 1
 			air_base = 1
 			10946 = {
 				naval_base = 1

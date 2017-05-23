@@ -2,18 +2,12 @@
 state={
 	id=39
 	name="STATE_39"
-	resources={
-		aluminium=23
-		steel=8
-	}
-
+	
 	history={
 		owner = ITA
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 1
-			arms_factory = 1
-
+			infrastructure = 5
+			air_base = 3
 		}
 		add_core_of = ITA
 		add_core_of = VNT

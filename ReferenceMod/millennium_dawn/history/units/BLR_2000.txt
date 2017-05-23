@@ -24,9 +24,9 @@ division_template = {
 		mechanized = { x = 0 y = 4 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 		anti_tank = { x = 0 y = 3 }
 	}
 }
@@ -34,16 +34,16 @@ division_template = {
 	name = "Mechanized Brigade"
 	
 	regiments = {
-		light_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 0 }
 		mechanized = { x = 1 y = 0 }
 		mechanized = { x = 1 y = 1 }
 		light_mechanized = { x = 1 y = 2 }
 		light_mechanized = { x = 1 y = 3 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -55,8 +55,8 @@ division_template = {
 		paratrooper = { x = 0 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 	
 	priority = 2
@@ -118,7 +118,7 @@ units = {
 ### Air OOB ###
 air_wings = {
 	206 = {
-		#MiG-29BM
+		#MiG-29
 		jet_multirole_equipment_3 = {
 			owner = "BLR" 
 			amount = 20
@@ -126,7 +126,7 @@ air_wings = {
 
 	}
 	95 = {
-		#MiG-29BM
+		#MiG-29
 		jet_multirole_equipment_3 = {
 			owner = "BLR" 
 			amount = 20

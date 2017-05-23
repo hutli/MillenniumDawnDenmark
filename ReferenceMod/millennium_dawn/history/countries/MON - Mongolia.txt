@@ -101,41 +101,11 @@ add_ideas = {
 }
 
 set_politics = {
-
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
-		}
+		conservative = { popularity = 40 }
+		social_liberal = { popularity = 35 }
+		communist = { popularity = 25 }
 	}
-	
 	ruling_party = conservative
 	last_election = "1997.1.1"
 	election_frequency = 60
@@ -143,56 +113,27 @@ set_politics = {
 }
 create_country_leader = {
 	name = "Natsagiin Bagabandi"
-	picture = "Portrait_MON_Natsagiin_Bagabandi.dds"
+	picture = "Natsagiin_Bagabandi.dds"
 	ideology = constitutionalist 
 }
 
 2016.1.1 = {
 	create_country_leader = {
-	name = "Tsachiagiin Elbegdordsch"
-	picture = "Portrait_MON_Tsachiagiin_Elbegdordsch.dds"
-	ideology = constitutionalist 
+		name = "Tsachiagiin Elbegdordsch"
+		picture = "Tsachiagiin_Elbegdordsch.dds"
+		ideology = liberalist
 	}
-	
 	set_politics = {
-
-	parties = {
-		
-		islamist = {
-			popularity = 1
+		parties = {
+			nationalist = { popularity = 3 }
+			conservative = { popularity = 27 }
+			social_liberal = { popularity = 37 }
+			democratic_socialist = { popularity = 10 }
+			communist = { popularity = 23 }
 		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 25
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 30
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
-		}
-	}
-	
-	ruling_party = social_liberal
-	last_election = "2009.6.18"
-	election_frequency = 60
-	elections_allowed = yes
+		ruling_party = social_liberal
+		last_election = "2009.6.18"
+		election_frequency = 60
+		elections_allowed = yes
 	}
 }

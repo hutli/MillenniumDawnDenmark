@@ -142,33 +142,17 @@ set_politics = {
 	elections_allowed = yes
 }
 
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "P. J. Patterson"
 	ideology = christian_democrat
-	picture = "Portrait_JAM_J.B.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "PJ_Patterson.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Portia Simpson-Miller"
-	ideology = constitutionalist
-	picture = "Portrait_JAM_PORTIA.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Portia Simpson-Miller"
+		ideology = constitutionalist
+		picture = "Portia_Simpson_Miller.dds"
+	}
 }
 

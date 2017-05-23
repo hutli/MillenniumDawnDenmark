@@ -19,14 +19,14 @@ ideas = {
 		
 		GER_coastal_protection = {
 			
+			picture = fortification3
+			
 			allowed = {
 				always = no
 			}
 			
-			picture = generic_wall_line
-			
 			modifier = {
-				production_speed_coastal_bunker_factor = 0.5
+				production_speed_coastal_bunker_factor = 0.35
 			}
 		
 		}
@@ -37,7 +37,7 @@ ideas = {
 				always = no
 			}
 			
-			picture = generic_communism_drift_bonus
+			picture = communism7
 			
 			modifier = {
 				justify_war_goal_time = -0.1
@@ -53,7 +53,7 @@ ideas = {
 				always = no
 			}
 			
-			picture = idea_eu_member2
+			picture = EU_member3
 			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.25
@@ -66,6 +66,8 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			picture = bundesadler
 			
 			modifier = {
 				unity_factor = 0.05
@@ -81,7 +83,7 @@ ideas = {
 				always = no
 			}
 			
-			picture = neutrality_idea
+			picture = sisu
 			
 			modifier = {
 				justify_war_goal_time = -0.1
@@ -97,7 +99,7 @@ ideas = {
 				always = no
 			}
 			
-			picture = generic_fascism_drift_bonus
+			picture = fascism
 			
 			modifier = {
 				fascist_drift = 0.03
@@ -113,7 +115,7 @@ ideas = {
 				always = no
 			}
 			
-			picture = generic_monarchy_drift_bonus
+			picture = monarchy
 			
 			modifier = {
 				political_power_factor = 0.25
@@ -140,6 +142,8 @@ ideas = {
 		}
 		
 		GER_industrial_program_for_sovereignity = {
+		
+			picture = production_bonus
 			
 			allowed = {
 				always = no
@@ -153,6 +157,8 @@ ideas = {
 		}
 		
 		GER_kaiserstaat = {
+		
+			picture = monarchy
 			
 			allowed = {
 				always = no
@@ -167,11 +173,11 @@ ideas = {
 		
 		GER_national_economic_reform = {
 			
+			picture = consumer_goods
+			
 			allowed = {
 				always = no
 			}
-			
-			picture = industrial_concern_1
 			
 			modifier = {
 				consumer_goods_factor = -0.04
@@ -185,10 +191,10 @@ ideas = {
 				always = no
 			}
 			
-			picture = industrial_concern_1
+			picture = political_power_bonus
 			
 			modifier = {
-				political_power_factor = 0.15
+				political_power_factor = 0.2
 				research_time_factor = -0.01
 			}
 			
@@ -215,7 +221,7 @@ ideas = {
 				always = no
 			}
 			
-			picture = industrial_concern_1
+			picture = research_bonus
 			
 			modifier = {
 				research_time_factor = -0.03
@@ -229,7 +235,7 @@ ideas = {
 				always = no
 			}
 			
-			picture = nationale_volksarmee
+			picture = NVA
 			
 			modifier = {
 				industrial_capacity_factory = 0.05
@@ -260,7 +266,7 @@ ideas = {
 				always = no
 			}
 			
-			picture = DDR
+			picture = communism2
 			
 			modifier = {
 				communist_drift = 0.03
@@ -286,21 +292,302 @@ ideas = {
 	}
 	
 	political_advisor = {
+
+		advisor_GER_alexander_dobrindt = {
+			
+			allowed = {
+				original_tag = GER
+			}
 		
-		GER_lutz_bachmann = {
+			traits = { 
+				road_builder
+				conservative_party_membership
+			}
+			
+		}
+
+		advisor_GER_alexander_gauland = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { reactionary_politician }
+		}
+
+		advisor_GER_angela_merkel = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = {
+				popular_figurehead
+				conservative_party_membership
+			}
+			
+		}
+
+		advisor_GER_anton_hofreiter = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { progressive_politician }
+		}
+
+		advisor_GER_brigitte_zypries = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { 
+				fortification_engineer 
+				social_democrat_party_membership
+			}
+			
+		}
+		
+		advisor_GER_frank_franz = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = {
+				backroom_backstabber
+				nationalist_party_membership
+			}
+		}
+
+		advisor_GER_frank_haun = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { war_industrialist }
+			
+		}
+
+		advisor_GER_frank_walter_steinmeier = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { 
+				compassionate_gentleman
+				social_democrat_party_membership
+			}
+			
+		}
+
+		advisor_GER_gerd_mueller = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { 
+				smooth_talking_charmer
+				conservative_party_membership
+			}
+			
+		}
+
+		advisor_GER_horst_seehofer = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { 
+				staunch_constitutionalist
+				conservative_party_membership
+			}
+			
+		}
+
+		advisor_GER_heiko_maas = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { 
+				backroom_backstabber 
+				social_democrat_party_membership
+			}
+			
+		}
+
+		advisor_GER_sigmar_gabriel = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { 
+				ideological_crusader
+				social_democrat_party_membership
+			}
+			
+		}
+
+		advisor_GER_heinrich_hiesinger = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { quartermaster_general }
+			
+		}
+
+		advisor_GER_maybritt_illner = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { public_moderator }
+		}
+		
+		#Add a fascist maybe?
+		
+		advisor_GER_lutz_bachmann = {
 			
 			allowed = {
 				original_tag = GER
 			}
 			
-			#available = {
-			#	has_country_flag = pegida
-			#}
+			#available = { has_country_flag = pegida }
 			
 			traits = { nationalist_politician }
-			
 		}
 		
+		advisor_GER_karl_theodor_zu_guttenberg = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { conservative_politician }
+		}
+
+		advisor_GER_kristos_thingilouthis = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { social_liberal_politician }
+		}
+
+		advisor_GER_katja_kipping = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { democratic_socialist_politician }
+		}
+
+		advisor_GER_hans_peter_brenner = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { communist_politician }
+		}
+
+		advisor_GER_sophie_princess_of_prussia = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { monarchist_politician }
+		}
+
+		advisor_GER_sven_lau = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { islamist_politician }
+		}
+
+		advisor_GER_thomas_de_maiziere = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = {
+				silent_workhorse
+				conservative_party_membership
+			}
+			
+		}
+
+		advisor_GER_thomas_oppermann = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { social_democrat_politician }
+		}
+
+		advisor_GER_ursula_von_der_leyen = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = {
+				warmonger
+				conservative_party_membership
+			}
+			
+		}
+
+		advisor_GER_volker_wieker = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { armaments_organizer }
+			
+		}
+
+		advisor_GER_wolfgang_kubicki = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = { market_liberal_politician }
+		}
+
+		advisor_GER_wolfgang_schaeuble = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			traits = {
+				captain_of_industry
+				conservative_party_membership
+			}
+			
+		}
 	}
-	
 }

@@ -138,13 +138,13 @@ set_politics = {
 create_country_leader = {
 	name = "Fidel Castro"
 	ideology = leninist
-	picture = "Portrait_CUB_Fidel_Castro.dds"
+	picture = "Fidel_Castro.dds"
 }
 
 2004.1.1 = {
 	create_country_leader = {
 		name = "Raúl Castro"
 		ideology = leninist
-		picture = "Portrait_CUB_Raul_Castro.dds"
+		picture = "Raul_Castro.dds"
 	}
 }

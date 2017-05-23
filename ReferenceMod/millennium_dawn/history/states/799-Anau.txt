@@ -1,16 +1,22 @@
 state={
 	id=799
 	name="STATE_799"
+	
+	resources = {
+		oil = 19
+	}
+	
 	history = {
 		owner = TRM
-		
+		add_core_of = TRM
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			industrial_complex = 3
+			arms_factory = 1
 		}
-		
 		victory_points = { 12333 5 }
 	}
+	
 	provinces={
 		7491 8099 12333 12491 
 	}

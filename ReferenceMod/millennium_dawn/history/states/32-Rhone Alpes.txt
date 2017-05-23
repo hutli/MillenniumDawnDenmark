@@ -7,14 +7,14 @@ state={
 	state_category = town
 	
 	resources={
-		steel=56
-		aluminium=58
+		oil=2
 	}
 
 	history={
 		owner = FRA
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1
 		}
 		victory_points = {
 			3768 1 

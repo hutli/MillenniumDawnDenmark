@@ -6,10 +6,6 @@ state={
 	
 	state_category = city
 	
-	resources = {
-		oil=27
-	}
-
 	history={
 		owner = LBA
 		
@@ -17,11 +13,10 @@ state={
 		victory_points = { 9980 5 }
 		victory_points = { 1189 3 }
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 4
+			infrastructure = 5
+			industrial_complex = 2
 			arms_factory = 1
-			dockyard = 1
-			air_base = 6
+			air_base = 2
 			1149 = {
 				naval_base = 5
 			}

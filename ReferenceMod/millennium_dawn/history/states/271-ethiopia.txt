@@ -2,31 +2,23 @@
 state={
 	id=271
 	name="STATE_271"
-	resources={
-		rubber=12.000
-		steel=19
+	
+	resources = {
+		steel = 1
 	}
-
+	
 	history={
 		owner = ETH
-		buildings = {
-			infrastructure = 7
-			arms_factory = 3
-			industrial_complex = 6
-			air_base = 1
-
-		}
-		victory_points = {
-			5010 5 
-		}
-		victory_points = {
-			1984 1.0 
-		}
-		victory_points = {
-			7980 1.0 
-		}
 		add_core_of = ETH
-
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 4
+		}
+		victory_points = { 5010 5 }
+		victory_points = { 1984 1 }
+		victory_points = { 7980 1 }
 	}
 
 	provinces={

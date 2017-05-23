@@ -1,13 +1,12 @@
 state= {
 	id=593
 	name="STATE_593"
-	manpower = 60240000
-	state_category = large_city
+	manpower = 60240250
+	state_category = megalopolis
 	resources={
-		tungsten=20
-		steel= 20
-		chromium = 4
-		oil = 31
+		tungsten = 987
+		oil = 50
+		steel = 55
 	}
 
 	history= {
@@ -16,8 +15,9 @@ state= {
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 7
-			arms_factory = 1
+			industrial_complex = 11
+			arms_factory = 3
+			dockyard = 2
 			9938 = {
 				naval_base = 1
 			}

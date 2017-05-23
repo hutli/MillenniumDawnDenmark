@@ -4,11 +4,10 @@ state={
 	
 	history = {
 		owner = UZB
-		
+		add_core_of = UZB
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
-			air_base = 4
+			infrastructure = 3
+			air_base = 2
 		}
 	}
 	

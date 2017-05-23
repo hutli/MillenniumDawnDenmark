@@ -152,43 +152,43 @@ set_politics = {
 
 create_country_leader = {
 	name = "Robert Mugabe"
-	picture = "Portrait_ZIM_Robert_Mugabe.dds"
+	picture = "Robert_Mugabe.dds"
 	ideology = autocrat
 }
 
 create_country_leader = {
 	name = "Morgan Tsvangirai"
-	picture = "Portrait_ZIM_Morgan_Tsvangirai.dds"
+	picture = "Morgan_Tsvangirai.dds"
 	ideology = liberalist
 }
 
 create_country_leader = {
 	name = "Welshman Ncube"
-	picture = "Portrait_ZIM_Welshman_Ncube.dds"
+	picture = "Welshman_Ncube.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
 	name = "Dumiso Dabengwa"
-	picture = "Portrait_ZIM_Dumiso_Dabengwa.dds"
+	picture = "Dumiso_Dabengwa.dds"
 	ideology = leninist
 }
 
 create_country_leader = {
 	name = "Kisinoti Mukwazhe"
-	picture = "Portrait_ZIM_Kisinoti_Mukwazhe.dds"
+	picture = "Kisinoti_Mukwazhe.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Simba Makoni"
-	picture = "Portrait_ZIM_Simba_Makoni.dds"
+	picture = "Simba_Makoni.dds"
 	ideology = progressive_ideology
 }
 
 create_corps_commander = {
 	name = "Constantine Chiwenga"
-	picture = "Portrait_ZIM_general_Constantine_Chiwenga.dds"
+	picture = "generals/Constantine_Chiwenga.dds"
 	skill = 1
 }
 

@@ -104,33 +104,16 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		reactionary = {
-			popularity = 93
-		}
-		conservative = {
-			popularity = 1
-		}
-		market_liberal = {
-			popularity = 1
-		}
-		social_liberal = {
-			popularity = 1
-		}
-		social_democrat = {
-			popularity = 1
-		}
-		progressive = {
-			popularity = 1
-		}
-		democratic_socialist = {
-			popularity = 1
-		}
-		communist = {
-			popularity = 1
-		}
+		conservative = { popularity = 30 }
+		market_liberal = { popularity = 25 }
+		reactionary = { popularity = 20 }
+		social_liberal = { popularity = 10 }
+		social_democrat = { popularity = 10 }
+		progressive = { popularity = 2 }
+		democratic_socialist = { popularity = 2 }
+		communist = { popularity = 1 }
 	}
-	
-	ruling_party = reactionary
+	ruling_party = conservative
 	last_election = "1998.9.20"
 	election_frequency = 48
 	elections_allowed = yes
@@ -138,20 +121,16 @@ set_politics = {
 
 create_country_leader = {
 	name = "Marc Forné i Moln"
-	ideology = counter_progressive_democrat
-	picture = "Portrait_AND_Marc_Forne.dds"
+	ideology = fiscal_conservative
+	picture = "Marc_Forne.dds"
 }
 
-2002.1.1 = {
-	add_ideas = the_euro
-}
+2002.1.1 = { add_ideas = the_euro }
 
 2015.1.1 = {
 	create_country_leader = {
 		name = "Antoni Martí Petit"
-		ideology = counter_progressive_democrat
-		picture = "Portrait_AND_Antoni_Marti.dds"
+		ideology = fiscal_conservative
+		picture = "Antoni_Marti.dds"
 	}
 }
-
-

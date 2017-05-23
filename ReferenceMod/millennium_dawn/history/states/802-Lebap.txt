@@ -3,11 +3,10 @@ state={
 	name="STATE_802"
 	history = {
 		owner = TRM
-		
+		add_core_of = TRM
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
-			air_base = 4
+			infrastructure = 2
+			air_base = 1
 		}
 	}
 	provinces={

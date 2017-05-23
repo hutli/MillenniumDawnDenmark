@@ -2,17 +2,15 @@ state={
 	id=837
 	name="STATE_837"
 	resources={
-		steel=13
-		oil=4
-		chromium=6
-		aluminium=2
+		chromium=1
 	}
 	history = {
 		owner = AFG
 		add_core_of = AFG
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 1
+			air_base = 1
 		}
 	}
 	provinces={

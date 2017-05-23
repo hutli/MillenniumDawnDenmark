@@ -133,79 +133,44 @@ set_politics = {
 }
 create_country_leader = {
 	name = "Henri of Luxembourg"
-	desc = "POLITICIAN_LUX_HENRI_LUXEMBOURG_DESC"
-	picture = "Portrait_LUX_Henri_Luxembourg.dds"
-	expire = "2050.1.1"
+	picture = "Henri_Luxembourg.dds"
 	ideology = absolute_monarchist
-	
-	traits = {
-	}
 }
 
 create_country_leader = {
 	name = "Robert Mehlen"
-	desc = "POLITICIAN_LUX_ROBERT_MEHLEN_DESC"
-	picture = "Portrait_LUX_Robert_Mehlen.dds"
-	expire = "2050.1.1"
+	picture = "Robert_Mehlen.dds"
 	ideology = counter_progressive_democrat
-	
-	traits = {
-	}
 }
 
 create_country_leader = {
 	name = "Jean-Claude Juncker"
-	desc = "POLITICIAN_LUX_JEAN-CLAUDE_JUNCKER_DESC"
-	picture = "Portrait_Lux_Jean_Claude_Juncker.dds"
-	expire = "2050.1.1"
+	picture = "Jean_Claude_Juncker.dds"
 	ideology = christian_democrat
-	
-	traits = {
-	}
 }
 
 create_country_leader = {
 	name = "Lydie Polfer"
-	desc = "POLITICIAN_LUX_LYDIE_POLFER_DESC"
-	picture = "Portrait_LUX_Lydie_Polfer.dds"
-	expire = "2050.1.1"
+	picture = "Lydie_Polfer.dds"
 	ideology = libertarian
-	
-	traits = {
-	}
 }
 
 create_country_leader = {
 	name = "Jean Asselborn"
-	desc = "POLITICIAN_LUX_JEAN_ASSELBORN_DESC"
-	picture = "Portrait_LUX_Jean_Asselborn.dds"
-	expire = "2050.1.1"
+	picture = "Jean_Asselborn.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	}
 }
 
 create_country_leader = {
 	name = "Christian Kmiotek"
-	desc = "POLITICIAN_LUX_CHRISTIAN_KMIOTEK_DESC"
-	picture = "Portrait_LUX_Christian_Kmiotek.dds"
-	expire = "2050.1.1"
+	picture = "Christian_Kmiotek.dds"
 	ideology = green
-	
-	traits = {
-	}
 }
 
 create_country_leader = {
 	name = "Fabienne Lentz"
-	desc = "POLITICIAN_LUX_FABIENNE_LENTZ_DESC"
-	picture = "Portrait_LUX_Fabienne_Lentz.dds"
-	expire = "2050.1.1"
+	picture = "Fabienne_Lentz.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	}
 }
 
 2002.1.1 = {
@@ -242,35 +207,20 @@ create_country_leader = {
 	}
 	create_country_leader = {
 		name = "Claude Meisch"
-		desc = "POLITICIAN_LUX_CLAUDE_MEISCH_DESC"
-		picture = "Portrait_LUX_Claude_Meisch.dds"
-		expire = "2050.1.1"
+		picture = "Claude_Meisch.dds"
 		ideology = libertarian
-		
-		traits = {
-		}
 	}
 
 	create_country_leader = {
 		name = "Alex Bodry"
-		desc = "POLITICIAN_LUX_ALEX_BODRY_DESC"
-		picture = "Portrait_LUX_Alex_Bodry.dds"
-		expire = "2050.1.1"
+		picture = "Alex_Bodry.dds"
 		ideology = social_democrat_ideology
-		
-		traits = {
-		}
 	}
 	
 	create_country_leader = {
 		name = "Ali Ruckert"
-		desc = "POLITICIAN_LUX_ALI_RUCKERT_DESC"
-		picture = "Portrait_LUX_Ali_Ruckert.dds"
-		expire = "2050.1.1"
+		picture = "Ali_Ruckert.dds"
 		ideology = marxist
-		
-		traits = {
-		}
 	}
 }	
 2006.1.1 = {
@@ -345,34 +295,19 @@ create_country_leader = {
 
 	create_country_leader = {
 		name = "Xavier Bettel"
-		desc = "POLITICIAN_LUX_XAVIER_BETTEL_DESC"
-		picture = "Portrait_LUX_Xavier_Bettel.dds"
-		expire = "2050.1.1"
+		picture = "Xavier_Bettel.dds"
 		ideology = libertarian
-		
-		traits = {
-		}
 	}
 
 	create_country_leader = {
 		name = "Claude Haagen"
-		desc = "POLITICIAN_LUX_CLAUDE_HAAGEN_DESC"
-		picture = "Portrait_LUX_Claude_Haagen.dds"
+		picture = "Claude_Haagen.dds"
 		expire = "2050.1.1"
-		ideology = social_democrat_ideology
-		
-		traits = {
-		}
 	}
 
 	create_country_leader = {
 		name = "Sven Clement"
-		desc = "POLITICIAN_LUX_SVEN_CLEMENT_DESC"
-		picture = "Portrait_LUX_Sven_Clement.dds"
-		expire = "2050.1.1"
+		picture = "Sven_Clement.dds"
 		ideology = liberalist
-		
-		traits = {
-		}
 	}
 }

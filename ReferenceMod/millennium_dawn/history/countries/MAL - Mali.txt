@@ -138,13 +138,13 @@ set_politics = {
 create_country_leader = {
 	name = "Alpha Oumar Konaré"
 	ideology = social_democrat_ideology
-	picture = "Portrait_MAL_Alpha_Oumar_Konare.dds"
+	picture = "Alpha_Oumar_Konare.dds"
 }
 
 create_country_leader = {
 	name = "Ibrahim Boubacar Keïta"
 	ideology = liberalist
-	picture = "Portrait_MAL_Ibrahim_Boubacar_Keita.dds"
+	picture = "Ibrahim_Boubacar_Keita.dds"
 }
 
 2012.1.1 = {

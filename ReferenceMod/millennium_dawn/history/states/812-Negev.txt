@@ -1,10 +1,9 @@
 state={
 	id=812
 	name="STATE_812"
+	
 	resources={
-		oil=3
-		steel=7
-		tungsten=1
+		oil = 1
 	}
 
 	history={
@@ -12,16 +11,16 @@ state={
 		add_core_of = ISR
 		add_core_of = PAL
 		buildings = {
-			infrastructure = 3
+			infrastructure = 7
 			industrial_complex = 1
-			air_base = 8
+			air_base = 9
 			1015 = { bunker = 1 }
-			7176 = { bunker = 1 }
+			7176 = { bunker = 2 }
 			11970 = { bunker = 2 }
 			13218 = { bunker = 2 }
 			13219 = { bunker = 1 }
 			13220 = { bunker = 1 }
-			1086 = { bunker = 1 }
+			1086 = { bunker = 3 }
 		}
 		victory_points = { 1086 20 }
 		victory_points = { 7176 3 }

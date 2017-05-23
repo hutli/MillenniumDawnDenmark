@@ -106,44 +106,19 @@ add_ideas = {
 }
 
 set_politics = {
-
 	parties = {
-		
-		islamist = {
-			popularity = 19
-		}
-		nationalist = {
-			popularity = 1
-		}
-		monarchist = {
-			popularity = 40
-		}
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 18
-		}
-		market_liberal = {
-			popularity = 2
-		}
-		social_liberal = {
-			popularity = 2
-		}
-		social_democrat = {
-			popularity = 2
-		}
-		progressive = {
-			popularity = 2
-		}
-		democratic_socialist = {
-			popularity = 2
-		}
-		communist = {
-			popularity = 10
-		}
+		islamist = { popularity = 19 }
+		nationalist = { popularity = 1 }
+		monarchist = { popularity = 40 }
+		reactionary = { popularity = 2 }
+		conservative = { popularity = 18 }
+		market_liberal = { popularity = 2 }
+		social_liberal = { popularity = 2 }
+		social_democrat = { popularity = 2 }
+		progressive = { popularity = 2 }
+		democratic_socialist = { popularity = 2 }
+		communist = { popularity = 10 }
 	}
-	
 	ruling_party = monarchist
 	last_election = "1997.1.1"
 	election_frequency = 48
@@ -152,8 +127,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Abdullah II"
-	desc = "POLITICIAN_JOR_ABDULLAH_II_DESC"
-	picture = "Portrait_JOR_Abdullah_II.dds"
+	picture = "Abdullah_II.dds"
 	ideology = absolute_monarchist
-	expire = "2050.1.1"
 }

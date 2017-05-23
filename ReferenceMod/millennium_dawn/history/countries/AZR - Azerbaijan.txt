@@ -146,14 +146,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Heydar Aliyev"
-	picture = "Portrait_AZB_Heydar_Aliyev.dds"
+	picture = "Heydar_Aliyev.dds"
 	ideology = oligarchist
 }
 
 2016.1.1 = {
 	create_country_leader = {
 		name = "Ilham Aliyev"
-		picture = "Portrait_AZB_Ilham_Aliyev.dds"
+		picture = "Ilham_Aliyev.dds"
 		ideology = oligarchist
 	}
 }

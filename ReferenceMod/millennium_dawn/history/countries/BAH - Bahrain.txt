@@ -143,6 +143,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Hamad I of Bahrain"
-	picture = "Portrait_BAH_King_Hamad.dds"
+	picture = "Hamad.dds"
 	ideology = absolute_monarchist
 }

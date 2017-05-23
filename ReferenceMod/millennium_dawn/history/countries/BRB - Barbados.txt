@@ -102,15 +102,9 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		conservative = {
-			popularity = 1
-		}
-		social_democrat = {
-			popularity = 36
-		}
-		democratic_socialist = {
-			popularity = 63
-		}
+		conservative = { popularity = 1 }
+		social_democrat = { popularity = 36 }
+		democratic_socialist = { popularity = 63 }
 	}
 	
 	ruling_party = democratic_socialist
@@ -121,30 +115,23 @@ set_politics = {
 
 create_country_leader = {
 	name = "Freundel Stuart"
-	picture = "Portrait_BRB_Freundel_Stuart.dds"
+	picture = "Freundel_Stuart.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Owen Seymoure Arthur"
-	picture = "Portrait_BRB_Owen_Seymoure_Arthur.dds"
+	picture = "Owen_Seymoure_Arthur.dds"
 	ideology = democratic_socialist_ideology
 }
 
 2016.1.1 = {
 	set_politics = {
 		parties = {
-			conservative = {
-				popularity = 0
-			}
-			social_democrat = {
-				popularity = 52
-			}
-			democratic_socialist = {
-				popularity = 48
-			}
+			conservative = { popularity = 0.5 }
+			social_democrat = { popularity = 51.5 }
+			democratic_socialist = { popularity = 48 }
 		}
-		
 		ruling_party = social_democrat
 		last_election = "2013.2.21"
 		election_frequency = 52

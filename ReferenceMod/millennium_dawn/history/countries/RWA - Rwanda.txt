@@ -148,12 +148,8 @@ set_politics = {
 
 create_country_leader = {
 	name = "Paul Kagame"
-	picture = "Portrait_RWA_Paul_Kagame.dds"
-	ideology = national_democrat
+	picture = "Paul_Kagame.dds"
+	ideology = autocrat
 }
 
-2009.1.1 = {
-	add_ideas = {
-		commonwealth_of_nations_member
-	}
-}
+2009.1.1 = { add_ideas = { commonwealth_of_nations_member } }

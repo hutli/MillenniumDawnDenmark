@@ -6,15 +6,16 @@ state={
 	state_category = pastoral
 	
 	resources = {
-		oil=51
+		oil=4
 	}
 
 	history={
 		owner = LBA
-		buildings = {
-			infrastructure = 1
-		}
 		add_core_of = LBA
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
 	}
 
 	provinces={

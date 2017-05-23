@@ -138,125 +138,82 @@ set_politics = {
 	elections_allowed = yes
 }
 
-2000.1.1 = {
-	
-	create_country_leader = {
+create_country_leader = {
 	name = "Joaquim Chissano"
-	picture = "Portrait_MOZ_Joaquim_Chissano.dds"
-	expire = "2010.1.1"
+	picture = "Joaquim_Chissano.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-		}
-	}
+}
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Alfonso Dhlakama"
-	picture = "Portrait_MOZ_Alfonso_Dhlakama.dds"
-	expire = "2020.1.1"
+	picture = "Alfonso_Dhlakama.dds"
 	ideology = counter_progressive_democrat
-	
-	traits = {
-	
-		}
-	}
+}
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Raul Domingos"
-	picture = "Portrait_MOZ_Raul_Domingos.dds"
-	expire = "2020.1.1"
+	picture = "Raul_Domingos.dds"
 	ideology = moderate
-	
-	traits = {
-	
-		}
-	}
+}
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Daviz Simango"
-	picture = "Portrait_MOZ_Daviz_Simango.dds"
-	expire = "2020.1.1"
+	picture = "Daviz_Simango.dds"
 	ideology = christian_democrat
-	
-	traits = {
-	
-		}
-	}
+}
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Armando Sapembe"
-	expire = "2020.1.1"
 	ideology = green
-	
-	traits = {
-	
-		}
-	}
+}
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Casimiro Nhamithambo"
-	expire = "2020.1.1"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-		}
-	}
+}
 
-	create_corps_commander = {
+create_corps_commander = {
 	name = "Graca Chongo"
-	picture = "portrait_MOZ_general_Graca_Chongo.dds"
+	picture = "generals/Graca_Chongo.dds"
 	skill = 1
-	}
-
 }
 
 
 2014.10.15 = {
-	
 	set_politics = {
+		parties = {
+			fascist = {
+				popularity = 1
+			}
+			nationalist = {
+				popularity = 1
+			}
+			reactionary = {
+				popularity = 32
+			}
+			conservative = {
+				popularity = 8
+			}
+			social_liberal = {
+				popularity = 1
+			}
+			social_democrat = {
+				popularity = 1
+			}
+			democratic_socialist = {
+				popularity = 56
+			}
 
-	parties = {
-		fascist = {
-			popularity = 1
 		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 32
-		}
-		conservative = {
-			popularity = 8
-		}
-		social_liberal = {
-			popularity = 1
-		}
-		social_democrat = {
-			popularity = 1
-		}
-		democratic_socialist = {
-			popularity = 56
-		}
-
+		
+		ruling_party = democratic_socialist
+		last_election = "2014.10.15"
+		election_frequency = 60
+		elections_allowed = yes
 	}
-	
-	ruling_party = democratic_socialist
-	last_election = "2014.10.15"
-	election_frequency = 60
-	elections_allowed = yes
-	}
-
 	create_country_leader = {
-	name = "Felipe Nyusi"
-	picture = "Portrait_MOZ_Felipe_Nyusi.dds"
-	expire = "2020.1.1"
-	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-		}
+		name = "Felipe Nyusi"
+		picture = "Felipe_Nyusi.dds"
+		ideology = democratic_socialist_ideology
 	}
-
 }

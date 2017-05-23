@@ -129,13 +129,13 @@ set_politics = {
 create_country_leader = {
 	name = "Edmund Ho"
 	ideology = fiscal_conservative
-	picture = "Portrait_MCU_Edmund_Ho.dds"
+	picture = "Edmund_Ho.dds"
 }
 
 2015.1.1 = {
 	create_country_leader = {
 		name = "Fernando Chui"
 		ideology = fiscal_conservative
-		picture = "Portrait_MCU_Fernando_Chui.dds"
+		picture = "Fernando_Chui.dds"
 	}
 }

@@ -2,7 +2,12 @@ state= {
 	id=595
 	name="STATE_595"
 	manpower = 37700011
-	state_category = city
+	state_category = large_city
+	resources = {
+		tungsten = 4364
+		aluminium = 57
+		rubber = 32
+	}
 	history=
 	{
 		owner = PRC
@@ -10,7 +15,8 @@ state= {
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
+			industrial_complex = 7
+			dockyard = 1
 			7071 = {
 				naval_base = 1
 			}

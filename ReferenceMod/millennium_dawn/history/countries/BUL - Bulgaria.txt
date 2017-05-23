@@ -149,29 +149,15 @@ set_politics = {
 
 create_country_leader = {
 	name = "Petar Stoyanov"
-	desc = "POLITICIAN_BUL_PETAR_STOYANOV_DESC"
-	picture = "Portrait_BUL_Petar_Stoyanov.dds"
-	expire = "2020.1.1"
+	picture = "Petar_Stoyanov.dds"
 	ideology = liberalist
-	
-	traits = {
-	
-	}
 }
 
 
 2016.1.1 = {
-
-}
-
-create_country_leader = {
-	name = "Rosen Plevneliev"
-	desc = "POLITICIAN_BUL_ROSEN_PLEVNELIEV_DESC"
-	picture = "Portrait_BUL_Rosen_Plevneliev.dds"
-	expire = "2020.1.1"
-	ideology = liberalist
-	
-	traits = {
-	
+	create_country_leader = {
+		name = "Rosen Plevneliev"
+		picture = "Rosen_Plevneliev.dds"
+		ideology = liberalist
 	}
 }

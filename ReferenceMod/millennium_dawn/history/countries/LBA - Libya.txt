@@ -96,6 +96,11 @@ set_technology = {
 	excavation1 = 1
 }
 
+add_opinion_modifier = {
+	target = ISR
+	modifier = death_to_israel
+}
+
 set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
 
@@ -107,36 +112,16 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 16
-		}
-		nationalist = {
-			popularity = 40
-		}
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 5
-		}
-		social_liberal = {
-			popularity = 2
-		}
-		communist = {
-			popularity = 20
-		}
-                market_liberal = {
-			popularity = 2
-		}
-                progressive  = {
-			popularity = 4
-		}
-                social_democrat = {
-			popularity = 5
-		}
-                democratic_socialist  = {
-			popularity = 4
-		}
+		islamist = { popularity = 16 }
+		nationalist = { popularity = 40 }
+		reactionary = { popularity = 2 }
+		conservative = { popularity = 5 }
+		social_liberal = { popularity = 2 }
+		communist = { popularity = 20 }
+		market_liberal = { popularity = 2 }
+		progressive  = { popularity = 4 }
+		social_democrat = { popularity = 5 }
+		democratic_socialist  = { popularity = 4 }
 	}
 	
 	ruling_party = nationalist
@@ -147,135 +132,102 @@ set_politics = {
 
 create_country_leader = {
 	name = "Muammar al-Gaddafi"
-	picture = "Portrait_LBA_Muammar_Gaddafi.dds"
+	picture = "Muammar_Gaddafi.dds"
 	ideology = autocrat
 	expire = "2011.1.1"
 }
 
 create_country_leader = {
-		name = "Abubakr Mustafa Buera"
-		picture = "Portrait_LBA_Abubakr_Mustafa_Buera.dds"
-		ideology = fiscal_conservative
-		expire = "2050.1.1"		
+	name = "Abubakr Mustafa Buera"
+	picture = "Abubakr_Mustafa_Buera.dds"
+	ideology = fiscal_conservative
 }
 
 create_country_leader = {
 	name = "Mohammed Sawan"
-	picture = "Portrait_LBA_Mohammed_Sawan.dds"
+	picture = "Mohammed_Sawan.dds"
 	ideology = islamic_authoritarian
-        expire = "2050.1.1"
 } 
 
 
 create_country_leader = {
 	name = "Fayez al-Sarraj"
-	picture = "Portrait_LBA_Fayez_al-Sarraj.dds"
+	picture = "Fayez_al_Sarraj.dds"
 	ideology = social_democrat_ideology
-        expire = "2050.1.1"
 }
 
 create_country_leader = {
 	name = "Idris II"
 	ideology = absolute_monarchist
-	picture = "Portrait_LBA_Idris_The_Second.dds"
-	expire = "2050.1.1"
-	
+	picture = "Idris_II.dds"
 }
 
 create_country_leader = {
 	name = "Ali Tarhouni"
 	ideology = centrist 
-	picture = "Portrait_LBA_Ali_Tarhouni.dds"
-	expire = "2050.1.1"
-	
+	picture = "Ali_Tarhouni.dds"
 }
 
 
 create_country_leader = {
 	name = "Mahmoud Jibril"
+	picture = "Mahmoud_Jibril.dds"
 	ideology = libertarian
-	picture = "Portrait_LBA_Mahmoud_Jibril.dds"
-	expire = "2050.1.1"
-	
 }
 
 create_country_leader = {
 	name = "Mohammed Kilani"
+	picture = "Mohammed_Kilani.dds"
 	ideology = counter_progressive_democrat
-	picture = "Portrait_LBA_Mohammed_Kilani.dds"
-	expire = "2050.1.1"
-	
 }
 
 create_country_leader = {
 	name = "Uthman Ali"
-	picture = "Portrait_LBA_Uthman_Ali.dds"
-        ideology = marxist
-        expire = "2050.1.1"
+	picture = "Uthman_Ali.dds"
+	ideology = marxist
 }   
 
 create_country_leader = {
 	name = "Mohamed Ali Abdallah"
-	picture = "Portrait_LBA_Mohamed_Ali_Abdallah.dds"
+	picture = "Mohamed_Ali_Abdallah.dds"
 	ideology = green
-        expire = "2050.1.1"
 }
 
 create_country_leader = {
 	name = "Mousa Kussa"
-	picture = "Portrait_LBA_Mousa_Kussa.dds"
+	picture = "Mousa_Kussa.dds"
 	ideology = national_socialist
 }
 
 create_corps_commander = { 
 	name = "Khalifa Haftar"
-	picture = "Portrait_LBA_Khalifa_Haftar.dds"
-	traits = {} 
-	skill = 1
+	picture = "generals/Khalifa_Haftar.dds"
+	skill = 2
 }
 
 create_corps_commander = { 
 	name = "Mohamed El-Mismari"
-	picture = "Portrait_LBA_Mohamed_El-Mismari.dds"
-	traits = {} 
-	skill = 2
+	picture = "generals/Mohamed_El_Mismari.dds"
+	skill = 1
 }
 
 create_navy_leader = { 
 	name = "Abdolazim Ahmad"
-	picture = "Portrait_LBA_Abdolazim_Ahmad.dds"
-	traits = {} 
+	picture = "admirals/Abdolazim_Ahmad.dds"
 	skill = 1
 }
 
 2012.1.1 = {
-
 	set_politics = {
-	
 		parties = {
-			communist = {
-				popularity = 10
-			}
-			social_democrat = {
-				popularity = 30
-			}
-			islamist = {                         
-				popularity = 23
-			}
-			conservative = {
-				popularity = 28
-			}
-			market_liberal = {
-				popularity = 6
-			}
-			reactionary = {
-				popularity = 14  
-			}
-                        nationalist = {
-			       popularity = 11
-		        }
+			communist = { popularity = 10 }
+			social_democrat = { popularity = 30 }
+			islamist = { popularity = 23 }
+			conservative = { popularity = 28 }
+			market_liberal = { popularity = 6 }
+			reactionary = { popularity = 14 }
+			nationalist = { popularity = 11 }
 		}
-	
 		ruling_party = social_democrat
 		elections_allowed = yes
 		last_election = "2011.12.1"

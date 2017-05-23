@@ -2,14 +2,21 @@
 state={
 	id=501
 	name="STATE_501"
+	
+	resources = {
+		aluminium = 7
+		oil = 40
+		steel = 91
+	}
 
 	history={
 		owner = BRA
 		buildings = {
-			arms_factory = 1
-			industrial_complex = 4
 			infrastructure = 5
-			dockyard = 4
+			industrial_complex = 6
+			arms_factory = 2
+			dockyard = 2
+			air_base = 1
 			5112 = { naval_base = 4 }
 		}
 		add_core_of = BRA
@@ -24,5 +31,5 @@ state={
 	}
 	manpower=54199200
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=metropolis
 }

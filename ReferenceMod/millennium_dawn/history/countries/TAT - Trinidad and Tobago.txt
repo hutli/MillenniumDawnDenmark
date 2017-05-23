@@ -118,13 +118,13 @@ set_politics = {
 
 create_country_leader = {
 	name = "Basdeo Panday"
-	picture = "Portrait_TAT_Bandeo_Panday.dds"
+	picture = "Bandeo_Panday.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Keith Rowley"
-	picture = "Portrait_TAT_Keith_Rowley.dds"
+	picture = "Keith_Rowley.dds"
 	ideology = libertarian
 }
 

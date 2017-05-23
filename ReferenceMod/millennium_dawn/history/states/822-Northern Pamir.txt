@@ -1,14 +1,12 @@
 state={
 	id=822
 	name="STATE_822"
-	resources={
-		steel=14
-		aluminium=12
-	}
-
 	history={
 		owner = KYR
-
+		add_core_of = KYR
+		buildings = {
+			infrastructure = 1
+		}
 	}
 
 	provinces={

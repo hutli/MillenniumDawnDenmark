@@ -14,35 +14,25 @@ country_event = {
 				has_country_flag = sunni_islam
 			}
 			every_country = {
-				limit = {
-					has_country_flag = sunni_islam
-				}
+				limit = { has_country_flag = sunni_islam }
 				add_opinion_modifier = { target = FROM modifier = fellow_sunni }
 				add_opinion_modifier = { target = FROM modifier = fellow_sunni_trade }
 			}
 			every_country = {
-				limit = {
-					has_country_flag = shia_islam
-				}
+				limit = { has_country_flag = shia_islam }
 				add_opinion_modifier = { target = FROM modifier = opposing_faith }
 				add_opinion_modifier = { target = FROM modifier = opposing_faith_trade }
 			}
 		}
 		if = {
-			limit = {
-				has_country_flag = shia_islam
-			}
+			limit = { has_country_flag = shia_islam }
 			every_country = {
-				limit = {
-					has_country_flag = sunni_islam
-				}
+				limit = { has_country_flag = sunni_islam }
 				add_opinion_modifier = { target = FROM modifier = opposing_faith }
 				add_opinion_modifier = { target = FROM modifier = opposing_faith_trade }
 			}
 			every_country = {
-				limit = {
-					has_country_flag = shia_islam
-				}
+				limit = { has_country_flag = shia_islam }
 				add_opinion_modifier = { target = FROM modifier = fellow_shia }
 				add_opinion_modifier = { target = FROM modifier = fellow_shia_trade }
 			}

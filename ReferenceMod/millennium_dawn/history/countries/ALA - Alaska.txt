@@ -97,24 +97,14 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		reactionary = {
-			popularity = 3
-		}
-		conservative = {
-			popularity = 42
-		}
-		social_liberal = {
-		    popularity = 30
-		}
-		social_democrat = {
-			popularity = 22
-		}
-		progressive = {
-			popularity = 2
-		}
-		communist = {
-			popularity = 1
-		}
+		fascist = { popularity = 0.5 }
+		nationalist = { popularity = 1.5 }
+		reactionary = { popularity = 3.5 }
+		conservative = { popularity = 40.5 }
+		social_liberal = { popularity = 29 }
+		social_democrat = { popularity = 22 }
+		progressive = { popularity = 2 }
+		communist = { popularity = 1 }
 	}
 	ruling_party = conservative
 	last_election = "1997.1.1"
@@ -125,5 +115,5 @@ set_politics = {
 create_country_leader = {
 	name = "Sarah Palin"
 	ideology = fiscal_conservative
-	picture = "Portrait_ALA_Sarah_Palin.dds"
+	picture = "Sarah_Palin.dds"
 }

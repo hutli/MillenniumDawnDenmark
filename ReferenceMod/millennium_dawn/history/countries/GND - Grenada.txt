@@ -129,6 +129,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Keith C. Mitchell"
-	picture = "Portrait_GND_Keith_Claudius_Mitchell.dds"
+	picture = "Keith_C_Mitchell.dds"
 	ideology = fiscal_conservative
 }

@@ -4,21 +4,21 @@ state={
 	name="STATE_410"
 	manpower = 2341053
 	resources = {
-		oil=5
-		steel=3
+		chromium=11
+		oil = 32
 	}
 	
 	state_category = rural
 
 	history={
 		owner = PER
+		add_core_of = PER
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 			dockyard = 1
-			air_base = 2
+			air_base = 1
 		}
-		add_core_of = PER
 	}
 
 	provinces={

@@ -126,6 +126,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Islam Karimov"
-	picture = "Portrait_UZB_Islam_Karimov.dds"
+	picture = "Islam_Karimov.dds"
 	ideology = autocrat
 }

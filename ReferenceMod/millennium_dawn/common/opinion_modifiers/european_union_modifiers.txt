@@ -23,4 +23,8 @@ opinion_modifiers = {
 		value = 20
 	}
 	
+	european_commitment = {
+		value = 25
+	}
+	
 }

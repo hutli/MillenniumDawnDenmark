@@ -101,7 +101,6 @@ add_ideas = {
 }
 
 set_politics = {
-
 	parties = {
 		islamist = {
 			popularity = 1
@@ -113,12 +112,14 @@ set_politics = {
 			popularity = 2
 		}
 		conservative = {
-			popularity = 25		}
+			popularity = 25
+		}
 		market_liberal = {
 			popularity = 6
 		}
 		social_liberal = {
-			popularity = 30		}
+			popularity = 30		
+		}
 		social_democrat = {
 			popularity = 5
 		}
@@ -132,62 +133,24 @@ set_politics = {
 			popularity = 10
 		}
 	}
-	
-	
-
-
-ruling_party = social_liberal
-	
-last_election = "1997.1.1"
-	
-election_frequency = 48
-	
-elections_allowed = yes
- 
-
- }
-
-
-  
-  
-2007.1.1 = {
-
-	
-add_ideas = {
-		idea_eu_member
-	}
-
+	ruling_party = social_liberal
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
+2007.1.1 = { add_ideas = { idea_eu_member } }
 
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Stjepan Mesić"
 	ideology = centrist
-	picture = "Portrait_CRO_Stjepan_Mesic.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Stjepan_Mesic.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Kolinda Grabar-Kitarović"
-	ideology = liberalist
-	picture = "Portrait_CRO_Kolinda_Grabar.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Kolinda Grabar-Kitarović"
+		ideology = liberalist
+		picture = "Kolinda_Grabar.dds"
+	}
 }
-
-

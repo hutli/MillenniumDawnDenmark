@@ -6,8 +6,6 @@ set_research_slots = 4
 set_convoys = 500
 set_national_unity = 0.75
 
-set_country_flag = starting_stability_high
-
 set_country_flag = country_language_english
 
 set_technology = {
@@ -104,40 +102,41 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
 		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
+			popularity = 40
 		}
 		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
+			popularity = 20
 		}
 		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 40
 		}
 	}
 	
 	ruling_party = conservative
 	last_election = "1997.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Teburoro Tito"
+	picture = "Teburoro_Tito.dds"
+	ideology = christian_democrat
+}
+
+2003.1.1 = {
+	create_country_leader = {
+		name = "Anote Tong"
+		picture = "Anote_Tong.dds"
+		ideology = christian_democrat
+	}	
+}
+
+2016.1.1 = {
+		create_country_leader = {
+		name = "Taneti Mamau"
+		picture = "Taneti_Mamau.dds"
+		ideology = christian_democrat
+	}
 }

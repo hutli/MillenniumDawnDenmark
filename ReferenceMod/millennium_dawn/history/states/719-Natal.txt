@@ -3,17 +3,16 @@ state={
 	id=719
 	name="STATE_719"
 	resources={
-		chromium=45.000
-		oil=3
-		steel=5
-		tungsten=1
+		chromium=350
+		aluminium=23
+		steel=10
 	}
 
 	history={
 		owner = SAF
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 5
+			infrastructure = 6
+			industrial_complex = 3
 			arms_factory = 2
 			dockyard = 1
 			air_base = 1

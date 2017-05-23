@@ -5,13 +5,19 @@ state={
 	manpower = 126370000
 	
 	state_category = megalopolis
+	
+	resources = {
+		steel = 7
+	}
 
 	history={
 		owner = PAK
+		add_core_of = PAK
 		buildings = {
-			industrial_complex = 11
+			infrastructure = 8
+			industrial_complex = 6
 			arms_factory = 3
-			infrastructure = 9
+			air_base = 6
 		}
 		victory_points = { 10772 3 }	#Lahore
 		victory_points = { 4979 5 }		#Islamabad

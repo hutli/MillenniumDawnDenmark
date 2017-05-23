@@ -142,14 +142,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Rauf Denktaş"
-	picture = "Portrait_NCY_Rauf_Denktas.dds"
+	picture = "Rauf_Denktas.dds"
 	ideology = fiscal_conservative
 }
 
 2016.1.1 = {
 	create_country_leader = {
 		name = "Mustafa Akıncı"
-		picture = "Portrait_NCY_Mustafa Akinci.dds"
+		picture = "Mustafa_Akinci.dds"
 		ideology = social_democrat_ideology
 	}
 	set_politics = {

@@ -145,14 +145,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Silas Atopare"
-	picture = "Portrait_PAP_Silas_Atopare.dds"
+	picture = "Silas_Atopare.dds"
 	ideology = liberalist
 }
 
 2016.1.1 = {
 	create_country_leader = {
 		name = "Michael Ogio"
-		picture = "Portrait_PAP_Michael_Ogio.dds"
+		picture = "Michael_Ogio.dds"
 		ideology = liberalist
 	}
 }

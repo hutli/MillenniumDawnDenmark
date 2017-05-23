@@ -144,25 +144,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Hugo Banzer"
-	desc = "POLITICIAN_BOL_HUGO_BANZER_DESC"
-	picture = "Portrait_BOL_Hugo_Banzer.dds"
-	expire = "2020.1.1"
+	picture = "Hugo_Banzer.dds"
 	ideology = fiscal_conservative
-	
-	traits = {
-	
-	}
 }
 
 2016.1.1 = {
 	create_country_leader = {
 		name = "Evo Morales"
-		desc = "POLITICIAN_BOL_EVO_MORALES_DESC"
-		picture = "Portrait_BOL_Evo_Morales.dds"
-		expire = "2020.1.1"
+		picture = "Evo_Morales.dds"
 		ideology = fiscal_conservative
-		traits = {
-		
-		}
 	}
 }

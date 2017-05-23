@@ -104,27 +104,13 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		nationalist = {
-			popularity = 2
-		}
-		reactionary = {
-			popularity = 3
-		}
-		conservative = {
-			popularity = 40
-		}
-		market_liberal = {
-			popularity = 16
-		}
-		social_liberal = {
-			popularity = 16
-		}
-		democratic_socialist = {
-			popularity = 18
-		}
-		communist = {
-			popularity = 5
-		}
+		nationalist = { popularity = 2 }
+		reactionary = { popularity = 3 }
+		conservative = { popularity = 40 }
+		market_liberal = { popularity = 16 }
+		social_liberal = { popularity = 16 }
+		democratic_socialist = { popularity = 18 }
+		communist = { popularity = 5 }
 	}
 	
 	ruling_party = conservative
@@ -135,14 +121,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Tantely Andrianarivo"
-	picture = "Portrait_MAD_Tantely_Andrianarivo.dds"
+	picture = "Tantely_Andrianarivo.dds"
 	ideology = fiscal_conservative
 }
 
 2016.1.1 = {
 	create_country_leader = {
 		name = "Olivier Mahafaly Solonadrasana"
-		picture = "Portrait_MAD_Olivier_Mahafaly_Solonadrasana.dds"
+		picture = "Olivier_M_Solonadrasana.dds"
 		ideology = fiscal_conservative
 	}
 }

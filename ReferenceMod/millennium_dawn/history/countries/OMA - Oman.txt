@@ -134,6 +134,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Qabus ibn Said"
-	picture = "Portrait_OMA_Qabus.dds"
+	picture = "Qabus.dds"
 	ideology = absolute_monarchist
 }

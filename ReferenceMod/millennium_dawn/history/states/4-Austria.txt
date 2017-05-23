@@ -3,15 +3,17 @@ state={
 	id=4
 	name="STATE_4"
 	manpower = 3995983
+	
 	resources={
-		oil=2
-		steel=3
+		tungsten = 2
+		steel = 41
 	}
 	
 	state_category = large_city
 	
 	history={
 		owner = AUS
+		add_core_of = AUS
 		victory_points = {
 			11666 20
 		}
@@ -20,11 +22,10 @@ state={
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 3
-			industrial_complex = 6
-			air_base = 6
+			industrial_complex = 5
+			arms_factory = 2
+			air_base = 7
 		}
-		add_core_of = AUS
 	}
 
 	provinces={

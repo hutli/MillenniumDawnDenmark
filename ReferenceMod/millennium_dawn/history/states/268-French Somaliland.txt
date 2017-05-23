@@ -9,12 +9,11 @@ state={
 	history={
 		owner = DJI
 		buildings = {
-			infrastructure = 9
-			industrial_complex = 7
-			arms_factory = 3
-			air_base = 2
+			infrastructure = 5
+			industrial_complex = 3
+			air_base = 1
 			8124 = {
-				naval_base = 2
+				naval_base = 1
 			}
 		}
 		victory_points = { 8124 5 }

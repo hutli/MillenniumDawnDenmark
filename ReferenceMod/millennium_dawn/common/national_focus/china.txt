@@ -3026,7 +3026,7 @@
          create_country_leader = {
          name = "Xu Wenli"
          desc = "POLITICIAN_PRC_XU_WENLI_DESC"
-         picture = "Portrait_PRC_Xu_Wenli.dds"
+         picture = "Xu_Wenli.dds"
          expire = "2020.1.1"
          ideology = liberalist
    
@@ -3038,7 +3038,7 @@
          create_country_leader = {
          name = "Zhang Baowen"
          desc = "POLITICIAN_PRC_ZHANG_BAOWEN_DESC"
-         picture = "Portrait_PRC_Zhang_Baowen.dds"
+         picture = "Zhang_Baowen.dds"
          expire = "2020.1.1"
          ideology = constitutionalist
    

@@ -4,12 +4,7 @@ state={
 	name="STATE_461"
 	manpower = 15197719
 	
-	resources = {
-		oil = 6
-		steel = 21
-		chromium = 1
-		tungsten = 1
-	}
+	
 	
 	state_category = city
 	
@@ -20,14 +15,12 @@ state={
 			7069 10 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 5
 			arms_factory = 2
-			dockyard = 2
+			dockyard = 1
 			air_base = 4
-			7069 = {
-				naval_base = 4
-			}
+			7069 = { naval_base = 4 }
 		}
 	}
 

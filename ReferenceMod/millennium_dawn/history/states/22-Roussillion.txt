@@ -4,13 +4,7 @@ state={
 	name="STATE_22" # Languedoc
 	manpower = 2691200
 	
-	
 	state_category = town
-	
-	resources={
-		steel=136
-		aluminium=96
-	}
 
 	history={
 		owner = FRA
@@ -19,7 +13,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 2
 			air_base = 2
 		}
 		add_core_of = FRA

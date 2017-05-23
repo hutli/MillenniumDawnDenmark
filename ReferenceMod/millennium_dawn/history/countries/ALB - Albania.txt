@@ -106,21 +106,13 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 24
-		}
-		social_democrat = {
-			popularity = 31
-		}
-		progressive = {
-			popularity = 3
-		}
-		democratic_socialist = {
-			popularity = 18
-		}
+		nationalist = { popularity = 1 }
+		reactionary = { popularity = 2 }
+		conservative = { popularity = 23 }
+		social_democrat = { popularity = 31 }
+		progressive = { popularity = 3 }
+		democratic_socialist = { popularity = 16 }
+		communist = { popularity = 2 }
 	}
 	
 	ruling_party = social_democrat
@@ -134,37 +126,20 @@ set_country_flag = sunni_islam
 
 create_country_leader = {
 	name = "Rexhep Meidani"
-	desc = "POLITICIAN_ALB_REXHEP_MEIDANI_DESC"
-	picture = "Portrait_ALB_Rexhep_Meidani.dds"
-	expire = "2020.1.1"
+	picture = "Rexhep_Meidani.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
 }
 	
 create_country_leader = {
 	name = "Leka I"
-	picture = "Portrait_ALB_Leka_I.dds"
-	expire = "2020.1.1"
+	picture = "Leka_I.dds"
 	ideology = absolute_monarchist
-	
-	traits = {
-	}
 }
 
 2016.1.1 = {
-
 	create_country_leader = {
 		name = "Bujar Nishani"
-		desc = "POLITICIAN_ALB_BUJAR_NISHANI_DESC"
-		picture = "Portrait_ALB_Bujar_Nishani.dds"
-		expire = "2020.1.1"
+		picture = "Bujar_Nishani.dds"
 		ideology = social_democrat_ideology
-		
-		traits = {
-		}
 	}
-	
 }

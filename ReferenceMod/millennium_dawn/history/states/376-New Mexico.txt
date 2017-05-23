@@ -6,17 +6,16 @@ state={
 	
 	state_category = large_town
 	
-	resources={
-		oil=20
-		aluminium=52
+	resources = {
+		steel = 5
 	}
-
 
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 6
+			industrial_complex = 4
+			arms_factory = 2
 			air_base = 6
 		}
 		add_core_of = USA

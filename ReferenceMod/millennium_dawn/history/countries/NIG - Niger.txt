@@ -138,13 +138,13 @@ set_politics = {
 
 create_country_leader = {
 	name = "Mamadou Tandja"
-	picture = "Portrait_NIG_Mamadou_Tandja.dds"
+	picture = "Mamadou_Tandja.dds"
 	ideology = right_wing_conservative
 }
 
 create_country_leader = {
 	name = "Mahamadou Issoufou"
-	picture = "Portrait_NIG_Mahamadou_Issoufou.dds"
+	picture = "Mahamadou_Issoufou.dds"
 	ideology = democratic_socialist_ideology
 }
 

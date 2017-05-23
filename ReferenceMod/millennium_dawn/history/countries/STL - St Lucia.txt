@@ -121,13 +121,13 @@ set_politics = {
 
 create_country_leader = {
 	name = "Allen Chastanet"
-	picture = "Portrait_STL_Allen_Chastanet.dds"
+	picture = "Allen_Chastanet.dds"
 	ideology = fiscal_conservative
 }
 
 create_country_leader = {
 	name = "Kenny Anthony"
-	picture = "Portrait_STL_Kenny_Anthony.dds"
+	picture = "Kenny_Anthony.dds"
 	ideology = social_democrat_ideology
 }
 

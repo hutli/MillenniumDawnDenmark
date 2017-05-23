@@ -142,32 +142,16 @@ set_politics = {
 	elections_allowed = yes
 }
 
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Ólafur Ragnar Grímsson"
 	ideology = centrist
-	picture = "Portrait_ICE_Olafur_Ragnar.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Olafur_Ragnar.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Guðni Th. Jóhannesson"
-	ideology = liberalist
-	picture = "Portrait_ICE_Guoni.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
+	create_country_leader = {
+		name = "Guðni Th. Jóhannesson"
+		ideology = liberalist
+		picture = "Guoni.dds"
     }
-
-
 }

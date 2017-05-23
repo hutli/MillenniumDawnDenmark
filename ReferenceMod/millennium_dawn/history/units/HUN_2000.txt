@@ -1,16 +1,15 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Mechanized Brigade"
 	
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 0 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
+		artillery = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -22,34 +21,23 @@ division_template = {
 		motorized = { x = 0 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		recon = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
 	}
 }
 division_template = {
-	name = "Mechanized Brigade"
+	name = "Support Brigade"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 0 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 	}
 }
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-}
+
 
 units = {
 	
@@ -70,10 +58,9 @@ units = {
 	division = {
 		name = "Hungarian Army Support Brigade"
 		location = 9660
-		division_template = "Infantry Brigade"
+		division_template = "Support Brigade"
 		start_experience_factor = 0.3
 	}
-	
 }
 
 ### Air OOB ###

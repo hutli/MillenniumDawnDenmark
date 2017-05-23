@@ -126,6 +126,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Brahim Ghali"
-	picture = "Portrait_WSH_Brahim_Ghali.dds"
+	picture = "Brahim_Ghali.dds"
 	ideology = counter_progressive_democrat
 }

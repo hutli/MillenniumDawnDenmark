@@ -1,17 +1,13 @@
 state={
 	id=667
 	name="STATE_667"
-	resources={
-		rubber=16
-	}
-
+	
 	history={
 		owner = INS
 		add_core_of = INS
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
-			arms_factory = 1
+			industrial_complex = 3
 			dockyard = 1
 			1355 = { naval_base = 1 }
 			12234 = { naval_base = 1 }

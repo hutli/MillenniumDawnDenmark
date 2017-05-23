@@ -126,34 +126,16 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Tung Chee-hwa"
 	ideology = christian_democrat
-	picture = "Portrait_HKN_Tung_Chee_hwa.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Tung_Chee_Hwa.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Leung Chun-ying"
-	ideology = constitutionalist
-	picture = "Portrait_HKN_Leung_Chun_ying.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Leung Chun-ying"
+		ideology = constitutionalist
+		picture = "Leung_Chun_Ying.dds"
+	}
 }

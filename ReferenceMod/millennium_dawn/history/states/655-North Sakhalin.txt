@@ -5,6 +5,11 @@ state={
 	manpower = 232492
 	
 	state_category = pastoral
+	
+	resources = {
+		oil=100
+	}
+	
 	history={
 		owner = SOV
 		add_core_of = SOV

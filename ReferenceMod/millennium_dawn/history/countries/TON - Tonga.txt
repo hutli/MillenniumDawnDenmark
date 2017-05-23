@@ -6,8 +6,6 @@ set_research_slots = 4
 set_convoys = 500
 set_national_unity = 0.75
 
-set_country_flag = starting_stability_high
-
 set_country_flag = country_language_english
 
 set_technology = {
@@ -103,40 +101,46 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
+		monarchist = {
+			popularity = 40
 		}
 		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
+			popularity = 28
 		}
 		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
+			popularity = 28
 		}
 		communist = {
-			popularity = 10
+			popularity = 4
 		}
 	}
 	
-	ruling_party = conservative
+	ruling_party = monarchist
 	last_election = "1997.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Tāufaʻahau Tupou IV"
+	picture = "Taufaahau_Tupou_IV.dds"
+	ideology = absolute_monarchist
+	expire = "2006.9.10"
+}
+
+2006.9.10 = {
+	create_country_leader = {
+		name = "George Tupou V"
+		picture = "George_Tupou_V.dds"
+		ideology = absolute_monarchist
+		expire = "2012.3.18"
+	}
+}
+
+2012.3.18 = {
+	create_country_leader = {
+		name = "Tupou VI"
+		picture = "Tupou_VI.dds"
+		ideology = absolute_monarchist
+	}
 }

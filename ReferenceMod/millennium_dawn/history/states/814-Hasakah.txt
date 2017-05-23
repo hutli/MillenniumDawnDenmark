@@ -3,7 +3,7 @@ state={
 	name="STATE_814"
 	
 	resources = {
-		oil = 9
+		oil = 1
 	}
 	
 	history = {
@@ -12,13 +12,10 @@ state={
 		add_core_of = KUR
 		add_core_of = SYR
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 2
 		}
-		
 		2015.5.1 = {
 			owner = KUR
-			
 			buildings = {
 				1634 = { bunker = 1 }
 				10882 = { bunker = 1 }

@@ -117,35 +117,16 @@ add_ideas = {
 }
 
 set_politics = {
-
-        parties = {
-                fascist = {
-			popularity = 2
-                } 
-                nationalist = {
-			popularity = 10
-                }
-		reactionary = {
-			popularity = 27
-		}
-		conservative = {
-			popularity = 34
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_democrat = {
-			popularity = 15
-		}
-		progressive = {
-			popularity = 1
-                }
-		communist = {
-			popularity = 4
-
-		}
+	parties = {
+		fascist = { popularity = 2 } 
+		nationalist = { popularity = 10 } 
+		reactionary = { popularity = 27 } 
+		conservative = { popularity = 34 }
+		market_liberal = { popularity = 6 }
+		social_democrat = { popularity = 15 } 
+		progressive = { popularity = 1 } 
+		communist = { popularity = 4 }
 	}
-
 	ruling_party = conservative
 	last_election = "1998.9.25"
 	election_frequency = 48
@@ -154,64 +135,34 @@ set_politics = {
 
 create_country_leader = {
 	name = "Mikuláš Dzurinda"
-	desc = "POLITICIAN_SLO_MIKULAS_DZURINDA_DESC"
-	picture = "Portrait_SLO_Mikulas_Dzurinda.dds"
-	expire = "2050.1.1"
+	picture = "Mikulas_Dzurinda.dds"
 	ideology = christian_democrat
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Robert Fico"
-	desc = "POLITICIAN_SLO_ROBERT_FICO_DESC"
-	picture = "Portrait_SLO_Robert_Fico.dds"
-	expire = "2050.1.1"
+	picture = "Robert_Fico.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
 }
 
-2002.1.1 = {
-	add_ideas = the_euro
-}
+2002.1.1 = { add_ideas = the_euro }
+2004.1.1 = { add_ideas = { idea_eu_member } }
 
-2004.1.1 = {
-	add_ideas = {
-		idea_eu_member
-	}
-}
-
-2015.1.1 = {	
-        set_politics = {
-                ruling_party = social_democrat 
-		last_election = "2012.3.10"
-		elections_allowed = yes
+2012.1.1 = {
+	set_politics = {
 		parties = {
-			fascist = {
-			      popularity = 9
-                        } 
-                        nationalist = {
-			      popularity = 12
-                        }
-		        reactionary = {
-			      popularity = 6
-		        }
-		        conservative = {
-			      popularity = 14
-		        }
-		        market_liberal = {
-			      popularity = 18
-		        }
-		        social_democrat = {
-			      popularity = 37
-		        }
-		        progressive = {
-			      popularity = 2
-                        }
-		        communist = {
-			      popularity = 2
+			fascist = { popularity = 4 } 
+			nationalist = { popularity = 8 } 
+			reactionary = { popularity = 27 } 
+			conservative = { popularity = 20 }
+			market_liberal = { popularity = 6 }
+			social_democrat = { popularity = 29 } 
+			progressive = { popularity = 1 } 
+			communist = { popularity = 4 }
+		}
+		ruling_party = social_democrat
+		last_election = "1998.9.25"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}

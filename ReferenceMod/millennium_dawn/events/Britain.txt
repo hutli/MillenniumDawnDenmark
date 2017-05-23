@@ -213,7 +213,7 @@ country_event = {
 		add_ideas = ENG_king_charles_3
 		create_country_leader = {
 			name = "Charles III"
-			picture = "Portrait_ENG_Charles.dds"
+			picture = "Charles.dds"
 			ideology = absolute_monarchist
 		}
 	}
@@ -866,7 +866,7 @@ country_event = {
 			create_country_leader = {
 				name = "Charles III"
 				ideology = absolute_monarchist
-				picture = "Portrait_ENG_Charles.dds"
+				picture = "Charles.dds"
 			}
 		}
 	}
@@ -898,7 +898,7 @@ country_event = {
 			create_country_leader = {
 				name = "William V"
 				ideology = absolute_monarchist
-				picture = "Portrait_ENG_William.dds"
+				picture = "William.dds"
 			}
 		}
 	}

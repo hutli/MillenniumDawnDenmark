@@ -125,155 +125,150 @@ set_politics = {
 	create_country_leader = {
 		name = "Keizo Obuchi"
 		ideology = fiscal_conservative
-		picture = "Portrait_JAP_Keizo_Obuchi.dds"
+		picture = "Keizo_Obuchi.dds"
 	}
 
 	create_country_leader = {
 		name = "Naoto Kan"
-		picture = "Portrait_JAP_Naoto_Kan.dds"
+		picture = "Naoto_Kan.dds"
 		ideology = moderate
 	}
 
 	create_country_leader = {
 		name = "Ichiro Ozawa"
-		picture = "Portrait_JAP_Ichiro_Ozawa.dds"
+		picture = "Ichiro_Ozawa.dds"
 		ideology = libertarian
 	}
 
 	create_country_leader = {
 		name = "Takenori Kanzaki"
-		picture = "Portrait_JAP_Takenori_Kanzaki.dds"
+		picture = "Takenori_Kanzaki.dds"
 		ideology = counter_progressive_democrat
 	}
 
 	create_country_leader = {
 		name = "Tetsuzo Fuwa"
-		picture = "Portrait_JAP_Tetsuzo_Fuwa.dds"
+		picture = "Tetsuzo_Fuwa.dds"
 		ideology = marxist
 	}
 
 	create_country_leader = {
 		name = "Takako Doi"
-		picture = "Portrait_JAP_Takako_Doi.dds"
+		picture = "Takako_Doi.dds"
 		ideology = social_democrat_ideology
 	}
 
 	create_country_leader = {
 		name = "Yuko Mori"
-		picture = "Portrait_JAP_Yuko_Mori.dds"
+		picture = "Yuko_Mori.dds"
 		ideology = green
 	}
 
 	create_country_leader = {
 		name = "Keiko Itokazu"
-		picture = "Portrait_JAP_Keiko_Itokazu.dds"
+		picture = "Keiko_Itokazu.dds"
 		ideology = democratic_socialist_ideology
 	}
 
 	create_country_leader = {
 		name = "Noboyuki Suzuki"
-		picture = "Portrait_JAP_Nobuyuki_Suzuki.dds"
+		picture = "Nobuyuki_Suzuki.dds"
 		ideology = fascist_ideology
 	}
 
 	create_country_leader = {
 		name = "Kyoko Nakayama"
-		picture = "Portrait_JAP_Kyoko_Nakayama.dds"
+		picture = "Kyoko_Nakayama.dds"
 		ideology = national_democrat
 	}
 	
 	create_country_leader = {
 		name = "Akihito"
-		picture = "Portrait_JAP_Akihito.dds"
+		picture = "Akihito.dds"
 		ideology = absolute_monarchist
 	}
 
 	create_corps_commander = {
 		name = "Kiyofumi Iwata"
-		picture = "Portrait_JAP_general_Kiyofumi_Iwata.dds"
+		picture = "generals/Kiyofumi_Iwata.dds"
 		skill = 2
 	}
 
 	create_corps_commander = {
 		name = "Toshiya Okabe"
-		picture = "Portrait_JAP_general_Toshiya_Okabe.dds"
+		picture = "generals/Toshiya_Okabe.dds"
 		skill = 2
 	}
 
 	create_corps_commander = {
 		name = "Makiya Ota"
-		picture = "Portrait_JAP_general_Makiya_Ota.dds"
+		picture = "generals/Makiya_Ota.dds"
 		skill = 1
 	}
 
 	create_corps_commander = {
 		name = "Kazuaki Sumida"
-		picture = "Portrait_JAP_general_Kazuaki_Sumida.dds"
+		picture = "generals/Kazuaki_Sumida.dds"
 		skill = 1
 	}
 
 	create_corps_commander = {
 		name = "Takayuki Onozuka"
-		picture = "Portrait_JAP_general_Takayuki_Onozuka.dds"
+		picture = "generals/Takayuki_Onozuka.dds"
 		skill = 1
 	}
 
 	create_corps_commander = {
 		name = "Jiro Hiroe"
-		picture = "Portrait_JAP_general_Jiro_Hiroe.dds"
+		picture = "generals/Jiro_Hiroe.dds"
 		skill = 1
 	}
 
 	create_corps_commander = {
 		name = "Ichiro Kawasaki"
-		picture = "Portrait_JAP_general_Ichiro_Kawasaki.dds"
+		picture = "generals/Ichiro_Kawasaki.dds"
 		skill = 1
 	}
 
 	create_corps_commander = {
 		name = "Masahiro Nagai"
-		picture = "Portrait_JAP_general_Masahira_Nagai.dds"
+		picture = "generals/Masahira_Nagai.dds"
 		skill = 1
 	}
 
 	create_corps_commander = {
 		name = "Shigeru Kobayashi"
-		picture = "Portrait_JAP_general_Shigeru_Kobayashi.dds"
+		picture = "generals/Shigeru_Kobayashi.dds"
 		skill = 1
 	}
 
 	create_navy_leader = {
 		name = "Katsutoshi Kawano"
-		picture = "Portrait_JAP_admiral_Katsutoshi_Kawano.dds"
-		traits = { }
-		skill = 2
+		picture = "admirals/Katsutoshi_Kawano.dds"
+		skill = 3
 	}
 
 	create_navy_leader = {
 		name = "Tomohisa Takei"
-		picture = "Portrait_JAP_admiral_Tomohisa_Takei.dds"
-		traits = { }
+		picture = "admirals/Tomohisa_Takei.dds"
 		skill = 2
 	}
 
 	create_navy_leader = {
 		name = "Yoshihisa Inui"
-		picture = "Portrait_JAP_admiral_Yoshihisa_Inui.dds"
-		traits = { }
+		picture = "admirals/Yoshihisa_Inui.dds"
 		skill = 2
 	}
 
 	create_navy_leader = {
 		name = "Takashi Nishimura"
-		picture = "Portrait_JAP_admiral_Takashi_Nishimura.dds"
-		traits = { }
+		picture = "admirals/Takashi_Nishimura.dds"
 		skill = 1
 	}
 
 	create_navy_leader = {
 		name = "Keiji Akahoshi"
-		picture = "Portrait_JAP_admiral_Keiji_Akahoshi.dds"
-		traits = { }
+		picture = "admirals/Keiji_Akahoshi.dds"
 		skill = 1
 	}
 }
@@ -350,67 +345,38 @@ set_politics = {
 
 	create_country_leader = {
 		name = "Shinzo Abe"
-		expire = "2030.1.1"
 		ideology = fiscal_conservative
-		picture = "Portrait_JAP_Shinzo_Abe.dds"
-		
-		traits = {
-		
-		}
-	}
-
-	create_country_leader = {
-		name = "Ichiro Ozawa"
-		expire = "2020.1.1"
-		picture = "Portrait_JAP_Ichiro_Ozawa.dds"
-		ideology = green
-		traits = {
-		}
+		picture = "Shinzo_Abe.dds"
 	}
 
 	create_country_leader = {
 		name = "Banri Kaieda"
-		expire = "2020.1.1"
-		picture = "Portrait_JAP_Banri_Kaieda.dds"
+		picture = "Banri_Kaieda.dds"
 		ideology = liberalist
-		traits = {
-		}
 	}
 
 	create_country_leader = {
 		name = "Tadamato Yoshida"
-		expire = "2020.1.1"
-		picture = "Portrait_JAP_Tadamato_Yoshida.dds"
+		picture = "Tadamato_Yoshida.dds"
 		ideology = social_democrat_ideology
-		traits = {
-		}
 	}
 
 	create_country_leader = {
 		name = "Natsuo Yamaguchi"
-		expire = "2020.1.1"
-		picture = "Portrait_JAP_Natsuo_Yamaguchi.dds"
+		picture = "Natsuo_Yamaguchi.dds"
 		ideology = counter_progressive_democrat
-		traits = {
-		}
 	}
 
 	create_country_leader = {
 		name = "Kazuo Shii"
-		expire = "2020.1.1"
-		picture = "Portrait_JAP_Kazuo_Shii.dds"
+		picture = "Kazuo_Shii.dds"
 		ideology = marxist
-		traits = {
-		}
 	}
 
 	create_country_leader = {
 		name = "Toru Hashimoto"
-		expire = "2020.1.1"
-		picture = "Portrait_JAP_Toru_Hashimoto.dds"
+		picture = "Toru_Hashimoto.dds"
 		ideology = libertarian
-		traits = {
-		}
 	}
 
 }

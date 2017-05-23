@@ -142,35 +142,18 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-2000.1.1 = {
-
-
-     create_country_leader = {
+create_country_leader = {
 	name = "Francisco Flores"
 	ideology = centrist
-	picture = "Portrait_ELS_FRANCISCO_FLORES.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	picture = "Francisco_Flores.dds"
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Salvador Sánchez Cerén"
-	ideology = liberalist
-	picture = "Portrait_ELS_SALVADOR_SANCHEZ.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Salvador Sánchez Cerén"
+		ideology = liberalist
+		picture = "Salvador_Sanchez.dds"
+	}
 }
 
 

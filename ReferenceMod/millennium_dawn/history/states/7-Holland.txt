@@ -2,33 +2,25 @@
 state={
 	id=7
 	name="STATE_7"
+	
 	resources={
-		steel=16.000
-		aluminium=8.000
+		oil=3
+		steel = 26
 	}
 
 	history={
 		owner = HOL
 		add_core_of = HOL
-		victory_points = {
-			391 20 
-		}
-		victory_points = {
-			3211 10 
-		}
+		victory_points = { 391 20 }
+		victory_points = { 3211 10 }
 		buildings = {
 			infrastructure = 8
-			industrial_complex = 3
-			arms_factory = 3
-			dockyard = 3
 			air_base = 5
-			3314 = {
-				naval_base = 10
-
-			}
-
+			industrial_complex = 6
+			arms_factory = 1
+			dockyard = 2
+			3314 = { naval_base = 10 }
 		}
-
 	}
 
 	provinces={

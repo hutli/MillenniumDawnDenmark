@@ -137,11 +137,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Sandor Egeresi"
-	desc = "POLITICIAN_VOJ_SANDOR_EGERESI_DESC"
-	picture = "Portrait_VOJ_Sandor_Egeresi.dds"
-	expire = "2050.1.1"
-	ideology = gaullist
-	traits = {
-	
-	}
+	picture = "Sandor_Egeresi.dds"
+	ideology = fiscal_conservative
 }

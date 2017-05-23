@@ -2,12 +2,17 @@
 state={
 	id=80
 	name="STATE_80"
+	
+	resources = {
+		steel = 4
+	}
 
 	history={
 		owner = UKR
+		add_core_of = UKR
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 1
+			infrastructure = 3
+			air_base = 1
 		}
 	}
 

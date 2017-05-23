@@ -144,7 +144,7 @@ set_politics = {
 create_country_leader = {
 	name = "Jean-Bertrand Aristide"
 	ideology = counter_progressive_democrat
-	picture = "Portrait_HAI_Jean_Bertrand_Aristide.dds"
+	picture = "Jean_Bertrand_Aristide.dds"
 }
 
 2010.1.1 = { #Haitian Earthquake
@@ -156,7 +156,7 @@ create_country_leader = {
 	create_country_leader = {
 		name = "Jocelerme Privert"
 		ideology = counter_progressive_democrat
-		picture = "Portrait_HAI_Jocelerme_Privert.dds"
+		picture = "Jocelerme_Privert.dds"
 	}
 }
 

@@ -2,15 +2,17 @@
 state={
 	id=732
 	name="STATE_732"
+	
+	resources = {
+		aluminium = 11
+	}
 
 	history={
 		owner = TJI
+		add_core_of = TJI
 		buildings = {
 			infrastructure = 1
-
 		}
-		add_core_of = TJI
-
 	}
 
 	provinces={

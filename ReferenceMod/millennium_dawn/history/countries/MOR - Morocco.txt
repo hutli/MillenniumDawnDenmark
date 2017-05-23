@@ -142,20 +142,20 @@ set_politics = {
 create_country_leader = {
 	name = "Abderramán Yusufi"
 	ideology = counter_progressive_democrat
-	picture = "Portrait_MOR_Abderraman_Yusufi.dds"
+	picture = "Abderraman_Yusufi.dds"
 }
 
 create_country_leader = {
 	name = "Mohammed VI"
 	ideology = absolute_monarchist
-	picture = "Portrait_MOR_Mohammed_VI.dds"
+	picture = "Mohammed_VI.dds"
 }
 
 2010.1.1 = {
 	create_country_leader = {
 		name = "Abdelilah Benkirán"
 		ideology = counter_progressive_democrat
-		picture = "Portrait_MOR_Abdelilah_Benkiran.dds"
+		picture = "Abdelilah_Benkiran.dds"
 	}
 }
 

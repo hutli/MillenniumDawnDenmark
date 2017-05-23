@@ -5,11 +5,10 @@ state={
 
 	history={
 		owner = CHD
+		add_core_of = CHD
 		buildings = {
 			infrastructure = 1
-
 		}
-
 	}
 
 	provinces={

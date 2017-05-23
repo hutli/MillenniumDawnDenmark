@@ -139,13 +139,13 @@ set_politics = {
 create_country_leader = {
 	name = "Maaouya Ould Sid'Ahmed Taya"
 	ideology = liberalist
-	picture = "Portrait_MRT_Maaouya_Ould_Sid_Ahmed_Taya.dds"
+	picture = "Maaouya_Ould_Sid_Ahmed_Taya.dds"
 }
 
 create_country_leader = {
 	name = "Mohamed Ould Abdel Aziz"
 	ideology = oligarchist
-	picture = "Portrait_MRT_Mohamed_Ould_Abdel_Aziz.dds"
+	picture = "Mohamed_Ould_Abdel_Aziz.dds"
 }
 
 2015.1.1 = {

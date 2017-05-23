@@ -136,14 +136,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Ali Abdullah Saleh"
-	picture = "Portrait_YEM_Ali_Abdullah_Saleh.dds"
+	picture = "Ali_A_Saleh.dds"
 	ideology = oligarchist
 }
 
 2012.1.1 = {
 	create_country_leader = {
 		name = "Abd Rabbuh Mansur Hadi"
-		picture = "Portrait_YEM_Abd_Rabbuh_Mansuh_Hadi.dds"
+		picture = "Abd_RM_Hadi.dds"
 		ideology = oligarchist
 	}
 }

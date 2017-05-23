@@ -2,10 +2,9 @@
 state={
 	id=60
 	name="STATE_60"
-	resources={
-		steel=11.000
-		chromium=4.000
-		tungsten=4.000
+	
+	resources = {
+		steel = 4
 	}
 
 	history={
@@ -15,9 +14,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
-			industrial_complex = 4
-
+			industrial_complex = 1
+			air_base = 2
 		}
 		add_core_of = GER
 

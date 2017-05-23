@@ -53,12 +53,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Bashar al-Assad"
 	        ideology = autocrat
-	        picture = "Portrait_SYR_Bashar_Al_Assad.dds"
-	        expire = "2020.1.1"
-	 
-	        traits = {
-	
-	        }
+	        picture = "Bashar_Al_Assad.dds"
         }
 	}
 }

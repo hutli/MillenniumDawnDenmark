@@ -4,32 +4,29 @@ state=
 	name="STATE_422"
 	manpower = 22053400
 	
-	state_category = large_town
+	state_category = large_city
 
 	resources={
-		rubber=116
+		rubber = 28
 	}
 
 	history={
 		owner = SRI
+		add_core_of = SRI
+		
 		victory_points = { 10201 1 }
 		victory_points = { 7344 3 }
+		
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 1
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 2
+			dockyard = 1
 			air_base = 3
-			10201 = {
-				naval_base = 3
-			}
-			7344 = {
-				naval_base = 7
-			}
-			7260 = {
-				naval_base = 3
-			}
+			10201 = { naval_base = 3 }
+			7344 = { naval_base = 7 }
+			7260 = { naval_base = 3 }
 		}
-
 	}
 	
 	provinces={

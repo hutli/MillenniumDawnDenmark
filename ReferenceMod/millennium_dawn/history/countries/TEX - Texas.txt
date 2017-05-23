@@ -118,12 +118,12 @@ set_politics = {
 
 create_country_leader = {
 	name = "Rick Perry"
-	picture = "Portrait_TEX_Rick_Perry.dds"
+	picture = "Rick_Perry.dds"
 	ideology = right_wing_conservative
 }
 
 create_country_leader = {
 	name = "Gilberto Hinojosa"
-	picture = "Portrait_TEX_Gilberto_Hinojosa.dds"
+	picture = "Gilberto_Hinojosa.dds"
 	ideology = liberalist
 }

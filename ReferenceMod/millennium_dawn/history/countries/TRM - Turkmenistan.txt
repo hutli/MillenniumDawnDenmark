@@ -127,14 +127,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Saparmyrat Nyyazow"
-	picture = "Portrait_TRM_Saparmyrat_Nyyazow.dds"
+	picture = "Saparmyrat_Nyyazow.dds"
 	ideology = oligarchist
 }
 
 2006.1.1 = {
 	create_country_leader = {
 		name = "Gurbanguly Berdimuhamedow"
-		picture = "Portrait_TRM_Gurbanguly_Berdimuhamedow.dds"
+		picture = "Gurbanguly_Berdimuhamedow.dds"
 		ideology = oligarchist
 	}
 }

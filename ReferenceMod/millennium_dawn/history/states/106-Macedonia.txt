@@ -2,22 +2,21 @@
 state={
 	id=106
 	name="STATE_106"
-	resources={
-		chromium=7
-		aluminium=11
-		tungsten=1
+	
+	resources = {
+		steel = 1
 	}
-
+	
 	history={
 		owner = MAC
+		add_core_of = MAC
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 4
+			industrial_complex = 3
+			arms_factory = 1
 			air_base = 2
 		}
 		victory_points = { 3882 5 }
-		add_core_of = MAC
-
 	}
 
 	provinces={

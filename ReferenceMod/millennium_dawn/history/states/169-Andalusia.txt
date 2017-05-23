@@ -5,6 +5,12 @@ state={
 	manpower = 4175163
 	
 	state_category = city
+	
+	resources = {
+		tungsten=5
+		oil=4
+		steel = 6
+	}
 
 	history={
 		owner = SPR
@@ -19,8 +25,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 2
-			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
 			air_base = 3
 			1048 = {
 				naval_base = 5

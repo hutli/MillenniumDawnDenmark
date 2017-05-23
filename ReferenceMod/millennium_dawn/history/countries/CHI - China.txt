@@ -152,148 +152,97 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Lee Teng-hui"
-	desc = "POLITICIAN_ROC_LEE_TENG-HUI_DESC"
-	picture = "Portrait_ROC_Lee_Teng-hui.dds"
-	expire = "2010.1.1"
+	picture = "Lee_Teng_Hui.dds"
 	ideology = constitutionalist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Chen Shui-bian"
-	desc = "POLITICIAN_ROC_CHEN_SHUI-BIAN_DESC"
-	picture = "Portrait_ROC_Chen_Shui-bian.dds"
-	expire = "2010.1.1"
+	picture = "Chen_Shui_Bian.dds"
 	ideology = liberalist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Hsu Hsin-ying"
-	desc = "POLITICIAN_ROC_HSU_HSIN-YING_DESC"
-	picture = "Portrait_ROC_Hsu_Hsin-ying.dds"
-	expire = "2020.1.1"
+	picture = "Hsu_Hsin_Ying.dds"
 	ideology = counter_progressive_democrat
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Huang Kun-huei"
-	desc = "POLITICIAN_ROC_HUANG_KUN-HUEI_DESC"
-	picture = "Portrait_ROC_Huang_Kun-huei.dds"
-	expire = "2020.1.1"
+	picture = "Huang_Kun_Huei.dds"
 	ideology = libertarian
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Fan Yun"
-	desc = "POLITICIAN_ROC_FAN_YUN_DESC"
-	picture = "Portrait_ROC_Fan_Yun.dds"
-	expire = "2020.1.1"
+	picture = "Fan_Yun.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Huang Kuo-chang"
-	desc = "POLITICIAN_ROC_HUANG_KUO-CHANG_DESC"
-	picture = "Portrait_ROC_Huang_Kuo-chang.dds"
-	expire = "2020.1.1"
+	picture = "Huang_Kuo_Chang.dds"
 	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Wu Rongyuan"
-	desc = "POLITICIAN_ROC_WU_RONGYUAN_DESC"
-	picture = "Portrait_ROC_Wu_Rongyuan.dds"
-	expire = "2020.1.1"
+	picture = "Wu_Rongyuan.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Wang Lao-yang"
-	desc = "POLITICIAN_ROC_WANG_Lao-yang_DESC"
-	picture = "Portrait_ROC_Wang_Lao-yang.dds"
-	expire = "2020.1.1"
+	picture = "Wang_Lao_Yang.dds"
 	ideology = maoist
-	
-	traits = {
-	
-	}
+}
+
+create_corps_commander = {
+	name = "Yen Teh-fa"
+	picture = "generals/Yen_Teh_Fa.dds"
+	skill = 2
 }
 
 create_corps_commander = {
 	name = "Chen Chuan-kuan"
-	picture = "Portrait_ROC_general_Chen_Chuan-kuan.dds"
+	picture = "generals/Chen_Chuan_Kuan.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Chiu_Kuo-cheng"
-	picture = "Portrait_ROC_general_Chiu_Kuo-cheng.dds"
+	picture = "generals/Chiu_Kuo_Cheng.dds"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Lee Shying-jow"
-	picture = "Portrait_ROC_general_Lee_Shying-jow.dds"
+	picture = "generals/Lee_Shying_Jow.dds"
 	skill = 1
 }
 
 create_corps_commander = {
-	name = "Yen Teh-fa"
-	picture = "Portrait_ROC_general_Yen_Teh-fa.dds"
-	skill = 2
-}
-
-create_corps_commander = {
 	name = "Chai Hui-chen"
-	picture = "Portrait_ROC_general_Chai_Hui-chen.dds"
+	picture = "generals/Chai_Hui_Chen.dds"
 	skill = 1
 }
 
 create_navy_leader = {
 	name = "Kao Kuang-chi"
-		picture = "Portrait_ROC_admiral_Kao_Kuang-chi.dds"
-	traits = { }
+	picture = "admirals/Kao_Kuang_Chi.dds"
 	skill = 2
 }
 
 create_navy_leader = {
 	name = "Lee Hsi-min"
-		picture = "Portrait_ROC_admiral_Lee_Hsi-min.dds"
-	traits = { }
+	picture = "admirals/Lee_Hsi_Min.dds"
 	skill = 1
 }
 
 create_navy_leader = {
 	name = "Lin Chen-yi"
-		picture = "Portrait_ROC_admiral_Lin_Chen-yi.dds"
-	traits = { }
+	picture = "admirals/Lin_Chen_Yi.dds"
 	skill = 1
 }
 
@@ -341,24 +290,12 @@ elections_allowed = yes
 
 create_country_leader = {
 	name = "Ma Ying-jeou"
-	desc = "POLITICIAN_ROC_MA_YING-JEOU_DESC"
-	picture = "Portrait_ROC_Ma_Ying-jeou.dds"
-	expire = "2030.1.1"
+	picture = "Ma_Ying_Jeou.dds"
 	ideology = constitutionalist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Tsai Ing-wen"
-	desc = "POLITICIAN_ROC_TSAI_ING-WEN_DESC"
-	picture = "Portrait_ROC_Tsai_Ing-wen.dds"
-	expire = "2030.1.1"
+	picture = "Tsai_Ing_Wen.dds"
 	ideology = liberalist
-	
-	traits = {
-	
-	}
 }

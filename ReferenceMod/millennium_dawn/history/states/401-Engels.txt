@@ -4,19 +4,14 @@ state={
 	name="STATE_401"
 	manpower = 1027795
 	
-	state_category = rural
-	
-	resources={
-		steel=40
-		tungsten=34
-	}
+	state_category = pastoral
 
 	history={
 		owner = SOV
-		buildings = {
-			infrastructure = 4
-		}
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+		}
 	}
 
 	provinces={

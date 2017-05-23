@@ -4,7 +4,11 @@ state={
 	name="STATE_174"
 	manpower = 1566041
 	
-	state_category = large_town
+	state_category = town
+	
+	resources = {
+		tungsten = 9
+	}
 
 	history={
 		owner = SPR
@@ -13,8 +17,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
-			industrial_complex = 1
 			11707 = {
 				naval_base = 1
 			}

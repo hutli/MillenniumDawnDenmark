@@ -4,10 +4,6 @@ state={
 	provinces={
 		13221 
 	}
-	
-	resources = {
-		steel = 2
-	}
 		
 	history = {
 		owner = ISR

@@ -1,13 +1,10 @@
-
 state={
 	id=469
 	name="STATE_469"
 	
 	resources = {
-		oil = 74
-		steel = 13
-		tungsten = 3
-		chromium = 3
+		oil = 54
+		steel = 2
 	}
 
 	history={
@@ -15,7 +12,7 @@ state={
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
-
+			air_base = 1
 		}
 		add_core_of = CAN
 

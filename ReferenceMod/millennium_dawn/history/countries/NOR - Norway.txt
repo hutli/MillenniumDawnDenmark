@@ -136,6 +136,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Kjell Magne Bondevik"
-	picture = "Portrait_NOR_Kjell_Magne_Bondevik.dds"
+	picture = "Kjell_Magne_Bondevik.dds"
 	ideology = christian_democrat
+}
+
+2016.1.1 = {
+	create_country_leader = {
+		name = "Erna Solberg"
+		picture = "Erna_Solberg.dds"
+		ideology = christian_democrat
+	}
 }

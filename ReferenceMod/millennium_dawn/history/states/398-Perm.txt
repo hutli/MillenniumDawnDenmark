@@ -3,17 +3,17 @@ state={
 	id=398
 	name="STATE_398"
 	manpower = 2835276
-	state_category = rural
+	state_category = pastoral
 	
 	resources={
-		aluminium = 10
-		oil = 51
+		oil=25
 	}
 
 	history={
 		owner = SOV
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1
 			air_base = 2
 		}
 		victory_points = {

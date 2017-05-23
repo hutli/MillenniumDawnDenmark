@@ -137,6 +137,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Alexander Lukashenko"
-	picture = "Portrait_BLR_Alexander_Lukashenko.dds"
+	picture = "Alexander_Lukashenko.dds"
 	ideology = oligarchist
 }

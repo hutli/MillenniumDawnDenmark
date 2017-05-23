@@ -7,11 +7,12 @@ state={
 	state_category = wasteland
 	
 	resources={
-		oil=26
+		oil=115
 	}
 
 	history={
 		owner = ALG
+		add_core_of = ALG
 		buildings = {
 			infrastructure = 0
 			air_base = 1

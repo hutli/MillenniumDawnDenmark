@@ -178,124 +178,107 @@ add_opinion_modifier = {
 
 create_country_leader = {
 	name = "Anwar-ul Ghani"
-	picture = "Portrait_NZL_ANWAR-UL_GHANI.dds"
+	picture = "Anwar_ul_Ghani.dds"
 	ideology = islamic_republican
 }
 
 create_country_leader = {
 	name = "Kyle Chapman"
-	picture = "Portrait_NZL_Kyle_Chapman.dds"
+	picture = "Kyle_Chapman.dds"
 	ideology = national_socialist
 }
 
 create_country_leader = {
 	name = "Anton Foljambe"
-	picture = "Portrait_NZL_Anton_Foljambe.dds"
+	picture = "Anton_Foljambe.dds"
 	ideology = national_democrat
 }
 
 create_country_leader = {
 	name = "Anne I of Windsor"
-	picture = "Portrait_NZL_Anne_I.dds"
+	picture = "Anne.dds"
 	ideology = absolute_monarchist
 }
 
 create_country_leader = {
 	name = "Winston Peters"
-	picture = "Portrait_NZL_Winston_Peters.dds"
+	picture = "Winston_Peters.dds"
 	ideology = counter_progressive_democrat
 }
 
 create_country_leader = {
 	name = "Jennifer Shipley"
-	picture = "Portrait_NZL_Jennifer_Shipley.dds"
+	picture = "Jennifer_Shipley.dds"
 	ideology = fiscal_conservative
 }
 
 create_country_leader = {
 	name = "Richard Prebble"
-	picture = "Portrait_NZL_Richard_Prebble.dds"
+	picture = "Richard_Prebble.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Rod Donald"
-	picture = "Portrait_NZL_Rod_Donald.dds"
+	picture = "Rod_Donald.dds"
 	ideology = green
 }
 
 create_country_leader = {
 	name = "Peter Dunne"
-	picture = "Portrait_NZL_Peter_Dunne.dds"
+	picture = "Peter_Dunne.dds"
 	ideology = centrist
 }
 
 create_country_leader = {
 	name = "Helen Clark"
-	picture = "Portrait_NZL_Helen_Clark.dds"
+	picture = "Helen_Clark.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Angeline Greensill"
-	picture = "Portrait_NZL_Angeline_Greensill.dds"
+	picture = "Angeline_Greensill.dds"
 	ideology = democratic_socialist_ideology
 }
+
 create_country_leader = {
 	name = "Annalucia Vermunt"
-	picture = "Portrait_NZL_Annalucia_Vermunt.dds"
+	picture = "Annalucia_Vermunt.dds"
 	ideology = leninist
 }
 
 create_corps_commander = {
 	name = "Richard Rhys Jones"
-	picture = "Portrait_NZL_general_Richard_Rhys_Jones.dds"
-	skill = 1
+	picture = "generals/Richard_R_Jones.dds"
+	skill = 2
 }
 
 create_navy_leader = {
 	name = "John Martin"
-	picture = "Portrait_NZL_admiral_John_Martin.dds"
+	picture = "admirals/John_Martin.dds"
 	skill = 1
 }
 
 2001.10.8 = {
 	create_country_leader = {
 		name = "Bill English"
-		desc = "POLITICIAN_NZL_BILL_ENGLISH_DESC"
-		picture = "Portrait_NZL_Bill_English.dds"
-		expire = "2020.1.1"
+		picture = "Bill_English.dds"
 		ideology = libertarian
-		
-		traits = {
-		
-		}
 	}
 }
 2003.10.28 = {
 	create_country_leader = {
 		name = "Don Brash"
-		desc = "POLITICIAN_NZL_DON_BRASH_DESC"
-		picture = "Portrait_NZL_Don_Brash.dds"
-		expire = "2020.1.1"
+		picture = "Don_Brash.dds"
 		ideology = libertarian
-		
-		traits = {
-		
-		}
 	}
 }
 2008.11.19 = {
 	create_country_leader = {
 		name = "Phil Goff"
-		desc = "POLITICIAN_NZL_PHIL_GOFF_DESC"
-		picture = "Portrait_NZL_Phil_Goff.dds"
-		expire = "2020.1.1"
+		picture = "Phil_Goff.dds"
 		ideology = social_democrat_ideology
-		
-		traits = {
-		
-		}
 	}
 }
 2011.4.30 = { 
@@ -306,44 +289,29 @@ create_navy_leader = {
     }
 	create_country_leader = {
 		name = "Hone Harawira"
-		desc = "POLITICIAN_NZL_HONE_HARAWIRA_DESC"
-		picture = "Portrait_NZL_Hone_Harawira.dds"
+		picture = "Hone_Harawira.dds"
 		ideology = democratic_socialist_ideology
-		expire = "2050.1.1"
 	}
 }
 2011.12.13 = {
     create_country_leader = {
 		name = "David Shearer"
-		desc = "POLITICIAN_NZL_DAVID_SHEARER_DESC"
-		picture = "Portrait_NZL_David_Shearer.dds"
-		expire = "2020.1.1"
+		picture = "David_Shearer.dds"
 		ideology = social_democrat_ideology
-		
-		traits = {
-		
-		}
 	}
 }
 2013.9.15 = {
     create_country_leader = {
 		name = "David Cunliffe"
-		desc = "POLITICIAN_NZL_DAVID_CUNLIFFE_DESC"
-		picture = "Portrait_NZL_David_Cunliffe.dds"
-		expire = "2020.1.1"
+		picture = "David_Cunliffe.dds"
 		ideology = social_democrat_ideology
-		
-		traits = {
-		
-		}
 	}
 }
 2014.2.1 = {
     create_corps_commander = {
 		name = "Tim Keating"
-		picture = "Portrait_NZL_general_Tim_Keating.dds"
-		skill = 2
-
+		picture = "generals/Tim_Keating.dds"
+		skill = 1
 	}
 }
 2016.6.1 = {
@@ -377,57 +345,27 @@ create_navy_leader = {
 	}
 	create_country_leader = {
 		name = "John Key"
-		desc = "POLITICIAN_NZL_JOHN_KEY_DESC"
-		picture = "Portrait_NZL_John_Key.dds"
-		expire = "2050.1.1"
+		picture = "John_Key.dds"
 		ideology = fiscal_conservative
-		
-		traits = {
-		
-		}
 	}
 	create_country_leader = {
 		name = "Andrew Little"
-		desc = "POLITICIAN_NZL_ANDREW_LITTLE_DESC"
-		picture = "Portrait_NZL_Andrew_Little.dds"
-		expire = "2050.1.1"
+		picture = "Andrew_Little.dds"
 		ideology = social_democrat_ideology
-		
-		traits = {
-		
-		}
 	}
 	create_country_leader = {
 		name = "Metiria Turei"
-		desc = "POLITICIAN_NZL_METIRIA_TUREI_DESC"
-		picture = "Portrait_NZL_Metiria_Turei.dds"
-		expire = "2050.1.1"
+		picture = "Metiria_Turei.dds"
 		ideology = green
-		
-		traits = {
-		
-		}
 	}
 	create_country_leader = {
 		name = "David Seymour"
-		desc = "POLITICIAN_NZL_DAVID_SEYMOUR_DESC"
-		picture = "Portrait_NZL_David_Seymour.dds"
-		expire = "2050.1.1"
+		picture = "David_Seymour.dds"
 		ideology = libertarian
-		
-		traits = {
-		
-		}
 	}
 	create_country_leader = {
 		name = "Hazim Arafeh"
-		desc = "POLITICIAN_NZL_HAZIM_ARAFEH_DESC"
-		picture = "Portrait_NZL_Hazim_Arafeh.dds"
-		expire = "2050.1.1"
+		picture = "Hazim_Arafeh.dds"
 		ideology = islamic_republican
-		
-		traits = {
-		
-		}
 	}
 }

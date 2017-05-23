@@ -148,14 +148,14 @@ set_politics = {
 	
 create_country_leader = {
 	name = "Orville Turnquest"
-	picture = "Portrait_BHM_Orville_Turnquest.dds"
+	picture = "Orville_Turnquest.dds"
 	ideology = liberalist 
 }
 
 2016.1.1 = {
 	create_country_leader = {
-	name = "Marguerite Pindling"
-	picture = "Portrait_BHM_Marguerite_Pindling.dds"
-	ideology = liberalist 
+		name = "Marguerite Pindling"
+		picture = "Marguerite_Pindling.dds"
+		ideology = liberalist 
 	}
 }

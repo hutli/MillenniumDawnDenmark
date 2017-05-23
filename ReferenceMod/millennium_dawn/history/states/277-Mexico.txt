@@ -6,13 +6,18 @@ state={
 	
 	state_category = megalopolis
 	
+	resources = {
+		oil = 12
+		steel = 136
+	}
+	
 	history={
 		owner = MEX
 		buildings = {
 			infrastructure = 8
-			arms_factory = 4
-			industrial_complex = 9
-			air_base = 3
+			industrial_complex = 10
+			arms_factory = 2
+			air_base = 5
 		}
 		add_core_of = MEX
 		victory_points = {

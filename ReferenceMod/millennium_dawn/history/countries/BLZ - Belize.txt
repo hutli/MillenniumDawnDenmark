@@ -145,31 +145,17 @@ set_politics = {
 
 
 2000.1.1 = {
-
-
-     create_country_leader = {
-	name = "Said Musa"
-	ideology = christian_democrat
-	picture = "Portrait_BLZ_Said_Musa.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
+	create_country_leader = {
+		name = "Said Musa"
+		ideology = christian_democrat
+		picture = "Said_Musa.dds"
+	}
 }
 
 2015.1.1 = {
-
-  create_country_leader = {
-	name = "Dean Barrow"
-	ideology = constitutionalist
-	picture = "Portrait_BLZ_DEAN_BARROW.dds"
-	expire = "2050.7.2"
-	
-	traits = {}
-
-    }
-
-
+	create_country_leader = {
+		name = "Dean Barrow"
+		ideology = constitutionalist
+		picture = "Dean_Barrow.dds"
+	}
 }

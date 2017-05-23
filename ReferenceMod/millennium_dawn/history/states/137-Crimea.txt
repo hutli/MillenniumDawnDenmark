@@ -5,17 +5,23 @@ state={
 	manpower = 2110200
 	
 	state_category = city
+	
+	resources = {
+		oil=15
+	}
 
 	history={
 		owner = UKR
+		add_core_of = UKR
 		victory_points = {
 			3686 20
 		}
 		buildings = {
-			infrastructure = 7
-			dockyard = 5
-			air_base = 7
-			3686 ={
+			infrastructure = 5
+			air_base = 2
+			industrial_complex = 2
+			dockyard = 1
+			3686 = {
 				naval_base = 10
 				coastal_bunker = 3
 			}
@@ -25,12 +31,12 @@ state={
 				bunker = 1
 			}
 		}
-		add_core_of = UKR
-		2013.1.1 = {
-			add_core_of = SOV
-		}
+		2013.1.1 = { add_core_of = SOV }
 		2014.1.1 = {
 			owner = SOV
+			buildings = {
+				dockyard = 3
+			}
 		}
 	}
 

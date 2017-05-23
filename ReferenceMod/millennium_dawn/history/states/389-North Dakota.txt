@@ -4,17 +4,18 @@ state={
 	name="STATE_389"
 	manpower = 642023
 	state_category = rural
-	resources={
-		steel=24
-		oil=23
+	
+	resources = {
+		steel = 7
+		oil = 2
 	}
-
+	
 	history={
 		owner = USA
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
 			air_base = 4
+			industrial_complex = 2
 		}
 		add_core_of = USA
 		victory_points = {

@@ -3,12 +3,10 @@ state={
 	name="STATE_714"
 	manpower = 28716198
 	
-	state_category = pastoral
+	state_category = rural
 	
 	resources = {
-		oil = 5
-		steel = 15
-		tungsten = 1
+		oil=30
 	}
 
 	history={
@@ -17,8 +15,8 @@ state={
 		add_core_of = PRC
 		add_core_of = MAN
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 5
+			industrial_complex = 3
 		}
 
 	}

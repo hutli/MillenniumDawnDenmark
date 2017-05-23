@@ -4,9 +4,7 @@ state={
 	name="STATE_411" # Isfahan
 	manpower = 7085272
 	resources={
-		oil=14
-		steel=12
-		chromium=2
+		oil = 1
 	}
 	state_category = town
 	
@@ -14,13 +12,11 @@ state={
 	history={
 		owner = PER
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 3
-			air_base = 4
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
 		}
-		victory_points = {
-			2026 1 
-		}
+		victory_points = { 2026 1 }
 		add_core_of = PER
 	}
 

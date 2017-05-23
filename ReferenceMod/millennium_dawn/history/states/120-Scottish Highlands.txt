@@ -3,14 +3,11 @@ state= {
 	name="STATE_120"
 	manpower = 265873
 	
-	state_category = town
+	state_category = rural
 
 	resources={
-		chromium=6
-		tungsten=4
-		aluminium=3
-		steel=1
-		oil=30
+		aluminium=2
+		oil=29
 	}
 
 	history=
@@ -18,9 +15,7 @@ state= {
 		owner = ENG
 		victory_points = { 11064 1 }
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
-			dockyard = 1
+			infrastructure = 3
 			air_base = 1
 			11064 = {
 				naval_base = 7

@@ -4,10 +4,11 @@ state={
 
 	history={
 		owner = UKR
+		add_core_of = UKR
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
-		}	
+			infrastructure = 3
+			air_base = 1
+		}
 	}
 
 	provinces={

@@ -129,14 +129,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Hamad of Qatar"
-	picture = "Portrait_QAT_Hamad.dds"
+	picture = "Hamad.dds"
 	ideology = absolute_monarchist
 }
 
 2010.1.1 = {
 	create_country_leader = {
 		name = "Tamim of Qatar"
-		picture = "Portrait_QAT_Tamim.dds"
+		picture = "Tamim.dds"
 		ideology = absolute_monarchist
 	}
 }

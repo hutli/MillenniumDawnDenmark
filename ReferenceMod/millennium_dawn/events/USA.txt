@@ -60,123 +60,123 @@ country_event = {
 		}
 	}
 }
-
-#Trump post-election hidden trigger
-country_event = {
-	id = usa.3
-	hidden = yes
-	
-	fire_only_once = yes
-	
-	trigger = {
-		original_tag = USA
-		has_country_flag = usa_trump_victory_2016
-		is_historical_focus_on = no
-	}
-	
-	mean_time_to_happen = {
-		days = 100
-	}
-	
-	immediate = {
-		random_list = {
-			20 = { country_event = usa.5 }
-			80 = {}
-		}
-	}
-	
-	option = {
-		name = hidden_option
-	}
-}
-
-#Clinton post-election hidden trigger
-country_event = {
-	id = usa.4
-	hidden = yes
-	
-	fire_only_once = yes
-	
-	trigger = {
-		original_tag = USA
-		has_country_flag = usa_clinton_victory_2016
-		is_historical_focus_on = no
-	}
-	
-	mean_time_to_happen = {
-		days = 100
-	}
-	
-	immediate = {
-		random_list = {
-			20 = { country_event = usa.6 }
-			80 = {}
-		}
-	}
-	
-	option = {
-		name = hidden_option
-	}
-}
-
-#The Assassination of Donald Trump
-country_event = {
-	id = usa.5
-	title = usa.5.t
-	desc = usa.5.d
-	picture = GFX_report_event_assassination
-	
-	is_triggered_only = yes
-	
-	immediate = { set_country_flag = usa_trump_assassinated }
-	
-	option = {
-		name = usa.5.o1
-		add_national_unity = -0.05
-		create_country_leader = {
-			name = "Mike Pence"
-			picture = "Portrait_USA_Mike_Pence.dds"
-			expire = "2050.1.1"
-			ideology = right_wing_conservative
-		}
-		hidden_effect = {
-			news_event = {
-				id = news.12
-				hours = 6
-			}
-		}
-	}
-}
-
-#The Assassination of Hillary Clinton
-country_event = {
-	id = usa.6
-	title = usa.6.t
-	desc = usa.6.d
-	picture = GFX_report_event_assassination
-	
-	is_triggered_only = yes
-	
-	immediate = { set_country_flag = usa_clinton_assassinated }
-	
-	option = {
-		name = usa.6.o1
-		add_national_unity = -0.05
-		create_country_leader = {
-			name = "Tim Kaine"
-			picture = "Portrait_USA_Tim_Kaine.dds"
-			expire = "2050.1.1"
-			ideology = liberalist
-		}
-		hidden_effect = {
-			news_event = {
-				id = news.12
-				hours = 6
-			}
-		}
-	}
-}
-
+#
+##Trump post-election hidden trigger
+#country_event = {
+#	id = usa.3
+#	hidden = yes
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		original_tag = USA
+#		has_country_flag = usa_trump_victory_2016
+#		is_historical_focus_on = no
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 100
+#	}
+#	
+#	immediate = {
+#		random_list = {
+#			20 = { country_event = usa.5 }
+#			80 = {}
+#		}
+#	}
+#	
+#	option = {
+#		name = hidden_option
+#	}
+#}
+#
+##Clinton post-election hidden trigger
+#country_event = {
+#	id = usa.4
+#	hidden = yes
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		original_tag = USA
+#		has_country_flag = usa_clinton_victory_2016
+#		is_historical_focus_on = no
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 100
+#	}
+#	
+#	immediate = {
+#		random_list = {
+#			20 = { country_event = usa.6 }
+#			80 = {}
+#		}
+#	}
+#	
+#	option = {
+#		name = hidden_option
+#	}
+#}
+#
+##The Assassination of Donald Trump
+#country_event = {
+#	id = usa.5
+#	title = usa.5.t
+#	desc = usa.5.d
+#	picture = GFX_report_event_assassination
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = { set_country_flag = usa_trump_assassinated }
+#	
+#	option = {
+#		name = usa.5.o1
+#		add_national_unity = -0.05
+#		create_country_leader = {
+#			name = "Mike Pence"
+#			picture = "Mike_Pence.dds"
+#			expire = "2050.1.1"
+#			ideology = right_wing_conservative
+#		}
+#		hidden_effect = {
+#			news_event = {
+#				id = news.12
+#				hours = 6
+#			}
+#		}
+#	}
+#}
+#
+##The Assassination of Hillary Clinton
+#country_event = {
+#	id = usa.6
+#	title = usa.6.t
+#	desc = usa.6.d
+#	picture = GFX_report_event_assassination
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = { set_country_flag = usa_clinton_assassinated }
+#	
+#	option = {
+#		name = usa.6.o1
+#		add_national_unity = -0.05
+#		create_country_leader = {
+#			name = "Tim Kaine"
+#			picture = "Tim_Kaine.dds"
+#			expire = "2050.1.1"
+#			ideology = liberalist
+#		}
+#		hidden_effect = {
+#			news_event = {
+#				id = news.12
+#				hours = 6
+#			}
+#		}
+#	}
+#}
+#
 #Elian Gonzalez Affair
 country_event = {
 	id = usa.7
@@ -607,7 +607,7 @@ country_event = {
 					limit = { NOT = { has_government = conservative } }
 					create_country_leader = {
 						name = "Donald Trump"
-						picture = "Portrait_USA_Donald_Trump.dds"
+						picture = "Donald_Trump.dds"
 						ideology = right_wing_conservative
 					}
 				}
@@ -618,7 +618,7 @@ country_event = {
 					limit = { NOT = { has_government = conservative } }
 					create_country_leader = {
 						name = "Ted Cruz"
-						picture = "Portrait_USA_Ted_Cruz.dds"
+						picture = "Ted_Cruz.dds"
 						ideology = right_wing_conservative
 					}
 				}
@@ -629,7 +629,7 @@ country_event = {
 					limit = { NOT = { has_government = conservative } }
 					create_country_leader = {
 						name = "Marco Rubio"
-						picture = "Portrait_USA_Marco_Rubio.dds"
+						picture = "Marco_Rubio.dds"
 						ideology = fiscal_conservative
 					}
 				}
@@ -640,7 +640,7 @@ country_event = {
 					limit = { NOT = { has_government = conservative } }
 					create_country_leader = {
 						name = "John Kasich"
-						picture = "Portrait_USA_John_Kasich.dds"
+						picture = "John_Kasich.dds"
 						ideology = christian_democrat
 					}
 				}
@@ -662,7 +662,7 @@ country_event = {
 			limit = { NOT = { has_government = conservative } }
 			create_country_leader = {
 				name = "Donald Trump"
-				picture = "Portrait_USA_Donald_Trump.dds"
+				picture = "Donald_Trump.dds"
 				ideology = right_wing_conservative
 			}
 		}
@@ -683,7 +683,7 @@ country_event = {
 			limit = { NOT = { has_government = conservative } }
 			create_country_leader = {
 				name = "Ted Cruz"
-				picture = "Portrait_USA_Ted_Cruz.dds"
+				picture = "Ted_Cruz.dds"
 				ideology = right_wing_conservative
 			}
 		}
@@ -698,7 +698,7 @@ country_event = {
 			limit = { NOT = { has_government = conservative } }
 			create_country_leader = {
 				name = "Marco Rubio"
-				picture = "Portrait_USA_Marco_Rubio.dds"
+				picture = "Marco_Rubio.dds"
 				ideology = fiscal_conservative
 			}
 		}
@@ -713,7 +713,7 @@ country_event = {
 			limit = { NOT = { has_government = conservative } }
 			create_country_leader = {
 				name = "John Kasich"
-				picture = "Portrait_USA_John_Kasich.dds"
+				picture = "John_Kasich.dds"
 				ideology = christian_democrat
 			}
 		}
@@ -739,7 +739,7 @@ country_event = {
 					limit = { NOT = { has_government = social_liberal } }
 					create_country_leader = {
 						name = "Hillary Clinton"
-						picture = "Portrait_USA_Hillary_Clinton.dds"
+						picture = "Hillary_Clinton.dds"
 						ideology = liberalist
 					}
 				}
@@ -750,7 +750,7 @@ country_event = {
 					limit = { NOT = { has_government = social_liberal } }
 					create_country_leader = {
 						name = "Bernie Sanders"
-						picture = "Portrait_USA_Bernie_Sanders.dds"
+						picture = "Bernie_Sanders.dds"
 						ideology = liberalist
 					}
 				}
@@ -773,7 +773,7 @@ country_event = {
 			limit = { NOT = { has_government = social_liberal } }
 			create_country_leader = {
 				name = "Hillary Clinton"
-				picture = "Portrait_USA_Hillary_Clinton.dds"
+				picture = "Hillary_Clinton.dds"
 				ideology = centrist
 			}
 		}
@@ -794,7 +794,7 @@ country_event = {
 			limit = { NOT = { has_government = social_liberal } }
 			create_country_leader = {
 				name = "Bernie Sanders"
-				picture = "Portrait_USA_Bernie_Sanders.dds"
+				picture = "Bernie_Sanders.dds"
 				ideology = liberalist
 			}
 		}
@@ -1054,7 +1054,7 @@ country_event = {
 			create_country_leader = {
 				name = "Michael Badnarik"
 				desc = "POLITICIAN_USA_MICHAEL_BADNARIK_DESC"
-				picture = "Portrait_USA_Michael_Badnarik.dds"
+				picture = "Michael_Badnarik.dds"
 				expire = "2050.1.1"
 				ideology = libertarian
 				
@@ -1083,7 +1083,7 @@ country_event = {
 			create_country_leader = {
 				name = "John Kerry"
 				desc = "POLITICIAN_USA_JOHN_KERRY_DESC"
-				picture = "Portrait_USA_John_Kerry.dds"
+				picture = "John_Kerry.dds"
 				expire = "2050.1.1"
 				ideology = liberalist
 				
@@ -1121,7 +1121,7 @@ country_event = {
 		create_country_leader = {
 			name = "Al Gore"
 			desc = "POLITICIAN_USA_AL_GORE_DESC"
-			picture = "Portrait_USA_Al_Gore.dds"
+			picture = "Al_Gore.dds"
 			expire = "2050.1.1"
 			ideology = liberalist
 			
@@ -1133,7 +1133,7 @@ country_event = {
 			create_country_leader = {
 				name = "Newt Gingrich"
 				desc = "POLITICIAN_USA_NEWT_GINGRICH_DESC"
-				picture = "Portrait_USA_Newt_Gingrich.dds"
+				picture = "Newt_Gingrich.dds"
 				expire = "2050.1.1"
 				ideology = constitutionalist
 			
@@ -1188,7 +1188,7 @@ country_event = {
 			create_country_leader = {
 				name = "Bob Barr"
 				desc = "POLITICIAN_USA_BOB_BARR_DESC"
-				picture = "Portrait_USA_Bob_Barr.dds"
+				picture = "Bob_Barr.dds"
 				expire = "2050.1.1"
 				ideology = libertarian
 				
@@ -1213,7 +1213,7 @@ country_event = {
 			create_country_leader = {
 				name = "Barack Obama"
 				desc = "POLITICIAN_USA_BARACK_OBAMA_DESC"
-				picture = "Portrait_USA_Barack_Obama.dds"
+				picture = "Barack_Obama.dds"
 				expire = "2050.1.1"
 				ideology = liberalist
 			
@@ -1251,7 +1251,7 @@ country_event = {
 			create_country_leader = {
 				name = "Newt Gingrich"
 				desc = "POLITICIAN_USA_NEWT_GINGRICH_DESC"
-				picture = "Portrait_USA_Newt_Gingrich.dds"
+				picture = "Newt_Gingrich.dds"
 				expire = "2050.1.1"
 				ideology = constitutionalist
 			
@@ -1284,7 +1284,7 @@ country_event = {
 			create_country_leader = {
 				name = "John McCain"
 				desc = "POLITICIAN_USA_JOHN_MCCAIN_DESC"
-				picture = "Portrait_USA_John_McCain.dds"
+				picture = "John_McCain.dds"
 				expire = "2050.1.1"
 				ideology = fiscal_conservative
 			
@@ -1315,7 +1315,7 @@ country_event = {
 		create_country_leader = {
 			name = "Newt Gingrich"
 			desc = "POLITICIAN_USA_NEWT_GINGRICH_DESC"
-			picture = "Portrait_USA_Newt_Gingrich.dds"
+			picture = "Newt_Gingrich.dds"
 			expire = "2050.1.1"
 			ideology = constitutionalist
 		
@@ -1327,7 +1327,7 @@ country_event = {
 			create_country_leader = {
 				name = "Barack Obama"
 				desc = "POLITICIAN_USA_BARACK_OBAMA_DESC"
-				picture = "Portrait_USA_Barack_Obama.dds"
+				picture = "Barack_Obama.dds"
 				expire = "2050.1.1"
 				ideology = liberalist
 				
@@ -1384,7 +1384,7 @@ country_event = {
 		
 		create_country_leader = {
 			name = "Barack Obama"
-			picture = "Portrait_USA_Barack_Obama.dds"
+			picture = "Barack_Obama.dds"
 			expire = "2050.1.1"
 			ideology = liberalist
 			
@@ -1415,7 +1415,7 @@ country_event = {
 		
 		create_country_leader = {
 			name = "John McCain"
-			picture = "Portrait_USA_John_McCain.dds"
+			picture = "John_McCain.dds"
 			expire = "2050.1.1"
 			ideology = fiscal_conservative
 			
@@ -1473,7 +1473,7 @@ country_event = {
 		
 		create_country_leader = {
 			name = "Barack Obama"
-			picture = "Portrait_USA_Barack_Obama.dds"
+			picture = "Barack_Obama.dds"
 			expire = "2050.1.1"
 			ideology = liberalist
 			
@@ -1504,7 +1504,7 @@ country_event = {
 		
 		create_country_leader = {
 			name = "Mitt Romney"
-			picture = "Portrait_USA_Mitt_Romney.dds"
+			picture = "Mitt_Romney.dds"
 			expire = "2050.1.1"
 			ideology = constitutionalist
 		}
@@ -1711,7 +1711,7 @@ country_event = {
 		}
 		create_country_leader = {
 			name = "Donald Trump"
-			picture = "Portrait_USA_Donald_Trump.dds"
+			picture = "Donald_Trump.dds"
 			ideology = right_wing_conservative
 			traits = {
 				friend_of_russia
@@ -1736,7 +1736,7 @@ country_event = {
 		add_popularity = { ideology = conservative popularity = 0.03 }
 		create_country_leader = {
 			name = "Ted Cruz"
-			picture = "Portrait_USA_Ted_Cruz.dds"
+			picture = "Ted_Cruz.dds"
 			ideology = right_wing_conservative
 		}
 		
@@ -1753,7 +1753,7 @@ country_event = {
 		add_popularity = { ideology = conservative popularity = 0.03 }
 		create_country_leader = {
 			name = "Marco Rubio"
-			picture = "Portrait_USA_Marco_Rubio.dds"
+			picture = "Marco_Rubio.dds"
 			ideology = fiscal_conservative
 		}
 		
@@ -1770,7 +1770,7 @@ country_event = {
 		add_popularity = { ideology = conservative popularity = 0.03 }
 		create_country_leader = {
 			name = "John Kasich"
-			picture = "Portrait_USA_John_Kasich.dds"
+			picture = "John_Kasich.dds"
 			ideology = christian_democrat
 		}
 		
@@ -1804,7 +1804,7 @@ country_event = {
 		
 		create_country_leader = {
 			name = "Hillary Clinton"
-			picture = "Portrait_USA_Hillary_Clinton.dds"
+			picture = "Hillary_Clinton.dds"
 			ideology = centrist
 			
 			traits = {
@@ -1831,7 +1831,7 @@ country_event = {
 		
 		create_country_leader = {
 			name = "Bernie Sanders"
-			picture = "Portrait_USA_Bernie_Sanders.dds"
+			picture = "Bernie_Sanders.dds"
 			ideology = liberalist
 		}
 		

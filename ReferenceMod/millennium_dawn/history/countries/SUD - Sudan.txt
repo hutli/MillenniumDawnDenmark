@@ -141,97 +141,57 @@ set_politics = {
 
 create_country_leader = {
 	name = "Omar al-Bashir"
-	picture = "Portrait_SUD_Omar_al-Bashir.dds"
-	expire = "2020.1.1"
+	picture = "Omar_al_Bashir.dds"
 	ideology = islamic_authoritarian
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Fatimah Abdel Mahmoud"
-	picture = "Portrait_SUD_Fatimah_Abdel_Mahmoud.dds"
-	expire = "2020.1.1"
+	picture = "Fatimah_Abdel_Mahmoud.dds"
 	ideology = national_democrat
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Jalal al-Digair"
-	picture = "Portrait_SUD_Jalal_al-Digair.dds"
-	expire = "2020.1.1"
+	picture = "Jalal_al_Digair.dds"
 	ideology = moderate
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Malik Agar"
-	picture = "Portrait_SUD_Malik_Agar.dds"
-	expire = "2020.1.1"
+	picture = "Malik_Agar.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Hassan Al-Turabi"
-	picture = "Portrait_SUD_Hassan_Al-Turabi.dds"
-	expire = "2020.1.1"
+	picture = "Hassan_Al_Turabi.dds"
 	ideology = constitutionalist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Muhammad Mukhtar Al-Khatib"
-	picture = "Portrait_SUD_Muhammad_Mukhtar_Al-Khatib.dds"
-	expire = "2020.1.1"
+	picture = "Muhammad_M_Al_Khatib.dds"
 	ideology = marxist
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Sadiq al-Mahdi"
-	picture = "Portrait_SUD_Sadiq_al-Mahdi.dds"
-	expire = "2020.1.1"
+	picture = "Sadiq_al_Mahdi.dds"
 	ideology = counter_progressive_democrat
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Adil Abdel Aati"
-	picture = "Portrait_SUD_Adil_Abdel_Aati.dds"
-	expire = "2020.1.1"
+	picture = "Adil_Abdel_Aati.dds"
 	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_corps_commander = {
 	name = "Mustafa Osman Obeid Salim"
-	picture = "Portrait_SUD_general_Mustafa_Salim.dds"
+	picture = "generals/Mustafa_Salim.dds"
 	skill = 1
-	}
+}
 
 
 2015.4.16 = {

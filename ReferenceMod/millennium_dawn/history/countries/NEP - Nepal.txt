@@ -125,30 +125,28 @@ set_politics = {
 
 create_country_leader = {
 	name = "Birendra Bir Bikram Shah Dev"
-	picture = "Portrait_NEP_Birendra_Bir_Bikram_Shah_Dev.dds"
+	picture = "Birendra_BBS_Dev.dds"
 	ideology = absolute_monarchist
-	expire = "2001.6.2"
 }
 
 create_country_leader = {
 	name = "Bidhya Devi Bhandari"
-	picture = "Portrait_NEP_Bidhya_Devi_Bhandari.dds"
+	picture = "Bidhya_D_Bhandari.dds"
 	ideology = democratic_socialist_ideology
 }
 
 2001.6.2 = {
 	create_country_leader = {
 		name = "Dipendra Bir Bikram Shah Dev"
-		picture = "Portrait_NEP_Dipendra_Bir_Bikram_Shah_Dev.dds"
+		picture = "Dipendra_BBS_Dev.dds"
 		ideology = absolute_monarchist
-		expire = "2001.6.4"
 	}
 }
 
 2001.6.4 = {
 		create_country_leader = {
 		name = "Gyanendra Bir Bikram Shah Dev"
-		picture = "Portrait_NEP_Gyanendra_Bir_Bikram_Shah_Dev.dds"
+		picture = "Gyanendra_BBS_Dev.dds"
 		ideology = absolute_monarchist
 	}
 }
@@ -157,7 +155,7 @@ create_country_leader = {
 
 	create_country_leader = {
 		name = "Ram Baran Yadav"
-		picture = "Portrait_NEP_Dipendra_Ram_Baran_Yadav.dds"
+		picture = "Dipendra_RB_Yadav.dds"
 		ideology = social_democrat_ideology
 	}
 	

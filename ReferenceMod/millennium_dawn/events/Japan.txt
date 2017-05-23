@@ -422,7 +422,7 @@ country_event = {
 		create_country_leader = {
 			name = "Yoshirō Mori"
 			ideology = fiscal_conservative
-			picture = "Portrait_JAP_Yoshiro_Mori.dds"
+			picture = "Yoshiro_Mori.dds"
 		}
 	}
 }

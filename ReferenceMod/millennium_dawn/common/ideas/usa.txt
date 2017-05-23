@@ -3,6 +3,8 @@ ideas = {
 	country = {
 	
 		american_militarism = {
+			picture = american_militarism
+		
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			
@@ -20,6 +22,8 @@ ideas = {
 		}
 		
 		idea_USA_political_establishment = {
+			picture = political_establishment
+		
 			allowed = { always = no }
 			
 			allowed_civil_war = {
@@ -40,10 +44,10 @@ ideas = {
 		}
 		
 		idea_USA_drone_program = {
+			picture = air_support
+			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
-			
-			picture = generic_air_bonus
 			
 			removal_cost = -1
 			
@@ -55,10 +59,10 @@ ideas = {
 		}
 		
 		idea_USA_united_republic = {
+			picture = political_power_bonus
+			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
-			
-			picture = generic_pp_unity_bonus
 			
 			removal_cost = -1
 			
@@ -73,10 +77,10 @@ ideas = {
 		}
 		
 		idea_USA_new_education_program = {
+			picture = research_bonus
+			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
-			
-			picture = generic_research_bonus
 			
 			removal_cost = -1
 			
@@ -89,94 +93,52 @@ ideas = {
 	}
 	
 	political_advisor = {
-		
-		USA_john_bachtell = {
-			allowed = {
-				original_tag = USA
-			}
-			
-			available = {
-				has_completed_focus = USA_communist_thought
-			}
-			
+		#Direct Political Ideologies
+		advisor_USA_john_bachtell = {
+			allowed = { original_tag = USA }
+			available = { has_completed_focus = USA_communist_thought }
 			traits = { communist_politician }
 		}
-		
-		USA_bill_maher = {
-			allowed = {
-				original_tag = USA
-			}
-			
-			available = {
-				has_completed_focus = USA_proportional_voting
-			}
-			
+		advisor_USA_bill_maher = {
+			allowed = { original_tag = USA }
+			available = { has_completed_focus = USA_proportional_voting }
 			traits = { democratic_socialist_politician }
 		}
-		
-		USA_ralph_nader = {
-			allowed = {
-				original_tag = USA
-			}
-			
-			available = {
-				has_completed_focus = USA_proportional_voting
-			}
-			
+		advisor_USA_ralph_nader = {
+			allowed = { original_tag = USA }
+			available = { has_completed_focus = USA_proportional_voting }
 			traits = { progressive_politician }
 		}
-		
-		USA_joe_biden = {
-			allowed = {
-				original_tag = USA
-			}
-			
+		advisor_USA_joe_biden = {
+			allowed = { original_tag = USA }
 			traits = { social_liberal_politician }
 		}
-		
-		USA_nicholas_sarwark = {
-			allowed = {
-				original_tag = USA
-			}
-			
-			available = {
-				has_completed_focus = USA_proportional_voting
-			}
-			
+		advisor_USA_nicholas_sarwark = {
+			allowed = { original_tag = USA }
+			available = { has_completed_focus = USA_proportional_voting }
 			traits = { market_liberal_politician }
 		}
-		
-		USA_bill_o_reilly = {
-			allowed = {
-				original_tag = USA
-			}
-			
+		advisor_USA_bill_o_reilly = {
+			allowed = { original_tag = USA }
 			traits = { conservative_politician }
 		}
-		
-		USA_ann_coulter = {
-			allowed = {
-				original_tag = USA
-			}
-			
-			available = {
-				has_completed_focus = USA_proportional_voting
-			}
-			
+		advisor_USA_ann_coulter = {
+			allowed = { original_tag = USA }
+			available = { has_completed_focus = USA_proportional_voting }
 			traits = { reactionary_politician }
 		}
-		
-		USA_david_duke = {
-			allowed = {
-				original_tag = USA
-			}
-			
-			available = {
-				has_completed_focus = USA_nationalist_thought
-			}
-			
+		advisor_USA_david_duke = {
+			allowed = { original_tag = USA }
+			available = { has_completed_focus = USA_nationalist_thought }
 			traits = { fascist_politician }
 		}
-		
+		#Ministers
+		advisor_USA_donald_rumsfeld = {
+			allowed = { original_tag = USA }
+			traits = { 
+				warmonger
+				conservative_party_membership
+			}
+		}
 	}
 }

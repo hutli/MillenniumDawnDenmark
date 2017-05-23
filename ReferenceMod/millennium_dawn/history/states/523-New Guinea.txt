@@ -3,42 +3,24 @@ state={
 	name="STATE_523"
 	
 	resources = {
-		rubber = 28
-		steel = 17
-		oil = 15
+		oil = 3
 	}
 
 	history={
 		owner = PAP
 		buildings = {
 			infrastructure = 2
-			air_base = 3
+			air_base = 1
 			industrial_complex = 3
-			4329 = {
-				naval_base = 3
-
-			}
-			12237 = {
-				naval_base = 2
-
-			}
-			12154 = {
-				naval_base = 1
-
-			}
-			12240 = {
-				naval_base = 1
-
-			}
-
+			arms_factory = 1
+			dockyard = 1
+			4329 = { naval_base = 3 }
+			12237 = { naval_base = 2 }
+			12154 = { naval_base = 1 }
+			12240 = { naval_base = 1 }
 		}
-		victory_points = {
-			4329 3 
-		}
-		victory_points = {
-			12237 1 
-		}
-
+		victory_points = { 4329 3 }
+		victory_points = { 12237 1 }
 	}
 
 	provinces={

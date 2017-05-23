@@ -5,20 +5,15 @@ state={
 
 	history={
 		owner = MDV
+		add_core_of = MDV
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			industrial_complex = 3
+			arms_factory = 1
 			air_base = 2
-
 		}
-		add_core_of = MDV
-		victory_points = {
-			3707 3 
-		}
-		victory_points = {
-			3724 1 
-		}
-
+		victory_points = { 3707 3 }
+		victory_points = { 3724 1 }
 	}
 
 	provinces={

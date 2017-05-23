@@ -7,7 +7,8 @@ state={
 	state_category = pastoral
 	
 	resources = {
-		steel=12
+		aluminium=40
+		oil=20
 	}
 
 	history={
@@ -16,10 +17,8 @@ state={
 		add_core_of = PRC
 		add_core_of = SIK
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 1
 		}
-
 	}
 
 	provinces={

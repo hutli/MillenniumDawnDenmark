@@ -4,13 +4,13 @@ state={
 	name="STATE_414"
 	manpower = 2466013
 	
-	state_category = rural
+	state_category = pastoral
 
 	history={
 		owner = PER
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			air_base = 1
 		}
 		victory_points = {
 			10913 1 

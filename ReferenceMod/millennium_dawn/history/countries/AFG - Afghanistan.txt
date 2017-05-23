@@ -135,10 +135,13 @@ set_politics = {
 create_country_leader = {
 	name = "Mohammed Omar"
 	ideology = islamic_authoritarian
-	picture = "Portrait_AFG_Mohammed_Omar.dds"
-	expire = "2003.1.1"
-	
-	traits = {}
+	picture = "Mohammed_Omar.dds"
+}
+
+create_country_leader = {
+	name = "Hamid Karzai"
+	ideology = fiscal_conservative
+	picture = "Hamid_Karzai.dds"
 }
 
 2004.1.1 = {
@@ -172,16 +175,6 @@ create_country_leader = {
 		ruling_party = conservative
 		elections_allowed = yes
 		last_election = "2003.6.1"
-	}
-	create_country_leader = {
-		name = "Hamid Karzai"
-		ideology = fiscal_conservative
-		picture = "Portrait_AFG_Hamid_Karzai.dds"
-		expire = "2020.1.1"
-		
-		traits = {
-		
-		}
 	}
 	remove_ideas = {
 		partially_recognized_state

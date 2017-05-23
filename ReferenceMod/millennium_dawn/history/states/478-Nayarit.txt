@@ -6,19 +6,18 @@ state={
 	
 	state_category = city
 	
-	resources={
-		tungsten=10
-		steel=49
-		oil=10
+	resources = {
+		steel = 5
 	}
 
 	history={
 		owner = MEX
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 5
-			dockyard = 4
+			infrastructure = 7
+			industrial_complex = 6
 			arms_factory = 1
+			dockyard = 1
+			air_base = 1
 		}
 		add_core_of = MEX
 		victory_points = {

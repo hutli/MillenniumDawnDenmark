@@ -128,13 +128,13 @@ set_politics = {
 
 create_country_leader = {
 	name = "Askar Akayev"
-	picture = "Portrait_KYR_Askar_Akayev.dds"
+	picture = "Askar_Akayev.dds"
 	ideology = oligarchist
 }
 
 create_country_leader = {
 	name = "Almazbek Atambaev"
-	picture = "Portrait_KYR_Almazbek_Atambaev.dds"
+	picture = "Almazbek_Atambaev.dds"
 	ideology = social_democrat_ideology
 }
 
@@ -147,7 +147,7 @@ create_country_leader = {
 	}
 	create_country_leader = {
 		name = "Omurbek Babanov"
-		picture = "Portrait_KYR_Omurbek_Babanov.dds"
+		picture = "Omurbek_Babanov.dds"
 		ideology = oligarchist
 	}
 }

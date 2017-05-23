@@ -4,6 +4,10 @@ state={
 	name="STATE_200" # Zaporozhe
 	manpower = 1594082
 	state_category = town
+	
+	resources = {
+		steel = 22
+	}
 
 	history={
 		owner = UKR
@@ -11,15 +15,10 @@ state={
 			11405 1
 		}
 		buildings = {
-			infrastructure = 5
-			air_base = 3
+			infrastructure = 3
+			air_base = 1
 		}
 		add_core_of = UKR
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-			}
-		}
 	}
 
 	provinces={

@@ -47,7 +47,11 @@ set_technology = {
 	interwar_artillery = 1
 	antitank1 = 1
 	interwar_antiair = 1
-	
+
+	corvette1 = 1
+	corvette2 = 1
+	frigate1 = 1
+	frigate2 = 1
 	destroyer1 = 1
 	destroyer2 = 1
 	light_cruiser1 = 1
@@ -138,13 +142,8 @@ set_politics = {
 
 create_country_leader = {
 	name = "Leonid Kuchma"
-	picture = "Portrait_UKR_Leonid_Kuchma.dds"
+	picture = "Leonid_Kuchma.dds"
 	ideology = fiscal_conservative
-	expire = "2020.1.1"
-	
-	traits = {
-	
-	}
 }
 
 2014.1.1 = {
@@ -178,13 +177,8 @@ create_country_leader = {
 	}
 	create_country_leader = {
 		name = "Petro Poroshenko"
-		picture = "Portrait_UKR_Petro_Poroshenko.dds"
+		picture = "Petro_Poroshenko.dds"
 		ideology = social_democrat_ideology
-		expire = "2025.1.1"
-		
-		traits = {
-		
-		}
 	}
 }
 

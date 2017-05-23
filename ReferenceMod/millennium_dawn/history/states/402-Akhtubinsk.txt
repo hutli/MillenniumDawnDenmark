@@ -7,16 +7,18 @@ state={
 	state_category = rural
 	
 	resources={
-		chromium=20
+		oil=24
+		steel=2
+		chromium=320
 	}
-
-	history={
-		owner = KZH		
-		buildings = {
-			infrastructure = 3
-
-		}
+	
+	history = {
+		owner = KZH
 		add_core_of = KZH
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
 	}
 
 	provinces={

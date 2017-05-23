@@ -6,21 +6,15 @@ state=
 	
 	state_category = large_town
 	
-	resources={
-		steel=13
-		aluminium=6
-		chromium=3
-	}
 	history= {
 		owner = DOM
 		buildings = {
 			infrastructure = 6
+			industrial_complex = 5
 			arms_factory = 1
-			industrial_complex = 3
+			dockyard = 1
 			air_base = 1
-			7660 = {
-				naval_base = 2
-			}
+			7660 = { naval_base = 2 }
 		}
 		add_core_of = DOM
 		victory_points = {

@@ -1,11 +1,19 @@
 state={
 	id=784
 	name="STATE_784"
+	resources = {
+		tungsten = 275
+		rubber = 48
+		oil = 28
+		steel = 1
+	}
 	history = {
 		owner = VIN
+		add_core_of = VIN
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			industrial_complex = 1
+			air_base = 1
 		}
 	}
 	provinces={

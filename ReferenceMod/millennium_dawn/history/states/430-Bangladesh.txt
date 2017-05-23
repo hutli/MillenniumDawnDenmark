@@ -2,23 +2,25 @@
 state={
 	id=430
 	name="STATE_430"
+	
+	resources = {
+		oil = 1
+	}
 
 	history={
 		owner = BNG
-		victory_points = {
-			11929 30
-		}
+		add_core_of = BNG
+		victory_points = { 11929 30 }
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 8
-			dockyard = 3
-			arms_factory = 3
-			air_base = 5
+			infrastructure = 7
+			industrial_complex = 10
+			dockyard = 1
+			arms_factory = 2
+			air_base = 6
 			11968 = { naval_base = 3 }
 			11929 = { naval_base = 6 }
 			9935 = { naval_base = 2 }
 		}
-
 	}
 
 	provinces={

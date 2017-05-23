@@ -1,118 +1,109 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-}
-
-division_template = {
-	name = "Mechanized Brigade"
+	name = "Mekaniseret Infanteri Brigade"
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
-		light_mechanized = { x = 0 y = 3 }
-		modern_armor = { x = 1 y = 0 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
 	}
 }
-
 division_template = {
-	name = "Armor Brigade"
+	name = "Pansret Brigade"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 2 y = 1 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
 	}
 }
 
-division_template = {
-	name = "Paratrooper Brigade"
-	
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
-		paratrooper = { x = 0 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-	
-	priority = 2
-}
-
-division_template = {
-	name = "Mountain Brigade"
-	
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-}
-
-division_template = {
-	name = "Marine Brigade"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 0 y = 2 }
-		marine = { x = 0 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-	
-	priority = 2
-}
-
-### Air OOB ###
+### LAND OOB ###
 units = {
 	division = {
-		name = "Danish Division Operational Group"
-		division_template = "Infantry Brigade"
-		location = 11251
+		name = "1. Brigade"
+		division_template = "Pansret Brigade"
+		location = 399
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "1st Brigade"
-		division_template = "Mechanized Brigade"
-		location = 11251
+		name = "2. Brigade"
+		division_template = "Mekaniseret Infanteri Brigade"
+		location = 6287
 		start_experience_factor = 0.3
 	}
-	division = {
-		name = "2nd Brigade"
-		division_template = "Mechanized Brigade"
-		location = 3260
-		start_experience_factor = 0.3
-	}
+	
+### NAVY OOB ###
+	navy = {
+		name = "1. Eskadron"
+		base = 394
+		location = 394
+		ship = {
+			name = "HDMS Thetis (F357)" 
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = DEN } }
+		}
+		ship = {
+			name = "HDSM Triton (F358)" 
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = DEN } }
+		}
+		ship = {
+			name = "HDMS Vædderen (F359)" 
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = DEN } }
+		}
+		ship = {
+			name = "HDMS Hvidbjørnen (F360)" 
+			definition = frigate
+			equipment = { frigate_2 = { amount = 1 owner = DEN } }
+		}		
+	}		
+	navy = {
+		name = "2. Eskadron"
+		base = 394
+		location = 394
+		ship = {
+			name = "HDMS Iver Huitfeldt (F361)" 
+			definition = frigate
+			equipment = { frigate_3 = { amount = 1 owner = DEN } }
+		}
+		ship = {
+			name = "HDSM Peter Willemoes (F3362)" 
+			definition = frigate
+			equipment = { frigate_3 = { amount = 1 owner = DEN } }
+		}
+		ship = {
+			name = "HDMS Niels Juel (F363)" 
+			definition = frigate
+			equipment = { frigate_3 = { amount = 1 owner = DEN } }
+		}
+		ship = {
+			name = "HDMS Absalon (L16)" 
+			definition = frigate
+			equipment = { frigate_3 = { amount = 1 owner = DEN } }
+		}		
+		ship = {
+			name = "HDMS Esbern Snare (L17)" 
+			definition = frigate
+			equipment = { frigate_3 = { amount = 1 owner = DEN } }
+		}		
+	}	
 }
+
+### AIR OOB ###
 air_wings = {
 	800 = {
 		#F-16AM MLU

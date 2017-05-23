@@ -4,7 +4,11 @@ state={
 	name="STATE_162"
 	manpower = 3984933
 	
-	state_category = large_city
+	state_category = city
+	
+	resources = {
+		steel = 4
+	}
 
 	history={
 		owner = ITA
@@ -19,10 +23,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 8
-			arms_factory = 1
-			industrial_complex = 1
-			dockyard = 3
 			air_base = 2
+			dockyard = 1
+			rubber_factory = 1
 			6973 = {
 				naval_base = 10
 			}
@@ -31,12 +34,6 @@ state={
 			}
 		}
 		add_core_of = ITA
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-				industrial_complex = 2
-			}
-		}
 	}
 
 	provinces={

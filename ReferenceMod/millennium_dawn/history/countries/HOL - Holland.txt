@@ -103,40 +103,18 @@ add_ideas = {
 }
 
 set_politics = {
-
 	parties = {
-		islamist = {
-			popularity = 0
-		}
-		nationalist = {
-			popularity = 0
-		}
-		reactionary = {
-			popularity = 0
-		}
-		conservative = {
-			popularity = 23
-		}
-		market_liberal = {
-			popularity = 26
-		}
-		social_liberal = {
-			popularity = 10
-		}
-		social_democrat = {
-			popularity = 30
-		}
-		progressive = {
-			popularity = 7
-		}
-		democratic_socialist = {
-			popularity = 4
-		}
-		communist = {
-			popularity = 0
-		}
+		islamist = { popularity = 0.1 }
+		nationalist = { popularity = 0.1 }
+		reactionary = { popularity = 7.7 }
+		conservative = { popularity = 16.4 }
+		market_liberal = { popularity = 22.3 }
+		social_liberal = { popularity = 11.3 }
+		social_democrat = { popularity = 29.55 }
+		progressive = { popularity = 7.5 }
+		democratic_socialist = { popularity = 5.45 }
+		communist = { popularity = 0.1 }
 	}
-	
 	ruling_party = social_democrat
 	last_election = "1998.5.8"
 	election_frequency = 48
@@ -150,18 +128,243 @@ add_opinion_modifier = {
 
 create_country_leader = {
 	name = "Wim Kok"
-	picture = "Portrait_HOL_Wim_Kok.dds"
+	picture = "Wim_Kok.dds"
 	ideology = social_democrat_ideology
 }
 
-2002.1.1 = {
-	add_ideas = the_euro
+create_country_leader = {
+	name = "Hans Dijkstal"
+	picture = "Hans_Dijkstal.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Beatrix"
+	picture = "Beatrix.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Jaap de Hoop Scheffer"
+	picture = "Jaap_Scheffer.dds"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Els Borst"
+	picture = "Els_Borst.dds"
+	ideology = liberalist
+}
+
+create_country_leader = {
+	name = "Paul Rosenmöller"
+	picture = "Paul_Rosenmoller.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Jan Marijnissen"
+	picture = "Jan_Marijnissen.dds"
+	ideology = democratic_socialist_ideology
+}
+
+#create_country_leader = {
+#	name = "Bas van der Vlies"
+#	picture = "Bas_Vlies.dds"
+#	ideology = counter_progressive_democrat
+#}
+
+create_country_leader = {
+	name = "Geert Wilders"
+	picture = "Geert_Wilders.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "Alejandro de Mello"
+	picture = "Alejandro_Mello.dds"
+	ideology = marxist
+}
+
+create_corps_commander = {
+	name = "Tom Middendorp"
+	picture = "generals/Tom_Middendorp.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Leo Beulen"
+	picture = "generals/Leo_Beulen.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Marc van Uhm"
+	picture = "generals/Marc_van_Uhm.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Rob Verkerk"
+	picture = "admirals/Rob_Verkerk.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Matthieu Borsboom"
+	picture = "admirals/Matthieu_Borsboom.dds"
+	skill = 1
+}
+
+2002.1.1 = { add_ideas = the_euro }
+
+2003.1.1 = {
+
+	create_country_leader = {
+		name = "Jan Paeter Balkenende"
+		picture = "Jan_Paeter_Balkenende.dds"
+		ideology = christian_democrat
+	}
+
+	create_country_leader = {
+		name = "Wouter Bos"
+		picture = "Wouter_Bos.dds"
+		ideology = social_democrat_ideology
+	}
+
+	create_country_leader = {
+		name = "Femke Halsema"
+		picture = "Femke_Halsema.dds"
+		ideology = green
+	}
+
+	create_country_leader = {
+		name = "Thom de Graaf"
+		picture = "Thom_de_Graaf.dds"
+		ideology = liberalist
+	}
+
+	create_country_leader = {
+		name = "Gerrit Zalm"
+		picture = "Gerrit_Zalm.dds"
+		ideology = libertarian
+	}
+	
+}
+
+2006.1.1 = {
+
+	create_country_leader = {
+		name = "Mark Rutte"
+		picture = "Mark_Rutte.dds"
+		ideology = libertarian
+	}
+
+	create_country_leader = {
+		name = "Alexander Pechtold"
+		picture = "Alexander_Pechtold.dds"
+		ideology = liberalist
+	}
+	
 }
 
 2010.1.1 = {
+
 	create_country_leader = {
-		name = "Mark Rutte"
-		picture = "Portrait_HOL_Mark_Rutte.dds"
+		name = "Job Cohen"
+		picture = "Job_Cohen.dds"
 		ideology = social_democrat_ideology
+	}
+
+	create_country_leader = {
+		name = "Emile Roemer"
+		picture = "Emil_Roemer.dds"
+		ideology = democratic_socialist_ideology
+	}
+
+	#create_country_leader = {
+	#	name = "Kees van der Staaij"
+	#	picture = "Kees_Staaij.dds"
+	#	ideology = counter_progressive_democrat
+	#}
+}
+
+2012.1.1 = {
+
+	create_country_leader = {
+		name = "Diederik Samsom"
+		picture = "Diederik_Samsom.dds"
+		ideology = social_democrat_ideology
+	}
+
+	create_country_leader = {
+		name = "Sybrand van Haersma Buma"
+		picture = "Sybrand_Buma.dds"
+		ideology = christian_democrat
+	}
+
+	create_country_leader = {
+		name = "Jolande Sap"
+		picture = "Jolande_Sap.dds"
+		ideology = green
+	}
+}
+
+2013.4.30 = {
+	create_country_leader = {
+		name = "Willem-Alexander"
+		picture = "Willem_Alexander.dds"
+		ideology = absolute_monarchist
+	}
+}
+
+2016.1.1 = {
+	set_politics = {
+		parties = {
+			islamist = {
+				popularity = 0
+			}
+			nationalist = {
+				popularity = 10
+			}
+			reactionary = {
+				popularity = 2
+			}
+			conservative = {
+				popularity = 12
+			}
+			market_liberal = {
+				popularity = 27
+			}
+			social_liberal = {
+				popularity = 8
+			}
+			social_democrat = {
+				popularity = 26
+			}
+			progressive = {
+				popularity = 5
+			}
+			democratic_socialist = {
+				popularity = 10
+			}
+			communist = {
+				popularity = 0
+			}
+		}
+		ruling_party = market_liberal
+		last_election = "2013.3.15"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	create_country_leader = {
+		name = "Lodewijk Asscher"
+		picture = "Lodewijk_Asscher.dds"
+		ideology = social_democrat_ideology
+	}
+	create_country_leader = {
+		name = "Jesse Klaver"
+		picture = "Jesse_Klaver.dds"
+		ideology = green
 	}
 }

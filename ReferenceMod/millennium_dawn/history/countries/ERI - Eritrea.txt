@@ -105,8 +105,17 @@ add_ideas = {
 	war_economy
 }
 
-set_politics = {
+add_opinion_modifier = {
+	target = ETH
+	modifier = rival
+}
 
+add_opinion_modifier = {
+	target = ETH
+	modifier = rival_trade
+}
+
+set_politics = {
 	parties = {
 		islamist = {
 			popularity = 5
@@ -133,6 +142,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Isayas Afewerki"
-	picture = "Portrait_ERI_Isayas_Afewerki.dds"
+	picture = "Isayas_Afewerki.dds"
 	ideology = autocrat
 }

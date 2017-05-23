@@ -2,18 +2,13 @@
 state={
 	id=683
 	name="STATE_683"
-	resources={
-		aluminium=8.000
-	}
 
 	history={
 		owner = CAN
-		buildings = {
-			infrastructure = 1
-
-		}
 		add_core_of = CAN
-
+		buildings = {
+			infrastructure = 0
+		}
 	}
 
 	provinces={

@@ -132,13 +132,13 @@ set_politics = {
 
 create_country_leader = {
 	name = "Jaber III of Kuwait"
-	picture = "Portrait_KUW_Jaber_III.dds"
+	picture = "Jaber_III.dds"
 	ideology = constitutional_monarchist
 }
 2007.1.1 = {
 	create_country_leader = {
 		name = "Sabah IV of Kuwait"
-		picture = "Portrait_KUW_Sabah_IV.dds"
+		picture = "Sabah_IV.dds"
 		ideology = constitutional_monarchist
 	}
 }

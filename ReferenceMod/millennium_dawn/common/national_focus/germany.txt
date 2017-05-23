@@ -1441,7 +1441,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_restore_the_throne
-		icon = monarchy
+		icon = german_monarchy
 		x = @legacy_of_the_kaiser_tree_center
 		y = 3
 		cost = 10
@@ -2419,9 +2419,9 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
-				name = carrier_bonus
-				bonus = 0.4
-				uses = 1
+				name = cruiser_bonus
+				bonus = 0.3
+				uses = 2
 				category = ca_tech
 			}
 		}
@@ -4312,57 +4312,57 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = GER_befriend_the_baltics
-		icon = improve_relations
-		x = @european_politics_left
-		y = 7
-		cost = 10
-		
-		prerequisite = {
-			focus = GER_befriend_scandinavia
-		}
-		
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_war_with = EST }
-				}
-				EST = {
-					add_opinion_modifier = {
-						target = GER
-						modifier = declaration_of_friendship
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_war_with = LAT }
-				}
-				LAT = {
-					add_opinion_modifier = {
-						target = GER
-						modifier = declaration_of_friendship
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_war_with = LIT }
-				}
-				LIT = {
-					add_opinion_modifier = {
-						target = GER
-						modifier = declaration_of_friendship
-					}
-				}
-			}
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
+#	focus = {
+#		id = GER_befriend_estonia
+#		icon = improve_relations
+#		x = @european_politics_left
+#		y = 7
+#		cost = 5
+#		
+#		prerequisite = {
+#			focus = GER_befriend_scandinavia
+#		}
+#		
+#		completion_reward = {
+#			if = {
+#				limit = {
+#					NOT = { has_war_with = EST }
+#				}
+#				EST = {
+#					add_opinion_modifier = {
+#						target = GER
+#						modifier = declaration_of_friendship
+#					}
+#				}
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_war_with = LAT }
+#				}
+#				LAT = {
+#					add_opinion_modifier = {
+#						target = GER
+#						modifier = declaration_of_friendship
+#					}
+#				}
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_war_with = LIT }
+#				}
+#				LIT = {
+#					add_opinion_modifier = {
+#						target = GER
+#						modifier = declaration_of_friendship
+#					}
+#				}
+#			}
+#		}
+#		
+#		ai_will_do = {
+#			factor = 10
+#		}
+#	}
 	
 	focus = {
 		id = GER_establish_a_marine_corps
@@ -4451,7 +4451,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 10 
+			factor = 20
 		}
 	}
 	
@@ -4479,7 +4479,11 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 10 
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 	}
 	
@@ -4604,7 +4608,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_prussian_glory
-		icon = monarchy
+		icon = german_monarchy
 		x = @legacy_of_the_kaiser_tree_left
 		y = 8
 		cost = 10

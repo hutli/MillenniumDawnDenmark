@@ -135,14 +135,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Sellapan Ramanathan"
-	picture = "Portrait_SIG_Sellapan_Ramanathan.dds"
+	picture = "Sellapan_Ramanathan.dds"
 	ideology = constitutionalist
 }
 
 2016.1.1 = {
 	create_country_leader = {
-	name = "Tony Tan Keng Yam"
-	picture = "Portrait_SIG_Tony_Tan_Keng_Yam.dds"
-	ideology = constitutionalist
+		name = "Tony Tan Keng Yam"
+		picture = "Tony_Tan_Keng_Yam.dds"
+		ideology = constitutionalist
 	}
 }

@@ -4,7 +4,12 @@ state={
 	name="STATE_115"
 	manpower = 4990000
 	
-	state_category = city
+	state_category = rural
+	
+	resources = {
+		oil = 2
+	}
+	
 	history={
 		owner = ITA
 		victory_points = { 10074 20 }
@@ -13,19 +18,10 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 			air_base = 10
-			dockyard = 2
-			10074 = {
-				naval_base = 2
-			}
-			7059 = {
-				naval_base = 5
-			}
-			4159 = {
-				naval_base = 8
-			}
-			4014 = {
-				naval_base = 3
-			}
+			10074 = { naval_base = 2 }
+			7059 = { naval_base = 5 }
+			4159 = { naval_base = 8 }
+			4014 = { naval_base = 3 }
 		}
 		add_core_of = ITA
 		add_core_of = SIY

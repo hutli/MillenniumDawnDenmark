@@ -4,13 +4,18 @@ state={
 	name="STATE_349"
 	manpower = 1592821
 	
-	state_category = rural
+	state_category = pastoral
+	
+	resources = {
+		chromium = 25
+		oil=2
+		steel = 12
+	}
 
 	history={
 		owner = TUR
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 		}
 		add_core_of = TUR
 	}

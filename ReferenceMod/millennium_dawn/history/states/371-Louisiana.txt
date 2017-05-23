@@ -4,23 +4,15 @@ state={
 	name="STATE_371"
 	manpower = 4472000
 	
-	state_category = town
+	state_category = rural
 	
-	resources={
-		oil=66
-	}
-
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 2
-			dockyard = 1
+			infrastructure = 6
+			industrial_complex = 1
 			air_base = 5
-			7552 = {
-				naval_base = 5
-
-			}
+			7552 = { naval_base = 5 }
 		}
 		add_core_of = USA
 		add_core_of = CSA

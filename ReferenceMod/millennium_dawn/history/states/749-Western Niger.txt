@@ -3,15 +3,16 @@ state={
 	name="STATE_749"
 	
 	resources = {
-		oil=4
-		steel=2
+		oil = 2
 	}
 	
 	history = {
 		owner = NIG
+		add_core_of = NIG
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
 			air_base = 1
 		}
 		victory_points = { 12707 5 }

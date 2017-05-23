@@ -4,12 +4,12 @@ state={
 	name="STATE_234"
 	manpower = 6226647
 	
-	state_category = city
-	resources={
-		tungsten=26
-		oil=18
+	state_category = large_town
+	
+	resources = {
+		steel = 12
 	}
-
+	
 	history={
 		owner = SOV
 		victory_points = {
@@ -20,8 +20,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 5
-			dockyard = 1
 			air_base = 4
+			arms_factory = 1
+			dockyard = 1
 			719 = {
 				naval_base = 3
 				coastal_bunker = 1

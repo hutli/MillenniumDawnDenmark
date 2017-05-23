@@ -3,25 +3,24 @@ state={
 	id=521
 	name="STATE_521"
 	resources={
-		tungsten=36.000
+		tungsten = 1
+		aluminium=43
+		steel = 10
 	}
 
 	history={
 		owner = AST
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 1
-			air_base = 2
+			air_base = 1
+			industrial_complex = 2
 			7564 = {
 				naval_base = 2
 				coastal_bunker = 1
-
 			}
 			7566 = {
 				naval_base = 1
-
 			}
-
 		}
 		victory_points = {
 			7564 5 
@@ -30,7 +29,6 @@ state={
 			7566 1 
 		}
 		add_core_of = AST
-
 	}
 
 	provinces={

@@ -7,7 +7,9 @@ state= {
 	state_category = city
 	
 	resources={
-		tungsten=8
+		rubber = 20
+		tungsten = 100
+		steel = 10
 	}
 
 	history= {
@@ -16,18 +18,10 @@ state= {
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
+			industrial_complex = 6
 			arms_factory = 1
 		}		
 
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-				infrastructure = 6
-				air_base = 1
-				arms_factory = 2
-			}
-		}
 
 		victory_points = {
 			7101 10 

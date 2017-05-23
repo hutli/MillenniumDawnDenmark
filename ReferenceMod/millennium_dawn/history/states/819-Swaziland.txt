@@ -4,7 +4,9 @@ state={
 	
 	history = {
 		owner = SWZ
+		add_core_of = SWZ
 		buildings = {
+			infrastructure = 2
 			industrial_complex = 3
 			arms_factory = 1
 		}

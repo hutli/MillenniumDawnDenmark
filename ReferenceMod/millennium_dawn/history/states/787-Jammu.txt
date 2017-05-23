@@ -1,20 +1,14 @@
 state={
 	id=787
 	name="STATE_787"
-	resources = {
-		steel = 5
-		chromium = 10
-		aluminium = 21
-	}
 	history = {
 		owner = PAK
-		
+		add_core_of = PAK
+		add_core_of = RAJ
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			air_base = 1
 		}
-		
-		add_core_of = RAJ
 	}
 	provinces={
 		1910 2041 10821 

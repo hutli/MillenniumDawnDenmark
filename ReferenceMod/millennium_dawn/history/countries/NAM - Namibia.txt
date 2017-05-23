@@ -148,93 +148,58 @@ set_politics = {
 	elections_allowed = yes
 }
 
-2000.1.1 = {
-	
-	create_country_leader = {
+create_country_leader = {
 	name = "Sam Nujoma"
-	desc = "POLITICIAN_NAM_SAM_NUJOMA_DESC"
-	picture = "Portrait_NAM_Sam_Nujoma.dds"
-	expire = "2020.1.1"
+	picture = "Sam_Nujoma.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
-	}
+}
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Ben Ulenga"
-	desc = "POLITICIAN_NAM_BEN_ULENGA_DESC"
-	picture = "Portrait_NAM_Ben_Ulenga.dds"
-	expire = "2020.1.1"
+	picture = "Ben_Ulenga.dds"
 	ideology = democratic_socialist_ideology
-	
-	traits = {
-	
-	}
-	}
+}
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Katuutire Kaura"
-	desc = "POLITICIAN_NAM_KATUUTIRE_KAURA_DESC"
-	picture = "Portrait_NAM_Katuutire_Kaura.dds"
-	expire = "2020.1.1"
+	picture = "Katuutire_Kaura.dds"
 	ideology = constitutionalist
-	
-	traits = {
-	
-	}
-	}
+}
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Chief Justus Garoeb"
-	desc = "POLITICIAN_NAM_JUSTUS_GAROEB_DESC"
-	picture = "Portrait_NAM_Justus_Garoeb.dds"
-	expire = "2020.1.1"
+	picture = "Justus_Garoeb.dds"
 	ideology = moderate
-	
-	traits = {
-	
-	}
-	}
+}
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Attie Beukes"
-	desc = "POLITICIAN_NAM_ATTIE_BEUKES_DESC"
-	picture = "Portrait_NAM_Attie_Beukes.dds"
-	expire = "2020.1.1"
+	picture = "Attie_Beukes.dds"
 	ideology = marxist
-	
-	traits = {
-	
-	}
-	}
+}
 
-	create_corps_commander = {
+create_corps_commander = {
 	name = "John Mutwa"
-	picture = "Portrait_NAM_general_John_Mutwa.dds"
+	picture = "generals/John_Mutwa.dds"
 	skill = 2
-	}
+}
 
-	create_corps_commander = {
+create_corps_commander = {
 	name = "Epaphras Denga Ndaitwah"
-	picture = "Portrait_NAM_general_Epaphras_Denga_Ndaitwah.dds"
+	picture = "generals/Epaphras_Denga_Ndaitwah.dds"
 	skill = 1
-	}
+}
 
-	create_corps_commander = {
+create_corps_commander = {
 	name = "Martin Shally"
-	picture = "Portrait_NAM_general_Martin_Shally.dds"
+	picture = "generals/Martin_Shally.dds"
 	skill = 1
-	}
-
-	create_navy_leader = {
+}
+	
+create_navy_leader = {
 	name = "Peter Vilho"
-		picture = "Portrait_NAM_admiral_Peter_Vilho.dds"
-	traits = { }
+	picture = "admirals/Peter_Vilho.dds"
 	skill = 1
-	}
-
 }
 
 2014.11.28 = {
@@ -286,7 +251,7 @@ set_politics = {
 	create_country_leader = {
 	name = "Hage Geingob"
 	desc = "POLITICIAN_NAM_HAGE_GEINGOB_DESC"
-	picture = "Portrait_NAM_Hage_Geingob.dds"
+	picture = "Hage_Geingob.dds"
 	expire = "2020.1.1"
 	ideology = social_democrat_ideology
 	
@@ -298,7 +263,7 @@ set_politics = {
 	create_country_leader = {
 	name = "McHenry Venaani"
 	desc = "POLITICIAN_NAM_MCHENRY_VENAANI_DESC"
-	picture = "Portrait_NAM_McHenry_Venaani.dds"
+	picture = "McHenry_Venaani.dds"
 	expire = "2020.1.1"
 	ideology = fiscal_conservative
 	
@@ -310,7 +275,7 @@ set_politics = {
 	create_country_leader = {
 	name = "Hidipo Hamutenya"
 	desc = "POLITICIAN_NAM_HIDIPO_HAMUTENYA_DESC"
-	picture = "Portrait_NAM_Hidipo_Hamutenya.dds"
+	picture = "Hidipo_Hamutenya.dds"
 	expire = "2020.1.1"
 	ideology = progressive_ideology
 	

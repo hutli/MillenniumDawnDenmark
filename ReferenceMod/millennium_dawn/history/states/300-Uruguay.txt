@@ -6,16 +6,16 @@ state={
 	
 	state_category = city
 	
-	resources={
-		oil=2
-		steel=2
+	resources = {
+		steel = 1
 	}
+	
 	history={
 		owner = URG
 		buildings = {
-			infrastructure = 5
-			arms_factory = 2
+			infrastructure = 3
 			industrial_complex = 5
+			arms_factory = 2
 			dockyard = 1
 			air_base = 1
 			10362 = {

@@ -95,14 +95,14 @@ set_technology = {
 }
 
 set_politics = {
-
 	parties = {
-	    social_liberal = {
-		    popularity = 44
-		}
-		conservative = {
-		    popularity = 56
-		}
+	    communist = { popularity = 1 }
+	    democratic_socialist = { popularity = 1 }
+		progressive = { popularity = 4 }
+	    social_liberal = { popularity = 42 }
+	    market_liberal = { popularity = 3 }
+		conservative = { popularity = 44 }
+		reactionary = { popularity = 3 }
 	}
 	ruling_party = conservative
 	last_election = "1998.1.1"
@@ -112,61 +112,37 @@ set_politics = {
 
 create_country_leader = {
 	name = "Jeb Bush"
-	desc = "POLITICIAN_FLR_JEB_BUSH_DESC"
-	picture = "Portrait_FLR_Jeb_Bush.dds"
-	expire = "2005.1.1"
-	ideology = gaullist
-	traits = {
-	}
+	picture = "Jeb_Bush.dds"
+	ideology = fiscal_conservative
 }
 create_country_leader = {
 	name = "Buddy MacKay"
-	desc = "POLITICIAN_FLR_BUDDY_MACKAY_DESC"
-	picture = "Portrait_FLR_Buddy_MacKay.dds"
-	expire = "2005.1.1"
+	picture = "Buddy_MacKay.dds"
 	ideology = liberalist
-	traits = {
-	}
 }
 
 2012.1.1 = {
-
     set_politics = {
-
 	    parties = {
-		    market_liberal = {
-			    popularity = 5
-		    }
-	    	conservative = {
-		    	popularity = 48
-		    }
-		    social_liberal = {
-		        popularity = 47
-		    }
-			
+		    progressive = { popularity = 2 }
+		    market_liberal = { popularity = 5 }
+	    	conservative = { popularity = 48 }
+		    social_liberal = { popularity = 44 }
+			reactionary = { popularity = 1 }
 	    }    
 	    ruling_party = conservative
 	    last_election = "2014.1.1"
 	    election_frequency = 60
 	    elections_allowed = yes
 	}
-
-create_country_leader = {
-	name = "Rick Scott"
-	desc = "POLITICIAN_FLR_RICK_SCOTT_DESC"
-	picture = "Portrait_FLR_Rick_Scott.dds"
-	expire = "2050.1.1"
-	ideology = gaullist
-	traits = {
-	    }
+	create_country_leader = {
+		name = "Rick Scott"
+		picture = "Rick_Scott.dds"
+		ideology = fiscal_conservative
     }
-create_country_leader = {
-	name = "Charlie Crist"
-	desc = "POLITICIAN_FLR_CHARLIE_CRIST_DESC"
-	picture = "Portrait_FLR_Charlie_Crist.dds"
-	expire = "2050.1.1"
-	ideology = liberalist
-	traits = {
-	    }
+	create_country_leader = {
+		name = "Charlie Crist"
+		picture = "Charlie_Crist.dds"
+		ideology = liberalist
     }
 }

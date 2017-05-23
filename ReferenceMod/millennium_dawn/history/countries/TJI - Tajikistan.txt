@@ -129,6 +129,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Emomali Rahmon"
-	picture = "Portrait_TJI_Emomali_Rahmon.dds"
+	picture = "Emomali_Rahmon.dds"
 	ideology = oligarchist
 }

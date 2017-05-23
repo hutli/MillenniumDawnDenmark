@@ -6,9 +6,9 @@ state={
 	}
 	history = {
 		owner = NGR
+		add_core_of = NGR
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
 		}
 	}
 	manpower=3200000

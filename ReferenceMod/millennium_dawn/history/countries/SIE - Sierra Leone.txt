@@ -105,14 +105,20 @@ add_ideas = {
 set_politics = {
 
 	parties = {
+		nationalist = {
+			popularity = 1
+		}
 		reactionary = {
-			popularity = 10
+			popularity = 9
 		}
 		social_liberal = {
-			popularity = 40
+			popularity = 37
 		}
 		social_democrat = {
 			popularity = 40
+		}
+		communist = {
+			popularity = 3
 		}
 	}
 	
@@ -124,35 +130,31 @@ set_politics = {
 
 create_country_leader = {
 	name = "Ahmad Tejan Kabbah"
-	picture = "Portrait_SIE_Ahmad_Tejan_Kabbah.dds"
+	picture = "Ahmad_Tejan_Kabbah.dds"
 	ideology = social_democrat_ideology
+}
+create_country_leader = {
+	name = "Ernest Bai Koroma"
+	picture = "Ernest_Bai_Koroma.dds"
+	ideology = liberalist
 }
 
 2007.9.17 = {
-	create_country_leader = {
-	name = "Ernest Bai Koroma"
-	picture = "Portrait_SIE_Ernest_Bai_Koroma.dds"
-	ideology = liberalist
-	}
-	
 	set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 2
+		parties = {
+			reactionary = {
+				popularity = 2
+			}
+			social_liberal = {
+				popularity = 49
+			}
+			social_democrat = {
+				popularity = 49
+			}
 		}
-		social_liberal = {
-			popularity = 49
-		}
-		social_democrat = {
-			popularity = 49
-		}
-	}
-	
-	ruling_party = social_liberal
-	last_election = "2007.9.17"
-	election_frequency = 84
-	elections_allowed = yes
+		ruling_party = social_liberal
+		last_election = "2007.9.17"
+		election_frequency = 84
+		elections_allowed = yes
 	}
 }
-

@@ -2,7 +2,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_decision_dissolve_our_faction"
-		texturefile = "gfx/interface/ideas/NATO/end_of_nato.dds"
+		texturefile = "gfx/interface/ideas/diplomacy/disjointed_government.dds"
 	}
 
 	spriteType = {

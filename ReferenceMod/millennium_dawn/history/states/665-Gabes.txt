@@ -3,14 +3,14 @@ state={
 	name="STATE_665"
 	
 	resources = {
-		oil=3
+		oil = 3
 	}
 
 	history={
 		owner = TUN
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
+			infrastructure = 3
+			industrial_complex = 1
 		}
 		add_core_of = TUN
 	}

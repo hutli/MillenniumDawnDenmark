@@ -4,7 +4,9 @@ state={
 	name="STATE_470"
 
 	resources = {
-		oil=200
+		tungsten = 75
+		oil = 320
+		steel = 6
 	}
 	
 	history={
@@ -13,13 +15,11 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 			air_base = 2
-
 		}
 		victory_points = {
 			3010 3 
 		}
 		add_core_of = CAN
-
 	}
 
 	provinces={

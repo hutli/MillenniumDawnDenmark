@@ -48,6 +48,10 @@ set_technology = {
 	antitank1 = 1
 	interwar_antiair = 1
 	
+	corvette1 = 1
+	corvette2 = 1
+	frigate1 = 1
+	frigate2 = 1
 	destroyer1 = 1
 	destroyer2 = 1
 	light_cruiser1 = 1
@@ -142,19 +146,13 @@ set_politics = {
 
 create_country_leader = {
 	name = "Paavo Lipponen"
-	desc = "POLITICIAN_FIN_PAAVO_LIPPONEN_DESC"
-	picture = "Portrait_FIN_Paavo_Lipponen.dds"
-	expire = "2050.1.1"
+	picture = "Paavo_Lipponen.dds"
 	ideology = social_democrat_ideology
-	
-	traits = {
-	
-	}
 }
 
 create_country_leader = {
 	name = "Juha Sipilä"
-	picture = "Portrait_FIN_Juha_Sipila.dds"
+	picture = "Juha_Sipila.dds"
 	ideology = liberalist
 }
 
@@ -163,35 +161,20 @@ create_country_leader = {
 }
 
 2016.1.1 = {
-	set_politics = {
 
+	oob = "FIN_2016"
+	
+	set_politics = {
 		parties = {
-			reactionary = {
-				popularity = 17.2	#True Finns
-			}
-			conservative = {
-				popularity = 4	#Christian Democrats
-			}
-			market_liberal = {
-				popularity = 18.2	#National Coalition
-			}
-			social_liberal = {
-				popularity = 22.2	#Centre
-			}
-			social_democrat = {
-				popularity = 16.2	#Social Democrats
-			}
-			progressive = {
-				popularity = 9	#Green League
-			}
-			democratic_socialist = {
-				popularity = 8	#Left Alliance
-			}
-			communist = {
-				popularity = 0.2
-			}
+			reactionary = { popularity = 16.9 }			#True Finns
+			conservative = { popularity = 4 }			#Christian Democrats
+			market_liberal = { popularity = 18.5 }		#National Coalition
+			social_liberal = { popularity = 22.3 }		#Centre
+			social_democrat = { popularity = 16.1 }		#Social Democrats
+			progressive = { popularity = 9.6 }			#Green League
+			democratic_socialist = { popularity = 7.4 }	#Left Alliance
+			communist = { popularity = 0.2 }
 		}
-		
 		ruling_party = social_liberal
 		last_election = "2015.4.19"
 		election_frequency = 48

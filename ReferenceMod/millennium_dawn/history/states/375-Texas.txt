@@ -8,19 +8,19 @@ state={
 	state_category = megalopolis
 	
 	resources={
-		oil=70
-		aluminium=96
+		oil = 280
+		steel = 97
 	}
 
 
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 7
-			dockyard = 3
-			arms_factory = 4
+			infrastructure = 8
 			air_base = 10
+			industrial_complex = 11
+			arms_factory = 4
+			dockyard = 3
 			10337 = { naval_base = 3 }
 			6785 = { naval_base = 1 }
 		}

@@ -3,6 +3,8 @@ ideas = {
 	country = {
 	
 		catalonia_separatism = {
+			picture = catalonia_separatism
+		
 			allowed = { always = no }
 			allowed_civil_war = { always = no }
 			

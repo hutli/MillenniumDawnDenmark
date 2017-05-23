@@ -130,14 +130,14 @@ set_politics = {
 
 create_country_leader = {
 	name = "Kassym-Jomart Tokayev"
-	picture = "Portrait_KZH_Kassym_Jomart_Tokayev.dds"
+	picture = "Kassym_Jomart_Tokayev.dds"
 	ideology = oligarchist
 }
 
 2010.1.1 = {
 	create_country_leader = {
 		name = "Karim Massimov"
-		picture = "Portrait_KZH_Karim_Massimov.dds"
+		picture = "Karim_Massimov.dds"
 		ideology = oligarchist
 	}
 }

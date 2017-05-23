@@ -3,13 +3,17 @@ state={
 	id=658
 	name="STATE_658"
 	resources={
-		oil=60
+		chromium=2
+		aluminium=36
+		oil=95
 	}
 
 	history={
 		owner = UAE
+		add_core_of = UAE
 		buildings = {
 			infrastructure = 5
+			industrial_complex = 1
 			air_base = 4
 		}
 	}

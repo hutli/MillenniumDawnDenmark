@@ -5,13 +5,6 @@ state={
 	manpower = 370893
 	state_category = pastoral
 	
-	resources={
-		steel=10
-		chromium=24
-		tungsten=18
-		aluminium=4
-	}
-
 	history={
 		owner = SOV
 		buildings = {

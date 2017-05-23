@@ -2,33 +2,28 @@
 state={
 	id=307
 	name="STATE_307" # Miranda
-	
 	state_category = city
-	
 	manpower = 18100100
-	resources={
-		oil=12
+	
+	resources = { 
+		aluminium = 52
+		oil = 18
+		steel = 4
 	}
 
 	history={
 		owner = VEN
+		add_core_of = VEN
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1
 			arms_factory = 1
-			industrial_complex = 6
+			dockyard = 1
 			air_base = 2
-			8113 = {
-				naval_base = 3
-			}
-			10912 = {
-				naval_base = 2
-			}
+			8113 = { naval_base = 3 }
+			10912 = { naval_base = 2 }
 		}
-		add_core_of = VEN
-		victory_points = {
-			8113 5 
-		}
-
+		victory_points = { 8113 5 }
 	}
 
 	provinces={

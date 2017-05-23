@@ -5,6 +5,10 @@ state={
 	manpower = 876210
 	
 	state_category = rural
+	
+	resources = {
+		steel = 6
+	}
 
 	history={
 		owner = SOV

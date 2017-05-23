@@ -7,9 +7,7 @@ state=
 	state_category = town
 	
 	resources = {
-		steel = 11
-		chromium = 4
-		tungsten = 2
+		oil=25
 	}
 	
 	history=
@@ -22,7 +20,8 @@ state=
 		}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 2
+			industrial_complex = 4
+			arms_factory = 1
 			industrial_complex = 2
 		}
 	}

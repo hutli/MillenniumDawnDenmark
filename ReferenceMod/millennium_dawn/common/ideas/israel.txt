@@ -3,6 +3,7 @@ ideas = {
 	country = {
 		
 		idea_ISR_vanguard_of_judaism = {
+			picture = jewish_faith
 			
 			allowed = {
 				always = no

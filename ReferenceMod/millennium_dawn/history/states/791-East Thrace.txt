@@ -1,13 +1,17 @@
 state={
 	id=791
 	name="STATE_791"
+	
+	resources = {
+		steel = 10
+	}
+	
 	history = {
 		owner = TUR
-		
+		add_core_of = TUR
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 5
-			arms_factory = 1
+			industrial_complex = 1
 			dockyard = 2
 		}
 	}
